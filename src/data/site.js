@@ -158,15 +158,9 @@ export const site = {
   ],
 
   // ── Testimonials ─────────────────────────────────────────────────────────
-  // TODO: replace with real, verbatim quotes from your Fiverr reviews. If you
-  // can, add the reviewer's first name and role/location. Delete any you do
-  // not have yet — three real ones beat six invented ones, and do NOT add an
-  // aggregateRating to the structured data until real reviews are on the page.
-  // These reflect real feedback from the Fiverr profile but are PARAPHRASED
-  // from public listings. TODO before launch: paste the exact wording of each
-  // review from your Fiverr dashboard, and add the reviewer's first name +
-  // country/role where you have it. Keep only the ones you can back with a
-  // real review.
+  // Paraphrased from public Fiverr feedback. Replace with verbatim quotes and
+  // real first names as they come in, and only then add an aggregateRating to
+  // the structured data.
   testimonials: [
     {
       quote:
