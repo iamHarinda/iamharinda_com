@@ -13,7 +13,7 @@ const CB = {
   rotation: 45, // degrees
   fadeTop: 0.95,
   iterations: 2,
-  intensity: 1.1,
+  intensity: 0.88, // a touch dimmer than the reactbits default (1.1)
 };
 
 const canvas = document.getElementById("bg");
