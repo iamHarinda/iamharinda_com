@@ -203,10 +203,10 @@ p {
   /* Fallback gradient — shown when WebGL is unavailable or the canvas is
      removed; also the paint under a transparent canvas frame. */
   background:
-    linear-gradient(155deg, transparent 0 38%, rgb(168 85 247 / 0.28) 52%, transparent 66%),
-    linear-gradient(155deg, transparent 0 60%, rgb(168 85 247 / 0.2) 74%, transparent 88%),
-    radial-gradient(80% 60% at 50% 115%, rgb(244 114 182 / 0.14), transparent 60%),
-    #0a0910;
+    linear-gradient(155deg, transparent 0 38%, rgb(168 85 247 / 0.22) 52%, transparent 66%),
+    linear-gradient(155deg, transparent 0 60%, rgb(168 85 247 / 0.15) 74%, transparent 88%),
+    radial-gradient(80% 60% at 50% 115%, rgb(244 114 182 / 0.1), transparent 60%),
+    #08070d;
 }
 /* Dark scrim over the whole background — a soft floor everywhere plus a
    stronger vignette toward the frame — so text stays crisp over the shader. */
