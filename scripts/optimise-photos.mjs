@@ -59,9 +59,9 @@ async function main() {
     <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
       <defs>
         <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#26d4c0"/>
-          <stop offset="0.55" stop-color="#a274ff"/>
-          <stop offset="1" stop-color="#ff9d4d"/>
+          <stop offset="0" stop-color="#2ad3a1"/>
+          <stop offset="0.55" stop-color="#37c26c"/>
+          <stop offset="1" stop-color="#ffb454"/>
         </linearGradient>
         <linearGradient id="seam" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stop-color="#09090b"/>
