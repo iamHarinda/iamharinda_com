@@ -284,7 +284,6 @@ p {
 .section--band {
   position: relative;
   isolation: isolate;
-  overflow: hidden;
   /* neutral (R≈G≈B) — a grey wall catching a little light from the top-left */
   background: linear-gradient(176deg, #626262, #585858 62%, #545454);
   color: var(--on-band);
