@@ -33,7 +33,7 @@ export const site = {
   fiverrStats: {
     rating: "4.9",
     reviews: 183,
-    ordersPlus: 250,
+    ordersPlus: 300,
   },
 
   // ── Contact ───────────────────────────────────────────────────────────────
