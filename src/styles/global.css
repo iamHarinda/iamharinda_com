@@ -532,7 +532,7 @@ p {
     box-shadow: 0 8px 30px rgb(0 0 0 / 0.10);
   }
   .site-nav__panel a {
-    padding: 0.7rem 0.75rem;
+    padding: 0.8rem 0.75rem;
     border-radius: 2px;
   }
   .site-nav__panel a:hover {
