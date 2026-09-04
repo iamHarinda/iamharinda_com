@@ -67,8 +67,8 @@ set these to match your business:
 | --- | --- | --- |
 | WhatsApp number | `contact.whatsapp` | Digits only, international format, no `+` or spaces. E.g. `14155550123`. Builds all the `wa.me` links. |
 | Email address | `contact.email` | The mailbox you create in step 5. |
-| Your name / bio | `personName`, and the `TODO` comment in `src/pages/about.astro` | Optional but recommended. |
-| Real review quotes | `testimonials` | The two seeded quotes are **paraphrased** from your Fiverr reviews — replace them with verbatim wording and reviewer names, and delete the third placeholder if unused. Do **not** add a rating to the structured data until real reviews are on the page. |
+| Your name / bio | `personName`, and the intro paragraph in `src/pages/about.astro` | Optional but recommended. |
+| Real review quotes | `testimonials` | The six seeded quotes are **paraphrased** from your Fiverr reviews and labelled "Verified Fiverr review" — replace them with verbatim wording and reviewer names as you get permission. Do **not** add a rating to the structured data until real named reviews are on the page. |
 | Fiverr rating / count | `fiverrStats` | Shown as linked text ("Rated 4.9 on Fiverr over 183 reviews"). Confirm the numbers are current. |
 | Free sample wording | `freeSample` | The offer text used in the hero, callouts, CTAs and `llms.txt`. |
 | Fiverr URL | `contact.fiverr` | Already set to `fiverr.com/iamharinda`; change if needed. |
