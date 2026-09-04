@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site, { waLink, priceRange } from "../data/site.js";
+import {
+  professionalService,
+  offerCatalogDocument,
+  faqPage,
+  breadcrumb,
+} from "../lib/schema.js";
+
+const pricingFaqs = site.faqs.filter((f) =>
+  ["What does photo editing cost?", "When do I pay?", "How many revisions do I get?"].includes(f.q)
+);
+
+const jsonLd = [
+  professionalService(),
+  offerCatalogDocument(),
+  faqPage(pricingFaqs),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Pricing", path: "/pricing/" },
+  ]),
+];
+---
+
+<BaseLayout
+  title="Pricing"
+  description={`Photo editing priced by volume: 50 photos $10, 100 photos $20, 200 photos $40 (USD). Unlimited revisions, payment after delivery. Range ${priceRange()}.`}
+  path="/pricing/"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h1 class="h1">Flat rates. Paid after delivery.</h1>
+        <p>Priced by the number of photos. No subscription, no deposit, no per-revision fee.</p>
+      </div>
+
+      <div class="price-grid">
+        {
+          site.packages.map((p) => (
+            <div class="price-card">
+              <div class="price-card__photos">{p.photos} photos</div>
+              <div class="price-card__amount">${p.price}</div>
+              <div class="price-card__unit">
+                ${(p.price / p.photos).toFixed(2)} per photo &middot; {site.currency}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <p class="bulk-note">{site.bulkNote}</p>
+    </div>
+  </section>
+
+  <section class="section section--dim">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Every order includes</span>
+        <h2 class="h2">What is always in the price.</h2>
+      </div>
+      <ul class="list-check">
+        {site.includes.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Payment methods</span>
+        <h2 class="h2">However works for you.</h2>
+        <p>You are invoiced once the edited photos are delivered and approved.</p>
+      </div>
+      <ul class="pay-list">
+        {site.payments.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--dim">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ordering</span>
+        <h2 class="h2">How to place an order.</h2>
+      </div>
+      <ol class="list-check">
+        {site.ordering.map((item) => <li>{item}</li>)}
+      </ol>
+      <div class="btn-row" style="margin-top:2rem">
+        <a class="btn" href={waLink("Hi Harinda, I'd like to order photo editing. Here are the details:")}>Order on WhatsApp</a>
+        <a class="btn btn--ghost" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

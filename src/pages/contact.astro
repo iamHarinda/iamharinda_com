@@ -1,0 +1,124 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site, { waLink } from "../data/site.js";
+import { professionalService, breadcrumb } from "../lib/schema.js";
+
+const jsonLd = [
+  professionalService(),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Contact", path: "/contact/" },
+  ]),
+];
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get a quote for photo editing. Message on WhatsApp, book through Fiverr, or send the form. Serving the United States, Canada and Europe."
+  path="/contact/"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Contact</span>
+        <h1 class="h1">Get a quote.</h1>
+        <p>The fastest route is WhatsApp. The form below reaches the same inbox.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          {/* Status messages. contact.php redirects here with #sent or #error;
+              shown via :target, so no JavaScript is needed. */}
+          <div id="sent" class="alert alert--ok alert--toggle" role="status">
+            <strong>Message sent.</strong> Thanks — you&rsquo;ll hear back within
+            one working day. If it&rsquo;s urgent, message on WhatsApp.
+          </div>
+          <div id="error" class="alert alert--err alert--toggle" role="alert">
+            <strong>That didn&rsquo;t go through.</strong> Please email
+            <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a> or
+            message on WhatsApp instead.
+          </div>
+
+          <form method="POST" action="/contact.php">
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+
+            <label class="field">
+              <span>Roughly how many photos?</span>
+              <select name="count">
+                <option value="">Not sure yet</option>
+                <option value="Up to 50">Up to 50</option>
+                <option value="Around 100">Around 100</option>
+                <option value="Around 200">Around 200</option>
+                <option value="Over 200">Over 200</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>What do you need?</span>
+              <textarea
+                name="message"
+                rows="6"
+                required
+                placeholder="Type of shoot, the look you're after, your deadline, file format."
+              ></textarea>
+            </label>
+
+            {/* Honeypot — hidden from people, catches bots. */}
+            <div class="field--hp" aria-hidden="true">
+              <label>
+                Company
+                <input type="text" name="company" tabindex="-1" autocomplete="off" />
+              </label>
+            </div>
+
+            <button class="btn" type="submit">Send message</button>
+            <p class="form-note">
+              No deposit is taken. You pay only after the edited photos are
+              delivered and approved.
+            </p>
+          </form>
+        </div>
+
+        <aside>
+          <div class="aside-block">
+            <h2>WhatsApp</h2>
+            <p><a class="text-link" href={waLink("Hi Harinda, I'd like a quote for photo editing.")}>Open a chat</a></p>
+            <p class="form-note">{site.contact.whatsappNote}</p>
+          </div>
+          <div class="aside-block">
+            <h2>Fiverr</h2>
+            <p><a class="text-link" href={site.contact.fiverr} target="_blank" rel="noopener">fiverr.com/iamharinda</a></p>
+            <p class="form-note">Book with buyer protection through Fiverr.</p>
+          </div>
+          <div class="aside-block">
+            <h2>Email</h2>
+            <p><a class="text-link" href={`mailto:${site.contact.email}`}>{site.contact.email}</a></p>
+          </div>
+          <div class="aside-block">
+            <h2>Areas served</h2>
+            <p>{site.areasServed.join(" · ")}</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Local to this page — keeps the status-message toggle out of global.css */
+  .alert--toggle {
+    display: none;
+  }
+  .alert--toggle:target {
+    display: block;
+  }
+</style>

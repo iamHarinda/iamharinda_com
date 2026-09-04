@@ -1,0 +1,32 @@
+{
+  "name": "iamharinda-com",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal business site for iamharinda.com — human photo retouching and colour correction.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "setup": "npm run fetch:fonts && npm run gen:placeholders",
+    "fetch:fonts": "node scripts/fetch-fonts.mjs",
+    "gen:placeholders": "node scripts/gen-placeholders.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.0",
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.13.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "sharp": "^0.34.4"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}

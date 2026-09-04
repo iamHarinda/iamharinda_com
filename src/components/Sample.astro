@@ -1,0 +1,15 @@
+---
+import BeforeAfter from "./BeforeAfter.jsx";
+const { sample } = Astro.props;
+---
+
+<figure class="sample" id={sample.id}>
+  <BeforeAfter
+    client:visible
+    before={sample.before}
+    after={sample.after}
+    width={sample.width}
+    height={sample.height}
+  />
+  <figcaption>{sample.caption} — drag to compare</figcaption>
+</figure>

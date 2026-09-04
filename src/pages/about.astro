@@ -1,0 +1,84 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import site, { waLink } from "../data/site.js";
+import { professionalService, breadcrumb } from "../lib/schema.js";
+
+const jsonLd = [
+  professionalService(),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about/" },
+  ]),
+];
+---
+
+<BaseLayout
+  title="About"
+  description="iamharinda is a one-person photo editing service. Colour correction and retouching done by hand on a calibrated screen for photographers in the US, Canada and Europe."
+  path="/about/"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">About</span>
+        <h1 class="h1">One person, one calibrated screen.</h1>
+      </div>
+
+      <div class="prose">
+        <p>
+          I am {site.personName}, and I edit photos for a living. It is one person,
+          not a studio and not a queue of freelancers. Every file you send is
+          opened, judged and corrected by me.
+          {/* TODO: add two or three sentences about your background — years
+              editing, the kind of photographers you work with, where you are
+              based. Keep it plain. */}
+        </p>
+
+        <h2>Why by hand</h2>
+        <p>
+          A colour grading suite is painted neutral grey so the eye can judge
+          colour without being pulled one way or another. I work the same way.
+          The screen is calibrated, the room is neutral, and every image is
+          compared against a known reference before it is called done.
+        </p>
+        <p>
+          AI editing tools are fast, but they apply a look. They guess at white
+          balance, smooth skin into plastic, and drift across a set so the
+          hundredth photo does not match the first. A person catches that. A
+          person knows that the white dress is white, that the client&rsquo;s skin
+          has a particular warmth, and that the light changed when the sun went
+          behind a cloud halfway through the ceremony.
+        </p>
+
+        <h2>What I actually do</h2>
+        <ul>
+          <li>White balance and colour correction, set by eye</li>
+          <li>Exposure, contrast and highlight or shadow recovery from RAW</li>
+          <li>Skin retouching that keeps pores and texture</li>
+          <li>Removing distractions — sensor dust, stray objects, blemishes</li>
+          <li>Matching every frame in a set to one consistent look</li>
+        </ul>
+
+        <h2>Who I work with</h2>
+        <p>
+          Professional photographers and studios in {site.areasServed.join(", ")}.
+          Weddings, portraits, events, real estate and product work. Everything is
+          handled online, so where you are does not matter.
+        </p>
+
+        <h2>How you pay</h2>
+        <p>
+          After delivery, never before. You see the edited photos, you approve
+          them, then you are invoiced. Payment can be made by PayPal, Payoneer,
+          Remitly, TapSend or bank deposit.
+        </p>
+      </div>
+
+      <div class="btn-row" style="margin-top:2.5rem">
+        <a class="btn" href={waLink("Hi Harinda, I read your About page and I'd like to talk about editing.")}>Message on WhatsApp</a>
+        <a class="btn btn--ghost" href="/work/">See the work</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

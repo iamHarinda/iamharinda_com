@@ -1,0 +1,56 @@
+# iamharinda.com
+
+> Photo retouching and colour correction done by a human eye on a calibrated
+> screen. No AI presets, no one-click batch looks. True colours — skin stays
+> skin, whites stay white.
+
+## Who
+
+iamharinda is a one-person photo editing service run by Harinda. Every photo is
+edited by hand on a colour-calibrated display and judged by eye. There is no AI
+look, no batch preset and no auto-retouch involved at any stage.
+
+## What is offered
+
+- Colour correction and white balance, set by eye
+- Exposure, contrast, and highlight/shadow recovery worked from RAW
+- Skin retouching that keeps pores and texture (no plastic smoothing)
+- Removal of distractions — sensor dust, stray objects, blemishes
+- Consistent grading across an entire shoot
+- RAW-first workflow: CR2, CR3, NEF, ARW, DNG recommended
+
+## Pricing (US dollars)
+
+- 50 photos — $10
+- 100 photos — $20
+- 200 photos — $40
+- Over 200 photos — custom bulk pricing on request
+
+Every order includes: unlimited revisions, high-quality edited photos at full
+resolution, and payment only after delivery and approval. There is no deposit.
+
+## Payment methods
+
+PayPal invoice (credit/debit card, Venmo, Apple Pay, Google Pay), PayPal
+transfer, Payoneer, Remitly, TapSend, or bank deposit. You are invoiced after
+the edited photos are delivered and you have approved them.
+
+## How to order
+
+1. Message on WhatsApp, or book through Fiverr: https://www.fiverr.com/iamharinda
+2. Send RAW files plus any reference edits or notes on the look you want.
+3. Receive first proofs, request unlimited revisions until approved.
+4. Pay after delivery.
+
+## Areas served
+
+United States, Canada, and Europe. All work is delivered online.
+
+## Contact
+
+- Email: hello@iamharinda.com
+- Fiverr: https://www.fiverr.com/iamharinda
+- Website: https://www.iamharinda.com
+
+<!-- TODO: replace "Harinda" with your full name if you want it public, add your
+     WhatsApp link, and confirm the email address before launch. -->

@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Sample from "../components/Sample.astro";
+import site, { waLink } from "../data/site.js";
+import { professionalService, breadcrumb } from "../lib/schema.js";
+
+const jsonLd = [
+  professionalService(),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Work", path: "/work/" },
+  ]),
+];
+---
+
+<BaseLayout
+  title="Work"
+  description="Before and after examples of human colour correction and retouching — weddings, portraits, interiors, events and product photography."
+  path="/work/"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Work</span>
+        <h1 class="h1">Before and after.</h1>
+        <p>
+          Each example below is a live comparison. Drag the handle to move between
+          the original file and the finished edit. These are placeholders — put
+          your own shoots here.
+        </p>
+      </div>
+
+      <div class="samples">
+        {site.samples.map((s) => <Sample sample={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--band">
+    <div class="container center-narrow">
+      <h2 class="h2">Want to see your own files edited first?</h2>
+      <p style="margin-top:.75rem;color:var(--on-band-soft)">
+        Send a handful of RAW files. You get them back edited, and you decide
+        from there. Payment is only ever after delivery.
+      </p>
+      <div class="btn-row" style="margin-top:1.5rem">
+        <a class="btn" href={waLink("Hi Harinda, could you edit a test batch of my photos?")}>Send a test batch</a>
+        <a class="btn btn--ghost" href="/pricing/">See pricing</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

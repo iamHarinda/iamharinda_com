@@ -1,0 +1,60 @@
+name: Build and deploy
+
+# Runs only for the production branch. Day-to-day work happens on `development`;
+# merging `development` into `live` is what ships the site to Hostinger.
+on:
+  push:
+    branches: [live]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch self-hosted fonts
+        run: npm run fetch:fonts
+        continue-on-error: true
+
+      - name: Generate any missing placeholder images
+        run: npm run gen:placeholders
+        continue-on-error: true
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy dist/ to Hostinger public_html
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          server-dir: public_html/
+          # Files on the server that the build does not produce (e.g. contact.php
+          # is in the build, but mailbox autoconfig files are not) are left in
+          # place. Flip to true only if you want an exact mirror.
+          dangerous-clean-slate: false
+          # Do not upload the deploy log into the webroot.
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.DS_Store

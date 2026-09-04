@@ -1,0 +1,49 @@
+---
+import site, { waLink } from "../data/site.js";
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">iamharinda</p>
+        <p style="margin-top:.5rem;max-width:26ch">
+          Photo retouching and colour correction by a human eye on a calibrated
+          screen.
+        </p>
+      </div>
+
+      <div>
+        <h2>Get in touch</h2>
+        <ul>
+          <li><a href={waLink("Hi Harinda, I'd like a quote for photo editing.")}>WhatsApp</a></li>
+          <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
+          <li><a href={site.contact.fiverr} rel="me noopener" target="_blank">Fiverr profile</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="/work/">Work</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Areas served</h2>
+        <ul>
+          {site.areasServed.map((a) => <li>{a}</li>)}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__legal">
+      <span>&copy; {year} iamharinda. All photographs are the property of their respective owners.</span>
+      <span><a href="/llms.txt">llms.txt</a></span>
+    </div>
+  </div>
+</footer>
