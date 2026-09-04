@@ -70,6 +70,8 @@ ErrorDocument 404 /404.html
   AddType image/webp .webp
   AddType text/plain .txt
   AddType application/json .json
+  AddType application/manifest+json .webmanifest
+  AddType image/x-icon .ico
 </IfModule>
 
 # ── Keep PHP source and dotfiles private ───────────────────────────────────
