@@ -964,6 +964,7 @@ p {
   border-radius: var(--radius);
   padding: var(--space-4);
   background: var(--card);
+  box-shadow: var(--lift);
 }
 .section--dim .quote {
   background: var(--paper);
