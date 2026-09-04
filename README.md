@@ -66,7 +66,9 @@ search for **`TODO`**. At minimum, fill in:
 | WhatsApp number | `contact.whatsapp` | Digits only, international format, no `+` or spaces. E.g. `14155550123`. Builds all the `wa.me` links. |
 | Email address | `contact.email` | The mailbox you create in step 5. |
 | Your name / bio | `personName`, and the `TODO` comment in `src/pages/about.astro` | Optional but recommended. |
-| Real review quotes | `testimonials` | Paste them **verbatim** from Fiverr. Delete any you do not have yet. Do **not** add a rating to the structured data until real reviews are on the page. |
+| Real review quotes | `testimonials` | The two seeded quotes are **paraphrased** from your Fiverr reviews — replace them with verbatim wording and reviewer names, and delete the third placeholder if unused. Do **not** add a rating to the structured data until real reviews are on the page. |
+| Fiverr rating / count | `fiverrStats` | Shown as linked text ("Rated 4.9 on Fiverr over 183 reviews"). Confirm the numbers are current. |
+| Free sample wording | `freeSample` | The offer text used in the hero, callouts, CTAs and `llms.txt`. |
 | Fiverr URL | `contact.fiverr` | Already set to `fiverr.com/iamharinda`; change if needed. |
 | Twitter/X handle | `seo.twitterHandle` | Leave `""` if you have none. |
 
