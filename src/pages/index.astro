@@ -7,9 +7,8 @@ import { professionalService, faqPage } from "../lib/schema.js";
 const jsonLd = [professionalService(), faqPage(site.faqs)];
 const sampleMsg =
   "Hi Harinda, I found your site. Could you do a free sample edit of a few of my photos?";
-const orderMsg =
-  "Hi Harinda, I found you through your site and I'd like a quote for photo editing.";
 const { rating, reviews } = site.fiverrStats;
+const icons = ["◐", "◔", "◑", "◕"];
 ---
 
 <BaseLayout
@@ -21,19 +20,25 @@ const { rating, reviews } = site.fiverrStats;
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="container hero__text">
-      <h1>Colour correction and retouching, done by a human eye.</h1>
+      <span class="eyebrow">Photo editing · human, not AI</span>
+      <h1 class="h1">
+        <span class="split shine">Colour correction and retouching, by a human eye.</span>
+      </h1>
       <p>
-        {site.tagline} No AI presets, no one-click batch looks. Skin stays skin,
-        whites stay white — and you can see it first with a free sample edit.
+        {site.tagline} No AI presets, no batch looks — skin stays skin, whites
+        stay white. See it first with a free sample edit.
       </p>
       <div class="btn-row">
-        <a class="btn" href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
+        <a class="btn" data-magnetic href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
         <a class="btn btn--ghost" href="/pricing/">See pricing</a>
       </div>
       <p class="hero__trust">
         Rated {rating} on <a href={site.contact.fiverr} target="_blank" rel="noopener">Fiverr</a>
-        over {reviews} reviews. Serving the US, Canada &amp; Europe.
+        over {reviews} reviews · pay after delivery
       </p>
+      <div class="hero__pills">
+        {site.services.slice(0, 5).map((s) => <span class="pill">{s}</span>)}
+      </div>
     </div>
   </section>
 
@@ -42,16 +47,17 @@ const { rating, reviews } = site.fiverrStats;
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">What you get</span>
-        <h2 class="h2">Editing decisions made by a person, not a model.</h2>
-        <p>Every frame is opened on a calibrated screen and judged by eye. Here is what that changes.</p>
+        <h2 class="h2 reveal">Editing decisions made by a person, not a model.</h2>
+        <p>Every frame is opened on a calibrated screen and judged by eye.</p>
       </div>
       <div class="grid">
         {
-          site.whatYouGet.map((f) => (
-            <div class="feature">
+          site.whatYouGet.map((f, i) => (
+            <article class="card feature rise" data-spot data-tilt>
+              <div class="feature__icon" aria-hidden="true">{icons[i % icons.length]}</div>
               <h3>{f.title}</h3>
               <p>{f.body}</p>
-            </div>
+            </article>
           ))
         }
       </div>
@@ -59,14 +65,14 @@ const { rating, reviews } = site.fiverrStats;
   </section>
 
   <!-- ── Free sample callout ─────────────────────────────────────────── -->
-  <section class="section section--dim">
+  <section class="section">
     <div class="container">
-      <div class="callout">
+      <div class="callout beam rise">
         <div>
-          <h2>{site.freeSample.short}</h2>
+          <h2 class="grad-text">{site.freeSample.short}</h2>
           <p>{site.freeSample.line} No card, no commitment.</p>
         </div>
-        <a class="btn" href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
+        <a class="btn" data-magnetic href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
       </div>
     </div>
   </section>
@@ -76,40 +82,40 @@ const { rating, reviews } = site.fiverrStats;
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Pricing</span>
-        <h2 class="h2">Priced by volume. Paid after delivery.</h2>
+        <h2 class="h2 reveal">Priced by volume. Paid after delivery.</h2>
         <p>Three flat packages. Larger sets are quoted individually.</p>
       </div>
       <div class="price-grid">
         {
-          site.packages.map((p) => (
-            <div class="price-card">
+          site.packages.map((p, i) => (
+            <article class={`card price-card rise${i === 1 ? " price-card--featured beam" : ""}`} data-spot>
               <div class="price-card__photos">{p.photos} photos</div>
-              <div class="price-card__amount">${p.price}</div>
+              <div class="price-card__amount grad-text">${p.price}</div>
               <div class="price-card__unit">
                 ${(p.price / p.photos).toFixed(2)} per photo, all in
               </div>
-            </div>
+            </article>
           ))
         }
       </div>
-      <p class="bulk-note">{site.bulkNote}</p>
+      <p class="bulk-note rise">{site.bulkNote}</p>
       <p style="margin-top:1.5rem">
         <a class="text-link" href="/pricing/">Full pricing and payment methods</a>
       </p>
     </div>
   </section>
 
-  <!-- ── How it works (numbered) ─────────────────────────────────────── -->
-  <section class="section section--band">
+  <!-- ── How it works ────────────────────────────────────────────────── -->
+  <section class="section">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">How it works</span>
-        <h2 class="h2">Four steps, no deposit.</h2>
+        <h2 class="h2 reveal">Four steps, no deposit.</h2>
       </div>
       <ol class="steps">
         {
           site.howItWorks.map((step) => (
-            <li class="step">
+            <li class="step rise">
               <span class="step__n" aria-hidden="true" />
               <h3>{step.title}</h3>
               <p>{step.body}</p>
@@ -125,16 +131,14 @@ const { rating, reviews } = site.fiverrStats;
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">In their words</span>
-        <h2 class="h2">What clients say.</h2>
-        <p>
-          {rating} out of 5 across {reviews} reviews on Fiverr. TODO — replace the
-          quotes below with verbatim reviews and reviewer names.
-        </p>
+        <h2 class="h2 reveal">{rating} out of 5 on Fiverr.</h2>
+        <p>Across {reviews} reviews. TODO — swap in verbatim quotes and reviewer names.</p>
       </div>
       <div class="quotes">
         {
           site.testimonials.map((t) => (
-            <figure class="quote">
+            <figure class="card quote rise" data-spot>
+              <div class="stars" aria-hidden="true">★★★★★</div>
               <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
               <figcaption>
                 <b>{t.name}</b>
@@ -149,27 +153,27 @@ const { rating, reviews } = site.fiverrStats;
   </section>
 
   <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
-  <section class="section section--dim">
+  <section class="section">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Questions</span>
-        <h2 class="h2">Frequently asked.</h2>
+        <h2 class="h2 reveal">Frequently asked.</h2>
       </div>
       <FaqAccordion items={site.faqs} />
     </div>
   </section>
 
   <!-- ── Contact CTA ─────────────────────────────────────────────────── -->
-  <section class="section section--band">
+  <section class="section">
     <div class="container center-narrow">
-      <h2 class="h2">Start with a free sample edit.</h2>
-      <p style="margin-top:.75rem;color:var(--on-band-soft)">
+      <h2 class="h1 grad-text">Start with a free sample edit.</h2>
+      <p class="lede" style="margin-top:1rem;margin-inline:auto">
         Send two or three RAW files. You get them back fully edited, free, and you
         decide from there. Full orders are paid only after delivery.
       </p>
-      <div class="btn-row" style="margin-top:1.5rem">
-        <a class="btn" href={waLink(sampleMsg)}>Message on WhatsApp</a>
-        <a class="btn btn--ghost" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
+      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
+        <a class="btn" data-magnetic href={waLink(sampleMsg)}>Message on WhatsApp</a>
+        <a class="btn btn--grad" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
       </div>
     </div>
   </section>
