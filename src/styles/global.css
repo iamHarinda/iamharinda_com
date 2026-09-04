@@ -1128,7 +1128,7 @@ body::after {
   position: absolute;
   inset: 0;
   margin: auto;
-  background: var(--c-teal);
+  background: var(--c-violet);
 }
 .faq__icon::before {
   width: 100%;
