@@ -8,7 +8,7 @@ const isCurrent = (href) =>
 
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="wordmark" href="/">iamharinda</a>
+    <a class="wordmark" href="/">iam<span>harinda</span></a>
 
     <nav class="site-nav" aria-label="Primary" data-open="false">
       <button
@@ -59,42 +59,3 @@ const isCurrent = (href) =>
     </style>
   </noscript>
 </header>
-
-<script>
-  // Progressive enhancement for the mobile menu. No framework — this is the
-  // whole thing. The markup above is fully usable without it.
-  for (const nav of document.querySelectorAll<HTMLElement>(".site-nav")) {
-    const btn = nav.querySelector<HTMLButtonElement>(".site-nav__toggle");
-    const label = nav.querySelector<HTMLElement>(".site-nav__toggle-label");
-    if (!btn) continue;
-
-    const set = (open: boolean) => {
-      nav.dataset.open = String(open);
-      btn.setAttribute("aria-expanded", String(open));
-      if (label) label.textContent = open ? "Close" : "Menu";
-    };
-
-    btn.addEventListener("click", () => set(nav.dataset.open !== "true"));
-
-    for (const link of nav.querySelectorAll(".site-nav__panel a")) {
-      link.addEventListener("click", () => set(false));
-    }
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && nav.dataset.open === "true") {
-        set(false);
-        btn.focus();
-      }
-    });
-
-    document.addEventListener("pointerdown", (e) => {
-      if (
-        nav.dataset.open === "true" &&
-        e.target instanceof Node &&
-        !nav.contains(e.target)
-      ) {
-        set(false);
-      }
-    });
-  }
-</script>
