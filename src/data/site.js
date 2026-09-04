@@ -1,8 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 //  iamharinda.com — single source of truth for every business detail.
 //
-//  Edit values here; the page templates read from this file. Anything marked
-//  TODO must be filled in before you launch. Search this file for "TODO".
+//  Edit values here; the page templates read from this file.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const site = {
