@@ -3,12 +3,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import BeforeAfter from "../components/BeforeAfter.jsx";
 import FaqAccordion from "../components/FaqAccordion.jsx";
 import Sample from "../components/Sample.astro";
-import site, { waLink, priceRange } from "../data/site.js";
+import site, { waLink } from "../data/site.js";
 import { professionalService, faqPage } from "../lib/schema.js";
 
 const homeSamples = site.samples.slice(0, 3);
 const jsonLd = [professionalService(), faqPage(site.faqs)];
-const orderMsg = "Hi Harinda, I found you through your site and I'd like a quote for photo editing.";
+const sampleMsg =
+  "Hi Harinda, I found your site. Could you do a free sample edit of a few of my photos?";
+const orderMsg =
+  "Hi Harinda, I found you through your site and I'd like a quote for photo editing.";
+const { rating, reviews } = site.fiverrStats;
 ---
 
 <BaseLayout
@@ -21,17 +25,25 @@ const orderMsg = "Hi Harinda, I found you through your site and I'd like a quote
   <section class="hero">
     <div class="container hero__text">
       <h1>Colour correction and retouching, done by a human eye.</h1>
-      <p>{site.tagline} No AI presets, no one-click batch looks. Skin stays skin, whites stay white.</p>
+      <p>
+        {site.tagline} No AI presets, no one-click batch looks. Skin stays skin,
+        whites stay white — and you can see it first with a free sample edit.
+      </p>
       <div class="btn-row">
-        <a class="btn" href={waLink(orderMsg)}>Start on WhatsApp</a>
+        <a class="btn" href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
         <a class="btn btn--ghost" href="/pricing/">See pricing</a>
       </div>
+      <p class="hero__trust">
+        Rated {rating} on <a href={site.contact.fiverr} target="_blank" rel="noopener">Fiverr</a>
+        over {reviews} reviews &middot; {site.areasServed.join(" &middot; ")}
+      </p>
     </div>
 
     <figure class="hero__figure">
       <BeforeAfter
         client:load
         variant="hero"
+        sweep="load"
         eager
         priority
         before={site.hero.before}
@@ -70,7 +82,7 @@ const orderMsg = "Hi Harinda, I found you through your site and I'd like a quote
       <div class="section-head">
         <span class="eyebrow">Sample work</span>
         <h2 class="h2">A few before and afters.</h2>
-        <p>Replace these with your own shoots. Each one is a real slider — drag to compare.</p>
+        <p>Every one is a live slider — drag to compare the RAW file with the finished edit.</p>
       </div>
       <div class="samples">
         {homeSamples.map((s) => <Sample sample={s} />)}
@@ -81,8 +93,21 @@ const orderMsg = "Hi Harinda, I found you through your site and I'd like a quote
     </div>
   </section>
 
-  <!-- ── Pricing snapshot ─────────────────────────────────────────────── -->
+  <!-- ── Free sample callout ─────────────────────────────────────────── -->
   <section class="section">
+    <div class="container">
+      <div class="callout">
+        <div>
+          <h2>{site.freeSample.short}</h2>
+          <p>{site.freeSample.line} No card, no commitment.</p>
+        </div>
+        <a class="btn" href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing snapshot ─────────────────────────────────────────────── -->
+  <section class="section section--dim">
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Pricing</span>
@@ -136,7 +161,10 @@ const orderMsg = "Hi Harinda, I found you through your site and I'd like a quote
       <div class="section-head">
         <span class="eyebrow">In their words</span>
         <h2 class="h2">What clients say.</h2>
-        <p>TODO — swap these for real, verbatim quotes from your Fiverr reviews.</p>
+        <p>
+          {rating} out of 5 across {reviews} reviews on Fiverr. TODO — replace the
+          quotes below with verbatim reviews and reviewer names.
+        </p>
       </div>
       <div class="quotes">
         {
@@ -169,13 +197,13 @@ const orderMsg = "Hi Harinda, I found you through your site and I'd like a quote
   <!-- ── Contact CTA ─────────────────────────────────────────────────── -->
   <section class="section section--band">
     <div class="container center-narrow">
-      <h2 class="h2">Send a test batch.</h2>
+      <h2 class="h2">Start with a free sample edit.</h2>
       <p style="margin-top:.75rem;color:var(--on-band-soft)">
-        Message on WhatsApp or book through Fiverr. Send five or ten RAW files and
-        see the edits before you commit to a full shoot. You pay after delivery.
+        Send two or three RAW files. You get them back fully edited, free, and you
+        decide from there. Full orders are paid only after delivery.
       </p>
       <div class="btn-row" style="margin-top:1.5rem">
-        <a class="btn" href={waLink(orderMsg)}>Message on WhatsApp</a>
+        <a class="btn" href={waLink(sampleMsg)}>Message on WhatsApp</a>
         <a class="btn btn--ghost" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
       </div>
     </div>
