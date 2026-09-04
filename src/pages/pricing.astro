@@ -9,7 +9,12 @@ import {
 } from "../lib/schema.js";
 
 const pricingFaqs = site.faqs.filter((f) =>
-  ["What does photo editing cost?", "When do I pay?", "How many revisions do I get?"].includes(f.q)
+  [
+    "Do you offer a free sample edit?",
+    "What does photo editing cost?",
+    "When do I pay?",
+    "How many revisions do I get?",
+  ].includes(f.q)
 );
 
 const jsonLd = [
