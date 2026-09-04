@@ -46,6 +46,10 @@ Open the URL it prints (usually <http://localhost:4321>).
 - `npm run gen:placeholders` writes neutral-grey placeholder images into
   `public/images/` and `public/og/` so nothing is broken before you add photos.
   **It never overwrites a file that already exists.**
+- `npm run gen:icons` rasterises `public/favicon.svg` into the full favicon set
+  (`favicon-16/32/48.png`, `favicon.ico`, `apple-touch-icon.png`, `icon-192/512.png`,
+  `icon-maskable-512.png`) and writes `public/site.webmanifest`. Re-run it whenever
+  you change `favicon.svg`.
 
 Other commands:
 
