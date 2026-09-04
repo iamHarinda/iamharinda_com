@@ -285,6 +285,9 @@ body::after {
 .section {
   padding-block: var(--space-7);
   position: relative;
+  /* content sections get a translucent dark backing so body copy is always
+     readable; the hero (not a .section) keeps the shader at full strength */
+  background: linear-gradient(rgb(9 8 14 / 0.52), rgb(9 8 14 / 0.66));
 }
 .section + .section {
   border-top: 1px solid var(--hairline);
