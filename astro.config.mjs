@@ -21,6 +21,7 @@ export default defineConfig({
       // Every page is public and equally important; keep it simple.
       changefreq: "monthly",
       priority: 0.7,
+      lastmod: new Date(),
     }),
   ],
   vite: {
