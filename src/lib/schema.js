@@ -26,14 +26,29 @@ export function offerCatalogDocument() {
   return { "@context": "https://schema.org", ...offerCatalog() };
 }
 
+/** The person behind the business. */
+export function person() {
+  return {
+    "@type": "Person",
+    "@id": abs("/#harinda"),
+    name: site.personName,
+    jobTitle: "Photo editor and colour grader",
+    url: abs("/about/"),
+    sameAs: [site.contact.fiverr],
+    knowsAbout: site.services,
+  };
+}
+
 /** The core business entity. Repeated site-wide, which is fine and expected. */
 export function professionalService() {
   return {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": ["ProfessionalService", "Service"],
     "@id": abs("/#business"),
     name: site.name,
+    alternateName: "iamharinda photo editing",
     description: site.description,
+    slogan: site.tagline,
     url: site.url,
     image: abs(site.seo.ogImage),
     email: site.contact.email,
@@ -41,11 +56,32 @@ export function professionalService() {
     currenciesAccepted: site.currency,
     paymentAccepted:
       "PayPal, Payoneer, Remitly, TapSend, Bank deposit, Credit Card, Debit Card",
-    serviceType: "Photo retouching and colour correction",
+    serviceType: site.services,
     knowsLanguage: "en",
-    areaServed: site.areasServed.map((name) => ({ "@type": "Place", name })),
+    founder: person(),
+    provider: person(),
+    areaServed: site.areasServed.map((name) => ({ "@type": "Country", name })),
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: site.contact.fiverr,
+      availableLanguage: "en",
+    },
     sameAs: [site.contact.fiverr],
     hasOfferCatalog: offerCatalog(),
+  };
+}
+
+/** schema.org WebSite node — helps search understand the site as an entity. */
+export function webSite() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": abs("/#website"),
+    url: site.url,
+    name: site.name,
+    description: site.description,
+    inLanguage: "en",
+    publisher: { "@id": abs("/#business") },
   };
 }
 
