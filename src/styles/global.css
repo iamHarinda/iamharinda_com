@@ -556,6 +556,14 @@ p {
 .hero__text .btn-row {
   margin-top: var(--space-4);
 }
+.hero__trust {
+  margin-top: var(--space-3);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+.hero__trust a {
+  color: var(--ink-soft);
+}
 
 .hero__figure {
   margin: 0;
