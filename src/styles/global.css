@@ -747,6 +747,12 @@ body::after {
     -webkit-backdrop-filter: blur(10px) saturate(130%);
   }
 }
+@media (max-width: 47.99rem) {
+  /* no backdrop blur on phones — use a solid panel so text stays crisp */
+  .card {
+    background: #101016;
+  }
+}
 /* cursor spotlight (fx.js sets --mx / --my, and --rx / --ry for [data-tilt]) */
 .card::before {
   content: "";
