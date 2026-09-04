@@ -6,7 +6,7 @@
 
 export const site = {
   name: "iamharinda",
-  // Your name as it should appear in schema.org / "About". TODO: confirm.
+  // Your name as it should appear in schema.org / "About".
   personName: "Harinda Fernando",
   domain: "www.iamharinda.com",
   url: "https://www.iamharinda.com",
