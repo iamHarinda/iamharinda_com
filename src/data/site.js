@@ -40,6 +40,8 @@ export const site = {
     email: "hello@iamharinda.com", // create this mailbox in Hostinger (README step 5)
     // Digits only — international format, no "+", no spaces. Used to build wa.me links.
     whatsapp: "447355229599",
+    // Same number, formatted for display. Shown as the link text; the link still opens WhatsApp.
+    whatsappDisplay: "+44 7355 229599",
     whatsappNote: "Message any time. Replies within one working day.",
     fiverr: "https://www.fiverr.com/iamharinda",
   },
