@@ -268,9 +268,9 @@ The UI has a small, subject-appropriate motion layer, all of it disabled under
 - cards lift slightly on hover.
 
 A "develop in" reveal (images start desaturated and soft, like a RAW file
-rendering, then resolve on scroll-in) is wired up via `[data-reveal]` in
-`global.css` and the observer in `BaseLayout.astro`, but has no targets right
-now — it comes back with the sample gallery.
+rendering, then resolve on scroll-in) runs on anything tagged `[data-reveal]` —
+currently the About page portrait; it also picks up the sample gallery if that
+is restored. Wired via `global.css` + the observer in `BaseLayout.astro`.
 
 ## Project layout
 
