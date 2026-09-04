@@ -2,11 +2,9 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BeforeAfter from "../components/BeforeAfter.jsx";
 import FaqAccordion from "../components/FaqAccordion.jsx";
-import Sample from "../components/Sample.astro";
 import site, { waLink } from "../data/site.js";
 import { professionalService, faqPage } from "../lib/schema.js";
 
-const homeSamples = site.samples.slice(0, 3);
 const jsonLd = [professionalService(), faqPage(site.faqs)];
 const sampleMsg =
   "Hi Harinda, I found your site. Could you do a free sample edit of a few of my photos?";
