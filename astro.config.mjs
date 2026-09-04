@@ -25,7 +25,6 @@ export default defineConfig({
       lastmod: new Date(),
     }),
   ],
-  scopedStyleStrategy: "class",
   vite: {
     build: {
       // Never base64-inline assets — keep them as hashed files so .htaccess can
