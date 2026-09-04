@@ -72,10 +72,10 @@
   --text-faint: #71717f;
   --on-accent: #0a0a0c;
 
-  /* the grade wheel */
-  --c-teal: #26d4c0;
-  --c-violet: #a274ff;
-  --c-amber: #ff9d4d;
+  /* green-forward accents, tuned to sit on the green silk background */
+  --c-teal: #2ad3a1;
+  --c-violet: #37c26c; /* was violet — now a mid green so nothing clashes */
+  --c-amber: #ffb454; /* the one warm pop: sunlight through leaves */
   --grad: linear-gradient(100deg, var(--c-teal), var(--c-violet) 52%, var(--c-amber));
   --grad-soft: linear-gradient(
     100deg,
