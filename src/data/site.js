@@ -253,11 +253,11 @@ export const site = {
     height: 1000,
     before: {
       src: "/images/hero-before.webp",
-      alt: "Unedited RAW portrait: flat contrast and a green cast from mixed indoor lighting.", // TODO: describe your real image
+      alt: "Unedited RAW portrait: flat contrast and a green cast from mixed indoor lighting.",
     },
     after: {
       src: "/images/hero-after.webp",
-      alt: "The same portrait after colour correction: neutral skin, clean whites, balanced contrast.", // TODO
+      alt: "The same portrait after colour correction: neutral skin, clean whites, balanced contrast.",
     },
   },
 
