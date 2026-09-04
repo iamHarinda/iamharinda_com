@@ -53,9 +53,7 @@ const jsonLd = [
 
         <h2>What I actually do</h2>
         <ul>
-          <li>White balance and colour correction, set by eye</li>
-          <li>Exposure, contrast and highlight or shadow recovery from RAW</li>
-          <li>Skin retouching that keeps pores and texture</li>
+          {site.services.map((s) => <li>{s}</li>)}
           <li>Removing distractions — sensor dust, stray objects, blemishes</li>
           <li>Matching every frame in a set to one consistent look</li>
         </ul>
@@ -63,8 +61,17 @@ const jsonLd = [
         <h2>Who I work with</h2>
         <p>
           Professional photographers and studios in {site.areasServed.join(", ")}.
-          Weddings, portraits, events, real estate and product work. Everything is
-          handled online, so where you are does not matter.
+          Weddings, portraits, headshots, events, real estate and product work.
+          Everything is handled online, so where you are does not matter. The
+          Fiverr profile has a {site.fiverrStats.rating} rating over
+          {" "}{site.fiverrStats.reviews} reviews and {site.fiverrStats.ordersPlus}+
+          completed orders.
+        </p>
+
+        <h2>Try it first, free</h2>
+        <p>
+          {site.freeSample.line} If it is right, you order; if not, no harm done.
+          Full orders are only ever paid after delivery.
         </p>
 
         <h2>How you pay</h2>
