@@ -43,7 +43,7 @@ ErrorDocument 404 /404.html
   </FilesMatch>
 
   # HTML and text data — always revalidate so content updates show immediately.
-  <FilesMatch "\.(?:html|xml|txt|json)$">
+  <FilesMatch "\.(?:html|xml|txt|json|webmanifest)$">
     Header set Cache-Control "public, max-age=0, must-revalidate"
   </FilesMatch>
 
