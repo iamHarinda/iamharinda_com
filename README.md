@@ -293,12 +293,12 @@ public/
   robots.txt         allows Google + the AI crawlers, points to the sitemap
   llms.txt           plain-text summary for AI answer engines
   contact.php        contact-form handler (the only server-side code)
-  favicon.svg
+  favicon.svg        source icon; the PNG/ICO set + site.webmanifest come from npm run gen:icons
   fonts/             self-hosted woff2 (created by npm run fetch:fonts)
   images/            your photos (placeholders created by npm run gen:placeholders)
   og/                social share image
 src/
-  data/site.js       ← all business content and TODOs live here
+  data/site.js       ← all business content lives here
   lib/schema.js      JSON-LD builders (ProfessionalService, OfferCatalog, FAQPage)
   layouts/BaseLayout.astro
   components/         Header, Footer, FaqAccordion (native <details>),
