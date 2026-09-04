@@ -8,6 +8,7 @@ const jsonLd = [professionalService(), faqPage(site.faqs)];
 const sampleMsg =
   "Hi Harinda, I found your site. Could you do a free sample edit of a few of my photos?";
 const { rating, reviews } = site.fiverrStats;
+const av = site.availability;
 const icons = ["◐", "◔", "◑", "◕"];
 ---
 
@@ -20,7 +21,24 @@ const icons = ["◐", "◔", "◑", "◕"];
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="container hero__text">
-      <span class="eyebrow">Photo editing · human, not AI</span>
+      <span
+        class="presence"
+        data-on={String(av.on)}
+        title={av.on ? av.onLabel : av.offLabel}
+      >
+        <img
+          class="presence__avatar"
+          src={site.personImage}
+          width="32"
+          height="32"
+          alt={`${site.personName}, photo editor`}
+          loading="eager"
+          decoding="async"
+        />
+        <span class="presence__dot" aria-hidden="true"></span>
+        <span><b>{site.personName.split(" ")[0]}</b> · {av.on ? "available now" : "currently booked"}</span>
+      </span>
+
       <h1 class="h1">
         <span class="split">Colour correction and retouching, by a human eye.</span>
       </h1>
@@ -34,7 +52,7 @@ const icons = ["◐", "◔", "◑", "◕"];
       </div>
       <p class="hero__trust">
         Rated {rating} on <a href={site.contact.fiverr} target="_blank" rel="noopener">Fiverr</a>
-        over {reviews} reviews · pay after delivery
+        over {reviews} reviews · {site.fiverrStats.ordersPlus}+ orders · pay after delivery
       </p>
       <div class="hero__pills">
         {site.services.slice(0, 5).map((s) => <span class="pill">{s}</span>)}
@@ -126,32 +144,6 @@ const icons = ["◐", "◔", "◑", "◕"];
     </div>
   </section>
 
-  <!-- ── Testimonials ────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">In their words</span>
-        <h2 class="h2 reveal">{rating} out of 5 on Fiverr.</h2>
-        <p>Across {reviews} reviews. TODO — swap in verbatim quotes and reviewer names.</p>
-      </div>
-      <div class="quotes">
-        {
-          site.testimonials.map((t) => (
-            <figure class="card quote rise" data-spot>
-              <div class="stars" aria-hidden="true">★★★★★</div>
-              <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
-              <figcaption>
-                <b>{t.name}</b>
-                <br />
-                {t.role}
-              </figcaption>
-            </figure>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
   <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
   <section class="section">
     <div class="container">
@@ -175,6 +167,38 @@ const icons = ["◐", "◔", "◑", "◕"];
         <a class="btn" data-magnetic href={waLink(sampleMsg)}>Message on WhatsApp</a>
         <a class="btn btn--grad" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
       </div>
+    </div>
+  </section>
+
+  <!-- ── Reviews — kept last so the sections above are seen first ─────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Reviews</span>
+        <h2 class="h2 reveal">{rating} out of 5 on Fiverr.</h2>
+        <p>
+          From {reviews} reviews over {site.fiverrStats.ordersPlus}+ orders.
+          TODO — paste the exact wording and names from your Fiverr dashboard.
+        </p>
+      </div>
+      <div class="quotes">
+        {
+          site.testimonials.map((t) => (
+            <figure class="card quote rise" data-spot>
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
+              <figcaption>
+                <b>{t.name}</b>
+                <br />
+                {t.role}
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+      <p style="margin-top:1.75rem">
+        <a class="text-link" href={site.contact.fiverr} target="_blank" rel="noopener">Read all reviews on Fiverr</a>
+      </p>
     </div>
   </section>
 </BaseLayout>
