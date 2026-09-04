@@ -59,13 +59,13 @@ async function main() {
     <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
       <defs>
         <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#2ad3a1"/>
-          <stop offset="0.55" stop-color="#37c26c"/>
-          <stop offset="1" stop-color="#ffb454"/>
+          <stop offset="0" stop-color="#38bdf8"/>
+          <stop offset="0.55" stop-color="#a855f7"/>
+          <stop offset="1" stop-color="#f472b6"/>
         </linearGradient>
         <linearGradient id="seam" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#08110c"/>
-          <stop offset="1" stop-color="#08110c" stop-opacity="0"/>
+          <stop offset="0" stop-color="#0a0910"/>
+          <stop offset="1" stop-color="#0a0910" stop-opacity="0"/>
         </linearGradient>
       </defs>
       <rect x="${split}" y="0" width="150" height="${H}" fill="url(#seam)"/>
@@ -77,9 +77,9 @@ async function main() {
       <text x="78" y="352" font-family="Helvetica,Arial,sans-serif"
             font-size="27" fill="#a7a7b3">done by a human eye.</text>
       <text x="78" y="432" font-family="Helvetica,Arial,sans-serif"
-            font-size="22" fill="#37c26c">Free sample edit &#183; Rated 4.9 on Fiverr</text>
+            font-size="22" fill="#a855f7">Free sample edit &#183; Rated 4.9 on Fiverr</text>
     </svg>`;
-  await sharp({ create: { width: W, height: H, channels: 3, background: "#08110c" } })
+  await sharp({ create: { width: W, height: H, channels: 3, background: "#0a0910" } })
     .composite([
       { input: photo, left: split, top: 0 },
       { input: Buffer.from(layer), left: 0, top: 0 },
