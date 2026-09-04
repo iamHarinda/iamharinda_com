@@ -79,7 +79,7 @@ async function main() {
       <text x="78" y="432" font-family="Helvetica,Arial,sans-serif"
             font-size="22" fill="#37c26c">Free sample edit &#183; Rated 4.9 on Fiverr</text>
     </svg>`;
-  await sharp({ create: { width: W, height: H, channels: 3, background: "#09090b" } })
+  await sharp({ create: { width: W, height: H, channels: 3, background: "#08110c" } })
     .composite([
       { input: photo, left: split, top: 0 },
       { input: Buffer.from(layer), left: 0, top: 0 },
