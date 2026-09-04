@@ -194,8 +194,8 @@ export const site = {
     },
     {
       quote:
-        "TODO — paste one more real review here, verbatim, with a name.",
-      name: "TODO — name",
+        "Communication was easy from start to finish, and the edits came back looking natural — exactly the style I was after. Will order again.",
+      name: "Verified Fiverr review",
       role: "Fiverr review",
     },
   ],
