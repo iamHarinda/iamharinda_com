@@ -265,9 +265,10 @@ astro.config.mjs
   after JavaScript.
 - One `<h1>` per page, descriptive `<title>` and meta description, canonical
   URL, Open Graph and Twitter tags — all handled by `BaseLayout.astro`.
-- JSON-LD: `ProfessionalService` (with `areaServed`, `priceRange`, `sameAs` →
-  Fiverr) site-wide; `OfferCatalog` on the pricing page; `FAQPage` on the home
-  and pricing pages.
+- JSON-LD: `WebSite` + `ProfessionalService`/`Service` (with `areaServed`,
+  `priceRange`, `founder`/`provider` as a `Person`, `availableChannel`,
+  `sameAs` → Fiverr) site-wide; `OfferCatalog` on the pricing page; `FAQPage`
+  on the home and pricing pages; `BreadcrumbList` on the interior pages.
 - `robots.txt` names GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
   anthropic-ai, PerplexityBot, Google-Extended, Applebot, CCBot, Googlebot and
   Bingbot explicitly, and links the sitemap.
