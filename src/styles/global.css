@@ -1141,7 +1141,7 @@ p {
    -------------------------------------------------------------------------- */
 
 .footer {
-  background: var(--band);
+  background: linear-gradient(176deg, #626262, #585858 62%, #545454);
   color: var(--on-band);
   padding-block: var(--space-6);
 }
