@@ -62,8 +62,10 @@
   --bg-raise: #101014;
   --surface: rgb(255 255 255 / 0.04);
   --surface-solid: #121217;
-  --hairline: rgb(255 255 255 / 0.09);
-  --hairline-strong: rgb(255 255 255 / 0.17);
+  /* dark translucent for cards — keeps text readable over the brighter aurora */
+  --card-bg: rgb(11 11 15 / 0.62);
+  --hairline: rgb(255 255 255 / 0.1);
+  --hairline-strong: rgb(255 255 255 / 0.2);
 
   --text: #f4f4f6;
   --text-dim: #a7a7b3;
