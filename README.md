@@ -279,8 +279,8 @@ src/
   data/site.js       ← all business content and TODOs live here
   lib/schema.js      JSON-LD builders (ProfessionalService, OfferCatalog, FAQPage)
   layouts/BaseLayout.astro
-  components/         Header, Footer, BeforeAfter (island), FaqAccordion
-                     (island), Sample (dormant — for the future /work/ page)
+  components/         Header, Footer, FaqAccordion (native <details>),
+                     BeforeAfter + Sample (dormant React — future gallery)
   pages/             index, pricing, about, contact, 404
   styles/global.css  the whole design system, one file
 scripts/
