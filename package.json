@@ -12,7 +12,8 @@
     "astro": "astro",
     "setup": "npm run fetch:fonts && npm run gen:placeholders",
     "fetch:fonts": "node scripts/fetch-fonts.mjs",
-    "gen:placeholders": "node scripts/gen-placeholders.mjs"
+    "gen:placeholders": "node scripts/gen-placeholders.mjs",
+    "optimise:photos": "node scripts/optimise-photos.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
