@@ -92,8 +92,8 @@
   --step-1: 1.25rem;
   --step-2: 1.563rem;
   --step-3: 1.953rem;
-  --step-4: 2.441rem;
-  --step-5: clamp(2.7rem, 1.9rem + 4vw, 3.815rem);
+  --step-4: clamp(1.95rem, 1.5rem + 2vw, 2.441rem);
+  --step-5: clamp(2.25rem, 1.55rem + 3.2vw, 3.75rem);
 
   /* Spacing */
   --space-1: 0.5rem;
