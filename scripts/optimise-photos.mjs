@@ -77,7 +77,7 @@ async function main() {
       <text x="78" y="352" font-family="Helvetica,Arial,sans-serif"
             font-size="27" fill="#a7a7b3">done by a human eye.</text>
       <text x="78" y="432" font-family="Helvetica,Arial,sans-serif"
-            font-size="22" fill="#26d4c0">Free sample edit &#183; Rated 4.9 on Fiverr</text>
+            font-size="22" fill="#37c26c">Free sample edit &#183; Rated 4.9 on Fiverr</text>
     </svg>`;
   await sharp({ create: { width: W, height: H, channels: 3, background: "#09090b" } })
     .composite([
