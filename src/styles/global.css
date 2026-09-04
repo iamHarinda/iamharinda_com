@@ -733,7 +733,7 @@ body::after {
     -webkit-backdrop-filter: blur(6px);
   }
 }
-/* cursor spotlight (fx.js sets --mx / --my) */
+/* cursor spotlight (fx.js sets --mx / --my, and --rx / --ry for [data-tilt]) */
 .card::before {
   content: "";
   position: absolute;
@@ -747,11 +747,13 @@ body::after {
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;
+  z-index: 0;
 }
 @media (hover: hover) {
   .card[data-spot]:hover {
     border-color: var(--hairline-strong);
-    transform: translateY(-3px);
+    transform: perspective(900px) translateY(-4px)
+      rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
   }
   .card[data-spot]:hover::before {
     opacity: 1;
