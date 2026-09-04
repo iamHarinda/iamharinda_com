@@ -34,6 +34,7 @@ export function person() {
     name: site.personName,
     jobTitle: "Photo editor and colour grader",
     url: abs("/about/"),
+    image: abs(site.personImage),
     sameAs: [site.contact.fiverr],
     knowsAbout: site.services,
   };
