@@ -352,15 +352,28 @@ body::after {
   }
 }
 
-/* Split-text (fx.js wraps words/chars in .sp) */
+/* Split-text (fx.js wraps words in .sp). The initial hidden state is gated on
+   scripting so no-JS visitors still see the heading. */
 .split .sp {
   display: inline-block;
   will-change: transform, opacity, filter;
 }
-.split:not(.is-in) .sp {
-  opacity: 0;
-  transform: translateY(0.55em);
-  filter: blur(10px);
+@media (scripting: enabled) {
+  .split:not(.is-in) .sp {
+    opacity: 0;
+    transform: translateY(0.55em);
+    filter: blur(10px);
+  }
+  .reveal {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .rise {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease,
+      transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
 }
 .split.is-in .sp {
   opacity: 1;
@@ -372,14 +385,12 @@ body::after {
     filter 0.5s ease;
   transition-delay: calc(var(--i, 0) * 34ms);
 }
-
-/* Clip-wipe reveal for section headings */
-.reveal {
-  clip-path: inset(0 100% 0 0);
-  transition: clip-path 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
 .reveal.is-in {
   clip-path: inset(0 0 0 0);
+}
+.rise.is-in {
+  opacity: 1;
+  transform: none;
 }
 
 .prose {
