@@ -720,7 +720,13 @@ p {
 .price-grid {
   display: grid;
   gap: var(--space-4);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  /* Three packages: 3-up on desktop, stacked on small screens — no orphan row. */
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 40rem) {
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .price-card {
   border: 1px solid var(--hairline);
