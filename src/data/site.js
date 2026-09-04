@@ -187,6 +187,10 @@ export const site = {
       a: "No. Every photo is edited by hand on a colour-calibrated screen. There are no AI looks, no one-click batch filters and no auto-retouch. A person judges each frame.",
     },
     {
+      q: "Do you offer a free sample edit?",
+      a: "Yes. Send two or three photos and they are edited and returned free, with no obligation to order. It is the easiest way to see the quality and the style before committing to a full shoot.",
+    },
+    {
       q: "What does photo editing cost?",
       a: "Editing is priced by volume: 50 photos is 10 US dollars, 100 photos is 20 US dollars, and 200 photos is 40 US dollars. Orders over 200 photos get a custom bulk quote. Every order includes unlimited revisions and is paid only after delivery.",
     },
