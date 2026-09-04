@@ -284,6 +284,8 @@ src/
 scripts/
   fetch-fonts.mjs
   gen-placeholders.mjs
+  optimise-photos.mjs   photos-source/*.webp -> the About / OG / schema images
+photos-source/          full-res source portraits (committed, not deployed)
 .github/workflows/deploy.yml
 astro.config.mjs
 ```
