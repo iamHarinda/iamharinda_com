@@ -24,8 +24,8 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title="Pricing"
-  description={`Photo editing priced by volume: 50 photos $10, 100 photos $20, 200 photos $40 (USD). Unlimited revisions, payment after delivery. Range ${priceRange()}.`}
+  title="Photo editing pricing — from $10"
+  description={`Photo editing priced by volume: 50 photos $10, 100 photos $20, 200 photos $40 (USD). Free sample edit first, unlimited revisions, payment after delivery. Range ${priceRange()}.`}
   path="/pricing/"
   jsonLd={jsonLd}
 >
@@ -52,6 +52,14 @@ const jsonLd = [
       </div>
 
       <p class="bulk-note">{site.bulkNote}</p>
+
+      <div class="callout" style="margin-top:2.5rem">
+        <div>
+          <h2>{site.freeSample.short}</h2>
+          <p>{site.freeSample.line} It is the best way to check the quality before you order.</p>
+        </div>
+        <a class="btn" href={waLink("Hi Harinda, could you do a free sample edit of a few of my photos?")}>{site.freeSample.cta}</a>
+      </div>
     </div>
   </section>
 
