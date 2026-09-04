@@ -285,8 +285,8 @@ export const site = {
       caption: "Outdoor family session — white balance",
       width: 1200,
       height: 800,
-      before: { src: "/images/sample-3-before.webp", alt: "TODO — unedited outdoor family photo." },
-      after: { src: "/images/sample-3-after.webp", alt: "TODO — corrected white balance and exposure." },
+      before: { src: "/images/sample-3-before.webp", alt: "Unedited outdoor family photo with a cool colour cast." },
+      after: { src: "/images/sample-3-after.webp", alt: "Outdoor family photo with corrected white balance and exposure." },
     },
     {
       id: "sample-4",
