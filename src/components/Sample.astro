@@ -1,4 +1,7 @@
 ---
+// Dormant — used by the /work/ page and the home "Sample work" section, both
+// removed for now. Kept so they are a quick restore once real before/after
+// images exist. See the note in src/data/site.js.
 import BeforeAfter from "./BeforeAfter.jsx";
 const { sample } = Astro.props;
 ---
@@ -6,7 +9,6 @@ const { sample } = Astro.props;
 <figure class="sample" id={sample.id} data-reveal>
   <BeforeAfter
     client:visible
-    sweep="inview"
     before={sample.before}
     after={sample.after}
     width={sample.width}
