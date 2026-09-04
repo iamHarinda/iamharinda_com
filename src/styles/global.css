@@ -480,11 +480,13 @@ p {
 .site-nav__toggle {
   display: none;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
+  min-height: 2.75rem;
   background: transparent;
   border: 1px solid var(--ink);
   border-radius: var(--radius);
-  padding: 0.5rem 0.85rem;
+  padding: 0.5rem 0.9rem;
   font-size: var(--step--1);
 }
 .site-nav__panel {
