@@ -58,12 +58,12 @@
 :root {
   color-scheme: dark;
 
-  --bg: #08110c;
-  --bg-raise: #0e1712;
+  --bg: #0a0910;
+  --bg-raise: #14111c;
   --surface: rgb(255 255 255 / 0.04);
-  --surface-solid: #111a15;
-  /* dark translucent for cards — keeps text readable over the green silk */
-  --card-bg: rgb(7 16 12 / 0.64);
+  --surface-solid: #17131f;
+  /* dark translucent for cards — keeps text readable over the ColorBends bg */
+  --card-bg: rgb(11 9 18 / 0.64);
   --hairline: rgb(255 255 255 / 0.1);
   --hairline-strong: rgb(255 255 255 / 0.2);
 
