@@ -646,6 +646,8 @@ p {
   margin: 0;
   opacity: 0;
   cursor: ew-resize;
+  /* Let a vertical swipe scroll the page; only horizontal drags move the handle. */
+  touch-action: pan-y;
 }
 .ba__range:focus-visible + .ba__handle .ba__grip {
   outline: 3px solid var(--accent);
