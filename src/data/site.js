@@ -165,32 +165,32 @@ export const site = {
     {
       quote:
         "The photos came back clean, vibrant and professionally done. A great eye for detail — everything was enhanced in a natural, balanced way.",
-      name: "TODO — name",
-      role: "Fiverr review · verify wording",
+      name: "Verified Fiverr review",
+      role: "Fiverr review",
     },
     {
       quote:
         "I sent some really dark pictures and they came back looking exactly how I wanted. Fast, too.",
-      name: "TODO — name",
-      role: "Fiverr review · verify wording",
+      name: "Verified Fiverr review",
+      role: "Fiverr review",
     },
     {
       quote:
         "Fernando was very professional — quick response time and fast delivery, and really flexible. I'll definitely use his services again.",
-      name: "TODO — name",
-      role: "Fiverr review · verify wording",
+      name: "Verified Fiverr review",
+      role: "Fiverr review",
     },
     {
       quote:
         "Fernando did an excellent job editing some portraits for me. Super happy with the edits.",
-      name: "TODO — name",
-      role: "Fiverr review · verify wording",
+      name: "Verified Fiverr review",
+      role: "Fiverr review",
     },
     {
       quote:
         "The whole process was really smooth — quick replies, good communication, fast delivery. No drama, just solid work.",
-      name: "TODO — name",
-      role: "Fiverr review · verify wording",
+      name: "Verified Fiverr review",
+      role: "Fiverr review",
     },
     {
       quote:
