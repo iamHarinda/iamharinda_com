@@ -21,7 +21,7 @@ const {
 const canonical = new URL(path, site.url).href;
 const ogImage = new URL(image, site.url).href;
 const fullTitle =
-  title === site.name ? title : `${title} — ${site.name}`;
+  title === site.name ? title : `${title} · ${site.name}`;
 const graph = [webSite(), ...jsonLd];
 ---
 
