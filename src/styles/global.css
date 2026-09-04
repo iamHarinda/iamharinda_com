@@ -634,7 +634,7 @@ body::after {
 }
 .site-nav__panel a[aria-current="page"] {
   text-decoration: underline;
-  text-decoration-color: var(--c-teal);
+  text-decoration-color: var(--line);
   text-decoration-thickness: 2px;
 }
 @media (max-width: 44rem) {
