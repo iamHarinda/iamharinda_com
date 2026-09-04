@@ -1072,3 +1072,93 @@ p {
 .center-narrow .btn-row {
   justify-content: center;
 }
+
+/* --------------------------------------------------------------------------
+   20. Motion — a restrained layer that matches the subject (photo editing).
+   Everything here is disabled under prefers-reduced-motion.
+   -------------------------------------------------------------------------- */
+
+/* Register --pos as an animatable number so the slider divider can be tweened
+   in pure CSS (used for the one-time "sweep" that shows it is draggable). */
+@property --pos {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 50;
+}
+
+@keyframes ba-sweep {
+  0% {
+    --pos: 50;
+  }
+  16% {
+    --pos: 13;
+  }
+  56% {
+    --pos: 88;
+  }
+  100% {
+    --pos: 50;
+  }
+}
+.ba.is-sweeping {
+  animation: ba-sweep 2s cubic-bezier(0.45, 0, 0.2, 1) both;
+}
+
+/* "Develop in": start like an unrendered RAW — desaturated, soft, dim — then
+   resolve to the finished image as it scrolls into view. */
+[data-reveal] {
+  transition:
+    filter 0.7s ease,
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+[data-reveal]:not(.is-revealed) {
+  filter: saturate(0.4) contrast(0.92) brightness(1.04);
+  opacity: 0.6;
+  transform: translateY(8px);
+}
+[data-reveal].is-revealed {
+  filter: none;
+  opacity: 1;
+  transform: none;
+}
+
+/* Hover lifts — the interface stays put; only the thing you point at responds. */
+.price-card,
+.quote,
+.sample .ba {
+  transition: transform 0.18s ease, border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+@media (hover: hover) {
+  .price-card:hover,
+  .quote:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+  .sample .ba:hover {
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+  .ba.is-sweeping {
+    animation: none;
+  }
+  [data-reveal],
+  [data-reveal]:not(.is-revealed) {
+    transition: none;
+    filter: none;
+    opacity: 1;
+    transform: none;
+  }
+  .price-card,
+  .quote,
+  .sample .ba {
+    transition: none;
+  }
+}
