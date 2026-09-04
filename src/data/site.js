@@ -47,11 +47,13 @@ export const site = {
 
   // ── Navigation ────────────────────────────────────────────────────────────
   nav: [
-    { label: "Work", href: "/work/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
   ],
+  // The /work/ page and its sample gallery are removed for now — re-add the
+  // nav item above and recreate src/pages/work.astro when real before/after
+  // images are ready. The `samples` data and <Sample> component are kept below.
 
   // ── Areas served ──────────────────────────────────────────────────────────
   areasServed: ["United States", "Canada", "Europe"],
