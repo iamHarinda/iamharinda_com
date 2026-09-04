@@ -558,7 +558,8 @@ p {
   border-bottom: 1px solid var(--hairline);
 }
 .hero__text {
-  padding-block: clamp(2.25rem, 1rem + 5vw, 4rem) var(--space-5);
+  padding-block: clamp(2.75rem, 1.5rem + 6vw, 5.5rem);
+  max-width: 54rem;
 }
 .hero__text h1 {
   font-size: var(--step-5);
@@ -582,19 +583,7 @@ p {
   color: var(--ink-soft);
 }
 
-.hero__figure {
-  margin: 0;
-  background: var(--band-plain);
-}
-.hero__figure figcaption {
-  padding: var(--space-2) var(--gutter);
-  font-size: var(--step--1);
-  color: var(--ink-faint);
-  background: var(--paper);
-  border-top: 1px solid var(--hairline);
-}
-
-/* The comparison component */
+/* The comparison component (kept for the dormant sample gallery) */
 .ba {
   position: relative;
   width: 100%;
