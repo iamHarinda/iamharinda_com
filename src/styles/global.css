@@ -872,6 +872,44 @@ body::after {
   max-width: var(--measure);
 }
 
+.list-check {
+  max-width: var(--measure);
+  display: grid;
+  gap: var(--space-2);
+}
+.list-check li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--text-dim);
+}
+.list-check li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 1.5px solid var(--c-teal);
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+}
+.pay-list {
+  columns: 2;
+  column-gap: var(--space-5);
+  max-width: var(--measure);
+}
+.pay-list li {
+  break-inside: avoid;
+  padding: 0.35rem 0;
+  color: var(--text-dim);
+}
+@media (max-width: 34rem) {
+  .pay-list {
+    columns: 1;
+  }
+}
+
 /* 14. Callout ------------------------------------------------------------- */
 
 .callout {
