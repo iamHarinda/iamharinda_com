@@ -200,12 +200,12 @@ p {
   /* Fallback gradient — shown when WebGL is unavailable or the canvas is
      removed; also the paint under a transparent canvas frame. */
   background:
-    radial-gradient(70% 55% at 15% -5%, rgb(38 212 192 / 0.16), transparent 60%),
-    radial-gradient(55% 50% at 92% 8%, rgb(162 116 255 / 0.16), transparent 60%),
-    radial-gradient(75% 60% at 60% 108%, rgb(255 157 77 / 0.1), transparent 60%),
-    var(--bg);
+    radial-gradient(72% 58% at 12% -8%, rgb(38 212 192 / 0.26), transparent 62%),
+    radial-gradient(58% 52% at 94% 6%, rgb(162 116 255 / 0.26), transparent 62%),
+    radial-gradient(80% 62% at 58% 112%, rgb(255 157 77 / 0.18), transparent 62%),
+    #0d0d12;
 }
-/* Edge vignette + faint grain, for text contrast and texture. */
+/* Edge vignette, for text contrast toward the frame. */
 body::before {
   content: "";
   position: fixed;
@@ -213,9 +213,9 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background: radial-gradient(
-    120% 120% at 50% 35%,
-    transparent 40%,
-    rgb(0 0 0 / 0.55) 100%
+    125% 125% at 50% 30%,
+    transparent 48%,
+    rgb(0 0 0 / 0.42) 100%
   );
 }
 body::after {
