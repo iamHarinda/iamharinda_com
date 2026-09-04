@@ -1,9 +1,11 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
 // Canonical host is https://www.iamharinda.com (see public/.htaccess for the redirect).
+// No UI framework: the animated background (scripts/aurora.js) and the interaction
+// effects (scripts/fx.js) are hand-written vanilla + WebGL. Re-add `@astrojs/react`
+// only if the dormant BeforeAfter/Sample components are brought back.
 export default defineConfig({
   site: "https://www.iamharinda.com",
   output: "static",
@@ -16,7 +18,6 @@ export default defineConfig({
     assets: "_astro",
   },
   integrations: [
-    react(),
     sitemap({
       // Every page is public and equally important; keep it simple.
       changefreq: "monthly",
