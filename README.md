@@ -259,13 +259,23 @@ blocks the edit. To pause it, comment out the `hooks` block in
 Squash the `auto:` commits at merge time if you prefer a tidy `live` history
 (`git merge --squash development`).
 
-## Motion
+## Atmosphere & motion
 
-The UI has a small, subject-appropriate motion layer, all of it disabled under
-`prefers-reduced-motion`:
+The interface stays neutral grey — the depth is all greyscale, and every moving
+part is disabled under `prefers-reduced-motion`. It is CSS only (no JS):
 
-- the header is sticky and gains a shadow once the page scrolls;
-- cards lift slightly on hover.
+- **Film grain** — a fixed, full-frame `feTurbulence` noise layer (`body::after`,
+  ~8% opacity) so nothing reads as a flat fill. Static on phones; a slow jitter
+  only at `≥ 48rem` where motion is welcome.
+- **Hero light** — a soft neutral glow behind the hero text that drifts like a
+  moving softbox (`transform` only, held still for reduced motion).
+- **Grey bands** — the `--band` sections and footer use a faint neutral vertical
+  gradient plus a top-left sheen instead of one flat tone.
+- **Depth** — cards, the callout and the About image carry a two-part neutral
+  shadow (`--lift` / `--lift-hover`); buttons have a subtle inset highlight and a
+  1px press.
+- The header is sticky and gains a shadow once the page scrolls; cards lift on
+  hover.
 
 A "develop in" reveal (images start desaturated and soft, like a RAW file
 rendering, then resolve on scroll-in) runs on anything tagged `[data-reveal]` —
