@@ -26,17 +26,22 @@ const icons = ["◐", "◔", "◑", "◕"];
         data-on={String(av.on)}
         title={av.on ? av.onLabel : av.offLabel}
       >
-        <img
-          class="presence__avatar"
-          src={site.personImage}
-          width="32"
-          height="32"
-          alt={`${site.personName}, photo editor`}
-          loading="eager"
-          decoding="async"
-        />
-        <span class="presence__dot" aria-hidden="true"></span>
-        <span><b>{site.personName.split(" ")[0]}</b> · {av.on ? "available now" : "currently booked"}</span>
+        <span class="presence__ring" aria-hidden="true">
+          <img
+            class="presence__avatar"
+            src={site.personImage}
+            width="56"
+            height="56"
+            alt={`${site.personName}, photo editor`}
+            loading="eager"
+            decoding="async"
+          />
+          <span class="presence__dot"></span>
+        </span>
+        <span class="presence__meta">
+          <b>{site.personName}</b>
+          <span>{av.on ? "online" : "currently booked"}</span>
+        </span>
       </span>
 
       <h1 class="h1">
