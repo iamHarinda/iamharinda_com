@@ -873,8 +873,8 @@ p {
   content: counter(step, decimal-leading-zero);
 }
 .section--band .step__n {
-  /* ochre stays legible on the mid grey band */
-  color: #d9a85f;
+  /* a lighter ochre — keeps ~3.8:1 on the mid-grey band */
+  color: #eabf80;
 }
 .step h3 {
   font-size: var(--step-1);
