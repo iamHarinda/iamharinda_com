@@ -293,8 +293,8 @@ export const site = {
       caption: "Real estate interior — window pull",
       width: 1200,
       height: 800,
-      before: { src: "/images/sample-4-before.webp", alt: "TODO — unedited interior, blown-out window." },
-      after: { src: "/images/sample-4-after.webp", alt: "TODO — balanced interior with window detail held." },
+      before: { src: "/images/sample-4-before.webp", alt: "Unedited real estate interior with a blown-out window." },
+      after: { src: "/images/sample-4-after.webp", alt: "Real estate interior with window detail recovered and even light." },
     },
     {
       id: "sample-5",
