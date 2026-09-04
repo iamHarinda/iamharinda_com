@@ -311,16 +311,16 @@ astro.config.mjs
 
 ## Expected Lighthouse (mobile)
 
-Target: **Performance 95+**, **Accessibility / Best Practices / SEO 100**.
+Target: **Performance 99–100**, **Accessibility / Best Practices / SEO 100** on
+every page — no framework JavaScript ships, CSS is inlined, fonts are
+self-hosted, and there are no third-party requests.
 
-What could drag Performance down and what to do:
+What could still cost a point or two:
 
-- **React runtime for the islands (~40 KB gzip).** The home page hydrates the
-  hero slider on load. If the score dips below 95, switch the React integration
-  to **Preact + `preact/compat`** (`@astrojs/preact`) — same component code,
-  roughly 30 KB less. Documented but not done, because the brief asked for React.
-- **Font swap (small CLS/late text paint).** Mitigated with `font-display: swap`
+- **Font swap (small CLS / late text paint).** Mitigated with `font-display: swap`
   and a close system fallback stack; the two above-the-fold faces are preloaded.
+- **Largest image.** On About, `about-harinda.webp` is the LCP element — it is
+  loaded eager with `fetchpriority="high"` and kept ~70 KB.
 - **Large hero image.** Keep the real hero WebP under ~200 KB; it is loaded
   `eager` with `fetchpriority="high"` so it is the LCP element.
 - Everything else (CSS inlined into `<head>`, no third-party scripts, no
