@@ -223,9 +223,11 @@ export const site = {
   ],
 
   // ── Hero before/after ──────────────────────────────────────────────────────
-  //  Files live in /public/images/. Replace the generated placeholders with
-  //  real WebP exports at the stated dimensions and keep the filenames (or
-  //  change them here). Alt text must honestly describe each image.
+  //  DORMANT: the hero slider is removed from index.astro for now because there
+  //  is no real matched pair. To bring it back: add real
+  //  /public/images/hero-before.webp + hero-after.webp (same photo, unedited vs
+  //  edited) at the sizes below, restore the <figure> in src/pages/index.astro
+  //  and the hero block in scripts/gen-placeholders.mjs.
   hero: {
     width: 1600,
     height: 1000,
