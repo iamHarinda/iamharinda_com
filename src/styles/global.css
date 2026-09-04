@@ -593,9 +593,6 @@ p {
   user-select: none;
   -webkit-user-select: none;
 }
-.ba--hero {
-  max-height: 78vh;
-}
 .ba__img {
   position: absolute;
   inset: 0;
