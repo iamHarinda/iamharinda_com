@@ -1114,32 +1114,6 @@ p {
    Everything here is disabled under prefers-reduced-motion.
    -------------------------------------------------------------------------- */
 
-/* Register --pos as an animatable number so the slider divider can be tweened
-   in pure CSS (used for the one-time "sweep" that shows it is draggable). */
-@property --pos {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 50;
-}
-
-@keyframes ba-sweep {
-  0% {
-    --pos: 50;
-  }
-  16% {
-    --pos: 13;
-  }
-  56% {
-    --pos: 88;
-  }
-  100% {
-    --pos: 50;
-  }
-}
-.ba.is-sweeping {
-  animation: ba-sweep 2s cubic-bezier(0.45, 0, 0.2, 1) both;
-}
-
 /* "Develop in": start like an unrendered RAW — desaturated, soft, dim — then
    resolve to the finished image as it scrolls into view. */
 [data-reveal] {
