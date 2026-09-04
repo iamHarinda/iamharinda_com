@@ -910,7 +910,7 @@ p {
 }
 
 /* --------------------------------------------------------------------------
-   15. FAQ (React island: FaqAccordion)
+   15. FAQ — native <details> disclosure, zero JavaScript
    -------------------------------------------------------------------------- */
 
 .faq {
@@ -921,18 +921,23 @@ p {
   border-bottom: 1px solid var(--hairline);
 }
 .faq__q {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: var(--space-3);
   padding: var(--space-3) 0;
-  background: transparent;
-  border: 0;
-  text-align: left;
+  min-height: 2.75rem;
   font-size: var(--step-1);
   font-family: var(--font-display);
   color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+.faq__q::-webkit-details-marker {
+  display: none;
+}
+.faq__q::marker {
+  content: "";
 }
 .faq__icon {
   flex: none;
@@ -958,7 +963,7 @@ p {
   height: 100%;
   transition: opacity 0.15s ease;
 }
-.faq__q[aria-expanded="true"] .faq__icon::after {
+.faq__item[open] .faq__icon::after {
   opacity: 0;
 }
 .faq__a {
