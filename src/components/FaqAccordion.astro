@@ -1,0 +1,22 @@
+---
+// Native <details> disclosure — zero JavaScript. Every answer is in the static
+// HTML (not toggled by JS), which is also the form search and AI crawlers read;
+// the page additionally emits FAQPage JSON-LD.
+const { items = [] } = Astro.props;
+---
+
+<div class="faq">
+  {
+    items.map((item) => (
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span>{item.q}</span>
+          <span class="faq__icon" aria-hidden="true" />
+        </summary>
+        <div class="faq__a">
+          <p>{item.a}</p>
+        </div>
+      </details>
+    ))
+  }
+</div>
