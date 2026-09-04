@@ -1227,6 +1227,7 @@ p {
   height: auto;
   border: 1px solid var(--hairline);
   border-radius: var(--radius);
+  box-shadow: var(--lift);
 }
 .page-figure figcaption {
   margin-top: var(--space-2);
