@@ -61,7 +61,7 @@ Other commands:
 ### Business details — one file
 
 Everything editable lives in [`src/data/site.js`](src/data/site.js). Open it and
-search for **`TODO`**. At minimum, fill in:
+set these to match your business:
 
 | Value | Where in `site.js` | Notes |
 | --- | --- | --- |
