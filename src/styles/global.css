@@ -140,6 +140,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  /* Never let a long unbroken string (URL, email) push the page sideways. */
+  overflow-wrap: break-word;
 }
 
 img,
