@@ -13,8 +13,8 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title="About"
-  description="iamharinda is a one-person photo editing service. Colour correction and retouching done by hand on a calibrated screen for photographers in the US, Canada and Europe."
+  title={`About ${site.personName} — photo editor`}
+  description={`${site.personName} is a one-person photo editing service: colour correction and retouching done by hand on a calibrated screen for photographers in the US, Canada and Europe. Rated ${site.fiverrStats.rating} on Fiverr over ${site.fiverrStats.reviews} reviews.`}
   path="/about/"
   jsonLd={jsonLd}
 >
