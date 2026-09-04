@@ -549,10 +549,10 @@ body::after {
   font-weight: 600;
   color: var(--text);
   text-decoration: underline;
-  text-decoration-color: color-mix(in oklab, var(--c-teal) 70%, transparent);
+  text-decoration-color: color-mix(in oklab, var(--line) 70%, transparent);
 }
 .text-link:hover {
-  text-decoration-color: var(--c-teal);
+  text-decoration-color: var(--line);
 }
 
 /* 9. Header ----------------------------------------------------------------- */
