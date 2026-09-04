@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 /**
  * Before / after comparison slider.
@@ -7,9 +7,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
  * - No layout shift: the box reserves space with `aspect-ratio`.
  * - The 50/50 split renders server-side, so the component is meaningful before
  *   hydration and to crawlers.
- * - `sweep` ("load" | "inview") plays a one-time divider sweep so it reads as
- *   draggable. It never runs under prefers-reduced-motion, and it stops the
- *   moment the viewer touches the control.
  */
 export default function BeforeAfter({
   before,
@@ -19,12 +16,9 @@ export default function BeforeAfter({
   eager = false,
   priority = false,
   variant = "",
-  sweep = "none",
   start = 50,
 }) {
   const [pos, setPos] = useState(start);
-  const [touched, setTouched] = useState(false);
-  const [sweeping, setSweeping] = useState(false);
   const wrapRef = useRef(null);
   const dragging = useRef(false);
 
@@ -36,51 +30,7 @@ export default function BeforeAfter({
     setPos(Math.max(0, Math.min(100, next)));
   }, []);
 
-  // One-time reveal sweep.
-  useEffect(() => {
-    if (sweep === "none" || touched) return;
-    const reduce = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
-    if (reduce) return;
-    const el = wrapRef.current;
-    if (!el) return;
-
-    let timer;
-    const play = () => {
-      timer = window.setTimeout(() => setSweeping(true), 350);
-    };
-
-    if (sweep === "load") {
-      play();
-      return () => window.clearTimeout(timer);
-    }
-
-    // sweep === "inview"
-    if (!("IntersectionObserver" in window)) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          play();
-          io.disconnect();
-        }
-      },
-      { threshold: 0.35 },
-    );
-    io.observe(el);
-    return () => {
-      io.disconnect();
-      window.clearTimeout(timer);
-    };
-  }, [sweep, touched]);
-
-  const markTouched = () => {
-    if (!touched) setTouched(true);
-    if (sweeping) setSweeping(false);
-  };
-
   const onPointerDown = (e) => {
-    markTouched();
     dragging.current = true;
     e.currentTarget.setPointerCapture?.(e.pointerId);
     setFromClientX(e.clientX);
@@ -102,24 +52,15 @@ export default function BeforeAfter({
     fetchPriority: priority ? "high" : "auto",
   };
 
-  // Inline --pos only takes over once the viewer has interacted; before that
-  // the CSS sweep animation owns the property.
-  const style = { aspectRatio: `${width} / ${height}` };
-  if (touched) style["--pos"] = rounded;
-
   return (
     <div
-      className={
-        `ba${variant ? ` ba--${variant}` : ""}` +
-        (sweeping && !touched ? " is-sweeping" : "")
-      }
+      className={`ba${variant ? ` ba--${variant}` : ""}`}
       ref={wrapRef}
-      style={style}
+      style={{ "--pos": rounded, aspectRatio: `${width} / ${height}` }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={stop}
       onPointerCancel={stop}
-      onAnimationEnd={() => setSweeping(false)}
     >
       {/* BEFORE — full-width base layer */}
       <img className="ba__img" src={before.src} alt={before.alt} {...imgProps} />
@@ -137,14 +78,10 @@ export default function BeforeAfter({
         min="0"
         max="100"
         step="1"
-        value={touched ? rounded : 50}
+        value={rounded}
         aria-label="Comparison slider. Left is the original photo, right is the edit."
-        aria-valuetext={`${touched ? rounded : 50}% edited`}
-        onChange={(e) => {
-          markTouched();
-          setPos(Number(e.target.value));
-        }}
-        onKeyDown={markTouched}
+        aria-valuetext={`${rounded}% edited`}
+        onChange={(e) => setPos(Number(e.target.value))}
       />
       <div className="ba__handle" aria-hidden="true">
         <span className="ba__grip">&#8596;</span>
