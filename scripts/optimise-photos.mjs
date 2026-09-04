@@ -53,25 +53,23 @@ async function main() {
   const W = 1200, H = 630, split = 660;
   const photo = await sharp(src("2.webp"))
     .resize(W - split, H, { fit: "cover", position: "attention" })
-    .modulate({ brightness: 0.82 })
     .toBuffer();
   // Dark card, to match the site.
   const layer = `
     <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
       <defs>
-        <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#26d4c0"/>
           <stop offset="0.55" stop-color="#a274ff"/>
           <stop offset="1" stop-color="#ff9d4d"/>
         </linearGradient>
-        <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+        <linearGradient id="seam" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stop-color="#09090b"/>
-          <stop offset="0.7" stop-color="#09090b"/>
           <stop offset="1" stop-color="#09090b" stop-opacity="0"/>
         </linearGradient>
       </defs>
-      <rect x="${split}" y="0" width="${W - split}" height="${H}" fill="url(#fade)"/>
-      <rect x="${split - 3}" y="0" width="4" height="${H}" fill="url(#g)"/>
+      <rect x="${split}" y="0" width="150" height="${H}" fill="url(#seam)"/>
+      <rect x="${split - 2}" y="0" width="4" height="${H}" fill="url(#g)"/>
       <text x="76" y="250" font-family="Georgia,'Times New Roman',serif"
             font-size="68" fill="#f4f4f6">iamharinda</text>
       <text x="78" y="314" font-family="Helvetica,Arial,sans-serif"
