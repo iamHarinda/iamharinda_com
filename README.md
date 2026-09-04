@@ -104,6 +104,16 @@ commit. `photos-source/3.webp` and `4.webp` are unused — `4.webp` in particula
 is a stylised illustration that reads as AI-generated, which works against the
 "human, real photos" positioning, so it is left out.
 
+### Bringing back the hero before/after slider
+
+Removed from `src/pages/index.astro` for now (no real matched pair). To restore:
+add `public/images/hero-before.webp` + `hero-after.webp` (the same photo,
+unedited vs edited, ~1600×1000), re-import `BeforeAfter` in `index.astro` and
+put the `<figure class="hero__figure">…<BeforeAfter client:load variant="hero"
+… /></figure>` back inside `<section class="hero">`, re-add the `.hero__figure`
+and `.ba--hero` rules to `global.css`, and uncomment the hero block in
+`scripts/gen-placeholders.mjs`. The `hero` data in `site.js` is still there.
+
 ### Bringing back the sample gallery / `/work/` page
 
 Removed for now because there were only placeholders. To restore once you have
@@ -111,7 +121,8 @@ real before/after images: re-add the `{ label: "Work", href: "/work/" }` entry
 to `nav` in `site.js`, restore the page with
 `git checkout "$(git rev-list -n1 HEAD -- src/pages/work.astro)~1" -- src/pages/work.astro`,
 and add a "Sample work" `<section>` back to the home page that maps
-`site.samples` through the still-present `<Sample>` component.
+`site.samples` through the still-present `<Sample>` component (`[data-reveal]`
+gives its images the "develop in" reveal).
 
 ### Social share image
 
