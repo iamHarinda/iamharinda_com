@@ -64,8 +64,8 @@ async function main() {
           <stop offset="1" stop-color="#ffb454"/>
         </linearGradient>
         <linearGradient id="seam" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#09090b"/>
-          <stop offset="1" stop-color="#09090b" stop-opacity="0"/>
+          <stop offset="0" stop-color="#08110c"/>
+          <stop offset="1" stop-color="#08110c" stop-opacity="0"/>
         </linearGradient>
       </defs>
       <rect x="${split}" y="0" width="150" height="${H}" fill="url(#seam)"/>
