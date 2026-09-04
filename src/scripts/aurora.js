@@ -1,10 +1,28 @@
-/* WebGL background — a slow flowing "silk" shader in green, in the spirit of
-   reactbits.dev's Silk component (smooth satin folds, soft light). No library.
-   Falls back to the CSS gradient on #bg when WebGL is unavailable, and renders a
-   single still frame when the viewer prefers reduced motion. ~2 KB gzipped. */
+/* WebGL background — reactbits "ColorBends": slow diagonal bands of one colour
+   flowing over near-black, faded toward the top. No library. Falls back to the
+   CSS gradient on #bg when WebGL is unavailable, and renders one still frame
+   when the viewer prefers reduced motion. ~2 KB gzipped.
+
+   Params mirror the reactbits <ColorBends> props — edit here: */
+const CB = {
+  color: "#A855F7", // base colour
+  speed: 0.1,
+  frequency: 1.2,
+  noise: 0.06,
+  bandWidth: 0.4,
+  rotation: 45, // degrees
+  fadeTop: 0.95,
+  iterations: 2,
+  intensity: 1.1,
+};
 
 const canvas = document.getElementById("bg");
 if (canvas) init(canvas);
+
+function hexToVec3(hex) {
+  const n = parseInt(hex.replace("#", ""), 16);
+  return [((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
+}
 
 function init(cv) {
   const gl =
