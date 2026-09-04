@@ -48,23 +48,23 @@ function init(cv) {
     float f2=fbm(p*2.3-vec2(t*0.8,t*0.3)+f1);
     float f3=fbm(p*3.1+vec2(-t*0.5,t*0.85)+f2*0.6);
 
-    vec3 bg=vec3(0.035,0.035,0.043);
-    vec3 teal=vec3(0.149,0.831,0.753);
-    vec3 violet=vec3(0.635,0.455,1.0);
-    vec3 amber=vec3(1.0,0.616,0.302);
+    vec3 bg=vec3(0.05,0.05,0.062);
+    vec3 teal=vec3(0.180,0.870,0.790);
+    vec3 violet=vec3(0.690,0.520,1.0);
+    vec3 amber=vec3(1.0,0.660,0.360);
 
     vec3 col=bg;
-    col=mix(col,teal,smoothstep(0.35,0.92,f1)*0.5);
-    col=mix(col,violet,smoothstep(0.42,0.96,f2)*0.5);
-    col=mix(col,amber,smoothstep(0.55,1.0,f3)*0.32);
+    col=mix(col,teal,smoothstep(0.30,0.88,f1)*0.72);
+    col=mix(col,violet,smoothstep(0.34,0.92,f2)*0.68);
+    col=mix(col,amber,smoothstep(0.46,0.98,f3)*0.5);
 
-    float vert=smoothstep(1.15,-0.15,uv.y);
-    col=mix(bg,col,0.26+0.5*vert);
+    float vert=smoothstep(1.2,-0.25,uv.y);
+    col=mix(bg,col,0.42+0.52*vert);
 
-    float vig=smoothstep(1.3,0.32,length((uv-0.5)*vec2(1.1,1.0)));
-    col*=0.55+0.45*vig;
+    float vig=smoothstep(1.45,0.28,length((uv-0.5)*vec2(1.08,1.0)));
+    col*=0.72+0.28*vig;
 
-    col+=(h(gl_FragCoord.xy)-0.5)*0.02;
+    col+=(h(gl_FragCoord.xy)-0.5)*0.018;
     gl_FragColor=vec4(col,1.0);
   }`;
 
