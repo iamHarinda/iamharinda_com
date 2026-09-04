@@ -747,6 +747,34 @@ p {
   background: var(--paper);
 }
 
+/* Free-sample callout — quiet card, one accent edge, action on the right. */
+.callout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+}
+.callout h2 {
+  font-size: var(--step-2);
+}
+.callout p {
+  margin-top: var(--space-1);
+  color: var(--ink-soft);
+  max-width: 48ch;
+}
+.callout .btn {
+  flex: none;
+}
+.section--dim .callout {
+  background: var(--paper);
+}
+
 .list-check {
   max-width: var(--measure);
 }
