@@ -329,8 +329,7 @@ What could still cost a point or two:
 - **Font swap (small CLS / late text paint).** Mitigated with `font-display: swap`
   and a close system fallback stack; the two above-the-fold faces are preloaded.
 - **Largest image.** On About, `about-harinda.webp` is the LCP element — it is
-  loaded eager with `fetchpriority="high"` and kept ~70 KB.
-- **Large hero image.** Keep the real hero WebP under ~200 KB; it is loaded
-  `eager` with `fetchpriority="high"` so it is the LCP element.
+  loaded eager with `fetchpriority="high"` and kept ~70 KB. Keep any future hero
+  image to the same budget.
 - Everything else (CSS inlined into `<head>`, no third-party scripts, no
   webfonts from Google, long cache headers) is already in the green.
