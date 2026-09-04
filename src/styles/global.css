@@ -1154,6 +1154,22 @@ p {
   justify-content: center;
 }
 
+/* Lead image on a content page (e.g. About). */
+.page-figure {
+  margin: 0 0 var(--space-5);
+}
+.page-figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+}
+.page-figure figcaption {
+  margin-top: var(--space-2);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
 /* --------------------------------------------------------------------------
    20. Motion — a restrained layer that matches the subject (photo editing).
    Everything here is disabled under prefers-reduced-motion.
