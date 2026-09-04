@@ -309,8 +309,8 @@ export const site = {
       caption: "Product — colour accuracy",
       width: 1200,
       height: 800,
-      before: { src: "/images/sample-6-before.webp", alt: "TODO — unedited product shot, off colour." },
-      after: { src: "/images/sample-6-after.webp", alt: "TODO — accurate product colour on a neutral background." },
+      before: { src: "/images/sample-6-before.webp", alt: "Unedited product shot with inaccurate colour." },
+      after: { src: "/images/sample-6-after.webp", alt: "Product shot with accurate colour on a neutral background." },
     },
   ],
 
