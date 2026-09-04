@@ -8,7 +8,7 @@
 export const site = {
   name: "iamharinda",
   // Your name as it should appear in schema.org / "About". TODO: confirm.
-  personName: "Harinda",
+  personName: "Harinda Fernando",
   domain: "www.iamharinda.com",
   url: "https://www.iamharinda.com",
 
@@ -18,7 +18,23 @@ export const site = {
 
   // Full site description for meta tags and structured data.
   description:
-    "Human photo editing and colour correction for photographers and studios in the United States, Canada and Europe. No AI presets, no one-click batch looks. True colours — skin stays skin, whites stay white. Unlimited revisions, payment after delivery.",
+    "Human photo editing and colour correction for photographers and studios in the United States, Canada and Europe. No AI presets, no one-click batch looks. True colours — skin stays skin, whites stay white. Free sample edit, unlimited revisions, payment after delivery.",
+
+  // The free-sample offer — surfaced across the site. Edit the wording here.
+  freeSample: {
+    short: "Free sample edit",
+    line: "Send two or three photos and get them back fully edited, free, before you decide anything.",
+    cta: "Get a free sample edit",
+  },
+
+  // Public social proof from the Fiverr profile. Shown as linked text only —
+  // not wired into structured data until real reviews are published on this
+  // site. TODO: confirm these numbers before launch.
+  fiverrStats: {
+    rating: "4.9",
+    reviews: 183,
+    ordersPlus: 250,
+  },
 
   // ── Contact ───────────────────────────────────────────────────────────────
   contact: {
