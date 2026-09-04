@@ -74,8 +74,10 @@ search for **`TODO`**. At minimum, fill in:
 
 ### Photos
 
-Put your images in **`public/images/`**. The filenames are listed in `site.js`
-under `hero` and `samples` — keep the same names, or change them in `site.js`.
+Put your images in **`public/images/`**. The hero before/after is the only one
+used right now; its filenames are in `site.js` under `hero` — keep the same
+names, or change them there. (`site.js` also has a `samples` list for the
+sample gallery, which is disabled for now — see the next note.)
 
 - Export as **WebP**. Keep the pixel dimensions close to the `width`/`height`
   in `site.js` (they set the aspect ratio and prevent layout shift).
@@ -83,6 +85,16 @@ under `hero` and `samples` — keep the same names, or change them in `site.js`.
 - Each "before" and "after" must line up (same crop) so the slider looks right.
 - **Write real `alt` text** for every image in `site.js` — describe the colour
   problem in the "before" and the result in the "after".
+
+### Bringing back the sample gallery / `/work/` page
+
+Removed for now because there were only placeholders. To restore once you have
+real before/after images: re-add the `{ label: "Work", href: "/work/" }` entry
+to `nav` in `site.js`, recreate `src/pages/work.astro`
+(`git show HEAD~:src/pages/work.astro` has the last version), and drop the
+"Free sample callout" comment block back to a "Sample work" `<section>` on the
+home page that maps `site.samples` through the still-present `<Sample>`
+component.
 
 ### Social share image
 
