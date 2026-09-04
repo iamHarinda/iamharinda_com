@@ -301,8 +301,8 @@ export const site = {
       caption: "Event — high-ISO clean-up",
       width: 1200,
       height: 800,
-      before: { src: "/images/sample-5-before.webp", alt: "TODO — unedited event photo, noisy shadows." },
-      after: { src: "/images/sample-5-after.webp", alt: "TODO — cleaned shadows, corrected colour." },
+      before: { src: "/images/sample-5-before.webp", alt: "Unedited event photo with noisy shadows from a high ISO." },
+      after: { src: "/images/sample-5-after.webp", alt: "Event photo with cleaned shadows and corrected colour." },
     },
     {
       id: "sample-6",
