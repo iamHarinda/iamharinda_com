@@ -322,13 +322,25 @@ p {
 }
 
 .eyebrow {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-size: var(--step--1);
   color: var(--ink-faint);
   margin-bottom: var(--space-2);
 }
+.eyebrow::before {
+  content: "";
+  flex: none;
+  width: 1.6rem;
+  height: 1px;
+  background: var(--accent);
+}
 .section--band .eyebrow {
   color: var(--on-band-soft);
+}
+.section--band .eyebrow::before {
+  background: var(--on-band-soft);
 }
 
 /* --------------------------------------------------------------------------
