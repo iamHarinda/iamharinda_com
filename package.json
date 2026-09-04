@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "setup": "npm run fetch:fonts && npm run gen:placeholders",
+    "setup": "npm run fetch:fonts && npm run gen:placeholders && npm run optimise:photos",
     "fetch:fonts": "node scripts/fetch-fonts.mjs",
     "gen:placeholders": "node scripts/gen-placeholders.mjs",
     "optimise:photos": "node scripts/optimise-photos.mjs"
