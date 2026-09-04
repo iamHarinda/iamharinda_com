@@ -106,5 +106,40 @@ const graph = [webSite(), ...jsonLd];
       <slot />
     </main>
     <Footer />
+
+    <script>
+      // Tiny motion layer. All of it is opt-out via prefers-reduced-motion,
+      // and the page is fully readable if this never runs.
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // 1. Header gains a shadow once the page is scrolled.
+      const header = document.querySelector(".site-header");
+      if (header) {
+        const onScroll = () =>
+          header.classList.toggle("is-stuck", window.scrollY > 4);
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      }
+
+      // 2. "Develop in" reveal for anything tagged [data-reveal]: it starts
+      //    desaturated and low-contrast, like a RAW file rendering, then
+      //    resolves as it enters the viewport. Once only.
+      const targets = document.querySelectorAll("[data-reveal]");
+      if (reduce || !("IntersectionObserver" in window)) {
+        targets.forEach((el) => el.classList.add("is-revealed"));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (!e.isIntersecting) continue;
+              e.target.classList.add("is-revealed");
+              io.unobserve(e.target);
+            }
+          },
+          { rootMargin: "0px 0px -12% 0px", threshold: 0.12 },
+        );
+        targets.forEach((el) => io.observe(el));
+      }
+    </script>
   </body>
 </html>
