@@ -54,7 +54,7 @@ function init(cv) {
   #define ITER      ${Math.max(1, Math.round(CB.iterations))}
   #define INTENSITY ${CB.intensity.toFixed(3)}
   const vec3 COLOR = vec3(${c[0].toFixed(4)}, ${c[1].toFixed(4)}, ${c[2].toFixed(4)});
-  const vec3 FLOORC = vec3(0.020, 0.020, 0.032);
+  const vec3 FLOORC = vec3(0.014, 0.013, 0.024);
 
   float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
   float vnoise(vec2 p){
