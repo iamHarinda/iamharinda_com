@@ -76,17 +76,15 @@ search for **`TODO`**. At minimum, fill in:
 
 ### Photos
 
-Put your images in **`public/images/`**. The hero before/after is the only one
-used right now; its filenames are in `site.js` under `hero` — keep the same
-names, or change them there. (`site.js` also has a `samples` list for the
-sample gallery, which is disabled for now — see the next note.)
+The only photo on the live site right now is the **About page portrait** (see
+the next section). The hero before/after slider and the sample gallery are both
+removed until there are real images — restore notes for each are below.
 
-- Export as **WebP**. Keep the pixel dimensions close to the `width`/`height`
-  in `site.js` (they set the aspect ratio and prevent layout shift).
-- Suggested sizes: hero `1600×1000`, samples `1200×800`. Aim for < 200 KB each.
-- Each "before" and "after" must line up (same crop) so the slider looks right.
-- **Write real `alt` text** for every image in `site.js` — describe the colour
-  problem in the "before" and the result in the "after".
+When you add before/after images, export them as **WebP**, keep pixel
+dimensions close to the `width`/`height` in `site.js` (they set the aspect ratio
+and prevent layout shift), aim for < 200 KB each, make each "before" and "after"
+line up on the same crop, and write real `alt` text describing the colour
+problem in the "before" and the result in the "after".
 
 ### Portraits (About page, OG card, structured data)
 
