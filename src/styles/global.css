@@ -1271,6 +1271,7 @@ p {
   .quote:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
+    box-shadow: var(--lift-hover);
   }
   .sample .ba:hover {
     border-color: var(--accent);
@@ -1279,8 +1280,13 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .site-header {
+  .site-header,
+  .btn {
     transition: none;
+  }
+  .hero::before {
+    animation: none;
+    transform: none;
   }
   [data-reveal],
   [data-reveal]:not(.is-revealed) {
