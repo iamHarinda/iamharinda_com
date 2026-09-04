@@ -3,9 +3,10 @@ import BeforeAfter from "./BeforeAfter.jsx";
 const { sample } = Astro.props;
 ---
 
-<figure class="sample" id={sample.id}>
+<figure class="sample" id={sample.id} data-reveal>
   <BeforeAfter
     client:visible
+    sweep="inview"
     before={sample.before}
     after={sample.after}
     width={sample.width}
