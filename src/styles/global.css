@@ -1078,6 +1078,7 @@ p {
 }
 .footer a {
   color: var(--on-band);
+  overflow-wrap: anywhere;
 }
 .footer__grid {
   display: grid;
