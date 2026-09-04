@@ -1247,7 +1247,7 @@ body::after {
 .footer {
   border-top: 1px solid var(--hairline);
   padding-block: var(--space-6);
-  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  background: rgb(9 8 14 / 0.72);
 }
 .footer a {
   color: var(--text-dim);
