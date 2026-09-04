@@ -1190,8 +1190,8 @@ body::after {
 .field select:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--c-teal);
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--c-teal) 25%, transparent);
+  border-color: var(--line);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--line) 25%, transparent);
 }
 .field textarea {
   min-height: 8rem;
