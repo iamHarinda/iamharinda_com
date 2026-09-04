@@ -90,11 +90,10 @@ sample gallery, which is disabled for now — see the next note.)
 
 Removed for now because there were only placeholders. To restore once you have
 real before/after images: re-add the `{ label: "Work", href: "/work/" }` entry
-to `nav` in `site.js`, recreate `src/pages/work.astro`
-(`git show HEAD~:src/pages/work.astro` has the last version), and drop the
-"Free sample callout" comment block back to a "Sample work" `<section>` on the
-home page that maps `site.samples` through the still-present `<Sample>`
-component.
+to `nav` in `site.js`, restore the page with
+`git checkout "$(git rev-list -n1 HEAD -- src/pages/work.astro)~1" -- src/pages/work.astro`,
+and add a "Sample work" `<section>` back to the home page that maps
+`site.samples` through the still-present `<Sample>` component.
 
 ### Social share image
 
