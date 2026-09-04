@@ -990,8 +990,13 @@ p {
 
 .contact-grid {
   display: grid;
-  gap: var(--space-6) var(--space-5);
+  gap: var(--space-5);
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+}
+@media (min-width: 46rem) {
+  .contact-grid {
+    gap: var(--space-6) var(--space-5);
+  }
 }
 @media (max-width: 46rem) {
   .contact-grid {
