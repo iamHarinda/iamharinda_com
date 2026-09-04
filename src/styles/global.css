@@ -841,6 +841,7 @@ p {
   border: 1px solid var(--hairline);
   border-left: 3px solid var(--accent);
   border-radius: var(--radius);
+  box-shadow: var(--lift);
 }
 .callout h2 {
   font-size: var(--step-2);
