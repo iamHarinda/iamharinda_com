@@ -691,6 +691,9 @@ body::after {
   max-width: 62rem;
   margin-inline: auto;
 }
+.hero .presence {
+  margin-bottom: var(--space-4);
+}
 .hero__text h1 {
   font-size: var(--step-5);
 }
