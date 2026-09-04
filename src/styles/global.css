@@ -202,10 +202,10 @@ p {
   /* Fallback gradient — shown when WebGL is unavailable or the canvas is
      removed; also the paint under a transparent canvas frame. */
   background:
-    radial-gradient(75% 60% at 15% -10%, rgb(51 184 122 / 0.32), transparent 62%),
-    radial-gradient(60% 55% at 92% 8%, rgb(38 150 110 / 0.3), transparent 62%),
-    radial-gradient(85% 65% at 55% 112%, rgb(120 200 90 / 0.16), transparent 62%),
-    #08120d;
+    linear-gradient(155deg, transparent 0 38%, rgb(168 85 247 / 0.28) 52%, transparent 66%),
+    linear-gradient(155deg, transparent 0 60%, rgb(168 85 247 / 0.2) 74%, transparent 88%),
+    radial-gradient(80% 60% at 50% 115%, rgb(244 114 182 / 0.14), transparent 60%),
+    #0a0910;
 }
 /* Edge vignette, for text contrast toward the frame. */
 body::before {
