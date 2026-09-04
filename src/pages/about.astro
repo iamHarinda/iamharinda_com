@@ -25,6 +25,19 @@ const jsonLd = [
         <h1 class="h1">One person, one calibrated screen.</h1>
       </div>
 
+      <figure class="page-figure" data-reveal>
+        <img
+          src={site.aboutImage.src}
+          alt={site.aboutImage.alt}
+          width={site.aboutImage.width}
+          height={site.aboutImage.height}
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <figcaption>{site.personName} — every file is judged by eye on this screen.</figcaption>
+      </figure>
+
       <div class="prose">
         <p>
           I am {site.personName}, and I edit photos for a living. It is one person,
