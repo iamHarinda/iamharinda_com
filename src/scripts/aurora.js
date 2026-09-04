@@ -1,7 +1,7 @@
-/* WebGL aurora background — a slow colour grade in motion (teal / violet /
-   amber over near-black). No library. Falls back to the CSS gradient on #bg
-   when WebGL is unavailable, and renders a single still frame when the viewer
-   prefers reduced motion. ~2 KB minified + gzipped. */
+/* WebGL background — a slow flowing "silk" shader in green, in the spirit of
+   reactbits.dev's Silk component (smooth satin folds, soft light). No library.
+   Falls back to the CSS gradient on #bg when WebGL is unavailable, and renders a
+   single still frame when the viewer prefers reduced motion. ~2 KB gzipped. */
 
 const canvas = document.getElementById("bg");
 if (canvas) init(canvas);
