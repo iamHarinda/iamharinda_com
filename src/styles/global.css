@@ -431,20 +431,26 @@ p {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--hairline);
-  background: color-mix(in srgb, var(--paper) 88%, transparent);
-  backdrop-filter: saturate(120%) blur(8px);
-  -webkit-backdrop-filter: saturate(120%) blur(8px);
+  /* Solid fallback first; the translucent version only applies where both
+     color-mix and backdrop-filter are supported. */
+  background: var(--paper);
   transition: box-shadow 0.22s ease, border-color 0.22s ease,
     background-color 0.22s ease;
 }
 .site-header.is-stuck {
   border-bottom-color: transparent;
-  background: color-mix(in srgb, var(--paper) 94%, transparent);
   box-shadow: 0 1px 0 var(--hairline), 0 10px 24px rgb(0 0 0 / 0.06);
 }
-@supports not (backdrop-filter: blur(1px)) {
-  .site-header {
-    background: var(--paper);
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  @media (min-width: 44rem) {
+    .site-header {
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: saturate(120%) blur(8px);
+      -webkit-backdrop-filter: saturate(120%) blur(8px);
+    }
+    .site-header.is-stuck {
+      background: color-mix(in srgb, var(--paper) 94%, transparent);
+    }
   }
 }
 .site-header__inner {
