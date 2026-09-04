@@ -878,7 +878,12 @@ p {
 .quotes {
   display: grid;
   gap: var(--space-4);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  grid-template-columns: 1fr;
+}
+@media (min-width: 46rem) {
+  .quotes {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .quote {
   border: 1px solid var(--hairline);
