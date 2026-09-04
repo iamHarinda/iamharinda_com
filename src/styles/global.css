@@ -277,8 +277,24 @@ p {
 }
 
 .section--band {
-  background: var(--band);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* neutral (R≈G≈B) — a grey wall catching a little light from the top-left */
+  background: linear-gradient(176deg, #626262, #585858 62%, #545454);
   color: var(--on-band);
+}
+.section--band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    58% 80% at 12% -10%,
+    rgb(255 255 255 / 0.07),
+    transparent 60%
+  );
+  pointer-events: none;
 }
 .section--band h2,
 .section--band h3 {
