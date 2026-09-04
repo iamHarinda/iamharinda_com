@@ -415,6 +415,13 @@ p {
   gap: var(--space-3);
   align-items: center;
 }
+/* On narrow screens, stacked buttons read better full-width and equal. */
+@media (max-width: 26rem) {
+  .btn-row > .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
 
 .text-link {
   font-weight: 500;
