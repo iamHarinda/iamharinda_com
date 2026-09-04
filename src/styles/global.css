@@ -208,7 +208,8 @@ p {
     radial-gradient(80% 60% at 50% 115%, rgb(244 114 182 / 0.14), transparent 60%),
     #0a0910;
 }
-/* Edge vignette, for text contrast toward the frame. */
+/* Dark scrim over the whole background — a soft floor everywhere plus a
+   stronger vignette toward the frame — so text stays crisp over the shader. */
 body::before {
   content: "";
   position: fixed;
@@ -216,9 +217,9 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background: radial-gradient(
-    125% 125% at 50% 30%,
-    transparent 48%,
-    rgb(0 0 0 / 0.42) 100%
+    130% 120% at 50% 12%,
+    rgb(0 0 0 / 0.22),
+    rgb(0 0 0 / 0.62) 100%
   );
 }
 body::after {
