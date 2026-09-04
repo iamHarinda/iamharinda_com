@@ -65,10 +65,15 @@ const io = new IntersectionObserver(
 document
   .querySelectorAll(".split, .reveal, .rise")
   .forEach((el) => io.observe(el));
-// kick the hero heading immediately (it is above the fold)
-requestAnimationFrame(() =>
-  document.querySelectorAll(".hero .split").forEach((el) => el.classList.add("is-in")),
-);
+// reveal anything already on screen at load, without waiting for a scroll
+requestAnimationFrame(() => {
+  document.querySelectorAll(".split, .reveal, .rise").forEach((el) => {
+    if (el.getBoundingClientRect().top < innerHeight * 0.92) {
+      el.classList.add("is-in");
+      io.unobserve(el);
+    }
+  });
+});
 
 /* ---- card spotlight + tilt ------------------------------------------------ */
 if (canHover && !reduce) {
