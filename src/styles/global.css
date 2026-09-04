@@ -67,16 +67,17 @@
   --hairline: rgb(255 255 255 / 0.1);
   --hairline-strong: rgb(255 255 255 / 0.2);
 
-  --text: #f4f4f6;
-  --text-dim: #a7a7b3;
-  --text-faint: #71717f;
+  --text: #f6f6f8;
+  --text-dim: #cacad4;
+  --text-faint: #9d9daa;
   --on-accent: #0a0a0c;
 
-  /* accents tuned to sit on the purple ColorBends background */
-  --c-teal: #38bdf8; /* sky — the cool counterpoint */
+  /* accents tuned to sit on the purple ColorBends background — no plain blue */
+  --c-teal: #8b7bff; /* periwinkle — the cool end of the gradient */
   --c-violet: #a855f7; /* the ColorBends purple */
   --c-amber: #f472b6; /* pink — the warm pop */
   --grad: linear-gradient(100deg, var(--c-teal), var(--c-violet) 50%, var(--c-amber));
+  --line: #f472b6; /* link underlines + focus rings */
   --grad-soft: linear-gradient(
     100deg,
     color-mix(in oklab, var(--c-teal) 70%, white),
