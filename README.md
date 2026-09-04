@@ -1,16 +1,18 @@
 # iamharinda.com
 
 Personal business site for a one-person photo editing and colour-correction
-service. Built with **Astro** (static output) and a few **React islands**, so
-every page is real HTML at build time — readable by Google *and* by AI crawlers
-(GPTBot, ClaudeBot, PerplexityBot, Google-Extended) that do not run JavaScript.
-The build output in `dist/` is plain static files plus one PHP script, which is
-all Hostinger Business shared hosting needs.
+service. Built with **Astro** (static output), so every page is real HTML at
+build time — readable by Google *and* by AI crawlers (GPTBot, ClaudeBot,
+PerplexityBot, Google-Extended) that do not run JavaScript. The build output in
+`dist/` is plain static files plus one PHP script, which is all Hostinger
+Business shared hosting needs.
 
-- **Stack:** Astro + `@astrojs/react` + `@astrojs/sitemap`, hand-written CSS, no
-  Tailwind, no UI kit.
-- **Interactive bits (React):** the before/after slider, the FAQ accordion, the
-  mobile menu. Nothing else ships JavaScript.
+- **Stack:** Astro + `@astrojs/sitemap`, hand-written CSS, no Tailwind, no UI kit.
+- **JavaScript:** none from a framework. About 1 KB of hand-written vanilla JS
+  total — the mobile-menu toggle, the sticky-header shadow, and a scroll-in
+  reveal. The FAQ is a native `<details>` disclosure. `@astrojs/react` is still
+  installed for the dormant before/after component (see restore notes below) but
+  nothing hydrates, so no runtime ships.
 - **Server code:** `public/contact.php` only — the one server capability
   Hostinger gives us.
 - **Canonical URL:** `https://www.iamharinda.com` (non-www redirects to www).
