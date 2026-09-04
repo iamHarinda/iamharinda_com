@@ -224,13 +224,13 @@ Squash the `auto:` commits at merge time if you prefer a tidy `live` history
 The UI has a small, subject-appropriate motion layer, all of it disabled under
 `prefers-reduced-motion`:
 
-- the before/after divider plays a one-time **reveal sweep** (on load for the
-  hero, on scroll-in for the samples) so it reads as draggable, and stops the
-  instant you touch it;
-- sample images **"develop in"** — they start desaturated and soft, like a RAW
-  file rendering, and resolve as they enter the viewport;
 - the header is sticky and gains a shadow once the page scrolls;
 - cards lift slightly on hover.
+
+A "develop in" reveal (images start desaturated and soft, like a RAW file
+rendering, then resolve on scroll-in) is wired up via `[data-reveal]` in
+`global.css` and the observer in `BaseLayout.astro`, but has no targets right
+now — it comes back with the sample gallery.
 
 ## Project layout
 
