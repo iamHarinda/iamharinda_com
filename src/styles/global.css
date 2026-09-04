@@ -1267,17 +1267,6 @@ body::after {
   border-top: 1px solid var(--hairline);
 }
 
-/* scroll-in fade for generic blocks (fx.js adds .is-in) */
-.rise {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
-.rise.is-in {
-  opacity: 1;
-  transform: none;
-}
-
 /* 22. Reduced motion ------------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
