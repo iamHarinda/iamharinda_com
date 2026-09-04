@@ -10,8 +10,8 @@
  */
 
 // ── Config ──────────────────────────────────────────────────────────────────
-$TO      = 'hello@iamharinda.com';                 // TODO: must be a real mailbox on this domain
-$FROM    = 'no-reply@iamharinda.com';              // TODO: an address that exists on this domain
+$TO      = 'hello@iamharinda.com';                 // must be a real mailbox on this domain
+$FROM    = 'no-reply@iamharinda.com';              // must be an address that exists on this domain
 $SUBJECT = 'New enquiry from iamharinda.com';
 $SITE    = 'https://www.iamharinda.com';
 $RETURN  = $SITE . '/contact/';
