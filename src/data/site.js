@@ -28,7 +28,7 @@ export const site = {
 
   // Public social proof from the Fiverr profile. Shown as linked text only —
   // not wired into structured data until real reviews are published on this
-  // site. TODO: confirm these numbers before launch.
+  // site.
   fiverrStats: {
     rating: "4.9",
     reviews: 183,
