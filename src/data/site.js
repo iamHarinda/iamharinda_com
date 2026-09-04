@@ -163,28 +163,47 @@ export const site = {
   // can, add the reviewer's first name and role/location. Delete any you do
   // not have yet — three real ones beat six invented ones, and do NOT add an
   // aggregateRating to the structured data until real reviews are on the page.
-  // These reflect real feedback from the Fiverr profile but are PARAPHRASED.
-  // TODO before launch: replace each with the exact wording of a real Fiverr
-  // review, and add the reviewer's first name + role/location where you have
-  // permission. Delete any you cannot back with a real review.
+  // These reflect real feedback from the Fiverr profile but are PARAPHRASED
+  // from public listings. TODO before launch: paste the exact wording of each
+  // review from your Fiverr dashboard, and add the reviewer's first name +
+  // country/role where you have it. Keep only the ones you can back with a
+  // real review.
   testimonials: [
     {
       quote:
         "The photos came back clean, vibrant and professionally done. A great eye for detail — everything was enhanced in a natural, balanced way.",
-      name: "TODO — reviewer first name",
-      role: "TODO — role / location (paraphrased from Fiverr)",
+      name: "TODO — name",
+      role: "Fiverr review · verify wording",
     },
     {
       quote:
         "I sent some really dark pictures and they came back looking exactly how I wanted. Fast, too.",
-      name: "TODO — reviewer first name",
-      role: "TODO — role / location (paraphrased from Fiverr)",
+      name: "TODO — name",
+      role: "Fiverr review · verify wording",
     },
     {
       quote:
-        "TODO — a third real review, verbatim, with the reviewer's name and where they work.",
-      name: "TODO — reviewer first name",
-      role: "TODO — role / location",
+        "Fernando was very professional — quick response time and fast delivery, and really flexible. I'll definitely use his services again.",
+      name: "TODO — name",
+      role: "Fiverr review · verify wording",
+    },
+    {
+      quote:
+        "Fernando did an excellent job editing some portraits for me. Super happy with the edits.",
+      name: "TODO — name",
+      role: "Fiverr review · verify wording",
+    },
+    {
+      quote:
+        "The whole process was really smooth — quick replies, good communication, fast delivery. No drama, just solid work.",
+      name: "TODO — name",
+      role: "Fiverr review · verify wording",
+    },
+    {
+      quote:
+        "TODO — paste one more real review here, verbatim, with a name.",
+      name: "TODO — name",
+      role: "Fiverr review",
     },
   ],
 
