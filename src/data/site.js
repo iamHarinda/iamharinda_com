@@ -277,8 +277,8 @@ export const site = {
       caption: "Studio portrait — skin retouch",
       width: 1200,
       height: 800,
-      before: { src: "/images/sample-2-before.webp", alt: "TODO — unedited studio portrait." },
-      after: { src: "/images/sample-2-after.webp", alt: "TODO — retouched portrait with texture kept." },
+      before: { src: "/images/sample-2-before.webp", alt: "Unedited studio portrait before retouching." },
+      after: { src: "/images/sample-2-after.webp", alt: "Studio portrait after skin retouching with pores and texture kept." },
     },
     {
       id: "sample-3",
