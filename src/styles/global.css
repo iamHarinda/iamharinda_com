@@ -593,11 +593,34 @@ p {
 }
 
 /* --------------------------------------------------------------------------
-   9. Hero + before/after slider (React island: BeforeAfter)
+   9. Hero
    -------------------------------------------------------------------------- */
 
 .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   border-bottom: 1px solid var(--hairline);
+}
+/* Ambient studio light — a soft neutral glow that drifts like a moving
+   softbox. Compositor-only (transform), and held still for reduced motion. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  z-index: -1;
+  background:
+    radial-gradient(38% 42% at 26% 20%, rgb(255 255 255 / 0.75), transparent 70%),
+    radial-gradient(46% 50% at 84% 92%, rgb(0 0 0 / 0.04), transparent 72%);
+  animation: hero-drift 28s ease-in-out infinite alternate;
+}
+@keyframes hero-drift {
+  from {
+    transform: translate3d(-2.5%, -1.5%, 0) scale(1.02);
+  }
+  to {
+    transform: translate3d(3%, 2.5%, 0) scale(1.09);
+  }
 }
 .hero__text {
   padding-block: clamp(2.75rem, 1.5rem + 6vw, 5.5rem);
