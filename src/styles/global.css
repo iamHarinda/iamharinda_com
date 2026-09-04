@@ -1156,9 +1156,6 @@ p {
   .site-header {
     transition: none;
   }
-  .ba.is-sweeping {
-    animation: none;
-  }
   [data-reveal],
   [data-reveal]:not(.is-revealed) {
     transition: none;
