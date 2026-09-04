@@ -37,9 +37,9 @@ export const site = {
 
   // ── Contact ───────────────────────────────────────────────────────────────
   contact: {
-    email: "hello@iamharinda.com", // TODO: create this mailbox in Hostinger (README step 5)
+    email: "hello@iamharinda.com", // create this mailbox in Hostinger (README step 5)
     // Digits only — international format, no "+", no spaces. Used to build wa.me links.
-    whatsapp: "0000000000", // TODO: e.g. "14155550123"
+    whatsapp: "447355229599",
     whatsappNote: "Message any time. Replies within one working day.",
     fiverr: "https://www.fiverr.com/iamharinda",
   },
