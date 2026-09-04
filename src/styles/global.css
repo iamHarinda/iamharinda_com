@@ -792,6 +792,15 @@ p {
 .section--dim .callout {
   background: var(--paper);
 }
+@media (max-width: 34rem) {
+  .callout {
+    padding: var(--space-4);
+  }
+  .callout .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
 
 .list-check {
   max-width: var(--measure);
