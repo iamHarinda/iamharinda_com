@@ -551,11 +551,11 @@ p {
   border-bottom: 1px solid var(--hairline);
 }
 .hero__text {
-  padding-block: var(--space-6) var(--space-5);
+  padding-block: clamp(2.25rem, 1rem + 5vw, 4rem) var(--space-5);
 }
 .hero__text h1 {
   font-size: var(--step-5);
-  max-width: 16ch;
+  max-width: 18ch;
 }
 .hero__text p {
   margin-top: var(--space-3);
