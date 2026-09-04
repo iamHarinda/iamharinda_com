@@ -170,7 +170,7 @@ ol {
 }
 a {
   color: inherit;
-  text-decoration-color: color-mix(in oklab, var(--c-teal) 60%, transparent);
+  text-decoration-color: color-mix(in oklab, var(--line) 55%, transparent);
   text-underline-offset: 0.18em;
 }
 h1,
