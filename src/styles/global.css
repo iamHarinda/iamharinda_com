@@ -1075,7 +1075,7 @@ body::after {
   font-weight: 600;
 }
 .stars {
-  color: var(--c-amber);
+  color: #f5b942;
   letter-spacing: 0.1em;
   font-size: var(--step--1);
   margin-bottom: var(--space-2);
