@@ -131,9 +131,8 @@ Replace `public/og/og-default.jpg` with a real **1200×630** JPG (or let
 
 ### The `llms.txt` file
 
-`public/llms.txt` is a plain-text summary for AI answer engines. It has its own
-`TODO` note at the bottom — update the name, WhatsApp link and email to match
-`site.js`.
+`public/llms.txt` is a plain-text summary for AI answer engines. Keep its name,
+WhatsApp link, email and Fiverr counts in sync with `site.js` whenever they change.
 
 ---
 
