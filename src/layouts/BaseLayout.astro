@@ -90,7 +90,7 @@ const graph = [webSite(), ...jsonLd];
     <meta name="generator" content={Astro.generator} />
 
     {
-      jsonLd.map((node) => (
+      graph.map((node) => (
         <script
           type="application/ld+json"
           set:html={JSON.stringify(node)}
