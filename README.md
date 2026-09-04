@@ -86,6 +86,24 @@ sample gallery, which is disabled for now — see the next note.)
 - **Write real `alt` text** for every image in `site.js` — describe the colour
   problem in the "before" and the result in the "after".
 
+### Portraits (About page, OG card, structured data)
+
+Full-resolution source portraits live in **`photos-source/`** (committed, but
+not deployed). `npm run optimise:photos` turns them into the exact assets the
+site uses:
+
+| Output | From | Used by |
+| --- | --- | --- |
+| `public/images/about-harinda.webp` (1600×1067) | `photos-source/1.webp` | About page lead image |
+| `public/images/harinda-portrait.webp` (800×800) | `photos-source/2.webp` | `Person` structured data |
+| `public/og/og-default.jpg` (1200×630) | `photos-source/2.webp` | social share card |
+
+To change them: drop new files into `photos-source/` (keep the names, or edit
+the paths in `scripts/optimise-photos.mjs`), run `npm run optimise:photos`,
+commit. `photos-source/3.webp` and `4.webp` are unused — `4.webp` in particular
+is a stylised illustration that reads as AI-generated, which works against the
+"human, real photos" positioning, so it is left out.
+
 ### Bringing back the sample gallery / `/work/` page
 
 Removed for now because there were only placeholders. To restore once you have
