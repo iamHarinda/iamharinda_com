@@ -26,46 +26,44 @@ function init(cv) {
   uniform vec2 u_res;
   uniform float u_time;
 
-  float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
-  float noise(vec2 p){
-    vec2 i=floor(p),f=fract(p);
-    vec2 u=f*f*(3.-2.*f);
-    return mix(mix(h(i),h(i+vec2(1,0)),u.x),
-               mix(h(i+vec2(0,1)),h(i+vec2(1,1)),u.x),u.y);
+  float grain(vec2 p){
+    float G = 2.71828182845904523536;
+    vec2 r = G * sin(G * p);
+    return fract(r.x * r.y * (1.0 + p.x));
   }
-  float fbm(vec2 p){
-    float v=0.,a=.5;
-    mat2 m=mat2(1.6,1.2,-1.2,1.6);
-    for(int i=0;i<4;i++){v+=a*noise(p);p=m*p;a*=.5;}
-    return v;
-  }
+  mat2 rot(float a){ float c=cos(a), s=sin(a); return mat2(c,-s,s,c); }
+
   void main(){
-    vec2 uv=gl_FragCoord.xy/u_res;
-    vec2 p=uv; p.x*=u_res.x/u_res.y;
-    float t=u_time*0.028;
+    vec2 uv = gl_FragCoord.xy / u_res;
+    float aspect = u_res.x / u_res.y;
+    vec2 p = uv;
+    p.x *= aspect;
 
-    float f1=fbm(p*1.5+vec2(t,t*0.55));
-    float f2=fbm(p*2.3-vec2(t*0.8,t*0.3)+f1);
-    float f3=fbm(p*3.1+vec2(-t*0.5,t*0.85)+f2*0.6);
+    float rnd = grain(gl_FragCoord.xy);
+    vec2 tex = rot(0.38) * p * 2.3;
+    float t = 0.26 * u_time;
 
-    vec3 bg=vec3(0.05,0.05,0.062);
-    vec3 teal=vec3(0.180,0.870,0.790);
-    vec3 violet=vec3(0.690,0.520,1.0);
-    vec3 amber=vec3(1.0,0.660,0.360);
+    tex.y += 0.03 * sin(8.0 * tex.x - t);
 
-    vec3 col=bg;
-    col=mix(col,teal,smoothstep(0.30,0.88,f1)*0.72);
-    col=mix(col,violet,smoothstep(0.34,0.92,f2)*0.68);
-    col=mix(col,amber,smoothstep(0.46,0.98,f3)*0.5);
+    // silk fold pattern (reactbits Silk, adapted) — 0.2 .. 1.0
+    float pattern = 0.6 + 0.4 * sin(
+      5.0 * (tex.x + tex.y + cos(3.0 * tex.x + 5.0 * tex.y) + 0.02 * t)
+      + sin(20.0 * (tex.x + tex.y - 0.1 * t))
+    );
 
-    float vert=smoothstep(1.2,-0.25,uv.y);
-    col=mix(bg,col,0.42+0.52*vert);
+    // deep emerald in the shadows -> bright mint in the folds
+    vec3 deep = vec3(0.040, 0.150, 0.105);
+    vec3 lit  = vec3(0.200, 0.720, 0.460);
+    vec3 col = mix(deep, lit, pattern);
 
-    float vig=smoothstep(1.45,0.28,length((uv-0.5)*vec2(1.08,1.0)));
-    col*=0.72+0.28*vig;
+    float vert = smoothstep(1.25, -0.20, uv.y);
+    col = mix(deep * 0.7, col, 0.5 + 0.5 * vert);
 
-    col+=(h(gl_FragCoord.xy)-0.5)*0.018;
-    gl_FragColor=vec4(col,1.0);
+    float vig = smoothstep(1.42, 0.28, length((uv - 0.5) * vec2(1.08, 1.0)));
+    col *= 0.72 + 0.28 * vig;
+
+    col -= rnd / 20.0;
+    gl_FragColor = vec4(col, 1.0);
   }`;
 
   const prog = gl.createProgram();
