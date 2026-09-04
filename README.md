@@ -206,6 +206,30 @@ feeds some AI answer engines).
 
 ---
 
+## Auto-commit hook
+
+`.claude/settings.json` registers a `PostToolUse` hook that runs
+`.claude/hooks/auto-commit.sh` after every file write, so each change lands as
+its own commit (`auto: <files>`) and any point is easy to step back to with
+`git log` / `git checkout`. It never runs during a merge or rebase and never
+blocks the edit. To pause it, comment out the `hooks` block in
+`.claude/settings.json`; to review or disable it interactively, run `/hooks`.
+Squash the `auto:` commits at merge time if you prefer a tidy `live` history
+(`git merge --squash development`).
+
+## Motion
+
+The UI has a small, subject-appropriate motion layer, all of it disabled under
+`prefers-reduced-motion`:
+
+- the before/after divider plays a one-time **reveal sweep** (on load for the
+  hero, on scroll-in for the samples) so it reads as draggable, and stops the
+  instant you touch it;
+- sample images **"develop in"** — they start desaturated and soft, like a RAW
+  file rendering, and resolve as they enter the viewport;
+- the header is sticky and gains a shadow once the page scrolls;
+- cards lift slightly on hover.
+
 ## Project layout
 
 ```
