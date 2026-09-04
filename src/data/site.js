@@ -67,10 +67,21 @@ export const site = {
     "Over 200 photos: custom offers for bulk editing. Send the shoot size and the deadline and you get a fixed quote back.",
 
   includes: [
+    "A free sample edit before you order — a few photos, done, no charge",
     "Unlimited revisions until the edit is right",
     "High quality edited photos at full resolution",
     "Camera RAW files recommended — CR2, CR3, NEF, ARW, DNG",
     "Payment after delivery, once you have approved the work",
+  ],
+
+  // Service lines — used for structured data and the About page.
+  services: [
+    "Colour correction and white balance",
+    "Portrait and headshot retouching",
+    "Wedding and event album editing",
+    "Bulk photo editing",
+    "Skin retouching that keeps texture",
+    "Exposure, contrast and RAW recovery",
   ],
 
   payments: [
