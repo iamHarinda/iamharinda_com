@@ -72,11 +72,11 @@
   --text-faint: #71717f;
   --on-accent: #0a0a0c;
 
-  /* green-forward accents, tuned to sit on the green silk background */
-  --c-teal: #2ad3a1;
-  --c-violet: #37c26c; /* was violet — now a mid green so nothing clashes */
-  --c-amber: #ffb454; /* the one warm pop: sunlight through leaves */
-  --grad: linear-gradient(100deg, var(--c-teal), var(--c-violet) 52%, var(--c-amber));
+  /* accents tuned to sit on the purple ColorBends background */
+  --c-teal: #38bdf8; /* sky — the cool counterpoint */
+  --c-violet: #a855f7; /* the ColorBends purple */
+  --c-amber: #f472b6; /* pink — the warm pop */
+  --grad: linear-gradient(100deg, var(--c-teal), var(--c-violet) 50%, var(--c-amber));
   --grad-soft: linear-gradient(
     100deg,
     color-mix(in oklab, var(--c-teal) 70%, white),
