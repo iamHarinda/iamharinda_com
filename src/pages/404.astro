@@ -11,11 +11,12 @@ import { professionalService } from "../lib/schema.js";
   jsonLd={[professionalService()]}
 >
   <div class="container notfound">
-    <h1>Page not found</h1>
+    <p class="eyebrow" style="justify-content:center">Error 404</p>
+    <h1 class="grad-text">Page not found</h1>
     <p>The page you were after isn&rsquo;t here. It may have moved.</p>
-    <div class="btn-row" style="justify-content:center">
-      <a class="btn" href="/">Go to the home page</a>
-      <a class="btn btn--ghost" href="/pricing/">See pricing</a>
+    <div class="btn-row" style="justify-content:center;margin-top:.5rem">
+      <a class="btn" data-magnetic href="/">Go to the home page</a>
+      <a class="btn btn--grad" href="/pricing/">See pricing</a>
     </div>
   </div>
 </BaseLayout>
