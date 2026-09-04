@@ -61,5 +61,5 @@ United States, Canada, and Europe. All work is delivered online.
 - Fiverr: https://www.fiverr.com/iamharinda
 - Website: https://www.iamharinda.com
 
-<!-- TODO: replace "Harinda" with your full name if you want it public, add your
-     WhatsApp link, and confirm the email address before launch. -->
+<!-- TODO: add your WhatsApp link and confirm the email address before launch.
+     Confirm the Fiverr rating/review counts are current. -->
