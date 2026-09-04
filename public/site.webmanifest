@@ -1,0 +1,29 @@
+{
+  "name": "iamharinda — human photo editing",
+  "short_name": "iamharinda",
+  "description": "Human photo editing and colour correction for photographers and studios in the United States, Canada and Europe. No AI presets, no one-click batch looks. True colours — skin stays skin, whites stay white. Free sample edit, unlimited revisions, payment after delivery.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0910",
+  "theme_color": "#0a0910",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}
