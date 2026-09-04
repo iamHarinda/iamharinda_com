@@ -119,12 +119,10 @@ async function main() {
   await mkdir(imagesDir, { recursive: true });
   await mkdir(ogDir, { recursive: true });
 
-  await pair("hero", {
-    width: site.hero.width,
-    height: site.hero.height,
-    beforeSrc: site.hero.before.src,
-    afterSrc: site.hero.after.src,
-  });
+  // The hero before/after slider is currently removed from the site, so its
+  // placeholders are not generated. Restore this block if you bring it back:
+  //   await pair("hero", { width: site.hero.width, height: site.hero.height,
+  //     beforeSrc: site.hero.before.src, afterSrc: site.hero.after.src });
 
   for (const s of site.samples) {
     await pair(s.id, {
