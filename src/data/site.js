@@ -47,10 +47,18 @@ export const site = {
 
   // ── Navigation ────────────────────────────────────────────────────────────
   nav: [
+    { label: "Home", href: "/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
   ],
+
+  // ── Availability badge (home hero) ───────────────────────────────────────
+  availability: {
+    on: true, // set false to show the offline state
+    onLabel: "Available now — replies within a working day",
+    offLabel: "Currently booked — leave a message and I'll reply",
+  },
   // The /work/ page and its sample gallery are removed for now — re-add the
   // nav item above and recreate src/pages/work.astro when real before/after
   // images are ready. The `samples` data and <Sample> component are kept below.
