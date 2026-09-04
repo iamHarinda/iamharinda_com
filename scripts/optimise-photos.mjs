@@ -53,27 +53,42 @@ async function main() {
   const W = 1200, H = 630, split = 660;
   const photo = await sharp(src("2.webp"))
     .resize(W - split, H, { fit: "cover", position: "attention" })
+    .modulate({ brightness: 0.82 })
     .toBuffer();
-  const panel = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${split}" height="${H}">
+  // Dark card, to match the site.
+  const layer = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#26d4c0"/>
+          <stop offset="0.55" stop-color="#a274ff"/>
+          <stop offset="1" stop-color="#ff9d4d"/>
+        </linearGradient>
+        <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#09090b"/>
+          <stop offset="0.7" stop-color="#09090b"/>
+          <stop offset="1" stop-color="#09090b" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect x="${split}" y="0" width="${W - split}" height="${H}" fill="url(#fade)"/>
+      <rect x="${split - 3}" y="0" width="4" height="${H}" fill="url(#g)"/>
       <text x="76" y="250" font-family="Georgia,'Times New Roman',serif"
-            font-size="66" fill="rgb(25,25,25)">iamharinda</text>
-      <text x="78" y="312" font-family="Helvetica,Arial,sans-serif"
-            font-size="27" fill="rgb(88,88,88)">Colour correction and retouching,</text>
-      <text x="78" y="350" font-family="Helvetica,Arial,sans-serif"
-            font-size="27" fill="rgb(88,88,88)">done by a human eye.</text>
-      <text x="78" y="430" font-family="Helvetica,Arial,sans-serif"
-            font-size="22" fill="rgb(122,122,122)">Free sample edit &#183; Rated 4.9 on Fiverr</text>
+            font-size="68" fill="#f4f4f6">iamharinda</text>
+      <text x="78" y="314" font-family="Helvetica,Arial,sans-serif"
+            font-size="27" fill="#a7a7b3">Colour correction and retouching,</text>
+      <text x="78" y="352" font-family="Helvetica,Arial,sans-serif"
+            font-size="27" fill="#a7a7b3">done by a human eye.</text>
+      <text x="78" y="432" font-family="Helvetica,Arial,sans-serif"
+            font-size="22" fill="#26d4c0">Free sample edit &#183; Rated 4.9 on Fiverr</text>
     </svg>`;
-  await sharp({ create: { width: W, height: H, channels: 3, background: "#f3f3f3" } })
+  await sharp({ create: { width: W, height: H, channels: 3, background: "#09090b" } })
     .composite([
       { input: photo, left: split, top: 0 },
-      { input: Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="6" height="${H}"><rect width="6" height="${H}" fill="rgb(168,121,47)"/></svg>`), left: split - 3, top: 0 },
-      { input: Buffer.from(panel), left: 0, top: 0 },
+      { input: Buffer.from(layer), left: 0, top: 0 },
     ])
     .jpeg({ quality: 86 })
     .toFile(out("public", "og", "og-default.jpg"));
-  console.log("+ public/og/og-default.jpg  1200×630");
+  console.log("+ public/og/og-default.jpg  1200×630 (dark)");
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
