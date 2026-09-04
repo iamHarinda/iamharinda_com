@@ -55,8 +55,7 @@ async function main() {
     .resize(W - split, H, { fit: "cover", position: "attention" })
     .toBuffer();
   const panel = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
-      <rect width="${W}" height="${H}" fill="rgb(243,243,243)"/>
+    <svg xmlns="http://www.w3.org/2000/svg" width="${split}" height="${H}">
       <text x="76" y="250" font-family="Georgia,'Times New Roman',serif"
             font-size="66" fill="rgb(25,25,25)">iamharinda</text>
       <text x="78" y="312" font-family="Helvetica,Arial,sans-serif"
