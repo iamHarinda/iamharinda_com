@@ -269,8 +269,8 @@ export const site = {
       caption: "Wedding — mixed venue light",
       width: 1200,
       height: 800,
-      before: { src: "/images/sample-1-before.webp", alt: "TODO — unedited wedding photo; describe the colour problem." },
-      after: { src: "/images/sample-1-after.webp", alt: "TODO — the same photo corrected; describe the result." },
+      before: { src: "/images/sample-1-before.webp", alt: "Unedited wedding photo with a warm colour cast from mixed venue lighting." },
+      after: { src: "/images/sample-1-after.webp", alt: "The same wedding photo with neutral white balance and balanced exposure." },
     },
     {
       id: "sample-2",
