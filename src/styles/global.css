@@ -795,12 +795,6 @@ body::after {
   }
 }
 
-.tilt {
-  transform: perspective(800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-  transform-style: preserve-3d;
-  transition: transform 0.2s ease;
-}
-
 /* 12. Feature grid ------------------------------------------------------------ */
 
 .grid {
