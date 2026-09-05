@@ -159,6 +159,22 @@ export const site = {
     },
   ],
 
+  // ── The setup — equipment and software used to do the work ──────────────
+  tools: [
+    {
+      label: "Monitor",
+      value: "Factory-calibrated ASUS ProArt display — true-to-life colour, judged on screen, not guessed at",
+    },
+    {
+      label: "Editing software",
+      value: "Adobe Lightroom Classic, Lightroom and Photoshop",
+    },
+    {
+      label: "Delivery",
+      value: "Google Drive — full-resolution files, no compression",
+    },
+  ],
+
   // ── Testimonials ─────────────────────────────────────────────────────────
   // Paraphrased from public Fiverr feedback. Replace with verbatim quotes and
   // real first names as they come in, and only then add an aggregateRating to
