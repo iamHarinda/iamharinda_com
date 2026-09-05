@@ -87,7 +87,19 @@ const jsonLd = [
         <h2 class="h2 reveal">However works for you.</h2>
         <p>You are invoiced once the edited photos are delivered and approved.</p>
       </div>
-      <ul class="pay-list rise">
+      <div class="tools-grid">
+        {
+          site.paymentLogos.map((p) => (
+            <div class="tool-card rise" data-spot>
+              <span class="tool-card__logo">
+                <img src={p.logo} alt={p.name} width="40" height="40" loading="lazy" decoding="async" />
+              </span>
+              <span class="tool-card__name">{p.name}</span>
+            </div>
+          ))
+        }
+      </div>
+      <ul class="pay-list rise" style="margin-top:2rem">
         {site.payments.map((item) => <li>{item}</li>)}
       </ul>
     </div>
