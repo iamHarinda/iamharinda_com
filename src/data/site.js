@@ -182,6 +182,7 @@ export const site = {
     { logo: "/logos/adobelightroom.svg", name: "Lightroom Classic & Lightroom", note: "RAW processing and cataloguing" },
     { logo: "/logos/adobephotoshop.svg", name: "Photoshop", note: "Retouching" },
     { logo: "/logos/googledrive.svg", name: "Google Drive", note: "Delivery" },
+    { logo: "/logos/starlink.png", name: "Starlink", note: "High-speed internet connection" },
   ],
 
   // ── Testimonials ─────────────────────────────────────────────────────────
