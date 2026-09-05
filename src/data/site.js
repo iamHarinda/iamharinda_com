@@ -258,6 +258,10 @@ export const site = {
       q: "How do I place an order?",
       a: "Message on WhatsApp, or book through the Fiverr profile at fiverr.com/iamharinda. Send the RAW files and any reference edits, and the first proofs come back for review.",
     },
+    {
+      q: "What equipment and software do you use?",
+      a: "Colour is judged on a factory-calibrated ASUS ProArt monitor for true-to-life accuracy. Editing is done in Adobe Lightroom Classic, Lightroom and Photoshop. Finished files are delivered at full resolution through Google Drive.",
+    },
   ],
 
   // ── Hero before/after ──────────────────────────────────────────────────────
