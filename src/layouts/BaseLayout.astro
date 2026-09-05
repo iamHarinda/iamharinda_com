@@ -101,6 +101,21 @@ const graph = [webSite(), ...jsonLd];
         />
       ))
     }
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      is:inline
+      async
+      src={`https://www.googletagmanager.com/gtag/js?id=${site.analytics.gaMeasurementId}`}
+    ></script>
+    <script is:inline define:vars={{ gaId: site.analytics.gaMeasurementId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", gaId);
+    </script>
   </head>
 
   <body>
