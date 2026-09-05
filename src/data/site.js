@@ -104,6 +104,18 @@ export const site = {
     "Bank deposit",
   ],
 
+  // Logos shown alongside the payments list on the pricing page.
+  // Brand marks are official SVGs (/public/logos/); card and bank are
+  // generic category icons, not tied to one provider.
+  paymentLogos: [
+    { logo: "/logos/paypal.svg", name: "PayPal" },
+    { logo: "/logos/venmo.svg", name: "Venmo" },
+    { logo: "/logos/card.svg", name: "Credit / debit card" },
+    { logo: "/logos/payoneer.svg", name: "Payoneer" },
+    { logo: "/logos/bank.svg", name: "Wire transfer" },
+    { logo: "/logos/remitly.svg", name: "Remitly" },
+  ],
+
   ordering: [
     "Message on WhatsApp, or book through the Fiverr profile.",
     "Send your RAW files and any reference shots or notes on the look you want.",
