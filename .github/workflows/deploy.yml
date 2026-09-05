@@ -52,7 +52,7 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./dist/
-          server-dir: public_html/
+          server-dir: ./
           # Files on the server that the build does not produce (e.g. contact.php
           # is in the build, but mailbox autoconfig files are not) are left in
           # place. Flip to true only if you want an exact mirror.
