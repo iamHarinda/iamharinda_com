@@ -176,12 +176,12 @@ export const site = {
   ],
 
   // Individual items for the home page "tools" logo strip.
+  // Logos are official brand SVGs stored in /public/logos/.
   toolLogos: [
-    { icon: "asus", name: "ASUS ProArt", note: "Factory-calibrated monitor" },
-    { icon: "lrc", name: "Lightroom Classic", note: "RAW processing" },
-    { icon: "lr", name: "Lightroom", note: "Cataloguing" },
-    { icon: "ps", name: "Photoshop", note: "Retouching" },
-    { icon: "drive", name: "Google Drive", note: "Delivery" },
+    { logo: "/logos/asus.svg", name: "ASUS ProArt", note: "Factory-calibrated monitor" },
+    { logo: "/logos/adobelightroom.svg", name: "Lightroom Classic & Lightroom", note: "RAW processing and cataloguing" },
+    { logo: "/logos/adobephotoshop.svg", name: "Photoshop", note: "Retouching" },
+    { logo: "/logos/googledrive.svg", name: "Google Drive", note: "Delivery" },
   ],
 
   // ── Testimonials ─────────────────────────────────────────────────────────
