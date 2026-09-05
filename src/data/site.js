@@ -175,6 +175,15 @@ export const site = {
     },
   ],
 
+  // Individual items for the home page "tools" logo strip.
+  toolLogos: [
+    { icon: "asus", name: "ASUS ProArt", note: "Factory-calibrated monitor" },
+    { icon: "lrc", name: "Lightroom Classic", note: "RAW processing" },
+    { icon: "lr", name: "Lightroom", note: "Cataloguing" },
+    { icon: "ps", name: "Photoshop", note: "Retouching" },
+    { icon: "drive", name: "Google Drive", note: "Delivery" },
+  ],
+
   // ── Testimonials ─────────────────────────────────────────────────────────
   // Paraphrased from public Fiverr feedback. Replace with verbatim quotes and
   // real first names as they come in, and only then add an aggregateRating to
