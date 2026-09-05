@@ -113,9 +113,7 @@ export const site = {
     { logo: "/logos/card.svg", name: "Credit / debit card" },
     { logo: "/logos/payoneer.svg", name: "Payoneer" },
     { logo: "/logos/bank.svg", name: "Wire transfer" },
-    // Remitly has no logo file yet — no official mark in any open
-    // icon library; add { logo: "/logos/remitly.svg", name: "Remitly" }
-    // once a real one is sourced.
+    { logo: "/logos/remitly.png", name: "Remitly" },
   ],
 
   ordering: [
