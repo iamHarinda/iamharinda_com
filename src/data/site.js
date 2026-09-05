@@ -110,10 +110,10 @@ export const site = {
   paymentLogos: [
     { logo: "/logos/paypal.svg", name: "PayPal" },
     { logo: "/logos/venmo.svg", name: "Venmo" },
-    { logo: "/logos/card.svg", name: "Credit / debit card" },
     { logo: "/logos/payoneer.svg", name: "Payoneer" },
-    { logo: "/logos/bank.svg", name: "Wire transfer" },
     { logo: "/logos/remitly.png", name: "Remitly" },
+    { logo: "/logos/card.svg", name: "Credit / debit card" },
+    { logo: "/logos/bank.svg", name: "Wire transfer" },
   ],
 
   ordering: [
