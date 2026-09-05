@@ -372,6 +372,7 @@ export const site = {
   // ── Analytics ────────────────────────────────────────────────────────────
   analytics: {
     gaMeasurementId: "G-QP1FK83BL2",
+    clarityProjectId: "yddumuy5ux",
   },
 
   // ── SEO defaults ─────────────────────────────────────────────────────────
