@@ -789,8 +789,8 @@ body::after {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.9rem;
+  height: 0.9rem;
   border-radius: 50%;
   background: #35d07a;
   border: 2px solid var(--bg);
