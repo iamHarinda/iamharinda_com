@@ -971,9 +971,11 @@ body::after {
   place-items: center;
   color: var(--text-dim);
 }
+.tool-card__logo img,
 .tool-card__logo svg {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .tool-card__name {
   font-weight: 600;
