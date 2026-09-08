@@ -49,9 +49,47 @@ export const site = {
   // ── Navigation ────────────────────────────────────────────────────────────
   nav: [
     { label: "Home", href: "/" },
+    { label: "Wedding editing", href: "/wedding-photo-editing/" },
+    { label: "Web development", href: "/custom-web-development/" },
+    { label: "Apparel patterns", href: "/apparel-pattern-tech-packs/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
+  ],
+
+  // ── Where Harinda is based (trust signal + structured data) ───────────────
+  location: {
+    country: "Sri Lanka",
+    // Clients are worldwide; the work is delivered online.
+    servedFrom:
+      "Based in Sri Lanka, working with clients in the United States, Canada and Europe.",
+  },
+
+  // ── Services with their own landing page ─────────────────────────────────
+  //  Used for the home-page front door, the footer, and the "also available"
+  //  strip at the foot of each service page. One short line each — the detail
+  //  lives on the page itself.
+  servicePages: [
+    {
+      label: "Photo editing & colour correction",
+      href: "/pricing/",
+      line: "Colour correction and retouching for photographers, done by hand and priced by the photo. Free sample edit before you commit.",
+    },
+    {
+      label: "Wedding photo editing",
+      href: "/wedding-photo-editing/",
+      line: "Your whole wedding gallery edited to match your style, back in 48 hours. $0.45 an image, first 25 free.",
+    },
+    {
+      label: "Custom web development",
+      href: "/custom-web-development/",
+      line: "Sites and web apps coded from scratch — no WordPress, no builders. Fixed prices start at $750 and you keep the code.",
+    },
+    {
+      label: "Apparel patterns & tech packs",
+      href: "/apparel-pattern-tech-packs/",
+      line: "Patterns, grading and factory tech packs for small clothing brands. First patterns from $200, tech packs from $175.",
+    },
   ],
 
   // ── Availability badge (home hero) ───────────────────────────────────────
