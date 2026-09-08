@@ -1,0 +1,293 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import site, { waLink } from "../data/site.js";
+import {
+  professionalService,
+  service,
+  faqPage,
+  breadcrumb,
+} from "../lib/schema.js";
+
+// ── Frontmatter from wedding-photo-editing.md ──────────────────────────────
+const meta = {
+  route: "/wedding-photo-editing/",
+  title:
+    "Wedding Photo Editing for Photographers | Harinda Fernando",
+  description:
+    "Hand-finished wedding photo editing in your own style. 48-hour turnaround, $0.45 per image, and a free 25-image trial before you commit.",
+  ogImage: "/images/og/wedding-photo-editing.jpg",
+  ctaLabel: "Start a free 25-image trial",
+};
+
+const whatYouGet = [
+  {
+    h: "Your style, matched.",
+    p: "I build a profile from your reference edits and use it on every gallery after that. The more weddings we do together, the closer it gets.",
+  },
+  {
+    h: "Consistency across the whole gallery.",
+    p: "Ceremony under tungsten, reception under LED uplights, portraits in open shade — all colour-matched so the gallery reads as one day, not four different shoots.",
+  },
+  {
+    h: "48-hour turnaround as standard.",
+    p: "Send the card Sunday night, have it back Tuesday. Rush delivery available when a couple is leaving for a honeymoon.",
+  },
+  {
+    h: "One revision round included.",
+    p: "If the look isn't right, tell me what's off and I fix it. No per-revision charge.",
+  },
+];
+
+const steps = [
+  {
+    h: "Send me a style reference.",
+    p: "Ten to twenty of your own finished images, or your preset if you use one, plus a short note on what matters to you.",
+  },
+  {
+    h: "Free trial — 25 images, no cost.",
+    p: "I edit a small set so you can see the match before any money changes hands. Most photographers know within one look.",
+  },
+  {
+    h: "Send the gallery.",
+    p: "WeTransfer, Dropbox, Google Drive, or Pixieset — whatever you already use. RAW files, culled or unculled.",
+  },
+  {
+    h: "Get it back in 48 hours.",
+    p: "Edited catalogue plus exported JPEGs, or the XMP sidecars if you prefer to keep control in your own catalogue.",
+  },
+  {
+    h: "One revision if needed",
+    p: "then it's yours.",
+  },
+];
+
+const priceRows = [
+  ["Standard colour editing", "$0.45 per image"],
+  ["Gallery package, up to 500 images", "$225"],
+  ["Gallery package, up to 800 images", "$325"],
+  ["Culling (from full card down to selects)", "$0.10 per image"],
+  ["Skin retouching and object removal", "$2.50 per image"],
+  ["Album spread design", "$12 per spread"],
+  ["Rush delivery (24 hours)", "+30%"],
+];
+
+const faqs = [
+  {
+    q: "Will my couples be able to tell it was outsourced?",
+    a: "No, and that's the whole job. Matching your look is the service — if it doesn't match, it isn't finished.",
+  },
+  {
+    q: "Do you edit in Lightroom or Capture One?",
+    a: "Lightroom Classic primarily. I can deliver Capture One sessions on request.",
+  },
+  {
+    q: "What file types do you need?",
+    a: "RAW is best — CR2, CR3, NEF, ARW, RAF, DNG. I can work from JPEG if that's what you have, with less latitude in the highlights.",
+  },
+  {
+    q: "How do I pay?",
+    a: "Wise, PayPal, or bank transfer. Invoiced per gallery, payable on delivery. No deposit for the first job.",
+  },
+  {
+    q: "How many weddings can you take in a week?",
+    a: "Two full galleries a week comfortably, three in peak season. Book ahead for Saturday-heavy months and I'll hold the slot.",
+  },
+  {
+    q: "What if I don't like the trial?",
+    a: "Then you've lost nothing. No card, no commitment, no follow-up sales emails.",
+  },
+];
+
+const waMsg =
+  "Hi Harinda, I'd like a free 25-image trial for wedding photo editing. Here's my style reference:";
+
+const jsonLd = [
+  professionalService(),
+  service({
+    name: "Wedding photo editing",
+    description: meta.description,
+    serviceType: "Wedding photo editing",
+    path: meta.route,
+    lowPrice: 0.45,
+  }),
+  faqPage(faqs),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Wedding photo editing", path: meta.route },
+  ]),
+];
+---
+
+<BaseLayout
+  title={meta.title}
+  rawTitle={meta.title}
+  description={meta.description}
+  path={meta.route}
+  image={meta.ogImage}
+  imageAlt="Wedding photo editing by Harinda Fernando — galleries hand-finished to match your style."
+  jsonLd={jsonLd}
+>
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero__text">
+      <span class="eyebrow">Wedding photo editing</span>
+      <h1 class="h1">
+        <span class="split">Wedding Photo Editing That Looks Like You Edited It</span>
+      </h1>
+      <p>
+        You shot the wedding. Now there are 800 frames waiting, the couple is
+        asking, and the next booking is on Saturday. I take the gallery off your
+        hands and send it back looking like your work — not like a factory's.
+      </p>
+      <p>
+        I edit in Lightroom, by hand, one photographer at a time. You send a
+        style reference or a few of your own finished galleries, and I match it.
+        Skin tones, white balance across mixed lighting, the way you handle
+        blacks and highlights, how warm you run in golden hour. Consistent from
+        the getting-ready shots through to the last dance.
+      </p>
+      <div class="btn-row">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--ghost" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── What you get ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What you get</span>
+        <h2 class="h2 reveal">One editor who learns your style and stays with it.</h2>
+      </div>
+      <div class="grid">
+        {
+          whatYouGet.map((f) => (
+            <article class="card feature rise" data-spot data-tilt>
+              <h3>{f.h}</h3>
+              <p>{f.p}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How it works ────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2 reveal">From style reference to finished gallery.</h2>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s) => (
+            <li class="step rise">
+              <span class="step__n" aria-hidden="true" />
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Samples ─────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Samples</span>
+        <h2 class="h2 reveal">Recent wedding galleries.</h2>
+        <p>Before / after pairs from real galleries, shared with permission.</p>
+      </div>
+      {/* TODO: replace these six slots with real before/after wedding samples.
+          Serve WebP or AVIF, set width and height, and give every image a
+          descriptive alt (e.g. "Reception under mixed LED light, before and
+          after colour matching"). */}
+      <div class="portfolio-grid">
+        <div class="portfolio-grid__slot">Sample 1 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 2 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 3 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 4 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 5 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 6 — coming soon</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing ─────────────────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="h2 reveal">Priced by image or by gallery.</h2>
+        <p>All prices in USD. Per-image or per-gallery — whichever suits how you work.</p>
+      </div>
+      <div class="table-wrap rise">
+        <table class="price-table">
+          <thead>
+            <tr><th>Service</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            {priceRows.map(([label, price]) => (
+              <tr><td>{label}</td><td>{price}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note rise">
+        Booking five or more weddings for a season gets 15% off the gallery rate.
+      </p>
+      <p class="price-note rise">
+        I don't compete at ten cents an image. That price only works by running
+        galleries through a rotating team who never see your work twice, and it
+        shows in the inconsistency. You're paying for one editor who learns your
+        style and stays with it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 class="h2 reveal">Frequently asked questions</h2>
+      </div>
+      <FaqAccordion items={faqs} />
+    </div>
+  </section>
+
+  <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container center-narrow">
+      <h2 class="h1 shine">Start with the free trial</h2>
+      <p class="lede" style="margin-top:1rem;margin-inline:auto">
+        Send me twenty-five images and a style reference. You'll have them back
+        within two days, edited, and you can decide from there.
+      </p>
+      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
+      </div>
+      <p class="form-note" style="margin-top:1rem">
+        Every enquiry gets a reply within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Also available ──────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Also available</span>
+      <ul class="also-strip">
+        <li><a class="text-link" href="/custom-web-development/">Custom web development</a></li>
+        <li><a class="text-link" href="/apparel-pattern-tech-packs/">Apparel patterns &amp; tech packs</a></li>
+        <li><a class="text-link" href="/about/">About Harinda</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
