@@ -7,6 +7,8 @@ import { webSite } from "../lib/schema.js";
 
 const {
   title,
+  /** Exact <title> string. Overrides the "· site.name" suffix when set. */
+  rawTitle,
   description = site.description,
   /** Path only, e.g. "/pricing/". Defaults to the current URL. */
   path = Astro.url.pathname,
@@ -21,7 +23,7 @@ const {
 const canonical = new URL(path, site.url).href;
 const ogImage = new URL(image, site.url).href;
 const fullTitle =
-  title === site.name ? title : `${title} · ${site.name}`;
+  rawTitle ?? (title === site.name ? title : `${title} · ${site.name}`);
 const graph = [webSite(), ...jsonLd];
 ---
 
