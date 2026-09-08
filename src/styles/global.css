@@ -1443,7 +1443,7 @@ body::after {
   transform: translateY(-2px);
   text-decoration: none;
 }
-.service-list h2 {
+.service-list h3 {
   font-size: var(--step-1);
   color: var(--text);
   display: flex;
@@ -1451,7 +1451,7 @@ body::after {
   justify-content: space-between;
   gap: var(--space-3);
 }
-.service-list h2::after {
+.service-list h3::after {
   content: "→";
   color: var(--c-violet);
 }
