@@ -1,10 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import site, { waLink } from "../data/site.js";
-import { professionalService, breadcrumb } from "../lib/schema.js";
+import {
+  professionalService,
+  personDocument,
+  breadcrumb,
+} from "../lib/schema.js";
 
 const jsonLd = [
   professionalService(),
+  personDocument(),
   breadcrumb([
     { name: "Home", path: "/" },
     { name: "About", path: "/about/" },
