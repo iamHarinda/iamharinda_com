@@ -1421,6 +1421,125 @@ body::after {
   border-top: 1px solid var(--hairline);
 }
 
+/* 21b. Service pages ------------------------------------------------------- */
+
+/* Home-page front door: one row per service. */
+.service-list {
+  display: grid;
+  gap: var(--space-3);
+  max-width: var(--measure);
+}
+.service-list a {
+  display: block;
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.service-list a:hover {
+  border-color: var(--hairline-strong);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.service-list h2 {
+  font-size: var(--step-1);
+  color: var(--text);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.service-list h2::after {
+  content: "→";
+  color: var(--c-violet);
+}
+.service-list p {
+  margin-top: var(--space-2);
+  color: var(--text-dim);
+}
+
+/* Pricing table on the service pages. */
+.table-wrap {
+  max-width: var(--measure);
+  overflow-x: auto;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+}
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step-0);
+}
+.price-table th,
+.price-table td {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--hairline);
+}
+.price-table thead th {
+  color: var(--text-faint);
+  font-weight: 600;
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.price-table td {
+  color: var(--text-dim);
+}
+.price-table td:last-child,
+.price-table th:last-child {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--text);
+}
+.price-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.price-note {
+  max-width: var(--measure);
+  margin-top: var(--space-4);
+  color: var(--text-dim);
+}
+.price-note strong {
+  color: var(--text);
+}
+
+/* Portfolio / samples placeholder grid. */
+.portfolio-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+.portfolio-grid__slot {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--hairline-strong);
+  background: linear-gradient(
+    120deg,
+    var(--bg-raise),
+    var(--surface-solid)
+  );
+  display: grid;
+  place-items: center;
+  padding: var(--space-3);
+  text-align: center;
+  color: var(--text-faint);
+  font-size: var(--step--1);
+}
+
+/* "Also available" strip at the foot of each service page. */
+.also-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  max-width: var(--measure);
+}
+.also-strip li {
+  padding: 0.2rem 0;
+}
+
 /* 22. Reduced motion ------------------------------------------------------- */
 
 @media (prefers-reduced-motion: reduce) {
