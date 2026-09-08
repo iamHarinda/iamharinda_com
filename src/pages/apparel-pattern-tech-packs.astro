@@ -1,0 +1,303 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import site, { waLink } from "../data/site.js";
+import {
+  professionalService,
+  service,
+  faqPage,
+  breadcrumb,
+} from "../lib/schema.js";
+
+// ── Frontmatter from apparel-pattern-tech-packs.md ────────────────────────
+// note_for_dev: the URL stays /apparel-pattern-tech-packs/. "Pattern design"
+// means fabric/print design in US search — a different service and buyer.
+const meta = {
+  route: "/apparel-pattern-tech-packs/",
+  title:
+    "Apparel Pattern Making & Tech Packs for Small Brands | Harinda Fernando",
+  description:
+    "Production-ready clothing patterns, grading, and factory tech packs for indie apparel brands. Polos, tees, knitwear and more. Patterns from $200, tech packs from $175.",
+  ogImage: "/images/og/apparel-pattern-tech-packs.jpg",
+  ctaLabel: "Send me your design",
+};
+
+const services = [
+  {
+    h: "First patterns.",
+    p: "From a sketch, a reference garment, or a sample you want recreated. Polos, tees, shirts, knitwear, hoodies, basic bottoms.",
+  },
+  {
+    h: "Pattern grading.",
+    p: "Your base size scaled across a full size run, with grade rules appropriate to the garment and your target market. US, UK, or EU sizing.",
+  },
+  {
+    h: "Tech packs.",
+    p: "The full production document — flat sketches with callouts, a points-of-measure table, bill of materials, stitch and seam construction details, labelling and packaging notes, and a colourway page.",
+  },
+  {
+    h: "Sample corrections.",
+    p: "Fit sample came back wrong. Send me the fit notes and photos and I'll revise the pattern so the next round is right.",
+  },
+  {
+    h: "Digitising.",
+    p: "Paper patterns or a physical sample turned into clean digital files.",
+  },
+];
+
+const steps = [
+  {
+    h: "Send what you have.",
+    p: "A sketch, a photo, a reference garment, or a sample — whatever exists. Plus your target measurements or fit model spec.",
+  },
+  {
+    h: "Fit and construction call.",
+    p: "We agree ease, fit intent, key measurements, and construction details before the pattern is drafted.",
+  },
+  {
+    h: "Draft pattern delivered",
+    p: "for review, with a measurement chart so you can check it against your intent.",
+  },
+  {
+    h: "Two revision rounds included",
+    p: "— after the draft, and again after your first fit sample comes back.",
+  },
+  {
+    h: "Graded set and tech pack",
+    p: "delivered in your factory's format, ready to send.",
+  },
+];
+
+const priceRows = [
+  ["First pattern — tee, polo, basic top", "$200"],
+  ["First pattern — shirt, knitwear, structured piece", "$300"],
+  ["First pattern — outerwear, complex construction", "$400+"],
+  ["Grading, per size run (up to 6 sizes)", "$120"],
+  ["Tech pack (flats, POM, BOM, construction)", "$175"],
+  ["Tech pack for complex styles", "$300"],
+  ["Pattern from an existing sample (digitising)", "$150"],
+  ["Sample correction round", "$75"],
+];
+
+const faqs = [
+  {
+    q: "I've never produced a garment before. Can you still help?",
+    a: "Yes, and most of my clients are in that position. I'll tell you what your factory will need and what questions they're going to ask, before they ask them.",
+  },
+  {
+    q: "What size range do you work in?",
+    a: "Standard US sizing from XS to 3XL as a baseline. Extended or custom size runs are quoted per project.",
+  },
+  {
+    q: "Can you work from a garment I already own?",
+    a: "Yes. Send photos and measurements, or ship the garment if the construction is unusual. Recreating fit from an existing piece is one of the most common requests.",
+  },
+  {
+    q: "How long does a style take?",
+    a: "A first pattern is three to five business days. A full launch bundle is about a week and a half, depending on how quickly fit decisions get made.",
+  },
+  {
+    q: "Do you help find a manufacturer?",
+    a: "I don't broker factory relationships, but the tech pack I deliver is written so you can send it to several factories and get comparable quotes back.",
+  },
+  {
+    q: "What if my factory rejects the files?",
+    a: "Then I revise them at no charge until they accept them. Files a factory can't use aren't finished files.",
+  },
+];
+
+const waMsg =
+  "Hi Harinda, here's a design I'd like a pattern and tech pack for:";
+
+const jsonLd = [
+  professionalService(),
+  service({
+    name: "Apparel pattern making and tech packs",
+    description: meta.description,
+    serviceType: "Apparel pattern making and tech pack design",
+    path: meta.route,
+    lowPrice: 175,
+  }),
+  faqPage(faqs),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Apparel patterns & tech packs", path: meta.route },
+  ]),
+];
+---
+
+<BaseLayout
+  title={meta.title}
+  rawTitle={meta.title}
+  description={meta.description}
+  path={meta.route}
+  image={meta.ogImage}
+  imageAlt="Apparel pattern making and tech packs by Harinda Fernando — production-ready files for small clothing brands."
+  jsonLd={jsonLd}
+>
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero__text">
+      <span class="eyebrow">Apparel patterns &amp; tech packs</span>
+      <h1 class="h1">
+        <span class="split">Apparel Pattern Making and Tech Packs for Small Brands</span>
+      </h1>
+      <p>
+        You have a design, a sample you like the fit of, or a sketch and a clear
+        idea. The factory needs a pattern and a tech pack before they can quote
+        you, and they won't build one for you.
+      </p>
+      <p>
+        That's the gap I fill. I turn your design into the production documents a
+        manufacturer can actually work from — graded patterns, measurement specs,
+        and a tech pack with nothing left for the factory to guess at.
+      </p>
+      <div class="btn-row">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--ghost" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2 class="h2 reveal">From first pattern to factory-ready files.</h2>
+      </div>
+      <div class="grid">
+        {
+          services.map((f) => (
+            <article class="card feature rise" data-spot data-tilt>
+              <h3>{f.h}</h3>
+              <p>{f.p}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="price-note rise">
+        <strong>Files you receive.</strong> DXF-AAMA for factory CAD systems, PDF
+        for plotting, plus AI or PNG flats for the tech pack. Tell me what your
+        manufacturer uses and I'll deliver in their format.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── How it works ────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2 reveal">Five steps to a graded set and tech pack.</h2>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s) => (
+            <li class="step rise">
+              <span class="step__n" aria-hidden="true" />
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Samples ─────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Sample work</span>
+        <h2 class="h2 reveal">Patterns and tech pack pages.</h2>
+        <p>Flats, points-of-measure tables, and graded nests from past styles.</p>
+      </div>
+      {/* TODO: replace these six slots with real tech pack pages and pattern
+          nests (client details removed). Serve WebP or AVIF, set width and
+          height, and give every image a descriptive alt (e.g. "Tech pack flat
+          sketch of a short-sleeve polo with construction callouts"). */}
+      <div class="portfolio-grid">
+        <div class="portfolio-grid__slot">Sample 1 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 2 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 3 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 4 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 5 — coming soon</div>
+        <div class="portfolio-grid__slot">Sample 6 — coming soon</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing ─────────────────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="h2 reveal">Priced per style.</h2>
+        <p>All prices in USD, per style.</p>
+      </div>
+      <div class="table-wrap rise">
+        <table class="price-table">
+          <thead>
+            <tr><th>Service</th><th>Price</th></tr>
+          </thead>
+          <tbody>
+            {priceRows.map(([label, price]) => (
+              <tr><td>{label}</td><td>{price}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note rise">
+        <strong>Launch bundle — $450.</strong> One first pattern, full size
+        grading, and a complete tech pack for a single style. The usual starting
+        point for a first production run.
+      </p>
+      <p class="price-note rise">
+        Two revision rounds are included in every pattern. Additional rounds are
+        $75.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 class="h2 reveal">Frequently asked questions</h2>
+      </div>
+      <FaqAccordion items={faqs} />
+    </div>
+  </section>
+
+  <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container center-narrow">
+      <h2 class="h1 shine">Send me your design</h2>
+      <p class="lede" style="margin-top:1rem;margin-inline:auto">
+        A sketch and a rough idea of fit is enough to start. Tell me what you're
+        making and I'll come back with a timeline and a firm price.
+      </p>
+      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
+      </div>
+      <p class="form-note" style="margin-top:1rem">
+        Every enquiry gets a reply within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Also available ──────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Also available</span>
+      <ul class="also-strip">
+        <li><a class="text-link" href="/wedding-photo-editing/">Wedding photo editing</a></li>
+        <li><a class="text-link" href="/custom-web-development/">Custom web development</a></li>
+        <li><a class="text-link" href="/about/">About Harinda</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
