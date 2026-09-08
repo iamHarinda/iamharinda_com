@@ -47,6 +47,14 @@ const graph = [webSite(), ...jsonLd];
       )
     }
     <meta name="author" content={site.personName} />
+    {
+      site.seo.googleSiteVerification && (
+        <meta
+          name="google-site-verification"
+          content={site.seo.googleSiteVerification}
+        />
+      )
+    }
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
