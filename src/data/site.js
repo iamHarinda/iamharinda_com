@@ -8,6 +8,13 @@ export const site = {
   name: "iamharinda",
   // Your name as it should appear in schema.org / "About".
   personName: "Harinda Fernando",
+
+  // Job titles across every service line — used in the Person structured data.
+  personTitles: [
+    "Photo editor and colour grader",
+    "Web developer",
+    "Apparel pattern maker and tech pack designer",
+  ],
   domain: "www.iamharinda.com",
   url: "https://www.iamharinda.com",
 
