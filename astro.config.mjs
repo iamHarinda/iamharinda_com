@@ -20,9 +20,12 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Every page is public and equally important; keep it simple.
+      // New routes (the service pages) are picked up automatically — every
+      // static page is included except the 404.
       changefreq: "monthly",
       priority: 0.7,
       lastmod: new Date(),
+      filter: (page) => !page.endsWith("/404/") && !page.endsWith("/404.html"),
     }),
   ],
   vite: {
