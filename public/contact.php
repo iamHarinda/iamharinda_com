@@ -50,9 +50,9 @@ if (!$ok) {
 $strip = static function (string $v): string {
     return trim(str_replace(["\r", "\n", "\t", "%0a", "%0d", "%0A", "%0D"], ' ', $v));
 };
-$name  = $strip($name);
-$email = $strip($email);
-$count = $strip($count);
+$name    = $strip($name);
+$email   = $strip($email);
+$service = $strip($service);
 
 // ── Compose ────────────────────────────────────────────────────────────────
 $body  = "New enquiry from iamharinda.com\n";
