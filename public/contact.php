@@ -57,9 +57,9 @@ $service = $strip($service);
 // ── Compose ────────────────────────────────────────────────────────────────
 $body  = "New enquiry from iamharinda.com\n";
 $body .= "-----------------------------------\n";
-$body .= "Name:   {$name}\n";
-$body .= "Email:  {$email}\n";
-$body .= "Photos: " . ($count !== '' ? $count : 'not specified') . "\n";
+$body .= "Name:    {$name}\n";
+$body .= "Email:   {$email}\n";
+$body .= "Service: " . ($service !== '' ? $service : 'not specified') . "\n";
 $body .= "-----------------------------------\n\n";
 $body .= $message . "\n";
 
