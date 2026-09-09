@@ -32,7 +32,7 @@ if (!empty($_POST['company'])) {
 // ── Gather + trim ──────────────────────────────────────────────────────────
 $name    = trim((string) ($_POST['name']    ?? ''));
 $email   = trim((string) ($_POST['email']   ?? ''));
-$count   = trim((string) ($_POST['count']   ?? ''));
+$service = trim((string) ($_POST['service'] ?? ''));
 $message = trim((string) ($_POST['message'] ?? ''));
 
 // ── Validate ───────────────────────────────────────────────────────────────
