@@ -51,6 +51,14 @@ export const site = {
     whatsappDisplay: "+44 7355 229599",
     whatsappNote: "Message any time. Replies within one working day.",
     fiverr: "https://www.fiverr.com/iamharinda",
+    // Options for the "Which service?" picker on the contact form.
+    services: [
+      "Photo editing",
+      "Wedding photo editing",
+      "Custom web development",
+      "Apparel patterns & tech packs",
+      "Not sure yet",
+    ],
   },
 
   // ── Navigation ────────────────────────────────────────────────────────────
