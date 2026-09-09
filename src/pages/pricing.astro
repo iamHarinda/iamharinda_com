@@ -29,8 +29,8 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title="Photo editing pricing — from $10"
-  description={`Photo editing priced by volume: 50 photos $10, 100 photos $20, 200 photos $40 (USD). Free sample edit first, unlimited revisions, payment after delivery. Range ${priceRange()}.`}
+  title="Pricing — photo editing, web development and apparel patterns"
+  description={`What each service costs: photo editing from $10 (${priceRange()}), wedding galleries from $0.45 an image, custom web development from $750, apparel patterns and tech packs from $175. All prices in USD.`}
   path="/pricing/"
   jsonLd={jsonLd}
 >
@@ -38,7 +38,35 @@ const jsonLd = [
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Pricing</span>
-        <h1 class="h1"><span class="split">Flat rates. Paid after delivery.</span></h1>
+        <h1 class="h1"><span class="split">What everything costs.</span></h1>
+        <p>
+          Four services, each priced its own way. Here is the summary — follow a
+          card for the full breakdown. Every service is quoted or invoiced in US
+          dollars.
+        </p>
+      </div>
+
+      <div class="price-grid">
+        {
+          site.pricingSummary.map((s) => (
+            <a class="card price-card rise" href={s.href} data-spot>
+              <div class="price-card__photos">{s.label}</div>
+              <div class="price-card__amount grad-text">from {s.from}</div>
+              <div class="price-card__unit">{s.unit}</div>
+              <p style="margin-top:1rem">{s.line}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Photo editing — full breakdown ──────────────────────────────── -->
+  <section class="section" id="photo-editing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Photo editing</span>
+        <h2 class="h2 reveal"><span class="split">Flat rates. Paid after delivery.</span></h2>
         <p>Priced by the number of photos. No subscription, no deposit, no per-revision fee.</p>
       </div>
 
@@ -71,7 +99,7 @@ const jsonLd = [
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Every order includes</span>
+        <span class="eyebrow">Every photo order includes</span>
         <h2 class="h2 reveal">What is always in the price.</h2>
       </div>
       <ul class="list-check rise">
@@ -85,7 +113,7 @@ const jsonLd = [
       <div class="section-head">
         <span class="eyebrow">Payment methods</span>
         <h2 class="h2 reveal">However works for you.</h2>
-        <p>You are invoiced once the edited photos are delivered and approved.</p>
+        <p>Photo work is invoiced once the edited photos are delivered and approved. Web and apparel projects are staged — see each service page.</p>
       </div>
       <div class="tools-grid">
         {
@@ -108,7 +136,7 @@ const jsonLd = [
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Ordering</span>
+        <span class="eyebrow">Ordering photo editing</span>
         <h2 class="h2 reveal">How to place an order.</h2>
       </div>
       <ol class="list-check rise">
