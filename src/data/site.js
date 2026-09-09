@@ -107,6 +107,40 @@ export const site = {
     },
   ],
 
+  // ── Pricing hub summary ─────────────────────────────────────────────────
+  //  The at-a-glance cards on /pricing/. Each links to the full breakdown on
+  //  its own service page — photo editing's lives on /pricing/ itself.
+  pricingSummary: [
+    {
+      label: "Photo editing",
+      href: "/pricing/#photo-editing",
+      from: "$10",
+      unit: "for 50 photos · $0.20 each",
+      line: "Colour correction and retouching, priced by the number of photos. Free sample edit first, paid after delivery.",
+    },
+    {
+      label: "Wedding photo editing",
+      href: "/wedding-photo-editing/#pricing",
+      from: "$0.45",
+      unit: "per image · galleries from $225",
+      line: "Your whole wedding gallery matched to your style, back in 48 hours. First 25 images edited free.",
+    },
+    {
+      label: "Custom web development",
+      href: "/custom-web-development/#pricing",
+      from: "$750",
+      unit: "fixed price · $150/mo upkeep",
+      line: "Sites and web apps coded from scratch. Quoted fixed-price after a free scope call, and you keep the code.",
+    },
+    {
+      label: "Apparel patterns & tech packs",
+      href: "/apparel-pattern-tech-packs/#pricing",
+      from: "$175",
+      unit: "per tech pack · patterns from $200",
+      line: "Production-ready patterns, grading and factory tech packs. Launch bundle for one style is $450.",
+    },
+  ],
+
   // ── Availability badge (home hero) ───────────────────────────────────────
   availability: {
     on: true, // set false to show the offline state
