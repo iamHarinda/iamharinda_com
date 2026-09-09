@@ -56,13 +56,14 @@ const jsonLd = [
             </label>
 
             <label class="field">
-              <span>Roughly how many photos?</span>
-              <select name="count">
+              <span>Which service?</span>
+              <select name="service">
                 <option value="">Not sure yet</option>
-                <option value="Up to 50">Up to 50</option>
-                <option value="Around 100">Around 100</option>
-                <option value="Around 200">Around 200</option>
-                <option value="Over 200">Over 200</option>
+                {
+                  site.contact.services.map((s) => (
+                    <option value={s}>{s}</option>
+                  ))
+                }
               </select>
             </label>
 
@@ -72,7 +73,7 @@ const jsonLd = [
                 name="message"
                 rows="6"
                 required
-                placeholder="Type of shoot, the look you're after, your deadline, file format."
+                placeholder="Photo work: type of shoot, the look you're after, roughly how many photos, deadline, file format. Web or apparel: what you're building and any timeline."
               ></textarea>
             </label>
 
