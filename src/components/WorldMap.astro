@@ -1,0 +1,53 @@
+---
+// Reusable "where clients are" world map, backed by public/images/world-map.svg
+// and site.clientCountries. Used on the home page and the About page.
+import site from "../data/site.js";
+
+const { heading = "Where clients are." } = Astro.props;
+---
+
+<div class="rise" style="margin-top:2.5rem;max-width:var(--measure)">
+  <h2 style="color:var(--text);font-size:var(--step-2)">{heading}</h2>
+  <p style="color:var(--text-dim);margin-top:var(--space-2)">
+    Real order history from the Fiverr profile — {site.clientCountries.length} countries and counting.
+  </p>
+</div>
+<div
+  class="world-map rise"
+  id="world-map"
+  style="margin-top:1.5rem"
+  data-countries={JSON.stringify(site.clientCountries.map((c) => c.code))}
+>
+  <div class="world-map__svg"></div>
+  <p class="world-map__fallback">
+    {site.clientCountries.map((c) => c.name).join(", ")}.
+  </p>
+</div>
+<p class="world-map__caption">
+  Map data via
+  {" "}<a href="https://github.com/VictorCazanave/svg-maps" target="_blank" rel="noopener">svg-maps.com</a>,
+  licensed CC BY 4.0.
+</p>
+
+<script>
+  for (const el of document.querySelectorAll("#world-map")) {
+    const served = new Set(JSON.parse(el.dataset.countries || "[]"));
+    fetch("/images/world-map.svg")
+      .then((r) => (r.ok ? r.text() : Promise.reject(r.status)))
+      .then((svg) => {
+        const mount = el.querySelector(".world-map__svg");
+        if (!mount) return;
+        mount.innerHTML = svg;
+        for (const path of mount.querySelectorAll("path[id]")) {
+          if (!served.has(path.id)) continue;
+          path.classList.add("is-served");
+          // Stagger the pulse so the map reads as scanning, not blinking in unison.
+          path.style.animationDelay = `${Math.random() * -2.6}s`;
+        }
+        el.dataset.loaded = "true";
+      })
+      .catch(() => {
+        /* fetch failed — the plain-text country list stays visible */
+      });
+  }
+</script>
