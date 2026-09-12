@@ -42,6 +42,28 @@ export const site = {
     ordersPlus: 300,
   },
 
+  // Countries orders have actually come from, per the Fiverr profile's
+  // "World Domination" stat — read off a screenshot, so double-check against
+  // Fiverr Analytics if a country looks wrong. `code` is the lowercase ISO
+  // 3166-1 alpha-2 id used by public/images/world-map.svg's path ids.
+  clientCountries: [
+    { code: "ca", name: "Canada" },
+    { code: "us", name: "United States" },
+    { code: "co", name: "Colombia" },
+    { code: "gb", name: "United Kingdom" },
+    { code: "fr", name: "France" },
+    { code: "de", name: "Germany" },
+    { code: "es", name: "Spain" },
+    { code: "it", name: "Italy" },
+    { code: "za", name: "South Africa" },
+    { code: "in", name: "India" },
+    { code: "th", name: "Thailand" },
+    { code: "ph", name: "Philippines" },
+    { code: "jp", name: "Japan" },
+    { code: "au", name: "Australia" },
+    { code: "nz", name: "New Zealand" },
+  ],
+
   // ── Contact ───────────────────────────────────────────────────────────────
   contact: {
     email: "hello@iamharinda.com", // create this mailbox in Hostinger (README step 5)
