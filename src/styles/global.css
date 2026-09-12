@@ -1435,102 +1435,207 @@ body::after {
   color: var(--text-dim);
 }
 
-/* 20b. 404 — swinging spotlight ----------------------------------------------
-   A ceiling lamp swings like a pendulum; the beam and the lit patch of the
-   "404" text share one keyframe timing (same duration/easing/direction) so
-   the bright patch of text always tracks directly under the lamp. */
+/* 20b. 404 — space scene -----------------------------------------------------
+   Sitewide aurora background (no override — same look as the home page). A
+   dim giant "404" sits behind everything, a small space dock floats and
+   blinks its lights, and an astronaut hops across the scene, searching. */
 
-.notfound--spotlight {
+.notfound--space {
   position: relative;
   overflow: clip;
-  background: #000;
+}
+.notfound__foreground {
+  position: relative;
+  z-index: 1;
 }
 
-.spotlight-rig {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 38%;
-  transform-origin: top center;
-  animation: spotlight-swing 4.4s ease-in-out infinite alternate;
-  pointer-events: none;
-}
-.spotlight-rig::before {
-  content: "";
+.notfound .space-404 {
   position: absolute;
   inset: 0;
-  left: 50%;
-  width: 1px;
-  transform: translateX(-50%);
-  background: linear-gradient(rgb(255 255 255 / 0.3), rgb(255 255 255 / 0));
-}
-.spotlight-lamp {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 32px;
-  height: 20px;
-  border-radius: 5px 5px 12px 12px;
-  background: linear-gradient(180deg, #4a4a54, #101014);
-  box-shadow: 0 0 24px 4px rgb(255 255 255 / 0.2);
-}
-.spotlight-beam {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  width: 320px;
-  height: 60vh;
-  transform: translateX(-50%);
-  clip-path: polygon(47% 0, 53% 0, 100% 100%, 0% 100%);
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.18), rgb(255 255 255 / 0) 70%);
-  mix-blend-mode: screen;
-}
-@keyframes spotlight-swing {
-  from {
-    transform: rotate(-22deg);
-  }
-  to {
-    transform: rotate(22deg);
-  }
-}
-
-.notfound h1.spotlight-404 {
+  z-index: 0;
   display: grid;
+  place-items: center;
   margin: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(5rem, 22vw, 13rem);
+  font-size: clamp(6rem, 26vw, 16rem);
   line-height: 1;
   letter-spacing: -0.02em;
+  color: var(--surface);
+  pointer-events: none;
 }
-.spotlight-404__dim,
-.spotlight-404__lit {
-  grid-area: 1 / 1;
+
+/* Space dock: a small hull with a glowing window, floating and blinking. */
+.space-dock {
+  position: absolute;
+  top: 14%;
+  right: 12%;
+  z-index: 0;
+  width: 96px;
+  height: 44px;
+  animation: dock-float 5s ease-in-out infinite alternate;
+  pointer-events: none;
 }
-.spotlight-404__dim {
-  color: rgb(255 255 255 / 0.06);
+.space-dock__hull {
+  position: absolute;
+  inset: 0;
+  border-radius: 50% / 60%;
+  background: linear-gradient(160deg, var(--surface-solid), var(--bg-raise));
+  border: 1px solid var(--hairline-strong);
+  box-shadow: var(--glow);
 }
-.spotlight-404__lit {
-  color: #fff;
-  text-shadow: 0 12px 50px rgb(255 255 255 / 0.3), 0 2px 0 rgb(0 0 0 / 0.5);
-  -webkit-mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
-  mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 300% 100%;
-  mask-size: 300% 100%;
-  animation: spotlight-scan 4.4s ease-in-out infinite alternate;
+.space-dock__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--c-teal) 60%, transparent);
+  box-shadow: 0 0 14px 3px color-mix(in oklab, var(--c-teal) 70%, transparent);
 }
-@keyframes spotlight-scan {
+.space-dock__light {
+  position: absolute;
+  bottom: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: dock-blink 1.8s ease-in-out infinite;
+}
+.space-dock__light--1 {
+  left: 12px;
+  background: var(--c-teal);
+  animation-delay: 0s;
+}
+.space-dock__light--2 {
+  left: 44px;
+  background: var(--c-amber);
+  animation-delay: 0.5s;
+}
+.space-dock__light--3 {
+  right: 12px;
+  background: var(--c-violet);
+  animation-delay: 1s;
+}
+@keyframes dock-float {
   from {
-    -webkit-mask-position: 0% 0;
-    mask-position: 0% 0;
+    transform: translateY(0);
   }
   to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
+    transform: translateY(-14px);
+  }
+}
+@keyframes dock-blink {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Astronaut: hops in place while drifting across the scene, left to right. */
+.astronaut {
+  position: absolute;
+  bottom: 16%;
+  left: -80px;
+  z-index: 0;
+  width: 60px;
+  height: 76px;
+  animation: astronaut-drift 7s linear infinite;
+  pointer-events: none;
+}
+.astronaut__body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: astronaut-hop 0.9s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+.astronaut__torso {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 38px;
+  height: 40px;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  background: var(--text);
+}
+.astronaut__backpack {
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 24px);
+  width: 12px;
+  height: 32px;
+  border-radius: 4px;
+  background: var(--c-violet);
+}
+.astronaut__arm {
+  position: absolute;
+  top: 34px;
+  width: 10px;
+  height: 24px;
+  border-radius: 5px;
+  background: var(--text);
+}
+.astronaut__arm--l {
+  left: 4px;
+  transform: rotate(18deg);
+}
+.astronaut__arm--r {
+  right: 4px;
+  transform: rotate(-18deg);
+}
+.astronaut__leg {
+  position: absolute;
+  bottom: 0;
+  width: 12px;
+  height: 22px;
+  border-radius: 5px;
+  background: var(--text);
+}
+.astronaut__leg--l {
+  left: 14px;
+}
+.astronaut__leg--r {
+  right: 14px;
+}
+.astronaut__helmet {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--surface-solid);
+  border: 3px solid var(--c-teal);
+}
+.astronaut__visor {
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--grad);
+  opacity: 0.85;
+}
+@keyframes astronaut-hop {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-26px) rotate(4deg);
+  }
+}
+@keyframes astronaut-drift {
+  from {
+    left: -80px;
+  }
+  to {
+    left: calc(100% + 20px);
   }
 }
 
