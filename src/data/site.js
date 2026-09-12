@@ -134,7 +134,7 @@ export const site = {
     },
     {
       label: "Polo shirt design & patterns",
-      href: "/apparel-pattern-tech-packs/#pricing",
+      href: "/fashion-designing/#pricing",
       from: "$10",
       unit: "per package · up to 5 designs",
       line: "Print-ready polo and golf shirt patterns and mockups, in Illustrator and Photoshop. Packages from $10 to $40, unlimited revisions.",
