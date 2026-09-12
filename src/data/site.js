@@ -13,7 +13,7 @@ export const site = {
   personTitles: [
     "Photo editor and colour grader",
     "Web developer",
-    "Polo & print pattern designer",
+    "Fashion & print pattern designer",
   ],
   domain: "www.iamharinda.com",
   url: "https://www.iamharinda.com",
