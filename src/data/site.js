@@ -143,9 +143,9 @@ export const site = {
     {
       label: "Wedding photo editing",
       href: "/wedding-photo-editing/#pricing",
-      from: "$0.45",
-      unit: "per image · galleries from $225",
-      line: "Your whole wedding gallery matched to your style, back in 48 hours. First 25 images edited free.",
+      from: "$10",
+      unit: "per package · up to 500 images",
+      line: "Hand-edited on a Calman-verified monitor, no AI. Packages from $10 to $100, unlimited revisions.",
     },
     {
       label: "Custom web development",
