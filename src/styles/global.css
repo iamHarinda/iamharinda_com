@@ -1462,60 +1462,57 @@ body::after {
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--surface);
+  -webkit-text-stroke: 1px var(--hairline-strong);
   pointer-events: none;
 }
 
-/* Space dock: a small hull with a glowing window, floating and blinking. */
+/* Space dock: an SVG hull with a glowing window, floating and blinking. */
 .space-dock {
   position: absolute;
   top: 14%;
-  right: 12%;
+  right: 10%;
   z-index: 0;
-  width: 96px;
-  height: 44px;
+  width: clamp(120px, 16vw, 190px);
+  height: auto;
+  overflow: visible;
   animation: dock-float 5s ease-in-out infinite alternate;
   pointer-events: none;
 }
-.space-dock__hull {
-  position: absolute;
-  inset: 0;
-  border-radius: 50% / 60%;
-  background: linear-gradient(160deg, var(--surface-solid), var(--bg-raise));
-  border: 1px solid var(--hairline-strong);
-  box-shadow: var(--glow);
+.dock__hull {
+  fill: var(--surface-solid);
+  stroke: var(--hairline-strong);
+  stroke-width: 1.5;
 }
-.space-dock__window {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 22px;
-  height: 22px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: color-mix(in oklab, var(--c-teal) 60%, transparent);
-  box-shadow: 0 0 14px 3px color-mix(in oklab, var(--c-teal) 70%, transparent);
+.dock__hull-shade {
+  fill: var(--bg-raise);
+  opacity: 0.8;
 }
-.space-dock__light {
-  position: absolute;
-  bottom: 2px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+.dock__antenna-stem {
+  fill: var(--hairline-strong);
+}
+.dock__antenna-tip {
+  fill: var(--c-amber);
   animation: dock-blink 1.8s ease-in-out infinite;
 }
-.space-dock__light--1 {
-  left: 12px;
-  background: var(--c-teal);
+.dock__window-glow {
+  fill: color-mix(in oklab, var(--c-teal) 35%, transparent);
+}
+.dock__window {
+  fill: var(--c-teal);
+}
+.dock__light {
+  animation: dock-blink 1.8s ease-in-out infinite;
+}
+.dock__light--1 {
+  fill: var(--c-teal);
   animation-delay: 0s;
 }
-.space-dock__light--2 {
-  left: 44px;
-  background: var(--c-amber);
+.dock__light--2 {
+  fill: var(--c-amber);
   animation-delay: 0.5s;
 }
-.space-dock__light--3 {
-  right: 12px;
-  background: var(--c-violet);
+.dock__light--3 {
+  fill: var(--c-violet);
   animation-delay: 1s;
 }
 @keyframes dock-float {
@@ -1539,87 +1536,62 @@ body::after {
 /* Astronaut: hops in place while drifting across the scene, left to right. */
 .astronaut {
   position: absolute;
-  bottom: 16%;
-  left: -80px;
+  bottom: 12%;
+  left: -110px;
   z-index: 0;
-  width: 60px;
-  height: 76px;
-  animation: astronaut-drift 7s linear infinite;
+  width: clamp(70px, 9vw, 110px);
+  height: auto;
+  overflow: visible;
+  animation: astronaut-drift 8s linear infinite;
   pointer-events: none;
 }
 .astronaut__body {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  animation: astronaut-hop 0.9s ease-in-out infinite;
+  transform-box: fill-box;
   transform-origin: bottom center;
+  animation: astronaut-hop 0.9s ease-in-out infinite;
 }
+.astronaut__pack {
+  fill: var(--c-violet);
+}
+.astronaut__leg,
+.astronaut__arm,
 .astronaut__torso {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  width: 38px;
-  height: 40px;
-  transform: translateX(-50%);
-  border-radius: 15px;
-  background: var(--text);
+  fill: var(--text);
 }
-.astronaut__backpack {
-  position: absolute;
-  top: 32px;
-  left: calc(50% - 24px);
-  width: 12px;
-  height: 32px;
-  border-radius: 4px;
-  background: var(--c-violet);
+.astronaut__boot {
+  fill: var(--surface-solid);
 }
-.astronaut__arm {
-  position: absolute;
-  top: 34px;
-  width: 10px;
-  height: 24px;
-  border-radius: 5px;
-  background: var(--text);
+.astronaut__panel {
+  fill: var(--surface-solid);
 }
-.astronaut__arm--l {
-  left: 4px;
-  transform: rotate(18deg);
+.astronaut__dot--a {
+  fill: var(--c-teal);
 }
-.astronaut__arm--r {
-  right: 4px;
-  transform: rotate(-18deg);
+.astronaut__dot--b {
+  fill: var(--c-amber);
 }
-.astronaut__leg {
-  position: absolute;
-  bottom: 0;
-  width: 12px;
-  height: 22px;
-  border-radius: 5px;
-  background: var(--text);
-}
-.astronaut__leg--l {
-  left: 14px;
-}
-.astronaut__leg--r {
-  right: 14px;
+.astronaut__dot--c {
+  fill: var(--c-violet);
 }
 .astronaut__helmet {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 34px;
-  height: 34px;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background: var(--surface-solid);
-  border: 3px solid var(--c-teal);
+  fill: var(--text);
 }
 .astronaut__visor {
-  position: absolute;
-  inset: 4px;
-  border-radius: 50%;
-  background: var(--grad);
-  opacity: 0.85;
+  fill: var(--c-teal);
+}
+.astronaut__visor-shade {
+  fill: var(--c-violet);
+  opacity: 0.55;
+}
+.astronaut__shine {
+  fill: #fff;
+  opacity: 0.5;
+}
+.astronaut__antenna-stem {
+  fill: var(--hairline-strong);
+}
+.astronaut__antenna-tip {
+  fill: var(--c-amber);
 }
 @keyframes astronaut-hop {
   0%,
@@ -1627,12 +1599,12 @@ body::after {
     transform: translateY(0) rotate(-4deg);
   }
   50% {
-    transform: translateY(-26px) rotate(4deg);
+    transform: translateY(-22px) rotate(4deg);
   }
 }
 @keyframes astronaut-drift {
   from {
-    left: -80px;
+    left: -110px;
   }
   to {
     left: calc(100% + 20px);
