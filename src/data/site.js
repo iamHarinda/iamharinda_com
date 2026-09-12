@@ -86,9 +86,9 @@ export const site = {
   // ── Navigation ────────────────────────────────────────────────────────────
   nav: [
     { label: "Home", href: "/" },
-    { label: "Wedding photo editing", href: "/wedding-photo-editing/" },
+    { label: "Photo editing", href: "/wedding-photo-editing/" },
+    { label: "Pattern designing", href: "/fashion-designing/" },
     { label: "Web development", href: "/custom-web-development/" },
-    { label: "Fashion Designing", href: "/fashion-designing/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
