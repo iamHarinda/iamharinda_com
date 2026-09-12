@@ -67,6 +67,8 @@ export const site = {
   // ── Contact ───────────────────────────────────────────────────────────────
   contact: {
     email: "hello@iamharinda.com", // create this mailbox in Hostinger (README step 5)
+    // Secondary personal inbox, shown alongside the main one on /contact/.
+    altEmail: "iamharinda@gmail.com",
     // Digits only — international format, no "+", no spaces. Used to build wa.me links.
     whatsapp: "447355229599",
     // Same number, formatted for display. Shown as the link text; the link still opens WhatsApp.
