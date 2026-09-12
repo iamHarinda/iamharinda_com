@@ -25,6 +25,8 @@ DirectoryIndex index.html
   # apparel-pattern-tech-packs/ was reframed as fashion/print pattern design
   # (see src/pages/fashion-designing.astro) and moved here permanently.
   RewriteRule ^apparel-pattern-tech-packs/?$ /fashion-designing/ [R=301,L]
+  # custom-web-development/ shortened to match the nav label.
+  RewriteRule ^custom-web-development/?$ /web-development/ [R=301,L]
 </IfModule>
 
 # ── Belt and braces: any non-canonical host also answers with noindex ───────
