@@ -114,7 +114,7 @@ export const site = {
     },
     {
       label: "Wedding photo editing",
-      href: "/wedding-photo-editing/",
+      href: "/photo-editing/",
       line: "Hand-edited on a Calman-verified monitor, no AI. Packages from $10 for 50 images, unlimited revisions.",
     },
     {
