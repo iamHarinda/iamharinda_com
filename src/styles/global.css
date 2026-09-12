@@ -1591,7 +1591,7 @@ body::after {
 }
 @keyframes astronaut-drift {
   from {
-    left: -110px;
+    left: -140px;
   }
   to {
     left: calc(100% + 20px);
