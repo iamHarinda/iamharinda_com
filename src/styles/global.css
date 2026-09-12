@@ -1435,166 +1435,102 @@ body::after {
   color: var(--text-dim);
 }
 
-/* 20b. 404 — space scene -----------------------------------------------------
-   Sitewide aurora background (no override — same look as the home page),
-   plus a starfield, a dim giant "404" watermark, a ship sweeping searchlight
-   beams left and right, and an astronaut drifting through them in slow,
-   zero-gravity motion. */
+/* 20b. 404 — swinging spotlight ----------------------------------------------
+   A ceiling lamp swings like a pendulum; the beam and the lit patch of the
+   "404" text share one keyframe timing (same duration/easing/direction) so
+   the bright patch of text always tracks directly under the lamp. */
 
-.notfound--space {
+.notfound--spotlight {
   position: relative;
   overflow: clip;
-}
-.notfound__foreground {
-  position: relative;
-  z-index: 1;
+  background: #000;
 }
 
-/* Two box-shadow starfields (see the frontmatter in 404.astro) — a static
-   dim "far" layer and a slightly brighter "near" layer that twinkles. */
-.stars {
+.spotlight-rig {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 2px;
-  height: 2px;
-  z-index: 0;
+  left: 50%;
+  width: 1px;
+  height: 38%;
+  transform-origin: top center;
+  animation: spotlight-swing 4.4s ease-in-out infinite alternate;
   pointer-events: none;
 }
-.stars--far {
-  opacity: 0.7;
+.spotlight-rig::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(rgb(255 255 255 / 0.3), rgb(255 255 255 / 0));
 }
-.stars--near {
-  animation: star-twinkle 3.6s ease-in-out infinite alternate;
+.spotlight-lamp {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 20px;
+  border-radius: 5px 5px 12px 12px;
+  background: linear-gradient(180deg, #4a4a54, #101014);
+  box-shadow: 0 0 24px 4px rgb(255 255 255 / 0.2);
 }
-@keyframes star-twinkle {
+.spotlight-beam {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 320px;
+  height: 60vh;
+  transform: translateX(-50%);
+  clip-path: polygon(47% 0, 53% 0, 100% 100%, 0% 100%);
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.18), rgb(255 255 255 / 0) 70%);
+  mix-blend-mode: screen;
+}
+@keyframes spotlight-swing {
   from {
-    opacity: 0.6;
+    transform: rotate(-22deg);
   }
   to {
-    opacity: 1;
+    transform: rotate(22deg);
   }
 }
 
-.notfound .space-404 {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+.notfound h1.spotlight-404 {
   display: grid;
-  place-items: center;
   margin: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(6rem, 26vw, 16rem);
+  font-size: clamp(5rem, 22vw, 13rem);
   line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--surface);
-  -webkit-text-stroke: 1px var(--hairline-strong);
-  pointer-events: none;
 }
-
-/* Searchlight beams, fanned out from the ship and swinging together. */
-.beam-rig {
-  position: absolute;
-  top: 20%;
-  right: 15%;
-  z-index: 0;
-  width: 1px;
-  height: 1px;
-  transform-origin: top right;
-  animation: beam-sweep 6s ease-in-out infinite alternate;
-  pointer-events: none;
+.spotlight-404__dim,
+.spotlight-404__lit {
+  grid-area: 1 / 1;
 }
-.beam {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 280px;
-  height: 78vh;
-  transform-origin: top right;
-  clip-path: polygon(98% 0, 100% 0, 22% 100%, 6% 100%);
-  background: linear-gradient(
-    200deg,
-    color-mix(in oklab, var(--c-teal) 55%, transparent),
-    transparent 72%
-  );
-  mix-blend-mode: screen;
+.spotlight-404__dim {
+  color: rgb(255 255 255 / 0.06);
 }
-.beam--a {
-  transform: rotate(-18deg);
+.spotlight-404__lit {
+  color: #fff;
+  text-shadow: 0 12px 50px rgb(255 255 255 / 0.3), 0 2px 0 rgb(0 0 0 / 0.5);
+  -webkit-mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 300% 100%;
+  mask-size: 300% 100%;
+  animation: spotlight-scan 4.4s ease-in-out infinite alternate;
 }
-.beam--b {
-  transform: rotate(0deg);
-}
-.beam--c {
-  transform: rotate(18deg);
-}
-@keyframes beam-sweep {
+@keyframes spotlight-scan {
   from {
-    transform: rotate(-14deg);
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
   }
   to {
-    transform: rotate(14deg);
-  }
-}
-
-/* Ship: unDraw "Outer Space" rocket, recoloured to theme tokens (see
-   src/assets/404/rocket-inner.svg), hovering with a gentle bob. */
-.space-ship {
-  position: absolute;
-  top: 10%;
-  right: 8%;
-  z-index: 0;
-  width: clamp(110px, 14vw, 170px);
-  height: auto;
-  overflow: visible;
-  transform: rotate(-6deg);
-  animation: ship-float 5s ease-in-out infinite alternate;
-  pointer-events: none;
-}
-@keyframes ship-float {
-  from {
-    transform: rotate(-6deg) translateY(0);
-  }
-  to {
-    transform: rotate(-6deg) translateY(-10px);
-  }
-}
-
-/* Astronaut: unDraw "Astronaut" illustration, recoloured to theme tokens
-   (see src/assets/404/astronaut-inner.svg), floating and drifting across
-   the scene in slow motion. */
-.astronaut {
-  position: absolute;
-  bottom: 10%;
-  left: -140px;
-  z-index: 0;
-  width: clamp(100px, 13vw, 160px);
-  height: auto;
-  overflow: visible;
-  animation: astronaut-drift 16s linear infinite;
-  pointer-events: none;
-}
-.astronaut__body {
-  transform-box: fill-box;
-  transform-origin: bottom center;
-  animation: astronaut-hop 3.2s ease-in-out infinite;
-}
-@keyframes astronaut-hop {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-4deg);
-  }
-  50% {
-    transform: translateY(-22px) rotate(4deg);
-  }
-}
-@keyframes astronaut-drift {
-  from {
-    left: -140px;
-  }
-  to {
-    left: calc(100% + 20px);
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
   }
 }
 
