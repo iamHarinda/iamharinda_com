@@ -56,7 +56,7 @@ export const site = {
       "Photo editing",
       "Wedding photo editing",
       "Custom web development",
-      "Apparel patterns & tech packs",
+      "Polo shirt design & patterns",
       "Not sure yet",
     ],
   },
