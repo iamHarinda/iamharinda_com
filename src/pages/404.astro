@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import site, { waLink } from "../data/site.js";
 import { professionalService } from "../lib/schema.js";
 ---
 
@@ -8,6 +9,7 @@ import { professionalService } from "../lib/schema.js";
   description="That page does not exist."
   path="/404.html"
   noindex
+  chrome={false}
   jsonLd={[professionalService()]}
 >
   <div class="container notfound">
@@ -15,8 +17,11 @@ import { professionalService } from "../lib/schema.js";
     <h1 class="grad-text">Page not found</h1>
     <p>The page you were after isn&rsquo;t here. It may have moved.</p>
     <div class="btn-row" style="justify-content:center;margin-top:.5rem">
-      <a class="btn" data-magnetic href="/">Go to the home page</a>
-      <a class="btn btn--grad" href="/pricing/">See pricing</a>
+      <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
+      <a class="btn btn--grad" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
     </div>
+    <p style="margin-top:1.5rem">
+      <a class="text-link" href="/">Go to the home page</a>
+    </p>
   </div>
 </BaseLayout>
