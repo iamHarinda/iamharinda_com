@@ -1419,7 +1419,9 @@ body::after {
 /* 20. 404 ------------------------------------------------------------------- */
 
 .notfound {
-  min-height: 62vh;
+  /* No header/footer bracket this page (see BaseLayout's chrome={false}), so
+     it centers in the full viewport instead of the old 62vh. */
+  min-height: 100dvh;
   display: grid;
   place-content: center;
   text-align: center;
