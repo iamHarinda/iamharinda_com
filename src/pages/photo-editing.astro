@@ -150,21 +150,21 @@ const faqs = [
 ];
 
 const waMsg =
-  "Hi Harinda, I'd like to talk about wedding photo editing before ordering. Here's my project:";
+  "Hi Harinda, I'd like to talk about photo editing before ordering. Here's my project:";
 
 const jsonLd = [
   professionalService(),
   service({
-    name: "Wedding photo editing",
+    name: "Photo editing",
     description: meta.description,
-    serviceType: "Wedding photo editing",
+    serviceType: "Photo editing",
     path: meta.route,
     lowPrice: 10,
   }),
   faqPage(faqs),
   breadcrumb([
     { name: "Home", path: "/" },
-    { name: "Wedding photo editing", path: meta.route },
+    { name: "Photo editing", path: meta.route },
   ]),
 ];
 ---
