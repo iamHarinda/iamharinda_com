@@ -27,6 +27,9 @@ DirectoryIndex index.html
   RewriteRule ^apparel-pattern-tech-packs/?$ /fashion-designing/ [R=301,L]
   # custom-web-development/ shortened to match the nav label.
   RewriteRule ^custom-web-development/?$ /web-development/ [R=301,L]
+  # wedding-photo-editing/ broadened to photo-editing/ — the page covers
+  # portraits and headshots too, not just weddings.
+  RewriteRule ^wedding-photo-editing/?$ /photo-editing/ [R=301,L]
 </IfModule>
 
 # ── Belt and braces: any non-canonical host also answers with noindex ───────
