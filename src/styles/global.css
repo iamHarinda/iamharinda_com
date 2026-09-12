@@ -1442,8 +1442,15 @@ body::after {
 
 .notfound--spotlight {
   position: relative;
+  width: 100%;
   overflow: clip;
-  background: #000;
+  background: var(--bg);
+}
+/* The lamp/beam/404 sit directly in the full-width wrapper; only the
+   readable content below gets the normal container max-width. */
+.notfound__foreground {
+  position: relative;
+  z-index: 1;
 }
 
 .spotlight-rig {
@@ -1463,28 +1470,33 @@ body::after {
   left: 50%;
   width: 1px;
   transform: translateX(-50%);
-  background: linear-gradient(rgb(255 255 255 / 0.3), rgb(255 255 255 / 0));
+  background: linear-gradient(var(--hairline-strong), transparent);
 }
 .spotlight-lamp {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 32px;
-  height: 20px;
+  width: clamp(24px, 4vw, 32px);
+  height: clamp(15px, 2.5vw, 20px);
   border-radius: 5px 5px 12px 12px;
-  background: linear-gradient(180deg, #4a4a54, #101014);
-  box-shadow: 0 0 24px 4px rgb(255 255 255 / 0.2);
+  background: linear-gradient(180deg, var(--bg-raise), var(--surface-solid));
+  border: 1px solid var(--hairline-strong);
+  box-shadow: 0 0 24px 4px color-mix(in oklab, var(--c-teal) 45%, transparent);
 }
 .spotlight-beam {
   position: absolute;
   top: 100%;
   left: 50%;
-  width: 320px;
+  width: clamp(200px, 28vw, 320px);
   height: 60vh;
   transform: translateX(-50%);
   clip-path: polygon(47% 0, 53% 0, 100% 100%, 0% 100%);
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.18), rgb(255 255 255 / 0) 70%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--c-teal) 45%, transparent),
+    transparent 70%
+  );
   mix-blend-mode: screen;
 }
 @keyframes spotlight-swing {
@@ -1501,20 +1513,24 @@ body::after {
   margin: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(5rem, 22vw, 13rem);
+  font-size: clamp(3.5rem, 18vw, 13rem);
   line-height: 1;
   letter-spacing: -0.02em;
+  text-align: center;
+  padding-inline: var(--gutter);
 }
 .spotlight-404__dim,
 .spotlight-404__lit {
   grid-area: 1 / 1;
 }
 .spotlight-404__dim {
-  color: rgb(255 255 255 / 0.06);
+  color: color-mix(in oklab, var(--c-violet) 14%, transparent);
 }
 .spotlight-404__lit {
-  color: #fff;
-  text-shadow: 0 12px 50px rgb(255 255 255 / 0.3), 0 2px 0 rgb(0 0 0 / 0.5);
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
   mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
