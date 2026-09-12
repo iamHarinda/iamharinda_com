@@ -1,22 +1,16 @@
 ---
-import { readFileSync } from "node:fs";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import site, { waLink } from "../data/site.js";
 import { professionalService } from "../lib/schema.js";
 
 // Astronaut and rocket artwork — unDraw illustrations (MIT licence), cropped
 // from their source scenes and recoloured to theme tokens. See the comment
-// at the top of each file for provenance. Read at build time and inlined so
-// they inherit the page's CSS custom properties (fill="var(--c-teal)" etc.
-// only resolves when the SVG lives in the same document as the tokens).
-const astronautSvg = readFileSync(
-  new URL("../assets/404/astronaut-inner.svg", import.meta.url),
-  "utf-8"
-);
-const rocketSvg = readFileSync(
-  new URL("../assets/404/rocket-inner.svg", import.meta.url),
-  "utf-8"
-);
+// at the top of each file for provenance. `?raw` inlines the file content as
+// a string at build time so they inherit the page's CSS custom properties
+// (fill="var(--c-teal)" etc. only resolves when the SVG lives in the same
+// document as the tokens).
+import astronautSvg from "../assets/404/astronaut-inner.svg?raw";
+import rocketSvg from "../assets/404/rocket-inner.svg?raw";
 
 // Two star layers as one big box-shadow each — cheap way to scatter a lot of
 // dots without extra DOM nodes. Coordinates are laid out on a 1600×900
