@@ -9,20 +9,19 @@ import {
   breadcrumb,
 } from "../lib/schema.js";
 
-// ── Frontmatter from apparel-pattern-tech-packs.md ────────────────────────
-// note_for_dev: the URL stays /apparel-pattern-tech-packs/ for now — it
-// still ranks and is linked from the Fiverr profile. The service behind it
-// changed: this is print/graphic pattern design for polo and golf shirts
-// (Illustrator/Photoshop artwork + mockups), not technical sewing patterns
-// or factory tech packs. If the URL is ever renamed, add a 301 redirect and
-// update every internal link in src/data/site.js, Footer.astro, about.astro,
-// index.astro, contact.astro and pricing.astro.
+// ── Frontmatter from fashion-designing.md ──────────────────────────────────
+// note_for_dev: this page used to live at /apparel-pattern-tech-packs/ — a
+// leftover from when this service was framed as technical sewing patterns
+// and factory tech packs. It's now fashion/print pattern design for polo and
+// golf shirts (Illustrator/Photoshop artwork + mockups), so the URL moved to
+// /fashion-designing/. The old URL 301s here — see public/.htaccess. Update
+// the Fiverr profile link if it still points at the old path.
 const meta = {
-  route: "/apparel-pattern-tech-packs/",
-  title: "Polo & Golf Shirt Pattern Design and Mockups | Harinda Fernando",
+  route: "/fashion-designing/",
+  title: "Fashion Designing — Polo & Golf Shirt Pattern Design | Harinda Fernando",
   description:
-    "Polo and golf shirt fashion design — print-ready pattern design with realistic mockups, built in Adobe Illustrator and Photoshop. Source files included, unlimited revisions. Packages from $10.",
-  ogImage: "/images/og/apparel-pattern-tech-packs.jpg",
+    "Fashion designing services: polo and golf shirt pattern design with realistic mockups, built in Adobe Illustrator and Photoshop. Source files included, unlimited revisions. Packages from $10.",
+  ogImage: "/images/og/fashion-designing.jpg",
   ctaLabel: "Send me your design",
 };
 
