@@ -1,0 +1,338 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import site, { waLink } from "../data/site.js";
+import {
+  professionalService,
+  service,
+  faqPage,
+  breadcrumb,
+} from "../lib/schema.js";
+
+// ── Frontmatter from fashion-designing.md ──────────────────────────────────
+// note_for_dev: this page used to live at /apparel-pattern-tech-packs/ — a
+// leftover from when this service was framed as technical sewing patterns
+// and factory tech packs. It's now fashion/print pattern design for polo and
+// golf shirts (Illustrator/Photoshop artwork + mockups), so the URL moved to
+// /fashion-designing/. The old URL 301s here — see public/.htaccess. Update
+// the Fiverr profile link if it still points at the old path.
+const meta = {
+  route: "/fashion-designing/",
+  title: "Fashion Designing — Polo & Golf Patterns | Harinda Fernando",
+  description:
+    "Polo and golf shirt pattern design with realistic mockups, built in Adobe Illustrator and Photoshop. Unlimited revisions, packages from $10.",
+  ogImage: "/images/og/fashion-designing.jpg",
+  ctaLabel: "Send me your design",
+};
+
+const services = [
+  {
+    h: "Golf & polo shirt design.",
+    p: "Front and back designs built for the garment, not a logo stretched onto a template. Placement and scale that actually sit right on a collar and a sleeve.",
+  },
+  {
+    h: "Print pattern design.",
+    p: "Repeat patterns for fabric and print — golf motifs, textile prints, all-over patterns — tiled cleanly so they hold up at production size.",
+  },
+  {
+    h: "Textile design.",
+    p: "Original artwork for fabric, from a single motif to a full colourway set across a range.",
+  },
+  {
+    h: "Mockups, every order.",
+    p: "A realistic front and back mockup so you can see the design on the actual shirt before anything goes to print.",
+  },
+  {
+    h: "Source files included.",
+    p: "Ai, PDF, PNG and JPG — the formats a print shop, embroiderer, or supplier can actually run with, at commercial-use resolution.",
+  },
+];
+
+const steps = [
+  {
+    h: "Message me first.",
+    p: "Tell me the garment, the brand or team, and roughly what you're picturing — before placing an order.",
+  },
+  {
+    h: "Send your idea.",
+    p: "A logo, a reference photo, a rough sketch, or just a description of the look you want.",
+  },
+  {
+    h: "Concepts come back.",
+    p: "One to five initial concepts depending on the package, each with a front and back mockup.",
+  },
+  {
+    h: "Revise until it's right.",
+    p: "Revisions are unlimited on every package — there's no extra charge for changes.",
+  },
+  {
+    h: "Get your files.",
+    p: "Ai, PDF, PNG and JPG, at printable resolution and cleared for commercial use.",
+  },
+];
+
+const packages = [
+  {
+    name: "Basic",
+    price: 10,
+    designs: "1 design",
+    delivery: "1-day delivery",
+    desc: "1 print-ready pattern polo t-shirt design and mockup, with Ai, PDF, PNG and JPG files.",
+    features: [
+      "Unlimited revisions",
+      "1 initial concept",
+      "Source file included",
+      "Printable resolution file",
+      "Front & back design",
+      "Enhanced detailing",
+      "Commercial use",
+    ],
+  },
+  {
+    name: "Standard",
+    price: 25,
+    designs: "3 designs",
+    delivery: "2-day delivery",
+    desc: "3 print-ready pattern polo t-shirt designs and mockups, with Ai, PDF, PNG and JPG files.",
+    featured: true,
+    features: [
+      "Unlimited revisions",
+      "3 initial concepts",
+      "Source file included",
+      "Printable resolution file",
+      "Front & back design",
+      "Enhanced detailing",
+      "Commercial use",
+    ],
+  },
+  {
+    name: "Premium",
+    price: 40,
+    designs: "5 designs",
+    delivery: "2-day delivery",
+    desc: "5 print-ready pattern polo t-shirt designs and mockups, with Ai, PDF, PNG and JPG files.",
+    features: [
+      "Unlimited revisions",
+      "5 initial concepts",
+      "Source file included",
+      "Printable resolution file",
+      "Front & back design",
+      "Enhanced detailing",
+      "Commercial use",
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: "Is this the same as technical patternmaking for manufacturing?",
+    a: "No. This is fashion and graphic pattern design — the artwork, repeat patterns and mockups that go onto a polo or golf shirt. It doesn't include cut-and-sew patterns, grading, or factory tech packs. If that's what you need, mention it when you message me and I'll point you the right way.",
+  },
+  {
+    q: "Can you design for shirts other than polos?",
+    a: "Yes. Golf shirts and similar garments are no problem. Polo and golf shirts are the specialty, so send your garment and I'll tell you straight away if it's a fit.",
+  },
+  {
+    q: "What files do I get?",
+    a: "Ai (editable vector source), PDF, PNG and JPG, all at print resolution and cleared for commercial use.",
+  },
+  {
+    q: "How many revisions do I get?",
+    a: "Unlimited, on every package, until the design is right. There's no extra charge for changes.",
+  },
+  {
+    q: "How fast is delivery?",
+    a: "Basic is 1-day delivery. Standard and Premium, with more concepts to develop, are 2 days.",
+  },
+  {
+    q: "Do I get a mockup, or just the flat artwork?",
+    a: "Both. Every package includes a front and back mockup on the actual garment, plus the flat, print-ready artwork files.",
+  },
+  {
+    q: "What if I need more than 5 designs, or a full collection?",
+    a: "Message me before ordering. Bulk orders and full seasonal collections are quoted separately from the standard packages.",
+  },
+];
+
+const waMsg =
+  "Hi Harinda, here's a design I'd like a polo/golf shirt pattern and mockup for:";
+
+const jsonLd = [
+  professionalService(),
+  service({
+    name: "Polo shirt pattern design and mockups",
+    description: meta.description,
+    serviceType: "Polo & golf shirt fashion and print pattern design",
+    path: meta.route,
+    lowPrice: 10,
+  }),
+  faqPage(faqs),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Fashion designing", path: meta.route },
+  ]),
+];
+---
+
+<BaseLayout
+  title={meta.title}
+  rawTitle={meta.title}
+  description={meta.description}
+  path={meta.route}
+  image={meta.ogImage}
+  imageAlt="Polo and golf shirt pattern design by Harinda Fernando — print-ready artwork and mockups for clothing brands."
+  jsonLd={jsonLd}
+>
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero__text">
+      <span class="eyebrow">Fashion designing</span>
+      <h1 class="h1">
+        <span class="split">Polo Shirt Pattern Design and Mockups, Print-Ready</span>
+      </h1>
+      <p>
+        Fashion designing covers a lot of ground — what I do, specifically, is
+        pattern designing: print artwork and repeat patterns for polo and golf
+        shirts, plus a realistic mockup, ready to hand to a print shop or
+        supplier.
+      </p>
+      <p>
+        You've got a clothing brand, a golf team, or a corporate order, and you
+        need a polo design that actually works — right proportions, right
+        placement, nothing left for a supplier to guess at. I design it in
+        Illustrator and Photoshop and hand you every source file you need to
+        take it to production.
+      </p>
+      <div class="btn-row">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--ghost" href="#pricing">See packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2 class="h2 reveal">From concept to print-ready files.</h2>
+      </div>
+      <div class="grid">
+        {
+          services.map((f) => (
+            <article class="card feature rise" data-spot data-tilt>
+              <h3>{f.h}</h3>
+              <p>{f.p}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="price-note rise">
+        <strong>Software.</strong> Every design is built in Adobe Illustrator
+        and Adobe Photoshop — clean vector artwork where it belongs, and
+        photoreal mockups where they help you sell the idea.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── How it works ────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2 reveal">Five steps to print-ready artwork.</h2>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s) => (
+            <li class="step rise">
+              <span class="step__n" aria-hidden="true" />
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Samples ─────────────────────────────────────────────────────── -->
+  {/* Hidden until real sample work replaces the placeholder slots — a
+      "coming soon" grid isn't fit for a live site. Re-add with real polo/golf
+      shirt mockups and print pattern artwork (client details removed): serve
+      WebP or AVIF, set width and height, and give every image a descriptive
+      alt (e.g. "Front and back mockup of a navy golf polo with an
+      embroidered crest"). */}
+
+  <!-- ── Pricing ─────────────────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="h2 reveal">Three packages. Unlimited revisions on all of them.</h2>
+        <p>All prices in USD. Message me before ordering so I know what you need.</p>
+      </div>
+      <div class="price-grid">
+        {
+          packages.map((p) => (
+            <article class={`card price-card rise${p.featured ? " price-card--featured beam" : ""}`} data-spot>
+              <div class="price-card__photos">{p.name} · {p.designs}</div>
+              <div class="price-card__amount grad-text">${p.price}</div>
+              <div class="price-card__unit">{p.delivery}</div>
+              <p style="margin-top:1rem">{p.desc}</p>
+              <ul class="list-check" style="margin-top:1rem;text-align:left">
+                {p.features.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          ))
+        }
+      </div>
+      <p class="price-note rise">
+        <strong>Need more than 5 designs, or a full seasonal collection?</strong>
+        {" "}Message me before ordering and I'll quote it separately from the
+        packages above.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 class="h2 reveal">Frequently asked questions</h2>
+      </div>
+      <FaqAccordion items={faqs} />
+    </div>
+  </section>
+
+  <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container center-narrow">
+      <h2 class="h1 shine">Send me your design</h2>
+      <p class="lede" style="margin-top:1rem;margin-inline:auto">
+        A logo and a rough idea of the look is enough to start. Message me
+        first and I'll come back with a timeline and a firm price.
+      </p>
+      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
+      </div>
+      <p class="form-note" style="margin-top:1rem">
+        Every enquiry gets a reply within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Also available ──────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Also available</span>
+      <ul class="also-strip">
+        <li><a class="text-link" href="/photo-editing/">Wedding photo editing</a></li>
+        <li><a class="text-link" href="/web-development/">Custom web development</a></li>
+        <li><a class="text-link" href="/about/">About Harinda</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,309 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import site, { waLink } from "../data/site.js";
+import {
+  professionalService,
+  service,
+  faqPage,
+  breadcrumb,
+} from "../lib/schema.js";
+
+// ── Frontmatter from web-development.md ────────────────────────────────────
+// note_for_dev: this page used to live at /custom-web-development/ — moved
+// to /web-development/ to match the nav label. The old URL 301s here, see
+// public/.htaccess.
+const meta = {
+  route: "/web-development/",
+  title: "Custom Web Development | Harinda Fernando",
+  description:
+    "Custom-coded websites and web apps for small businesses. No WordPress, no page builders. Fixed-price projects from $750, with the code handed over to you.",
+  ogImage: "/images/og/web-development.jpg",
+  ctaLabel: "Get a fixed-price quote",
+};
+
+const whatIBuild = [
+  {
+    h: "Marketing and portfolio sites.",
+    p: "Fast, responsive, built to rank. Typically 5–12 pages with a proper content structure rather than everything crammed onto one scrolling page.",
+  },
+  {
+    h: "Sites with a CMS you can actually use.",
+    p: "If you need to edit copy, publish posts, or add products yourself, I wire in a headless CMS with fields shaped around your content — not a generic editor you have to fight.",
+  },
+  {
+    h: "Web applications.",
+    p: "Booking systems, client portals, dashboards, internal tools, API integrations. Anything where off-the-shelf software nearly fits but not quite.",
+  },
+  {
+    h: "Rescue work.",
+    p: "Existing site slow, broken, or built by someone who has since disappeared. I audit it and either fix it or rebuild the parts worth keeping.",
+  },
+];
+
+const steps = [
+  {
+    h: "Scope call.",
+    p: "Thirty minutes. What the site needs to do, who it's for, what already exists. No charge.",
+  },
+  {
+    h: "Written proposal.",
+    p: "Fixed price, page-by-page scope, timeline, and exactly what's included. You approve it before anything starts.",
+  },
+  {
+    h: "Design pass.",
+    p: "Wireframes or a design direction agreed before a line of code is written, so we're not rebuilding at the end.",
+  },
+  {
+    h: "Build, with weekly check-ins.",
+    p: "You get a live staging link from week one, so you're watching it come together rather than waiting for a reveal.",
+  },
+  {
+    h: "Launch and handover.",
+    p: "Domain connected, SSL, analytics, business email set up, and the full source repository transferred to you. The code is yours.",
+  },
+  {
+    h: "Thirty days of support included",
+    p: "after launch for fixes and small changes.",
+  },
+];
+
+const priceRows = [
+  ["Single-page site or landing page", "$750"],
+  ["Marketing site, up to 8 pages", "$1,500"],
+  ["Business site with CMS", "$2,500"],
+  ["Web application / custom tooling", "$4,000"],
+  ["Ongoing maintenance and updates", "$150 per month"],
+  ["Additional work outside agreed scope", "$40 per hour"],
+];
+
+const faqs = [
+  {
+    q: "What stack do you use?",
+    a: "Modern JavaScript frameworks for the front end, with the back end chosen to suit the project. I'll name the specific stack in the proposal and explain why.",
+  },
+  {
+    q: "How long does a project take?",
+    a: "A landing page is about a week. A marketing site is two to three weeks. Web apps depend on scope and get a dated timeline in the proposal.",
+  },
+  {
+    q: "I'm in the US — how do we handle the time difference?",
+    a: "I keep hours that overlap US mornings, and I answer messages within one business day, every business day. Calls are booked at times that work for you.",
+  },
+  {
+    q: "Do I own the code?",
+    a: "Yes, entirely. The repository transfers to you at launch. No licence, no lock-in, and you can hire anyone to work on it afterwards.",
+  },
+  {
+    q: "Can you take over a site someone else built?",
+    a: "Usually. Send me the repo or hosting access and I'll tell you honestly whether it is worth continuing or rebuilding.",
+  },
+];
+
+const waMsg =
+  "Hi Harinda, I'd like a fixed-price quote for a website. Here's what I'm building:";
+
+const jsonLd = [
+  professionalService(),
+  service({
+    name: "Custom web development",
+    description: meta.description,
+    serviceType: "Custom web development",
+    path: meta.route,
+    lowPrice: 750,
+  }),
+  faqPage(faqs),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Custom web development", path: meta.route },
+  ]),
+];
+---
+
+<BaseLayout
+  title={meta.title}
+  rawTitle={meta.title}
+  description={meta.description}
+  path={meta.route}
+  image={meta.ogImage}
+  imageAlt="Custom web development by Harinda Fernando — sites and web apps coded from scratch, no WordPress."
+  jsonLd={jsonLd}
+>
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero__text">
+      <span class="eyebrow">Web development</span>
+      <h1 class="h1">
+        <span class="split">Custom Web Development – No WordPress, No Page Builders</span>
+      </h1>
+      <p>
+        Most small business sites are a theme, six plugins, and a page builder
+        holding each other up. They work until a plugin update breaks the layout,
+        or the site takes nine seconds to load on a phone, or you need one thing
+        the theme was never designed to do.
+      </p>
+      <p>
+        I write sites from scratch. Clean code, no plugin dependencies, no
+        monthly licences to keep renewing, and no ceiling on what the site can do
+        next year.
+      </p>
+      <div class="btn-row">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--ghost" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── What I build ────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What I build</span>
+        <h2 class="h2 reveal">Four kinds of project.</h2>
+      </div>
+      <div class="grid">
+        {
+          whatIBuild.map((f) => (
+            <article class="card feature rise" data-spot data-tilt>
+              <h3>{f.h}</h3>
+              <p>{f.p}</p>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- ── How I work ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How I work</span>
+        <h2 class="h2 reveal">Scope call to handover.</h2>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s) => (
+            <li class="step rise">
+              <span class="step__n" aria-hidden="true" />
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Work samples ───────────────────────────────────────────────── -->
+  {/* Hidden until real project screenshots replace the placeholder slots —
+      a "coming soon" grid isn't fit for a live site. Re-add with real
+      screenshots: serve WebP or AVIF, set width and height, give every image
+      a descriptive alt (e.g. "Home page of a booking site built for a
+      physiotherapy clinic"), and link each slot to a short case note. */}
+
+  <!-- ── Pricing ─────────────────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="h2 reveal">Fixed price, quoted after the scope call.</h2>
+        <p>
+          All prices in USD. Every project is quoted fixed-price after the scope
+          call, so there are no hourly surprises.
+        </p>
+      </div>
+      <div class="table-wrap rise">
+        <table class="price-table">
+          <thead>
+            <tr><th>Project type</th><th>From</th></tr>
+          </thead>
+          <tbody>
+            {priceRows.map(([label, price]) => (
+              <tr><td>{label}</td><td>{price}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="price-note rise">
+        $750 is my project minimum. Below that the scoping, revisions, and
+        handover cost more than the build, and neither of us ends up happy with
+        it.
+      </p>
+      <p class="price-note rise">
+        Payment is 40% to start, 60% on launch. Card, Wise, or bank transfer.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Why not WordPress? ─────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The WordPress question</span>
+        <h2 class="h2 reveal">Why not WordPress?</h2>
+      </div>
+      <div class="prose">
+        <p>
+          Nothing is wrong with WordPress for a blog. The problem is what happens
+          when a business site is assembled from a paid theme and a stack of
+          plugins that were never written to work together. You end up with a
+          site you can't fully change, performance you can't fix, security
+          patches you have to chase, and a yearly licence bill for features you
+          use once.
+        </p>
+        <p>
+          A custom build costs more up front and less over three years. You own
+          the code, it loads in under two seconds, and when you need something
+          new it gets built rather than worked around.
+        </p>
+        <p>
+          If WordPress genuinely is the right answer for your project, I'll tell
+          you that on the scope call instead of selling you a build you don't
+          need.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 class="h2 reveal">Frequently asked questions</h2>
+      </div>
+      <FaqAccordion items={faqs} />
+    </div>
+  </section>
+
+  <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container center-narrow">
+      <h2 class="h1 shine">Get a fixed-price quote</h2>
+      <p class="lede" style="margin-top:1rem;margin-inline:auto">
+        Tell me what you're building and I'll come back with a written scope and a
+        firm number, usually within two business days.
+      </p>
+      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
+      </div>
+      <p class="form-note" style="margin-top:1rem">
+        I answer messages within one business day, every business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Also available ──────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Also available</span>
+      <ul class="also-strip">
+        <li><a class="text-link" href="/photo-editing/">Wedding photo editing</a></li>
+        <li><a class="text-link" href="/fashion-designing/">Polo shirt design &amp; patterns</a></li>
+        <li><a class="text-link" href="/about/">About Harinda</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -8,6 +8,13 @@ export const site = {
   name: "iamharinda",
   // Your name as it should appear in schema.org / "About".
   personName: "Harinda Fernando",
+
+  // Job titles across every service line — used in the Person structured data.
+  personTitles: [
+    "Photo editor and colour grader",
+    "Web developer",
+    "Fashion & print pattern designer",
+  ],
   domain: "www.iamharinda.com",
   url: "https://www.iamharinda.com",
 
@@ -35,24 +42,132 @@ export const site = {
     ordersPlus: 300,
   },
 
+  // Countries orders have actually come from, per the Fiverr profile's
+  // "World Domination" stat — read off a screenshot, so double-check against
+  // Fiverr Analytics if a country looks wrong. `code` is the lowercase ISO
+  // 3166-1 alpha-2 id used by public/images/world-map.svg's path ids.
+  clientCountries: [
+    { code: "ca", name: "Canada" },
+    { code: "us", name: "United States" },
+    { code: "co", name: "Colombia" },
+    { code: "gb", name: "United Kingdom" },
+    { code: "fr", name: "France" },
+    { code: "de", name: "Germany" },
+    { code: "es", name: "Spain" },
+    { code: "it", name: "Italy" },
+    { code: "za", name: "South Africa" },
+    { code: "in", name: "India" },
+    { code: "th", name: "Thailand" },
+    { code: "ph", name: "Philippines" },
+    { code: "jp", name: "Japan" },
+    { code: "au", name: "Australia" },
+    { code: "nz", name: "New Zealand" },
+  ],
+
   // ── Contact ───────────────────────────────────────────────────────────────
   contact: {
     email: "hello@iamharinda.com", // create this mailbox in Hostinger (README step 5)
+    // Secondary personal inbox, shown alongside the main one on /contact/.
+    altEmail: "iamharinda@gmail.com",
     // Digits only — international format, no "+", no spaces. Used to build wa.me links.
     whatsapp: "447355229599",
     // Same number, formatted for display. Shown as the link text; the link still opens WhatsApp.
     whatsappDisplay: "+44 7355 229599",
     whatsappNote: "Message any time. Replies within one working day.",
     fiverr: "https://www.fiverr.com/iamharinda",
+    // Options for the "Which service?" picker on the contact form.
+    services: [
+      "Photo editing",
+      "Wedding photo editing",
+      "Custom web development",
+      "Polo shirt design & patterns",
+      "Not sure yet",
+    ],
   },
 
   // ── Navigation ────────────────────────────────────────────────────────────
   nav: [
     { label: "Home", href: "/" },
+    { label: "Photo editing", href: "/photo-editing/" },
+    { label: "Pattern designing", href: "/fashion-designing/" },
+    { label: "Web development", href: "/web-development/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
   ],
+
+  // ── Where Harinda is based (trust signal + structured data) ───────────────
+  location: {
+    country: "Sri Lanka",
+    // Clients are worldwide; the work is delivered online.
+    servedFrom:
+      "Based in Sri Lanka, working with clients in the United States, Canada and Europe.",
+  },
+
+  // ── Services with their own landing page ─────────────────────────────────
+  //  Used for the home-page front door, the footer, and the "also available"
+  //  strip at the foot of each service page. One short line each — the detail
+  //  lives on the page itself.
+  servicePages: [
+    {
+      label: "Photo editing & colour correction",
+      href: "/pricing/",
+      line: "Colour correction and retouching for photographers, done by hand and priced by the photo. Free sample edit before you commit.",
+    },
+    {
+      label: "Wedding photo editing",
+      href: "/photo-editing/",
+      line: "Hand-edited on a Calman-verified monitor, no AI. Packages from $10 for 50 images, unlimited revisions.",
+    },
+    {
+      label: "Custom web development",
+      href: "/web-development/",
+      line: "Sites and web apps coded from scratch — no WordPress, no builders. Fixed prices start at $750 and you keep the code.",
+    },
+    {
+      label: "Polo shirt design & patterns",
+      href: "/fashion-designing/",
+      line: "Print-ready polo and golf shirt patterns and mockups, built in Illustrator and Photoshop. Packages from $10, unlimited revisions.",
+    },
+  ],
+
+  // ── Pricing hub summary ─────────────────────────────────────────────────
+  //  The at-a-glance cards on /pricing/. Each links to the full breakdown on
+  //  its own service page — photo editing's lives on /pricing/ itself.
+  pricingSummary: [
+    {
+      label: "Photo editing",
+      href: "/pricing/#photo-editing",
+      from: "$10",
+      unit: "for 50 photos · $0.20 each",
+      line: "Colour correction and retouching, priced by the number of photos. Free sample edit first, paid after delivery.",
+    },
+    {
+      label: "Wedding photo editing",
+      href: "/photo-editing/#pricing",
+      from: "$10",
+      unit: "per package · up to 500 images",
+      line: "Hand-edited on a Calman-verified monitor, no AI. Packages from $10 to $100, unlimited revisions.",
+    },
+    {
+      label: "Custom web development",
+      href: "/web-development/#pricing",
+      from: "$750",
+      unit: "fixed price · $150/mo upkeep",
+      line: "Sites and web apps coded from scratch. Quoted fixed-price after a free scope call, and you keep the code.",
+    },
+    {
+      label: "Polo shirt design & patterns",
+      href: "/fashion-designing/#pricing",
+      from: "$10",
+      unit: "per package · up to 5 designs",
+      line: "Print-ready polo and golf shirt patterns and mockups, in Illustrator and Photoshop. Packages from $10 to $40, unlimited revisions.",
+    },
+  ],
+
+  // Bump this whenever a price changes anywhere on the site — shown on
+  // /pricing/ so visitors (and future-you) know how fresh the numbers are.
+  pricesUpdated: "2026-09-13",
 
   // ── Availability badge (home hero) ───────────────────────────────────────
   availability: {
@@ -380,6 +495,11 @@ export const site = {
     ogImage: "/og/og-default.jpg", // 1200×630, generated by npm run optimise:photos
     twitterHandle: "", // "@yourhandle" if you have one, otherwise leave blank
     locale: "en_US",
+    // Search Console ownership is already verified by DNS TXT record at the
+    // domain registrar (Domain property), so no HTML tag is needed. Only fill
+    // this in if you later add a URL-prefix property that wants the meta-tag
+    // method; when set it renders <meta name="google-site-verification">.
+    googleSiteVerification: "",
   },
 };
 

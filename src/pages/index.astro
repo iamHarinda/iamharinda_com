@@ -1,20 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import FaqAccordion from "../components/FaqAccordion.astro";
+import WorldMap from "../components/WorldMap.astro";
 import site, { waLink } from "../data/site.js";
-import { professionalService, faqPage } from "../lib/schema.js";
+import { professionalService } from "../lib/schema.js";
 
-const jsonLd = [professionalService(), faqPage(site.faqs)];
-const sampleMsg =
-  "Hi Harinda, I found your site. Could you do a free sample edit of a few of my photos?";
-const { rating, reviews } = site.fiverrStats;
+const jsonLd = [professionalService()];
 const av = site.availability;
-const icons = ["◐", "◔", "◑", "◕"];
+const contactMsg =
+  "Hi Harinda, I found your site. I'm not sure which service I need — can you help?";
 ---
 
 <BaseLayout
-  title="Human photo editing and colour correction"
-  description={site.description}
+  title="Photo Editing, Web Development & Fashion Design"
+  description="Harinda Fernando runs three services from Sri Lanka for clients in the US, Canada and Europe: photo editing, custom web development, and fashion designing."
   path="/"
   jsonLd={jsonLd}
 >
@@ -32,7 +30,7 @@ const icons = ["◐", "◔", "◑", "◕"];
             src={site.personImage}
             width="104"
             height="104"
-            alt={`${site.personName}, photo editor`}
+            alt={`${site.personName}, photo editor and web developer`}
             loading="eager"
             decoding="async"
           />
@@ -45,187 +43,61 @@ const icons = ["◐", "◔", "◑", "◕"];
       </span>
 
       <h1 class="h1">
-        <span class="split">Colour correction and retouching, by a human eye.</span>
+        <span class="split">One person. Photo editing, web builds, and fashion designing.</span>
       </h1>
       <p>
-        {site.tagline} No AI presets, no batch looks — skin stays skin, whites
-        stay white. See it first with a free sample edit.
+        I run three services for clients in the United States, Canada and Europe.
+        Pick the one you need — each has its own page, its own pricing, and its
+        own turnaround.
       </p>
       <div class="btn-row">
-        <a class="btn" data-magnetic href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
-        <a class="btn btn--ghost" href="/pricing/">See pricing</a>
-      </div>
-      <p class="hero__trust">
-        Rated {rating} on <a href={site.contact.fiverr} target="_blank" rel="noopener">Fiverr</a>
-        over {reviews} reviews · {site.fiverrStats.ordersPlus}+ orders · pay after delivery
-      </p>
-      <div class="hero__pills">
-        {site.services.slice(0, 5).map((s) => <span class="pill">{s}</span>)}
+        <a class="btn" data-magnetic href="#services">See the services</a>
+        <a class="btn btn--ghost" href="/contact/">Contact</a>
       </div>
     </div>
   </section>
 
-  <!-- ── What you get ─────────────────────────────────────────────────── -->
-  <section class="section">
+  <!-- ── Services: the front door ─────────────────────────────────────── -->
+  <section class="section" id="services">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">What you get</span>
-        <h2 class="h2 reveal">Editing decisions made by a person, not a model.</h2>
-        <p>Every frame is opened on a calibrated screen and judged by eye.</p>
+        <span class="eyebrow">Services</span>
+        <h2 class="h2 reveal">Four things I do. One line each.</h2>
       </div>
-      <div class="grid">
+      <div class="service-list">
         {
-          site.whatYouGet.map((f, i) => (
-            <article class="card feature rise" data-spot data-tilt>
-              <div class="feature__icon" aria-hidden="true">{icons[i % icons.length]}</div>
-              <h3>{f.title}</h3>
-              <p>{f.body}</p>
-            </article>
+          site.servicePages.map((s) => (
+            <a href={s.href}>
+              <h3>{s.label}</h3>
+              <p>{s.line}</p>
+            </a>
           ))
         }
       </div>
     </div>
   </section>
 
-  <!-- ── Free sample callout ─────────────────────────────────────────── -->
+  <!-- ── World map ───────────────────────────────────────────────────── -->
   <section class="section">
     <div class="container">
-      <div class="callout beam rise">
-        <div>
-          <h2 class="grad-text">{site.freeSample.short}</h2>
-          <p>{site.freeSample.line} No card, no commitment.</p>
-        </div>
-        <a class="btn" data-magnetic href={waLink(sampleMsg)}>{site.freeSample.cta}</a>
-      </div>
+      <WorldMap heading="Clients, worldwide." />
     </div>
   </section>
 
-  <!-- ── Pricing snapshot ─────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Pricing</span>
-        <h2 class="h2 reveal">Priced by volume. Paid after delivery.</h2>
-        <p>Three flat packages. Larger sets are quoted individually.</p>
-      </div>
-      <div class="price-grid">
-        {
-          site.packages.map((p, i) => (
-            <article class={`card price-card rise${i === 1 ? " price-card--featured beam" : ""}`} data-spot>
-              <div class="price-card__photos">{p.photos} photos</div>
-              <div class="price-card__amount grad-text">${p.price}</div>
-              <div class="price-card__unit">
-                ${(p.price / p.photos).toFixed(2)} per photo, all in
-              </div>
-            </article>
-          ))
-        }
-      </div>
-      <p class="bulk-note rise">{site.bulkNote}</p>
-      <p style="margin-top:1.5rem">
-        <a class="text-link" href="/pricing/">Full pricing and payment methods</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ── How it works ────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">How it works</span>
-        <h2 class="h2 reveal">Four steps, no deposit.</h2>
-      </div>
-      <ol class="steps">
-        {
-          site.howItWorks.map((step) => (
-            <li class="step rise">
-              <span class="step__n" aria-hidden="true" />
-              <h3>{step.title}</h3>
-              <p>{step.body}</p>
-            </li>
-          ))
-        }
-      </ol>
-    </div>
-  </section>
-
-  <!-- ── Tools ───────────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">The setup</span>
-        <h2 class="h2 reveal">Judged on true colour, edited by hand.</h2>
-        <p>The screen and software behind every file.</p>
-      </div>
-      <div class="tools-grid">
-        {
-          site.toolLogos.map((t) => (
-            <div class="tool-card rise" data-spot>
-              <span class="tool-card__logo">
-                <img src={t.logo} alt={t.name} width="40" height="40" loading="lazy" decoding="async" />
-              </span>
-              <span class="tool-card__name">{t.name}</span>
-              <span class="tool-card__note">{t.note}</span>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
-  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Questions</span>
-        <h2 class="h2 reveal">Frequently asked.</h2>
-      </div>
-      <FaqAccordion items={site.faqs} />
-    </div>
-  </section>
-
-  <!-- ── Contact CTA ─────────────────────────────────────────────────── -->
+  <!-- ── Contact ─────────────────────────────────────────────────────── -->
   <section class="section">
     <div class="container center-narrow">
-      <h2 class="h1 shine">Start with a free sample edit.</h2>
+      <h2 class="h1 shine">Not sure which you need?</h2>
       <p class="lede" style="margin-top:1rem;margin-inline:auto">
-        Send two or three RAW files. You get them back fully edited, free, and you
-        decide from there. Full orders are paid only after delivery.
+        Send a short message about the work and I'll point you to the right
+        service, or tell you if it's not something I do.
       </p>
       <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
-        <a class="btn" data-magnetic href={waLink(sampleMsg)}>Message on WhatsApp</a>
-        <a class="btn btn--grad" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
+        <a class="btn" data-magnetic href={waLink(contactMsg)}>Message on WhatsApp</a>
+        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
       </div>
-    </div>
-  </section>
-
-  <!-- ── Reviews — kept last so the sections above are seen first ─────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Reviews</span>
-        <h2 class="h2 reveal">{rating} out of 5 on Fiverr.</h2>
-        <p>
-          From {reviews} reviews over {site.fiverrStats.ordersPlus}+ orders.
-        </p>
-      </div>
-      <div class="quotes">
-        {
-          site.testimonials.map((t) => (
-            <figure class="card quote rise" data-spot>
-              <div class="stars" aria-hidden="true">★★★★★</div>
-              <blockquote>&ldquo;{t.quote}&rdquo;</blockquote>
-              <figcaption>
-                <b>{t.name}</b>
-                <br />
-                {t.role}
-              </figcaption>
-            </figure>
-          ))
-        }
-      </div>
-      <p style="margin-top:1.75rem">
-        <a class="text-link" href={site.contact.fiverr} target="_blank" rel="noopener">Read all reviews on Fiverr</a>
+      <p class="form-note" style="margin-top:1rem">
+        Every enquiry gets a reply within one business day.
       </p>
     </div>
   </section>

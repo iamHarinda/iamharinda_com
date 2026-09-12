@@ -1173,6 +1173,46 @@ body::after {
   margin-bottom: var(--space-2);
 }
 
+/* 16b. World map ------------------------------------------------------------ */
+
+.world-map {
+  position: relative;
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  border: 1px solid var(--hairline);
+  overflow: clip;
+}
+.world-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.world-map :where(path) {
+  fill: var(--surface-solid);
+  stroke: none;
+}
+.world-map :where(path.is-served) {
+  fill: var(--c-teal);
+  stroke: none;
+}
+.world-map__caption {
+  margin-top: var(--space-3);
+  font-size: var(--step--1);
+  color: var(--text-faint);
+}
+.world-map__caption a {
+  color: inherit;
+}
+/* Progressive enhancement: the map is injected by JS. With it disabled (or
+   before the fetch resolves) show the plain country list instead. */
+.world-map__fallback {
+  margin: 0;
+}
+.world-map[data-loaded="true"] .world-map__fallback {
+  display: none;
+}
+
 /* 17. FAQ (native <details>) ------------------------------------------------- */
 
 .faq {
@@ -1379,7 +1419,9 @@ body::after {
 /* 20. 404 ------------------------------------------------------------------- */
 
 .notfound {
-  min-height: 62vh;
+  /* No header/footer bracket this page (see BaseLayout's chrome={false}), so
+     it centers in the full viewport instead of the old 62vh. */
+  min-height: 100dvh;
   display: grid;
   place-content: center;
   text-align: center;
@@ -1391,6 +1433,121 @@ body::after {
 }
 .notfound p {
   color: var(--text-dim);
+}
+
+/* 20b. 404 — swinging spotlight ----------------------------------------------
+   A ceiling lamp swings like a pendulum; the beam and the lit patch of the
+   "404" text share one keyframe timing (same duration/easing/direction) so
+   the bright patch of text always tracks directly under the lamp. */
+
+.notfound--spotlight {
+  position: relative;
+  width: 100%;
+  overflow: clip;
+  background: var(--bg);
+}
+/* The lamp/beam/404 sit directly in the full-width wrapper; only the
+   readable content below gets the normal container max-width. */
+.notfound__foreground {
+  position: relative;
+  z-index: 1;
+}
+
+.spotlight-rig {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 22%;
+  transform-origin: top center;
+  animation: spotlight-swing 4.4s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.spotlight-rig::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(var(--hairline-strong), transparent);
+}
+.spotlight-lamp {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(24px, 4vw, 32px);
+  height: clamp(15px, 2.5vw, 20px);
+  border-radius: 5px 5px 12px 12px;
+  background: linear-gradient(180deg, var(--bg-raise), var(--surface-solid));
+  border: 1px solid var(--hairline-strong);
+  box-shadow: 0 0 24px 4px color-mix(in oklab, var(--c-teal) 45%, transparent);
+}
+.spotlight-beam {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: clamp(200px, 28vw, 320px);
+  height: 60vh;
+  transform: translateX(-50%);
+  clip-path: polygon(47% 0, 53% 0, 100% 100%, 0% 100%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--c-teal) 45%, transparent),
+    transparent 70%
+  );
+  mix-blend-mode: screen;
+}
+@keyframes spotlight-swing {
+  from {
+    transform: rotate(-22deg);
+  }
+  to {
+    transform: rotate(22deg);
+  }
+}
+
+.notfound h1.spotlight-404 {
+  display: grid;
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 18vw, 13rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding-inline: var(--gutter);
+}
+.spotlight-404__dim,
+.spotlight-404__lit {
+  grid-area: 1 / 1;
+}
+.spotlight-404__dim {
+  color: color-mix(in oklab, var(--c-violet) 14%, transparent);
+}
+.spotlight-404__lit {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 12% 150% at 50% 50%, #000 55%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 300% 100%;
+  mask-size: 300% 100%;
+  animation: spotlight-scan 4.4s ease-in-out infinite alternate;
+}
+@keyframes spotlight-scan {
+  from {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
 }
 
 /* 21. Misc + page figure --------------------------------------------------- */
@@ -1419,6 +1576,125 @@ body::after {
   font-size: var(--step--1);
   color: var(--text-faint);
   border-top: 1px solid var(--hairline);
+}
+
+/* 21b. Service pages ------------------------------------------------------- */
+
+/* Home-page front door: one row per service. */
+.service-list {
+  display: grid;
+  gap: var(--space-3);
+  max-width: var(--measure);
+}
+.service-list a {
+  display: block;
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.service-list a:hover {
+  border-color: var(--hairline-strong);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.service-list h3 {
+  font-size: var(--step-1);
+  color: var(--text);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.service-list h3::after {
+  content: "→";
+  color: var(--c-violet);
+}
+.service-list p {
+  margin-top: var(--space-2);
+  color: var(--text-dim);
+}
+
+/* Pricing table on the service pages. */
+.table-wrap {
+  max-width: var(--measure);
+  overflow-x: auto;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+}
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--step-0);
+}
+.price-table th,
+.price-table td {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--hairline);
+}
+.price-table thead th {
+  color: var(--text-faint);
+  font-weight: 600;
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.price-table td {
+  color: var(--text-dim);
+}
+.price-table td:last-child,
+.price-table th:last-child {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--text);
+}
+.price-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.price-note {
+  max-width: var(--measure);
+  margin-top: var(--space-4);
+  color: var(--text-dim);
+}
+.price-note strong {
+  color: var(--text);
+}
+
+/* Portfolio / samples placeholder grid. */
+.portfolio-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+.portfolio-grid__slot {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--hairline-strong);
+  background: linear-gradient(
+    120deg,
+    var(--bg-raise),
+    var(--surface-solid)
+  );
+  display: grid;
+  place-items: center;
+  padding: var(--space-3);
+  text-align: center;
+  color: var(--text-faint);
+  font-size: var(--step--1);
+}
+
+/* "Also available" strip at the foot of each service page. */
+.also-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  max-width: var(--measure);
+}
+.also-strip li {
+  padding: 0.2rem 0;
 }
 
 /* 22. Reduced motion ------------------------------------------------------- */

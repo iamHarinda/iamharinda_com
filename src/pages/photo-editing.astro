@@ -1,0 +1,350 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FaqAccordion from "../components/FaqAccordion.astro";
+import site, { waLink } from "../data/site.js";
+import {
+  professionalService,
+  service,
+  faqPage,
+  breadcrumb,
+} from "../lib/schema.js";
+
+// ── Frontmatter from photo-editing.md ──────────────────────────────────────
+// note_for_dev: this page used to live at /wedding-photo-editing/ — the hero
+// read as wedding-only, so both the copy and the URL broadened to match what
+// the gig actually covers (wedding, portrait, headshot, and more). The old
+// URL 301s here, see public/.htaccess.
+const meta = {
+  route: "/photo-editing/",
+  title: "Photo Editing for Photographers | Harinda Fernando",
+  description:
+    "Professional Lightroom editing for wedding, portrait and headshot photographers. No AI, hand-edited on a Calman-verified monitor. Packages from $10.",
+  ogImage: "/images/og/photo-editing.jpg",
+  ctaLabel: "Message me first",
+};
+
+const whatYouGet = [
+  {
+    h: "White balance & colour correction.",
+    p: "Accurate colour from the first frame, judged against a factory-calibrated, Calman-verified monitor — not guessed at on a laptop screen.",
+  },
+  {
+    h: "Exposure, contrast & tonal work.",
+    p: "Highlights recovered, shadows opened, contrast placed where the image needs it — worked from the RAW, not baked onto a JPEG.",
+  },
+  {
+    h: "Clean, natural colour grading.",
+    p: "A grade that reads as skill, not a filter. Skin stays skin, whites stay white.",
+  },
+  {
+    h: "Noise reduction & sharpening.",
+    p: "Clean detail at high ISO, sharpened for print and screen without looking processed.",
+  },
+  {
+    h: "Lens corrections & cropping.",
+    p: "Distortion and vignetting corrected, crops set with intent — not just centred and squared.",
+  },
+  {
+    h: "Photo culling for large galleries.",
+    p: "Send the full card. I pick the keepers and flag the best of each moment, so you're only paying to edit what makes the cut.",
+  },
+];
+
+const steps = [
+  {
+    h: "Message me first.",
+    p: "Tell me the shoot type and roughly how many images, before you order, so the right package and timeline are clear from the start.",
+  },
+  {
+    h: "Send the gallery.",
+    p: "RAW or high-quality JPEGs give the best result. WeTransfer, Dropbox, Google Drive — whatever you already use.",
+  },
+  {
+    h: "Edited by hand.",
+    p: "Every frame judged by eye on a factory-calibrated, Calman-verified ASUS ProArt monitor. No AI, no batch presets.",
+  },
+  {
+    h: "Delivered on schedule.",
+    p: "Basic in 2 days, Standard in 3, Premium in 4 — sized to the package, not a guess.",
+  },
+  {
+    h: "Unlimited revisions",
+    p: "on every package, until it's right, at no extra charge.",
+  },
+];
+
+const packages = [
+  {
+    name: "Basic",
+    tagline: "Starter Pack",
+    price: 10,
+    images: "50 images",
+    delivery: "2-day delivery",
+    desc: "Perfect for small projects or portrait sessions.",
+    features: ["50 images", "Unlimited revisions", "Printable resolution file", "Commercial use"],
+  },
+  {
+    name: "Standard",
+    tagline: "Professional Bundle",
+    price: 40,
+    images: "200 images",
+    delivery: "3-day delivery",
+    desc: "Ideal for event photographers, small weddings, or business photoshoots.",
+    featured: true,
+    features: ["200 images", "Unlimited revisions", "Printable resolution file", "Commercial use"],
+  },
+  {
+    name: "Premium",
+    tagline: "Complete Collection",
+    price: 100,
+    images: "500 images",
+    delivery: "4-day delivery",
+    desc: "Best for large weddings, commercial shoots, or photographers needing bulk editing.",
+    features: ["500 images", "Unlimited revisions", "Printable resolution file", "Commercial use"],
+  },
+];
+
+const specialties = [
+  "Weddings & engagements",
+  "Portraits & headshots",
+  "Family, maternity & newborn sessions",
+  "Events, graduations & parties",
+  "Lifestyle, fashion & model shoots",
+  "Real estate, product & food photography",
+  "Drone, nightlife & event photos",
+];
+
+const faqs = [
+  {
+    q: "What photo editing services do you offer?",
+    a: "Portrait retouching, headshot editing, beauty and skin retouching, wedding photo editing, and bulk photo editing, all done in Adobe Lightroom and Lightroom Classic.",
+  },
+  {
+    q: "What software do you use?",
+    a: "Adobe Lightroom and Lightroom Classic for colour correction and overall adjustments, and Adobe Photoshop for detailed retouching and advanced work.",
+  },
+  {
+    q: "How do you deliver the edited photos?",
+    a: "High-quality JPGs as standard, with PNG or TIFF available for professional use. Delivered through Fiverr or a secure file-sharing link.",
+  },
+  {
+    q: "What is your turnaround time?",
+    a: "24 to 48 hours for most orders. Larger volumes and full wedding albums get a clear timeline upfront, sized to the package: 2 days for Basic, 3 for Standard, 4 for Premium.",
+  },
+  {
+    q: "What file formats do you accept?",
+    a: "JPG, PNG, TIFF, and RAW — ARW, CR3, CR2, NEF and DNG. RAW is preferred for the best result, especially for portrait retouching.",
+  },
+  {
+    q: "Can images be fully fixed no matter their condition?",
+    a: "No. I enhance the detail that's already in the frame. Extremely blurry, low-resolution, or heavily underexposed images can't be fully rescued — RAW or high-quality JPEGs give the best results.",
+  },
+  {
+    q: "Can you handle bulk photo editing?",
+    a: "Yes — bulk editing for photographers, wedding albums, and large collections is a regular part of the work. Message me with the shoot type and volume for a clear timeline.",
+  },
+  {
+    q: "Can wedding photos be edited in different styles?",
+    a: "Yes. Light and airy, vintage, classic, and modern are all covered — send a style reference and it's matched.",
+  },
+];
+
+const waMsg =
+  "Hi Harinda, I'd like to talk about photo editing before ordering. Here's my project:";
+
+const jsonLd = [
+  professionalService(),
+  service({
+    name: "Photo editing",
+    description: meta.description,
+    serviceType: "Photo editing",
+    path: meta.route,
+    lowPrice: 10,
+  }),
+  faqPage(faqs),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Photo editing", path: meta.route },
+  ]),
+];
+---
+
+<BaseLayout
+  title={meta.title}
+  rawTitle={meta.title}
+  description={meta.description}
+  path={meta.route}
+  image={meta.ogImage}
+  imageAlt="Photo editing by Harinda Fernando — hand-edited on a Calman-verified monitor, no AI."
+  jsonLd={jsonLd}
+>
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero__text">
+      <span class="eyebrow">Photo editing</span>
+      <h1 class="h1">
+        <span class="split">Photo Editing That Looks Like You Edited It</span>
+      </h1>
+      <p>
+        Professional Lightroom editing for wedding, portrait and headshot
+        photographers — plus family, event, real estate, product and drone
+        work. I'm a full-time editor — a former photographer myself — using a
+        refined Lightroom and Lightroom Classic workflow to deliver clean,
+        natural results, one gallery at a time.
+      </p>
+      <p>
+        No AI. Every edit is judged by eye on a factory-calibrated,
+        Calman-verified ASUS ProArt monitor. I understand the lighting, colour
+        and storytelling behind every image, and I only deliver edits I'm
+        confident your photos deserve.
+      </p>
+      <div class="btn-row">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--ghost" href="#pricing">See pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── What's included ─────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What's included</span>
+        <h2 class="h2 reveal">Every order, every package.</h2>
+      </div>
+      <div class="grid">
+        {
+          whatYouGet.map((f) => (
+            <article class="card feature rise" data-spot data-tilt>
+              <h3>{f.h}</h3>
+              <p>{f.p}</p>
+            </article>
+          ))
+        }
+      </div>
+      <p class="price-note rise">
+        <strong>Important.</strong> I enhance the detail that's already
+        there — extremely blurry, low-resolution, or heavily underexposed
+        images can't be fully fixed. RAW or high-quality JPEGs deliver the
+        best results.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── How it works ────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2 reveal">From style reference to finished gallery.</h2>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s) => (
+            <li class="step rise">
+              <span class="step__n" aria-hidden="true" />
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Samples ─────────────────────────────────────────────────────── -->
+  {/* Hidden until real portfolio images replace the placeholder slots — a
+      "coming soon" grid isn't fit for a live site. The user is sourcing
+      direct image URLs from their Fiverr portfolio (fiverr.com/users/
+      oleezax/portfolio/ — the page itself blocks scraping) since only
+      after-shots are available, not before/after pairs; adjust the section
+      copy ("Before / after pairs...") to match once real images are in.
+      Serve WebP or AVIF, set width and height, and give every image a
+      descriptive alt. */}
+
+  <!-- ── Pricing ─────────────────────────────────────────────────────── -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="h2 reveal">Three packages. Unlimited revisions on all of them.</h2>
+        <p>All prices in USD. Message me before ordering so the package fits.</p>
+      </div>
+      <div class="price-grid">
+        {
+          packages.map((p) => (
+            <article class={`card price-card rise${p.featured ? " price-card--featured beam" : ""}`} data-spot>
+              <div class="price-card__photos">{p.name} — {p.tagline}</div>
+              <div class="price-card__amount grad-text">${p.price}</div>
+              <div class="price-card__unit">{p.images} · {p.delivery}</div>
+              <p style="margin-top:1rem">{p.desc}</p>
+              <ul class="list-check" style="margin-top:1rem;text-align:left">
+                {p.features.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          ))
+        }
+      </div>
+      <p class="price-note rise">
+        <strong>Bulk or ongoing work?</strong> Booking regularly, or need more
+        than 500 images in one order? Message me and I'll quote it separately
+        from the packages above.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Also edited ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Also edited</span>
+        <h2 class="h2 reveal">Beyond weddings.</h2>
+        <p>The same eye and the same workflow, across every genre I shoot for.</p>
+      </div>
+      <ul class="list-check rise">
+        {specialties.map((s) => <li>{s}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 class="h2 reveal">Frequently asked questions</h2>
+      </div>
+      <FaqAccordion items={faqs} />
+    </div>
+  </section>
+
+  <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container center-narrow">
+      <h2 class="h1 shine">Ready to elevate your images?</h2>
+      <p class="lede" style="margin-top:1rem;margin-inline:auto">
+        Message me before ordering to discuss your project — the shoot type,
+        the image count, and the timeline that works for you.
+      </p>
+      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
+        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
+        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
+      </div>
+      <p class="form-note" style="margin-top:1rem">
+        Every enquiry gets a reply within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Also available ──────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Also available</span>
+      <ul class="also-strip">
+        <li><a class="text-link" href="/web-development/">Custom web development</a></li>
+        <li><a class="text-link" href="/fashion-designing/">Polo shirt design &amp; patterns</a></li>
+        <li><a class="text-link" href="/about/">About Harinda</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

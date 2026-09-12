@@ -8,25 +8,35 @@ const year = new Date().getFullYear();
     <div class="footer__grid">
       <div>
         <p class="footer__brand">iamharinda</p>
-        <p style="margin-top:.5rem;max-width:28ch">
-          Photo retouching and colour correction by a human eye on a calibrated
-          screen. Free sample edit before you order.
+        <p style="margin-top:.5rem;max-width:32ch">
+          Photo editing, web development, and fashion designing. One person,
+          working with clients in the United States, Canada and Europe.
         </p>
       </div>
 
       <div>
         <h2>Get in touch</h2>
         <ul>
-          <li><a href={waLink("Hi Harinda, could you do a free sample edit of a few of my photos?")}>WhatsApp</a></li>
+          <li><a href={waLink("Hi Harinda, I found your site and I'd like to get in touch.")}>WhatsApp</a></li>
           <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
           <li><a href={site.contact.fiverr} rel="me noopener" target="_blank">Fiverr profile</a></li>
         </ul>
       </div>
 
       <div>
+        <h2>Services</h2>
+        <ul>
+          <li><a href="/photo-editing/">Wedding photo editing</a></li>
+          <li><a href="/web-development/">Web development</a></li>
+          <li><a href="/fashion-designing/">Fashion Designing</a></li>
+          <li><a href="/pricing/#photo-editing">Photo editing</a></li>
+          <li><a href="/pricing/">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div>
         <h2>Pages</h2>
         <ul>
-          <li><a href="/pricing/">Pricing</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
         </ul>
@@ -41,7 +51,11 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="footer__legal">
-      <span>&copy; {year} iamharinda.</span>
+      <span>
+        &copy; {year} {site.personName}, trading as iamharinda. Based in
+        {" "}{site.location.country}, working with clients in the United States,
+        Canada and Europe.
+      </span>
       <span><a href="/llms.txt">llms.txt</a></span>
     </div>
   </div>

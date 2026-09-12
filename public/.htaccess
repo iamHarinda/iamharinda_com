@@ -10,11 +10,36 @@ DirectoryIndex index.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Any request that is not HTTPS, or that uses the bare (non-www) host,
-  # is redirected once to https://www.iamharinda.com + the same path.
+  # Any request that is not HTTPS, or whose host is anything other than
+  # www.iamharinda.com — the bare domain, a staging/preview subdomain, a raw
+  # IP — is redirected once to https://www.iamharinda.com + the same path.
+  # This also folds the indexed preview copy
+  # (iamharinda-com.preview-domain.com) into the live site instead of letting
+  # it compete in search. If the preview is hosted somewhere this file is not
+  # deployed, take it offline there or send X-Robots-Tag: noindex from it.
   RewriteCond %{HTTPS} off [OR]
-  RewriteCond %{HTTP_HOST} ^iamharinda\.com$ [NC]
+  RewriteCond %{HTTP_HOST} !^www\.iamharinda\.com$ [NC]
   RewriteRule ^ https://www.iamharinda.com%{REQUEST_URI} [R=301,L]
+
+  # ── Renamed pages ───────────────────────────────────────────────────────
+  # apparel-pattern-tech-packs/ was reframed as fashion/print pattern design
+  # (see src/pages/fashion-designing.astro) and moved here permanently.
+  RewriteRule ^apparel-pattern-tech-packs/?$ /fashion-designing/ [R=301,L]
+  # custom-web-development/ shortened to match the nav label.
+  RewriteRule ^custom-web-development/?$ /web-development/ [R=301,L]
+  # wedding-photo-editing/ broadened to photo-editing/ — the page covers
+  # portraits and headshots too, not just weddings.
+  RewriteRule ^wedding-photo-editing/?$ /photo-editing/ [R=301,L]
+</IfModule>
+
+# ── Belt and braces: any non-canonical host also answers with noindex ───────
+# Runs before the redirect is followed, so crawlers that read headers on the
+# 301 response still get told not to index the preview host.
+<IfModule mod_setenvif.c>
+  SetEnvIf Host "^(?!www\.iamharinda\.com$).*$" NON_CANONICAL_HOST
+</IfModule>
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow" env=NON_CANONICAL_HOST
 </IfModule>
 
 # ── Custom error page ───────────────────────────────────────────────────────

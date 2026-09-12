@@ -32,12 +32,50 @@ export function person() {
     "@type": "Person",
     "@id": abs("/#harinda"),
     name: site.personName,
-    jobTitle: "Photo editor and colour grader",
-    url: abs("/about/"),
+    jobTitle: site.personTitles,
+    url: site.url,
+    mainEntityOfPage: abs("/about/"),
     image: abs(site.personImage),
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: site.location.country,
+    },
+    nationality: { "@type": "Country", name: site.location.country },
     sameAs: [site.contact.fiverr],
     knowsAbout: site.services,
   };
+}
+
+/** Standalone Person node (with @context) for the About page. */
+export function personDocument() {
+  return { "@context": "https://schema.org", ...person() };
+}
+
+/**
+ * A single service line. Pass the frontmatter title/description straight through
+ * so the structured data matches the visible page.
+ */
+export function service({ name, description, serviceType, path, lowPrice }) {
+  const node = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    serviceType,
+    url: abs(path),
+    provider: person(),
+    areaServed: site.areasServed.map((n) => ({ "@type": "Country", name: n })),
+  };
+  if (lowPrice != null) {
+    node.offers = {
+      "@type": "AggregateOffer",
+      priceCurrency: site.currency,
+      lowPrice: String(lowPrice),
+      availability: "https://schema.org/InStock",
+      url: abs(path),
+    };
+  }
+  return node;
 }
 
 /** The core business entity. Repeated site-wide, which is fine and expected. */

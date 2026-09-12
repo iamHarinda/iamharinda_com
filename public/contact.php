@@ -32,7 +32,7 @@ if (!empty($_POST['company'])) {
 // ── Gather + trim ──────────────────────────────────────────────────────────
 $name    = trim((string) ($_POST['name']    ?? ''));
 $email   = trim((string) ($_POST['email']   ?? ''));
-$count   = trim((string) ($_POST['count']   ?? ''));
+$service = trim((string) ($_POST['service'] ?? ''));
 $message = trim((string) ($_POST['message'] ?? ''));
 
 // ── Validate ───────────────────────────────────────────────────────────────
@@ -50,16 +50,16 @@ if (!$ok) {
 $strip = static function (string $v): string {
     return trim(str_replace(["\r", "\n", "\t", "%0a", "%0d", "%0A", "%0D"], ' ', $v));
 };
-$name  = $strip($name);
-$email = $strip($email);
-$count = $strip($count);
+$name    = $strip($name);
+$email   = $strip($email);
+$service = $strip($service);
 
 // ── Compose ────────────────────────────────────────────────────────────────
 $body  = "New enquiry from iamharinda.com\n";
 $body .= "-----------------------------------\n";
-$body .= "Name:   {$name}\n";
-$body .= "Email:  {$email}\n";
-$body .= "Photos: " . ($count !== '' ? $count : 'not specified') . "\n";
+$body .= "Name:    {$name}\n";
+$body .= "Email:   {$email}\n";
+$body .= "Service: " . ($service !== '' ? $service : 'not specified') . "\n";
 $body .= "-----------------------------------\n\n";
 $body .= $message . "\n";
 
