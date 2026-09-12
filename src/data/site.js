@@ -133,11 +133,11 @@ export const site = {
       line: "Sites and web apps coded from scratch. Quoted fixed-price after a free scope call, and you keep the code.",
     },
     {
-      label: "Apparel patterns & tech packs",
+      label: "Polo shirt design & patterns",
       href: "/apparel-pattern-tech-packs/#pricing",
-      from: "$175",
-      unit: "per tech pack · patterns from $200",
-      line: "Production-ready patterns, grading and factory tech packs. Launch bundle for one style is $450.",
+      from: "$10",
+      unit: "per package · up to 5 designs",
+      line: "Print-ready polo and golf shirt patterns and mockups, in Illustrator and Photoshop. Packages from $10 to $40, unlimited revisions.",
     },
   ],
 
