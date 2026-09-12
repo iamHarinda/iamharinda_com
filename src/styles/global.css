@@ -1190,12 +1190,11 @@ body::after {
 }
 .world-map :where(path) {
   fill: var(--surface-solid);
-  stroke: var(--hairline);
-  stroke-width: 0.75;
+  stroke: none;
 }
 .world-map :where(path.is-served) {
   fill: var(--c-teal);
-  stroke: color-mix(in oklab, var(--c-teal) 60%, black);
+  stroke: none;
   animation: world-map-pulse 2.6s ease-in-out infinite;
 }
 @keyframes world-map-pulse {
