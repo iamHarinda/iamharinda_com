@@ -86,7 +86,7 @@ export const site = {
   // ── Navigation ────────────────────────────────────────────────────────────
   nav: [
     { label: "Home", href: "/" },
-    { label: "Photo editing", href: "/wedding-photo-editing/" },
+    { label: "Photo editing", href: "/photo-editing/" },
     { label: "Pattern designing", href: "/fashion-designing/" },
     { label: "Web development", href: "/web-development/" },
     { label: "Pricing", href: "/pricing/" },
