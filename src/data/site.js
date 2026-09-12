@@ -102,7 +102,7 @@ export const site = {
     },
     {
       label: "Polo shirt design & patterns",
-      href: "/apparel-pattern-tech-packs/",
+      href: "/fashion-designing/",
       line: "Print-ready polo and golf shirt patterns and mockups, built in Illustrator and Photoshop. Packages from $10, unlimited revisions.",
     },
   ],
