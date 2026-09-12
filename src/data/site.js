@@ -66,7 +66,7 @@ export const site = {
     { label: "Home", href: "/" },
     { label: "Wedding editing", href: "/wedding-photo-editing/" },
     { label: "Web development", href: "/custom-web-development/" },
-    { label: "Fashion Designing", href: "/apparel-pattern-tech-packs/" },
+    { label: "Fashion Designing", href: "/fashion-designing/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
