@@ -30,7 +30,8 @@ const { heading = "Where clients are." } = Astro.props;
 </p>
 
 <script>
-  for (const el of document.querySelectorAll("#world-map")) {
+  const el = document.getElementById("world-map");
+  if (el) {
     const served = new Set(JSON.parse(el.dataset.countries || "[]"));
     fetch("/images/world-map.svg")
       .then((r) => (r.ok ? r.text() : Promise.reject(r.status)))
