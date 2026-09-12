@@ -12,36 +12,45 @@ import { professionalService } from "../lib/schema.js";
   chrome={false}
   jsonLd={[professionalService()]}
 >
-  <div class="container notfound notfound--spotlight">
-    <!-- Ceiling-mounted lamp, swinging like a pendulum. The beam and the
-         mask on the "404" text below share one animation timing so the lit
-         patch of text tracks directly under the lamp as it swings. -->
-    <div class="spotlight-rig" aria-hidden="true">
-      <span class="spotlight-lamp"></span>
-      <span class="spotlight-beam"></span>
+  <div class="container notfound notfound--space">
+    <!-- Decorative scene: a big dim "404" sits behind everything, a small
+         space dock blinks its lights, and an astronaut hops/drifts across in
+         search of the page. Pure CSS, no images. -->
+    <p class="space-404" aria-hidden="true">404</p>
+
+    <div class="space-dock" aria-hidden="true">
+      <span class="space-dock__hull"></span>
+      <span class="space-dock__window"></span>
+      <span class="space-dock__light space-dock__light--1"></span>
+      <span class="space-dock__light space-dock__light--2"></span>
+      <span class="space-dock__light space-dock__light--3"></span>
     </div>
 
-    <h1 class="spotlight-404">
-      <span class="spotlight-404__dim" aria-hidden="true">404</span>
-      <span class="spotlight-404__lit">404</span>
-    </h1>
-
-    <p class="notfound__lede">Page not found. It may have moved.</p>
-
-    <div class="btn-row" style="justify-content:center;margin-top:1rem">
-      <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
-      <a class="btn btn--grad" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+    <div class="astronaut" aria-hidden="true">
+      <div class="astronaut__body">
+        <span class="astronaut__backpack"></span>
+        <span class="astronaut__torso"></span>
+        <span class="astronaut__arm astronaut__arm--l"></span>
+        <span class="astronaut__arm astronaut__arm--r"></span>
+        <span class="astronaut__leg astronaut__leg--l"></span>
+        <span class="astronaut__leg astronaut__leg--r"></span>
+        <span class="astronaut__helmet">
+          <span class="astronaut__visor"></span>
+        </span>
+      </div>
     </div>
-    <p style="margin-top:1.5rem">
-      <a class="text-link" href="/">Go to the home page</a>
-    </p>
+
+    <div class="notfound__foreground">
+      <h1 class="sr-only">404 — page not found</h1>
+      <p class="notfound__lede">Page not found. It may have moved.</p>
+
+      <div class="btn-row" style="justify-content:center;margin-top:1rem">
+        <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
+        <a class="btn btn--grad" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+      </div>
+      <p style="margin-top:1.5rem">
+        <a class="text-link" href="/">Go to the home page</a>
+      </p>
+    </div>
   </div>
 </BaseLayout>
-
-<style>
-  /* This page swaps the sitewide aurora canvas for a plain dark ground —
-     the swinging spotlight is the only light source here. */
-  :global(#bg) {
-    display: none;
-  }
-</style>
