@@ -66,7 +66,7 @@ export const site = {
     { label: "Home", href: "/" },
     { label: "Wedding editing", href: "/wedding-photo-editing/" },
     { label: "Web development", href: "/custom-web-development/" },
-    { label: "Apparel patterns", href: "/apparel-pattern-tech-packs/" },
+    { label: "Polo shirt design", href: "/apparel-pattern-tech-packs/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
