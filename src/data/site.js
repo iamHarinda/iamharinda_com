@@ -101,9 +101,9 @@ export const site = {
       line: "Sites and web apps coded from scratch — no WordPress, no builders. Fixed prices start at $750 and you keep the code.",
     },
     {
-      label: "Apparel patterns & tech packs",
+      label: "Polo shirt design & patterns",
       href: "/apparel-pattern-tech-packs/",
-      line: "Patterns, grading and factory tech packs for small clothing brands. First patterns from $200, tech packs from $175.",
+      line: "Print-ready polo and golf shirt patterns and mockups, built in Illustrator and Photoshop. Packages from $10, unlimited revisions.",
     },
   ],
 
