@@ -10,118 +10,167 @@ import {
 } from "../lib/schema.js";
 
 // ── Frontmatter from apparel-pattern-tech-packs.md ────────────────────────
-// note_for_dev: the URL stays /apparel-pattern-tech-packs/. "Pattern design"
-// means fabric/print design in US search — a different service and buyer.
+// note_for_dev: the URL stays /apparel-pattern-tech-packs/ for now — it
+// still ranks and is linked from the Fiverr profile. The service behind it
+// changed: this is print/graphic pattern design for polo and golf shirts
+// (Illustrator/Photoshop artwork + mockups), not technical sewing patterns
+// or factory tech packs. If the URL is ever renamed, add a 301 redirect and
+// update every internal link in src/data/site.js, Footer.astro, about.astro,
+// index.astro, contact.astro and pricing.astro.
 const meta = {
   route: "/apparel-pattern-tech-packs/",
-  title:
-    "Apparel Pattern Making & Tech Packs for Small Brands | Harinda Fernando",
+  title: "Polo & Golf Shirt Pattern Design and Mockups | Harinda Fernando",
   description:
-    "Production-ready clothing patterns, grading, and factory tech packs for indie apparel brands. Polos, tees, knitwear and more. Patterns from $200, tech packs from $175.",
+    "Print-ready polo and golf shirt pattern design with realistic mockups, built in Adobe Illustrator and Photoshop. Source files included, unlimited revisions. Packages from $10.",
   ogImage: "/images/og/apparel-pattern-tech-packs.jpg",
   ctaLabel: "Send me your design",
 };
 
 const services = [
   {
-    h: "First patterns.",
-    p: "From a sketch, a reference garment, or a sample you want recreated. Polos, tees, shirts, knitwear, hoodies, basic bottoms.",
+    h: "Golf & polo shirt design.",
+    p: "Front and back designs built for the garment, not a logo stretched onto a template. Placement and scale that actually sit right on a collar and a sleeve.",
   },
   {
-    h: "Pattern grading.",
-    p: "Your base size scaled across a full size run, with grade rules appropriate to the garment and your target market. US, UK, or EU sizing.",
+    h: "Print pattern design.",
+    p: "Repeat patterns for fabric and print — golf motifs, textile prints, all-over patterns — tiled cleanly so they hold up at production size.",
   },
   {
-    h: "Tech packs.",
-    p: "The full production document — flat sketches with callouts, a points-of-measure table, bill of materials, stitch and seam construction details, labelling and packaging notes, and a colourway page.",
+    h: "Textile design.",
+    p: "Original artwork for fabric, from a single motif to a full colourway set across a range.",
   },
   {
-    h: "Sample corrections.",
-    p: "Fit sample came back wrong. Send me the fit notes and photos and I'll revise the pattern so the next round is right.",
+    h: "Mockups, every order.",
+    p: "A realistic front and back mockup so you can see the design on the actual shirt before anything goes to print.",
   },
   {
-    h: "Digitising.",
-    p: "Paper patterns or a physical sample turned into clean digital files.",
+    h: "Source files included.",
+    p: "Ai, PDF, PNG and JPG — the formats a print shop, embroiderer, or supplier can actually run with, at commercial-use resolution.",
   },
 ];
 
 const steps = [
   {
-    h: "Send what you have.",
-    p: "A sketch, a photo, a reference garment, or a sample — whatever exists. Plus your target measurements or fit model spec.",
+    h: "Message me first.",
+    p: "Tell me the garment, the brand or team, and roughly what you're picturing — before placing an order.",
   },
   {
-    h: "Fit and construction call.",
-    p: "We agree ease, fit intent, key measurements, and construction details before the pattern is drafted.",
+    h: "Send your idea.",
+    p: "A logo, a reference photo, a rough sketch, or just a description of the look you want.",
   },
   {
-    h: "Draft pattern delivered",
-    p: "for review, with a measurement chart so you can check it against your intent.",
+    h: "Concepts come back.",
+    p: "One to five initial concepts depending on the package, each with a front and back mockup.",
   },
   {
-    h: "Two revision rounds included",
-    p: "— after the draft, and again after your first fit sample comes back.",
+    h: "Revise until it's right.",
+    p: "Revisions are unlimited on every package — there's no extra charge for changes.",
   },
   {
-    h: "Graded set and tech pack",
-    p: "delivered in your factory's format, ready to send.",
+    h: "Get your files.",
+    p: "Ai, PDF, PNG and JPG, at printable resolution and cleared for commercial use.",
   },
 ];
 
-const priceRows = [
-  ["First pattern — tee, polo, basic top", "$200"],
-  ["First pattern — shirt, knitwear, structured piece", "$300"],
-  ["First pattern — outerwear, complex construction", "$400+"],
-  ["Grading, per size run (up to 6 sizes)", "$120"],
-  ["Tech pack (flats, POM, BOM, construction)", "$175"],
-  ["Tech pack for complex styles", "$300"],
-  ["Pattern from an existing sample (digitising)", "$150"],
-  ["Sample correction round", "$75"],
+const packages = [
+  {
+    name: "Basic",
+    price: 10,
+    designs: "1 design",
+    delivery: "1-day delivery",
+    desc: "1 print-ready pattern polo t-shirt design and mockup, with Ai, PDF, PNG and JPG files.",
+    features: [
+      "Unlimited revisions",
+      "1 initial concept",
+      "Source file included",
+      "Printable resolution file",
+      "Front & back design",
+      "Enhanced detailing",
+      "Commercial use",
+    ],
+  },
+  {
+    name: "Standard",
+    price: 25,
+    designs: "3 designs",
+    delivery: "2-day delivery",
+    desc: "3 print-ready pattern polo t-shirt designs and mockups, with Ai, PDF, PNG and JPG files.",
+    featured: true,
+    features: [
+      "Unlimited revisions",
+      "3 initial concepts",
+      "Source file included",
+      "Printable resolution file",
+      "Front & back design",
+      "Enhanced detailing",
+      "Commercial use",
+    ],
+  },
+  {
+    name: "Premium",
+    price: 40,
+    designs: "5 designs",
+    delivery: "2-day delivery",
+    desc: "5 print-ready pattern polo t-shirt designs and mockups, with Ai, PDF, PNG and JPG files.",
+    features: [
+      "Unlimited revisions",
+      "5 initial concepts",
+      "Source file included",
+      "Printable resolution file",
+      "Front & back design",
+      "Enhanced detailing",
+      "Commercial use",
+    ],
+  },
 ];
 
 const faqs = [
   {
-    q: "I've never produced a garment before. Can you still help?",
-    a: "Yes, and most of my clients are in that position. I'll tell you what your factory will need and what questions they're going to ask, before they ask them.",
+    q: "Is this the same as technical patternmaking for manufacturing?",
+    a: "No. This is print and graphic pattern design — the artwork, repeat patterns and mockups that go onto a polo or golf shirt. It doesn't include cut-and-sew patterns, grading, or factory tech packs. If that's what you need, mention it when you message me and I'll point you the right way.",
   },
   {
-    q: "What size range do you work in?",
-    a: "Standard US sizing from XS to 3XL as a baseline. Extended or custom size runs are quoted per project.",
+    q: "Can you design for shirts other than polos?",
+    a: "Yes. Golf shirts and similar garments are no problem. Polo and golf shirts are the specialty, so send your garment and I'll tell you straight away if it's a fit.",
   },
   {
-    q: "Can you work from a garment I already own?",
-    a: "Yes. Send photos and measurements, or ship the garment if the construction is unusual. Recreating fit from an existing piece is one of the most common requests.",
+    q: "What files do I get?",
+    a: "Ai (editable vector source), PDF, PNG and JPG, all at print resolution and cleared for commercial use.",
   },
   {
-    q: "How long does a style take?",
-    a: "A first pattern is three to five business days. A full launch bundle is about a week and a half, depending on how quickly fit decisions get made.",
+    q: "How many revisions do I get?",
+    a: "Unlimited, on every package, until the design is right. There's no extra charge for changes.",
   },
   {
-    q: "Do you help find a manufacturer?",
-    a: "I don't broker factory relationships, but the tech pack I deliver is written so you can send it to several factories and get comparable quotes back.",
+    q: "How fast is delivery?",
+    a: "Basic is 1-day delivery. Standard and Premium, with more concepts to develop, are 2 days.",
   },
   {
-    q: "What if my factory rejects the files?",
-    a: "Then I revise them at no charge until they accept them. Files a factory can't use aren't finished files.",
+    q: "Do I get a mockup, or just the flat artwork?",
+    a: "Both. Every package includes a front and back mockup on the actual garment, plus the flat, print-ready artwork files.",
+  },
+  {
+    q: "What if I need more than 5 designs, or a full collection?",
+    a: "Message me before ordering. Bulk orders and full seasonal collections are quoted separately from the standard packages.",
   },
 ];
 
 const waMsg =
-  "Hi Harinda, here's a design I'd like a pattern and tech pack for:";
+  "Hi Harinda, here's a design I'd like a polo/golf shirt pattern and mockup for:";
 
 const jsonLd = [
   professionalService(),
   service({
-    name: "Apparel pattern making and tech packs",
+    name: "Polo shirt pattern design and mockups",
     description: meta.description,
-    serviceType: "Apparel pattern making and tech pack design",
+    serviceType: "Polo & golf shirt print pattern design",
     path: meta.route,
-    lowPrice: 175,
+    lowPrice: 10,
   }),
   faqPage(faqs),
   breadcrumb([
     { name: "Home", path: "/" },
-    { name: "Apparel patterns & tech packs", path: meta.route },
+    { name: "Polo shirt design & patterns", path: meta.route },
   ]),
 ];
 ---
@@ -132,29 +181,30 @@ const jsonLd = [
   description={meta.description}
   path={meta.route}
   image={meta.ogImage}
-  imageAlt="Apparel pattern making and tech packs by Harinda Fernando — production-ready files for small clothing brands."
+  imageAlt="Polo and golf shirt pattern design by Harinda Fernando — print-ready artwork and mockups for clothing brands."
   jsonLd={jsonLd}
 >
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="container hero__text">
-      <span class="eyebrow">Apparel patterns &amp; tech packs</span>
+      <span class="eyebrow">Polo &amp; golf shirt design</span>
       <h1 class="h1">
-        <span class="split">Apparel Pattern Making and Tech Packs for Small Brands</span>
+        <span class="split">Polo Shirt Pattern Design and Mockups, Print-Ready</span>
       </h1>
       <p>
-        You have a design, a sample you like the fit of, or a sketch and a clear
-        idea. The factory needs a pattern and a tech pack before they can quote
-        you, and they won't build one for you.
+        You've got a clothing brand, a golf team, or a corporate order, and you
+        need a polo design that actually works — right proportions, right
+        placement, ready to hand to a print shop or supplier.
       </p>
       <p>
-        That's the gap I fill. I turn your design into the production documents a
-        manufacturer can actually work from — graded patterns, measurement specs,
-        and a tech pack with nothing left for the factory to guess at.
+        That's what I design. Print patterns and polo/golf shirt artwork in
+        Illustrator and Photoshop, with a realistic mockup so you can see it on
+        the actual shirt, plus every source file you need to take it to
+        production.
       </p>
       <div class="btn-row">
         <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
-        <a class="btn btn--ghost" href="#pricing">See pricing</a>
+        <a class="btn btn--ghost" href="#pricing">See packages</a>
       </div>
     </div>
   </section>
@@ -164,7 +214,7 @@ const jsonLd = [
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Services</span>
-        <h2 class="h2 reveal">From first pattern to factory-ready files.</h2>
+        <h2 class="h2 reveal">From concept to print-ready files.</h2>
       </div>
       <div class="grid">
         {
@@ -177,9 +227,9 @@ const jsonLd = [
         }
       </div>
       <p class="price-note rise">
-        <strong>Files you receive.</strong> DXF-AAMA for factory CAD systems, PDF
-        for plotting, plus AI or PNG flats for the tech pack. Tell me what your
-        manufacturer uses and I'll deliver in their format.
+        <strong>Software.</strong> Every design is built in Adobe Illustrator
+        and Adobe Photoshop — clean vector artwork where it belongs, and
+        photoreal mockups where they help you sell the idea.
       </p>
     </div>
   </section>
@@ -189,7 +239,7 @@ const jsonLd = [
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">How it works</span>
-        <h2 class="h2 reveal">Five steps to a graded set and tech pack.</h2>
+        <h2 class="h2 reveal">Five steps to print-ready artwork.</h2>
       </div>
       <ol class="steps">
         {
@@ -210,13 +260,14 @@ const jsonLd = [
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Sample work</span>
-        <h2 class="h2 reveal">Patterns and tech pack pages.</h2>
-        <p>Flats, points-of-measure tables, and graded nests from past styles.</p>
+        <h2 class="h2 reveal">Polo designs and print patterns.</h2>
+        <p>Front/back mockups and print pattern artwork from past projects.</p>
       </div>
-      {/* TODO: replace these six slots with real tech pack pages and pattern
-          nests (client details removed). Serve WebP or AVIF, set width and
-          height, and give every image a descriptive alt (e.g. "Tech pack flat
-          sketch of a short-sleeve polo with construction callouts"). */}
+      {/* TODO: replace these six slots with real polo/golf shirt mockups and
+          print pattern artwork (client details removed). Serve WebP or AVIF,
+          set width and height, and give every image a descriptive alt (e.g.
+          "Front and back mockup of a navy golf polo with an embroidered
+          crest"). */}
       <div class="portfolio-grid">
         <div class="portfolio-grid__slot">Sample 1 — coming soon</div>
         <div class="portfolio-grid__slot">Sample 2 — coming soon</div>
@@ -233,29 +284,28 @@ const jsonLd = [
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Pricing</span>
-        <h2 class="h2 reveal">Priced per style.</h2>
-        <p>All prices in USD, per style.</p>
+        <h2 class="h2 reveal">Three packages. Unlimited revisions on all of them.</h2>
+        <p>All prices in USD. Message me before ordering so I know what you need.</p>
       </div>
-      <div class="table-wrap rise">
-        <table class="price-table">
-          <thead>
-            <tr><th>Service</th><th>Price</th></tr>
-          </thead>
-          <tbody>
-            {priceRows.map(([label, price]) => (
-              <tr><td>{label}</td><td>{price}</td></tr>
-            ))}
-          </tbody>
-        </table>
+      <div class="price-grid">
+        {
+          packages.map((p) => (
+            <article class={`card price-card rise${p.featured ? " price-card--featured beam" : ""}`} data-spot>
+              <div class="price-card__photos">{p.name} · {p.designs}</div>
+              <div class="price-card__amount grad-text">${p.price}</div>
+              <div class="price-card__unit">{p.delivery}</div>
+              <p style="margin-top:1rem">{p.desc}</p>
+              <ul class="list-check" style="margin-top:1rem;text-align:left">
+                {p.features.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          ))
+        }
       </div>
       <p class="price-note rise">
-        <strong>Launch bundle — $450.</strong> One first pattern, full size
-        grading, and a complete tech pack for a single style. The usual starting
-        point for a first production run.
-      </p>
-      <p class="price-note rise">
-        Two revision rounds are included in every pattern. Additional rounds are
-        $75.
+        <strong>Need more than 5 designs, or a full seasonal collection?</strong>
+        {" "}Message me before ordering and I'll quote it separately from the
+        packages above.
       </p>
     </div>
   </section>
@@ -276,8 +326,8 @@ const jsonLd = [
     <div class="container center-narrow">
       <h2 class="h1 shine">Send me your design</h2>
       <p class="lede" style="margin-top:1rem;margin-inline:auto">
-        A sketch and a rough idea of fit is enough to start. Tell me what you're
-        making and I'll come back with a timeline and a firm price.
+        A logo and a rough idea of the look is enough to start. Message me
+        first and I'll come back with a timeline and a firm price.
       </p>
       <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
         <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
