@@ -12,95 +12,141 @@ import {
 // ── Frontmatter from wedding-photo-editing.md ──────────────────────────────
 const meta = {
   route: "/wedding-photo-editing/",
-  title:
-    "Wedding Photo Editing for Photographers | Harinda Fernando",
+  title: "Wedding Photo Editing for Photographers | Harinda Fernando",
   description:
-    "Hand-finished wedding photo editing in your own style. 48-hour turnaround, $0.45 per image, and a free 25-image trial before you commit.",
+    "Professional Lightroom editing for wedding, portrait and headshot photographers. No AI — every edit judged by eye on a Calman-verified ASUS ProArt monitor. Packages from $10, unlimited revisions.",
   ogImage: "/images/og/wedding-photo-editing.jpg",
-  ctaLabel: "Start a free 25-image trial",
+  ctaLabel: "Message me first",
 };
 
 const whatYouGet = [
   {
-    h: "Your style, matched.",
-    p: "I build a profile from your reference edits and use it on every gallery after that. The more weddings we do together, the closer it gets.",
+    h: "White balance & colour correction.",
+    p: "Accurate colour from the first frame, judged against a factory-calibrated, Calman-verified monitor — not guessed at on a laptop screen.",
   },
   {
-    h: "Consistency across the whole gallery.",
-    p: "Ceremony under tungsten, reception under LED uplights, portraits in open shade — all colour-matched so the gallery reads as one day, not four different shoots.",
+    h: "Exposure, contrast & tonal work.",
+    p: "Highlights recovered, shadows opened, contrast placed where the image needs it — worked from the RAW, not baked onto a JPEG.",
   },
   {
-    h: "48-hour turnaround as standard.",
-    p: "Send the card Sunday night, have it back Tuesday. Rush delivery available when a couple is leaving for a honeymoon.",
+    h: "Clean, natural colour grading.",
+    p: "A grade that reads as skill, not a filter. Skin stays skin, whites stay white.",
   },
   {
-    h: "One revision round included.",
-    p: "If the look isn't right, tell me what's off and I fix it. No per-revision charge.",
+    h: "Noise reduction & sharpening.",
+    p: "Clean detail at high ISO, sharpened for print and screen without looking processed.",
+  },
+  {
+    h: "Lens corrections & cropping.",
+    p: "Distortion and vignetting corrected, crops set with intent — not just centred and squared.",
+  },
+  {
+    h: "Photo culling for large galleries.",
+    p: "Send the full card. I pick the keepers and flag the best of each moment, so you're only paying to edit what makes the cut.",
   },
 ];
 
 const steps = [
   {
-    h: "Send me a style reference.",
-    p: "Ten to twenty of your own finished images, or your preset if you use one, plus a short note on what matters to you.",
-  },
-  {
-    h: "Free trial — 25 images, no cost.",
-    p: "I edit a small set so you can see the match before any money changes hands. Most photographers know within one look.",
+    h: "Message me first.",
+    p: "Tell me the shoot type and roughly how many images, before you order, so the right package and timeline are clear from the start.",
   },
   {
     h: "Send the gallery.",
-    p: "WeTransfer, Dropbox, Google Drive, or Pixieset — whatever you already use. RAW files, culled or unculled.",
+    p: "RAW or high-quality JPEGs give the best result. WeTransfer, Dropbox, Google Drive — whatever you already use.",
   },
   {
-    h: "Get it back in 48 hours.",
-    p: "Edited catalogue plus exported JPEGs, or the XMP sidecars if you prefer to keep control in your own catalogue.",
+    h: "Edited by hand.",
+    p: "Every frame judged by eye on a factory-calibrated, Calman-verified ASUS ProArt monitor. No AI, no batch presets.",
   },
   {
-    h: "One revision if needed",
-    p: "then it's yours.",
+    h: "Delivered on schedule.",
+    p: "Basic in 2 days, Standard in 3, Premium in 4 — sized to the package, not a guess.",
+  },
+  {
+    h: "Unlimited revisions",
+    p: "on every package, until it's right, at no extra charge.",
   },
 ];
 
-const priceRows = [
-  ["Standard colour editing", "$0.45 per image"],
-  ["Gallery package, up to 500 images", "$225"],
-  ["Gallery package, up to 800 images", "$325"],
-  ["Culling (from full card down to selects)", "$0.10 per image"],
-  ["Skin retouching and object removal", "$2.50 per image"],
-  ["Album spread design", "$12 per spread"],
-  ["Rush delivery (24 hours)", "+30%"],
+const packages = [
+  {
+    name: "Basic",
+    tagline: "Starter Pack",
+    price: 10,
+    images: "50 images",
+    delivery: "2-day delivery",
+    desc: "Perfect for small projects or portrait sessions.",
+    features: ["50 images", "Unlimited revisions", "Printable resolution file", "Commercial use"],
+  },
+  {
+    name: "Standard",
+    tagline: "Professional Bundle",
+    price: 40,
+    images: "200 images",
+    delivery: "3-day delivery",
+    desc: "Ideal for event photographers, small weddings, or business photoshoots.",
+    featured: true,
+    features: ["200 images", "Unlimited revisions", "Printable resolution file", "Commercial use"],
+  },
+  {
+    name: "Premium",
+    tagline: "Complete Collection",
+    price: 100,
+    images: "500 images",
+    delivery: "4-day delivery",
+    desc: "Best for large weddings, commercial shoots, or photographers needing bulk editing.",
+    features: ["500 images", "Unlimited revisions", "Printable resolution file", "Commercial use"],
+  },
+];
+
+const specialties = [
+  "Weddings & engagements",
+  "Portraits & headshots",
+  "Family, maternity & newborn sessions",
+  "Events, graduations & parties",
+  "Lifestyle, fashion & model shoots",
+  "Real estate, product & food photography",
+  "Drone, nightlife & event photos",
 ];
 
 const faqs = [
   {
-    q: "Will my couples be able to tell it was outsourced?",
-    a: "No, and that's the whole job. Matching your look is the service — if it doesn't match, it isn't finished.",
+    q: "What photo editing services do you offer?",
+    a: "Portrait retouching, headshot editing, beauty and skin retouching, wedding photo editing, and bulk photo editing, all done in Adobe Lightroom and Lightroom Classic.",
   },
   {
-    q: "Do you edit in Lightroom or Capture One?",
-    a: "Lightroom Classic primarily. I can deliver Capture One sessions on request.",
+    q: "What software do you use?",
+    a: "Adobe Lightroom and Lightroom Classic for colour correction and overall adjustments, and Adobe Photoshop for detailed retouching and advanced work.",
   },
   {
-    q: "What file types do you need?",
-    a: "RAW is best — CR2, CR3, NEF, ARW, RAF, DNG. I can work from JPEG if that's what you have, with less latitude in the highlights.",
+    q: "How do you deliver the edited photos?",
+    a: "High-quality JPGs as standard, with PNG or TIFF available for professional use. Delivered through Fiverr or a secure file-sharing link.",
   },
   {
-    q: "How do I pay?",
-    a: "Wise, PayPal, or bank transfer. Invoiced per gallery, payable on delivery. No deposit for the first job.",
+    q: "What is your turnaround time?",
+    a: "24 to 48 hours for most orders. Larger volumes and full wedding albums get a clear timeline upfront, sized to the package: 2 days for Basic, 3 for Standard, 4 for Premium.",
   },
   {
-    q: "How many weddings can you take in a week?",
-    a: "Two full galleries a week comfortably, three in peak season. Book ahead for Saturday-heavy months and I'll hold the slot.",
+    q: "What file formats do you accept?",
+    a: "JPG, PNG, TIFF, and RAW — ARW, CR3, CR2, NEF and DNG. RAW is preferred for the best result, especially for portrait retouching.",
   },
   {
-    q: "What if I don't like the trial?",
-    a: "Then you've lost nothing. No card, no commitment, no follow-up sales emails.",
+    q: "Can images be fully fixed no matter their condition?",
+    a: "No. I enhance the detail that's already in the frame. Extremely blurry, low-resolution, or heavily underexposed images can't be fully rescued — RAW or high-quality JPEGs give the best results.",
+  },
+  {
+    q: "Can you handle bulk photo editing?",
+    a: "Yes — bulk editing for photographers, wedding albums, and large collections is a regular part of the work. Message me with the shoot type and volume for a clear timeline.",
+  },
+  {
+    q: "Can wedding photos be edited in different styles?",
+    a: "Yes. Light and airy, vintage, classic, and modern are all covered — send a style reference and it's matched.",
   },
 ];
 
 const waMsg =
-  "Hi Harinda, I'd like a free 25-image trial for wedding photo editing. Here's my style reference:";
+  "Hi Harinda, I'd like to talk about wedding photo editing before ordering. Here's my project:";
 
 const jsonLd = [
   professionalService(),
@@ -109,7 +155,7 @@ const jsonLd = [
     description: meta.description,
     serviceType: "Wedding photo editing",
     path: meta.route,
-    lowPrice: 0.45,
+    lowPrice: 10,
   }),
   faqPage(faqs),
   breadcrumb([
@@ -125,7 +171,7 @@ const jsonLd = [
   description={meta.description}
   path={meta.route}
   image={meta.ogImage}
-  imageAlt="Wedding photo editing by Harinda Fernando — galleries hand-finished to match your style."
+  imageAlt="Wedding photo editing by Harinda Fernando — hand-edited on a Calman-verified monitor, no AI."
   jsonLd={jsonLd}
 >
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
@@ -136,16 +182,16 @@ const jsonLd = [
         <span class="split">Wedding Photo Editing That Looks Like You Edited It</span>
       </h1>
       <p>
-        You shot the wedding. Now there are 800 frames waiting, the couple is
-        asking, and the next booking is on Saturday. I take the gallery off your
-        hands and send it back looking like your work — not like a factory's.
+        Professional Lightroom editing for wedding, portrait and headshot
+        photographers. I'm a full-time editor — a former photographer myself —
+        using a refined Lightroom and Lightroom Classic workflow to deliver
+        clean, natural results, one gallery at a time.
       </p>
       <p>
-        I edit in Lightroom, by hand, one photographer at a time. You send a
-        style reference or a few of your own finished galleries, and I match it.
-        Skin tones, white balance across mixed lighting, the way you handle
-        blacks and highlights, how warm you run in golden hour. Consistent from
-        the getting-ready shots through to the last dance.
+        No AI. Every edit is judged by eye on a factory-calibrated,
+        Calman-verified ASUS ProArt monitor. I understand the lighting, colour
+        and storytelling behind every image, and I only deliver edits I'm
+        confident your photos deserve.
       </p>
       <div class="btn-row">
         <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
@@ -154,12 +200,12 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- ── What you get ─────────────────────────────────────────────────── -->
+  <!-- ── What's included ─────────────────────────────────────────────── -->
   <section class="section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">What you get</span>
-        <h2 class="h2 reveal">One editor who learns your style and stays with it.</h2>
+        <span class="eyebrow">What's included</span>
+        <h2 class="h2 reveal">Every order, every package.</h2>
       </div>
       <div class="grid">
         {
@@ -171,6 +217,12 @@ const jsonLd = [
           ))
         }
       </div>
+      <p class="price-note rise">
+        <strong>Important.</strong> I enhance the detail that's already
+        there — extremely blurry, low-resolution, or heavily underexposed
+        images can't be fully fixed. RAW or high-quality JPEGs deliver the
+        best results.
+      </p>
     </div>
   </section>
 
@@ -223,30 +275,43 @@ const jsonLd = [
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Pricing</span>
-        <h2 class="h2 reveal">Priced by image or by gallery.</h2>
-        <p>All prices in USD. Per-image or per-gallery — whichever suits how you work.</p>
+        <h2 class="h2 reveal">Three packages. Unlimited revisions on all of them.</h2>
+        <p>All prices in USD. Message me before ordering so the package fits.</p>
       </div>
-      <div class="table-wrap rise">
-        <table class="price-table">
-          <thead>
-            <tr><th>Service</th><th>Price</th></tr>
-          </thead>
-          <tbody>
-            {priceRows.map(([label, price]) => (
-              <tr><td>{label}</td><td>{price}</td></tr>
-            ))}
-          </tbody>
-        </table>
+      <div class="price-grid">
+        {
+          packages.map((p) => (
+            <article class={`card price-card rise${p.featured ? " price-card--featured beam" : ""}`} data-spot>
+              <div class="price-card__photos">{p.name} — {p.tagline}</div>
+              <div class="price-card__amount grad-text">${p.price}</div>
+              <div class="price-card__unit">{p.images} · {p.delivery}</div>
+              <p style="margin-top:1rem">{p.desc}</p>
+              <ul class="list-check" style="margin-top:1rem;text-align:left">
+                {p.features.map((item) => <li>{item}</li>)}
+              </ul>
+            </article>
+          ))
+        }
       </div>
       <p class="price-note rise">
-        Booking five or more weddings for a season gets 15% off the gallery rate.
+        <strong>Bulk or ongoing work?</strong> Booking regularly, or need more
+        than 500 images in one order? Message me and I'll quote it separately
+        from the packages above.
       </p>
-      <p class="price-note rise">
-        I don't compete at ten cents an image. That price only works by running
-        galleries through a rotating team who never see your work twice, and it
-        shows in the inconsistency. You're paying for one editor who learns your
-        style and stays with it.
-      </p>
+    </div>
+  </section>
+
+  <!-- ── Also edited ─────────────────────────────────────────────────── -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Also edited</span>
+        <h2 class="h2 reveal">Beyond weddings.</h2>
+        <p>The same eye and the same workflow, across every genre I shoot for.</p>
+      </div>
+      <ul class="list-check rise">
+        {specialties.map((s) => <li>{s}</li>)}
+      </ul>
     </div>
   </section>
 
@@ -264,10 +329,10 @@ const jsonLd = [
   <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
   <section class="section">
     <div class="container center-narrow">
-      <h2 class="h1 shine">Start with the free trial</h2>
+      <h2 class="h1 shine">Ready to elevate your images?</h2>
       <p class="lede" style="margin-top:1rem;margin-inline:auto">
-        Send me twenty-five images and a style reference. You'll have them back
-        within two days, edited, and you can decide from there.
+        Message me before ordering to discuss your project — the shoot type,
+        the image count, and the timeline that works for you.
       </p>
       <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
         <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
