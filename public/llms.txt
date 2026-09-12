@@ -1,55 +1,71 @@
 # iamharinda.com
 
-> Photo retouching and colour correction done by a human eye on a calibrated
-> screen. No AI presets, no one-click batch looks. True colours — skin stays
-> skin, whites stay white.
+> Photo editing, custom web development, and fashion designing — three
+> services run by one person, Harinda Fernando, from Sri Lanka, for clients
+> in the United States, Canada and Europe.
 
 ## Who
 
-iamharinda is a one-person photo editing service run by Harinda Fernando. Every
-photo is edited by hand on a colour-calibrated display and judged by eye. There
-is no AI look, no batch preset and no auto-retouch involved at any stage. The
-Fiverr profile is rated 4.9 over 183 reviews with 300+ completed orders.
+iamharinda is a one-person studio run by Harinda Fernando. Photo editing is
+done by hand on a colour-calibrated, Calman-verified display and judged by
+eye — no AI look, no batch preset, no auto-retouch. The Fiverr profile is
+rated 4.9 over 183 reviews with 300+ completed orders.
 
-## Free sample edit
+## Photo editing
 
-Send two or three photos and they are edited and returned free, with no
-obligation to order. It is the recommended way to check the quality and style
-before booking a full shoot.
+Colour correction, retouching, and bulk photo editing for photographers,
+including wedding, portrait, headshot, family, event, real estate, product
+and drone work — in Adobe Lightroom, Lightroom Classic and Photoshop.
 
-## What is offered
+What's included: white balance and colour correction, exposure/contrast/tonal
+adjustments, clean natural colour grading, noise reduction and sharpening,
+lens corrections and cropping, and photo culling for large galleries.
 
-- Colour correction and white balance, set by eye
-- Exposure, contrast, and highlight/shadow recovery worked from RAW
-- Skin retouching that keeps pores and texture (no plastic smoothing)
-- Removal of distractions — sensor dust, stray objects, blemishes
-- Consistent grading across an entire shoot
-- RAW-first workflow: CR2, CR3, NEF, ARW, DNG recommended
+Pricing (US dollars):
+- General bulk editing — 50 photos $10, 100 photos $20, 200 photos $40, over
+  200 custom bulk pricing on request (fiverr.com or /pricing/)
+- Wedding, portrait and headshot packages — Basic $10 (50 images, 2-day
+  delivery), Standard $40 (200 images, 3-day), Premium $100 (500 images,
+  4-day) — all with unlimited revisions (/photo-editing/)
 
-## Pricing (US dollars)
+A free sample edit (two or three photos) is available before ordering the
+general bulk service. For wedding/portrait packages, message before ordering
+to confirm the right package and timeline.
 
-- 50 photos — $10
-- 100 photos — $20
-- 200 photos — $40
-- Over 200 photos — custom bulk pricing on request
+## Custom web development
 
-Every order includes: a free sample edit beforehand, unlimited revisions,
-high-quality edited photos at full resolution, and payment only after delivery
-and approval. There is no deposit.
+Sites and web apps coded from scratch — no WordPress, no page builders, no
+plugin dependencies. The code is handed over to the client.
+
+Pricing (US dollars): single-page/landing site $750, marketing site up to 8
+pages $1,500, business site with CMS $2,500, web application/custom tooling
+$4,000, ongoing maintenance $150/month, work outside agreed scope $40/hour.
+Every project starts with a free scope call. (/web-development/)
+
+## Fashion designing
+
+Print-ready polo and golf shirt pattern design and mockups, built in Adobe
+Illustrator and Photoshop — print patterns, textile design, and front/back
+garment artwork.
+
+Pricing (US dollars): Basic $10 (1 design, 1-day delivery), Standard $25 (3
+designs, 2-day), Premium $40 (5 designs, 2-day) — all with unlimited
+revisions. (/fashion-designing/)
 
 ## Payment methods
 
 PayPal invoice (credit/debit card, Venmo, Apple Pay, Google Pay), PayPal
-transfer, Payoneer, Remitly, TapSend, or bank deposit. You are invoiced after
-the edited photos are delivered and you have approved them.
+transfer, Payoneer, Remitly, TapSend, or bank deposit. Photo work is invoiced
+after delivery and approval, with no deposit. Web and fashion design projects
+are staged, with the split set out on each service page.
 
 ## How to order
 
-1. Ask for a free sample edit on WhatsApp, or book through Fiverr:
-   https://www.fiverr.com/iamharinda
-2. Send RAW files plus any reference edits or notes on the look you want.
-3. Receive first proofs, request unlimited revisions until approved.
-4. Pay after delivery.
+1. Message on WhatsApp or book through Fiverr to discuss the project first.
+2. Send the files (RAW photos, a logo/reference for fashion design, or a
+   scope for a web project).
+3. Review proofs or a draft, then request revisions until it's right.
+4. Pay per each service's terms above.
 
 ## Areas served
 
@@ -58,6 +74,6 @@ United States, Canada, and Europe. All work is delivered online.
 ## Contact
 
 - WhatsApp: https://wa.me/447355229599 (+44 7355 229599)
-- Email: hello@iamharinda.com
+- Email: hello@iamharinda.com / iamharinda@gmail.com
 - Fiverr: https://www.fiverr.com/iamharinda
 - Website: https://www.iamharinda.com
