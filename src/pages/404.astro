@@ -2,6 +2,23 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import site, { waLink } from "../data/site.js";
 import { professionalService } from "../lib/schema.js";
+
+// Two star layers as one big box-shadow each — cheap way to scatter a lot of
+// dots without extra DOM nodes. Coordinates are laid out on a 1600×900
+// reference canvas; the page is close enough to that ratio that it still
+// reads as an even scatter at other sizes.
+function stars(count: number, minOpacity: number, maxOpacity: number) {
+  const dots: string[] = [];
+  for (let i = 0; i < count; i++) {
+    const x = Math.round(Math.random() * 1600);
+    const y = Math.round(Math.random() * 900);
+    const o = (minOpacity + Math.random() * (maxOpacity - minOpacity)).toFixed(2);
+    dots.push(`${x}px ${y}px 0 rgb(255 255 255 / ${o})`);
+  }
+  return dots.join(",");
+}
+const starsNear = stars(90, 0.5, 0.95);
+const starsFar = stars(130, 0.15, 0.45);
 ---
 
 <BaseLayout
@@ -13,33 +30,46 @@ import { professionalService } from "../lib/schema.js";
   jsonLd={[professionalService()]}
 >
   <div class="container notfound notfound--space">
-    <!-- Decorative scene: a big dim "404" sits behind everything, a small
-         space dock blinks its lights, and an astronaut hops/drifts across in
-         search of the page. Pure CSS, no images. -->
+    <!-- Decorative scene, all CSS/SVG, no images: a starfield, a giant dim
+         "404" watermark, a ship sweeping searchlight beams left and right,
+         and an astronaut drifting through them in slow motion. -->
+    <div class="stars stars--near" style={`box-shadow:${starsNear}`}></div>
+    <div class="stars stars--far" style={`box-shadow:${starsFar}`}></div>
+
     <p class="space-404" aria-hidden="true">404</p>
 
-    <svg class="space-dock" viewBox="0 0 160 90" aria-hidden="true" focusable="false">
-      <ellipse class="dock__hull-shade" cx="80" cy="60" rx="58" ry="13" />
-      <ellipse class="dock__hull" cx="80" cy="50" rx="68" ry="24" />
-      <rect class="dock__antenna-stem" x="75" y="14" width="6" height="20" rx="3" />
-      <circle class="dock__antenna-tip" cx="78" cy="12" r="5" />
-      <circle class="dock__window-glow" cx="100" cy="48" r="17" />
-      <circle class="dock__window" cx="100" cy="48" r="9" />
-      <circle class="dock__light dock__light--1" cx="33" cy="62" r="4" />
-      <circle class="dock__light dock__light--2" cx="57" cy="68" r="4" />
-      <circle class="dock__light dock__light--3" cx="81" cy="62" r="4" />
+    <div class="beam-rig" aria-hidden="true">
+      <span class="beam beam--a"></span>
+      <span class="beam beam--b"></span>
+      <span class="beam beam--c"></span>
+    </div>
+
+    <svg class="space-ship" viewBox="0 0 220 130" aria-hidden="true" focusable="false">
+      <polygon class="ship__fuselage" points="0,55 46,28 172,24 220,50 220,80 172,106 46,102" />
+      <polygon class="ship__fin" points="58,24 68,2 78,24" />
+      <ellipse class="ship__pod" cx="204" cy="40" rx="15" ry="11" />
+      <ellipse class="ship__pod" cx="204" cy="90" rx="15" ry="11" />
+      <circle class="ship__thruster" cx="204" cy="40" r="6" />
+      <circle class="ship__thruster" cx="204" cy="90" r="6" />
+      <circle class="ship__cockpit-glow" cx="58" cy="65" r="20" />
+      <circle class="ship__cockpit" cx="58" cy="65" r="12" />
+      <rect class="ship__panel ship__panel--a" x="90" y="38" width="20" height="11" rx="3" />
+      <rect class="ship__panel ship__panel--b" x="122" y="36" width="20" height="11" rx="3" />
+      <rect class="ship__panel ship__panel--c" x="154" y="38" width="20" height="11" rx="3" />
+      <rect class="ship__panel ship__panel--a" x="90" y="82" width="20" height="11" rx="3" />
+      <rect class="ship__panel ship__panel--c" x="154" y="82" width="20" height="11" rx="3" />
     </svg>
 
     <svg class="astronaut" viewBox="0 0 120 170" aria-hidden="true" focusable="false">
       <g class="astronaut__body">
         <rect class="astronaut__pack" x="18" y="80" width="16" height="30" rx="6" />
         <rect class="astronaut__pack" x="86" y="80" width="16" height="30" rx="6" />
-        <rect class="astronaut__leg" x="42" y="132" width="16" height="30" rx="8" />
-        <rect class="astronaut__leg" x="62" y="132" width="16" height="30" rx="8" />
-        <ellipse class="astronaut__boot" cx="50" cy="163" rx="12" ry="7" />
-        <ellipse class="astronaut__boot" cx="70" cy="163" rx="12" ry="7" />
-        <rect class="astronaut__arm" x="14" y="84" width="16" height="40" rx="8" transform="rotate(18 22 84)" />
-        <rect class="astronaut__arm" x="90" y="84" width="16" height="40" rx="8" transform="rotate(-18 98 84)" />
+        <rect class="astronaut__leg" x="36" y="128" width="16" height="34" rx="8" transform="rotate(-10 44 128)" />
+        <rect class="astronaut__leg" x="66" y="130" width="16" height="30" rx="8" transform="rotate(16 74 130)" />
+        <ellipse class="astronaut__boot" cx="44" cy="163" rx="12" ry="7" />
+        <ellipse class="astronaut__boot" cx="76" cy="158" rx="12" ry="7" />
+        <rect class="astronaut__arm" x="14" y="60" width="16" height="42" rx="8" transform="rotate(-55 22 60)" />
+        <rect class="astronaut__arm" x="90" y="88" width="16" height="36" rx="8" transform="rotate(-10 98 88)" />
         <rect class="astronaut__torso" x="30" y="70" width="60" height="70" rx="30" />
         <circle class="astronaut__panel" cx="60" cy="100" r="10" />
         <circle class="astronaut__dot astronaut__dot--a" cx="56" cy="98" r="2.4" />
@@ -55,8 +85,11 @@ import { professionalService } from "../lib/schema.js";
     </svg>
 
     <div class="notfound__foreground">
-      <h1 class="sr-only">404 — page not found</h1>
-      <p class="notfound__lede">Page not found. It may have moved.</p>
+      <h1 class="h1 grad-text">Lost in space.</h1>
+      <p class="notfound__lede">
+        This page doesn&rsquo;t exist. It may have moved — here&rsquo;s how to
+        reach me instead.
+      </p>
 
       <div class="btn-row" style="justify-content:center;margin-top:1rem">
         <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
