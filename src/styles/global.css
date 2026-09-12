@@ -1173,6 +1173,47 @@ body::after {
   margin-bottom: var(--space-2);
 }
 
+/* 16b. World map ------------------------------------------------------------ */
+
+.world-map {
+  position: relative;
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  border: 1px solid var(--hairline);
+  overflow: clip;
+}
+.world-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.world-map :where(path) {
+  fill: var(--surface-solid);
+  stroke: var(--hairline);
+  stroke-width: 0.75;
+}
+.world-map :where(path.is-served) {
+  fill: var(--c-teal);
+  stroke: color-mix(in oklab, var(--c-teal) 60%, black);
+}
+.world-map__caption {
+  margin-top: var(--space-3);
+  font-size: var(--step--1);
+  color: var(--text-faint);
+}
+.world-map__caption a {
+  color: inherit;
+}
+/* Progressive enhancement: the map is injected by JS. With it disabled (or
+   before the fetch resolves) show the plain country list instead. */
+.world-map__fallback {
+  margin: 0;
+}
+.world-map[data-loaded="true"] .world-map__fallback {
+  display: none;
+}
+
 /* 17. FAQ (native <details>) ------------------------------------------------- */
 
 .faq {
