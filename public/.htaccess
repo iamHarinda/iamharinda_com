@@ -20,6 +20,11 @@ DirectoryIndex index.html
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} !^www\.iamharinda\.com$ [NC]
   RewriteRule ^ https://www.iamharinda.com%{REQUEST_URI} [R=301,L]
+
+  # ── Renamed pages ───────────────────────────────────────────────────────
+  # apparel-pattern-tech-packs/ was reframed as fashion/print pattern design
+  # (see src/pages/fashion-designing.astro) and moved here permanently.
+  RewriteRule ^apparel-pattern-tech-packs/?$ /fashion-designing/ [R=301,L]
 </IfModule>
 
 # ── Belt and braces: any non-canonical host also answers with noindex ───────
