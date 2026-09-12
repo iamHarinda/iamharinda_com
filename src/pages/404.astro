@@ -2,32 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import site, { waLink } from "../data/site.js";
 import { professionalService } from "../lib/schema.js";
-
-// Astronaut and rocket artwork — unDraw illustrations (MIT licence), cropped
-// from their source scenes and recoloured to theme tokens. See the comment
-// at the top of each file for provenance. `?raw` inlines the file content as
-// a string at build time so they inherit the page's CSS custom properties
-// (fill="var(--c-teal)" etc. only resolves when the SVG lives in the same
-// document as the tokens).
-import astronautSvg from "../assets/404/astronaut-inner.svg?raw";
-import rocketSvg from "../assets/404/rocket-inner.svg?raw";
-
-// Two star layers as one big box-shadow each — cheap way to scatter a lot of
-// dots without extra DOM nodes. Coordinates are laid out on a 1600×900
-// reference canvas; the page is close enough to that ratio that it still
-// reads as an even scatter at other sizes.
-function stars(count: number, minOpacity: number, maxOpacity: number) {
-  const dots: string[] = [];
-  for (let i = 0; i < count; i++) {
-    const x = Math.round(Math.random() * 1600);
-    const y = Math.round(Math.random() * 900);
-    const o = (minOpacity + Math.random() * (maxOpacity - minOpacity)).toFixed(2);
-    dots.push(`${x}px ${y}px 0 rgb(255 255 255 / ${o})`);
-  }
-  return dots.join(",");
-}
-const starsNear = stars(90, 0.5, 0.95);
-const starsFar = stars(130, 0.15, 0.45);
 ---
 
 <BaseLayout
@@ -38,51 +12,36 @@ const starsFar = stars(130, 0.15, 0.45);
   chrome={false}
   jsonLd={[professionalService()]}
 >
-  <div class="container notfound notfound--space">
-    <!-- Decorative scene, all CSS/SVG, no images: a starfield, a giant dim
-         "404" watermark, a ship sweeping searchlight beams left and right,
-         and an astronaut drifting through them in slow motion. -->
-    <div class="stars stars--near" style={`box-shadow:${starsNear}`}></div>
-    <div class="stars stars--far" style={`box-shadow:${starsFar}`}></div>
-
-    <p class="space-404" aria-hidden="true">404</p>
-
-    <div class="beam-rig" aria-hidden="true">
-      <span class="beam beam--a"></span>
-      <span class="beam beam--b"></span>
-      <span class="beam beam--c"></span>
+  <div class="container notfound notfound--spotlight">
+    <!-- Ceiling-mounted lamp, swinging like a pendulum. The beam and the
+         mask on the "404" text below share one animation timing so the lit
+         patch of text tracks directly under the lamp as it swings. -->
+    <div class="spotlight-rig" aria-hidden="true">
+      <span class="spotlight-lamp"></span>
+      <span class="spotlight-beam"></span>
     </div>
 
-    <svg
-      class="space-ship"
-      viewBox="240 20 600 700"
-      aria-hidden="true"
-      focusable="false"
-      set:html={rocketSvg}
-    />
+    <h1 class="spotlight-404">
+      <span class="spotlight-404__dim" aria-hidden="true">404</span>
+      <span class="spotlight-404__lit">404</span>
+    </h1>
 
-    <svg
-      class="astronaut"
-      viewBox="0 0 699.11 746.96"
-      aria-hidden="true"
-      focusable="false"
-      set:html={astronautSvg}
-    />
+    <p class="notfound__lede">Page not found. It may have moved.</p>
 
-    <div class="notfound__foreground">
-      <h1 class="h1 grad-text">Lost in space.</h1>
-      <p class="notfound__lede">
-        This page doesn&rsquo;t exist. It may have moved — here&rsquo;s how to
-        reach me instead.
-      </p>
-
-      <div class="btn-row" style="justify-content:center;margin-top:1rem">
-        <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
-        <a class="btn btn--grad" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
-      </div>
-      <p style="margin-top:1.5rem">
-        <a class="text-link" href="/">Go to the home page</a>
-      </p>
+    <div class="btn-row" style="justify-content:center;margin-top:1rem">
+      <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
+      <a class="btn btn--grad" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
     </div>
+    <p style="margin-top:1.5rem">
+      <a class="text-link" href="/">Go to the home page</a>
+    </p>
   </div>
 </BaseLayout>
+
+<style>
+  /* This page swaps the sitewide aurora canvas for a plain dark ground —
+     the swinging spotlight is the only light source here. */
+  :global(#bg) {
+    display: none;
+  }
+</style>
