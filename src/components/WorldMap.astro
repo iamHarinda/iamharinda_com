@@ -40,10 +40,7 @@ const { heading = "Where clients are." } = Astro.props;
         if (!mount) return;
         mount.innerHTML = svg;
         for (const path of mount.querySelectorAll("path[id]")) {
-          if (!served.has(path.id)) continue;
-          path.classList.add("is-served");
-          // Stagger the pulse so the map reads as scanning, not blinking in unison.
-          path.style.animationDelay = `${Math.random() * -2.6}s`;
+          if (served.has(path.id)) path.classList.add("is-served");
         }
         el.dataset.loaded = "true";
       })
