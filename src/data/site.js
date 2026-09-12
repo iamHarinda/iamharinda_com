@@ -119,7 +119,7 @@ export const site = {
     },
     {
       label: "Custom web development",
-      href: "/custom-web-development/",
+      href: "/web-development/",
       line: "Sites and web apps coded from scratch — no WordPress, no builders. Fixed prices start at $750 and you keep the code.",
     },
     {
