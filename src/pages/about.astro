@@ -133,6 +133,29 @@ const jsonLd = [
         </p>
       </div>
 
+      <div class="rise" style="margin-top:2.5rem;max-width:var(--measure)">
+        <h2 style="color:var(--text);font-size:var(--step-2)">Where clients are.</h2>
+        <p style="color:var(--text-dim);margin-top:var(--space-2)">
+          Real order history from the Fiverr profile — {site.clientCountries.length} countries and counting.
+        </p>
+      </div>
+      <div
+        class="world-map rise"
+        id="world-map"
+        style="margin-top:1.5rem"
+        data-countries={JSON.stringify(site.clientCountries.map((c) => c.code))}
+      >
+        <div class="world-map__svg"></div>
+        <p class="world-map__fallback">
+          {site.clientCountries.map((c) => c.name).join(", ")}.
+        </p>
+      </div>
+      <p class="world-map__caption">
+        Map data via
+        {" "}<a href="https://github.com/VictorCazanave/svg-maps" target="_blank" rel="noopener">svg-maps.com</a>,
+        licensed CC BY 4.0.
+      </p>
+
       <div class="btn-row" style="margin-top:2.5rem">
         <a class="btn" data-magnetic href={waLink("Hi Harinda, I read your About page and I'd like to talk about a project.")}>Message on WhatsApp</a>
         <a class="btn btn--grad" href="/pricing/">See pricing</a>
@@ -140,3 +163,24 @@ const jsonLd = [
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  const el = document.getElementById("world-map");
+  if (el) {
+    const served = new Set(JSON.parse(el.dataset.countries || "[]"));
+    fetch("/images/world-map.svg")
+      .then((r) => (r.ok ? r.text() : Promise.reject(r.status)))
+      .then((svg) => {
+        const mount = el.querySelector(".world-map__svg");
+        if (!mount) return;
+        mount.innerHTML = svg;
+        for (const path of mount.querySelectorAll("path[id]")) {
+          if (served.has(path.id)) path.classList.add("is-served");
+        }
+        el.dataset.loaded = "true";
+      })
+      .catch(() => {
+        /* fetch failed — the plain-text country list stays visible */
+      });
+  }
+</script>
