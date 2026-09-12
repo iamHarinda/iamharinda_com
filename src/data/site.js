@@ -88,7 +88,7 @@ export const site = {
     { label: "Home", href: "/" },
     { label: "Photo editing", href: "/wedding-photo-editing/" },
     { label: "Pattern designing", href: "/fashion-designing/" },
-    { label: "Web development", href: "/custom-web-development/" },
+    { label: "Web development", href: "/web-development/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
