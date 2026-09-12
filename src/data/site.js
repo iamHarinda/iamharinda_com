@@ -165,6 +165,10 @@ export const site = {
     },
   ],
 
+  // Bump this whenever a price changes anywhere on the site — shown on
+  // /pricing/ so visitors (and future-you) know how fresh the numbers are.
+  pricesUpdated: "2026-09-13",
+
   // ── Availability badge (home hero) ───────────────────────────────────────
   availability: {
     on: true, // set false to show the offline state
