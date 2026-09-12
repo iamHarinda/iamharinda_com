@@ -149,7 +149,7 @@ export const site = {
     },
     {
       label: "Custom web development",
-      href: "/custom-web-development/#pricing",
+      href: "/web-development/#pricing",
       from: "$750",
       unit: "fixed price · $150/mo upkeep",
       line: "Sites and web apps coded from scratch. Quoted fixed-price after a free scope call, and you keep the code.",
