@@ -1436,9 +1436,10 @@ body::after {
 }
 
 /* 20b. 404 — space scene -----------------------------------------------------
-   Sitewide aurora background (no override — same look as the home page). A
-   dim giant "404" sits behind everything, a small space dock floats and
-   blinks its lights, and an astronaut hops across the scene, searching. */
+   Sitewide aurora background (no override — same look as the home page),
+   plus a starfield, a dim giant "404" watermark, a ship sweeping searchlight
+   beams left and right, and an astronaut drifting through them in slow,
+   zero-gravity motion. */
 
 .notfound--space {
   position: relative;
@@ -1447,6 +1448,32 @@ body::after {
 .notfound__foreground {
   position: relative;
   z-index: 1;
+}
+
+/* Two box-shadow starfields (see the frontmatter in 404.astro) — a static
+   dim "far" layer and a slightly brighter "near" layer that twinkles. */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  z-index: 0;
+  pointer-events: none;
+}
+.stars--far {
+  opacity: 0.7;
+}
+.stars--near {
+  animation: star-twinkle 3.6s ease-in-out infinite alternate;
+}
+@keyframes star-twinkle {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .notfound .space-404 {
@@ -1466,74 +1493,108 @@ body::after {
   pointer-events: none;
 }
 
-/* Space dock: an SVG hull with a glowing window, floating and blinking. */
-.space-dock {
+/* Searchlight beams, fanned out from the ship and swinging together. */
+.beam-rig {
   position: absolute;
-  top: 14%;
-  right: 10%;
+  top: 20%;
+  right: 15%;
   z-index: 0;
-  width: clamp(120px, 16vw, 190px);
-  height: auto;
-  overflow: visible;
-  animation: dock-float 5s ease-in-out infinite alternate;
+  width: 1px;
+  height: 1px;
+  transform-origin: top right;
+  animation: beam-sweep 6s ease-in-out infinite alternate;
   pointer-events: none;
 }
-.dock__hull {
+.beam {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 78vh;
+  transform-origin: top right;
+  clip-path: polygon(98% 0, 100% 0, 22% 100%, 6% 100%);
+  background: linear-gradient(
+    200deg,
+    color-mix(in oklab, var(--c-teal) 55%, transparent),
+    transparent 72%
+  );
+  mix-blend-mode: screen;
+}
+.beam--a {
+  transform: rotate(-18deg);
+}
+.beam--b {
+  transform: rotate(0deg);
+}
+.beam--c {
+  transform: rotate(18deg);
+}
+@keyframes beam-sweep {
+  from {
+    transform: rotate(-14deg);
+  }
+  to {
+    transform: rotate(14deg);
+  }
+}
+
+/* Ship: angular hull, glowing panels, hovering with a gentle bob. */
+.space-ship {
+  position: absolute;
+  top: 12%;
+  right: 8%;
+  z-index: 0;
+  width: clamp(150px, 20vw, 240px);
+  height: auto;
+  overflow: visible;
+  transform: rotate(-6deg);
+  animation: ship-float 5s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.ship__fuselage {
   fill: var(--surface-solid);
   stroke: var(--hairline-strong);
   stroke-width: 1.5;
 }
-.dock__hull-shade {
+.ship__fin {
   fill: var(--bg-raise);
-  opacity: 0.8;
+  stroke: var(--hairline-strong);
+  stroke-width: 1.5;
 }
-.dock__antenna-stem {
-  fill: var(--hairline-strong);
+.ship__pod {
+  fill: var(--bg-raise);
+  stroke: var(--hairline-strong);
+  stroke-width: 1.5;
 }
-.dock__antenna-tip {
+.ship__thruster {
   fill: var(--c-amber);
-  animation: dock-blink 1.8s ease-in-out infinite;
 }
-.dock__window-glow {
+.ship__cockpit-glow {
   fill: color-mix(in oklab, var(--c-teal) 35%, transparent);
 }
-.dock__window {
+.ship__cockpit {
   fill: var(--c-teal);
 }
-.dock__light {
-  animation: dock-blink 1.8s ease-in-out infinite;
-}
-.dock__light--1 {
-  fill: var(--c-teal);
-  animation-delay: 0s;
-}
-.dock__light--2 {
-  fill: var(--c-amber);
-  animation-delay: 0.5s;
-}
-.dock__light--3 {
+.ship__panel {
   fill: var(--c-violet);
-  animation-delay: 1s;
+  opacity: 0.9;
 }
-@keyframes dock-float {
+.ship__panel--a {
+  fill: var(--c-teal);
+}
+.ship__panel--c {
+  fill: var(--c-amber);
+}
+@keyframes ship-float {
   from {
-    transform: translateY(0);
+    transform: rotate(-6deg) translateY(0);
   }
   to {
-    transform: translateY(-14px);
-  }
-}
-@keyframes dock-blink {
-  0%,
-  100% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 1;
+    transform: rotate(-6deg) translateY(-10px);
   }
 }
 
-/* Astronaut: hops in place while drifting across the scene, left to right. */
+/* Astronaut: floats and drifts across the scene in slow motion. */
 .astronaut {
   position: absolute;
   bottom: 12%;
@@ -1542,13 +1603,13 @@ body::after {
   width: clamp(70px, 9vw, 110px);
   height: auto;
   overflow: visible;
-  animation: astronaut-drift 8s linear infinite;
+  animation: astronaut-drift 16s linear infinite;
   pointer-events: none;
 }
 .astronaut__body {
   transform-box: fill-box;
   transform-origin: bottom center;
-  animation: astronaut-hop 0.9s ease-in-out infinite;
+  animation: astronaut-hop 3.2s ease-in-out infinite;
 }
 .astronaut__pack {
   fill: var(--c-violet);
