@@ -1196,6 +1196,11 @@ body::after {
 .world-map :where(path.is-served) {
   fill: var(--c-teal);
   stroke: color-mix(in oklab, var(--c-teal) 60%, black);
+  animation: world-map-pulse 2.6s ease-in-out infinite;
+}
+@keyframes world-map-pulse {
+  0%, 100% { fill-opacity: 1; }
+  50% { fill-opacity: 0.5; }
 }
 .world-map__caption {
   margin-top: var(--space-3);
