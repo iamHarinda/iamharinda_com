@@ -8,6 +8,12 @@ import {
   breadcrumb,
 } from "../lib/schema.js";
 
+const pricesUpdated = new Date(site.pricesUpdated).toLocaleDateString("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
 const pricingFaqs = site.faqs.filter((f) =>
   [
     "Do you offer a free sample edit?",
