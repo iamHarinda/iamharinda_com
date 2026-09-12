@@ -152,11 +152,11 @@ const graph = [webSite(), ...jsonLd];
   <body>
     <canvas id="bg" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header path={Astro.url.pathname} />
+    {chrome && <Header path={Astro.url.pathname} />}
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    {chrome && <Footer />}
 
     <script>
       import "../scripts/aurora.js";
