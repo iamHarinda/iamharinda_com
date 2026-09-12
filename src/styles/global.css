@@ -1458,7 +1458,7 @@ body::after {
   top: 0;
   left: 50%;
   width: 1px;
-  height: 38%;
+  height: 22%;
   transform-origin: top center;
   animation: spotlight-swing 4.4s ease-in-out infinite alternate;
   pointer-events: none;
