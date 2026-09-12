@@ -18,6 +18,8 @@ const {
   noindex = false,
   /** Array of JSON-LD objects. The WebSite node is always included. */
   jsonLd = [],
+  /** Set false to omit the site header and footer — e.g. the 404 page. */
+  chrome = true,
 } = Astro.props;
 
 const canonical = new URL(path, site.url).href;
