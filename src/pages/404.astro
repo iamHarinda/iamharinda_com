@@ -12,11 +12,23 @@ import { professionalService } from "../lib/schema.js";
   chrome={false}
   jsonLd={[professionalService()]}
 >
-  <div class="container notfound">
-    <p class="eyebrow" style="justify-content:center">Error 404</p>
-    <h1 class="grad-text">Page not found</h1>
-    <p>The page you were after isn&rsquo;t here. It may have moved.</p>
-    <div class="btn-row" style="justify-content:center;margin-top:.5rem">
+  <div class="container notfound notfound--spotlight">
+    <!-- Ceiling-mounted lamp, swinging like a pendulum. The beam and the
+         mask on the "404" text below share one animation timing so the lit
+         patch of text tracks directly under the lamp as it swings. -->
+    <div class="spotlight-rig" aria-hidden="true">
+      <span class="spotlight-lamp"></span>
+      <span class="spotlight-beam"></span>
+    </div>
+
+    <h1 class="spotlight-404">
+      <span class="spotlight-404__dim" aria-hidden="true">404</span>
+      <span class="spotlight-404__lit">404</span>
+    </h1>
+
+    <p class="notfound__lede">Page not found. It may have moved.</p>
+
+    <div class="btn-row" style="justify-content:center;margin-top:1rem">
       <a class="btn" data-magnetic href={waLink("Hi Harinda, I hit a broken link on your site:")}>Message on WhatsApp</a>
       <a class="btn btn--grad" href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
     </div>
@@ -25,3 +37,11 @@ import { professionalService } from "../lib/schema.js";
     </p>
   </div>
 </BaseLayout>
+
+<style>
+  /* This page swaps the sitewide aurora canvas for a plain dark ground —
+     the swinging spotlight is the only light source here. */
+  :global(#bg) {
+    display: none;
+  }
+</style>
