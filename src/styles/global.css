@@ -1538,52 +1538,19 @@ body::after {
   }
 }
 
-/* Ship: angular hull, glowing panels, hovering with a gentle bob. */
+/* Ship: unDraw "Outer Space" rocket, recoloured to theme tokens (see
+   src/assets/404/rocket-inner.svg), hovering with a gentle bob. */
 .space-ship {
   position: absolute;
-  top: 12%;
+  top: 10%;
   right: 8%;
   z-index: 0;
-  width: clamp(150px, 20vw, 240px);
+  width: clamp(110px, 14vw, 170px);
   height: auto;
   overflow: visible;
   transform: rotate(-6deg);
   animation: ship-float 5s ease-in-out infinite alternate;
   pointer-events: none;
-}
-.ship__fuselage {
-  fill: var(--surface-solid);
-  stroke: var(--hairline-strong);
-  stroke-width: 1.5;
-}
-.ship__fin {
-  fill: var(--bg-raise);
-  stroke: var(--hairline-strong);
-  stroke-width: 1.5;
-}
-.ship__pod {
-  fill: var(--bg-raise);
-  stroke: var(--hairline-strong);
-  stroke-width: 1.5;
-}
-.ship__thruster {
-  fill: var(--c-amber);
-}
-.ship__cockpit-glow {
-  fill: color-mix(in oklab, var(--c-teal) 35%, transparent);
-}
-.ship__cockpit {
-  fill: var(--c-teal);
-}
-.ship__panel {
-  fill: var(--c-violet);
-  opacity: 0.9;
-}
-.ship__panel--a {
-  fill: var(--c-teal);
-}
-.ship__panel--c {
-  fill: var(--c-amber);
 }
 @keyframes ship-float {
   from {
@@ -1594,13 +1561,15 @@ body::after {
   }
 }
 
-/* Astronaut: floats and drifts across the scene in slow motion. */
+/* Astronaut: unDraw "Astronaut" illustration, recoloured to theme tokens
+   (see src/assets/404/astronaut-inner.svg), floating and drifting across
+   the scene in slow motion. */
 .astronaut {
   position: absolute;
-  bottom: 12%;
-  left: -110px;
+  bottom: 10%;
+  left: -140px;
   z-index: 0;
-  width: clamp(70px, 9vw, 110px);
+  width: clamp(100px, 13vw, 160px);
   height: auto;
   overflow: visible;
   animation: astronaut-drift 16s linear infinite;
@@ -1610,49 +1579,6 @@ body::after {
   transform-box: fill-box;
   transform-origin: bottom center;
   animation: astronaut-hop 3.2s ease-in-out infinite;
-}
-.astronaut__pack {
-  fill: var(--c-violet);
-}
-.astronaut__leg,
-.astronaut__arm,
-.astronaut__torso {
-  fill: var(--text);
-}
-.astronaut__boot {
-  fill: var(--surface-solid);
-}
-.astronaut__panel {
-  fill: var(--surface-solid);
-}
-.astronaut__dot--a {
-  fill: var(--c-teal);
-}
-.astronaut__dot--b {
-  fill: var(--c-amber);
-}
-.astronaut__dot--c {
-  fill: var(--c-violet);
-}
-.astronaut__helmet {
-  fill: var(--text);
-}
-.astronaut__visor {
-  fill: var(--c-teal);
-}
-.astronaut__visor-shade {
-  fill: var(--c-violet);
-  opacity: 0.55;
-}
-.astronaut__shine {
-  fill: #fff;
-  opacity: 0.5;
-}
-.astronaut__antenna-stem {
-  fill: var(--hairline-strong);
-}
-.astronaut__antenna-tip {
-  fill: var(--c-amber);
 }
 @keyframes astronaut-hop {
   0%,
