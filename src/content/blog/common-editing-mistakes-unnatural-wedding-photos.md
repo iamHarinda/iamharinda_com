@@ -46,4 +46,12 @@ Every mistake on this list comes from applying an adjustment, a preset, a batch 
 
 A short, written checklist run through before any gallery goes out, skin tone check, shadow and highlight detail check, saturation check, sharpening halo check, catches most of these mistakes before a client ever sees them. It takes an extra few minutes per gallery and prevents the far more time-consuming situation of a client noticing something after delivery and asking for a correction round you didn't plan for.
 
+## Why these mistakes are easier to catch in someone else's work than your own
+
+There's a real psychological reason editors and photographers alike miss these issues in their own galleries more often than in someone else's. After hours staring at the same set of photos, your eyes adjust to whatever colour cast or oversaturation has crept in, the same way your eyes adjust to a room's lighting after a few minutes. A fresh look the next morning, or a second person reviewing before delivery, catches things a tired eye simply stops noticing after enough repeated exposure to the same images.
+
+## When a mistake is worth fixing after delivery
+
+If a client points out one of these issues after a gallery's already gone out, the right response is usually a quick, no-argument fix rather than a defense of the original choice. A single corrected batch sent promptly costs very little compared to the damage a defensive response does to the relationship, and it often turns a potential complaint into a client who feels genuinely well taken care of.
+
 Want every photo checked individually instead of run through a fixed formula? That's the whole approach here, hand-corrected on a calibrated screen. Send a free sample edit request or check pricing.
