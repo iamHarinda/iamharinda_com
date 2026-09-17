@@ -48,6 +48,6 @@ It's completely fine to start a conversation with a developer before every piece
 
 ## A simple way to organize everything before your first call
 
-A single shared document or folder, even something as basic as a few bullet points in an email, containing your page list, any existing branding, and links to sites you admire, saves real back-and-forth during the scope conversation itself. It doesn't need to be polished or formatted nicely. It just needs to exist somewhere both you and the developer can refer back to as the project moves forward past that first conversation.
+A single shared document or folder, even something as basic as a few bullet points in an email, containing your page list, any existing branding, and links to sites you admire, saves real back-and-forth during the scope conversation itself. It doesn't need to be polished or formatted nicely. It just needs to exist somewhere both you and the developer can refer back to as the project moves forward past that first conversation, and updating it as things change keeps everyone working from the same shared understanding throughout the whole build.
 
 Ready to talk through what you need? A free thirty-minute scope call turns even a rough idea into a clear, fixed-price proposal.
