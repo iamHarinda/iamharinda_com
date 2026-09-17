@@ -34,4 +34,12 @@ When reviewing a mockup, resist the urge to just confirm the logo is present and
 
 A mockup review adds maybe a day to a project timeline and costs nothing extra in most standard packages. A production mistake discovered after the fact costs the full price of the flawed run, plus the time and cost of correcting it and potentially rushing a replacement order to meet a deadline that's now at risk.
 
+## What to do if a mockup reveals a problem
+
+Finding an issue at the mockup stage isn't a failure of the design process, it's the process working exactly as intended. Flag the specific concern clearly, whether it's placement, scale, or colour, and treat the revision that follows as a normal, expected part of getting to a finished product rather than a setback worth feeling frustrated about.
+
+## A mockup protects the designer too, not just the buyer
+
+It's worth remembering this step benefits both sides of the relationship, not just the person ordering. A designer who skips mockups risks their own reputation on a production mistake that was genuinely preventable, which is exactly why any designer who takes their work seriously builds this step into their process without needing to be asked for it specifically.
+
 A realistic front and back mockup on the actual garment comes standard with every package here, never an extra step you have to ask for separately.
