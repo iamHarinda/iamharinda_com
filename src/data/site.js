@@ -73,7 +73,7 @@ export const site = {
     whatsapp: "447355229599",
     // Same number, formatted for display. Shown as the link text; the link still opens WhatsApp.
     whatsappDisplay: "+44 7355 229599",
-    whatsappNote: "Message any time. Replies within one working day.",
+    whatsappNote: "Message any time. Replies within an hour.",
     fiverr: "https://www.fiverr.com/iamharinda",
     // Options for the "Which service?" picker on the contact form.
     services: [
