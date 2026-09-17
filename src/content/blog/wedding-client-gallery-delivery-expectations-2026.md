@@ -38,4 +38,16 @@ None of this changes what the finished photos need to look like, but it does cha
 
 Couples forgive a lot about a wedding day that didn't go perfectly. They tend to remember, and mention to friends, whether the photos and the whole delivery experience afterward felt smooth or stressful, and that memory often shapes referrals more than any single technical detail of the photography itself.
 
+## Small touches that make delivery feel more personal
+
+Beyond the technical platform choice, a short personal message included with the gallery link, thanking the couple by name and mentioning a specific moment from their day, turns a purely transactional delivery into something that feels considered and warm. This costs almost nothing in terms of actual time, a couple of sentences written once per wedding, but it consistently shows up in client feedback as something that made the delivery experience feel special rather than automated and generic.
+
+## Handling the inevitable technical hiccup gracefully
+
+Even a well-chosen platform occasionally has an off day, a slow load, a broken link sent by mistake, a file that didn't upload correctly. How you respond when this happens matters more than most photographers expect. A quick, apologetic fix sent within the hour usually gets forgotten entirely within a day. The same hiccup left unaddressed for a week can become the thing a couple actually remembers about their delivery experience, regardless of how good the photos themselves turned out to be.
+
+## Why gallery delivery deserves the same care as the photography itself
+
+It's easy to treat delivery as an afterthought once the real creative work, the shooting and editing, is finished. Couples don't experience it that way. For them, the delivery moment is often the actual emotional payoff of the entire process, the first time they get to relive their day through the photos. Treating that moment with the same intention as the wedding day itself pays off in reviews, referrals, and the kind of goodwill that turns a one-time client into someone who recommends you for years afterward.
+
 Need a reliable turnaround to build your delivery promise around? First proofs typically come back within a day, full galleries in two to four days for standard volumes. Send a free sample edit request or check current pricing.
