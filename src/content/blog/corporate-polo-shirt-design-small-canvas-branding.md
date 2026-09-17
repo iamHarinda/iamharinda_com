@@ -38,4 +38,12 @@ If different departments or roles need slightly different placements, a name emb
 
 Keep a clear record of the final approved files, including exact colour codes and placement measurements, somewhere your team can reference for future reorders. This prevents small, unintentional drift in the design over successive orders placed months or years apart with different suppliers or designers involved along the way.
 
+## Why corporate branding on apparel differs from other materials
+
+Unlike a printed brochure or a digital ad that a company fully controls the display context for, a polo shirt gets worn in countless different real-world settings, different lighting, different distances, different backgrounds behind the wearer. This unpredictability is exactly why simplicity and strong contrast matter more on apparel than almost any other branded material a company produces, since the design has no control over its surroundings the way a website or printed ad does.
+
+## A final thought on long-term brand consistency
+
+Treating polo design as a genuine extension of your broader brand identity, not a separate, disconnected project handled by whoever happens to be available, keeps every touchpoint feeling like part of the same coherent company. This consistency compounds over time as employees wear the shirts across countless everyday interactions with clients, partners, and the public.
+
 Getting your brand right at garment scale, front and back, is exactly what this service is built around.
