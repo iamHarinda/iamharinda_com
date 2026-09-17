@@ -42,6 +42,6 @@ Photographers just starting out sometimes copy a competitor's package structure 
 
 ## Reviewing and adjusting your packages over time
 
-Package structure isn't something to set once and forget. As your editing process changes, whether you start outsourcing, hire help, or simply get faster with experience, it's worth revisiting what's included in each tier every season or two. A package built around a six-week turnaround from three years ago might not reflect a workflow that's since gotten faster, and sticking with outdated promises either undersells what you can now offer or, worse, no longer matches what you're actually delivering.
+Package structure isn't something to set once and forget. As your editing process changes, whether you start outsourcing, hire help, or simply get faster with experience, it's worth revisiting what's included in each tier every season or two. A package built around a six-week turnaround from three years ago might not reflect a workflow that's since gotten faster, and sticking with outdated promises either undersells what you can now offer or, worse, no longer matches what you're actually delivering to the clients signing that contract today.
 
 Building editing into your package costs? Flat, per-photo pricing makes it straightforward to quote. Check current rates or send over a free sample edit request to check quality first.
