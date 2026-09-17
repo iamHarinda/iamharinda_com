@@ -40,6 +40,6 @@ Placement problems frequently trace back to a logo built without ever considerin
 
 ## What to do if you're evaluating a design someone else created
 
-If you're reviewing a polo design built by a previous designer or an in-house team member without much apparel experience, checking specifically for these placement issues, stretching, ignoring the collar and placket, wrong scale, gives you a clear, objective way to assess quality even without any design background yourself. It turns a vague "something feels off" into specific, actionable feedback you can actually communicate clearly to whoever's doing the revision work.
+If you're reviewing a polo design built by a previous designer or an in-house team member without much apparel experience, checking specifically for these placement issues, stretching, ignoring the collar and placket, wrong scale, gives you a clear, objective way to assess quality even without any design background yourself. It turns a vague "something feels off" into specific, actionable feedback you can actually communicate clearly to whoever's doing the revision work, which tends to get a faster, more accurate fix than a general complaint alone would.
 
 Every design here gets shown on a realistic front and back mockup before it's finalized, never a flat template with artwork just pasted on top.
