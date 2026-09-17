@@ -42,6 +42,10 @@ At minimum, the editable vector source, Ai or EPS, plus flattened versions, PNG 
 
 If you realize months later that you need a format you weren't originally given, reach out to the original designer first, since they likely still have the source file and can export what you need quickly. Recreating a design from scratch because a file format went missing is a far more expensive and time-consuming problem than simply asking for a re-export of an existing, already-approved design.
 
+## A note on file naming conventions worth adopting
+
+Clear file names, including the project name, version number, and date, make a real difference once you're managing several designs across different orders and seasons over time. "polo-design-v2-navy-2027" tells you far more at a glance than "final-FINAL-use-this-one," a naming pattern that becomes genuinely confusing once a handful of revisions have accumulated across a project's lifetime.
+
 ## What to do if a supplier asks for a format you don't recognize
 
 Occasionally a supplier or printer will request a format not covered here, a specific proprietary format for their particular machinery, for instance. In this case, asking your original designer whether they can export to that specific format, or whether the standard files you already have will work with some minor conversion, usually resolves the situation quickly without needing an entirely new design process from scratch or additional design fees.
