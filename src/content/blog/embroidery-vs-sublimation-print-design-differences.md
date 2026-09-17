@@ -30,7 +30,7 @@ A logo with a subtle drop shadow and fine text might look great sublimation prin
 
 ## How to explain your needs if you genuinely don't know the method yet
 
-If you haven't decided on a production method, describing your priorities, budget per unit, expected order size, how the garments will be used and washed over time, lets a designer or supplier recommend a method that fits, rather than you needing to research and decide on a technical production process entirely on your own before even starting the design conversation.
+If you haven't decided on a production method, describing your priorities, budget per unit, expected order size, how the garments will be used and washed over time, lets a designer or supplier recommend a method that fits, rather than you needing to research and decide on a technical production process entirely on your own before even starting the design conversation with someone who actually knows the tradeoffs firsthand.
 
 ## A cost consideration worth knowing upfront
 
