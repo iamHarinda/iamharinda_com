@@ -32,4 +32,12 @@ Photographers and business owners who've been through this once tend to ask very
 
 Whoever takes over, whether it's a rescue or a full rebuild, get the domain transferred fully into your name without delay. Get real access to hosting and any admin accounts under your own credentials. Get the source code, or a documented account of the full setup if there isn't clean code to hand over. This is the moment to actually fix the ownership gap that caused the whole problem the first time through.
 
+## Why acting sooner rather than later matters here
+
+The longer a site sits with unclear ownership, the more likely small problems compound, a domain renewal quietly missed, hosting that lapses without anyone noticing, security patches that never get applied because nobody has access to apply them. Addressing this as soon as you notice the gap, rather than putting it off because the site still technically works for now, prevents a manageable problem from turning into a genuine emergency down the line when you least expect it.
+
+## What a smooth transition actually looks like once sorted
+
+Once ownership and access are properly resolved, moving forward with a new developer should feel like a completely normal project, not a recovery mission anymore. Files transfer over, a plan gets made for what needs updating or rebuilding, and work proceeds on a regular timeline just like any other website project would. The messy part is almost always the untangling at the very start, not the actual rebuilding work that follows once things are sorted out properly.
+
 Have a site with an access problem, or an old developer who's gone quiet on you? Send over what you have and get an honest read on whether it's worth saving or better off rebuilt.
