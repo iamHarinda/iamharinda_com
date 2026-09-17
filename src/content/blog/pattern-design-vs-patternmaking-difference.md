@@ -48,4 +48,8 @@ This isn't something to guess at or Google quickly before placing an order. A fi
 
 If your project actually requires cut-and-sew patternmaking, garment construction, sizing and grading, technical tech packs for manufacturers, search specifically for a patternmaker or a technical designer rather than a general apparel designer. Industry-specific directories and manufacturing consultants are often better starting points than a general freelance marketplace search for this particular specialty.
 
+## The simplest way to remember the difference going forward
+
+Surface versus structure. Pattern design handles what you see printed or embroidered on a garment's surface. Patternmaking handles the actual shape and construction of the garment underneath it. Keeping that one distinction in mind is usually enough to navigate any future conversation about sourcing either type of work confidently.
+
 This is pattern and print design, artwork and mockups for existing garments, not cut-and-sew patternmaking. If that's what you actually need, it's worth knowing before you order. Ask first if you're not sure it's a fit.
