@@ -48,6 +48,6 @@ Before hiring anyone at all, it's worth asking whether the actual problem is boo
 
 ## How to test either option without a long-term commitment
 
-Neither a second shooter nor an outsourced editor requires a permanent commitment to try. Booking a second shooter for a single upcoming wedding, or sending one gallery to an outsourced editor as a trial, gives you real data about whether that fix actually addresses your bottleneck before you build a whole business model around it. This kind of small, low-risk test beats committing to a long-term arrangement based on a guess about what you think will help.
+Neither a second shooter nor an outsourced editor requires a permanent commitment to try. Booking a second shooter for a single upcoming wedding, or sending one gallery to an outsourced editor as a trial, gives you real data about whether that fix actually addresses your bottleneck before you build a whole business model around it. This kind of small, low-risk test beats committing to a long-term arrangement based on a guess about what you think will help, and it costs a fraction of what a wrong long-term hire ends up costing once you factor in wasted months.
 
 If editing backlog is the constraint slowing you down, outsourcing the standard correction pass while you keep shooting and booking is a direct fix. Send a free sample edit request or check pricing by volume.
