@@ -36,4 +36,12 @@ Even a well-defined package occasionally runs into requests that fall outside it
 
 If editing is the actual bottleneck limiting how many weddings a studio can book, outsourcing a portion of it, the standard correction pass across the full gallery, while keeping hands-on retouching for hero images in-house, or the reverse, is often what makes it possible to raise your booking volume without changing anything you've actually promised in the package.
 
+## What newer photographers often get wrong with package structure
+
+Photographers just starting out sometimes copy a competitor's package structure without understanding why it's built that way, which can mean promising something, unlimited retouching, a same-week turnaround, that made sense for a studio with a large editing team but doesn't hold up for a solo operator handling everything alone. Building your own package around your actual capacity, not someone else's, prevents the common early-career trap of promising more than you can consistently deliver once bookings start coming in faster than expected.
+
+## Reviewing and adjusting your packages over time
+
+Package structure isn't something to set once and forget. As your editing process changes, whether you start outsourcing, hire help, or simply get faster with experience, it's worth revisiting what's included in each tier every season or two. A package built around a six-week turnaround from three years ago might not reflect a workflow that's since gotten faster, and sticking with outdated promises either undersells what you can now offer or, worse, no longer matches what you're actually delivering.
+
 Building editing into your package costs? Flat, per-photo pricing makes it straightforward to quote. Check current rates or send over a free sample edit request to check quality first.
