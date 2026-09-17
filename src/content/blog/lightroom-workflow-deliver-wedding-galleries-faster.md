@@ -4,37 +4,32 @@ description: "Most wedding photographers lose time to the same three steps. Here
 publishDate: 2026-07-29
 ---
 
-Shooting a wedding is usually a fraction of the total time it takes to get a gallery into a client's hands. Culling, correcting, retouching and exporting eat the rest — and most delays trace back to the same three bottlenecks.
+Shooting a wedding is usually the smaller part of the job. Culling, correcting, retouching, exporting, all of that eats the rest, and most delays trace straight back to the same three bottlenecks showing up over and over.
 
-## Bottleneck 1: culling too late, or not aggressively enough
+## Bottleneck one: culling too late or not aggressively enough
 
-Culling after importing everything into one bloated catalog, then trying to decide what's good while also thinking about edits, slows both jobs down. Cull first, edit second:
+Dumping everything into one bloated catalog and trying to decide what's good while also thinking about actual edits slows both jobs down at once. Cull first, edit second, and don't skip that order no matter how tempting it is to jump straight to the fun part.
 
-- Use Lightroom's flag system (Pick/Reject) on a first fast pass — burst shots, eyes-closed frames and duplicates go first, before any real judgment is needed.
-- Do a second pass only on flagged Picks, comparing near-duplicates side by side (Compare view) to choose the single best frame.
-- Aim to cut the shoot to the final delivery count before opening the Develop module — editing photos that won't make the gallery is wasted time.
+Use Lightroom's flag system, Pick and Reject, on a fast first pass. Burst shots, eyes-closed frames, duplicates, those go first, before you're doing any real judgment work at all. Then run a second pass only on flagged Picks, comparing near-duplicates side by side using Compare view to land on the single best frame from each moment. Aim to cut the shoot down to your actual delivery count before you even open the Develop module. Editing photos that won't make the final gallery is pure wasted time.
 
-## Bottleneck 2: correcting frame by frame instead of by group
+## Bottleneck two: correcting frame by frame instead of by group
 
-Covered in more detail elsewhere on grouping by lighting rather than chronology — the short version: sort by lighting condition, correct one representative image per group, then sync the base settings (not local masks) across the group. This alone typically cuts base correction time by more than half on a wedding-sized gallery.
+This gets covered in more depth elsewhere, but the short version matters here too. Sort by lighting condition, not chronology. Correct one representative image per group, then sync just the base settings, not local masks, across that group. Alone, this typically cuts base correction time by more than half on a wedding-sized gallery, and it's genuinely one of the highest-leverage habits you can build.
 
-## Bottleneck 3: exporting without a plan
+## Bottleneck three: exporting with no plan at all
 
-Exporting one giant batch at the end, only to discover half need resizing for web delivery and half need full resolution for print, forces a second export pass. Set up export presets ahead of time — full-resolution JPEG for the main gallery, a smaller web-sized set if a sneak peek is promised separately — so export is one click per version, not a manual settings dialog every time.
+Exporting one giant batch at the end, only to realize half the images need resizing for web delivery and half need full resolution for print, forces a second export pass you didn't need to do. Build export presets ahead of time, full-resolution JPEG for the main gallery, a smaller web-sized set if you're promising a sneak peek separately, so export becomes one click per version instead of a manual settings dialog every single time.
 
-## A workflow that holds together end to end
+## A workflow that actually holds together start to finish
 
-1. **Import and back up** immediately — two copies before anything else happens.
-2. **Cull in two passes** — fast reject pass, then compare-and-pick on survivors.
-3. **Group by lighting**, correct one image per group, sync base settings.
-4. **Mask and retouch** hero images individually — the shots that will actually be printed or shared.
-5. **Grade consistently** across the finished set, checked against a sample spread through the gallery.
-6. **Export with presets** already built for each delivery format.
+Import and back up immediately, two copies before anything else happens to the files. Cull in two passes, a fast reject pass followed by compare-and-pick on whatever survives. Group by lighting, correct one image per group, sync the base settings. Mask and retouch hero images individually, the shots that'll actually get printed or shared around. Grade consistently across the finished set, checked against a sample spread throughout the gallery. Export with presets already built for each delivery format you're promising.
 
-## When the bottleneck is volume, not workflow
+## Even a tight workflow has a ceiling
 
-A tightened workflow still has a ceiling — a photographer covering three weekends of weddings in a row will hit a point where no amount of process improvement buys back enough hours. That's usually the point outsourcing starts making sense: not because the workflow above is wrong, but because there are only so many hours to run it through, and a second set of hands (or a service that runs this same process at volume) is what actually closes the gap between shoot day and delivery.
+A tightened-up workflow still runs into a wall eventually. A photographer covering three weekends of weddings back to back hits a point where no amount of process improvement buys back enough hours in the day. That's usually where outsourcing starts making real sense, not because the workflow above is wrong, but because there are only so many hours to run it through. A second set of hands, or a service running this same process at volume, is what actually closes the gap between shoot day and delivery when your own workflow has already been optimized as far as it'll go.
 
----
+## One more thing worth saying
 
-**Backed up on editing and need a gallery turned around?** RAW files in, hand-corrected and retouched on a calibrated screen, full-resolution files out — first proofs usually within a day. [Send a free sample edit](/contact/) or [see pricing](/pricing/).
+None of this works if you skip steps under deadline pressure. A rushed cull leads to a rushed edit, which leads to a gallery that looks rushed even if nobody can name exactly why. Protecting the order of operations matters as much as any individual step in the list above.
+
+Backed up on editing and need a gallery turned around? RAW files come in, get hand-corrected and retouched on a calibrated screen, and full-resolution files go back out, first proofs usually within a day. Send a free sample edit request or check the pricing page.
