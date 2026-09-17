@@ -1,37 +1,35 @@
 ---
 title: "Lightroom Classic vs. Lightroom: Which One Should Wedding Photographers Use?"
-description: "Adobe sells two products called Lightroom. Here's the real difference, and which one actually fits a wedding photographer's workflow."
+description: "Adobe sells two apps called Lightroom. Here's the real difference and which one actually fits a wedding photographer's workflow."
 publishDate: 2026-07-01
 ---
 
-Adobe's naming doesn't help anyone here: "Lightroom Classic" and "Lightroom" (formerly Lightroom CC) are two different applications that happen to share a name and a subscription. For a wedding photographer choosing where to build a workflow, the difference matters more than it looks.
+Adobe's naming here doesn't help anyone. Lightroom Classic and Lightroom, the one that used to be called Lightroom CC, are two separate applications that just happen to share a name and a subscription plan. If you're picking where to build your editing workflow, that difference matters more than it looks at first glance.
 
-## Lightroom Classic: local files, full control
+## Lightroom Classic keeps everything local
 
-Lightroom Classic stores your catalog and files on your own drive. That means:
+Lightroom Classic stores your catalog and your files right on your own drive. That means your full-resolution RAW files stay put, not automatically synced to the cloud. Every tool from the original Develop module is there, the full masking system, the print module, plugin support, the whole toolkit.
 
-- Full-resolution RAW files stay local, not synced to the cloud by default.
-- Every tool from the original Develop module is there — the full masking system, print module, plugin support.
-- It handles large catalogs (tens of thousands of images from a busy wedding season) without depending on your internet connection.
+It handles massive catalogs without breaking a sweat, tens of thousands of images from a busy season, no problem, and none of that depends on your internet connection holding up. The tradeoff is that it's built around desktop use. Syncing to your phone or tablet feels more like an add-on than something baked into the core design.
 
-The tradeoff is that it's desktop-only in the way it's built to be used, and syncing to a phone or tablet is more of an add-on than the core design.
+## Lightroom leans into the cloud
 
-## Lightroom (cloud): built for syncing, not volume
+Regular Lightroom, no "Classic" attached, is built around cloud storage from the ground up. Every photo you import gets uploaded, and you can edit the exact same catalog from your phone, your tablet, or a different computer entirely. For photographers bouncing between devices, or who want to hand off quick mobile edits to a client, that flexibility is genuinely useful.
 
-Lightroom (no "Classic") is designed around cloud storage — every photo you import gets uploaded, and you can edit the same catalog from a phone, tablet or another computer. It's smoother for photographers who shoot and edit across multiple devices, or who want client-facing mobile editing.
+The catch shows up fast though. Cloud storage for a wedding photographer's RAW output adds up in a hurry, and really large catalogs can start to feel sluggish next to a local Classic catalog doing the same job.
 
-The catch: cloud storage for a wedding photographer's RAW output adds up fast, and very large catalogs can get sluggish compared to a local Classic catalog.
+## So which one actually fits a wedding workflow
 
-## Which one fits a wedding workflow
+Most wedding and event photographers pushing through two to five thousand RAW files per shoot are better off with Lightroom Classic. Local storage means no upload wait before you can even start editing, and you get the full toolset for masking and colour correction without depending on cloud sync speed. Lightroom, the cloud version, makes more sense if you're shooting smaller volumes and care more about editing from anywhere than raw processing power.
 
-For most wedding and event photographers working through 2,000–5,000 RAW files per shoot, Lightroom Classic remains the more practical choice — local storage, no upload wait before you can start editing, and the full toolset for colour correction and masking. Lightroom (cloud) makes more sense for photographers who shoot smaller volumes and value editing from anywhere over raw processing power.
+Plenty of studios actually run both. Classic handles the bulk of the catalog and the real editing work, while a synced folder of final selects lives in cloud Lightroom so a client or a second shooter can check things from a phone without needing a laptop nearby.
 
-Plenty of studios run both: Classic for the bulk of the catalog and full edits, with a synced folder of the final selects in Lightroom cloud so clients or a second shooter can review from a phone.
+## What this means if you're sending files out for editing
 
-## What this means if you outsource editing
+If you're outsourcing, ask which version your editor actually works in. It changes what they can do with your files. Editing in Lightroom Classic on a calibrated monitor gives someone full control over white balance, masking, and export settings without waiting on cloud sync at all. That's a big part of why Classic remains the standard tool for studios editing RAW files by hand instead of through an app-based workflow.
 
-If you're sending files to an outside editor, ask which version they work in — it changes what they can do with your files. Editing done in Lightroom Classic on a calibrated monitor gives an editor full control over white balance, masking and export settings without depending on cloud sync speed, which is one reason it's the standard tool for studios that edit RAW files by hand rather than through an app-based workflow.
+## A quick gut check before you pick one
 
----
+Ask yourself how many photos you're actually processing per shoot, whether you need to edit from a phone regularly, and how much your internet connection can be trusted mid-editing-session. If you're mostly desk-bound with a big catalog, Classic wins. If you're constantly on the move and your catalogs stay modest, cloud Lightroom might genuinely serve you better. There's no wrong answer here, just a mismatch worth avoiding before you build months of habits around the wrong tool.
 
-**Sending a gallery out for editing?** Every photo here is processed in Lightroom Classic and Photoshop on a Calman-verified, factory-calibrated monitor — RAW files in, full-resolution files out. [Get a free sample edit](/contact/) or [see current pricing](/pricing/).
+Sending a gallery out for editing? Every photo gets processed in Lightroom Classic and Photoshop on a Calman-verified, factory-calibrated monitor, RAW files in, full-resolution files out. A free sample edit is the easiest way to see how it looks before committing to anything bigger, and the pricing page breaks down what full galleries cost.
