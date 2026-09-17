@@ -28,7 +28,7 @@ Another raster format, but without transparency support at all, a solid rectangu
 
 ## What software you'll actually need to open each type
 
-Ai files need Adobe Illustrator specifically, or a compatible alternative like Affinity Designer, to open and edit. EPS files work with most vector software, offering broader compatibility. PDF, PNG, and JPG all open in standard, free tools already on most computers, a web browser, a photo viewer, no special software purchase required at all for basic viewing purposes.
+Ai files need Adobe Illustrator specifically, or a compatible alternative like Affinity Designer, to open and edit. EPS files work with most vector software, offering broader compatibility. PDF, PNG, and JPG all open in standard, free tools already on most computers, a web browser, a photo viewer, no special software purchase required at all for basic viewing purposes, which is exactly why these formats work well for sharing with anyone outside the design process itself.
 
 ## Which one goes where in practice
 
