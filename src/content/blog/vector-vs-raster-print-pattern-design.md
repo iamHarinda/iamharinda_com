@@ -28,6 +28,10 @@ If you're ordering design work meant to go into production, confirm you're recei
 
 Open the file and zoom way in, past a hundred percent, toward the edges of any shape in the design. If edges stay crisp no matter how far you zoom in, it's vector. If they turn blocky and pixelated the closer you get, it's raster. This quick test takes about ten seconds and settles the question completely without needing any technical knowledge at all.
 
+## A quick summary for anyone still unsure
+
+Vector scales infinitely without quality loss and works best for anything going to production. Raster is fixed in resolution and works fine for anything staying purely digital, a website, an email, a social post. Knowing which category your specific need falls into settles most confusion about this topic in a matter of seconds.
+
 ## Why this distinction trips up so many first-time buyers
 
 Most people's everyday experience with images comes from phone photos and screenshots, both raster by nature, so the concept of a genuinely resolution-independent file feels unfamiliar at first. Once you've seen the zoom test above performed once, the difference becomes obvious and easy to remember for every future project going forward.
