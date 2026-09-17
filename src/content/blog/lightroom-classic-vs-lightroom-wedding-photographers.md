@@ -24,6 +24,10 @@ Most wedding and event photographers pushing through two to five thousand RAW fi
 
 Plenty of studios actually run both. Classic handles the bulk of the catalog and the real editing work, while a synced folder of final selects lives in cloud Lightroom so a client or a second shooter can check things from a phone without needing a laptop nearby.
 
+## Storage costs add up faster than people expect
+
+A wedding photographer shooting fifty weddings a year, averaging three thousand RAW files each, produces well over a hundred thousand images annually. Stored locally on an external drive, that's a one-time hardware cost that keeps paying for itself. Stored in the cloud through regular Lightroom's subscription tiers, that volume can push you into a much higher monthly plan than a casual shooter would ever need, and the meter keeps running every single month whether you're actively working or not. This is one of the quieter reasons Classic remains the default for anyone shooting at real volume. The math simply favours local storage once you're producing this much data every year.
+
 ## What this means if you're sending files out for editing
 
 If you're outsourcing, ask which version your editor actually works in. It changes what they can do with your files. Editing in Lightroom Classic on a calibrated monitor gives someone full control over white balance, masking, and export settings without waiting on cloud sync at all. That's a big part of why Classic remains the standard tool for studios editing RAW files by hand instead of through an app-based workflow.
@@ -31,5 +35,9 @@ If you're outsourcing, ask which version your editor actually works in. It chang
 ## A quick gut check before you pick one
 
 Ask yourself how many photos you're actually processing per shoot, whether you need to edit from a phone regularly, and how much your internet connection can be trusted mid-editing-session. If you're mostly desk-bound with a big catalog, Classic wins. If you're constantly on the move and your catalogs stay modest, cloud Lightroom might genuinely serve you better. There's no wrong answer here, just a mismatch worth avoiding before you build months of habits around the wrong tool.
+
+## Switching later isn't as painful as it sounds
+
+If you start on one version and later realize the other fits better, Adobe does offer paths to migrate a catalog between the two, though it's rarely a perfectly clean process for a large existing library. Photos, edits, and keywording mostly carry over, but some local-only features in Classic, certain plugins, specific export presets, don't translate directly to the cloud version. It's worth testing the switch on a small sample catalog before committing a full multi-year archive to a migration you can't easily undo.
 
 Sending a gallery out for editing? Every photo gets processed in Lightroom Classic and Photoshop on a Calman-verified, factory-calibrated monitor, RAW files in, full-resolution files out. A free sample edit is the easiest way to see how it looks before committing to anything bigger, and the pricing page breaks down what full galleries cost.
