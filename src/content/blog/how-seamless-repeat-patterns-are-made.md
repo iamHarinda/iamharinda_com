@@ -42,6 +42,10 @@ Rushing straight from concept to export, skipping the repeat testing entirely to
 
 For a moderately complex pattern with two or three motifs, expect somewhere between two and four days from initial concept to a fully tested, production-ready file, assuming reasonably quick feedback on each round. Simpler patterns with a single repeating motif can move faster, while highly detailed, multi-colour designs with several coordinating elements naturally take longer to get right through the full testing cycle.
 
+## A brief comparison to how photo editing revisions work
+
+If you've ever worked with a photo editor who sends back a first pass and asks for feedback before finalizing, this process runs on the same basic logic. Nobody expects the very first version to be perfect, and the back-and-forth exists specifically to catch what a single pass alone would miss. Pattern design simply applies that same iterative approach to a technical repeat instead of a photo's colour and exposure.
+
 ## What happens if a repeat pattern needs to scale to different products
 
 A pattern originally tested and approved for a polo shirt sometimes needs to work on a different product later, a cap, a tote bag, packaging. The underlying tile can usually adapt, but the repeat needs re-testing at the new scale and surface shape, since what reads perfectly on a chest-sized print area can behave differently spread across a much larger or oddly shaped surface entirely. Budgeting a bit of extra time for this re-testing, rather than assuming a pattern automatically transfers cleanly, avoids a nasty surprise later once a broader product line rollout is already underway and harder to adjust.
