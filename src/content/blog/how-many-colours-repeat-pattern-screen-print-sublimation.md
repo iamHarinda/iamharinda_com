@@ -36,7 +36,7 @@ If your design could reasonably work with either screen printing or sublimation,
 
 ## Why this decision benefits from being made early, not late
 
-Colour count and production method form a foundation the rest of the design builds on top of, similar to how a house's foundation shapes everything constructed above it. Changing this decision midway through a project usually means revisiting most of the work already completed, which is exactly why it deserves a firm answer before the first concept even gets sketched out.
+Colour count and production method form a foundation the rest of the design builds on top of, similar to how a house's foundation shapes everything constructed above it. Changing this decision midway through a project usually means revisiting most of the work already completed, which is exactly why it deserves a firm answer before the first concept even gets sketched out on paper or on screen.
 
 ## A practical way to visualize the cost difference
 
