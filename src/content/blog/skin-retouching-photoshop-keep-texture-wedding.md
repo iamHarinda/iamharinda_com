@@ -46,4 +46,8 @@ A lot of retouching guidance defaults to assuming a female subject, but grooms a
 
 There's no universal answer, but a useful gut check is asking whether the retouched version still looks recognizably like the same skin under different lighting, not a different person entirely. Removing a temporary blemish, evening out a blotchy patch, softening a harsh shadow under the eyes from a long day, all of that is reasonable and expected. Reshaping a jawline or removing texture across the entire face crosses into a different kind of editing that most wedding clients never actually asked for, even if a few might not object once they see it.
 
+## A final word on trusting your own eye
+
+Software and technique only get you part of the way. The rest comes down to stepping back from the screen periodically and judging the result the way a person browsing a gallery actually would, not the way someone who's been staring at one face for twenty minutes straight tends to. If a retouch still looks right after a short break away from the screen, it's probably genuinely finished.
+
 Want retouching that keeps skin looking like skin? No plastic smoothing, no face filters, blemishes go, texture stays. Send a free sample edit request or check pricing for full galleries.
