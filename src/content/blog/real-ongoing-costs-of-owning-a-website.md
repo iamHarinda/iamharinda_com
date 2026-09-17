@@ -36,6 +36,6 @@ Beyond routine monthly costs, plan for the occasional larger expense every few y
 
 ## Why transparency about these costs matters from day one
 
-A developer who walks you through the full realistic cost picture at the start, not just the build price, is setting you up to budget properly rather than face an unpleasant surprise a year in. This kind of upfront honesty is worth valuing when choosing who to work with, even if the full picture feels like more to absorb in that very first conversation than a single simple number would.
+A developer who walks you through the full realistic cost picture at the start, not just the build price, is setting you up to budget properly rather than face an unpleasant surprise a year in. This kind of upfront honesty is worth valuing when choosing who to work with, even if the full picture feels like more to absorb in that very first conversation than a single simple number would on its own.
 
 Ongoing maintenance here is a stated flat monthly rate, no surprise invoices, listed right alongside the build pricing from the start.
