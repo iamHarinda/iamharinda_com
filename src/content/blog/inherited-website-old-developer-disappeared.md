@@ -38,6 +38,6 @@ The longer a site sits with unclear ownership, the more likely small problems co
 
 ## What a smooth transition actually looks like once sorted
 
-Once ownership and access are properly resolved, moving forward with a new developer should feel like a completely normal project, not a recovery mission anymore. Files transfer over, a plan gets made for what needs updating or rebuilding, and work proceeds on a regular timeline just like any other website project would. The messy part is almost always the untangling at the very start, not the actual rebuilding work that follows once things are sorted out properly.
+Once ownership and access are properly resolved, moving forward with a new developer should feel like a completely normal project, not a recovery mission anymore. Files transfer over, a plan gets made for what needs updating or rebuilding, and work proceeds on a regular timeline just like any other website project would. The messy part is almost always the untangling at the very start, not the actual rebuilding work that follows once things are sorted out properly, which is genuinely reassuring to hear if you're currently in the middle of the stressful part and wondering how long this will drag on.
 
 Have a site with an access problem, or an old developer who's gone quiet on you? Send over what you have and get an honest read on whether it's worth saving or better off rebuilt.
