@@ -26,6 +26,10 @@ A mockup isn't a nice-to-have add-on tacked onto a quote. It's the step that cat
 
 If a designer only provides flat artwork with no mockup option available, ask directly whether one can get added before you approve anything for production. Treat a firm no to that request as a meaningful red flag about the overall process, not a minor inconvenience you should just work around or accept.
 
+## What experienced buyers look for that first-timers often miss
+
+Buyers who've ordered custom apparel design several times tend to specifically check corners and edges where a design meets a seam or transition, areas that are easy to overlook on a first pass but where problems most commonly hide. Building this habit, checking the edges and transitions specifically rather than just the center of the design, comes with experience but can be adopted immediately once you know to look for it.
+
 ## How to read a mockup critically, not just glance at it
 
 When reviewing a mockup, resist the urge to just confirm the logo is present and move on quickly. Actually study the placement relative to seams and the collar, check the scale against a mental image of a real person wearing it, and imagine the garment in motion, walking, sitting, reaching, rather than just as a static, flat image sitting still on a screen.
