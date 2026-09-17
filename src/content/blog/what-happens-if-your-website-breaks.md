@@ -38,4 +38,8 @@ Regular small maintenance, keeping software and plugins updated, monitoring that
 
 If you're not paying for ongoing maintenance, a free tool that simply checks your site is loading every so often and emails you if it goes down catches problems faster than waiting for a customer to mention it, or worse, never mentioning it at all and just quietly going to a competitor instead. This takes a few minutes to set up and gives real peace of mind that something will catch a serious outage even without a formal support arrangement in place, and it's a reasonable stopgap for a small business not yet ready to commit to a paid monthly maintenance plan.
 
+## Keeping a simple record of who to contact
+
+Write down, somewhere easy to find later, who built your site, how to reach them, and what your support arrangement actually covers. This sounds obvious, but a surprising number of business owners lose track of this basic information within a year or two, especially if the original build happened during a busy period and the details never got written down anywhere beyond an old email thread nobody can find anymore.
+
 Thirty days of post-launch support comes included with every build here, and ongoing maintenance is available after that at a stated monthly rate, no surprises waiting down the road.
