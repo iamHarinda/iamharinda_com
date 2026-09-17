@@ -42,6 +42,10 @@ At minimum, the editable vector source, Ai or EPS, plus flattened versions, PNG 
 
 If you realize months later that you need a format you weren't originally given, reach out to the original designer first, since they likely still have the source file and can export what you need quickly. Recreating a design from scratch because a file format went missing is a far more expensive and time-consuming problem than simply asking for a re-export of an existing, already-approved design.
 
+## What to do if a supplier asks for a format you don't recognize
+
+Occasionally a supplier or printer will request a format not covered here, a specific proprietary format for their particular machinery, for instance. In this case, asking your original designer whether they can export to that specific format, or whether the standard files you already have will work with some minor conversion, usually resolves the situation quickly without needing an entirely new design process from scratch.
+
 ## Organizing your files once you receive them
 
 Once delivered, save these files in a clearly labeled folder, ideally with the project name and date, rather than letting them scatter across email attachments and downloads folders where they're hard to find again. This small organizational habit saves real frustration months or years later when a reorder or a new use for the design comes up unexpectedly.
