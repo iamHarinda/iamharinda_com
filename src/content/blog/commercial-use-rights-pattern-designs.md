@@ -30,6 +30,10 @@ For a single small batch of shirts, licensing ambiguity is a manageable risk you
 
 If a designer can't clearly answer whether you get full commercial rights, ask directly, in writing, before you order anything larger than a small test batch to gauge quality first. A one-line confirmation now saves a real headache later, potentially involving legal costs far exceeding whatever you saved by skipping this simple question upfront.
 
+## How this connects to protecting your own brand later
+
+Beyond just clearing you to sell products, confirming exclusive rights to a design also matters for protecting your brand's distinctiveness over time. If a design isn't exclusive to you, the same or a very similar pattern could theoretically appear on a competitor's products, undermining the very differentiation you were hoping to build through custom design work in the first place.
+
 ## What happens if a rights dispute actually arises
 
 In the rare case a rights issue does surface after products are already on the market, having a clear written confirmation from the original transaction, even a simple email exchange, gives you real protection and a paper trail to reference. Verbal assurances alone offer little protection if a dispute ever escalates, which is exactly why getting commercial use terms in writing matters regardless of how trustworthy a designer seems during the initial conversation.
