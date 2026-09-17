@@ -34,6 +34,10 @@ Print the mockup at actual size, or view it on a screen held at arm's length, ro
 
 A placement problem is far easier and cheaper to fix at the mockup stage than after a production run's already happened and boxes of shirts are sitting in a warehouse waiting to be distributed. Always ask to see the design on a realistic garment mockup, and genuinely look at whether it feels naturally placed, not just whether the logo itself looks correct sitting in isolation on its own away from the actual garment.
 
+## Common excuses that let placement problems slip through
+
+"It's close enough" and "nobody will notice" are two phrases worth watching for during any review process, since they're usually a sign time pressure is starting to override genuine quality judgment. A placement issue that feels minor in a rushed final review often becomes the one thing a customer or team member actually points out once the shirts arrive, precisely because they're seeing it fresh without the fatigue of having stared at the same mockup for hours already.
+
 ## How this problem often starts before design even begins
 
 Placement problems frequently trace back to a logo built without ever considering it would end up on apparel at all, designed purely for a website header or a business card with proportions that make sense in those specific contexts. Recognizing this early, and being willing to build a genuinely apparel-adapted version rather than forcing the original file to work everywhere, prevents the stretching and distortion problem before it even has a chance to happen during placement.
