@@ -34,4 +34,12 @@ You don't need a huge budget to follow either trend well, regardless of your org
 
 A design built around your actual brand identity, rather than chasing this year's specific colour story, tends to stay relevant longer than one built purely to match a passing moment in apparel design. Investing slightly more thought into what genuinely represents your team or club, rather than what's simply popular right now, pays off across the several years a typical uniform or branded apparel order needs to remain in active use.
 
+## How to test a direction before committing a full order
+
+Rather than committing an entire team order to one design direction based on assumption alone, ordering a small handful of sample garments in both a bolder and a more understated version lets actual stakeholders react to real, physical options before a larger financial commitment gets made. This small extra step costs relatively little compared to the full order and often surfaces a clear preference that wasn't obvious from digital mockups alone viewed on a screen.
+
+## Where seasonal colour trends fit into a longer-term wardrobe
+
+Golf and polo apparel often gets planned as part of a rotating wardrobe refreshed every season or two, which means a specific trending colour palette doesn't need to define your entire identity permanently. Building a core design that stays consistent, with seasonal colour or motif variations layered on top periodically, balances staying current with maintaining the recognizable identity your team or club has built up over time among members and competitors alike.
+
 Bold or understated, the design gets built around your brand, not a generic trend template pulled off a shelf.
