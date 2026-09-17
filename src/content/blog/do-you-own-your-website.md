@@ -32,4 +32,12 @@ Imagine a photographer whose original web developer goes quiet after a falling o
 
 This isn't about distrust. Most developers handle this fine without ever being asked to prove it. But asking upfront costs you nothing and protects you completely if things ever go sideways down the road, for whatever reason.
 
+## How to bring this up without it feeling awkward
+
+Asking a developer directly, "will the domain be registered in my name, and will I get the full source code at launch," is a completely normal, professional question that any legitimate freelancer or agency expects to hear and answers readily. Framing it as standard due diligence rather than an accusation keeps the conversation comfortable, and a developer's reaction to the question, relaxed and clear versus defensive and vague, often tells you as much as the actual answer does.
+
+## What to do if you discover a problem with an existing site
+
+If you check your current setup and find the domain or code isn't actually in your name, don't panic, but do address it soon rather than putting it off. Reach out to whoever built the site and request a transfer in writing, most reasonable developers will cooperate once asked directly. If they're unresponsive or unwilling, a domain registrar can sometimes assist with a dispute process, though it's slower and more painful than simply having gotten this right from the start.
+
 Full code ownership, domain in your name, no lock-in, that's the standard here, not an upsell you have to pay extra for. Book a scope call, or reach out if you want to check your current setup.
