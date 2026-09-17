@@ -40,4 +40,12 @@ That's a complete, non-technical brief a developer can quote accurately from, no
 
 Putting this into words, even roughly and imperfectly, before your first conversation with a developer often clarifies your own thinking about the project. Business owners frequently discover gaps or contradictions in their own vision simply by trying to write it out clearly, catching issues before they become confusing mid-project surprises that cost time to untangle later.
 
+## What happens after you share this with a developer
+
+Once a developer has this information, they can usually turn it around into a fixed-price proposal within a day or two, sometimes faster for a straightforward project like a simple marketing site. From there, the conversation shifts from figuring out what you want to actually planning how to build it, which is a much more productive place to spend everyone's time and energy than the back-and-forth guessing that happens without a clear brief in hand from the start.
+
+## A brief isn't a permanent contract
+
+Nothing about writing this down locks you into every detail forever without room to change your mind. A good developer treats your initial brief as a starting point for conversation, not a rigid checklist, and will ask clarifying questions or suggest adjustments based on their own experience with similar projects they've built before for other clients in similar situations.
+
 Have a rough idea but not sure how to put it into words yet? A free scope call is built exactly for this. Talking it through out loud is usually a lot easier than writing it all down first.
