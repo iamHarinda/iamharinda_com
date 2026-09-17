@@ -44,4 +44,12 @@ That's a complete, plain-language brief, no design terminology required anywhere
 
 If even this structure feels like too much to organize on your own, a short conversation, a call or a chat message, before ordering formally often works better than trying to write everything down perfectly in advance. Talking through what you're picturing out loud, with someone asking the right follow-up questions, frequently surfaces details you wouldn't have thought to include in a written brief.
 
+## Why a slightly imperfect brief still beats no brief at all
+
+Some people hesitate to reach out until they feel their idea is fully formed, worrying that a rough or incomplete brief will waste a designer's time. In practice, an experienced designer would much rather work from an honest, imperfect starting point than receive nothing at all and have to guess entirely from scratch about what a client actually wants from the project.
+
+## A note on revisions once the first concept arrives
+
+Whatever you send in your initial brief, expect the first concept to need at least some adjustment, and treat that as a completely normal part of the process rather than a sign the brief was somehow inadequate. Even the most detailed brief can't fully capture every preference, and revisions exist specifically to close that gap between description and finished design.
+
 Have a rough idea but don't know how to describe it well? Message first and talk it through before ordering anything, that's exactly what the process is built for.
