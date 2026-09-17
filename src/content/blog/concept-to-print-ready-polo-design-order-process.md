@@ -42,6 +42,10 @@ For a straightforward polo design with clear reference material provided upfront
 
 Life happens, and sometimes a project needs to pause mid-process, waiting on budget approval, waiting on a decision from a larger group, waiting on a garment supplier to confirm availability. A reasonable designer can hold a project at whatever stage it's reached without penalty, picking back up whenever you're ready to continue rather than requiring you to start over from scratch.
 
+## How this process compares across different designers
+
+While the general shape of this process, brief, concepts, revisions, final files, is fairly standard across the industry, the details vary, how many concepts are included, how many revision rounds, turnaround time for each stage. Comparing these specifics across a few options before committing helps set realistic expectations and avoids confusion partway through a project about what was actually promised at the start.
+
 ## A final note for first-timers going through this for the first time
 
 Nobody expects you to know design terminology walking into this process for the first time. A good designer will ask the right questions and fill in the gaps as needed. Your job is mostly just being clear about what you're picturing and honest about what you like or don't when concepts come back for your review.
