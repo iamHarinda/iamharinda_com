@@ -52,4 +52,8 @@ The smoothest sneak peek deliveries happen when the plan gets set before the wed
 
 Not every photographer or workflow can hit a two-day turnaround, and that's fine as long as it's communicated honestly rather than promised and missed. A slightly longer but clearly stated window, "a preview within five days," still gives couples something concrete to look forward to and beats an unspoken assumption that leaves them wondering. The goal isn't hitting an arbitrary industry number. It's giving a clear, honest timeline for something you know matters to them emotionally.
 
+## Why this small step builds long-term trust
+
+A couple who receives a beautiful, thoughtfully chosen sneak peek exactly when promised starts the whole post-wedding relationship with confidence in you, which carries through to how they receive the full gallery weeks later, patiently and without the anxious follow-up messages that come from feeling forgotten during a long wait.
+
 Need a fast turnaround on a priority batch while the full gallery is still in progress? First proofs typically come back within a day. Send a free sample edit request or check current pricing.
