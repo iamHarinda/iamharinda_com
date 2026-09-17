@@ -46,4 +46,8 @@ Picture two identical designs, one built with three flat colours for screen prin
 
 Before finalizing a design with a specific colour count, confirm directly with your actual printer or embroiderer what they can realistically handle for your production method and budget. Suppliers vary in their equipment and expertise, and a quick confirmation call prevents a beautifully designed pattern from hitting an unexpected production limitation partway through the ordering process, after real time and enthusiasm have already gone into a specific creative direction everyone was excited about.
 
+## The core idea worth carrying forward
+
+Colour count isn't just an artistic choice, it's tied directly to the physical production method behind the finished product. Treating it that way from the very first conversation leads to smoother, more predictable results every time.
+
 Tell your designer the production method up front and the design gets built to actually work with it from day one of the project.
