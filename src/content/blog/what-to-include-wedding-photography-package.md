@@ -4,11 +4,11 @@ description: "Package structure is one of the first things couples compare betwe
 publishDate: 2026-08-26
 ---
 
-Wedding photography packages vary a lot from studio to studio, but couples comparing quotes are usually trying to answer the same underlying question. What am I actually getting for this price, and what's going to cost more later that I didn't see coming? Being explicit about your package structure, especially around editing, is what keeps that question from turning into a mid-project argument.
+Wedding photography packages vary a lot from studio to studio, but couples comparing quotes are usually trying to answer the same underlying question. What am I actually getting for this price, and what's going to cost more later that I didn't see coming? Being explicit about your package structure, especially around editing, is what keeps that question from turning into a mid-project argument down the line.
 
 ## What typically shows up in a base package
 
-Coverage hours are the core variable most packages get priced around, from a few hours to full-day coverage that runs from getting-ready through the last dance. A shooter, and sometimes a second shooter, though this often gets treated as an add-on rather than something standard. Editing of the full delivered gallery, colour correction and basic retouching on every image that makes the final cut, which is different from the more extensive retouching sometimes reserved just for a smaller set of hero images. Online gallery delivery, a proper client-facing platform rather than a raw folder dump, for viewing, downloading, and sometimes ordering prints. And a defined turnaround window, stated clearly in the contract, not left as something implied and never written down.
+Coverage hours are the core variable most packages get priced around, from a few hours to full-day coverage that runs from getting-ready through the last dance. A shooter, and sometimes a second shooter, though this often gets treated as an add-on rather than something standard included by default. Editing of the full delivered gallery, colour correction and basic retouching on every image that makes the final cut, which is different from the more extensive retouching sometimes reserved just for a smaller set of hero images. Online gallery delivery, a proper client-facing platform rather than a raw folder dump, for viewing, downloading, and sometimes ordering prints directly. And a defined turnaround window, stated clearly in the contract, not left as something implied and never actually written down anywhere.
 
 ## What's usually an add-on instead
 
@@ -22,7 +22,15 @@ Two studios can offer identical coverage hours and land at very different prices
 
 Instead of a vague "professional editing included" line, spell out what every delivered photo actually gets, colour correction and light retouching on every image, for example. Name what a smaller set gets if that applies, twenty hero images receive detailed retouching. State the turnaround window for the full gallery, and separately mention whether a sneak peek is included at all. List what counts as an extra, rush delivery, additional retouching requests beyond the standard scope.
 
-Clients rarely push back on a well-explained structure. They push back on a structure that only becomes clear after they've already paid and it's too late to shop around.
+Clients rarely push back on a well-explained structure. They push back on a structure that only becomes clear after they've already paid and it's too late to shop around for something else.
+
+## Pricing tiers that make comparison easier for clients
+
+A lot of successful studios structure their packages in two or three clear tiers, a basic coverage-only option, a mid-tier with standard editing and a sneak peek, and a premium tier with extended coverage, an album, and detailed retouching. This structure does real work beyond just organizing your own pricing sheet. It gives clients an easy mental model for comparing what they're getting at each price point, which reduces the number of confused questions you'll field during the booking process and makes the actual sales conversation faster for both sides.
+
+## How to handle scope creep once a package is signed
+
+Even a well-defined package occasionally runs into requests that fall outside its stated scope, a couple asking for extra retouching after the contract's already signed, or wanting a rush turnaround they didn't originally pay for. Having a simple, pre-decided policy for these situations, a stated per-photo rate for extra retouching, a flat rush fee, saves you from negotiating case by case under time pressure, which tends to produce inconsistent decisions that are hard to defend later if two different clients compare notes.
 
 ## Where outsourcing fits into your package math
 
