@@ -34,6 +34,10 @@ Embroidery, screen print, sublimation, if you already know which method you're u
 
 Some orders want just one polished concept refined through revisions until it's right. Others want a few different directions to choose between before committing to one path forward. Either approach is reasonable, just be clear about which one you're expecting going into the process so a designer can plan their time accordingly.
 
+## A note on describing colour without technical terms
+
+If you know an exact colour code, a Pantone number or a hex value, include it, but if you don't, plain description works fine too. "Navy, like a dark police uniform blue" or "forest green, not too bright" communicates enough for a designer to start with, and exact colour matching can always get refined once a first concept is on the table for review.
+
 ## Putting it all together in one complete example
 
 "This is for our golf club, navy and white colours. We want a small embroidered version on the chest and a bolder printed design on the back. We like clean, modern golf branding, similar feel to this reference. We have a logo already, attached. This will be embroidered on the chest, screen printed on the back."
