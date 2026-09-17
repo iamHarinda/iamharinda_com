@@ -34,6 +34,10 @@ A golf club wanting their crest on the chest and a plain colour on the rest of t
 
 If your project genuinely sits somewhere in between, or you're not sure which category it falls into, describing the actual finished look you're picturing to a designer, rather than trying to name the technical category yourself, usually resolves the question quickly. A designer experienced in both approaches can identify which one fits from a plain description faster than you'd expect.
 
+## A note on mixing the two within one product line
+
+A brand launching multiple products at once might genuinely need both approaches within the same order, a seamless pattern for a fabric-print product line and a standalone crest for embroidered items in the same collection. There's nothing wrong with requesting both in a single project, as long as each piece is briefed clearly for what it actually is, rather than lumping everything under one vague description and hoping the designer sorts out which is which.
+
 ## How this decision affects your file delivery too
 
 The two approaches also differ slightly in what gets delivered at the end of the project. A standalone print typically arrives as a single finished graphic at the correct placement size. A seamless pattern arrives as a tile file plus a tiled mockup demonstrating the repeat, since the printer or supplier needs the tile itself to actually apply the pattern across the full production run rather than a single flattened image that wouldn't scale correctly.
