@@ -1,41 +1,47 @@
 ---
 title: "How Much Does Wedding Photo Editing Cost in 2026? A Pricing Guide for Photographers"
-description: "A breakdown of what wedding and portrait photographers in the US actually pay to outsource photo editing in 2026 — AI pricing, per-photo rates, and what changes the cost."
+description: "A real breakdown of what wedding and portrait photographers pay to outsource editing in 2026. AI pricing, per-photo rates, and what actually moves the cost."
 publishDate: 2026-09-15
 ---
 
-"How much should I pay to outsource editing?" is one of the first questions any photographer asks once a season gets busy enough that editing every gallery yourself stops being realistic. The honest answer: it depends heavily on the editing method, the complexity of the work, and how much of the gallery actually needs a close look. Here's what the market looks like in 2026.
+"How much should I even pay for this?" That's usually the first real question once a photographer's season gets busy enough that editing every gallery solo stops making sense. There's no single number that answers it. The method you pick, how complicated the work is, and how much of the gallery actually needs a close look all push the price around.
 
-## The three pricing tiers
+## Three price tiers, roughly
 
-**AI-only editing** sits at the low end, generally a few cents per photo. It's the cheapest option because there's no person reviewing each frame — an algorithm applies learned corrections across the batch. Fine for high-volume, low-complexity work; not built for judgment calls.
+AI-only editing sits at the bottom. We're talking a few cents per photo, sometimes less. It's cheap because no person is reviewing individual frames. An algorithm applies whatever it's learned across the batch and hands it back. Fine for high-volume, low-complexity work. Not built for anything requiring real judgment.
 
-**Standard human editing** — colour correction, white balance, basic retouching — typically runs from roughly $0.10 to $0.50 per photo, depending on the studio and turnaround time. This is the tier most wedding and event photographers are pricing against when they outsource a full gallery.
+Standard human editing, colour correction, white balance, some basic retouching, usually runs somewhere between ten and fifty cents a photo depending on the studio and how fast you need it back. Most wedding and event photographers price against this tier when they send out a full gallery.
 
-**Detailed retouching** — skin work, object removal, composite work — costs more per image, often several dollars each, because it takes real time per photo rather than a batch pass.
+Detailed retouching costs more per image, sometimes several dollars a photo, because someone's actually spending real minutes on skin work, object removal, or composite edits. That's not a batch process. That's time, frame by frame.
 
-## What actually changes the price
+## What actually pushes the price up or down
 
-- **Volume.** Most editors price in bands (50, 100, 200+ photos) because larger batches are more efficient to deliver, even with every photo hand-checked.
-- **Turnaround.** Rush jobs — next-day delivery instead of the usual few days — usually cost more.
-- **Revisions.** Some services charge per revision round; others build unlimited revisions into the price. That difference matters more than the base rate once you factor in back-and-forth.
-- **RAW vs. JPEG.** RAW files give an editor more to work with (recovering highlights, correcting white balance properly) and are usually priced the same as JPEGs, but not every service accepts them — worth checking before you commit to a workflow.
-- **Payment timing.** Paying upfront vs. paying after you've approved the delivered photos is a real difference in risk, not just a policy detail.
+Volume matters a lot. Most editors price in bands, fifty photos, a hundred, two hundred plus, because bigger batches deliver more efficiently even when every single photo still gets hand-checked.
 
-## A concrete example
+Turnaround matters too. Want it back tomorrow instead of in four days? That usually costs extra.
 
-A wedding photographer with a 100-image final gallery, wanting hand-edited colour correction and retouching rather than an AI batch pass, is generally looking at somewhere in the $20–$40 range for that volume from a per-photo priced service — sometimes less, sometimes more depending on the editor and how much retouching each photo actually needs. Bulk orders over 200–300 photos are usually quoted separately, since at that volume a custom rate makes more sense than a flat per-photo price.
+Revisions can make or break the real cost. Some services charge per round of changes. Others build unlimited revisions straight into the price. That gap matters way more than the base rate once you factor in the back and forth that's basically guaranteed on any real project.
 
-## Questions worth asking before you pick an editor
+RAW versus JPEG changes what an editor can actually do. RAW gives more room to fix white balance and pull back blown highlights properly. Most services price RAW the same as JPEG, but not all of them accept RAW files at all, so check before you build your whole workflow around it.
 
-1. Is the price per photo, per hour, or a flat package rate — and does that match how your galleries actually vary in size?
-2. Are revisions included, or billed separately?
-3. Do you pay before or after you've seen and approved the final images?
-4. Is the editing done by AI, by hand, or a mix — and does that match what your clients expect from your brand?
-5. What file types can you send, and do you get full-resolution files back?
+Payment timing is a real difference too, not just fine print. Paying upfront and paying after you've approved the finished photos carry very different levels of risk for you.
 
-Getting clear answers on those five points matters more than chasing the lowest per-photo number — a cheap rate with three rounds of paid revisions can cost more in the end than a slightly higher rate with unlimited revisions included.
+## What this looks like with real numbers
 
----
+Say you're a wedding photographer with a hundred-image final gallery. You want it hand-edited, real colour correction and retouching, not just an AI pass. You're generally looking somewhere in the twenty to forty dollar range for that volume from a service that prices per photo. Sometimes less, sometimes more, depending on how much retouching each shot actually needs. Bulk orders past two or three hundred photos usually get quoted separately since a flat per-photo rate stops making sense at that scale.
 
-**Curious what your own gallery would cost?** Pricing here is flat and by volume — [see the current per-photo rates](/pricing/), or [send a free sample edit](/contact/) of two or three photos before you commit to anything. Payment is only due after you've approved the delivered files.
+## Five questions worth asking before you commit
+
+Is the price per photo, per hour, or a flat package rate, and does that actually fit how your galleries vary in size?
+
+Are revisions included, or do they cost extra every round?
+
+Do you pay before the work starts or after you've seen and approved it?
+
+Is the editing done by AI, by a person, or some mix of both, and does that match what your clients expect from you?
+
+What file types can you send, and are you getting full-resolution files back at the end?
+
+Getting straight answers on these five things matters more than chasing whoever has the lowest per-photo number. A cheap rate with three paid revision rounds can end up costing more than a slightly pricier rate with unlimited revisions baked in.
+
+Curious what your own gallery would actually run? Pricing runs flat by volume, and sending two or three photos for a free sample edit first is a normal way to see the quality before spending anything. Payment isn't due until after you've approved the delivered files.
