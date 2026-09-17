@@ -40,6 +40,6 @@ If you've already built significant content on a platform with poor export optio
 
 ## The bottom line worth remembering
 
-Convenience today and freedom later aren't always the same thing, and it's worth being honest with yourself about which one matters more for your specific business before committing years of content to any single platform.
+Convenience today and freedom later aren't always the same thing, and it's worth being honest with yourself about which one matters more for your specific business before committing years of content to any single platform you haven't fully researched yet.
 
 No platform lock-in, no proprietary format, the full source code transfers to you at launch, hosted wherever you choose to put it.
