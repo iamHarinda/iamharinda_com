@@ -36,6 +36,6 @@ It's tempting to assume a sixteen-page site simply takes twice as long as an eig
 
 ## What to do if a project starts running behind
 
-If a timeline starts slipping, the most useful thing you can do as the client is ask directly what's causing the delay rather than just waiting anxiously and wondering. Sometimes it's genuinely on the developer's end, other times it traces back to a content delay or a slow review turnaround on your own side that's easy to forget about once a few weeks have passed. A quick, honest conversation usually gets things back on track faster than silence does on either side of the relationship.
+If a timeline starts slipping, the most useful thing you can do as the client is ask directly what's causing the delay rather than just waiting anxiously and wondering. Sometimes it's genuinely on the developer's end, other times it traces back to a content delay or a slow review turnaround on your own side that's easy to forget about once a few weeks have passed. A quick, honest conversation usually gets things back on track faster than silence does on either side of the relationship, and most delays turn out to have a simple, fixable cause once someone actually names it out loud instead of letting it linger unspoken.
 
 Want an actual date, not a wide range? A written proposal here includes a dated timeline once scope is agreed, no open-ended "it depends" left hanging over the project.
