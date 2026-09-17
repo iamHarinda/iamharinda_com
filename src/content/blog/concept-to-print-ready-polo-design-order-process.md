@@ -58,4 +58,8 @@ Nobody expects you to know design terminology walking into this process for the 
 
 Ordering any kind of custom creative work for the first time carries a bit of natural uncertainty, will it turn out right, will the process feel confusing, will communication be smooth. Knowing the actual steps involved in advance, as laid out here, replaces that uncertainty with a clear, predictable roadmap you can follow confidently from your very first message through to receiving finished, production-ready files.
 
+## Bringing it all together
+
+From that very first message to holding print-ready files in hand, the whole process is built around clear steps and honest communication at each stage, not guesswork on either side of the relationship.
+
 Ready to see what this looks like for your own design? Message first with what you're picturing, no commitment required at that stage.
