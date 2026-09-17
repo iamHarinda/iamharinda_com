@@ -50,4 +50,8 @@ It's completely fine to start a conversation with a developer before every piece
 
 A single shared document or folder, even something as basic as a few bullet points in an email, containing your page list, any existing branding, and links to sites you admire, saves real back-and-forth during the scope conversation itself. It doesn't need to be polished or formatted nicely. It just needs to exist somewhere both you and the developer can refer back to as the project moves forward past that first conversation, and updating it as things change keeps everyone working from the same shared understanding throughout the whole build.
 
+## What happens during the first call once you're prepared
+
+Walking into a scope call with even a rough version of everything above means the conversation can move straight into useful territory, discussing actual tradeoffs, timeline, and price, rather than spending the whole call just gathering basic information that could have been sent ahead of time. Developers generally appreciate a prepared client, not because it makes their job easier in some self-serving way, but because it means the resulting quote is more likely to be accurate and the project is less likely to hit surprises once work actually begins.
+
 Ready to talk through what you need? A free thirty-minute scope call turns even a rough idea into a clear, fixed-price proposal.
