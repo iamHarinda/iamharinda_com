@@ -4,26 +4,30 @@ description: "A free Gmail address is fine for personal use, but it quietly unde
 publishDate: 2026-11-22
 ---
 
-It's an easy detail to overlook. Your website is professionally built, your branding is consistent, and then your contact page lists yourbusiness@gmail.com right at the bottom. It's a small thing on the surface, and it quietly signals something most business owners never intended it to say.
+It's an easy detail to overlook. Your website is professionally built, your branding is consistent across every page, and then your contact page lists yourbusiness@gmail.com right at the bottom of it all. It's a small thing on the surface, and it quietly signals something most business owners never intended it to say to a potential customer sizing them up.
 
 ## What it actually signals to people
 
-Fairly or not, a free email address, Gmail, Yahoo, Outlook.com, on an otherwise professional business reads as either very new, very small, or not entirely serious. Setting up a domain-based address takes only a few minutes once you own a domain, so skipping it looks like it just wasn't a priority. A business using hello@yourbusiness.com signals the opposite. Established, intentional, easy to trust with a first email from a stranger.
+Fairly or not, a free email address, Gmail, Yahoo, Outlook.com, on an otherwise professional business reads as either very new, very small, or not entirely serious about the work. Setting up a domain-based address takes only a few minutes once you own a domain, so skipping it looks like it just wasn't a priority worth the effort. A business using hello@yourbusiness.com signals the opposite. Established, intentional, easy to trust with a first email from someone who's never worked with you before.
 
 ## It's not just perception either, there are practical reasons too
 
-Consistency and memorability matter. Hello at yourbusiness dot com is easier for a customer to remember and trust than a personal Gmail address that might have random numbers or an old nickname baked into it. Deliverability matters too. Business email sent from a properly configured domain address is generally less likely to land in spam than a free-tier personal address getting used for business purposes at any real volume. Team scalability comes into play as your business grows. Adding sales@ or support@ or a specific employee's name at yourbusiness.com is straightforward once the domain's already set up for email, much harder to retrofit onto a personal Gmail setup later. You keep it no matter who you switch providers to. Because it's tied to your domain, not a specific email service, your address stays exactly the same even if you change who's hosting your email behind the scenes.
+Consistency and memorability matter. Hello at yourbusiness dot com is easier for a customer to remember and trust than a personal Gmail address that might have random numbers or an old nickname baked into it from years ago. Deliverability matters too. Business email sent from a properly configured domain address is generally less likely to land in spam than a free-tier personal address getting used for business purposes at any real volume of daily messages. Team scalability comes into play as your business grows beyond just you. Adding sales@ or support@ or a specific employee's name at yourbusiness.com is straightforward once the domain's already set up for email, much harder to retrofit onto a personal Gmail setup after the fact. You keep it no matter who you switch providers to down the line. Because it's tied to your domain, not a specific email service, your address stays exactly the same even if you change who's hosting your email behind the scenes entirely.
 
 ## What's actually involved in setting it up
 
-Business email at your own domain isn't complicated to set up. It typically means either using your domain with a mail service already available through your hosting provider, or connecting your domain to Google Workspace or Microsoft 365 for a small monthly fee per mailbox. A developer setting up your website can usually configure this as part of launch, since it touches the same DNS settings already getting adjusted for the domain and hosting anyway.
+Business email at your own domain isn't complicated to set up, despite how technical it might sound at first. It typically means either using your domain with a mail service already available through your hosting provider, or connecting your domain to Google Workspace or Microsoft 365 for a small monthly fee per mailbox you need. A developer setting up your website can usually configure this as part of launch, since it touches the same DNS settings already getting adjusted for the domain and hosting anyway during that same process.
 
 ## A quick gut check worth doing today
 
-If your current business card, invoices, or website contact page list a free email address, that's a five-minute fix worth doing regardless of anything else about your website. It's one of the cheapest credibility upgrades available to any small business, and there's genuinely no downside to making the switch.
+If your current business card, invoices, or website contact page list a free email address, that's a five-minute fix worth doing regardless of anything else about your website or your broader marketing. It's one of the cheapest credibility upgrades available to any small business, and there's genuinely no downside to making the switch once you've decided to do it.
+
+## What to do with your old address during the transition
+
+Rather than abandoning your old free email address overnight, forward it to your new business address for several months while you update it everywhere it's listed, business cards, old invoices, social media bios. This catches messages from people still using the outdated contact information out of habit, without missing anything important during the switch to your new, more professional setup.
 
 ## One more thing worth mentioning
 
-Once you switch, forward the old address for a while so you don't miss anything sent there out of habit by people who haven't updated their contacts yet. Old habits take time to fade.
+Once you switch, forward the old address for a while so you don't miss anything sent there out of habit by people who haven't updated their contacts yet on their end. Old habits take real time to fade completely.
 
-Business email setup is part of the standard launch process here, right alongside the domain and hosting.
+Business email setup is part of the standard launch process here, right alongside the domain and hosting configuration.
