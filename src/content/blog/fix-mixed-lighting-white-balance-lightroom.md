@@ -8,7 +8,7 @@ Every wedding photographer runs into this eventually. A getting-ready room lit b
 
 ## Why one setting can't fix mixed light
 
-White balance in Lightroom shifts the whole image toward or away from blue and yellow, green and magenta. That works fine when one light source lights the whole frame. It falls apart the moment a frame has a window at roughly 5500K and a lamp at roughly 2700K both contributing light at once. There's no single setting correct for both. Fix the window and the lamp-lit side goes orange. Fix the lamp and the window light turns blue. You can't win that fight with one slider.
+White balance in Lightroom shifts the whole image toward or away from blue and yellow, green and magenta. That works fine when one light source lights the whole frame. It falls apart the moment a frame has a window at roughly 5500K and a lamp at roughly 2700K both contributing light at once. There's no single setting correct for both. Fix the window and the lamp-lit side goes orange. Fix the lamp and the window light turns blue. You can't win that fight with one slider, no matter how carefully you nudge it back and forth.
 
 ## Start with the light source that actually matters most
 
@@ -29,6 +29,14 @@ The room can look totally correct on screen while skin still reads off, because 
 ## Sometimes you just mask by zone and move on
 
 Some frames, three or four light sources overlapping, a dance floor lit by a moving DJ light, aren't worth chasing toward one perfect white balance setting. At that point masking by zone, subject, background, specific light sources, and correcting each one toward neutral independently is faster and more accurate than hunting for one global setting that compromises everywhere at once.
+
+## A step-by-step approach for the worst-case reception shot
+
+Take a typical reception dance floor photo, string lights overhead, a coloured DJ wash across the crowd, phone flashes going off randomly. Start by masking the people closest to camera and correcting their skin first, since that's what viewers actually look at. Then mask the background separately and accept that it'll carry some colour, string lights are warm by nature and don't need forcing toward neutral. Finally, check whether any single element, a bright white shirt catching the DJ light, is throwing a colour cast onto nearby skin, and mask that specific light source out if it's a real problem rather than trying to fix the whole frame around one small issue.
+
+## Building a personal reference library for tricky venues
+
+If you shoot regularly at the same handful of venues, keep a simple note of what worked for each one's typical lighting setup, this church has warm overhead lighting that needs a Tint correction, this reception hall's string lights run warmer than usual. Referring back to these notes on your next shoot at the same venue cuts your correction time down substantially, since you're not solving the same lighting puzzle from scratch every single time you're back in that building.
 
 ## The bigger lesson here
 
