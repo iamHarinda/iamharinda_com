@@ -30,4 +30,16 @@ Rather than abandoning your old free email address overnight, forward it to your
 
 Once you switch, forward the old address for a while so you don't miss anything sent there out of habit by people who haven't updated their contacts yet on their end. Old habits take real time to fade completely.
 
+## How much this actually costs to run
+
+Business email through most providers runs somewhere between five and fifteen dollars a month per mailbox, depending on the provider and features included, like storage space or video calling tools bundled alongside the email itself. For a small business needing just one or two addresses, hello@ and maybe one for a specific team member, this typically lands under twenty dollars a month total, a genuinely small cost relative to the credibility it buys back with every single email sent to a potential customer.
+
+## Setting up email signatures that reinforce the upgrade
+
+Once business email is live, a properly formatted signature, your name, role, business name, phone number, website link, all consistent with your branding, reinforces the professional impression started by the address itself. This is a small, one-time setup task that pays off on every single email sent afterward, and it's worth doing properly rather than leaving a signature blank or inconsistent across different team members using slightly different formats.
+
+## A common hesitation worth addressing directly
+
+Some business owners worry that switching email addresses means losing important old messages or contacts built up over years of using the same free account. In practice, most business email setups let you keep the old address active as a forwarding destination indefinitely, so nothing gets lost during the transition, and your contact list can be exported and re-imported into the new system without much hassle at all once you know the steps involved.
+
 Business email setup is part of the standard launch process here, right alongside the domain and hosting configuration.
