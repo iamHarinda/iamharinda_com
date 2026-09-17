@@ -38,6 +38,6 @@ Heat transfer vinyl, a third common method, sits somewhere between the two in te
 
 ## Why asking about method early saves real frustration later
 
-Photographers and business owners alike sometimes assume the production method is a detail to sort out after the design is finished and approved. In practice, treating it as one of the very first questions, right alongside colours and placement, prevents the frustrating experience of loving a design on screen only to learn it needs significant rework once a specific production method gets locked in.
+Photographers and business owners alike sometimes assume the production method is a detail to sort out after the design is finished and approved. In practice, treating it as one of the very first questions, right alongside colours and placement, prevents the frustrating experience of loving a design on screen only to learn it needs significant rework once a specific production method gets locked in later in the process, after real time has already been invested in a version that doesn't quite fit.
 
 Different placements, different production methods, the design gets built to actually work for each one from the start.
