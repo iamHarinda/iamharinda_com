@@ -24,6 +24,10 @@ If you need artwork, prints, or a design placed on an existing garment, a polo, 
 
 Ordering pattern design when you actually needed patternmaking, or the reverse situation, wastes time and money on both sides of the transaction. The work delivered technically fulfills what got asked for, but it doesn't solve the actual underlying problem, because the wrong specialty got hired for the job in the first place without either side realizing the mismatch until later.
 
+## A real scenario that illustrates the confusion clearly
+
+A startup wanting to launch a clothing line from scratch might contact a pattern designer expecting help with everything, from the artwork on the fabric to the actual cut and construction of the garments themselves. A pattern designer can genuinely help with the first part, but would need to redirect the client to a patternmaker or a manufacturing consultant for the construction side, since these are two different skill sets rarely held by the same single person.
+
 ## How to tell which one you actually need
 
 Ask yourself this simple question. Am I sourcing a blank garment and need something designed onto its surface, print, pattern, logo placement? That's pattern design. Am I creating a new garment shape from raw fabric and need the technical construction templates? That's patternmaking. If you're not sure which applies to your situation, say what you're actually trying to achieve and a legitimate designer should tell you honestly whether it's a fit for their specialty or not, rather than taking the order regardless.
