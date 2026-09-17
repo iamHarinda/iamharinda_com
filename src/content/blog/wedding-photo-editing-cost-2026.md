@@ -52,4 +52,12 @@ Getting straight answers on these five things matters more than chasing whoever 
 
 If outsourcing editing is new territory for you, it's worth building that per-photo cost directly into what you charge clients rather than absorbing it out of your existing margin. Most photographers who make this switch successfully treat editing as a line item in their own pricing model from day one, not an afterthought they discover eats into profit three months later.
 
+## Watch out for prices that seem too good to be true
+
+A rate that undercuts everything else you've seen usually means one of a few things is happening behind the scenes. The editor might be running everything through a single automated preset with zero individual review, which shows up later as inconsistent skin tones across the gallery. The service might be based somewhere with much lower labour costs and a large team of junior editors working from a template, which can still produce fine results but rarely matches a studio built around one consistent editor's eye. Or the low headline price might not include revisions, meaning the real cost climbs the moment you ask for a single change. None of this means cheap is always bad. It means a price far outside the normal range deserves a direct question about what's actually included before you commit a whole season's worth of galleries to it.
+
+## What photographers with a season of experience tend to settle on
+
+Talk to enough wedding photographers who've outsourced editing for a few years running and a pattern shows up. Most land on a mid-range service, not the cheapest option and not the most expensive, once they've tested a couple of extremes and found the actual tradeoffs firsthand. Rock-bottom pricing tends to cost them in revision time and inconsistent results. Premium pricing tends to feel unnecessary once they realize a mid-tier hand-edited service already delivers what their clients actually notice. That middle ground is usually where per-photo pricing in the twenty to forty cent range, with unlimited revisions and a real person doing the correction, ends up sitting once everything's factored in.
+
 Curious what your own gallery would actually run? Pricing runs flat by volume, and sending two or three photos for a free sample edit first is a normal way to see the quality before spending anything. Payment isn't due until after you've approved the delivered files.
