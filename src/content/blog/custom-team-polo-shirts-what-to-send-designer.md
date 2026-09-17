@@ -40,4 +40,12 @@ That's everything a designer needs to start with an accurate first concept inste
 
 A brief that only says "make it look professional" or "surprise me" sounds flexible, but it actually slows things down considerably, since a designer has to guess at preferences that could have simply been stated upfront in a few sentences. Vague briefs tend to produce more revision rounds, not fewer, precisely because the guesswork built into the first concept rarely lands exactly where an unstated preference actually wanted it to.
 
+## What to do if you're ordering for multiple teams or divisions
+
+Larger organizations ordering for several teams or departments at once benefit from establishing one master brief covering shared branding elements, colours, logo usage, overall style, before requesting individual variations for each specific group. This keeps the whole collection feeling cohesive as one recognizable family of designs, rather than several disconnected projects that happen to share a similar budget and timeline but little else in common visually.
+
+## A final thought on trusting the process once your brief is sent
+
+Once you've sent a genuinely thorough brief, resist the urge to second-guess every small decision a designer makes in the first concept. Trust the process enough to see a full first draft before jumping to conclusions, since some choices that seem unusual in isolation often make more sense once viewed as part of the complete, finished design.
+
 Have your logo and a rough idea ready? Send it over and get concepts back with a realistic mockup on the actual garment.
