@@ -36,4 +36,12 @@ A style built once doesn't need to stay frozen forever. Tastes shift, your own e
 
 A style that's actually documented, not just something living in your head, survives you being sick, busy, or handing off part of the workload. That's the real payoff here, beyond just looking consistent to the outside world.
 
+## What happens when you skip this documentation step
+
+Photographers who never write their style down often find it drifts without them noticing, a slightly cooler grade this season than last, skin tones that have crept warmer over a year of small, unconscious adjustments. This isn't necessarily bad, styles do reasonably evolve, but undocumented drift makes it impossible to tell the difference between deliberate growth and simple inconsistency creeping in one gallery at a time. A style you can describe in writing is a style you can actually protect, adjust on purpose, and hand off cleanly whenever you need to.
+
+## A quick exercise worth trying this week
+
+Pull up your last three delivered galleries side by side and look specifically at skin tone and overall warmth across all three. If they look meaningfully different from each other without an intentional reason, that's worth investigating before it becomes a pattern a client eventually notices and mentions in a review. Catching drift early, while it's still small, is far easier than trying to explain a noticeable style shift after the fact.
+
 Outsourcing part of your editing without losing your style? Send reference edits alongside your RAW files, and a free sample edit will show whether the match is close before you commit to a full gallery. Check pricing here too.
