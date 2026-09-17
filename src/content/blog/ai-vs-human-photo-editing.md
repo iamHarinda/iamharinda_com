@@ -30,6 +30,12 @@ Here's what's become pretty normal by 2026: nobody picks a side anymore. A photo
 
 If you're the type who edits everything from RAW by eye on a calibrated screen and skips presets entirely, that's a completely fine choice too. It just means your pricing is built around photo count rather than editing speed, and every single frame gets looked at rather than batch-processed through an algorithm.
 
+## What can actually go wrong with an all-AI approach
+
+A few things trip up photographers who lean on AI for the entire gallery with no human check afterward. Skin tones drift the same direction across an entire batch when the training data behind the tool skews a certain way, and nobody catches it until a client mentions their skin looks orange in half the photos. Repeated compositions, three near-identical shots from a burst, sometimes all get the exact same treatment when one of them actually needed different exposure because someone moved. And AI still struggles with genuinely unusual scenes, a first dance lit only by string lights, a ceremony under heavy tree cover, dance floor smoke machines throwing weird colour into every frame. These are exactly the moments a wedding album is built around, and they're exactly where automated tools tend to guess wrong.
+
+None of this means AI is unreliable. It means AI needs a second set of eyes somewhere in the process, even if that second set of eyes only touches twenty photos out of four hundred.
+
 ## Three questions before you outsource a shoot
 
 Ask yourself these before deciding how to handle a gallery:
@@ -41,5 +47,9 @@ Which images will your client actually print or frame? Those deserve a hand edit
 Does your brand promise something specific and hand-crafted? If your marketing leans on "no AI, no shortcuts," your delivery has to back that up, all the way to the last file.
 
 There's no single right answer buried in these questions. There's just a mismatch worth avoiding. The photographers who move fastest through outsourcing are the ones matching the editing method to what each gallery actually needs instead of picking one approach and forcing everything through it.
+
+## A realistic way to start testing this
+
+If you've never outsourced any part of your editing before, don't hand over a full season's worth of galleries on day one. Pick one upcoming wedding, send the hero shots, the twenty or thirty images you already know will matter most, to a human editor and compare the result against how you'd normally handle it yourself. That small test tells you more about fit than any amount of reading ever will, and it costs almost nothing to try.
 
 Looking for someone to handle the shots that need a real eye? Colour correction and retouching here happens by hand on a calibrated screen, no batch filters involved. You can send two or three photos over and get a free sample edit before committing to anything, or check the pricing page to see how packages work for full galleries.
