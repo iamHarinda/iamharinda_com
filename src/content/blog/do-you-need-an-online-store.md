@@ -34,4 +34,16 @@ A contact-based site that later needs to add e-commerce isn't starting from zero
 
 Plenty of service businesses add a store later, once they've validated demand for a specific fixed-price offer worth building around. There's nothing wrong with starting simple and expanding once you actually know what people want to buy from you.
 
+## Payment processing fees worth factoring in either way
+
+Whether you build a full store or a simple payment link, processing fees, typically around three percent of each transaction, apply either way and are worth budgeting for from the start rather than discovering them as a surprise on your first sales report. This cost exists regardless of which platform or approach you choose, since it's charged by the payment processor itself, not by whoever builds your site.
+
+## How to talk to a developer about this decision
+
+Rather than walking in already decided on "I need a store" or "I just need a contact form," it's often more useful to describe what you're actually selling and how customers typically decide to buy from you. A developer who understands your actual sales process can usually tell you clearly which approach fits, sometimes even suggesting a hybrid you hadn't considered, like a simple payment link for one specific product alongside a broader contact-based site for everything else you offer.
+
+## What a rushed e-commerce decision can cost you later
+
+Building a full store when a simple contact form would have served better means paying for and maintaining complexity you don't need, inventory systems sitting empty, checkout flows nobody uses the way they were designed for. Building only a contact form when customers actually wanted instant checkout means losing sales to impatient buyers who leave rather than wait for a reply. Getting this decision right upfront, even if it takes an extra conversation to nail down, avoids both expensive mistakes down the road.
+
 Not sure whether you need a full store or something simpler? That's exactly the kind of question a scope call is built for.
