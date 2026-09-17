@@ -46,6 +46,10 @@ Life happens, and sometimes a project needs to pause mid-process, waiting on bud
 
 While the general shape of this process, brief, concepts, revisions, final files, is fairly standard across the industry, the details vary, how many concepts are included, how many revision rounds, turnaround time for each stage. Comparing these specifics across a few options before committing helps set realistic expectations and avoids confusion partway through a project about what was actually promised at the very start of the relationship.
 
+## What to keep from this process for your own records
+
+Once a project wraps up, hold onto the full email or message thread alongside the final files, since it documents exactly what was agreed at each stage and can be genuinely useful reference material for a future reorder or a related project down the line with the same or a different designer.
+
 ## A final note for first-timers going through this for the first time
 
 Nobody expects you to know design terminology walking into this process for the first time. A good designer will ask the right questions and fill in the gaps as needed. Your job is mostly just being clear about what you're picturing and honest about what you like or don't when concepts come back for your review.
