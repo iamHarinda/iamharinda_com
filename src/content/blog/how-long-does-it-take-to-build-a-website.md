@@ -38,4 +38,8 @@ It's tempting to assume a sixteen-page site simply takes twice as long as an eig
 
 If a timeline starts slipping, the most useful thing you can do as the client is ask directly what's causing the delay rather than just waiting anxiously and wondering. Sometimes it's genuinely on the developer's end, other times it traces back to a content delay or a slow review turnaround on your own side that's easy to forget about once a few weeks have passed. A quick, honest conversation usually gets things back on track faster than silence does on either side of the relationship, and most delays turn out to have a simple, fixable cause once someone actually names it out loud instead of letting it linger unspoken.
 
+## Why rush jobs rarely turn out well for anyone
+
+A compressed timeline sounds appealing when you need something live fast, but rushing a build usually means skipping the review rounds that catch mistakes before launch, or cutting corners on testing across different devices and browsers. A site built in half the normal time often needs a second round of fixes shortly after launch anyway, which ends up costing more total time than a realistic timeline would have taken in the first place. If speed genuinely matters more than anything else for your situation, say so upfront, and a developer can tell you honestly what corners would need cutting to hit that date, so you can decide together whether that tradeoff is actually worth it.
+
 Want an actual date, not a wide range? A written proposal here includes a dated timeline once scope is agreed, no open-ended "it depends" left hanging over the project.
