@@ -34,4 +34,12 @@ Choosing no CMS and later realizing you need one usually just means a bit of rew
 
 Not "do I need a CMS" in the abstract, but "how often will I realistically want to change something on this site myself, without asking someone else to do it for me?" That honest answer, more than anything else, determines whether a CMS is worth the added setup and the ongoing upkeep that comes with it.
 
+## Common CMS platforms beyond WordPress worth knowing about
+
+WordPress dominates the conversation because it's the oldest and most widely used option, but it's far from the only one. Newer platforms built specifically around simplicity, speed, or a particular type of content, a blog-focused tool, an e-commerce-focused one, sometimes fit a specific business better than a general-purpose system carrying features you'll never touch. If a developer only ever recommends WordPress regardless of what you actually need, it's worth asking whether that's genuinely the best fit or simply the tool they personally know best and default to out of habit.
+
+## A practical test before committing to any CMS
+
+Before agreeing to a CMS-based build, ask to see the actual editing dashboard you'd be using, not just a description of what it can do in theory. Editing experience varies a lot between platforms, and a system that sounds simple in a sales conversation can feel genuinely clunky once you're the one trying to update a paragraph of text at ten at night after a long day. Five minutes with a demo account tells you more than any amount of description ever could about whether you'll actually enjoy, or at least tolerate, using it regularly.
+
 Not sure whether your site needs a CMS or not? That's exactly the kind of thing a scope call sorts out before any pricing even gets discussed.
