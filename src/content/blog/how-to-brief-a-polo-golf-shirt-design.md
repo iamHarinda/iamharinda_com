@@ -36,7 +36,7 @@ Some orders want just one polished concept refined through revisions until it's 
 
 ## A note on describing colour without technical terms
 
-If you know an exact colour code, a Pantone number or a hex value, include it, but if you don't, plain description works fine too. "Navy, like a dark police uniform blue" or "forest green, not too bright" communicates enough for a designer to start with, and exact colour matching can always get refined once a first concept is on the table for review.
+If you know an exact colour code, a Pantone number or a hex value, include it, but if you don't, plain description works fine too. "Navy, like a dark police uniform blue" or "forest green, not too bright" communicates enough for a designer to start with, and exact colour matching can always get refined once a first concept is on the table for review, using swatches or references rather than guessing at codes upfront.
 
 ## Putting it all together in one complete example
 
