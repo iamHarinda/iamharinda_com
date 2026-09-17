@@ -1,35 +1,29 @@
 ---
 title: "How Long Does It Actually Take to Build a Small Business Website?"
-description: "Timelines quoted for a website range from a few days to several months. Here's what genuinely determines how long yours will take."
+description: "Timelines quoted for a website range from a few days to several months. What genuinely determines how long yours will actually take."
 publishDate: 2026-10-13
 ---
 
-"How long will this take?" is usually one of the first questions in any website conversation, and one of the hardest to answer honestly without knowing what's actually being built. A landing page and a custom booking system are not the same job, even though both are technically "a website."
+"How long will this take?" It's usually one of the first questions in any website conversation, and one of the hardest to answer honestly without knowing exactly what's being built. A landing page and a custom booking system aren't the same job, even though both technically count as "a website" on paper.
 
 ## Rough timelines by project type
 
-- **Single landing page:** About a week, start to finish, once content and any needed assets (logo, photos) are ready.
-- **Marketing site, 5–8 pages:** Roughly two to three weeks — design, content placement, and a review round or two.
-- **Site with a CMS you'll manage yourself:** Similar range to a marketing site, plus time to set up and test the editing experience.
-- **Custom web application** (bookings, portals, integrations): Highly variable, typically starting around four to six weeks and scaling with the actual functionality involved.
+A single landing page usually takes about a week start to finish, once your content and any needed assets, logo, photos, are actually ready to go. A marketing site running five to eight pages typically takes two to three weeks, covering design, content placement, and a review round or two along the way. A site with a CMS you'll manage yourself sits in a similar range to a marketing site, plus a bit more time to set up and test the actual editing experience. A custom web application, bookings, portals, integrations, varies a lot, but typically starts around four to six weeks and scales up with however much real functionality gets involved.
 
-## What actually stretches a timeline
+## What actually stretches a timeline out
 
-- **Waiting on content.** The single biggest delay on most projects isn't the build — it's waiting on the client to send final copy, photos, or logo files. A developer can't finish a page with placeholder text indefinitely.
-- **Scope changing mid-build.** Adding pages or features partway through resets parts of the timeline, even for small additions.
-- **Slow review turnaround.** If a design or draft sits in your inbox for a week before you respond, that week gets added straight onto the delivery date.
-- **Agency vs. freelancer capacity.** A larger agency juggling multiple clients can quote a longer timeline than a freelancer with one project active at a time, purely due to how work gets queued.
+Waiting on content is the single biggest delay on most projects, and it's not close. It's not the build itself. It's waiting on the client to send final copy, photos, or logo files. A developer can't finish a page sitting on placeholder text indefinitely. Scope changing mid-build resets parts of the timeline too, even for small additions that feel minor at the time. Slow review turnaround adds up fast. If a design or draft sits in your inbox a week before you respond, that whole week gets tacked straight onto your delivery date. Agency versus freelancer capacity plays a role as well. A larger agency juggling several clients at once can quote a longer timeline than a freelancer with one project active, purely because of how work gets queued up behind the scenes.
 
-## What you can do to keep your own project on schedule
+## What you can actually do to keep your own project on schedule
 
-1. Have your core content — page text, logo, key photos — ready before the project starts, not partway through.
-2. Agree on the full scope upfront and get it in writing, so "just one more page" doesn't quietly extend the timeline later.
-3. Set aside time to review drafts promptly rather than letting them sit — a same-week turnaround on your end keeps the whole project moving.
+Have your core content, page text, logo, key photos, ready before the project even starts, not sent in halfway through. Agree on the full scope upfront and get it written down somewhere, so "just one more page" doesn't quietly stretch the timeline later without anyone noticing. Set aside real time to review drafts promptly instead of letting them sit in an inbox. A same-week turnaround on your end keeps the whole project moving at the pace it should.
 
-## A red flag worth knowing
+## A red flag worth knowing about
 
-A quote with no timeline at all, or one that says "it depends" without ever landing on an actual date once scope is agreed, is worth pushing back on. A fixed scope should come with a fixed, dated timeline — "it depends" is a fair answer before scope is locked in, not after.
+A quote with no timeline attached at all, or one that says "it depends" without ever landing on an actual date once scope is agreed, is worth pushing back on. A fixed scope should come with a fixed, dated timeline. "It depends" is a fair answer before scope gets locked in, not after you've already agreed on what's being built.
 
----
+## The honest bottom line
 
-**Want an actual date, not a range?** A written proposal here includes a dated timeline once scope is agreed — no open-ended "it depends." [Book a scope call](/web-development/) or [get in touch](/contact/).
+Most delays trace back to communication gaps, not the actual coding work. A developer who's clear about deadlines and a client who responds promptly usually finishes close to the original estimate, no matter how the project started out.
+
+Want an actual date, not a wide range? A written proposal here includes a dated timeline once scope is agreed, no open-ended "it depends" left hanging.
