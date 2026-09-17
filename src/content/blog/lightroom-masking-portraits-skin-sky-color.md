@@ -40,4 +40,12 @@ The most common mistake isn't skipping masks, it's trusting the AI selection wit
 
 Not every photo needs this level of masking. A clean, well-lit portrait with even skin tone and no distracting background elements might only need a light global correction, and building three stacked masks on a photo that didn't need them is wasted time that doesn't improve the result. Save the detailed masking work for the images that actually have a problem to solve, tricky lighting, a distracting background colour, uneven skin tone, and let the straightforward shots stay straightforward.
 
+## Masking on group shots and family formals
+
+Family formals bring their own masking challenge since you're often correcting several people at once, each with slightly different skin tones and each catching light a bit differently depending on where they're standing. Rather than one subject mask covering the whole group, it's often faster and more accurate to build separate masks person by person for anyone whose skin tone clearly needs a different adjustment than the group as a whole, then a lighter group-wide mask for anything that applies evenly across everyone. This takes more time per photo, which is exactly why family formals are worth budgeting extra editing time for compared to candid shots where one subject mask usually does the whole job.
+
+## A note on working speed as you get better at this
+
+Masking feels slow the first few times you try it seriously, and that's normal. Photographers who've built this into their regular workflow report it becoming almost as fast as a global edit once the pattern becomes automatic, subject mask, check the edges, sky mask if needed, range mask for anything left over. The real time cost lives in learning to recognize which photos actually need this level of attention versus which ones are fine with a simpler global pass. That judgment call gets faster with practice far quicker than the technical masking skill itself does.
+
 Want the hero shots from your gallery hand-masked and properly retouched? Every photo gets edited individually on a calibrated screen here, no batch presets involved. Send a free sample edit request or check out the pricing page for full galleries.
