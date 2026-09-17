@@ -40,6 +40,6 @@ Once business email is live, a properly formatted signature, your name, role, bu
 
 ## A common hesitation worth addressing directly
 
-Some business owners worry that switching email addresses means losing important old messages or contacts built up over years of using the same free account. In practice, most business email setups let you keep the old address active as a forwarding destination indefinitely, so nothing gets lost during the transition, and your contact list can be exported and re-imported into the new system without much hassle at all once you know the steps involved.
+Some business owners worry that switching email addresses means losing important old messages or contacts built up over years of using the same free account. In practice, most business email setups let you keep the old address active as a forwarding destination indefinitely, so nothing gets lost during the transition, and your contact list can be exported and re-imported into the new system without much hassle at all once you know the steps involved and have someone walk you through it the first time.
 
 Business email setup is part of the standard launch process here, right alongside the domain and hosting configuration.
