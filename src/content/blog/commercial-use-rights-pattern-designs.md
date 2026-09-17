@@ -34,4 +34,12 @@ If a designer can't clearly answer whether you get full commercial rights, ask d
 
 In the rare case a rights issue does surface after products are already on the market, having a clear written confirmation from the original transaction, even a simple email exchange, gives you real protection and a paper trail to reference. Verbal assurances alone offer little protection if a dispute ever escalates, which is exactly why getting commercial use terms in writing matters regardless of how trustworthy a designer seems during the initial conversation.
 
+## Why this topic rarely comes up until it's urgent
+
+Most buyers never think to ask about commercial rights because the question simply doesn't occur to them during a normal, friendly design conversation focused on aesthetics and timeline. This is precisely why it's worth raising deliberately rather than waiting for it to surface naturally, since a designer focused on the creative side of a project might not volunteer licensing details unprompted either, even with good intentions.
+
+## A brief note on international orders
+
+If you're working with a designer in a different country than your own business is based, commercial use terms can sometimes interact with different regional copyright conventions in ways that add complexity. This isn't usually a major practical issue for typical apparel orders, but for a large, high-stakes production run, a quick conversation about which country's terms govern the agreement adds an extra layer of clarity worth having upfront.
+
 Every design here is built from scratch for your specific brief, with full commercial use included, no separate licensing, no usage cap to worry about.
