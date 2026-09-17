@@ -38,7 +38,7 @@ That's everything a designer needs to start with an accurate first concept inste
 
 ## Keeping a record of your brief for future orders
 
-Once you've put together a solid brief for one order, save it somewhere easy to find, since future orders, new season colours, a different garment style, additional team members, will reuse most of the same core information. Starting from an existing brief and updating just what's changed is considerably faster than rebuilding one from scratch every single time a new order comes up.
+Once you've put together a solid brief for one order, save it somewhere easy to find, since future orders, new season colours, a different garment style, additional team members, will reuse most of the same core information. Starting from an existing brief and updating just what's changed is considerably faster than rebuilding one from scratch every single time a new order comes up, and it also helps keep your team's look consistent from one season to the next.
 
 ## Why sending too little information backfires
 
