@@ -46,6 +46,10 @@ Life happens, and sometimes a project needs to pause mid-process, waiting on bud
 
 While the general shape of this process, brief, concepts, revisions, final files, is fairly standard across the industry, the details vary, how many concepts are included, how many revision rounds, turnaround time for each stage. Comparing these specifics across a few options before committing helps set realistic expectations and avoids confusion partway through a project about what was actually promised at the very start of the relationship.
 
+## Why a smooth process matters beyond just this one order
+
+A genuinely well-run design process builds the foundation for an ongoing relationship, not just a single transaction handled once and forgotten. Teams and businesses that find a designer who communicates clearly and delivers reliably tend to return for future orders, seasonal refreshes, and new product lines, rather than restarting this whole search process from zero each time a new need comes up.
+
 ## What to keep from this process for your own records
 
 Once a project wraps up, hold onto the full email or message thread alongside the final files, since it documents exactly what was agreed at each stage and can be genuinely useful reference material for a future reorder or a related project down the line with the same or a different designer.
