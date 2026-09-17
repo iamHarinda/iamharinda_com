@@ -36,6 +36,10 @@ If the design needs to work across several garment colours, a team with home and
 
 That's everything a designer needs to start with an accurate first concept instead of guessing at half the important details on their own.
 
+## Keeping a record of your brief for future orders
+
+Once you've put together a solid brief for one order, save it somewhere easy to find, since future orders, new season colours, a different garment style, additional team members, will reuse most of the same core information. Starting from an existing brief and updating just what's changed is considerably faster than rebuilding one from scratch every single time a new order comes up.
+
 ## Why sending too little information backfires
 
 A brief that only says "make it look professional" or "surprise me" sounds flexible, but it actually slows things down considerably, since a designer has to guess at preferences that could have simply been stated upfront in a few sentences. Vague briefs tend to produce more revision rounds, not fewer, precisely because the guesswork built into the first concept rarely lands exactly where an unstated preference actually wanted it to.
