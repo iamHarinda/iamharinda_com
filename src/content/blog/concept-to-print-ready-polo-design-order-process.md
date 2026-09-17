@@ -46,4 +46,8 @@ Life happens, and sometimes a project needs to pause mid-process, waiting on bud
 
 Nobody expects you to know design terminology walking into this process for the first time. A good designer will ask the right questions and fill in the gaps as needed. Your job is mostly just being clear about what you're picturing and honest about what you like or don't when concepts come back for your review.
 
+## Why understanding this process reduces first-time anxiety
+
+Ordering any kind of custom creative work for the first time carries a bit of natural uncertainty, will it turn out right, will the process feel confusing, will communication be smooth. Knowing the actual steps involved in advance, as laid out here, replaces that uncertainty with a clear, predictable roadmap you can follow confidently from your very first message through to receiving finished, production-ready files.
+
 Ready to see what this looks like for your own design? Message first with what you're picturing, no commitment required at that stage.
