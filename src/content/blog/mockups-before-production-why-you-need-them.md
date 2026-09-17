@@ -48,6 +48,6 @@ It's worth remembering this step benefits both sides of the relationship, not ju
 
 ## A final thought before wrapping up
 
-Treat the mockup review as your last real checkpoint before a decision becomes hard to undo. A few careful minutes spent here, checking placement, scale, colour, and the repeat if applicable, is consistently one of the highest-value steps in the entire design process relative to how little time it actually takes.
+Treat the mockup review as your last real checkpoint before a decision becomes hard to undo. A few careful minutes spent here, checking placement, scale, colour, and the repeat if applicable, is consistently one of the highest-value steps in the entire design process relative to how little time it actually takes to do properly and thoroughly.
 
 A realistic front and back mockup on the actual garment comes standard with every package here, never an extra step you have to ask for separately.
