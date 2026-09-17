@@ -32,4 +32,12 @@ Every serious developer should build mobile-responsive by default without needin
 
 Forms specifically. A contact form that's a nightmare to fill out on a phone, tiny fields packed close together, a keyboard that covers the submit button so you can't see what you're doing, loses more leads than almost anything else on a mobile site, often silently without the owner ever knowing it happened.
 
+## Testing across more than just your own phone
+
+Your own phone is a good starting point, but different screen sizes and browsers can reveal different problems, a button that's fine on a large phone but too small on an older, smaller model, a menu that behaves oddly on one particular browser but not another. If possible, ask a friend or family member with a different phone to try navigating your site and watch how they interact with it without any guidance from you, since their genuine confusion points directly at real usability problems you might have missed entirely on your own device.
+
+## Why mobile-friendly matters even for B2B and older audiences
+
+It's tempting to assume mobile matters less for a business targeting older customers or other businesses rather than the general public. In practice, mobile browsing habits have become nearly universal across age groups and industries alike, and assuming your specific audience is the exception is a common and costly mistake that's worth testing directly rather than guessing at based on outdated assumptions about who uses what device.
+
 Every site here is built mobile-first, not shrunk down from a desktop layout as an afterthought once the "real" version is finished.
