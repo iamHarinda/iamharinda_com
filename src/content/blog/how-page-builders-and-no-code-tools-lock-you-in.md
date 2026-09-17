@@ -30,4 +30,12 @@ A custom-coded site is just files, HTML, CSS, JavaScript, that belong to you out
 
 Custom development costs more upfront specifically because there's no shared platform absorbing part of that cost across millions of other users sharing the same infrastructure. What you're buying with that extra cost includes never having to solve a lock-in problem later. For a business planning to stick around for years, that's often worth more than it first appears when you're just comparing sticker prices side by side.
 
+## Questions worth asking before signing up for any platform
+
+Before committing significant content to a new platform, ask directly what happens to your data if you ever want to leave, whether custom code is allowed at any level, and whether the domain stays under your control throughout the relationship. A platform confident in its own value has no reason to make these answers hard to find, and a company that's evasive about export options is quietly telling you something worth taking seriously before you invest years of content into their system.
+
+## What to do if you're already locked into a platform
+
+If you've already built significant content on a platform with poor export options, the situation isn't hopeless, just slower to unwind than switching earlier would have been. A developer can often manually rebuild a site's content and design onto a new, more flexible foundation, treating the old site as a visual reference rather than something to extract programmatically. It costs more time than a clean migration would have, but it's still far better than staying stuck somewhere that no longer serves your business well.
+
 No platform lock-in, no proprietary format, the full source code transfers to you at launch, hosted wherever you choose to put it.
