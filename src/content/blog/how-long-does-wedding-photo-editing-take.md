@@ -44,4 +44,12 @@ If in-house editing consistently runs past what you promised, that's usually a v
 
 Clients remember whether you kept your word more than they remember the exact number of days it took. A slightly longer, reliably-kept promise beats an optimistic one you miss every third wedding.
 
+## How to communicate a delay if one becomes unavoidable
+
+Even with careful planning, sometimes a delay happens anyway, illness, equipment failure, an unexpectedly large backlog. When that happens, reaching out proactively before the promised date, rather than waiting for the client to ask, makes a real difference in how the delay actually lands. A short message explaining the situation and giving a new, realistic date almost always goes over better than silence followed by an apology after the original deadline has already quietly passed. Clients are generally far more understanding of a heads-up than they are of feeling forgotten.
+
+## What couples actually do while they wait
+
+Understanding the wait from the client's side helps explain why turnaround communication matters so much. Many couples check their email daily in the weeks after a wedding, sometimes refreshing a gallery link that isn't live yet just in case. That anticipation is part of why a missed promise stings more than it might for a less emotionally loaded purchase. Treating the wait itself as part of the client experience, not just something to survive before the real deliverable shows up, changes how much communication effort feels worth investing along the way.
+
 Need a realistic turnaround on your next gallery? First proofs typically come back within a day, and full fifty to two hundred photo galleries usually finish in two to four days. Send a free sample edit request to see the process, or check current pricing.
