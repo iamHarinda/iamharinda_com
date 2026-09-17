@@ -28,8 +28,16 @@ Start with the global correction, white balance and exposure across the whole fr
 
 Skipping straight to sliders without masking first is exactly how "the whole photo looks softened" or "the sky's fine but now the bride looks too warm" edits happen. Masking takes longer per photo, which is precisely why AI batch tools tend to skip the more surgical versions of it. It's also why a hand-masked edit on the hero shots from a gallery usually looks noticeably more controlled than a one-click batch pass ever manages.
 
+## Stacking multiple masks without making a mess
+
+Real portraits often need more than one mask working together, a subject mask for skin plus a separate luminance range mask just for a blown highlight on someone's forehead, for example. Lightroom lets you stack masks and subtract one from another, so a highlight fix doesn't accidentally spill onto areas the skin mask already handled. The trick is naming your masks as you build them rather than leaving a pile of unlabeled entries in the panel. On a single portrait that's manageable to remember. Across four hundred wedding photos edited over several sessions, an unlabeled stack of masks becomes genuinely hard to audit later if something needs revisiting.
+
 ## Where people usually go wrong with masking
 
 The most common mistake isn't skipping masks, it's trusting the AI selection without checking it first. A mask that grabs a stray strand of hair along with the background, or misses part of a subject's shoulder, throws off everything built on top of it. Zoom to a hundred percent on the edges before adjusting anything underneath a mask you didn't build by hand.
+
+## When a simpler global edit is actually the better call
+
+Not every photo needs this level of masking. A clean, well-lit portrait with even skin tone and no distracting background elements might only need a light global correction, and building three stacked masks on a photo that didn't need them is wasted time that doesn't improve the result. Save the detailed masking work for the images that actually have a problem to solve, tricky lighting, a distracting background colour, uneven skin tone, and let the straightforward shots stay straightforward.
 
 Want the hero shots from your gallery hand-masked and properly retouched? Every photo gets edited individually on a calibrated screen here, no batch presets involved. Send a free sample edit request or check out the pricing page for full galleries.
