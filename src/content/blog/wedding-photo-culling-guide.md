@@ -40,4 +40,12 @@ AI-assisted culling tools, built into Lightroom and available as standalone apps
 
 Photographers who've culled hundreds of weddings report the process getting noticeably faster over time, not because they're rushing more, but because pattern recognition improves with repetition. Spotting a closed eye or a slightly soft focus becomes near-instant after enough practice, freeing up mental energy for the harder calls in pass two and three. If culling still feels slow and effortful after a couple dozen weddings, it's worth deliberately timing yourself and looking for where the hesitation is actually coming from rather than assuming speed will just arrive on its own eventually.
 
+## Culling as a second shooter's photos too
+
+If a second shooter contributed a separate card of images, culling their work deserves the same three-pass treatment rather than a quicker, less careful pass just because it's not your own footage. Second shooter angles often catch reactions the primary photographer missed entirely, a parent's face during vows, a guest's genuine laugh, and rushing through that card risks losing some of the best candid material from the whole day. Treat every card from every shooter with the same discipline, even if it takes a bit longer overall.
+
+## What a realistic time budget looks like
+
+For a well-practiced photographer using the three-pass system on a typical three-thousand-photo wedding shoot, two to four hours of focused culling time is a reasonable target once the workflow is dialed in, spread across the passes described above. Photographers newer to this process, or working through an unusually large or complex shoot, should expect longer and shouldn't treat a slower first attempt as a sign something's wrong. Speed comes with repetition, not from rushing the actual decisions on day one.
+
 Once culling's done, need the final selects edited? RAW files are recommended, and everything gets colour-corrected and retouched by hand. Send a free sample edit request or check pricing by volume.
