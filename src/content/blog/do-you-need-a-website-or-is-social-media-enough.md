@@ -42,6 +42,10 @@ Platforms change how content gets shown constantly, and not always in your favou
 
 ## What a website adds even for a heavily social-first business
 
-Even businesses that get most of their actual bookings through Instagram or TikTok often benefit from a simple site as a landing point, somewhere to send a link in bio that actually converts, rather than hoping a potential customer scrolls through an entire feed to find pricing or contact details. A single well-built landing page can outperform a link-in-bio tool for exactly this reason, since it's built specifically around getting someone from curious to booked, not around generic profile navigation the platform designed for a completely different purpose.
+Even businesses that get most of their actual bookings through Instagram or TikTok often benefit from a simple site as a landing point, somewhere to send a link in bio that actually converts, rather than hoping a potential customer scrolls through an entire feed to find pricing or contact details. A single well-built landing page can outperform a link-in-bio tool for exactly this reason, since it's built specifically around getting someone from curious to booked, not around generic profile navigation the platform designed for a completely different purpose entirely.
+
+## The bottom line for a business just starting out
+
+Neither option needs to come first in some fixed order. What matters is that whichever you build, social account or website, actually gets finished and kept current, rather than half-started and abandoned. A simple, complete website beats an ambitious one that never launches.
 
 Thinking about a first website, or wondering if you actually need one? A free scope call is the easiest way to find out what you'd actually need, no pressure, no charge attached.
