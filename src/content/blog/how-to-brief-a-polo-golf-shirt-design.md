@@ -44,6 +44,10 @@ If you know an exact colour code, a Pantone number or a hex value, include it, b
 
 That's a complete, plain-language brief, no design terminology required anywhere in it, and everything a designer needs for an accurate first concept right out of the gate without unnecessary back-and-forth.
 
+## Why plain language actually works better than you'd think
+
+Designers who work regularly with clients outside the design industry are used to translating everyday descriptions into technical execution, and they generally prefer this over a client attempting to use jargon incorrectly, which can actually cause more confusion than plain language would in the first place. Trying to sound technical isn't necessary and occasionally backfires if a term gets used slightly wrong, leading a designer down the wrong path based on a misunderstanding.
+
 ## What to do if you genuinely don't know where to start
 
 If even this structure feels like too much to organize on your own, a short conversation, a call or a chat message, before ordering formally often works better than trying to write everything down perfectly in advance. Talking through what you're picturing out loud, with someone asking the right follow-up questions, frequently surfaces details you wouldn't have thought to include in a written brief.
