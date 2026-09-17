@@ -36,7 +36,7 @@ Beyond just clearing you to sell products, confirming exclusive rights to a desi
 
 ## A final summary worth keeping handy
 
-Before ordering, confirm the design is original, confirm commercial rights are included without a cap, and get that confirmation in writing somewhere you can find it later. Three simple steps, and together they protect a business decision that's easy to get right upfront and genuinely costly to fix after the fact.
+Before ordering, confirm the design is original, confirm commercial rights are included without a cap, and get that confirmation in writing somewhere you can find it later. Three simple steps, and together they protect a business decision that's easy to get right upfront and genuinely costly to fix after the fact, once products are already out in the world.
 
 ## What happens if a rights dispute actually arises
 
