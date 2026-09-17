@@ -34,6 +34,10 @@ Trends are useful as a reference point for what currently feels current, not a f
 
 The businesses that age well with their branding usually picked something that fit them specifically, trend-aware but not trend-dependent on any single passing moment. That's a better target than chasing whatever's hottest this particular season, since trends fade but a design built around genuine identity tends to hold up much longer.
 
+## Where these particular trend observations came from
+
+These directions reflect what's showing up across current apparel design conversations, trade publications, and what independent print-on-demand and fabric marketplaces are actually seeing sell well in 2026. Trend reading is never an exact science, but paying attention to multiple sources rather than a single influencer or platform gives a more balanced, reliable picture of where things are genuinely heading.
+
 ## How to spot a trend that's already fading versus one still rising
 
 A trend showing up heavily in mass-market fast fashion has usually already peaked in the design world that originated it months or sometimes years earlier, since mainstream adoption tends to lag well behind where genuinely current design work is already heading. Looking at what's showing up in smaller, independent apparel brands and design-focused publications gives a more accurate read on what's actually current right now, rather than what's simply become widely available and visible everywhere at once.
