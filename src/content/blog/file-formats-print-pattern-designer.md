@@ -38,4 +38,8 @@ At minimum, the editable vector source, Ai or EPS, plus flattened versions, PNG 
 
 If you realize months later that you need a format you weren't originally given, reach out to the original designer first, since they likely still have the source file and can export what you need quickly. Recreating a design from scratch because a file format went missing is a far more expensive and time-consuming problem than simply asking for a re-export of an existing, already-approved design.
 
+## Organizing your files once you receive them
+
+Once delivered, save these files in a clearly labeled folder, ideally with the project name and date, rather than letting them scatter across email attachments and downloads folders where they're hard to find again. This small organizational habit saves real frustration months or years later when a reorder or a new use for the design comes up unexpectedly.
+
 Every order here includes Ai, PDF, PNG and JPG, the full set, not just a flattened preview handed over at the end of the project.
