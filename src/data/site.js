@@ -91,6 +91,7 @@ export const site = {
     { label: "Photo editing", href: "/photo-editing/" },
     { label: "Pattern designing", href: "/fashion-designing/" },
     { label: "Web development", href: "/web-development/" },
+    { label: "Blog", href: "/blog/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "About", href: "/about/" },
     { label: "Contact", href: "/contact/" },
