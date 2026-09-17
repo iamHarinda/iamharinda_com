@@ -30,7 +30,7 @@ Open the file and zoom way in, past a hundred percent, toward the edges of any s
 
 ## A quick summary for anyone still unsure
 
-Vector scales infinitely without quality loss and works best for anything going to production. Raster is fixed in resolution and works fine for anything staying purely digital, a website, an email, a social post. Knowing which category your specific need falls into settles most confusion about this topic in a matter of seconds, without needing to remember any deeper technical explanation beyond that simple rule.
+Vector scales infinitely without quality loss and works best for anything going to production. Raster is fixed in resolution and works fine for anything staying purely digital, a website, an email, a social post. Knowing which category your specific need falls into settles most confusion about this topic in a matter of seconds, without needing to remember any deeper technical explanation beyond that simple rule of thumb for future reference.
 
 ## Why this distinction trips up so many first-time buyers
 
