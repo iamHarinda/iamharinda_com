@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { breadcrumb } from "../../lib/schema.js";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+const jsonLd = [breadcrumb([
+  { name: "Home", path: "/" },
+  { name: "Blog", path: "/blog/" },
+])];
+---
+
+<BaseLayout
+  title="Blog"
+  description="Notes on photo editing, pricing and outsourcing for photographers in the United States, Canada and Europe."
+  path="/blog/"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h1 class="h1"><span class="split">Notes for photographers.</span></h1>
+        <p>
+          Practical writing on photo editing, pricing and outsourcing — mostly
+          for wedding and portrait photographers deciding how to handle their
+          galleries.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        {
+          posts.map((post) => (
+            <a class="card blog-card rise" href={`/blog/${post.id}/`} data-spot>
+              <p class="blog-card__date">
+                {post.data.publishDate.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </p>
+              <h2 class="blog-card__title">{post.data.title}</h2>
+              <p class="blog-card__desc">{post.data.description}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>

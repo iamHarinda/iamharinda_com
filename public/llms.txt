@@ -52,6 +52,13 @@ Pricing (US dollars): Basic $10 (1 design, 1-day delivery), Standard $25 (3
 designs, 2-day), Premium $40 (5 designs, 2-day) — all with unlimited
 revisions. (/fashion-designing/)
 
+## Blog
+
+In-depth, practical articles for photographers and business owners covering
+photo editing workflow and Lightroom technique, pricing and outsourcing
+decisions, hiring a web developer, and ordering pattern/apparel design —
+written for people with no technical background in the topic. (/blog/)
+
 ## Payment methods
 
 PayPal invoice (credit/debit card, Venmo, Apple Pay, Google Pay), PayPal

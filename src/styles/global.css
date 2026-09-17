@@ -130,6 +130,10 @@ html {
   font-size: 106.25%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* Safety net: nothing should ever be wide enough to cause horizontal
+     scroll, but this keeps one stray element from breaking the whole page.
+     Set on html (not body) so it doesn't interfere with position: sticky. */
+  overflow-x: hidden;
 }
 body {
   min-height: 100dvh;
@@ -830,6 +834,28 @@ body::after {
 @media (prefers-reduced-motion: reduce) {
   .presence__ring::before {
     animation: none;
+  }
+}
+@media (max-width: 30rem) {
+  /* The fixed avatar size + padding left too little room for the name on
+     narrow phones, pushing the pill wider than the viewport. Scale it down
+     and let the meta text wrap onto two lines instead. */
+  .presence {
+    gap: 0.9rem;
+    padding: 0.7rem 1.4rem 0.7rem 0.7rem;
+    font-size: var(--step-1);
+    max-width: 100%;
+  }
+  .presence__ring {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+  .presence__dot {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .presence__meta {
+    min-width: 0;
   }
 }
 
@@ -1613,6 +1639,31 @@ body::after {
   color: var(--c-violet);
 }
 .service-list p {
+  margin-top: var(--space-2);
+  color: var(--text-dim);
+}
+
+/* 21c. Blog ------------------------------------------------------------------ */
+
+.blog-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+.blog-card {
+  display: block;
+  text-decoration: none;
+}
+.blog-card__date {
+  font-size: var(--step--1);
+  color: var(--text-faint);
+}
+.blog-card__title {
+  margin-top: var(--space-2);
+  font-size: var(--step-1);
+  color: var(--text);
+}
+.blog-card__desc {
   margin-top: var(--space-2);
   color: var(--text-dim);
 }

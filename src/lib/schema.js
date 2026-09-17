@@ -137,6 +137,24 @@ export function faqPage(faqs) {
   };
 }
 
+/** BlogPosting for a single article, built from its content-collection entry. */
+export function blogPosting(post) {
+  const path = `/blog/${post.id}/`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.data.title,
+    description: post.data.description,
+    datePublished: post.data.publishDate.toISOString(),
+    dateModified: (post.data.updatedDate ?? post.data.publishDate).toISOString(),
+    url: abs(path),
+    mainEntityOfPage: abs(path),
+    inLanguage: "en",
+    author: person(),
+    publisher: { "@id": abs("/#business") },
+  };
+}
+
 /** BreadcrumbList for interior pages. */
 export function breadcrumb(trail) {
   return {

@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import site, { waLink } from "../../data/site.js";
+import { blogPosting, breadcrumb } from "../../lib/schema.js";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const jsonLd = [
+  blogPosting(post),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog/" },
+    { name: post.data.title, path: `/blog/${post.id}/` },
+  ]),
+];
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  path={`/blog/${post.id}/`}
+  ogType="article"
+  jsonLd={jsonLd}
+>
+  <article class="section">
+    <div class="container center-narrow">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h1 class="h1"><span class="split">{post.data.title}</span></h1>
+        <p class="form-note">
+          Published {post.data.publishDate.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+      </div>
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <div class="callout beam rise" style="margin-top:3rem">
+        <div>
+          <h2 class="grad-text">{site.freeSample.short}</h2>
+          <p>{site.freeSample.line}</p>
+        </div>
+        <a class="btn" data-magnetic href={waLink("Hi Harinda, I read your blog and I'd like a free sample edit.")}>{site.freeSample.cta}</a>
+      </div>
+
+      <p style="margin-top:2rem"><a href="/blog/">&larr; Back to the blog</a></p>
+    </div>
+  </article>
+</BaseLayout>
