@@ -50,4 +50,8 @@ A handful of photographers, particularly those shooting high-volume events with 
 
 Some photographers shoot RAW plus JPEG simultaneously for exactly this reason, getting the correction headroom of RAW while having a fast JPEG preview ready for a quick same-day social media post without waiting on full RAW processing. This doubles storage needs but removes the tradeoff entirely for photographers who want both speed and correction flexibility. Whether it's worth the extra card space depends mostly on how often you actually need that same-day quick-turnaround JPEG versus just waiting for the properly edited gallery a few days later.
 
+## The bottom line for anyone still deciding
+
+If storage and transfer speed aren't a real constraint for your workflow, shooting RAW and keeping that option open costs you very little and protects you against exactly the kind of lighting surprises a wedding day tends to throw at even the most prepared photographer.
+
 Sending files out for editing? RAW is recommended and priced the same as JPEG here, CR2, CR3, NEF, ARW, and DNG all get accepted. Send a free sample edit request or check the pricing page for full galleries.
