@@ -34,4 +34,12 @@ A golf club wanting their crest on the chest and a plain colour on the rest of t
 
 If your project genuinely sits somewhere in between, or you're not sure which category it falls into, describing the actual finished look you're picturing to a designer, rather than trying to name the technical category yourself, usually resolves the question quickly. A designer experienced in both approaches can identify which one fits from a plain description faster than you'd expect.
 
+## How this decision affects your file delivery too
+
+The two approaches also differ slightly in what gets delivered at the end of the project. A standalone print typically arrives as a single finished graphic at the correct placement size. A seamless pattern arrives as a tile file plus a tiled mockup demonstrating the repeat, since the printer or supplier needs the tile itself to actually apply the pattern across the full production run rather than a single flattened image that wouldn't scale correctly.
+
+## A closing thought on getting this right from the start
+
+Getting this classification right before any design work begins saves real back-and-forth later in the project. A quick conversation about whether your product needs continuous coverage or a single focal graphic, before any sketching starts, sets the entire project on the right track from day one and avoids a costly pivot partway through the work.
+
 Not sure whether your design needs to repeat or stand alone? Send a description of what you're picturing and get a straight answer before committing to a package.
