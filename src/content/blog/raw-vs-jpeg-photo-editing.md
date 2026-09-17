@@ -4,32 +4,34 @@ description: "JPEGs can be edited too, but they've already had decisions baked i
 publishDate: 2026-08-07
 ---
 
-Every camera that shoots RAW also produces a JPEG preview alongside it — a version the camera has already processed: white balance applied, contrast curve baked in, sharpening and noise reduction done in-camera. That processing is exactly what an editor loses the ability to undo once you hand over a JPEG instead of the RAW file.
+Every camera that shoots RAW also spits out a JPEG preview alongside it, a version the camera has already processed. White balance applied, contrast curve baked in, sharpening and noise reduction handled in-camera. That processing is exactly what an editor loses the ability to undo the moment you hand over a JPEG instead of the original RAW file.
 
-## What's actually different, technically
+## What's actually different under the hood
 
-A RAW file is closer to unprocessed sensor data — every camera decision (white balance, tone curve, sharpening) is stored as metadata that can be freely changed rather than a decision that's been permanently applied to the pixels. A JPEG has compressed that sensor data down to 8 bits per channel and applied the camera's processing decisions as final. The difference shows up in three places.
+A RAW file sits much closer to unprocessed sensor data. Every camera decision, white balance, tone curve, sharpening, gets stored as metadata that can be freely changed later rather than a decision permanently baked into the pixels. A JPEG has already compressed that sensor data down to eight bits per channel and applied the camera's processing as final. That difference shows up in three places that actually matter.
 
-## 1. Highlight and shadow recovery
+## Highlight and shadow recovery
 
-RAW files typically capture significantly more dynamic range than a JPEG retains after compression. A blown-out sky or a too-dark shadow that looks unrecoverable in a JPEG often has real detail still present in the RAW file, simply because the RAW format kept more of what the sensor actually recorded.
+RAW files typically hold onto significantly more dynamic range than a JPEG keeps after compression squeezes it down. A blown-out sky or a shadow that looks unrecoverable in a JPEG often still has real detail sitting in the RAW file, simply because the format kept more of what the sensor actually captured in the first place.
 
-## 2. White balance correction
+## White balance correction
 
-Because a RAW file's white balance is metadata rather than a baked-in pixel change, it can be corrected after the fact with no quality loss — exactly as if it had been set correctly in-camera. On a JPEG, changing white balance means shifting already-compressed, already-processed pixel values, which introduces banding and colour artifacts far sooner, especially on a significant correction.
+Because a RAW file's white balance lives as metadata rather than baked-in pixel changes, you can correct it after the fact with zero quality loss, exactly as if it had been set right in-camera to begin with. On a JPEG, changing white balance means shifting pixel values that are already compressed and already processed, which introduces banding and colour artifacts a lot sooner, especially on anything more than a minor correction.
 
-## 3. Colour depth for grading
+## Colour depth for grading
 
-RAW files are typically processed in 12–14 bits per colour channel; JPEGs are locked to 8 bits. That difference matters most during colour grading — pushing tones in the shadows or highlights on an 8-bit JPEG can produce visible banding (stepped colour transitions) that the same adjustment on a RAW file's wider colour depth wouldn't show.
+RAW files typically process in twelve to fourteen bits per colour channel. JPEGs are locked to eight bits, no exceptions. That gap matters most during colour grading. Pushing tones in the shadows or highlights on an eight-bit JPEG can produce visible banding, stepped colour transitions that look genuinely bad, where the same move on a RAW file's wider colour depth wouldn't show anything at all.
 
-## When JPEG is fine
+## When JPEG is honestly fine
 
-Not every job needs RAW. A quick social media edit, a photo that only needs light retouching with no colour correction, or an already well-exposed, correctly white-balanced shot has less to gain from RAW's extra headroom. The gap matters most exactly when a photo needs real correction — recovering a blown window, fixing a colour cast, or grading a whole gallery to a consistent look.
+Not every job needs RAW. A quick social media post, a photo that only needs light retouching with no colour correction involved, or a shot that's already well-exposed and correctly white-balanced has less to gain from RAW's extra headroom. The gap matters most exactly when a photo needs real correction, recovering a blown window, fixing a colour cast, grading a whole gallery to one consistent look.
 
-## What this means practically
+## What this means for you, practically
 
-If you're sending files out for editing and the shoot had any lighting challenges — mixed colour temperature, high contrast, a venue that under-exposed — sending RAW (CR2, CR3, NEF, ARW, DNG) rather than JPEG gives whoever is editing meaningfully more to work with, at no cost difference on most per-photo pricing.
+If you're sending files out for editing and the shoot had any lighting challenges at all, mixed colour temperature, high contrast, a venue that underexposed everything, sending RAW (CR2, CR3, NEF, ARW, DNG) instead of JPEG gives whoever's editing meaningfully more to work with, usually at no cost difference on most per-photo pricing anyway.
 
----
+## One thing people get wrong about this
 
-**Sending files out for editing?** RAW files are recommended and priced the same as JPEGs — CR2, CR3, NEF, ARW and DNG all accepted. [Send a free sample edit](/contact/) or [see pricing](/pricing/).
+RAW doesn't make a bad photo good. It just gives an editor more room to fix what's fixable. A poorly composed shot or one that's genuinely out of focus stays that way no matter which file format you hand over. RAW is about headroom on correction, not a magic fix for everything.
+
+Sending files out for editing? RAW is recommended and priced the same as JPEG here, CR2, CR3, NEF, ARW, and DNG all get accepted. Send a free sample edit request or check the pricing page for full galleries.
