@@ -42,4 +42,8 @@ A stiffer fabric like a structured cotton polo shows repeat patterns more crispl
 
 Some sophisticated patterns actually combine two repeat types, a half-drop for the main motif layer paired with a straight repeat for a secondary background texture sitting behind it. This adds visual depth without adding real complexity to understand as the person ordering the work, since you're still just describing the overall feel you want and leaving the technical execution, including which repeat types get combined, to the designer handling the file.
 
+## A final practical tip before approving any repeat type
+
+Whatever repeat type ends up chosen, always ask to see it at the actual scale it'll be printed or embroidered, not just enlarged on a screen for easy viewing during review. A repeat that looks perfectly balanced blown up large on a monitor can feel completely different once shrunk down to the real size it'll appear on a chest placement or a small product tag.
+
 Want a pattern that repeats properly, not just tiles? Every repeat gets tested and shown to you before it's finalized.
