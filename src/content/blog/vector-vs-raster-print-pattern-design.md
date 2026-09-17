@@ -32,4 +32,12 @@ Open the file and zoom way in, past a hundred percent, toward the edges of any s
 
 Most people's everyday experience with images comes from phone photos and screenshots, both raster by nature, so the concept of a genuinely resolution-independent file feels unfamiliar at first. Once you've seen the zoom test above performed once, the difference becomes obvious and easy to remember for every future project going forward.
 
+## What happens if you only have a raster logo to start from
+
+Plenty of businesses only have their logo as a JPEG or PNG, often because it was designed years ago or created by someone without design software at all. This isn't a dead end. A designer can redraw, or "vectorize," an existing raster logo into a clean vector file, recreating the shapes as scalable paths rather than fixed pixels. This takes a bit more time than starting from an existing vector file, but it's a completely normal and common part of preparing older branding for apparel or large-format use.
+
+## Why keeping your vector source safe matters long term
+
+Once you have a proper vector file, store it somewhere secure and easy to find again, since it becomes the master reference for every future use of that design, resized for a new product, adapted for a new colour, printed at a completely different scale years down the line. Losing the vector source means starting the redraw process over from scratch the next time a scalable version is needed for something new.
+
 Every design here includes the editable Ai vector source file, alongside PDF, PNG and JPG, not just flattened images handed over at the end of a project.
