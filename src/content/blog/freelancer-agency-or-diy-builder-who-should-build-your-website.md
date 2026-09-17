@@ -42,6 +42,6 @@ Some businesses start with a DIY builder to get online fast and validate their i
 
 ## Questions worth asking whichever path you choose
 
-Regardless of which of the three routes you pick, a few questions apply universally. What happens if I want to make changes myself later, and does the path I've chosen make that easy or hard? What's the realistic total cost over three years, not just the upfront number I'm quoted today? And how much of my own time will this actually require, both now during the build and later during ongoing maintenance? Answering these honestly for each option often makes the right choice for your specific situation much clearer than comparing price tags alone ever could.
+Regardless of which of the three routes you pick, a few questions apply universally. What happens if I want to make changes myself later, and does the path I've chosen make that easy or hard? What's the realistic total cost over three years, not just the upfront number I'm quoted today? And how much of my own time will this actually require, both now during the build and later during ongoing maintenance? Answering these honestly for each option often makes the right choice for your specific situation much clearer than comparing price tags alone ever could, and it prevents the common regret of choosing based purely on the lowest number without considering what comes after launch.
 
 Working directly with the person actually building your site, with fixed pricing from a free scope call? That's the freelancer path, and it's what this is built around.
