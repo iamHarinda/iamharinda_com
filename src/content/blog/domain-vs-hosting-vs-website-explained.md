@@ -44,4 +44,8 @@ A missed hosting payment can take a working site offline within days, sometimes 
 
 Most registrars send renewal reminders well before a domain actually expires, but those emails are easy to dismiss as spam or simply overlook during a busy stretch. Renewing a year or two in advance when you have the budget for it removes this risk entirely and costs the same total amount either way, just paid on a different schedule that removes the anxiety of watching a countdown clock every single year.
 
+## Different types of hosting explained briefly
+
+Not all hosting is the same either. Shared hosting, the cheapest and most common option for small sites, puts your site on the same server as many others, which keeps costs low but means heavy traffic on a neighbouring site can occasionally slow yours down too. Dedicated or cloud hosting gives your site more or entirely isolated resources, costing more but handling growth and traffic spikes far more gracefully. Most small business sites do perfectly well on shared or lightly managed hosting, and upgrading later as traffic genuinely grows is usually straightforward rather than something to over-plan for on day one.
+
 Getting a site built and want the domain and hosting set up correctly from day one, in your own name? That's part of the standard launch process here.
