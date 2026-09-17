@@ -44,4 +44,12 @@ Beyond just looking unfinished, an inconsistent gallery creates real extra work 
 
 Done right, batch editing in Lightroom gets a gallery to a solid, consistent base fast. It's just not a substitute for the individual attention your hero images and any tricky lighting still genuinely need. Photographers who sync everything blindly usually don't notice the inconsistency themselves, they've been staring at the gallery too long, but clients scrolling through it fresh pick up on it immediately, even if they can't say exactly why something feels off.
 
+## Keyboard shortcuts that speed up grouped correction
+
+Once photos are sorted into lighting groups, a handful of shortcuts make the actual work faster without sacrificing the per-image checking that keeps quality high. Using the forward slash key to toggle before-and-after views while working through a group catches drift quickly, since you can flip back to the original and confirm the correction is actually moving in the right direction rather than trusting your memory of what the photo looked like a minute ago. Copying and pasting specific settings with the keyboard shortcuts, rather than always opening the full Sync Settings dialog, speeds up small, repeated adjustments across a group once you already know exactly which sliders need copying. None of this replaces the judgment calls, but it cuts the mechanical time spent clicking through menus, which adds up over a four-hundred-photo gallery more than most people expect until they actually time themselves doing it the slow way first.
+
+## When batch editing genuinely isn't worth attempting
+
+Some galleries are small or unusual enough that grouping and syncing costs more setup time than it saves. A twenty-photo engagement session shot entirely in one consistent location doesn't need elaborate lighting groups, it's basically one group already. Save the full batch workflow described here for galleries large enough to actually benefit from it, typically anything past a hundred or so images where the setup time clearly pays for itself in the editing time it saves later.
+
 Have a large gallery that needs a consistent, hand-checked edit? Every photo gets reviewed individually here, no auto-sync shortcuts on the final pass. A free sample edit shows the quality before you commit, and pricing runs by volume for full galleries.
