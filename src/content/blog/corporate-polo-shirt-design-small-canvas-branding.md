@@ -38,6 +38,10 @@ If different departments or roles need slightly different placements, a name emb
 
 Keep a clear record of the final approved files, including exact colour codes and placement measurements, somewhere your team can reference for future reorders. This prevents small, unintentional drift in the design over successive orders placed months or years apart with different suppliers or designers involved along the way.
 
+## Balancing individuality with a unified team look
+
+Some companies want a small amount of personalization, a name embroidered below the logo, for instance, while still keeping the overall design unified across the whole team or staff roster. This is achievable without sacrificing consistency, as long as the personalized element is planned into the design from the start rather than added as an afterthought that clashes visually with the rest of the established layout.
+
 ## Why corporate branding on apparel differs from other materials
 
 Unlike a printed brochure or a digital ad that a company fully controls the display context for, a polo shirt gets worn in countless different real-world settings, different lighting, different distances, different backgrounds behind the wearer. This unpredictability is exactly why simplicity and strong contrast matter more on apparel than almost any other branded material a company produces, since the design has no control over its surroundings the way a website or printed ad does.
