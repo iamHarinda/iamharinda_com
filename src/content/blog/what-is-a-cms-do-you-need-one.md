@@ -42,4 +42,8 @@ WordPress dominates the conversation because it's the oldest and most widely use
 
 Before agreeing to a CMS-based build, ask to see the actual editing dashboard you'd be using, not just a description of what it can do in theory. Editing experience varies a lot between platforms, and a system that sounds simple in a sales conversation can feel genuinely clunky once you're the one trying to update a paragraph of text at ten at night after a long day. Five minutes with a demo account tells you more than any amount of description ever could about whether you'll actually enjoy, or at least tolerate, using it regularly.
 
+## Training yourself or your team once a CMS is in place
+
+Even a genuinely simple CMS benefits from a short walkthrough at launch, ten or fifteen minutes covering exactly how to edit the pages you'll actually touch most often. Skipping this step is a common reason CMS-based sites go stale, not because the system is hard to use, but because nobody ever sat down and confirmed the actual process felt comfortable before being left to figure it out alone weeks later under time pressure.
+
 Not sure whether your site needs a CMS or not? That's exactly the kind of thing a scope call sorts out before any pricing even gets discussed.
