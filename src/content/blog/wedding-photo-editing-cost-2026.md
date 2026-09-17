@@ -30,6 +30,10 @@ Payment timing is a real difference too, not just fine print. Paying upfront and
 
 Say you're a wedding photographer with a hundred-image final gallery. You want it hand-edited, real colour correction and retouching, not just an AI pass. You're generally looking somewhere in the twenty to forty dollar range for that volume from a service that prices per photo. Sometimes less, sometimes more, depending on how much retouching each shot actually needs. Bulk orders past two or three hundred photos usually get quoted separately since a flat per-photo rate stops making sense at that scale.
 
+## How this compares to hiring in-house help
+
+A lot of studios weigh outsourcing against hiring a part-time or full-time editor directly. A part-time editor working fifteen to twenty hours a week, even at a modest hourly rate, adds up to real fixed cost every month whether or not there's enough work to fill those hours that particular week. Outsourcing per photo means you only pay for what actually got edited, which tends to favour studios with seasonal or unpredictable volume, weddings cluster heavily in certain months and dry up in others. A full-time in-house editor makes more sense once volume is consistently high enough to keep someone busy year-round, since at that point the per-photo cost of an outsourced service usually runs higher than a salaried employee's effective rate.
+
 ## Five questions worth asking before you commit
 
 Is the price per photo, per hour, or a flat package rate, and does that actually fit how your galleries vary in size?
@@ -43,5 +47,9 @@ Is the editing done by AI, by a person, or some mix of both, and does that match
 What file types can you send, and are you getting full-resolution files back at the end?
 
 Getting straight answers on these five things matters more than chasing whoever has the lowest per-photo number. A cheap rate with three paid revision rounds can end up costing more than a slightly pricier rate with unlimited revisions baked in.
+
+## A quick note on raising your own prices to match
+
+If outsourcing editing is new territory for you, it's worth building that per-photo cost directly into what you charge clients rather than absorbing it out of your existing margin. Most photographers who make this switch successfully treat editing as a line item in their own pricing model from day one, not an afterthought they discover eats into profit three months later.
 
 Curious what your own gallery would actually run? Pricing runs flat by volume, and sending two or three photos for a free sample edit first is a normal way to see the quality before spending anything. Payment isn't due until after you've approved the delivered files.
