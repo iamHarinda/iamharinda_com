@@ -131,7 +131,7 @@ const jsonLd = [
             const photos = Number(range.value);
             countEl.textContent = photos.toLocaleString("en-US");
             priceEl.textContent = `$${(photos * rate).toFixed(2)}`;
-            noteEl.hidden = photos < cap;
+            noteEl.hidden = photos <= cap;
           };
           range.addEventListener("input", update);
           update();
