@@ -32,6 +32,10 @@ A startup wanting to launch a clothing line from scratch might contact a pattern
 
 Ask yourself this simple question. Am I sourcing a blank garment and need something designed onto its surface, print, pattern, logo placement? That's pattern design. Am I creating a new garment shape from raw fabric and need the technical construction templates? That's patternmaking. If you're not sure which applies to your situation, say what you're actually trying to achieve and a legitimate designer should tell you honestly whether it's a fit for their specialty or not, rather than taking the order regardless.
 
+## Why some larger studios can appear to offer both
+
+Larger design agencies sometimes advertise both pattern design and patternmaking services under one roof, which can make the distinction feel less important than it actually is for a smaller operation. In these cases, it's usually two separate specialists working within the same studio, not one person doing both jobs, so it's still worth confirming which specialist will actually handle your specific project rather than assuming broad capability across the whole team.
+
 ## What happens if you approach the wrong type of specialist
 
 A pattern designer approached for construction pattern work should redirect you rather than attempt something outside their actual expertise, since the result would likely be unusable for real manufacturing purposes. Similarly, a patternmaker asked to create surface artwork might produce something technically functional but lacking the artistic polish a dedicated pattern designer would bring to that specific type of work.
