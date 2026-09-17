@@ -34,4 +34,12 @@ This is exactly the kind of decision worth leaving to a designer's judgment once
 
 If you're torn between two repeat types, ask your designer to show a quick preview of both on the same motif before committing to one direction. Seeing the actual visual difference side by side, rather than just reading a description, usually makes the right choice obvious in a way words alone can't fully convey to someone without design training.
 
+## Why repeat type matters more on some fabrics than others
+
+A stiffer fabric like a structured cotton polo shows repeat patterns more crisply and obviously than a flowier, draped fabric where the pattern moves and folds with the body. This means a repeat type that looks slightly gridded on a flat mockup might read completely differently once it's actually sewn into a garment that drapes and moves in wear. When possible, viewing a repeat pattern on a mockup of the actual intended fabric type, not just a generic flat preview, gives a more honest sense of how it'll really look on the finished product.
+
+## Combining repeat types within one design
+
+Some sophisticated patterns actually combine two repeat types, a half-drop for the main motif layer paired with a straight repeat for a secondary background texture sitting behind it. This adds visual depth without adding real complexity to understand as the person ordering the work, since you're still just describing the overall feel you want and leaving the technical execution, including which repeat types get combined, to the designer handling the file.
+
 Want a pattern that repeats properly, not just tiles? Every repeat gets tested and shown to you before it's finalized.
