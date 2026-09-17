@@ -36,6 +36,6 @@ A rock-bottom quote sometimes means corners get cut somewhere you won't notice u
 
 ## How to compare quotes that look completely different on paper
 
-When quotes for the same basic project vary by thousands of dollars, the gap almost always comes down to what's actually included, not just raw skill differences between developers. List out exactly what each quote covers, design, number of pages, a CMS or not, hosting setup, post-launch support, and compare those lists side by side rather than just the bottom-line number. This turns an apples-to-oranges comparison into something you can actually evaluate fairly, and it often reveals that the "expensive" quote includes several things the "cheap" one left out entirely.
+When quotes for the same basic project vary by thousands of dollars, the gap almost always comes down to what's actually included, not just raw skill differences between developers. List out exactly what each quote covers, design, number of pages, a CMS or not, hosting setup, post-launch support, and compare those lists side by side rather than just the bottom-line number. This turns an apples-to-oranges comparison into something you can actually evaluate fairly, and it often reveals that the "expensive" quote includes several things the "cheap" one left out entirely, which changes the real comparison completely once you see it laid out side by side.
 
 Want a real number instead of a wide range? A free scope call gets you a fixed price based on what you actually need, no hourly guessing involved.
