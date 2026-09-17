@@ -44,6 +44,6 @@ Checking your PageSpeed score every few months, especially after adding any new 
 
 ## Why this is worth prioritizing over other improvements
 
-It's easy to focus energy on adding new pages or features while a fundamental speed problem quietly costs more visitors than any new addition could ever bring in. Before investing in more content or more marketing spend, it's worth confirming the site itself loads quickly for the traffic you're already getting, since fixing a slow foundation often produces a bigger, faster return than almost anything else you could spend that same time or budget on instead.
+It's easy to focus energy on adding new pages or features while a fundamental speed problem quietly costs more visitors than any new addition could ever bring in. Before investing in more content or more marketing spend, it's worth confirming the site itself loads quickly for the traffic you're already getting, since fixing a slow foundation often produces a bigger, faster return than almost anything else you could spend that same time or budget on instead, and it benefits every single visitor rather than just the ones who happen to see a new page or a new ad.
 
 Custom-coded sites here ship without the bloat that comes bundled with heavy themes and page builders. Speed is part of the build, not an add-on tacked on later.
