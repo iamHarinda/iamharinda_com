@@ -40,4 +40,8 @@ Your own phone is a good starting point, but different screen sizes and browsers
 
 It's tempting to assume mobile matters less for a business targeting older customers or other businesses rather than the general public. In practice, mobile browsing habits have become nearly universal across age groups and industries alike, and assuming your specific audience is the exception is a common and costly mistake that's worth testing directly rather than guessing at based on outdated assumptions about who uses what device.
 
+## The simplest possible summary
+
+If you'd be embarrassed to hand your own phone to a customer and watch them try to use your site in front of you, that's the clearest signal something needs fixing before it costs you business you'll never even know you lost.
+
 Every site here is built mobile-first, not shrunk down from a desktop layout as an afterthought once the "real" version is finished.
