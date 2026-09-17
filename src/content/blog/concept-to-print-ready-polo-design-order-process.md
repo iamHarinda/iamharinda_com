@@ -60,6 +60,6 @@ Ordering any kind of custom creative work for the first time carries a bit of na
 
 ## Bringing it all together
 
-From that very first message to holding print-ready files in hand, the whole process is built around clear steps and honest communication at each stage, not guesswork on either side of the relationship.
+From that very first message to holding print-ready files in hand, the whole process is built around clear steps and honest communication at each stage, not guesswork on either side of the relationship at any point along the way.
 
 Ready to see what this looks like for your own design? Message first with what you're picturing, no commitment required at that stage.
