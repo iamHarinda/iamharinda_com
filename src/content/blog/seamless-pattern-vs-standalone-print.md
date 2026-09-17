@@ -34,6 +34,10 @@ A golf club wanting their crest on the chest and a plain colour on the rest of t
 
 If your project genuinely sits somewhere in between, or you're not sure which category it falls into, describing the actual finished look you're picturing to a designer, rather than trying to name the technical category yourself, usually resolves the question quickly. A designer experienced in both approaches can identify which one fits from a plain description faster than you'd expect.
 
+## Why getting the terminology right helps even if you're not a designer
+
+You don't need to become an expert in pattern design to have this conversation productively. Simply knowing the difference between these two terms, and being able to say clearly which one describes what you're picturing, puts you in a much stronger position when discussing a project with any designer, regardless of their specific background or specialty.
+
 ## A note on mixing the two within one product line
 
 A brand launching multiple products at once might genuinely need both approaches within the same order, a seamless pattern for a fabric-print product line and a standalone crest for embroidered items in the same collection. There's nothing wrong with requesting both in a single project, as long as each piece is briefed clearly for what it actually is, rather than lumping everything under one vague description and hoping the designer sorts out which is which.
