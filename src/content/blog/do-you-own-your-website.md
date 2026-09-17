@@ -40,4 +40,8 @@ Asking a developer directly, "will the domain be registered in my name, and will
 
 If you check your current setup and find the domain or code isn't actually in your name, don't panic, but do address it soon rather than putting it off. Reach out to whoever built the site and request a transfer in writing, most reasonable developers will cooperate once asked directly. If they're unresponsive or unwilling, a domain registrar can sometimes assist with a dispute process, though it's slower and more painful than simply having gotten this right from the start.
 
+## Why this check takes on more importance over time
+
+A business that's only a year or two old might not feel the weight of this issue yet, but a decade in, with a domain that's built real brand recognition and years of search ranking behind it, losing control of that address would be devastating in a way that's hard to fully appreciate in advance. The earlier this gets sorted correctly, the less there is ever at stake if a relationship with a developer eventually needs to change.
+
 Full code ownership, domain in your name, no lock-in, that's the standard here, not an upsell you have to pay extra for. Book a scope call, or reach out if you want to check your current setup.
