@@ -26,6 +26,10 @@ A raster, pixel-based image format that supports transparency, meaning the backg
 
 Another raster format, but without transparency support at all, a solid rectangular image every single time regardless of the content. Commonly used for photos and for viewing purposes, sharing on social media, in an email, in a presentation, rather than for actual production use down the line in a physical print run.
 
+## What software you'll actually need to open each type
+
+Ai files need Adobe Illustrator specifically, or a compatible alternative like Affinity Designer, to open and edit. EPS files work with most vector software, offering broader compatibility. PDF, PNG, and JPG all open in standard, free tools already on most computers, a web browser, a photo viewer, no special software purchase required at all for basic viewing purposes.
+
 ## Which one goes where in practice
 
 Sending to a printer or embroiderer for production, Ai or EPS, the editable vector source, is usually what they'll actually want to receive, sometimes alongside a vector PDF as a backup option. Using it on your own website or in a document, PNG if you need transparency, JPG if you don't need that feature. Sharing for approval or reference without needing to edit anything at all, PDF or JPG both work fine for that specific purpose.
