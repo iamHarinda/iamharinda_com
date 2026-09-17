@@ -46,4 +46,12 @@ Send RAW files plus two or three reference edits with a short style note. Get fi
 
 Photographers who stick to that order rarely end up with a gallery that "doesn't look like them." The style gets locked in during the brief and that first calibration round, well before any invoice shows up.
 
+## Building outsourcing into your regular workflow
+
+Once a first gallery goes well, the temptation is to send everything from every future wedding straight to the same editor without a second thought. That's usually fine, but it's worth keeping a couple of habits from the first round going. Keep sending a short note on anything unusual about a particular shoot, a venue you haven't used before, weird lighting from a photo booth or a smoke machine, so the editor isn't caught off guard by something your usual reference images never covered. And check in on a handful of finished galleries every few months rather than assuming quality holds steady forever without any oversight. Editors change, workloads shift, and a quick spot check costs you almost nothing compared to catching a consistency slip after it's already gone out to three clients in a row.
+
+## Why this approach beats hiring in-house too early
+
+A lot of growing studios jump straight to hiring a part-time editor before they've actually tested whether outsourcing solves the problem first. That's often the more expensive and riskier move. Outsourcing lets you test the whole approach, brief clarity, revision speed, style match, on a single gallery before committing to a monthly salary or a long-term contractor relationship. If it works, you've proven the model cheaply. If it doesn't fit your style after a couple of tries, you've lost a small amount of money instead of months of a hiring and training process that didn't pan out.
+
 Want to try this with your own photos first? Sending two or three images over for a free sample edit is the easiest way to see the style before committing a whole gallery. RAW files work best, revisions are unlimited, and payment only happens after you've approved what comes back.
