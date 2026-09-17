@@ -44,4 +44,4 @@ Photographers who never write their style down often find it drifts without them
 
 Pull up your last three delivered galleries side by side and look specifically at skin tone and overall warmth across all three. If they look meaningfully different from each other without an intentional reason, that's worth investigating before it becomes a pattern a client eventually notices and mentions in a review. Catching drift early, while it's still small, is far easier than trying to explain a noticeable style shift after the fact.
 
-Outsourcing part of your editing without losing your style? Send reference edits alongside your RAW files, and a free sample edit will show whether the match is close before you commit to a full gallery. Check pricing here too.
+Outsourcing part of your editing without losing your style? Send reference edits alongside your RAW files, and a [free sample edit](/contact/) will show whether the match is close before you commit to a full gallery. [Check pricing here too](/pricing/#photo-editing).

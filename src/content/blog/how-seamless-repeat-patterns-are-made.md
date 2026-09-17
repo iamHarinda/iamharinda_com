@@ -58,4 +58,4 @@ The fastest way to move through these six steps efficiently is responding quickl
 
 Knowing roughly how long each step should reasonably take, and what a genuine tiled test actually looks like, means you can tell the difference between a designer moving carefully through real repeat testing and one rushing straight to a flattened final file without ever properly checking the tile against itself. This knowledge alone puts you in a much stronger position to ask the right questions before committing to a full production order based on unverified work.
 
-Want a repeat pattern built and tested properly before it goes to print? Every design comes with a mockup showing how it actually looks repeated on the garment itself.
+Want a repeat pattern built and tested properly before it goes to print? [Every design](/fashion-designing/#pricing) comes with a mockup showing how it actually looks repeated on the garment itself.

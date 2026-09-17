@@ -50,4 +50,4 @@ Before finalizing a design with a specific colour count, confirm directly with y
 
 Colour count isn't just an artistic choice, it's tied directly to the physical production method behind the finished product. Treating it that way from the very first conversation leads to smoother, more predictable results every time.
 
-Tell your designer the production method up front and the design gets built to actually work with it from day one of the project.
+[Tell your designer](/contact/) the production method up front and the design gets built to actually work with it from day one of the project.

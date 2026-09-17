@@ -50,4 +50,4 @@ A trend showing up heavily in mass-market fast fashion has usually already peake
 
 A well-designed pattern built on solid fundamentals, good colour balance, a properly tested repeat, motifs that suit the brand, tends to age better than one built purely around a trending aesthetic that will inevitably shift again within a year or two of launching. Trends are worth knowing about and drawing inspiration from, but they shouldn't override the more durable qualities that make a pattern genuinely work well over time regardless of what's currently popular.
 
-Want a design that feels current without just copying a trend? Send a brief and a couple of references you like, and get a design built around your brand specifically.
+Want a design that feels current without just copying a trend? [Send a brief](/contact/) and a couple of references you like, and get a design built around your brand specifically.

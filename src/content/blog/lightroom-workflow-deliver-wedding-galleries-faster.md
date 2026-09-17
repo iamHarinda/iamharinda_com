@@ -48,4 +48,4 @@ The days right after a shoot set the tone for the whole editing timeline. Import
 
 If you're not sure which of the three bottlenecks above is actually costing you the most time, look at your last five deliveries and note how many days passed between shoot date and the start of active editing, versus how many days the editing itself took once you actually sat down to do it. A big gap before you start points at a scheduling or motivation problem more than a workflow problem. A long stretch once you're actively working points at the culling or correction steps themselves needing the fixes described here.
 
-Backed up on editing and need a gallery turned around? RAW files come in, get hand-corrected and retouched on a calibrated screen, and full-resolution files go back out, first proofs usually within a day. Send a free sample edit request or check the pricing page.
+Backed up on editing and need a gallery turned around? RAW files come in, get hand-corrected and retouched on a calibrated screen, and full-resolution files go back out, first proofs usually within a day. [Send a free sample edit request](/contact/) or check the [pricing page](/pricing/#photo-editing).

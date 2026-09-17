@@ -46,4 +46,4 @@ A developer who walks you through the full realistic cost picture at the start, 
 
 None of these ongoing costs should discourage anyone from building a website. They're simply worth knowing about upfront so the decision to move forward is made with the full picture in view, not just the number on the first invoice you happen to see.
 
-Ongoing maintenance here is a stated flat monthly rate, no surprise invoices, listed right alongside the build pricing from the start.
+Ongoing maintenance here is a stated flat monthly rate, no surprise invoices, listed right alongside the [build pricing](/web-development/#pricing) from the start.

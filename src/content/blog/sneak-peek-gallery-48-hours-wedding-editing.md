@@ -56,4 +56,4 @@ Not every photographer or workflow can hit a two-day turnaround, and that's fine
 
 A couple who receives a beautiful, thoughtfully chosen sneak peek exactly when promised starts the whole post-wedding relationship with confidence in you, which carries through to how they receive the full gallery weeks later, patiently and without the anxious follow-up messages that come from feeling forgotten during a long wait.
 
-Need a fast turnaround on a priority batch while the full gallery is still in progress? First proofs typically come back within a day. Send a free sample edit request or check current pricing.
+Need a fast turnaround on a priority batch while the full gallery is still in progress? First proofs typically come back within a day. [Send a free sample edit request](/contact/) or check [current pricing](/pricing/#photo-editing).

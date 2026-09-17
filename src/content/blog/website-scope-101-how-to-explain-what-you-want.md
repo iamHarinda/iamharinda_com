@@ -56,4 +56,4 @@ Projects that start without this kind of clarity tend to run into trouble partwa
 
 If none of this feels natural to write out on your own, that's completely normal and not a sign you're doing anything wrong. Plenty of business owners find it easier to talk through their idea out loud on a call than to type it up in advance, and a good developer knows how to draw out the right details through simple conversation rather than expecting a perfectly polished brief from day one, before you've even had a chance to think it through properly.
 
-Have a rough idea but not sure how to put it into words yet? A free scope call is built exactly for this. Talking it through out loud is usually a lot easier than writing it all down first.
+Have a rough idea but not sure how to put it into words yet? A [free scope call](/web-development/) is built exactly for this. Talking it through out loud is usually a lot easier than writing it all down first.

@@ -58,4 +58,4 @@ Once delivered, save these files in a clearly labeled folder, ideally with the p
 
 Before considering a project fully complete, do a quick inventory check, confirm you have the vector source, the print-ready PDF, and web-friendly PNG and JPG versions all saved somewhere secure. This five-minute check at project close prevents a scramble later when one of these formats is suddenly needed for a new use nobody anticipated at the time.
 
-Every order here includes Ai, PDF, PNG and JPG, the full set, not just a flattened preview handed over at the end of the project.
+[Every order here](/fashion-designing/#pricing) includes Ai, PDF, PNG and JPG, the full set, not just a flattened preview handed over at the end of the project.

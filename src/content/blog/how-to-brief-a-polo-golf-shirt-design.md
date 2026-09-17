@@ -60,4 +60,4 @@ Some people hesitate to reach out until they feel their idea is fully formed, wo
 
 Whatever you send in your initial brief, expect the first concept to need at least some adjustment, and treat that as a completely normal part of the process rather than a sign the brief was somehow inadequate. Even the most detailed brief can't fully capture every preference, and revisions exist specifically to close that gap between description and finished design.
 
-Have a rough idea but don't know how to describe it well? Message first and talk it through before ordering anything, that's exactly what the process is built for.
+Have a rough idea but don't know how to describe it well? [Message first](/contact/) and talk it through before ordering anything, that's exactly what the process is built for.

@@ -52,4 +52,4 @@ For a well-practiced photographer using the three-pass system on a typical three
 
 The three-pass approach feels slower than just scrolling through once and picking favourites, but it consistently produces a tighter, more complete final gallery with far less second-guessing along the way. Trust the structure even when a faster shortcut feels tempting halfway through a long shoot, especially late at night when every extra minute in front of the screen feels harder to justify than it did that morning.
 
-Once culling's done, need the final selects edited? RAW files are recommended, and everything gets colour-corrected and retouched by hand. Send a free sample edit request or check pricing by volume.
+Once culling's done, need the final selects edited? RAW files are recommended, and everything gets colour-corrected and retouched by hand. [Send a free sample edit request](/contact/) or check [pricing](/pricing/#photo-editing) by volume.

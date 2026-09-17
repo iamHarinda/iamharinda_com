@@ -60,4 +60,4 @@ Once a designer has your full brief, they'll typically confirm receipt and flag 
 
 Once you've sent a genuinely thorough brief, resist the urge to second-guess every small decision a designer makes in the first concept. Trust the process enough to see a full first draft before jumping to conclusions, since some choices that seem unusual in isolation often make more sense once viewed as part of the complete, finished design.
 
-Have your logo and a rough idea ready? Send it over and get concepts back with a realistic mockup on the actual garment.
+Have your logo and a rough idea ready? [Send it over](/contact/) and get concepts back with a realistic mockup on the actual garment.

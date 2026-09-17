@@ -54,4 +54,4 @@ If you're unsure about a developer after an initial conversation, asking to spea
 
 A single yellow flag, a slightly thin portfolio, a first-time freelancer without years of testimonials yet, doesn't automatically mean walk away. Everyone starts somewhere, and a newer developer with clear communication, honest pricing, and a written scope can still be a great choice, sometimes even a better value than an established name coasting on reputation. The real concern is multiple red flags stacking together, vague pricing plus pressure to decide immediately plus no written scope, which together paint a much clearer picture than any single warning sign taken entirely on its own, and that combined pattern is what's actually worth walking away from before any money changes hands.
 
-Every project here starts with a free scope call and a written, fixed-price proposal before anything gets charged.
+Every project here starts with a [free scope call](/web-development/) and a written, fixed-price proposal before anything gets charged.

@@ -48,4 +48,4 @@ Regardless of which of the three routes you pick, a few questions apply universa
 
 None of these choices are permanent. A business that starts on a builder can move to a freelancer later, and a business working with a freelancer can bring in an agency if it eventually outgrows what one person can handle. The initial decision matters less than most people assume going in, since almost every path can evolve as the business itself grows and its needs change over time.
 
-Working directly with the person actually building your site, with fixed pricing from a free scope call? That's the freelancer path, and it's what this is built around.
+Working directly with the person actually building your site, with fixed pricing from a [free scope call](/web-development/)? That's the freelancer path, and it's what this is built around.

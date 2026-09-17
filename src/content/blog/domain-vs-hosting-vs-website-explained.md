@@ -48,4 +48,4 @@ Most registrars send renewal reminders well before a domain actually expires, bu
 
 Not all hosting is the same either. Shared hosting, the cheapest and most common option for small sites, puts your site on the same server as many others, which keeps costs low but means heavy traffic on a neighbouring site can occasionally slow yours down too. Dedicated or cloud hosting gives your site more or entirely isolated resources, costing more but handling growth and traffic spikes far more gracefully. Most small business sites do perfectly well on shared or lightly managed hosting, and upgrading later as traffic genuinely grows is usually straightforward rather than something to over-plan for on day one.
 
-Getting a site built and want the domain and hosting set up correctly from day one, in your own name? That's part of the standard launch process here.
+Getting a site built and want the domain and hosting set up correctly from day one, in your own name? That's part of the [standard launch process here](/web-development/).

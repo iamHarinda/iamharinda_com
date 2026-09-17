@@ -50,4 +50,4 @@ Beyond the basic edge-matching that makes a tile technically seamless, an experi
 
 Seamless pattern work rewards patience over speed. A design rushed through without proper repeat testing might save a day upfront, but it risks a far more expensive mistake once it's already printed across an entire production run that can't easily be undone or corrected after the fact.
 
-Ordering a seamless pattern or print design for a garment? Every order includes a mockup so you can see exactly how the pattern sits on the actual product before anything goes to print.
+Ordering a seamless pattern or print design for a garment? [Every order](/fashion-designing/#pricing) includes a mockup so you can see exactly how the pattern sits on the actual product before anything goes to print.

@@ -50,4 +50,4 @@ There's no universal answer, but a useful gut check is asking whether the retouc
 
 Software and technique only get you part of the way. The rest comes down to stepping back from the screen periodically and judging the result the way a person browsing a gallery actually would, not the way someone who's been staring at one face for twenty minutes straight tends to. If a retouch still looks right after a short break away from the screen, it's probably genuinely finished.
 
-Want retouching that keeps skin looking like skin? No plastic smoothing, no face filters, blemishes go, texture stays. Send a free sample edit request or check pricing for full galleries.
+Want retouching that keeps skin looking like skin? No plastic smoothing, no face filters, blemishes go, texture stays. [Send a free sample edit request](/contact/) or check [pricing](/pricing/#photo-editing) for full galleries.

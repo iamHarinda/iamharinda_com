@@ -56,4 +56,4 @@ Understanding the wait from the client's side helps explain why turnaround commu
 
 Track your actual delivery times against your promised times for every gallery, even informally in a spreadsheet. Patterns show up fast, certain months consistently run longer, certain gallery sizes consistently take more hours than expected, and that data makes your next round of promised dates genuinely more accurate instead of just optimistic guessing repeated over and over.
 
-Need a realistic turnaround on your next gallery? First proofs typically come back within a day, and full fifty to two hundred photo galleries usually finish in two to four days. Send a free sample edit request to see the process, or check current pricing.
+Need a realistic turnaround on your next gallery? First proofs typically come back within a day, and full fifty to two hundred photo galleries usually finish in two to four days. [Send a free sample edit request](/contact/) to see the process, or check [current pricing](/pricing/#photo-editing).

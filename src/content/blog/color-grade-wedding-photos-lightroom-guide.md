@@ -54,4 +54,4 @@ A genuinely finished grade holds up in three different conditions: viewed at nor
 
 Before sending a gallery back to a client, scroll through it fast, at thumbnail size, the way a couple actually will the first time they open the link. Anything that jumps out as too warm, too cool, or noticeably different from its neighbours at a glance is worth a second look, even if it passed every other check along the way. This final pass takes maybe two minutes and catches the kind of small inconsistency that's easy to miss when you've been staring at individual photos for hours.
 
-Want a gallery graded and corrected by hand, frame by frame? No presets, no AI batch looks here, every image gets colour-corrected and graded individually on a calibrated screen. Send two or three photos over for a free sample edit, or check the pricing page for full galleries.
+Want a gallery graded and corrected by hand, frame by frame? No presets, no AI batch looks here, every image gets colour-corrected and graded individually on a calibrated screen. Send two or three photos over for a [free sample edit](/contact/), or check the [pricing page](/pricing/#photo-editing) for full galleries.

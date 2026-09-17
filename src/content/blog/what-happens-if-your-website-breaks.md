@@ -46,4 +46,4 @@ Even without a formal maintenance plan, a yearly self-check catches a lot. Confi
 
 Write down, somewhere easy to find later, who built your site, how to reach them, and what your support arrangement actually covers. This sounds obvious, but a surprising number of business owners lose track of this basic information within a year or two, especially if the original build happened during a busy period and the details never got written down anywhere beyond an old email thread nobody can find anymore when it actually matters.
 
-Thirty days of post-launch support comes included with every build here, and ongoing maintenance is available after that at a stated monthly rate, no surprises waiting down the road.
+Thirty days of post-launch support comes included with [every build here](/web-development/), and ongoing maintenance is available after that at a stated monthly rate, no surprises waiting down the road.

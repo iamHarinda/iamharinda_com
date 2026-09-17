@@ -52,4 +52,4 @@ Once photos are sorted into lighting groups, a handful of shortcuts make the act
 
 Some galleries are small or unusual enough that grouping and syncing costs more setup time than it saves. A twenty-photo engagement session shot entirely in one consistent location doesn't need elaborate lighting groups, it's basically one group already. Save the full batch workflow described here for galleries large enough to actually benefit from it, typically anything past a hundred or so images where the setup time clearly pays for itself in the editing time it saves later.
 
-Have a large gallery that needs a consistent, hand-checked edit? Every photo gets reviewed individually here, no auto-sync shortcuts on the final pass. A free sample edit shows the quality before you commit, and pricing runs by volume for full galleries.
+Have a large gallery that needs a consistent, hand-checked edit? Every photo gets reviewed individually here, no auto-sync shortcuts on the final pass. A [free sample edit](/contact/) shows the quality before you commit, and [pricing](/pricing/#photo-editing) runs by volume for full galleries.

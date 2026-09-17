@@ -46,4 +46,4 @@ Before agreeing to a CMS-based build, ask to see the actual editing dashboard yo
 
 Even a genuinely simple CMS benefits from a short walkthrough at launch, ten or fifteen minutes covering exactly how to edit the pages you'll actually touch most often. Skipping this step is a common reason CMS-based sites go stale, not because the system is hard to use, but because nobody ever sat down and confirmed the actual process felt comfortable before being left to figure it out alone weeks later under time pressure.
 
-Not sure whether your site needs a CMS or not? That's exactly the kind of thing a scope call sorts out before any pricing even gets discussed.
+Not sure whether your site needs a CMS or not? That's exactly the kind of thing a [scope call](/web-development/) sorts out before any pricing even gets discussed.

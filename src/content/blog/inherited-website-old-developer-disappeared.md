@@ -48,4 +48,4 @@ Once ownership and access are sorted, write down the key details somewhere safe,
 
 Some business owners feel a bit embarrassed admitting they don't know who owns their own website, as though it reflects poorly on how they've run their business. It doesn't. This situation is common enough that any experienced developer has seen it many times before and won't think twice about it. The only real mistake is letting that discomfort delay fixing something that only gets harder to untangle the longer it sits unresolved, so reaching out sooner rather than later is always the better move.
 
-Have a site with an access problem, or an old developer who's gone quiet on you? Send over what you have and get an honest read on whether it's worth saving or better off rebuilt.
+Have a site with an access problem, or an old developer who's gone quiet on you? [Send over what you have](/contact/) and get an honest read on whether it's worth saving or better off rebuilt.

@@ -50,4 +50,4 @@ Building a full store when a simple contact form would have served better means 
 
 If purchases involve any back-and-forth, custom pricing, scheduling, or details that vary job to job, lean toward a contact-based site. If you're selling something fixed and ready to go the moment someone wants it, lean toward a store or a simple payment link. Most small businesses know instinctively which camp they fall into once the question's framed this clearly, even if they walked in assuming they needed the more complex option by default.
 
-Not sure whether you need a full store or something simpler? That's exactly the kind of question a scope call is built for.
+Not sure whether you need a full store or something simpler? That's exactly the kind of question a [scope call](/web-development/) is built for.

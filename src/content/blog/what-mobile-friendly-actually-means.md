@@ -52,4 +52,4 @@ Mobile visitors who bounce off a frustrating site rarely leave a complaint or se
 
 If you'd be embarrassed to hand your own phone to a customer and watch them try to use your site in front of you, that's the clearest signal something needs fixing before it costs you business you'll never even know you lost, quietly, one visitor at a time, without any complaint or feedback ever reaching you.
 
-Every site here is built mobile-first, not shrunk down from a desktop layout as an afterthought once the "real" version is finished.
+[Every site here](/web-development/) is built mobile-first, not shrunk down from a desktop layout as an afterthought once the "real" version is finished.

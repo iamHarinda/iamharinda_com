@@ -48,4 +48,4 @@ Even businesses that get most of their actual bookings through Instagram or TikT
 
 Neither option needs to come first in some fixed order. What matters is that whichever you build, social account or website, actually gets finished and kept current, rather than half-started and abandoned. A simple, complete website beats an ambitious one that never launches, and a modestly active social account beats a beautifully designed one that hasn't posted anything in months. Consistency across whichever channels you choose to maintain matters more in the long run than picking the theoretically perfect combination of tools on day one and then losing momentum trying to keep all of it running at once.
 
-Thinking about a first website, or wondering if you actually need one? A free scope call is the easiest way to find out what you'd actually need, no pressure, no charge attached.
+Thinking about a first website, or wondering if you actually need one? A [free scope call](/web-development/) is the easiest way to find out what you'd actually need, no pressure, no charge attached.

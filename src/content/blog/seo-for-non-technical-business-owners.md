@@ -42,4 +42,4 @@ Google Search Console, a free tool from Google itself, shows which searches actu
 
 For a business serving a specific city or region, local SEO offers a genuinely favourable opportunity compared to competing nationally. Fewer competitors are actively optimizing for local search phrases specifically, which means consistent basic effort, an accurate Google Business Profile, some local directory listings, content mentioning your actual service area by name, can produce meaningfully better results faster than the same effort would in a more crowded national market with far more competition fighting for the same broad terms.
 
-A well-structured, fast, mobile-friendly site is the technical foundation SEO builds on, and that's baked into every build here, not sold separately as some kind of add-on you have to pay extra for later.
+A well-structured, fast, mobile-friendly site is the technical foundation SEO builds on, and that's baked into [every build here](/web-development/), not sold separately as some kind of add-on you have to pay extra for later.

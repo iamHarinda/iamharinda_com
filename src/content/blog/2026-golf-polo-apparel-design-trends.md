@@ -50,4 +50,4 @@ Trend cycles will keep moving regardless of what any brand does, and trying to c
 
 Whichever direction you lean toward, checking how it looks alongside your existing signage, website, and other branded materials ensures the polo design feels like part of the same family rather than a disconnected experiment. Consistency across every touchpoint, not just the apparel itself, is ultimately what makes a brand feel established and trustworthy to anyone encountering it.
 
-Bold or understated, the design gets built around your brand, not a generic trend template pulled off a shelf.
+Bold or understated, [the design gets built around your brand](/fashion-designing/#pricing), not a generic trend template pulled off a shelf.

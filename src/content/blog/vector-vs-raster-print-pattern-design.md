@@ -48,4 +48,4 @@ Once you have a proper vector file, store it somewhere secure and easy to find a
 
 This whole distinction sounds technical the first time you hear it, but it boils down to a genuinely simple idea once explained clearly. Ask for vector when it's going anywhere physical, and don't worry about the format otherwise.
 
-Every design here includes the editable Ai vector source file, alongside PDF, PNG and JPG, not just flattened images handed over at the end of a project.
+[Every design here](/fashion-designing/#pricing) includes the editable Ai vector source file, alongside PDF, PNG and JPG, not just flattened images handed over at the end of a project.

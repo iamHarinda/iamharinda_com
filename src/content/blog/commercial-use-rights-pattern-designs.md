@@ -54,4 +54,4 @@ Most buyers never think to ask about commercial rights because the question simp
 
 If you're working with a designer in a different country than your own business is based, commercial use terms can sometimes interact with different regional copyright conventions in ways that add complexity. This isn't usually a major practical issue for typical apparel orders, but for a large, high-stakes production run, a quick conversation about which country's terms govern the agreement adds an extra layer of clarity worth having upfront.
 
-Every design here is built from scratch for your specific brief, with full commercial use included, no separate licensing, no usage cap to worry about.
+[Every design here](/fashion-designing/#pricing) is built from scratch for your specific brief, with full commercial use included, no separate licensing, no usage cap to worry about.

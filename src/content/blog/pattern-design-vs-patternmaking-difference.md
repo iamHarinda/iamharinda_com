@@ -52,4 +52,4 @@ If your project actually requires cut-and-sew patternmaking, garment constructio
 
 Surface versus structure. Pattern design handles what you see printed or embroidered on a garment's surface. Patternmaking handles the actual shape and construction of the garment underneath it. Keeping that one distinction in mind is usually enough to navigate any future conversation about sourcing either type of work confidently.
 
-This is pattern and print design, artwork and mockups for existing garments, not cut-and-sew patternmaking. If that's what you actually need, it's worth knowing before you order. Ask first if you're not sure it's a fit.
+This is pattern and print design, artwork and mockups for existing garments, not cut-and-sew patternmaking. If that's what you actually need, it's worth knowing before you order. [Ask first](/contact/) if you're not sure it's a fit.

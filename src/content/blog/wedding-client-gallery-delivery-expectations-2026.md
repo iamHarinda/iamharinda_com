@@ -50,4 +50,4 @@ Even a well-chosen platform occasionally has an off day, a slow load, a broken l
 
 It's easy to treat delivery as an afterthought once the real creative work, the shooting and editing, is finished. Couples don't experience it that way. For them, the delivery moment is often the actual emotional payoff of the entire process, the first time they get to relive their day through the photos. Treating that moment with the same intention as the wedding day itself pays off in reviews, referrals, and the kind of goodwill that turns a one-time client into someone who recommends you for years afterward.
 
-Need a reliable turnaround to build your delivery promise around? First proofs typically come back within a day, full galleries in two to four days for standard volumes. Send a free sample edit request or check current pricing.
+Need a reliable turnaround to build your delivery promise around? First proofs typically come back within a day, full galleries in two to four days for standard volumes. [Send a free sample edit request](/contact/) or check [current pricing](/pricing/#photo-editing).

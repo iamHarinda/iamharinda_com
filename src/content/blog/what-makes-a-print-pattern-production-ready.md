@@ -50,4 +50,4 @@ If a printer bounces a file back as unusable, the fix usually isn't starting ove
 
 Rather than discovering a production problem after the fact, ask any designer directly, before committing to an order, whether they build files specifically for print production or purely for digital viewing and presentation. This single question filters out designers who only work in a purely visual, screen-based capacity from those who genuinely understand what a physical print run actually requires to succeed without costly delays.
 
-Every order here comes with Ai, PDF, PNG and JPG files at print resolution, the formats a print shop or supplier can actually run with directly.
+[Every order here](/fashion-designing/#pricing) comes with Ai, PDF, PNG and JPG files at print resolution, the formats a print shop or supplier can actually run with directly.

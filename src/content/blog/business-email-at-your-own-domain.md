@@ -50,4 +50,4 @@ Some business owners worry that switching email addresses means losing important
 
 Every piece of communication with a potential customer shapes their impression of your business before they've even seen your actual work. Email is one of the most frequent touchpoints, often the very first one, and getting it right costs almost nothing compared to the trust it quietly builds every single time someone sees your address land in their inbox.
 
-Business email setup is part of the standard launch process here, right alongside the domain and hosting configuration.
+Business email setup is part of the [standard launch process here](/web-development/), right alongside the domain and hosting configuration.

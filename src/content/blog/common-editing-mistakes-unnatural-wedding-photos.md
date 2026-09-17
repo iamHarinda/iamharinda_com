@@ -58,4 +58,4 @@ There's a real psychological reason editors and photographers alike miss these i
 
 If a client points out one of these issues after a gallery's already gone out, the right response is usually a quick, no-argument fix rather than a defense of the original choice. A single corrected batch sent promptly costs very little compared to the damage a defensive response does to the relationship, and it often turns a potential complaint into a client who feels genuinely well taken care of.
 
-Want every photo checked individually instead of run through a fixed formula? That's the whole approach here, hand-corrected on a calibrated screen. Send a free sample edit request or check pricing.
+Want every photo checked individually instead of run through a fixed formula? That's the whole approach here, hand-corrected on a calibrated screen. [Send a free sample edit request](/contact/) or check [pricing](/pricing/#photo-editing).

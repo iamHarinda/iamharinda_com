@@ -54,4 +54,4 @@ Some photographers shoot RAW plus JPEG simultaneously for exactly this reason, g
 
 If storage and transfer speed aren't a real constraint for your workflow, shooting RAW and keeping that option open costs you very little and protects you against exactly the kind of lighting surprises a wedding day tends to throw at even the most prepared photographer.
 
-Sending files out for editing? RAW is recommended and priced the same as JPEG here, CR2, CR3, NEF, ARW, and DNG all get accepted. Send a free sample edit request or check the pricing page for full galleries.
+Sending files out for editing? RAW is recommended and priced the same as JPEG here, CR2, CR3, NEF, ARW, and DNG all get accepted. [Send a free sample edit request](/contact/) or check the [pricing page](/pricing/#photo-editing) for full galleries.

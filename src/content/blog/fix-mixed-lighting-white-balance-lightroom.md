@@ -50,4 +50,4 @@ Once basic white balance and masking stop being enough on a particularly stubbor
 
 Couples look at their wedding photos for decades, at anniversaries, showing their kids, printing enlargements for a new house. A colour cast that seemed minor at delivery time becomes a lot more obvious once a photo is printed large and hung on a wall under normal home lighting rather than viewed quickly on a phone screen. Getting mixed lighting right isn't just about a client's first reaction to the gallery. It's about how the photos hold up over the years they'll actually be looked at.
 
-Have a gallery with tricky mixed lighting throughout? Every frame gets corrected by eye on a factory-calibrated monitor here, which is exactly the kind of problem that needs a real human judgment call. Send a free sample edit request or check pricing for full galleries.
+Have a gallery with tricky mixed lighting throughout? Every frame gets corrected by eye on a factory-calibrated monitor here, which is exactly the kind of problem that needs a real human judgment call. [Send a free sample edit request](/contact/) or check [pricing](/pricing/#photo-editing) for full galleries.

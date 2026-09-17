@@ -50,4 +50,4 @@ Things like collar colour, button colour, and even the specific shade of the gar
 
 Before approving a final polo design, try viewing the mockup at a small size, roughly how it would appear in a group photo or from across a room, not just zoomed in on a screen during review. Many design elements that look impressive up close lose their impact or clarity at a normal viewing distance, and catching that gap before production saves a genuinely disappointing result once the real shirts are in hand and being worn by the actual team or staff they were designed for.
 
-Every polo and golf shirt design here includes a realistic front and back mockup on the actual garment, not just flat artwork sitting on a plain background.
+[Every polo and golf shirt design here](/fashion-designing/#pricing) includes a realistic front and back mockup on the actual garment, not just flat artwork sitting on a plain background.
