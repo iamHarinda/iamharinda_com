@@ -40,6 +40,6 @@ Picture two identical designs, one built with three flat colours for screen prin
 
 ## What to do if you're not sure your supplier can handle your colour count
 
-Before finalizing a design with a specific colour count, confirm directly with your actual printer or embroiderer what they can realistically handle for your production method and budget. Suppliers vary in their equipment and expertise, and a quick confirmation call prevents a beautifully designed pattern from hitting an unexpected production limitation partway through the ordering process.
+Before finalizing a design with a specific colour count, confirm directly with your actual printer or embroiderer what they can realistically handle for your production method and budget. Suppliers vary in their equipment and expertise, and a quick confirmation call prevents a beautifully designed pattern from hitting an unexpected production limitation partway through the ordering process, after time and enthusiasm have already gone into a specific direction.
 
 Tell your designer the production method up front and the design gets built to actually work with it from day one of the project.
