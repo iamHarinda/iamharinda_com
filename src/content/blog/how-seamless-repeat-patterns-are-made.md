@@ -44,7 +44,7 @@ For a moderately complex pattern with two or three motifs, expect somewhere betw
 
 ## What happens if a repeat pattern needs to scale to different products
 
-A pattern originally tested and approved for a polo shirt sometimes needs to work on a different product later, a cap, a tote bag, packaging. The underlying tile can usually adapt, but the repeat needs re-testing at the new scale and surface shape, since what reads perfectly on a chest-sized print area can behave differently spread across a much larger or oddly shaped surface entirely. Budgeting a bit of extra time for this re-testing, rather than assuming a pattern automatically transfers, avoids a nasty surprise later in a broader product line rollout.
+A pattern originally tested and approved for a polo shirt sometimes needs to work on a different product later, a cap, a tote bag, packaging. The underlying tile can usually adapt, but the repeat needs re-testing at the new scale and surface shape, since what reads perfectly on a chest-sized print area can behave differently spread across a much larger or oddly shaped surface entirely. Budgeting a bit of extra time for this re-testing, rather than assuming a pattern automatically transfers cleanly, avoids a nasty surprise later once a broader product line rollout is already underway and harder to adjust.
 
 ## What you can do to speed the process up on your end
 
