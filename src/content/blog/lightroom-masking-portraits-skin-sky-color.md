@@ -1,47 +1,35 @@
 ---
 title: "Lightroom Masking for Portraits: Skin, Sky and Selective Color Explained"
-description: "Lightroom's masking tools let you edit one part of a photo without touching the rest. Here's how wedding and portrait photographers actually use them."
+description: "Lightroom's masking tools let you edit one part of a photo without touching the rest. Here's how wedding and portrait photographers actually put them to work."
 publishDate: 2026-07-10
 ---
 
-Lightroom's masking panel (the AI-assisted Select Subject, Select Sky and range masks) is the tool that separates a flat, global edit from one that looks deliberately shaped. For portraits and weddings, three masks handle almost everything.
+Lightroom's masking panel, the AI-assisted Select Subject, Select Sky, and range masks, is what separates a flat, global edit from one that actually looks shaped on purpose. For portraits and weddings specifically, three masks cover almost everything you'll need.
 
-## Select Subject / Select Person
+## Select Subject and Select Person
 
-Lightroom can detect a person in frame and mask them separately from the background — including sub-masks for skin, clothing, hair and background within that selection. This is the fastest way to:
+Lightroom can spot a person in the frame and mask them separately from the background, including sub-masks for skin, clothing, hair, and background within that one selection. This is the fastest way to brighten a subject slightly against a darker background without lifting the whole frame along with them. It also lets you smooth skin or pull back clarity without softening the background too, and adjust clothing colour, a bridesmaid's dress, a suit jacket, without shifting the skin tone next to it.
 
-- Brighten a subject slightly against a darker background without lifting the whole frame.
-- Apply skin-specific smoothing or clarity reduction without softening the background too.
-- Adjust clothing colour (a bridesmaid dress, a suit) without shifting skin tone.
-
-It isn't perfect on tricky edges — veils, flyaway hair, overlapping subjects — so always zoom in and check the mask overlay before adjusting sliders underneath it.
+It's not flawless on tricky edges. Veils, flyaway hair, and people overlapping in frame all trip it up sometimes. Always zoom in and actually check the mask overlay before you start pushing sliders underneath it.
 
 ## Select Sky
 
-For outdoor and venue-exterior shots, Select Sky isolates the sky in one click, which is useful for:
+For anything shot outdoors or near a venue exterior, Select Sky isolates the sky in one click. That's useful for pulling back a blown-out sky without darkening the couple standing in front of it, adding warmth to a sunset without pushing that warmth into the rest of the frame, or fixing a flat white sky on an overcast day by adding gentle graduated colour where there wasn't any before.
 
-- Pulling back a blown-out sky without darkening the couple in the foreground.
-- Adding warmth to a sunset sky without pushing it into the rest of the frame.
-- Fixing a flat white sky by adding gentle graduated color, common on overcast wedding days.
+## Range masks based on color and luminance
 
-## Range masks: color and luminance
+Range masks work differently. They select based on what's already sitting in the image rather than detecting a subject. A colour range mask lets you grab everything close to a specific hue, a particular flower colour, a bridesmaid dress, and adjust just that in isolation. A luminance range mask selects by brightness instead, handy for targeting only the brightest highlights, a blown-out window, or only the deepest shadows where a dark suit is losing all its detail.
 
-Range masks select by what's already in the image rather than by subject detection:
+These take longer to set up than subject detection does, but they catch things AI subject detection simply doesn't register as a distinct subject. A specific fabric colour. A strip of window light. A patch of grass that's throwing an unwanted green cast onto skin nearby.
 
-- **Color range mask** — select everything close to a specific hue (a particular flower colour, a bridesmaid dress) to adjust it in isolation.
-- **Luminance range mask** — select by brightness, useful for targeting only the brightest highlights (a blown window) or only the deepest shadows (a dark suit losing detail).
+## A masking workflow that actually works on a wedding gallery
 
-These are slower to set up than subject detection but work on things AI subject detection doesn't recognise as a distinct "subject" — a specific fabric colour, a strip of window light, a patch of grass.
+Start with the global correction, white balance and exposure across the whole frame. Then a subject mask for skin, a modest clarity or brightness adjustment if it's needed. Add a sky mask on any outdoor frame with a blown-out or flat sky. Finish with a range mask only for the specific problem spots a subject or sky mask can't reach, a stray colour cast, an isolated highlight nobody else fixed.
 
-## A practical masking workflow for a wedding gallery
+Skipping straight to sliders without masking first is exactly how "the whole photo looks softened" or "the sky's fine but now the bride looks too warm" edits happen. Masking takes longer per photo, which is precisely why AI batch tools tend to skip the more surgical versions of it. It's also why a hand-masked edit on the hero shots from a gallery usually looks noticeably more controlled than a one-click batch pass ever manages.
 
-1. Global correction first — white balance and exposure for the whole frame.
-2. Subject mask for skin — modest clarity/texture adjustment, brightness if needed.
-3. Sky mask on any outdoor frame with a blown or flat sky.
-4. Range mask only for the specific problem spots a subject or sky mask won't catch — a stray colour cast, an isolated highlight.
+## Where people usually go wrong with masking
 
-Skipping straight to sliders without masking is how "the whole photo looks softened" or "the sky is fine but now the bride is too warm" edits happen. Masking is slower per photo, which is exactly why AI batch tools tend to skip the more surgical versions of it — and why a hand-masked edit on the hero images from a gallery usually looks noticeably more controlled than a one-click batch pass.
+The most common mistake isn't skipping masks, it's trusting the AI selection without checking it first. A mask that grabs a stray strand of hair along with the background, or misses part of a subject's shoulder, throws off everything built on top of it. Zoom to a hundred percent on the edges before adjusting anything underneath a mask you didn't build by hand.
 
----
-
-**Want the hero shots from your gallery hand-masked and retouched properly?** Every photo is edited individually on a calibrated screen — no batch presets. [Send a free sample edit](/contact/) or [see pricing](/pricing/).
+Want the hero shots from your gallery hand-masked and properly retouched? Every photo gets edited individually on a calibrated screen here, no batch presets involved. Send a free sample edit request or check out the pricing page for full galleries.
