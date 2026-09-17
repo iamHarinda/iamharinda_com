@@ -48,4 +48,8 @@ If a second shooter contributed a separate card of images, culling their work de
 
 For a well-practiced photographer using the three-pass system on a typical three-thousand-photo wedding shoot, two to four hours of focused culling time is a reasonable target once the workflow is dialed in, spread across the passes described above. Photographers newer to this process, or working through an unusually large or complex shoot, should expect longer and shouldn't treat a slower first attempt as a sign something's wrong. Speed comes with repetition, not from rushing the actual decisions on day one.
 
+## A closing thought on trusting the system
+
+The three-pass approach feels slower than just scrolling through once and picking favourites, but it consistently produces a tighter, more complete final gallery with far less second-guessing along the way. Trust the structure even when a faster shortcut feels tempting halfway through a long shoot.
+
 Once culling's done, need the final selects edited? RAW files are recommended, and everything gets colour-corrected and retouched by hand. Send a free sample edit request or check pricing by volume.
