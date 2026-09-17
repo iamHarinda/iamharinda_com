@@ -34,4 +34,12 @@ Google's free PageSpeed Insights tool, just search "PageSpeed Insights," gives a
 
 A genuinely fast site isn't a luxury feature reserved for big companies with big budgets. It's one of the more reliable ways to keep more of the visitors you're already attracting, without spending anything extra on getting new ones to replace the ones who just left because they got tired of waiting around.
 
+## How speed problems creep in gradually over time
+
+A site rarely starts out slow. It gets slower gradually, a new plugin added here, an extra tracking script installed there, a batch of uncompressed images uploaded during a busy week when nobody had time to optimize them properly first. This slow creep is why a site that felt fast at launch can feel sluggish two years later without anyone making one single obviously bad decision along the way, just a series of small additions that each seemed harmless on their own at the time.
+
+## A simple habit that keeps speed from quietly degrading
+
+Checking your PageSpeed score every few months, especially after adding any new feature, tool, or large batch of images, catches this gradual slowdown before it becomes a real problem affecting visitors. This takes a few minutes and costs nothing, and it's one of the easiest maintenance habits to build into a regular routine, whether you're managing the site yourself or working with a developer who handles this on your behalf.
+
 Custom-coded sites here ship without the bloat that comes bundled with heavy themes and page builders. Speed is part of the build, not an add-on tacked on later.
