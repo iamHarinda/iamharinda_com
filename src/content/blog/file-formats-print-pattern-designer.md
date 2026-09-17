@@ -54,4 +54,8 @@ Occasionally a supplier or printer will request a format not covered here, a spe
 
 Once delivered, save these files in a clearly labeled folder, ideally with the project name and date, rather than letting them scatter across email attachments and downloads folders where they're hard to find again. This small organizational habit saves real frustration months or years later when a reorder or a new use for the design comes up unexpectedly.
 
+## A last practical reminder before wrapping up any project
+
+Before considering a project fully complete, do a quick inventory check, confirm you have the vector source, the print-ready PDF, and web-friendly PNG and JPG versions all saved somewhere secure. This five-minute check at project close prevents a scramble later when one of these formats is suddenly needed for a new use nobody anticipated at the time.
+
 Every order here includes Ai, PDF, PNG and JPG, the full set, not just a flattened preview handed over at the end of the project.
