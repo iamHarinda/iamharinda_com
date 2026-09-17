@@ -44,7 +44,7 @@ If you realize months later that you need a format you weren't originally given,
 
 ## A note on file naming conventions worth adopting
 
-Clear file names, including the project name, version number, and date, make a real difference once you're managing several designs across different orders and seasons over time. "polo-design-v2-navy-2027" tells you far more at a glance than "final-FINAL-use-this-one," a naming pattern that becomes genuinely confusing once a handful of revisions have accumulated across a project's lifetime.
+Clear file names, including the project name, version number, and date, make a real difference once you're managing several designs across different orders and seasons over time. "polo-design-v2-navy-2027" tells you far more at a glance than "final-FINAL-use-this-one," a naming pattern that becomes genuinely confusing once a handful of revisions have accumulated across a project's lifetime and multiple people are involved.
 
 ## What to do if a supplier asks for a format you don't recognize
 
