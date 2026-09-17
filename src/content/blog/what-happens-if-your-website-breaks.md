@@ -36,6 +36,6 @@ Regular small maintenance, keeping software and plugins updated, monitoring that
 
 ## Setting up your own basic monitoring even without a formal plan
 
-If you're not paying for ongoing maintenance, a free tool that simply checks your site is loading every so often and emails you if it goes down catches problems faster than waiting for a customer to mention it, or worse, never mentioning it at all and just quietly going to a competitor instead. This takes a few minutes to set up and gives real peace of mind that something will catch a serious outage even without a formal support arrangement in place.
+If you're not paying for ongoing maintenance, a free tool that simply checks your site is loading every so often and emails you if it goes down catches problems faster than waiting for a customer to mention it, or worse, never mentioning it at all and just quietly going to a competitor instead. This takes a few minutes to set up and gives real peace of mind that something will catch a serious outage even without a formal support arrangement in place, and it's a reasonable stopgap for a small business not yet ready to commit to a paid monthly maintenance plan.
 
 Thirty days of post-launch support comes included with every build here, and ongoing maintenance is available after that at a stated monthly rate, no surprises waiting down the road.
