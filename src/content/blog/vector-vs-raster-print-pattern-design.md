@@ -44,4 +44,8 @@ Plenty of businesses only have their logo as a JPEG or PNG, often because it was
 
 Once you have a proper vector file, store it somewhere secure and easy to find again, since it becomes the master reference for every future use of that design, resized for a new product, adapted for a new colour, printed at a completely different scale years down the line. Losing the vector source means starting the redraw process over from scratch the next time a scalable version is needed for something new, which costs real time and money that a simple backup would have avoided entirely.
 
+## One last thing worth remembering
+
+This whole distinction sounds technical the first time you hear it, but it boils down to a genuinely simple idea once explained clearly. Ask for vector when it's going anywhere physical, and don't worry about the format otherwise.
+
 Every design here includes the editable Ai vector source file, alongside PDF, PNG and JPG, not just flattened images handed over at the end of a project.
