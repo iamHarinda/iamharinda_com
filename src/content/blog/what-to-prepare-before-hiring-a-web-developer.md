@@ -42,4 +42,12 @@ If more than one person in your business will have opinions on the final site, a
 
 A vague brief forces a developer to either guess, and risk quoting wrong in a way that causes friction later, or spend extra time clarifying scope before they can even quote at all, which delays everything. A clear brief, even an imperfect one, gets you a faster, more accurate quote, and a smoother project once the actual work starts moving forward.
 
+## What if you genuinely don't have any of this ready yet
+
+It's completely fine to start a conversation with a developer before every piece above is fully prepared. Many of these items, content, a firm budget, examples you like, come together naturally during an initial scope conversation rather than needing to exist perfectly beforehand. The real goal of preparing what you can is speeding up that conversation and getting a more accurate quote sooner, not passing some kind of readiness test before you're allowed to reach out and start talking.
+
+## A simple way to organize everything before your first call
+
+A single shared document or folder, even something as basic as a few bullet points in an email, containing your page list, any existing branding, and links to sites you admire, saves real back-and-forth during the scope conversation itself. It doesn't need to be polished or formatted nicely. It just needs to exist somewhere both you and the developer can refer back to as the project moves forward past that first conversation.
+
 Ready to talk through what you need? A free thirty-minute scope call turns even a rough idea into a clear, fixed-price proposal.
