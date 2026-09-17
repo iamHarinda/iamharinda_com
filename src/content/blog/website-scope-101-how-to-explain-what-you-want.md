@@ -46,6 +46,10 @@ Once a developer has this information, they can usually turn it around into a fi
 
 ## A brief isn't a permanent contract
 
-Nothing about writing this down locks you into every detail forever without room to change your mind. A good developer treats your initial brief as a starting point for conversation, not a rigid checklist, and will ask clarifying questions or suggest adjustments based on their own experience with similar projects they've built before for other clients in similar situations.
+Nothing about writing this down locks you into every detail forever without room to change your mind. A good developer treats your initial brief as a starting point for conversation, not a rigid checklist, and will ask clarifying questions or suggest adjustments based on their own experience with similar projects they've built before for other clients in similar situations to yours.
+
+## A last encouragement for anyone feeling stuck
+
+If none of this feels natural to write out on your own, that's completely normal and not a sign you're doing anything wrong. Plenty of business owners find it easier to talk through their idea out loud on a call than to type it up in advance, and a good developer knows how to draw out the right details through simple conversation rather than expecting a perfectly polished brief from day one.
 
 Have a rough idea but not sure how to put it into words yet? A free scope call is built exactly for this. Talking it through out loud is usually a lot easier than writing it all down first.
