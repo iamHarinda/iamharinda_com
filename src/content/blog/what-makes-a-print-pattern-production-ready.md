@@ -34,4 +34,12 @@ A designer who only produces polished-looking flat images without accounting for
 
 Ask your printer directly what format and colour mode they need before final files get built, not after the design is already finished and approved. A five-minute question upfront saves a full round of rework later, once you've already committed time and money to a version that doesn't actually match what your production partner needs to run the job.
 
+## What happens when a rejected file needs fixing
+
+If a printer bounces a file back as unusable, the fix usually isn't starting over completely, it's converting or adjusting the existing design to meet the specific requirement that failed, colour mode, resolution, vector versus raster. This is faster and cheaper than a full redesign, but it does mean extra time and sometimes an extra cost if the original designer didn't build the file correctly the first time and now needs to go back and rework it properly.
+
+## Why it's worth asking about production-readiness before ordering
+
+Rather than discovering a production problem after the fact, ask any designer directly, before committing to an order, whether they build files specifically for print production or purely for digital viewing and presentation. This single question filters out designers who only work in a purely visual, screen-based capacity from those who genuinely understand what a physical print run actually requires to succeed without costly delays.
+
 Every order here comes with Ai, PDF, PNG and JPG files at print resolution, the formats a print shop or supplier can actually run with directly.
