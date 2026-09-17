@@ -1617,6 +1617,31 @@ body::after {
   color: var(--text-dim);
 }
 
+/* 21c. Blog ------------------------------------------------------------------ */
+
+.blog-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+.blog-card {
+  display: block;
+  text-decoration: none;
+}
+.blog-card__date {
+  font-size: var(--step--1);
+  color: var(--text-faint);
+}
+.blog-card__title {
+  margin-top: var(--space-2);
+  font-size: var(--step-1);
+  color: var(--text);
+}
+.blog-card__desc {
+  margin-top: var(--space-2);
+  color: var(--text-dim);
+}
+
 /* Pricing table on the service pages. */
 .table-wrap {
   max-width: var(--measure);
