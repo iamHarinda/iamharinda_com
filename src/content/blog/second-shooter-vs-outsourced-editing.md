@@ -42,4 +42,12 @@ If you hire a second shooter and your editing backlog somehow gets worse, that's
 
 Photographers who hire the wrong fix first, a second shooter when editing was the real bottleneck, often end up hiring the right fix a few months later anyway, after burning money and time on something that didn't move the actual needle. Naming the real constraint first saves that detour.
 
+## A third option worth mentioning: raising prices first
+
+Before hiring anyone at all, it's worth asking whether the actual problem is booking volume outpacing capacity, in which case raising your prices to naturally slow down bookings might solve the bottleneck without adding any new cost or complexity. This isn't the right answer for every photographer, particularly those still building a reputation or portfolio, but for an established studio turning away work regularly, a price increase is sometimes the fastest and least risky fix available before committing to a second shooter or an outsourcing relationship.
+
+## How to test either option without a long-term commitment
+
+Neither a second shooter nor an outsourced editor requires a permanent commitment to try. Booking a second shooter for a single upcoming wedding, or sending one gallery to an outsourced editor as a trial, gives you real data about whether that fix actually addresses your bottleneck before you build a whole business model around it. This kind of small, low-risk test beats committing to a long-term arrangement based on a guess about what you think will help.
+
 If editing backlog is the constraint slowing you down, outsourcing the standard correction pass while you keep shooting and booking is a direct fix. Send a free sample edit request or check pricing by volume.
