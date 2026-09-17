@@ -500,6 +500,8 @@ export const site = {
     // this in if you later add a URL-prefix property that wants the meta-tag
     // method; when set it renders <meta name="google-site-verification">.
     googleSiteVerification: "",
+    // Bing Webmaster Tools ownership via the HTML meta-tag method.
+    bingSiteVerification: "B58752A2FD1D5782E50E38AB422508D1",
   },
 };
 
