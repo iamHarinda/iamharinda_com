@@ -44,4 +44,8 @@ Some businesses start with a DIY builder to get online fast and validate their i
 
 Regardless of which of the three routes you pick, a few questions apply universally. What happens if I want to make changes myself later, and does the path I've chosen make that easy or hard? What's the realistic total cost over three years, not just the upfront number I'm quoted today? And how much of my own time will this actually require, both now during the build and later during ongoing maintenance? Answering these honestly for each option often makes the right choice for your specific situation much clearer than comparing price tags alone ever could, and it prevents the common regret of choosing based purely on the lowest number without considering what comes after launch.
 
+## A final note on switching paths later
+
+None of these choices are permanent. A business that starts on a builder can move to a freelancer later, and a business working with a freelancer can bring in an agency if it eventually outgrows what one person can handle. The initial decision matters less than most people assume going in, since almost every path can evolve as the business itself grows and its needs change over time.
+
 Working directly with the person actually building your site, with fixed pricing from a free scope call? That's the freelancer path, and it's what this is built around.
