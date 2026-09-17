@@ -38,6 +38,10 @@ The businesses that age well with their branding usually picked something that f
 
 These directions reflect what's showing up across current apparel design conversations, trade publications, and what independent print-on-demand and fabric marketplaces are actually seeing sell well in 2026. Trend reading is never an exact science, but paying attention to multiple sources rather than a single influencer or platform gives a more balanced, reliable picture of where things are genuinely heading for a brand planning several seasons ahead.
 
+## A practical way to bring trend awareness into your own brief
+
+Rather than researching trends extensively yourself, simply collecting three or four images that genuinely appeal to you, from anywhere, another brand, a magazine, a walk through a store, and sharing them with your designer communicates far more than trying to name a specific trend by its industry label. Your designer can identify the underlying direction from those references and build something that fits it without you needing to become fluent in trend terminology yourself.
+
 ## How to spot a trend that's already fading versus one still rising
 
 A trend showing up heavily in mass-market fast fashion has usually already peaked in the design world that originated it months or sometimes years earlier, since mainstream adoption tends to lag well behind where genuinely current design work is already heading. Looking at what's showing up in smaller, independent apparel brands and design-focused publications gives a more accurate read on what's actually current right now, rather than what's simply become widely available and visible everywhere at once.
