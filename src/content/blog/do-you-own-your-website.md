@@ -42,6 +42,6 @@ If you check your current setup and find the domain or code isn't actually in yo
 
 ## Why this check takes on more importance over time
 
-A business that's only a year or two old might not feel the weight of this issue yet, but a decade in, with a domain that's built real brand recognition and years of search ranking behind it, losing control of that address would be devastating in a way that's hard to fully appreciate in advance. The earlier this gets sorted correctly, the less there is ever at stake if a relationship with a developer eventually needs to change for any reason, expected or not, years down the line.
+A business that's only a year or two old might not feel the weight of this issue yet, but a decade in, with a domain that's built real brand recognition and years of search ranking behind it, losing control of that address would be devastating in a way that's hard to fully appreciate in advance. The earlier this gets sorted correctly, the less there is ever at stake if a relationship with a developer eventually needs to change for any reason, expected or not, years down the line, long after the original build is a distant memory for everyone involved.
 
 Full code ownership, domain in your name, no lock-in, that's the standard here, not an upsell you have to pay extra for. Book a scope call, or reach out if you want to check your current setup.
