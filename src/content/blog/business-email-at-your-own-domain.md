@@ -46,4 +46,8 @@ Business email feels like a low-priority task compared to bigger decisions, choo
 
 Some business owners worry that switching email addresses means losing important old messages or contacts built up over years of using the same free account. In practice, most business email setups let you keep the old address active as a forwarding destination indefinitely, so nothing gets lost during the transition, and your contact list can be exported and re-imported into the new system without much hassle at all once you know the steps involved and have someone walk you through it the first time.
 
+## A final thought on first impressions
+
+Every piece of communication with a potential customer shapes their impression of your business before they've even seen your actual work. Email is one of the most frequent touchpoints, often the very first one, and getting it right costs almost nothing compared to the trust it quietly builds every single time someone sees your address land in their inbox.
+
 Business email setup is part of the standard launch process here, right alongside the domain and hosting configuration.
