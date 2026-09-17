@@ -36,7 +36,7 @@ If your project genuinely sits somewhere in between, or you're not sure which ca
 
 ## Why getting the terminology right helps even if you're not a designer
 
-You don't need to become an expert in pattern design to have this conversation productively. Simply knowing the difference between these two terms, and being able to say clearly which one describes what you're picturing, puts you in a much stronger position when discussing a project with any designer, regardless of their specific background or specialty.
+You don't need to become an expert in pattern design to have this conversation productively. Simply knowing the difference between these two terms, and being able to say clearly which one describes what you're picturing, puts you in a much stronger position when discussing a project with any designer, regardless of their specific background or specialty in the field.
 
 ## A note on mixing the two within one product line
 
