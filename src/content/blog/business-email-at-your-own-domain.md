@@ -38,6 +38,10 @@ Business email through most providers runs somewhere between five and fifteen do
 
 Once business email is live, a properly formatted signature, your name, role, business name, phone number, website link, all consistent with your branding, reinforces the professional impression started by the address itself. This is a small, one-time setup task that pays off on every single email sent afterward, and it's worth doing properly rather than leaving a signature blank or inconsistent across different team members using slightly different formats.
 
+## Why this small change often gets postponed for years
+
+Business email feels like a low-priority task compared to bigger decisions, choosing a logo, finalizing pricing, building the actual website. That's exactly why it tends to get postponed indefinitely, filed under "eventually" rather than treated as the quick, high-value fix it actually is. Recognizing it as a small task with outsized impact, rather than a project requiring careful planning, is often what finally gets it done after months or years of good intentions.
+
 ## A common hesitation worth addressing directly
 
 Some business owners worry that switching email addresses means losing important old messages or contacts built up over years of using the same free account. In practice, most business email setups let you keep the old address active as a forwarding destination indefinitely, so nothing gets lost during the transition, and your contact list can be exported and re-imported into the new system without much hassle at all once you know the steps involved and have someone walk you through it the first time.
