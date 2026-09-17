@@ -44,6 +44,6 @@ Golf and polo apparel often gets planned as part of a rotating wardrobe refreshe
 
 ## A last word on staying grounded amid shifting trends
 
-Trend cycles will keep moving regardless of what any brand does, and trying to chase every shift as it happens is a losing game for most teams and clubs without a dedicated design department. A stronger long-term strategy is checking in on trend direction once or twice a year, at natural decision points like a new season or a uniform refresh, rather than treating every passing shift as an urgent call to redesign everything from scratch and start the whole process over again from the very beginning each time something new appears.
+Trend cycles will keep moving regardless of what any brand does, and trying to chase every shift as it happens is a losing game for most teams and clubs without a dedicated design department. A stronger long-term strategy is checking in on trend direction once or twice a year, at natural decision points like a new season or a uniform refresh, rather than treating every passing shift as an urgent call to redesign everything from scratch and start the whole process over again from the very beginning each time something new appears in the broader apparel industry.
 
 Bold or understated, the design gets built around your brand, not a generic trend template pulled off a shelf.
