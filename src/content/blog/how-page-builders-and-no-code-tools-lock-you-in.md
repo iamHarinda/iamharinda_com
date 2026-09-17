@@ -36,6 +36,10 @@ Before committing significant content to a new platform, ask directly what happe
 
 ## What to do if you're already locked into a platform
 
-If you've already built significant content on a platform with poor export options, the situation isn't hopeless, just slower to unwind than switching earlier would have been. A developer can often manually rebuild a site's content and design onto a new, more flexible foundation, treating the old site as a visual reference rather than something to extract programmatically. It costs more time than a clean migration would have, but it's still far better than staying stuck somewhere that no longer serves your business well.
+If you've already built significant content on a platform with poor export options, the situation isn't hopeless, just slower to unwind than switching earlier would have been. A developer can often manually rebuild a site's content and design onto a new, more flexible foundation, treating the old site as a visual reference rather than something to extract programmatically. It costs more time than a clean migration would have, but it's still far better than staying stuck somewhere that no longer serves your business well, purely because leaving feels like too much work to face.
+
+## The bottom line worth remembering
+
+Convenience today and freedom later aren't always the same thing, and it's worth being honest with yourself about which one matters more for your specific business before committing years of content to any single platform.
 
 No platform lock-in, no proprietary format, the full source code transfers to you at launch, hosted wherever you choose to put it.
