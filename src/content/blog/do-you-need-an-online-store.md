@@ -46,4 +46,8 @@ Rather than walking in already decided on "I need a store" or "I just need a con
 
 Building a full store when a simple contact form would have served better means paying for and maintaining complexity you don't need, inventory systems sitting empty, checkout flows nobody uses the way they were designed for. Building only a contact form when customers actually wanted instant checkout means losing sales to impatient buyers who leave rather than wait for a reply. Getting this decision right upfront, even if it takes an extra conversation to nail down, avoids both expensive mistakes down the road.
 
+## A quick summary to keep in mind
+
+If purchases involve any back-and-forth, custom pricing, scheduling, or details that vary job to job, lean toward a contact-based site. If you're selling something fixed and ready to go the moment someone wants it, lean toward a store or a simple payment link. Most small businesses know instinctively which camp they fall into once the question's framed this clearly, even if they walked in assuming they needed the more complex option by default.
+
 Not sure whether you need a full store or something simpler? That's exactly the kind of question a scope call is built for.
