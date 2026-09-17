@@ -1,50 +1,43 @@
 ---
 title: "How to Outsource Wedding Photo Editing Without Losing Your Style"
-description: "A practical guide for US photographers outsourcing wedding photo editing for the first time — how to brief an editor, protect your look, and avoid the common mistakes."
+description: "A practical guide for photographers outsourcing wedding editing for the first time. How to brief an editor, protect your look, and dodge the common mistakes."
 publishDate: 2026-09-12
 ---
 
-The biggest fear photographers have before outsourcing editing isn't cost — it's that the galleries will come back looking like someone else's work. That fear is reasonable, and it's also avoidable. Most outsourcing problems come from a missing brief, not a bad editor.
+Photographers rarely worry about the cost when they think about outsourcing editing for the first time. What actually scares them is the gallery coming back looking like someone else took the photos. That fear makes sense. It's also mostly avoidable, and most outsourcing problems trace back to a missing brief, not a bad editor.
 
-## Why photographers outsource in the first place
+## Why photographers outsource at all
 
-Editing is usually the slowest part of running a photography business, not shooting. A wedding photographer covering two or three events a weekend can end up with a backlog of galleries stretching weeks behind schedule, which delays delivery, delays payment, and eats into the time that should go toward booking the next season. Outsourcing exists to fix that math — not to replace your eye, just your hours.
+Editing eats more time than shooting does for most wedding photographers. Cover two or three events in a weekend and you can end up with a backlog stretching weeks past where you'd like it, which delays delivery, delays payment, and steals time you'd rather spend booking your next season. Outsourcing exists to fix that math. It's not about replacing your eye. It's about buying back your hours.
 
-## Step 1: Send reference edits, not just RAW files
+## Send references, not just RAW files
 
-The single biggest mistake photographers make when outsourcing for the first time is sending RAW files with no direction and hoping the editor guesses the style. Instead, send:
+The biggest mistake first-time outsourcers make is dumping RAW files on an editor with zero direction and hoping they'll guess the style. Do this instead.
 
-- Two or three photos you've already edited yourself, so the editor can see your target look.
-- A short note on anything specific — "keep skin warm, not orange," "whites should stay bright, not blown out," "this venue had a green cast from the lighting, correct it fully."
-- Any galleries from past shoots that represent the consistent style your clients already expect.
+Send two or three photos you've already edited yourself so the editor sees the actual target look. Add a short note on anything specific, keep skin warm but never orange, whites should stay bright without blowing out, this venue had a green cast from the overhead lighting that needs full correction. Include a past gallery or two that shows the consistent look your clients already expect from you.
 
-An editor working from a clear reference gets you a much closer first pass than one working blind.
+An editor working from clear reference material lands much closer on the first attempt than one working blind ever will.
 
-## Step 2: Start with a small batch or a free sample
+## Start small before you commit a full gallery
 
-Before committing a whole wedding gallery to a new editor, send a small batch first — five to ten photos that represent the range of lighting in the shoot (indoor ceremony, outdoor portraits, reception lighting). A legitimate photo editing service will offer to edit a few sample photos for free precisely so you can check the style before paying for anything. If a service won't do that, that's worth noting.
+Before you hand over an entire wedding, send five or ten photos that cover the range of lighting from that shoot. Indoor ceremony, outdoor portraits, reception lighting. A legit editing service will do a free sample edit on a handful of photos exactly so you can check the style before spending a dollar. If a service won't do that for you, that's worth noticing.
 
-## Step 3: Treat the first full gallery as a calibration round
+## Treat your first full gallery like a test run
 
-Even with a strong brief, the first full gallery you outsource is really a calibration exercise. Mark up anything that's off — a colour cast that wasn't fully corrected, a retouch that went too far, a crop that doesn't match your usual style — and send it back. This is where unlimited revisions matter more than they might seem to at the brief stage: getting the direction locked in on gallery one means gallery two and three come back right the first time.
+Even with a solid brief, that first full gallery is really a calibration round. Mark up anything off, a colour cast that didn't get fully fixed, a retouch that overdid it, a crop that doesn't match your usual style, and send it back. Unlimited revisions matter more here than they might seem to at first glance, because locking in the direction on gallery one means galleries two and three come back right from the start.
 
-## Step 4: Keep RAW files in your workflow if consistency matters
+## RAW files keep your consistency intact
 
-JPEGs can be edited, but they've already had in-camera processing baked in, which limits how much an editor can correct exposure or white balance without introducing artifacts. If keeping a consistent, recoverable look across every gallery matters to your brand, sending RAW files (CR2, CR3, NEF, ARW, DNG) gives an editor the full range of the sensor data to work with.
+JPEGs can be edited, sure, but the camera already baked in processing decisions that limit how far an editor can push exposure or white balance without artifacts showing up. If a consistent, recoverable look across every gallery actually matters to your brand, sending RAW (CR2, CR3, NEF, ARW, DNG) gives an editor the full sensor data to work with instead of an already-compressed starting point.
 
-## Step 5: Don't pay until you've approved the work
+## Don't pay until you've approved the work
 
-This is the simplest protection against a bad outsourcing experience: only pay after the edited photos are delivered and you've checked them. A service confident in its work will offer this by default. Upfront deposits aren't inherently a red flag, but "pay after you approve" removes the risk entirely.
+This is the single easiest way to protect yourself from a bad outsourcing experience. Pay only after the edited photos are delivered and you've checked them over. Any service confident in its own work should offer this without you having to ask. Upfront deposits aren't automatically a red flag on their own, but "pay after you approve" removes the risk entirely.
 
-## What good outsourcing looks like in practice
+## What the whole process looks like when it's working
 
-1. Send RAW files plus two or three reference edits and a short style note.
-2. Get first proofs back on a small batch — usually within a day for straightforward lighting.
-3. Mark up anything that's off, with unlimited revisions until it matches.
-4. Approve the final gallery at full resolution, then pay.
+Send RAW files plus two or three reference edits with a short style note. Get first proofs back on a small batch, usually within a day for straightforward lighting. Mark up anything off, unlimited revisions, until it matches. Approve the final gallery at full resolution, then pay.
 
-Photographers who follow that order rarely end up with a gallery that "doesn't look like them" — the style gets locked in during the brief and the calibration round, well before the invoice is due.
+Photographers who stick to that order rarely end up with a gallery that "doesn't look like them." The style gets locked in during the brief and that first calibration round, well before any invoice shows up.
 
----
-
-**Ready to try it with your own photos?** [Send a free sample edit](/contact/) of two or three images and see the style before committing to a full gallery — RAW files recommended, unlimited revisions included, and payment only after you approve the delivered work. [See current pricing](/pricing/).
+Want to try this with your own photos first? Sending two or three images over for a free sample edit is the easiest way to see the style before committing a whole gallery. RAW files work best, revisions are unlimited, and payment only happens after you've approved what comes back.
