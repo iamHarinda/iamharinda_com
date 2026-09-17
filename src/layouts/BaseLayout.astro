@@ -57,6 +57,14 @@ const graph = [webSite(), ...jsonLd];
         />
       )
     }
+    {
+      site.seo.bingSiteVerification && (
+        <meta
+          name="msvalidate.01"
+          content={site.seo.bingSiteVerification}
+        />
+      )
+    }
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
