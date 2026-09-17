@@ -28,7 +28,7 @@ If a designer only provides flat artwork with no mockup option available, ask di
 
 ## What experienced buyers look for that first-timers often miss
 
-Buyers who've ordered custom apparel design several times tend to specifically check corners and edges where a design meets a seam or transition, areas that are easy to overlook on a first pass but where problems most commonly hide. Building this habit, checking the edges and transitions specifically rather than just the center of the design, comes with experience but can be adopted immediately once you know to look for it.
+Buyers who've ordered custom apparel design several times tend to specifically check corners and edges where a design meets a seam or transition, areas that are easy to overlook on a first pass but where problems most commonly hide. Building this habit, checking the edges and transitions specifically rather than just the center of the design, comes with experience but can be adopted immediately once you know to look for it, even on your very first order with no prior background in this at all.
 
 ## How to read a mockup critically, not just glance at it
 
