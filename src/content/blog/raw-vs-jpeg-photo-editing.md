@@ -42,4 +42,12 @@ RAW doesn't make a bad photo good. It just gives an editor more room to fix what
 
 If you've never compared the two directly, take one file shot in RAW plus JPEG simultaneously, most cameras support this, and try recovering the exact same blown highlight or shifting the exact same white balance in both versions. The RAW file typically holds together cleanly while the JPEG starts showing artifacts and colour banding well before you've made the same adjustment. Seeing this side by side once tends to settle the question for good.
 
+## Why some photographers still shoot JPEG-only anyway
+
+A handful of photographers, particularly those shooting high-volume events with very controlled, consistent lighting, deliberately shoot JPEG to save on storage, transfer time, and in-camera buffer speed during fast-paced moments like a reception dance floor. This can be a reasonable tradeoff when lighting genuinely stays consistent and correction needs are minimal, but it removes the safety net RAW provides the moment something goes wrong, a flash misfires, a white balance setting gets bumped accidentally, a venue's lighting shifts unexpectedly partway through the event. For anything as one-off and unrepeatable as a wedding, most photographers find the extra storage cost of RAW is cheap insurance against a mistake that can't be reshot the next day.
+
+## Mixing RAW and JPEG within the same shoot
+
+Some photographers shoot RAW plus JPEG simultaneously for exactly this reason, getting the correction headroom of RAW while having a fast JPEG preview ready for a quick same-day social media post without waiting on full RAW processing. This doubles storage needs but removes the tradeoff entirely for photographers who want both speed and correction flexibility. Whether it's worth the extra card space depends mostly on how often you actually need that same-day quick-turnaround JPEG versus just waiting for the properly edited gallery a few days later.
+
 Sending files out for editing? RAW is recommended and priced the same as JPEG here, CR2, CR3, NEF, ARW, and DNG all get accepted. Send a free sample edit request or check the pricing page for full galleries.
