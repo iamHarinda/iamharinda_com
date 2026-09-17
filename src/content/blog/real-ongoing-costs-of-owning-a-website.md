@@ -36,7 +36,7 @@ Beyond routine monthly costs, plan for the occasional larger expense every few y
 
 ## Comparing this to other business expenses you already budget for
 
-Most businesses already budget for recurring costs elsewhere, rent, insurance, subscriptions to tools used daily, without much second thought about whether those costs are worth it. A website's ongoing costs deserve the same treatment, planned for as a normal, predictable line item rather than a surprise that catches you off guard every renewal period because it was never properly accounted for in the first place.
+Most businesses already budget for recurring costs elsewhere, rent, insurance, subscriptions to tools used daily, without much second thought about whether those costs are worth it. A website's ongoing costs deserve the same treatment, planned for as a normal, predictable line item rather than a surprise that catches you off guard every renewal period because it was never properly accounted for in the first place, back when the site first went live.
 
 ## Why transparency about these costs matters from day one
 
