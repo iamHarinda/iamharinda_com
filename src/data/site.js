@@ -487,7 +487,7 @@ export const site = {
   // ── Analytics ────────────────────────────────────────────────────────────
   analytics: {
     gaMeasurementId: "G-QP1FK83BL2",
-    clarityProjectId: "yddumuy5ux",
+    clarityProjectId: "un99vlx16e",
   },
 
   // ── SEO defaults ─────────────────────────────────────────────────────────
