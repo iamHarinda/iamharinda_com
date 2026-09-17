@@ -40,6 +40,10 @@ The longer a site sits with unclear ownership, the more likely small problems co
 
 Once ownership and access are properly resolved, moving forward with a new developer should feel like a completely normal project, not a recovery mission anymore. Files transfer over, a plan gets made for what needs updating or rebuilding, and work proceeds on a regular timeline just like any other website project would. The messy part is almost always the untangling at the very start, not the actual rebuilding work that follows once things are sorted out properly, which is genuinely reassuring to hear if you're currently in the middle of the stressful part and wondering how long this will drag on.
 
+## What documentation to keep once everything's resolved
+
+Once ownership and access are sorted, write down the key details somewhere safe, the registrar login, the hosting account, who to contact for support, and when key renewals are due. This single step is what prevents the exact same situation from happening again in a few years under a different developer, and it takes only a few minutes compared to the days or weeks a full recovery process can otherwise take.
+
 ## Don't let embarrassment slow down the fix
 
 Some business owners feel a bit embarrassed admitting they don't know who owns their own website, as though it reflects poorly on how they've run their business. It doesn't. This situation is common enough that any experienced developer has seen it many times before and won't think twice about it. The only real mistake is letting that discomfort delay fixing something that only gets harder to untangle the longer it sits unresolved, so reaching out sooner rather than later is always the better move.
