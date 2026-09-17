@@ -34,6 +34,10 @@ If a designer can't clearly answer whether you get full commercial rights, ask d
 
 Beyond just clearing you to sell products, confirming exclusive rights to a design also matters for protecting your brand's distinctiveness over time. If a design isn't exclusive to you, the same or a very similar pattern could theoretically appear on a competitor's products, undermining the very differentiation you were hoping to build through custom design work in the first place, after investing real time and money into something meant to be uniquely yours.
 
+## Why this diligence reflects well on your business too
+
+Asking clear, informed questions about commercial rights doesn't come across as distrustful to a legitimate designer, it signals that you run a serious, organized business that takes its own commitments seriously. Designers who work regularly with professional clients expect and welcome these questions rather than finding them awkward or unusual to answer.
+
 ## A final summary worth keeping handy
 
 Before ordering, confirm the design is original, confirm commercial rights are included without a cap, and get that confirmation in writing somewhere you can find it later. Three simple steps, and together they protect a business decision that's easy to get right upfront and genuinely costly to fix after the fact, once products are already out in the world and a dispute becomes far harder and more expensive to resolve cleanly.
