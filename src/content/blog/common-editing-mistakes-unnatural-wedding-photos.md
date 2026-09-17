@@ -4,11 +4,11 @@ description: "A handful of specific editing choices are behind most wedding phot
 publishDate: 2026-09-04
 ---
 
-Most viewers can't name why a wedding photo looks slightly wrong. They just sense it. Almost every case traces back to one of a small set of specific editing choices, and every single one is more common than it should be given how avoidable they are.
+Most viewers can't name why a wedding photo looks slightly wrong. They just sense it. Almost every case traces back to one of a small set of specific editing choices, and every single one is more common than it should be given how avoidable they actually are once you know to look for them.
 
 ## Skin pushed too warm or too orange
 
-This is the single most common issue by a wide margin. It usually comes from correcting a cool colour cast too aggressively, or from a warm-toned preset applied without checking it against actual skin first. The fix is checking skin tone against a neutral reference, not against how "warm and inviting" the whole image feels on its own. Warmth that looks pleasant in isolation can still be objectively wrong once you compare it properly.
+This is the single most common issue by a wide margin. It usually comes from correcting a cool colour cast too aggressively, or from a warm-toned preset applied without checking it against actual skin first. The fix is checking skin tone against a neutral reference, not against how "warm and inviting" the whole image feels on its own. Warmth that looks pleasant in isolation can still be objectively wrong once you compare it properly against something trustworthy.
 
 ## Over-smoothed skin
 
@@ -16,7 +16,7 @@ Covered elsewhere in more depth, but worth repeating here too. Blur-based smooth
 
 ## Crushed shadows or blown highlights from a heavy contrast preset
 
-A punchy, high-contrast look is popular right now, but pushed too far it clips real detail straight out of the darkest and brightest parts of an image. A groom's dark suit turns into a flat black shape with no fabric detail left at all. A bright window turns into a flat white void with nothing recoverable. Contrast should add punch without deleting information that was actually there to recover.
+A punchy, high-contrast look is popular right now, but pushed too far it clips real detail straight out of the darkest and brightest parts of an image. A groom's dark suit turns into a flat black shape with no fabric detail left at all. A bright window turns into a flat white void with nothing recoverable. Contrast should add punch without deleting information that was actually there to recover in the first place.
 
 ## Inconsistent white balance across a gallery
 
@@ -34,8 +34,16 @@ Aggressive sharpening creates visible haloing around high-contrast edges, a brig
 
 A cool, moody grade built for outdoor daylight, applied without adjustment to a warm indoor reception shot, fights the base lighting instead of working with it. The result is a muddy, indecisive colour that doesn't commit to anything, instead of the mood it was supposed to create.
 
+## Cropping and straightening that fights the composition
+
+A smaller mistake, but a real one. Auto-straightening tools sometimes tilt a frame based on a background element, a slightly crooked venue wall, rather than the actual horizon or the couple's posture, producing a crop that looks technically level but feels visually off. Always check auto-straightened crops against how the subjects themselves are standing, not just against a grid line the software picked.
+
 ## What actually ties all of this together
 
 Every mistake on this list comes from applying an adjustment, a preset, a batch sync, a global slider, without checking it against the specific image it's landing on. None of these are hard to avoid. They're just easy to miss without a deliberate check at a hundred percent zoom against a neutral reference, image by image, gallery by gallery.
+
+## Building a personal pre-delivery checklist
+
+A short, written checklist run through before any gallery goes out, skin tone check, shadow and highlight detail check, saturation check, sharpening halo check, catches most of these mistakes before a client ever sees them. It takes an extra few minutes per gallery and prevents the far more time-consuming situation of a client noticing something after delivery and asking for a correction round you didn't plan for.
 
 Want every photo checked individually instead of run through a fixed formula? That's the whole approach here, hand-corrected on a calibrated screen. Send a free sample edit request or check pricing.
