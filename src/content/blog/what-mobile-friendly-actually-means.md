@@ -40,6 +40,10 @@ Your own phone is a good starting point, but different screen sizes and browsers
 
 It's tempting to assume mobile matters less for a business targeting older customers or other businesses rather than the general public. In practice, mobile browsing habits have become nearly universal across age groups and industries alike, and assuming your specific audience is the exception is a common and costly mistake that's worth testing directly rather than guessing at based on outdated assumptions about who uses what device.
 
+## What this costs you if it's ignored
+
+Mobile visitors who bounce off a frustrating site rarely leave a complaint or send feedback explaining why. They just leave silently and often don't come back, choosing a competitor's site instead without you ever knowing a lead was lost in the first place. This invisible cost is exactly why mobile usability deserves real attention rather than being treated as a minor detail to fix eventually once other priorities are handled first.
+
 ## The simplest possible summary
 
 If you'd be embarrassed to hand your own phone to a customer and watch them try to use your site in front of you, that's the clearest signal something needs fixing before it costs you business you'll never even know you lost.
