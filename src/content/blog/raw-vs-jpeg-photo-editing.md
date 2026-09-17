@@ -8,11 +8,11 @@ Every camera that shoots RAW also spits out a JPEG preview alongside it, a versi
 
 ## What's actually different under the hood
 
-A RAW file sits much closer to unprocessed sensor data. Every camera decision, white balance, tone curve, sharpening, gets stored as metadata that can be freely changed later rather than a decision permanently baked into the pixels. A JPEG has already compressed that sensor data down to eight bits per channel and applied the camera's processing as final. That difference shows up in three places that actually matter.
+A RAW file sits much closer to unprocessed sensor data. Every camera decision, white balance, tone curve, sharpening, gets stored as metadata that can be freely changed later rather than a decision permanently baked into the pixels. A JPEG has already compressed that sensor data down to eight bits per channel and applied the camera's processing as final. That difference shows up in three places that actually matter once you're trying to fix something.
 
 ## Highlight and shadow recovery
 
-RAW files typically hold onto significantly more dynamic range than a JPEG keeps after compression squeezes it down. A blown-out sky or a shadow that looks unrecoverable in a JPEG often still has real detail sitting in the RAW file, simply because the format kept more of what the sensor actually captured in the first place.
+RAW files typically hold onto significantly more dynamic range than a JPEG keeps after compression squeezes it down. A blown-out sky or a shadow that looks unrecoverable in a JPEG often still has real detail sitting in the RAW file, simply because the format kept more of what the sensor actually captured in the first place, before any compression threw information away.
 
 ## White balance correction
 
@@ -24,7 +24,11 @@ RAW files typically process in twelve to fourteen bits per colour channel. JPEGs
 
 ## When JPEG is honestly fine
 
-Not every job needs RAW. A quick social media post, a photo that only needs light retouching with no colour correction involved, or a shot that's already well-exposed and correctly white-balanced has less to gain from RAW's extra headroom. The gap matters most exactly when a photo needs real correction, recovering a blown window, fixing a colour cast, grading a whole gallery to one consistent look.
+Not every job needs RAW. A quick social media post, a photo that only needs light retouching with no colour correction involved, or a shot that's already well-exposed and correctly white-balanced has less to gain from RAW's extra headroom. The gap matters most exactly when a photo needs real correction, recovering a blown window, fixing a colour cast, grading a whole gallery to one consistent look that has to hold together.
+
+## The storage tradeoff nobody mentions upfront
+
+RAW files run significantly larger than JPEGs, sometimes three to five times the file size depending on your camera. A wedding shoot that produces twenty gigabytes as JPEG can easily hit eighty or a hundred gigabytes in RAW. This matters for storage costs, backup time, and how fast files transfer if you're sending them to an outside editor over the internet rather than handing over a physical drive. It's a real cost, but it's usually a small one compared to what you'd lose in correction headroom by shooting JPEG-only, especially for anything with challenging lighting.
 
 ## What this means for you, practically
 
@@ -32,6 +36,10 @@ If you're sending files out for editing and the shoot had any lighting challenge
 
 ## One thing people get wrong about this
 
-RAW doesn't make a bad photo good. It just gives an editor more room to fix what's fixable. A poorly composed shot or one that's genuinely out of focus stays that way no matter which file format you hand over. RAW is about headroom on correction, not a magic fix for everything.
+RAW doesn't make a bad photo good. It just gives an editor more room to fix what's fixable. A poorly composed shot or one that's genuinely out of focus stays that way no matter which file format you hand over. RAW is about headroom on correction, not a magic fix for everything that went wrong on shoot day.
+
+## A quick way to test the difference yourself
+
+If you've never compared the two directly, take one file shot in RAW plus JPEG simultaneously, most cameras support this, and try recovering the exact same blown highlight or shifting the exact same white balance in both versions. The RAW file typically holds together cleanly while the JPEG starts showing artifacts and colour banding well before you've made the same adjustment. Seeing this side by side once tends to settle the question for good.
 
 Sending files out for editing? RAW is recommended and priced the same as JPEG here, CR2, CR3, NEF, ARW, and DNG all get accepted. Send a free sample edit request or check the pricing page for full galleries.
