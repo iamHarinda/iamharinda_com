@@ -48,6 +48,6 @@ None of these red flags are foolproof on their own, and a developer can technica
 
 ## Where to look for a second opinion before committing
 
-If you're unsure about a developer after an initial conversation, asking to speak with a past client directly, not just viewing a portfolio, is a completely reasonable request that a confident, established freelancer or agency should have no trouble accommodating for a serious potential client. A quick five-minute call with someone who's actually worked with them tells you more than any number of polished case studies or curated testimonials ever could on their own.
+If you're unsure about a developer after an initial conversation, asking to speak with a past client directly, not just viewing a portfolio, is a completely reasonable request that a confident, established freelancer or agency should have no trouble accommodating for a serious potential client. A quick five-minute call with someone who's actually worked with them tells you more than any number of polished case studies or curated testimonials ever could on their own, since a real past client will mention the small frustrations too, not just the highlights picked for a portfolio page.
 
 Every project here starts with a free scope call and a written, fixed-price proposal before anything gets charged.
