@@ -26,7 +26,7 @@ Ordering pattern design when you actually needed patternmaking, or the reverse s
 
 ## A real scenario that illustrates the confusion clearly
 
-A startup wanting to launch a clothing line from scratch might contact a pattern designer expecting help with everything, from the artwork on the fabric to the actual cut and construction of the garments themselves. A pattern designer can genuinely help with the first part, but would need to redirect the client to a patternmaker or a manufacturing consultant for the construction side, since these are two different skill sets rarely held by the same single person.
+A startup wanting to launch a clothing line from scratch might contact a pattern designer expecting help with everything, from the artwork on the fabric to the actual cut and construction of the garments themselves. A pattern designer can genuinely help with the first part, but would need to redirect the client to a patternmaker or a manufacturing consultant for the construction side, since these are two different skill sets rarely held by the same single person, even within larger studios that offer a broader range of services.
 
 ## How to tell which one you actually need
 
