@@ -28,6 +28,10 @@ Ownership of the domain, the code or full account access if it's platform-based,
 
 Imagine a photographer whose original web developer goes quiet after a falling out over a small billing dispute two years later. If the domain and hosting sit under the developer's own accounts, the photographer's entire online presence, the address clients search for, the actual working site, is effectively held hostage by someone who's no longer answering messages. This exact situation plays out more often than people expect, and it's entirely preventable with five minutes of checking at the very start of the relationship.
 
+## Why this deserves five minutes even if everything seems fine
+
+Even a business owner confident in a good working relationship with their current developer benefits from doing this quick check once, simply to confirm the assumption is actually correct rather than just comfortable and unverified. Peace of mind is worth five minutes of looking something up.
+
 ## A final word on this
 
 This isn't about distrust. Most developers handle this fine without ever being asked to prove it. But asking upfront costs you nothing and protects you completely if things ever go sideways down the road, for whatever reason.
