@@ -38,6 +38,10 @@ Regular small maintenance, keeping software and plugins updated, monitoring that
 
 If you're not paying for ongoing maintenance, a free tool that simply checks your site is loading every so often and emails you if it goes down catches problems faster than waiting for a customer to mention it, or worse, never mentioning it at all and just quietly going to a competitor instead. This takes a few minutes to set up and gives real peace of mind that something will catch a serious outage even without a formal support arrangement in place, and it's a reasonable stopgap for a small business not yet ready to commit to a paid monthly maintenance plan.
 
+## A short list of things worth checking once a year
+
+Even without a formal maintenance plan, a yearly self-check catches a lot. Confirm the domain and SSL certificate both show a renewal date well in the future. Test the contact form yourself by actually submitting it and confirming the email arrives. Click through the main navigation links to confirm nothing's quietly broken since the last time anyone looked closely. This whole check takes maybe fifteen minutes and catches problems while they're still small and easy to fix.
+
 ## Keeping a simple record of who to contact
 
 Write down, somewhere easy to find later, who built your site, how to reach them, and what your support arrangement actually covers. This sounds obvious, but a surprising number of business owners lose track of this basic information within a year or two, especially if the original build happened during a busy period and the details never got written down anywhere beyond an old email thread nobody can find anymore when it actually matters.
