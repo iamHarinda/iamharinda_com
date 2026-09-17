@@ -1,45 +1,39 @@
 ---
 title: "Batch Editing in Lightroom Without Losing Consistency Across a Gallery"
-description: "Syncing settings across hundreds of photos is fast — and it's also how galleries end up inconsistent. Here's how to batch edit without the usual mistakes."
+description: "Syncing settings across hundreds of photos is fast, and it's also how galleries end up looking inconsistent. Here's how to batch edit without the usual mistakes."
 publishDate: 2026-07-15
 ---
 
-Lightroom's Sync Settings and Auto Sync are the reason a wedding photographer can touch a thousand photos in an afternoon instead of a week. They're also the most common reason a delivered gallery looks inconsistent — one part looks intentional, another looks like it was missed.
+Lightroom's Sync Settings and Auto Sync are the reason a wedding photographer can touch a thousand photos in an afternoon instead of losing a whole week to it. They're also the most common reason a delivered gallery ends up looking inconsistent, like part of it was intentional and another part just got missed.
 
-## Why syncing settings goes wrong
+## Why syncing settings breaks down
 
-Copying one image's full edit onto a batch works only when every image in that batch shares the same lighting. Sync a ceremony edit (indoor, tungsten, backlit) onto reception photos (mixed colour lighting, moving subjects) and the white balance that looked right on one set will read completely wrong on the other.
+Copying one image's full edit onto a whole batch works fine when every photo in that batch shares the same lighting. Sync a ceremony edit, indoor, tungsten, backlit, onto reception photos with mixed colour lighting and people moving around, and the white balance that looked right on one set reads completely wrong on the other.
 
-The fix isn't to avoid syncing — it's to sync selectively.
+The fix isn't avoiding sync altogether. It's syncing selectively instead of blindly.
 
-## Group before you sync
+## Group photos before you sync anything
 
-Before touching Sync Settings, sort the gallery into lighting groups, not just chronological order:
+Before you touch the Sync Settings dialog, sort your gallery into lighting groups, not just chronological order. Getting-ready shots usually sit indoors with mixed window and tungsten light. Ceremony photos are often backlit or lit by one consistent venue source. Outdoor portraits shift with the time of day and cloud cover. Reception photos cover the widest range of all, string lights, DJ lighting, candlelight, sometimes all in the same frame.
 
-- Getting-ready (usually indoor, mixed window and tungsten light)
-- Ceremony (often backlit, or one consistent venue light)
-- Outdoor portraits (daylight, but changes with time of day and cloud cover)
-- Reception (the widest range — string lights, DJ lighting, candlelight)
+Each group can usually share a base correction. Reception almost never can. It typically needs per-image attention no matter how tempting it is to sync your way through it.
 
-Each group can usually share a base correction. Reception almost never can — it typically needs per-image adjustment.
+## What's safe to sync, and what isn't
 
-## What to sync, and what not to
+Lightroom's Sync Settings dialog lets you pick exactly which sliders copy over. This is the setting most photographers skip past without actually reading it.
 
-Lightroom's Sync Settings dialog lets you pick exactly which sliders to copy. This is the setting most photographers skip past without reading. Useful splits:
+Safe to sync across a lighting group: white balance, if the light source stays consistent, tone curve, colour grading, sharpening, noise reduction, lens corrections.
 
-- **Safe to sync across a lighting group:** white balance (if the light source is consistent), tone curve, colour grading, sharpening, noise reduction, lens corrections.
-- **Rarely safe to sync:** exposure (varies with framing and background brightness), any local masks (skin, sky) — these need re-checking per image, even if the base adjustment carries over.
+Rarely safe to sync: exposure, since it shifts with framing and background brightness, and any local masks, skin, sky, selective colour, since those genuinely need rechecking per image even when the base adjustment carries over cleanly.
 
-## A workflow that holds up across 500+ photos
+## A workflow that holds up past 500 photos
 
-1. Cull first — don't waste sync time on photos that won't make the final gallery.
-2. Group by lighting, not by time or location name.
-3. Pick one representative photo per group, edit it fully, then sync only the settings listed above to the rest of the group.
-4. Scroll the full group in Grid view afterward and spot-check for the outliers — a photo shot a stop brighter, a frame with a different colour temperature source in the background.
-5. Handle local masks (skin, sky, selective colour) per image, even within a synced group.
+Cull first. Don't burn sync time on photos that won't make the final gallery anyway. Group by lighting, not by time stamp or location name. Pick one representative photo per group, edit it fully, then sync only the settings listed above to the rest of that group. Scroll the full group afterward in Grid view and spot-check for outliers, a photo shot a stop brighter, a frame with a different light source hiding in the background.
 
-Done this way, batch editing in Lightroom gets a gallery to a consistent, professional base fast — it just isn't a substitute for the individual attention hero images and tricky lighting still need.
+Handle local masks, skin, sky, selective colour, per image, even within a group you just synced. That step doesn't get to skip itself no matter how consistent the group looks at a glance.
 
----
+## The real payoff of doing it this way
 
-**Have a large gallery that needs a consistent, hand-checked edit?** Every photo is reviewed individually — no auto-sync shortcuts on the final pass. [Get a free sample edit](/contact/) or [see pricing by volume](/pricing/).
+Done right, batch editing in Lightroom gets a gallery to a solid, consistent base fast. It's just not a substitute for the individual attention your hero images and any tricky lighting still genuinely need. Photographers who sync everything blindly usually don't notice the inconsistency themselves, they've been staring at the gallery too long, but clients scrolling through it fresh pick up on it immediately, even if they can't say exactly why something feels off.
+
+Have a large gallery that needs a consistent, hand-checked edit? Every photo gets reviewed individually here, no auto-sync shortcuts on the final pass. A free sample edit shows the quality before you commit, and pricing runs by volume for full galleries.
