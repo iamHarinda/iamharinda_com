@@ -28,8 +28,16 @@ Set a target gallery size before you even start. Knowing you're aiming for rough
 
 Cull before you edit, always, no exceptions. Colour-correcting or retouching a photo that gets cut in a later pass is wasted time you'll never get back.
 
+## Building a shot-list checklist into pass three
+
+A simple written checklist, first look, ceremony kiss, ring exchange, family formals by group, cake cutting, first dance, helps catch gaps that pure gut-feel review sometimes misses, especially late at night after hours of screen time. Running through this list during the final gallery pass takes five extra minutes and prevents the genuinely awkward situation of realizing after delivery that a specific moment a client asked about, a grandparent's reaction, a particular family grouping, never actually made it into the final selects.
+
 ## Where AI culling tools actually help
 
 AI-assisted culling tools, built into Lightroom and available as standalone apps now, speed up pass one specifically, flagging closed eyes, blur, and duplicates automatically without you having to look at each one. They're a genuinely reasonable time-saver for that mechanical first pass. The comparison judgment in pass two and the gallery-composition thinking in pass three still need a person's eye, since neither is really about spotting technical flaws. They're about which photo actually tells the story better, and that's a judgment call software still can't make reliably.
+
+## How culling speed improves with deliberate practice
+
+Photographers who've culled hundreds of weddings report the process getting noticeably faster over time, not because they're rushing more, but because pattern recognition improves with repetition. Spotting a closed eye or a slightly soft focus becomes near-instant after enough practice, freeing up mental energy for the harder calls in pass two and three. If culling still feels slow and effortful after a couple dozen weddings, it's worth deliberately timing yourself and looking for where the hesitation is actually coming from rather than assuming speed will just arrive on its own eventually.
 
 Once culling's done, need the final selects edited? RAW files are recommended, and everything gets colour-corrected and retouched by hand. Send a free sample edit request or check pricing by volume.
