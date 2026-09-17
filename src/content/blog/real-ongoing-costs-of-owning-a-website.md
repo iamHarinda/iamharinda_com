@@ -34,6 +34,10 @@ Two developers quoting the same build price can leave you with very different to
 
 Beyond routine monthly costs, plan for the occasional larger expense every few years, a design refresh once your branding evolves, added functionality as your business grows into new services, or a technical upgrade if the underlying platform changes significantly over time. Setting aside a small amount annually toward this, rather than treating it as an unplanned emergency expense when it eventually comes up, keeps a growing business from being caught off guard by a cost that was actually predictable all along if you'd planned for it.
 
+## Comparing this to other business expenses you already budget for
+
+Most businesses already budget for recurring costs elsewhere, rent, insurance, subscriptions to tools used daily, without much second thought about whether those costs are worth it. A website's ongoing costs deserve the same treatment, planned for as a normal, predictable line item rather than a surprise that catches you off guard every renewal period because it was never properly accounted for in the first place.
+
 ## Why transparency about these costs matters from day one
 
 A developer who walks you through the full realistic cost picture at the start, not just the build price, is setting you up to budget properly rather than face an unpleasant surprise a year in. This kind of upfront honesty is worth valuing when choosing who to work with, even if the full picture feels like more to absorb in that very first conversation than a single simple number would on its own.
