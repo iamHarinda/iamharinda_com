@@ -34,7 +34,7 @@ Ask yourself this simple question. Am I sourcing a blank garment and need someth
 
 ## Why some larger studios can appear to offer both
 
-Larger design agencies sometimes advertise both pattern design and patternmaking services under one roof, which can make the distinction feel less important than it actually is for a smaller operation. In these cases, it's usually two separate specialists working within the same studio, not one person doing both jobs, so it's still worth confirming which specialist will actually handle your specific project rather than assuming broad capability across the whole team.
+Larger design agencies sometimes advertise both pattern design and patternmaking services under one roof, which can make the distinction feel less important than it actually is for a smaller operation. In these cases, it's usually two separate specialists working within the same studio, not one person doing both jobs, so it's still worth confirming which specialist will actually handle your specific project rather than assuming broad capability across the whole team without asking directly.
 
 ## What happens if you approach the wrong type of specialist
 
