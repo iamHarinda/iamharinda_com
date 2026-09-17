@@ -36,7 +36,7 @@ The same pattern can look different once printed on different fabric textures, a
 
 ## A simple way to remember what matters most
 
-If there's one thing worth taking away from all of this, it's that a tile viewed alone tells you almost nothing about how it'll actually look repeated. Always ask to see it tiled, always check the edges where one copy meets the next, and never approve a pattern based purely on how the single unit looks in isolation on its own.
+If there's one thing worth taking away from all of this, it's that a tile viewed alone tells you almost nothing about how it'll actually look repeated. Always ask to see it tiled, always check the edges where one copy meets the next, and never approve a pattern based purely on how the single unit looks in isolation on its own, without seeing it repeated first.
 
 ## Why this term gets thrown around loosely online
 
