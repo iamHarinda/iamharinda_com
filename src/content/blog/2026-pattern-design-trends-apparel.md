@@ -40,7 +40,7 @@ These directions reflect what's showing up across current apparel design convers
 
 ## A practical way to bring trend awareness into your own brief
 
-Rather than researching trends extensively yourself, simply collecting three or four images that genuinely appeal to you, from anywhere, another brand, a magazine, a walk through a store, and sharing them with your designer communicates far more than trying to name a specific trend by its industry label. Your designer can identify the underlying direction from those references and build something that fits it without you needing to become fluent in trend terminology yourself before that first conversation even happens, which takes the pressure off having to sound like an industry expert just to get a good result from the process.
+Rather than researching trends extensively yourself, simply collecting three or four images that genuinely appeal to you, from anywhere, another brand, a magazine, a walk through a store, and sharing them with your designer communicates far more than trying to name a specific trend by its industry label. Your designer can identify the underlying direction from those references and build something that fits it without you needing to become fluent in trend terminology yourself before that first conversation even happens, which takes the pressure off having to sound like an industry expert just to get a good, genuinely current result from the whole process.
 
 ## How to spot a trend that's already fading versus one still rising
 
