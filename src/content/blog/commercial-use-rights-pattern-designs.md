@@ -32,7 +32,7 @@ If a designer can't clearly answer whether you get full commercial rights, ask d
 
 ## How this connects to protecting your own brand later
 
-Beyond just clearing you to sell products, confirming exclusive rights to a design also matters for protecting your brand's distinctiveness over time. If a design isn't exclusive to you, the same or a very similar pattern could theoretically appear on a competitor's products, undermining the very differentiation you were hoping to build through custom design work in the first place.
+Beyond just clearing you to sell products, confirming exclusive rights to a design also matters for protecting your brand's distinctiveness over time. If a design isn't exclusive to you, the same or a very similar pattern could theoretically appear on a competitor's products, undermining the very differentiation you were hoping to build through custom design work in the first place, after investing real time and money into something meant to be uniquely yours.
 
 ## What happens if a rights dispute actually arises
 
