@@ -42,6 +42,6 @@ Some business owners assume custom-coded automatically means slower to launch, s
 
 ## Mixing approaches within the same project
 
-It's also worth knowing these options aren't always mutually exclusive within a single business. A company might run their main marketing site as a fast, custom-coded build while using a separate, simple builder-based page for a specific seasonal promotion or event they don't want a developer involved in every time. There's no rule that says every part of your online presence has to use the exact same underlying technology, and matching the right tool to each specific need often works better than forcing one approach to cover everything.
+It's also worth knowing these options aren't always mutually exclusive within a single business. A company might run their main marketing site as a fast, custom-coded build while using a separate, simple builder-based page for a specific seasonal promotion or event they don't want a developer involved in every time. There's no rule that says every part of your online presence has to use the exact same underlying technology, and matching the right tool to each specific need often works better than forcing one single approach to try to cover every situation your business runs into.
 
 Not sure which fits your situation? A free scope call is a good place to get an honest answer, including "you don't need custom development yet" if that turns out to be true.
