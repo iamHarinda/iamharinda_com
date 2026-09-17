@@ -30,4 +30,12 @@ Ask specifically about hosting, where the site actually lives, which isn't inclu
 
 "What am I getting for this price, and what happens after launch if something needs changing?" gets you a far more useful answer than the raw number alone. Two very different sites can cost the same amount, and two nearly identical sites can cost wildly different amounts depending entirely on what's actually included in each quote you receive.
 
+## Why the cheapest quote isn't always the cheapest outcome
+
+A rock-bottom quote sometimes means corners get cut somewhere you won't notice until later, no real testing across devices, a template stretched to fit content it wasn't designed for, or hosting so basic it can't handle even modest traffic growth without slowing down noticeably. This doesn't mean the cheapest option is always wrong, sometimes a simple business genuinely doesn't need more than a basic build, but it's worth asking directly what's included at a low price point before assuming it's simply a better deal than a more expensive quote covering the exact same scope of work.
+
+## How to compare quotes that look completely different on paper
+
+When quotes for the same basic project vary by thousands of dollars, the gap almost always comes down to what's actually included, not just raw skill differences between developers. List out exactly what each quote covers, design, number of pages, a CMS or not, hosting setup, post-launch support, and compare those lists side by side rather than just the bottom-line number. This turns an apples-to-oranges comparison into something you can actually evaluate fairly, and it often reveals that the "expensive" quote includes several things the "cheap" one left out entirely.
+
 Want a real number instead of a wide range? A free scope call gets you a fixed price based on what you actually need, no hourly guessing involved.
