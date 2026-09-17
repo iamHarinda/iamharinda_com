@@ -46,7 +46,7 @@ That's a complete, plain-language brief, no design terminology required anywhere
 
 ## Why plain language actually works better than you'd think
 
-Designers who work regularly with clients outside the design industry are used to translating everyday descriptions into technical execution, and they generally prefer this over a client attempting to use jargon incorrectly, which can actually cause more confusion than plain language would in the first place. Trying to sound technical isn't necessary and occasionally backfires if a term gets used slightly wrong, leading a designer down the wrong path based on a misunderstanding.
+Designers who work regularly with clients outside the design industry are used to translating everyday descriptions into technical execution, and they generally prefer this over a client attempting to use jargon incorrectly, which can actually cause more confusion than plain language would in the first place. Trying to sound technical isn't necessary and occasionally backfires if a term gets used slightly wrong, leading a designer down the wrong path based on a misunderstanding that could have been avoided entirely with simpler, clearer words.
 
 ## What to do if you genuinely don't know where to start
 
