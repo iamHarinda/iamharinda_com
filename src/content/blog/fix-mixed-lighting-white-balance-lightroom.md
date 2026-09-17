@@ -42,4 +42,12 @@ If you shoot regularly at the same handful of venues, keep a simple note of what
 
 Mixed lighting isn't a mistake you made on shoot day. It's just what real venues look like. Getting good at fixing it in post is a skill worth building deliberately rather than something you stumble through every time it comes up, because it comes up constantly, especially at receptions.
 
+## Tools beyond the basic Temp and Tint sliders
+
+Once basic white balance and masking stop being enough on a particularly stubborn frame, Lightroom's HSL panel lets you shift individual colour ranges independently, pulling just the oranges cooler without touching the blues, for instance, which is useful when one specific colour in the frame is carrying most of the cast. The Calibration panel, tucked further down and rarely touched by casual users, adjusts how the raw colour channels themselves get interpreted, and it can fix a stubborn cast that Temp and Tint alone won't fully resolve, particularly on files from cameras with unusual colour science. Neither tool is something you'll need on every photo, but knowing they exist saves real frustration on the handful of frames each wedding that just won't cooperate with the standard approach.
+
+## Why getting this right protects your reputation long after the wedding
+
+Couples look at their wedding photos for decades, at anniversaries, showing their kids, printing enlargements for a new house. A colour cast that seemed minor at delivery time becomes a lot more obvious once a photo is printed large and hung on a wall under normal home lighting rather than viewed quickly on a phone screen. Getting mixed lighting right isn't just about a client's first reaction to the gallery. It's about how the photos hold up over the years they'll actually be looked at.
+
 Have a gallery with tricky mixed lighting throughout? Every frame gets corrected by eye on a factory-calibrated monitor here, which is exactly the kind of problem that needs a real human judgment call. Send a free sample edit request or check pricing for full galleries.
