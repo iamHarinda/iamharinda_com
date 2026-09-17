@@ -34,6 +34,10 @@ Technical SEO issues, a site that's structurally hard for Google to read, missin
 
 A few misconceptions circulate constantly among business owners new to this topic. Paying Google directly doesn't improve your organic, unpaid ranking, that's a separate system called paid search entirely, distinct from the search results SEO actually affects. More keywords crammed onto a page doesn't help and often hurts, since modern search algorithms recognize and penalize that pattern rather than rewarding it. And a single perfect page doesn't guarantee ranking forever, since competitors update their own content too, meaning SEO is more of an ongoing practice than a one-time project you finish and forget about entirely once the site launches.
 
+## Tracking whether your efforts are actually working
+
+Google Search Console, a free tool from Google itself, shows which searches actually bring people to your site and how your pages are performing over time in real rankings. Checking this every month or two, rather than guessing based on gut feeling, tells you honestly whether your SEO effort is paying off or needs adjusting. It takes a bit of setup the first time, usually verifying you own the site through a small code snippet, but after that it runs quietly in the background, ready whenever you want to check in on real data.
+
 ## How local businesses can get outsized results
 
 For a business serving a specific city or region, local SEO offers a genuinely favourable opportunity compared to competing nationally. Fewer competitors are actively optimizing for local search phrases specifically, which means consistent basic effort, an accurate Google Business Profile, some local directory listings, content mentioning your actual service area by name, can produce meaningfully better results faster than the same effort would in a more crowded national market with far more competition fighting for the same broad terms.
