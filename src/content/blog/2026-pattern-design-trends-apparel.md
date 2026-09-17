@@ -34,4 +34,12 @@ Trends are useful as a reference point for what currently feels current, not a f
 
 The businesses that age well with their branding usually picked something that fit them specifically, trend-aware but not trend-dependent on any single passing moment. That's a better target than chasing whatever's hottest this particular season, since trends fade but a design built around genuine identity tends to hold up much longer.
 
+## How to spot a trend that's already fading versus one still rising
+
+A trend showing up heavily in mass-market fast fashion has usually already peaked in the design world that originated it months or sometimes years earlier, since mainstream adoption tends to lag well behind where genuinely current design work is already heading. Looking at what's showing up in smaller, independent apparel brands and design-focused publications gives a more accurate read on what's actually current right now, rather than what's simply become widely available and visible everywhere at once.
+
+## Why a strong foundation matters more than chasing every trend
+
+A well-designed pattern built on solid fundamentals, good colour balance, a properly tested repeat, motifs that suit the brand, tends to age better than one built purely around a trending aesthetic that will inevitably shift again within a year or two of launching. Trends are worth knowing about and drawing inspiration from, but they shouldn't override the more durable qualities that make a pattern genuinely work well over time regardless of what's currently popular.
+
 Want a design that feels current without just copying a trend? Send a brief and a couple of references you like, and get a design built around your brand specifically.
