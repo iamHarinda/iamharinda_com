@@ -48,6 +48,6 @@ If you're reviewing a polo design built by a previous designer or an in-house te
 
 ## A final reminder before signing off on any design
 
-Placement issues are almost always fixable at little to no cost when caught early, and almost always expensive once a production run is already underway. That asymmetry alone justifies the extra few minutes it takes to check a mockup properly before giving final approval on any order, large or small, rushed or not, urgent deadline or plenty of time to spare.
+Placement issues are almost always fixable at little to no cost when caught early, and almost always expensive once a production run is already underway. That asymmetry alone justifies the extra few minutes it takes to check a mockup properly before giving final approval on any order, large or small, rushed or not, urgent deadline or plenty of time to spare before the order needs to ship.
 
 Every design here gets shown on a realistic front and back mockup before it's finalized, never a flat template with artwork just pasted on top.
