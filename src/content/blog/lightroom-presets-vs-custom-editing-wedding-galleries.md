@@ -38,4 +38,12 @@ Preset packs sold online are almost always built and demonstrated on a specific 
 
 Neither approach is wrong on its own. Presets save real time on lower-stakes work and speed up a first pass on big galleries. Custom editing protects the details that actually matter on the photos people will keep forever. Most studios that survive peak season use some blend of both, and knowing which one you're actually paying for matters more than the marketing language either side uses.
 
+## What clients actually notice, versus what photographers obsess over
+
+It's worth being honest that most wedding clients can't tell the difference between a well-applied preset and a fully custom hand edit at a casual glance, especially scrolling through a gallery on a phone. What they do notice, reliably, is inconsistency, one photo looking warm while the next looks cool, or skin tones that shift oddly from image to image. This means the real value of custom editing isn't that it looks dramatically better than a good preset on any single photo. It's that it's far less likely to produce the kind of inconsistency that clients actually pick up on without being able to explain why something feels off about their gallery.
+
+## A practical hybrid worth considering seriously
+
+Rather than treating this as an all-or-nothing choice, plenty of photographers apply a custom preset as the very first step on every photo in a lighting group, then still go through and hand-correct exposure and any problem areas individually. This isn't really "using a preset" in the sense of trusting it blindly. It's using a preset as a faster starting point for work you were going to do by hand anyway, which shaves real time off the process without reintroducing the consistency risk that comes from trusting a preset to handle the whole job on its own.
+
 Prefer every photo corrected by eye instead of pushed through a fixed preset? That's the whole approach here, no AI presets, no one-click batch looks, just hand editing on a calibrated screen. Send a free sample edit request, or check pricing for full galleries.
