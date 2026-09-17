@@ -1,38 +1,31 @@
 ---
 title: "Inherited a Website From an Old Developer Who Disappeared? Here's What to Do"
-description: "A surprisingly common situation: the person who built your site is gone, and nobody can make changes. Here's how to figure out what you actually have and what to do next."
+description: "A surprisingly common situation. The person who built your site is gone, and nobody can change anything. How to figure out what you actually have and what comes next."
 publishDate: 2026-11-02
 ---
 
-It's a more common situation than it sounds: a business owner has a working website, but the freelancer or agency who built it is no longer reachable — moved on, stopped responding, or simply disappeared — and nobody currently has the access needed to change anything. If this is you, the good news is it's almost always fixable. The steps just aren't obvious if you've never done this before.
+It's a more common situation than it sounds. A business owner has a working website, but the freelancer or agency who built it is nowhere to be found anymore, moved on, stopped answering, or just vanished entirely, and nobody currently has the access needed to change a single thing. If this is you, the good news is it's almost always fixable. The steps just aren't obvious if you've never had to do this before.
 
-## Step 1: figure out what you actually have access to
+## Start with what you can actually log into right now
 
-Start with what you can log into right now:
+Check your domain registrar first, wherever the domain itself is registered. Look through your email for any registration or renewal receipts. The "from" address usually reveals which registrar you're dealing with. Check hosting too, wherever the site's files actually live. Sometimes it's the same account as the domain, sometimes it's completely separate. Check the site's admin panel, if it runs on WordPress or something similar, usually sitting at yoursite.com slash wp-admin or close to it.
 
-- **Your domain registrar** — where the domain itself is registered. Check your email for any registration or renewal receipts; the "from" address usually reveals the registrar.
-- **Hosting** — where the site's files actually live. Sometimes the same account as the domain, sometimes separate.
-- **The site's admin panel**, if it runs on WordPress or a similar platform — usually at yoursite.com/wp-admin or similar.
+If you already have login access to all three, you're in a much better position than you probably think. A new developer can work with what's already there.
 
-If you have login access to all three, you're in a much better position than you might think — a new developer can work with what's there.
+## Check who actually owns the domain
 
-## Step 2: check who actually owns the domain
+This is the single most important thing to verify before anything else. Look up your domain's registration details, a WHOIS lookup, or directly inside your registrar account, to see whose name and contact information is actually listed as the owner. If it's the old developer's name and not yours, this needs sorting before anything else moves forward. Without it, you don't fully control your own website's address, no matter what else you manage to recover.
 
-This is the single most important thing to verify. Look up your domain's registration details (a WHOIS lookup, or directly in your registrar account) to see whose name and contact information is actually listed as the owner. If it's the old developer's name and not yours, this needs resolving before anything else — without it, you don't fully control your own website's address.
+## Get an honest audit before you decide anything
 
-## Step 3: get an honest audit before deciding what to do
+A new developer can usually look at what exists, the platform, the code if it's custom, the overall condition of things, and give you a straight answer. Is this worth continuing to build on, or is a rebuild actually the more practical option here? This isn't something to guess at on your own. It takes someone who can actually read what's sitting there.
 
-A new developer can usually look at what exists — the platform, the code if it's custom, the overall condition — and give you a straight answer: is this worth continuing to build on, or is a rebuild actually the more practical option? This isn't something to guess at yourself; it takes someone who can actually read what's there.
+## Deciding between a rescue and a rebuild
 
-## Step 4: decide between rescue and rebuild
+Rescue makes sense when the site is reasonably well-built, mostly just needs updates, fixes, or new features, and you have, or can recover, the access needed to work on it going forward. Rebuild makes more sense when access can't be recovered at all, the underlying code is genuinely in rough shape, or the site's old enough that starting fresh costs about the same as untangling what's already there.
 
-- **Rescue** makes sense when the site is reasonably well-built, mostly just needs updates, fixes, or new features, and you have (or can recover) the access needed to work on it.
-- **Rebuild** makes more sense when access can't be recovered at all, the underlying code is in genuinely poor shape, or the site is old enough that starting fresh is comparable in cost to untangling what's there.
+## What to insist on this time around
 
-## What to insist on this time
+Whoever takes over, whether it's a rescue or a full rebuild, get the domain transferred fully into your name. Get real access to hosting and any admin accounts. Get the source code, or a documented account of the full setup if there isn't one. This is the moment to actually fix the ownership gap that caused the whole problem the first time.
 
-Whoever takes over — whether it's a rescue or a full rebuild — get the domain transferred fully into your name, get real access to hosting and any admin accounts, and get the source code or a documented account of the full setup. This is the moment to fix the ownership gap that caused the problem in the first place.
-
----
-
-**Have a site with an access problem or an old developer who's gone quiet?** Send what you have and get an honest read on whether it's worth saving or better rebuilt. [Get in touch](/contact/) or [book a scope call](/web-development/).
+Have a site with an access problem, or an old developer who's gone quiet on you? Send over what you have and get an honest read on whether it's worth saving or better off rebuilt.
