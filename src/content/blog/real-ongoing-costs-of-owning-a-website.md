@@ -30,4 +30,12 @@ A cheap builder subscription at twenty dollars a month adds up to over seven hun
 
 Two developers quoting the same build price can leave you with very different total costs over three years, depending on what platform they build on and what ongoing fees come bundled with it by default. Ask specifically what a realistic yearly cost looks like after launch, not just the number for the initial build itself. That's the number that actually determines what a website costs you over time, not the headline price you see first in a quote.
 
+## Budgeting for occasional bigger updates too
+
+Beyond routine monthly costs, plan for the occasional larger expense every few years, a design refresh once your branding evolves, added functionality as your business grows into new services, or a technical upgrade if the underlying platform changes significantly over time. Setting aside a small amount annually toward this, rather than treating it as an unplanned emergency expense when it eventually comes up, keeps a growing business from being caught off guard by a cost that was actually predictable all along if you'd planned for it.
+
+## Why transparency about these costs matters from day one
+
+A developer who walks you through the full realistic cost picture at the start, not just the build price, is setting you up to budget properly rather than face an unpleasant surprise a year in. This kind of upfront honesty is worth valuing when choosing who to work with, even if the full picture feels like more to absorb in that very first conversation than a single simple number would.
+
 Ongoing maintenance here is a stated flat monthly rate, no surprise invoices, listed right alongside the build pricing from the start.
