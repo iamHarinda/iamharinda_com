@@ -42,4 +42,12 @@ A lot of photographers start by trying to reverse-engineer a grade they admire f
 
 A gallery with inconsistent grading doesn't always look "wrong" photo by photo. It just feels unfinished when you scroll through the whole thing, like someone lost interest halfway through. Couples notice that even when they can't quite say why.
 
+## Common grading mistakes that sneak past a quick glance
+
+A few problems show up often enough to name directly. Grading too heavily on a laptop screen with automatic brightness turned on, which shifts constantly depending on ambient light in the room, leads to grades that look completely different once viewed on a client's phone or a properly calibrated display. Copying a grade's exact numeric values from a tutorial without checking them against your own photo's starting point, since the same numbers produce wildly different results depending on what the base image already looked like before grading started. And grading the very first photo you open in a session before your eyes have adjusted to the room's lighting, which tends to produce edits that look oversaturated or overly warm once you review them again later with fresh eyes.
+
+## How to know when a grade is actually finished
+
+A genuinely finished grade holds up in three different conditions: viewed at normal size on a calibrated screen, viewed small as a thumbnail in a gallery grid, and viewed on an average phone screen with typical brightness settings. A grade that only looks right in one of these conditions usually needs another pass. This three-way check takes an extra minute or two per gallery and catches a surprising number of issues that would otherwise only get noticed after a client mentions their photos look different on their phone than they did on your laptop during the proofing call.
+
 Want a gallery graded and corrected by hand, frame by frame? No presets, no AI batch looks here, every image gets colour-corrected and graded individually on a calibrated screen. Send two or three photos over for a free sample edit, or check the pricing page for full galleries.
