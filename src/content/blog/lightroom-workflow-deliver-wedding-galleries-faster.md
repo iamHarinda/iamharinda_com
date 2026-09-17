@@ -40,4 +40,12 @@ A tightened-up workflow still runs into a wall eventually. A photographer coveri
 
 None of this works if you skip steps under deadline pressure. A rushed cull leads to a rushed edit, which leads to a gallery that looks rushed even if nobody can name exactly why. Protecting the order of operations matters as much as any individual step in the list above, maybe more.
 
+## What to do the week a wedding actually happens
+
+The days right after a shoot set the tone for the whole editing timeline. Importing and backing up the same day or the next, while the shoot is still fresh in your memory, makes culling decisions faster since you still remember which near-identical shots had the better expression or the sharper focus. Waiting two weeks to even open the files means relying on guesswork during the cull instead of memory, which slows down exactly the stage that's supposed to move fastest.
+
+## A simple way to audit your own bottleneck honestly
+
+If you're not sure which of the three bottlenecks above is actually costing you the most time, look at your last five deliveries and note how many days passed between shoot date and the start of active editing, versus how many days the editing itself took once you actually sat down to do it. A big gap before you start points at a scheduling or motivation problem more than a workflow problem. A long stretch once you're actively working points at the culling or correction steps themselves needing the fixes described here.
+
 Backed up on editing and need a gallery turned around? RAW files come in, get hand-corrected and retouched on a calibrated screen, and full-resolution files go back out, first proofs usually within a day. Send a free sample edit request or check the pricing page.
