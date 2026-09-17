@@ -34,6 +34,10 @@ Build the grade on two or three representative images first, one indoor shot, on
 
 That order, fix individually, grade consistently, verify on a sample, is what keeps a gallery reading like one cohesive set instead of a hundred separately-graded photos stitched together.
 
+## Building your own signature grade instead of copying one
+
+A lot of photographers start by trying to reverse-engineer a grade they admire from someone else's portfolio, guessing at slider values from a screenshot. That rarely produces something that actually fits your own photos, because the original was built against a specific set of lighting conditions you weren't there for. A more reliable approach is picking two or three moods you genuinely like, warm and nostalgic, cool and cinematic, soft and airy, and building a simple version of each on your own best images. Test it across a handful of genuinely different lighting scenarios before deciding it's your grade. A look that only works on one type of light isn't a style yet, it's a lucky accident waiting to fall apart on the next gallery.
+
 ## Why this matters more than people assume
 
 A gallery with inconsistent grading doesn't always look "wrong" photo by photo. It just feels unfinished when you scroll through the whole thing, like someone lost interest halfway through. Couples notice that even when they can't quite say why.
