@@ -36,7 +36,7 @@ Ask your printer directly what format and colour mode they need before final fil
 
 ## A final word on trusting an experienced eye here
 
-None of this requires you to become a print production expert yourself. It just means asking the right questions of whoever's designing your artwork, and trusting a designer who volunteers this information upfront without needing to be pressed for it, since that's usually a reliable sign they've actually worked through real production runs before, not just designed things that were only ever meant to be viewed on a screen.
+None of this requires you to become a print production expert yourself. It just means asking the right questions of whoever's designing your artwork, and trusting a designer who volunteers this information upfront without needing to be pressed for it, since that's usually a reliable sign they've actually worked through real production runs before, not just designed things that were only ever meant to be viewed on a screen rather than physically reproduced on fabric.
 
 ## The cost of finding out too late
 
