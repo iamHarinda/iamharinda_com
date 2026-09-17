@@ -46,6 +46,10 @@ Finding an issue at the mockup stage isn't a failure of the design process, it's
 
 It's worth remembering this step benefits both sides of the relationship, not just the person ordering. A designer who skips mockups risks their own reputation on a production mistake that was genuinely preventable, which is exactly why any designer who takes their work seriously builds this step into their process without needing to be asked for it specifically.
 
+## What separates a good mockup process from a great one
+
+A good process shows you a mockup and waits for approval. A great one actively points out anything worth double-checking, an area where colour contrast might be tight, a repeat that's subtle enough to warrant a closer look, before you even have to ask. That extra layer of care is a strong signal of a designer who genuinely wants the finished product to succeed, not just to get a quick sign-off and move on to the next order.
+
 ## A final thought before wrapping up
 
 Treat the mockup review as your last real checkpoint before a decision becomes hard to undo. A few careful minutes spent here, checking placement, scale, colour, and the repeat if applicable, is consistently one of the highest-value steps in the entire design process relative to how little time it actually takes to do properly and thoroughly.
