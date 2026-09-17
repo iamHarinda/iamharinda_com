@@ -34,6 +34,12 @@ JPEGs can be edited, sure, but the camera already baked in processing decisions 
 
 This is the single easiest way to protect yourself from a bad outsourcing experience. Pay only after the edited photos are delivered and you've checked them over. Any service confident in its own work should offer this without you having to ask. Upfront deposits aren't automatically a red flag on their own, but "pay after you approve" removes the risk entirely.
 
+## Common mistakes that undo a good brief
+
+Even photographers who follow every step above sometimes trip on smaller things. Sending reference photos that were themselves edited inconsistently, three different styles across three sample images, gives an editor mixed signals about what "your style" actually is. Forgetting to mention which files belong to which part of the day, ceremony versus reception, means an editor might apply a single approach across lighting conditions that genuinely need different treatment. And going quiet during the revision round, taking two weeks to respond to a proof, stretches out what should be a fast back-and-forth into a project that drags well past when you promised delivery to your client.
+
+None of these are dealbreakers. They're just friction that's easy to avoid once you know to watch for it.
+
 ## What the whole process looks like when it's working
 
 Send RAW files plus two or three reference edits with a short style note. Get first proofs back on a small batch, usually within a day for straightforward lighting. Mark up anything off, unlimited revisions, until it matches. Approve the final gallery at full resolution, then pay.
