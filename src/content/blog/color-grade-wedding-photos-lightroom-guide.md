@@ -1,44 +1,41 @@
 ---
 title: "How to Color Grade Wedding Photos in Lightroom (A Practical Guide)"
-description: "Color grading is different from color correction. Here's how wedding photographers use Lightroom's tools to set a mood without losing accurate skin tones."
+description: "Color grading and color correction aren't the same thing. Here's how wedding photographers actually use Lightroom's tools to set a mood without wrecking skin tones."
 publishDate: 2026-07-06
 ---
 
-Color correction fixes what's wrong — a bad white balance, a colour cast from venue lighting. Color grading is a separate step: shaping what's already correct into a specific mood. Confusing the two is why a lot of self-taught colour grades end up looking like a colour cast that was never actually fixed.
+Color correction fixes what's actually wrong with a photo, a bad white balance, a colour cast picked up from venue lighting. Color grading is something else entirely. It's shaping an already-correct image into a specific mood. Mixing these two up is exactly why so many self-taught colour grades end up looking like a colour cast nobody bothered to fix.
 
-## Correct first, grade second
+## Fix it before you style it
 
-Before any creative grading, get the base image right:
+Before touching anything creative, get the base image right first. Set white balance using something genuinely neutral in the frame, a white shirt, a tablecloth, anything that should read as neutral grey or white. Balance the exposure and contrast so shadows and highlights both hold real detail. Then check skin tones against a reference you actually trust, not just against how the photo happens to look sitting on its own.
 
-1. Set white balance using a genuinely neutral reference point in the frame — a white shirt, a tablecloth, anything that should read as neutral grey or white.
-2. Balance exposure and contrast so shadows and highlights hold real detail.
-3. Check skin tones against a reference you trust, not just against how the image looks on its own.
+Grading on top of an image that's still wrong just stacks a mood over a mistake. You end up chasing a feeling instead of fixing the problem underneath it.
 
-Grading on top of an uncorrected image just stacks a mood over a mistake.
+## Working the Color Grading panel
 
-## Using Lightroom's Color Grading panel
+Lightroom's Color Grading panel, the three wheels for shadows, midtones, and highlights, is where most of the real mood-setting happens.
 
-Lightroom's Color Grading panel (the three-wheel tool for shadows, midtones and highlights) is where most of the actual mood-setting happens:
+Shadows are where a touch of blue or teal shows up most in wedding work. It reads cool and cinematic and barely touches skin at all.
 
-- **Shadows** — a touch of blue or teal in the shadows is the most common wedding grade; it reads as cool and cinematic without touching skin.
-- **Midtones** — this is where skin tones live, so changes here need to be small. A tiny warmth shift can flatter skin; too much pushes tones orange fast.
-- **Highlights** — a slight warm lift in the highlights (a touch of yellow or orange) is what gives "golden hour" images their glow, even when shot mid-afternoon.
+Midtones are where skin actually lives, so keep your moves small here. A tiny warmth shift can genuinely flatter skin. Push it too far and tones slide orange fast, and there's not much room between "flattering" and "wrong."
 
-The global saturation and luminance sliders at the bottom of the panel adjust the whole grade's intensity — small moves here go a long way.
+Highlights get a slight warm lift, a touch of yellow or orange, and that's basically what gives golden-hour photos their glow even when the shoot happened at two in the afternoon.
 
-## Keeping skin tones honest through a grade
+The global saturation and luminance sliders at the bottom of the panel control how strong the whole grade feels. Small moves here go a long way, more than people expect the first time they try it.
 
-The mistake that ruins most grades: applying the same shadows/midtones/highlights adjustment uniformly across a gallery that has both indoor tungsten shots and outdoor daylight shots. A grade tuned for warm indoor light will push outdoor skin tones too warm, and vice versa. Masking (by luminance range, or a subject mask on skin) lets you protect skin tones from a grade that's meant for the background or the sky.
+## Keep skin tones honest through the whole grade
 
-## A repeatable approach for a full gallery
+Here's where most grades go sideways. Apply the exact same shadows, midtones, and highlights adjustment across a gallery that mixes indoor tungsten shots with outdoor daylight shots, and you've got a problem. A grade tuned for warm indoor light pushes outdoor skin too warm the other direction. Masking, by luminance range or a subject mask on skin specifically, protects skin tones from a grade meant for the background or the sky, not the person standing in front of it.
 
-1. Build the grade on two or three representative images — one indoor, one outdoor, one reception/low-light shot.
-2. Sync the base correction (white balance, exposure) per-image, since lighting varies frame to frame.
-3. Sync the creative grade globally, since that's meant to be consistent across the set.
-4. Spot-check skin tones on 10–15 images spread across the gallery before calling it done.
+## A process that actually holds up across a full gallery
 
-That order — correct individually, grade consistently, then verify on a sample — is what keeps a gallery looking like one cohesive set instead of a hundred separately-graded photos.
+Build the grade on two or three representative images first, one indoor shot, one outdoor, one from the low-light reception. Sync the base correction, white balance and exposure, per image, since lighting shifts frame to frame throughout the day. Sync the creative grade globally instead, since that's meant to stay consistent across the whole set. Then spot-check skin tones on ten or fifteen images spread throughout the gallery before you call it finished.
 
----
+That order, fix individually, grade consistently, verify on a sample, is what keeps a gallery reading like one cohesive set instead of a hundred separately-graded photos stitched together.
 
-**Want a gallery graded and corrected by hand, image by image?** No presets or AI batch looks — every frame is colour-corrected and graded individually on a calibrated screen. [Send a free sample edit](/contact/) or [check pricing](/pricing/).
+## Why this matters more than people assume
+
+A gallery with inconsistent grading doesn't always look "wrong" photo by photo. It just feels unfinished when you scroll through the whole thing, like someone lost interest halfway through. Couples notice that even when they can't quite say why.
+
+Want a gallery graded and corrected by hand, frame by frame? No presets, no AI batch looks here, every image gets colour-corrected and graded individually on a calibrated screen. Send two or three photos over for a free sample edit, or check the pricing page for full galleries.
