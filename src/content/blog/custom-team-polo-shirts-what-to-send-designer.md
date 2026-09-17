@@ -44,6 +44,10 @@ A brief that only says "make it look professional" or "surprise me" sounds flexi
 
 Larger organizations ordering for several teams or departments at once benefit from establishing one master brief covering shared branding elements, colours, logo usage, overall style, before requesting individual variations for each specific group. This keeps the whole collection feeling cohesive as one recognizable family of designs, rather than several disconnected projects that happen to share a similar budget and timeline but little else in common visually.
 
+## What happens after you send everything over
+
+Once a designer has your full brief, they'll typically confirm receipt and flag anything unclear before starting real work, rather than guessing at a gap and building an entire concept around an assumption that turns out to be wrong. This quick back-and-forth at the start, sometimes just one or two short messages, is normal and actually speeds up the whole project by catching misunderstandings before they cost real design time.
+
 ## A final thought on trusting the process once your brief is sent
 
 Once you've sent a genuinely thorough brief, resist the urge to second-guess every small decision a designer makes in the first concept. Trust the process enough to see a full first draft before jumping to conclusions, since some choices that seem unusual in isolation often make more sense once viewed as part of the complete, finished design.
