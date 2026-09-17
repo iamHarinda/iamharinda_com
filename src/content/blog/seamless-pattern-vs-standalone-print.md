@@ -48,6 +48,6 @@ The two approaches also differ slightly in what gets delivered at the end of the
 
 ## A closing thought on getting this right from the start
 
-Getting this classification right before any design work begins saves real back-and-forth later in the project. A quick conversation about whether your product needs continuous coverage or a single focal graphic, before any sketching starts, sets the entire project on the right track from day one and avoids a costly pivot partway through the work.
+Getting this classification right before any design work begins saves real back-and-forth later in the project. A quick conversation about whether your product needs continuous coverage or a single focal graphic, before any sketching starts, sets the entire project on the right track from day one and avoids a costly pivot partway through the work once real time has already gone into it.
 
 Not sure whether your design needs to repeat or stand alone? Send a description of what you're picturing and get a straight answer before committing to a package.
