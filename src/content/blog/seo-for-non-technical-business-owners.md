@@ -32,7 +32,7 @@ Technical SEO issues, a site that's structurally hard for Google to read, missin
 
 ## Common SEO myths worth clearing up
 
-A few misconceptions circulate constantly among business owners new to this topic. Paying Google directly doesn't improve your organic, unpaid ranking, that's a separate system called paid search entirely, distinct from the search results SEO actually affects. More keywords crammed onto a page doesn't help and often hurts, since modern search algorithms recognize and penalize that pattern rather than rewarding it. And a single perfect page doesn't guarantee ranking forever, since competitors update their own content too, meaning SEO is more of an ongoing practice than a one-time project you finish and forget about.
+A few misconceptions circulate constantly among business owners new to this topic. Paying Google directly doesn't improve your organic, unpaid ranking, that's a separate system called paid search entirely, distinct from the search results SEO actually affects. More keywords crammed onto a page doesn't help and often hurts, since modern search algorithms recognize and penalize that pattern rather than rewarding it. And a single perfect page doesn't guarantee ranking forever, since competitors update their own content too, meaning SEO is more of an ongoing practice than a one-time project you finish and forget about entirely once the site launches.
 
 ## How local businesses can get outsized results
 
