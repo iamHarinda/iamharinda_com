@@ -34,6 +34,10 @@ If a designer shows you a tiled preview and something feels slightly off but you
 
 The same pattern can look different once printed on different fabric textures, a smooth cotton polo versus a textured performance fabric, since texture affects how light hits the printed surface and how sharp the repeat edges read visually. If you're ordering across multiple fabric types, it's worth requesting a mockup on each specific fabric rather than assuming one preview covers every version of the final product.
 
+## A simple way to remember what matters most
+
+If there's one thing worth taking away from all of this, it's that a tile viewed alone tells you almost nothing about how it'll actually look repeated. Always ask to see it tiled, always check the edges where one copy meets the next, and never approve a pattern based purely on how the single unit looks in isolation.
+
 ## Why this term gets thrown around loosely online
 
 Search for pattern design services and you'll see "seamless" attached to almost everything, sometimes accurately, sometimes as a buzzword applied to designs that were never actually tested for a true repeat. This is exactly why asking to see a tiled preview matters more than trusting the word "seamless" printed somewhere in a product listing or a designer's portfolio description without any proof behind it.
