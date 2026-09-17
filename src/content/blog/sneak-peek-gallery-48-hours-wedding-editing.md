@@ -44,4 +44,12 @@ A well-chosen sneak peek gets shared immediately by couples excited to post some
 
 A sneak peek is a small piece of marketing wrapped inside great client service. Couples share these photos immediately, which means your work is showing up in front of their whole social circle within days of the wedding, not weeks. That's worth the extra step on its own.
 
+## Setting this up before the wedding, not after
+
+The smoothest sneak peek deliveries happen when the plan gets set before the wedding day even arrives, not scrambled together afterward. Mentioning to the couple during planning that a small preview will land within forty-eight hours, and briefly noting to yourself or a second shooter which kinds of moments to prioritize flagging during the shoot itself, first kiss, grand entrance, genuine candid reactions, means the whole process starts faster once the actual culling begins. A plan made in the calm of a planning meeting always beats one improvised at midnight the day after a long wedding.
+
+## What to do if forty-eight hours genuinely isn't realistic for you
+
+Not every photographer or workflow can hit a two-day turnaround, and that's fine as long as it's communicated honestly rather than promised and missed. A slightly longer but clearly stated window, "a preview within five days," still gives couples something concrete to look forward to and beats an unspoken assumption that leaves them wondering. The goal isn't hitting an arbitrary industry number. It's giving a clear, honest timeline for something you know matters to them emotionally.
+
 Need a fast turnaround on a priority batch while the full gallery is still in progress? First proofs typically come back within a day. Send a free sample edit request or check current pricing.
