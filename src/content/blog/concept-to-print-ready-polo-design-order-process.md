@@ -44,7 +44,7 @@ Life happens, and sometimes a project needs to pause mid-process, waiting on bud
 
 ## How this process compares across different designers
 
-While the general shape of this process, brief, concepts, revisions, final files, is fairly standard across the industry, the details vary, how many concepts are included, how many revision rounds, turnaround time for each stage. Comparing these specifics across a few options before committing helps set realistic expectations and avoids confusion partway through a project about what was actually promised at the start.
+While the general shape of this process, brief, concepts, revisions, final files, is fairly standard across the industry, the details vary, how many concepts are included, how many revision rounds, turnaround time for each stage. Comparing these specifics across a few options before committing helps set realistic expectations and avoids confusion partway through a project about what was actually promised at the very start of the relationship.
 
 ## A final note for first-timers going through this for the first time
 
