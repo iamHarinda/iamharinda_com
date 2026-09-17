@@ -42,4 +42,8 @@ A site rarely starts out slow. It gets slower gradually, a new plugin added here
 
 Checking your PageSpeed score every few months, especially after adding any new feature, tool, or large batch of images, catches this gradual slowdown before it becomes a real problem affecting visitors. This takes a few minutes and costs nothing, and it's one of the easiest maintenance habits to build into a regular routine, whether you're managing the site yourself or working with a developer who handles this on your behalf.
 
+## Why this is worth prioritizing over other improvements
+
+It's easy to focus energy on adding new pages or features while a fundamental speed problem quietly costs more visitors than any new addition could ever bring in. Before investing in more content or more marketing spend, it's worth confirming the site itself loads quickly for the traffic you're already getting, since fixing a slow foundation often produces a bigger, faster return than almost anything else you could spend that same time or budget on instead.
+
 Custom-coded sites here ship without the bloat that comes bundled with heavy themes and page builders. Speed is part of the build, not an add-on tacked on later.
