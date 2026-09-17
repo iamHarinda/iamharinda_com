@@ -42,4 +42,12 @@ Rushing straight from concept to export, skipping the repeat testing entirely to
 
 For a moderately complex pattern with two or three motifs, expect somewhere between two and four days from initial concept to a fully tested, production-ready file, assuming reasonably quick feedback on each round. Simpler patterns with a single repeating motif can move faster, while highly detailed, multi-colour designs with several coordinating elements naturally take longer to get right through the full testing cycle.
 
+## What you can do to speed the process up on your end
+
+The fastest way to move through these six steps efficiently is responding quickly to each round of previews a designer sends over. Since testing and adjusting the repeat happens iteratively, a slow response at any single stage stalls the whole remaining process, while quick, clear feedback, even just "the spacing in the corner feels off," keeps momentum going and gets you to a finished file faster overall.
+
+## Why understanding this process protects you as a buyer
+
+Knowing roughly how long each step should reasonably take, and what a genuine tiled test actually looks like, means you can tell the difference between a designer moving carefully through real repeat testing and one rushing straight to a flattened final file without ever properly checking the tile against itself. This knowledge alone puts you in a much stronger position to ask the right questions before committing to a full production order based on unverified work.
+
 Want a repeat pattern built and tested properly before it goes to print? Every design comes with a mockup showing how it actually looks repeated on the garment itself.
