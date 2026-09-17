@@ -36,4 +36,12 @@ It's common for a business to start on a builder, hit a wall a year or two later
 
 If someone recommends one of these three options without asking about your budget, your comfort with ongoing maintenance, or what the site actually needs to do, that's worth a second opinion. The right choice depends entirely on your specific situation, not on which option a particular developer happens to specialize in building.
 
+## A common misconception worth clearing up
+
+Some business owners assume custom-coded automatically means slower to launch, since it's "built from scratch." In practice, an experienced developer working from a clear brief can often launch a custom five-page marketing site in a similar timeframe to a WordPress build of the same size, since a lot of the setup overhead WordPress carries, theme configuration, plugin selection and testing, security hardening, simply doesn't exist in a lean custom build. Timeline differences between these three options usually come down more to project complexity and how ready your content is than to which underlying approach was chosen.
+
+## Mixing approaches within the same project
+
+It's also worth knowing these options aren't always mutually exclusive within a single business. A company might run their main marketing site as a fast, custom-coded build while using a separate, simple builder-based page for a specific seasonal promotion or event they don't want a developer involved in every time. There's no rule that says every part of your online presence has to use the exact same underlying technology, and matching the right tool to each specific need often works better than forcing one approach to cover everything.
+
 Not sure which fits your situation? A free scope call is a good place to get an honest answer, including "you don't need custom development yet" if that turns out to be true.
