@@ -38,4 +38,12 @@ Wedding portraits get printed large, framed, and looked at closely for decades, 
 
 Some clients genuinely ask for heavier smoothing because they've seen it on social media and assumed that's what "professional retouching" looks like. It's worth a short, honest conversation about the tradeoff, texture keeps skin looking real in a large print, heavy smoothing looks fine small on a phone but breaks down at size. Most clients appreciate knowing the reasoning once someone actually explains it clearly, rather than just being told no without context.
 
+## Retouching men versus women, and why the approach shifts
+
+A lot of retouching guidance defaults to assuming a female subject, but grooms and male guests need real attention too, and the approach often shifts slightly. Male skin tends to show more visible texture, pores, stubble shadow, and over-smoothing reads as even more obviously artificial on a man's face than it does on a woman's, since the contrast between smooth skin and visible stubble or facial structure is sharper to begin with. The same frequency separation and dodge-and-burn principles apply, but the smoothing pass usually needs to be lighter, and texture preservation matters even more than usual to avoid an odd, waxy look that reads as wrong immediately.
+
+## How much retouching is actually reasonable per photo
+
+There's no universal answer, but a useful gut check is asking whether the retouched version still looks recognizably like the same skin under different lighting, not a different person entirely. Removing a temporary blemish, evening out a blotchy patch, softening a harsh shadow under the eyes from a long day, all of that is reasonable and expected. Reshaping a jawline or removing texture across the entire face crosses into a different kind of editing that most wedding clients never actually asked for, even if a few might not object once they see it.
+
 Want retouching that keeps skin looking like skin? No plastic smoothing, no face filters, blemishes go, texture stays. Send a free sample edit request or check pricing for full galleries.
