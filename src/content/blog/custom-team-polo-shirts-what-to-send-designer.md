@@ -40,6 +40,10 @@ That's everything a designer needs to start with an accurate first concept inste
 
 Once you've put together a solid brief for one order, save it somewhere easy to find, since future orders, new season colours, a different garment style, additional team members, will reuse most of the same core information. Starting from an existing brief and updating just what's changed is considerably faster than rebuilding one from scratch every single time a new order comes up, and it also helps keep your team's look consistent from one season to the next, which matters for brand recognition over time.
 
+## A quick summary before you reach out
+
+Logo file, garment colours, placement, production method if known, a couple of references, and quantity or colourway needs. Six pieces of information, none of them requiring design experience to provide, and together they turn a vague request into a brief any designer can act on confidently right away.
+
 ## Why sending too little information backfires
 
 A brief that only says "make it look professional" or "surprise me" sounds flexible, but it actually slows things down considerably, since a designer has to guess at preferences that could have simply been stated upfront in a few sentences. Vague briefs tend to produce more revision rounds, not fewer, precisely because the guesswork built into the first concept rarely lands exactly where an unstated preference actually wanted it to.
