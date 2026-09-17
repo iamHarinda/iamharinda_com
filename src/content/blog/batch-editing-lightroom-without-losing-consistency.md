@@ -4,33 +4,41 @@ description: "Syncing settings across hundreds of photos is fast, and it's also 
 publishDate: 2026-07-15
 ---
 
-Lightroom's Sync Settings and Auto Sync are the reason a wedding photographer can touch a thousand photos in an afternoon instead of losing a whole week to it. They're also the most common reason a delivered gallery ends up looking inconsistent, like part of it was intentional and another part just got missed.
+Lightroom's Sync Settings and Auto Sync are the reason a wedding photographer can touch a thousand photos in an afternoon instead of losing a whole week to it. They're also the most common reason a delivered gallery ends up looking inconsistent, like part of it was intentional and another part just got missed entirely.
 
 ## Why syncing settings breaks down
 
 Copying one image's full edit onto a whole batch works fine when every photo in that batch shares the same lighting. Sync a ceremony edit, indoor, tungsten, backlit, onto reception photos with mixed colour lighting and people moving around, and the white balance that looked right on one set reads completely wrong on the other.
 
-The fix isn't avoiding sync altogether. It's syncing selectively instead of blindly.
+The fix isn't avoiding sync altogether. It's syncing selectively instead of blindly applying one setting everywhere.
 
 ## Group photos before you sync anything
 
 Before you touch the Sync Settings dialog, sort your gallery into lighting groups, not just chronological order. Getting-ready shots usually sit indoors with mixed window and tungsten light. Ceremony photos are often backlit or lit by one consistent venue source. Outdoor portraits shift with the time of day and cloud cover. Reception photos cover the widest range of all, string lights, DJ lighting, candlelight, sometimes all in the same frame.
 
-Each group can usually share a base correction. Reception almost never can. It typically needs per-image attention no matter how tempting it is to sync your way through it.
+Each group can usually share a base correction. Reception almost never can. It typically needs per-image attention no matter how tempting it is to sync your way through it and save time.
 
 ## What's safe to sync, and what isn't
 
-Lightroom's Sync Settings dialog lets you pick exactly which sliders copy over. This is the setting most photographers skip past without actually reading it.
+Lightroom's Sync Settings dialog lets you pick exactly which sliders copy over. This is the setting most photographers skip past without actually reading it carefully.
 
 Safe to sync across a lighting group: white balance, if the light source stays consistent, tone curve, colour grading, sharpening, noise reduction, lens corrections.
 
-Rarely safe to sync: exposure, since it shifts with framing and background brightness, and any local masks, skin, sky, selective colour, since those genuinely need rechecking per image even when the base adjustment carries over cleanly.
+Rarely safe to sync: exposure, since it shifts with framing and background brightness, and any local masks, skin, sky, selective colour, since those genuinely need rechecking per image even when the base adjustment carries over cleanly from one photo to the next.
 
 ## A workflow that holds up past 500 photos
 
-Cull first. Don't burn sync time on photos that won't make the final gallery anyway. Group by lighting, not by time stamp or location name. Pick one representative photo per group, edit it fully, then sync only the settings listed above to the rest of that group. Scroll the full group afterward in Grid view and spot-check for outliers, a photo shot a stop brighter, a frame with a different light source hiding in the background.
+Cull first. Don't burn sync time on photos that won't make the final gallery anyway. Group by lighting, not by time stamp or location name. Pick one representative photo per group, edit it fully, then sync only the settings listed above to the rest of that group. Scroll the full group afterward in Grid view and spot-check for outliers, a photo shot a stop brighter, a frame with a different light source hiding in the background nobody noticed on shoot day.
 
-Handle local masks, skin, sky, selective colour, per image, even within a group you just synced. That step doesn't get to skip itself no matter how consistent the group looks at a glance.
+Handle local masks, skin, sky, selective colour, per image, even within a group you just synced. That step doesn't get to skip itself no matter how consistent the group looks at a glance from a distance.
+
+## Auto Sync versus Sync Settings, and when to use each
+
+Lightroom actually offers two related tools here, and mixing them up causes its own problems. Sync Settings is a one-time copy, you pick a source image, select a batch, and choose exactly which sliders transfer. Auto Sync, toggled on in the filmstrip, mirrors every single adjustment you make in real time across the whole selected group as you work, which is powerful but genuinely risky if you forget it's switched on and start making local mask adjustments meant for one photo only. A lot of accidental gallery-wide mistakes trace back to Auto Sync being left on longer than intended. Get in the habit of checking that toggle before starting any detailed, per-image work.
+
+## What a genuinely inconsistent gallery costs you
+
+Beyond just looking unfinished, an inconsistent gallery creates real extra work downstream. Couples who notice the drift often ask for a round of fixes that wouldn't have been necessary with a tighter sync process the first time, which eats into time you'd rather spend on the next booking. Getting the group-and-sync step right isn't just about aesthetics. It's about not creating a second, unplanned editing pass for yourself weeks after you thought the gallery was already done.
 
 ## The real payoff of doing it this way
 
