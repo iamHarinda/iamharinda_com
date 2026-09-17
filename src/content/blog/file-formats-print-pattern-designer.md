@@ -44,7 +44,7 @@ If you realize months later that you need a format you weren't originally given,
 
 ## What to do if a supplier asks for a format you don't recognize
 
-Occasionally a supplier or printer will request a format not covered here, a specific proprietary format for their particular machinery, for instance. In this case, asking your original designer whether they can export to that specific format, or whether the standard files you already have will work with some minor conversion, usually resolves the situation quickly without needing an entirely new design process from scratch.
+Occasionally a supplier or printer will request a format not covered here, a specific proprietary format for their particular machinery, for instance. In this case, asking your original designer whether they can export to that specific format, or whether the standard files you already have will work with some minor conversion, usually resolves the situation quickly without needing an entirely new design process from scratch or additional design fees.
 
 ## Organizing your files once you receive them
 
