@@ -30,4 +30,12 @@ If you currently have a website and genuinely don't know who would fix it if it 
 
 A broken site during business hours, with no clear plan for who fixes it, often means it stays broken for days while you scramble to find someone, and during that stretch you're invisible to anyone searching for you or trying to reach you online for something urgent. A clear plan, agreed on in advance, is what turns that into a same-day fix instead of a multi-day scramble that costs real business.
 
+## How to reduce the odds of something breaking in the first place
+
+Regular small maintenance, keeping software and plugins updated, monitoring that certificates haven't lapsed, checking core functions like contact forms every so often, prevents the majority of breakages before they ever happen at all. This is exactly what a maintenance plan is actually paying for, not just emergency fixes after something's already gone wrong, but the ongoing attention that keeps small issues from ever becoming visible problems a customer notices first.
+
+## Setting up your own basic monitoring even without a formal plan
+
+If you're not paying for ongoing maintenance, a free tool that simply checks your site is loading every so often and emails you if it goes down catches problems faster than waiting for a customer to mention it, or worse, never mentioning it at all and just quietly going to a competitor instead. This takes a few minutes to set up and gives real peace of mind that something will catch a serious outage even without a formal support arrangement in place.
+
 Thirty days of post-launch support comes included with every build here, and ongoing maintenance is available after that at a stated monthly rate, no surprises waiting down the road.
