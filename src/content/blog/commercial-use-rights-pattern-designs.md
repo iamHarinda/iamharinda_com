@@ -1,7 +1,7 @@
 ---
 title: "Commercial Use Rights on Pattern Designs: What 'Print-Ready' Should Actually Include"
 description: "Getting a finished design isn't the same as being legally clear to sell products with it. What commercial use rights actually mean, in plain terms."
-publishDate: 2027-02-14
+publishDate: 2026-09-04
 ---
 
 It's a detail that's easy to overlook until it actually matters a great deal to your business. Receiving a finished design file doesn't automatically mean you're legally clear to sell products using it in the marketplace. Commercial use rights, what you're actually permitted to do with a design once it's delivered to you, are a real, separate consideration from the design work itself that's worth understanding clearly.

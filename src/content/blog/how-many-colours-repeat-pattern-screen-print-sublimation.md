@@ -1,7 +1,7 @@
 ---
 title: "How Many Colours Should a Repeat Pattern Have for Screen Print or Sublimation?"
 description: "The printing method genuinely limits how a pattern should be designed. How colour count and printing method connect, explained in plain terms."
-publishDate: 2027-01-05
+publishDate: 2026-08-05
 ---
 
 Not every printing method handles colour the same way, and the method you're planning to use should shape the design before it's finalized, not get discovered as a constraint after the artwork's already done and everyone's already approved it, expecting no further changes.

@@ -1,7 +1,7 @@
 ---
 title: "Corporate Polo Shirt Design: Getting Your Brand Right on a Small Canvas"
 description: "A polo shirt gives you far less space than most branded materials. How to make a small, fixed placement actually represent your brand well."
-publishDate: 2027-01-29
+publishDate: 2026-08-23
 ---
 
 A website has scroll space to work with. A brochure has multiple pages to spread a message across. A corporate polo shirt has, realistically, a few square inches on the chest and maybe a larger back panel, a genuinely small, fixed canvas that still has to represent your brand clearly, at a glance, from a normal conversational distance across a room or an office. That constraint shapes the design in some pretty specific ways worth understanding.

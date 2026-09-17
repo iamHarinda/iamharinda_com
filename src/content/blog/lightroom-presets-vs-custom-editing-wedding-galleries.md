@@ -1,7 +1,7 @@
 ---
 title: "Lightroom Presets vs. Custom Editing: What's Actually Faster for Wedding Galleries"
 description: "Presets promise speed, but they don't always deliver once you count the cleanup afterward. An honest comparison for wedding photographers deciding how to edit."
-publishDate: 2026-07-20
+publishDate: 2026-03-29
 ---
 
 Presets get sold on one promise: apply a whole look in one click instead of building it from nothing. For a single photo, sure, that's genuinely true. For a full wedding gallery shot across a day of shifting light, the real math gets a lot more complicated than the marketing suggests.

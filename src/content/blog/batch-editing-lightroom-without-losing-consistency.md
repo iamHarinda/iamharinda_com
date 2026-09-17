@@ -1,7 +1,7 @@
 ---
 title: "Batch Editing in Lightroom Without Losing Consistency Across a Gallery"
 description: "Syncing settings across hundreds of photos is fast, and it's also how galleries end up looking inconsistent. Here's how to batch edit without the usual mistakes."
-publishDate: 2026-07-15
+publishDate: 2026-03-26
 ---
 
 Lightroom's Sync Settings and Auto Sync are the reason a wedding photographer can touch a thousand photos in an afternoon instead of losing a whole week to it. They're also the most common reason a delivered gallery ends up looking inconsistent, like part of it was intentional and another part just got missed entirely.

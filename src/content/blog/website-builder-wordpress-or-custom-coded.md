@@ -1,7 +1,7 @@
 ---
 title: "Website Builder, WordPress, or Custom-Coded? How to Choose Without Any Tech Background"
 description: "Three completely different ways to get a website built, with no obvious way to tell them apart from the outside. What each one actually means for you."
-publishDate: 2026-09-27
+publishDate: 2026-05-22
 ---
 
 If you've started researching how to get a website built, you've probably run into three options that all get recommended by somebody. A builder like Wix or Squarespace, WordPress, or a fully custom-coded site. Nobody tells you upfront that these aren't just different price points. They're genuinely different ways of owning and running your site day to day, for as long as it stays live.

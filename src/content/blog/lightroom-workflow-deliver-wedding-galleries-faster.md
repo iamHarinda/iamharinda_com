@@ -1,7 +1,7 @@
 ---
 title: "A Realistic Lightroom Workflow for Delivering Wedding Galleries Faster"
 description: "Most wedding photographers lose time to the same three steps. Here's a Lightroom workflow that shortens the gap between shoot day and delivery without cutting corners."
-publishDate: 2026-07-29
+publishDate: 2026-04-04
 ---
 
 Shooting a wedding is usually the smaller part of the job. Culling, correcting, retouching, exporting, all of that eats the rest, and most delays trace straight back to the same three bottlenecks showing up over and over across every single gallery.

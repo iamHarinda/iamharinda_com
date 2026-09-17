@@ -1,7 +1,7 @@
 ---
 title: "Placement Matters: Why a Logo Stretched Onto a Polo Template Looks Wrong"
 description: "The fastest way to make a design look amateur on a polo shirt is placing it without accounting for the garment. What actually goes wrong, and why."
-publishDate: 2027-01-25
+publishDate: 2026-08-20
 ---
 
 You can spot it immediately even without knowing why. A polo shirt with a logo that just looks slightly off, stretched, oddly positioned, sitting in a way that doesn't quite match the shirt underneath it in a way that's hard to name. It's one of the most common signs of design done without real attention to the garment itself, and it's genuinely avoidable once you know what actually causes it in the first place.

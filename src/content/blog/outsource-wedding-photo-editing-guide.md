@@ -1,7 +1,7 @@
 ---
 title: "How to Outsource Wedding Photo Editing Without Losing Your Style"
 description: "A practical guide for photographers outsourcing wedding editing for the first time. How to brief an editor, protect your look, and dodge the common mistakes."
-publishDate: 2026-09-12
+publishDate: 2026-05-07
 ---
 
 Photographers rarely worry about the cost when they think about outsourcing editing for the first time. What actually scares them is the gallery coming back looking like someone else took the photos. That fear makes sense. It's also mostly avoidable, and most outsourcing problems trace back to a missing brief, not a bad editor.

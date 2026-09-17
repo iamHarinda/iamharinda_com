@@ -1,7 +1,7 @@
 ---
 title: "Wedding Photo Culling: How to Cut a 3,000-Photo Shoot Down Fast"
 description: "Culling is where most editing time actually disappears. A practical system for cutting a large wedding shoot down to a final gallery without second-guessing every frame."
-publishDate: 2026-08-21
+publishDate: 2026-04-19
 ---
 
 Ask most wedding photographers where their editing time actually goes, and culling, not colour correction, not retouching, is usually the honest answer. Deciding what stays and what gets cut across two to three and a half thousand frames from one wedding day is slow precisely because every single decision feels like it matters.

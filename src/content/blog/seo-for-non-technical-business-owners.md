@@ -1,7 +1,7 @@
 ---
 title: "SEO for Non-Techies: What It Actually Means to 'Rank on Google'"
 description: "SEO gets treated like a mysterious skill only specialists understand. The core idea is actually simple. What it means, in plain language."
-publishDate: 2026-11-18
+publishDate: 2026-06-30
 ---
 
 SEO, short for search engine optimization, sounds technical enough that a lot of business owners assume it's something only a specialist could ever understand, let alone do anything about themselves without hiring outside help. The core idea underneath all the jargon is actually simple. It's everything that affects whether Google shows your site to someone searching for what you offer, and how high up that listing appears.

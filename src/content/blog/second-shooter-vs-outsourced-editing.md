@@ -1,7 +1,7 @@
 ---
 title: "Second Shooter or Outsourced Editing: Which Scales a Wedding Business Faster?"
 description: "Both cost money and both buy back time, but they solve completely different bottlenecks. How to tell which one your business actually needs next."
-publishDate: 2026-08-31
+publishDate: 2026-04-25
 ---
 
 At a certain booking volume, every wedding photographer hits the same fork. The next hire either helps on shoot day or helps after it. A second shooter and an outsourced editor solve genuinely different problems, and picking the wrong one first is a common way to spend real money without fixing the actual bottleneck holding you back.

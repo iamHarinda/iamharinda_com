@@ -1,7 +1,7 @@
 ---
 title: "Do You Actually Need a Website in 2026, or Is Social Media Enough?"
 description: "An Instagram page feels like enough until it isn't. A plain-language look at what a website does that social media just can't."
-publishDate: 2026-09-19
+publishDate: 2026-05-16
 ---
 
 A lot of small business owners get by for years on an Instagram page and a Google Business listing. Then they reasonably ask themselves, do I actually need a website too? The honest answer is that social media and a website do two different jobs. Skipping the second one costs you something real, even if it's not obvious on a normal day.

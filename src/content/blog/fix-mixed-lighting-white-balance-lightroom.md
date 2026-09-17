@@ -1,7 +1,7 @@
 ---
 title: "How to Fix Mixed Lighting and White Balance Problems in Lightroom"
 description: "Mixed lighting, tungsten, daylight, and fluorescent all in one frame, is the hardest white balance problem in wedding photography. Here's how to actually fix it."
-publishDate: 2026-07-24
+publishDate: 2026-04-01
 ---
 
 Every wedding photographer runs into this eventually. A getting-ready room lit by both window light and warm bulbs. A reception with string lights, uplighting, and someone's phone flash all going off in the same frame. A single white balance slider can't fix light that isn't actually one colour temperature, and that's exactly why these shots are the ones that come back from a rushed edit looking slightly off.

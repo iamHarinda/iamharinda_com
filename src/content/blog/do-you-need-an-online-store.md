@@ -1,7 +1,7 @@
 ---
 title: "Do You Need an Online Store, or Just a Website With a 'Contact Me' Button?"
 description: "E-commerce sounds like the obvious upgrade, but it's a genuinely different, and more expensive, kind of project than most businesses actually need."
-publishDate: 2026-11-06
+publishDate: 2026-06-21
 ---
 
 Should your site let people buy directly, or just let them get in touch first before any money changes hands? It's worth answering honestly before a project starts, because full e-commerce is a meaningfully bigger, more expensive build than a site that simply presents what you offer and lets someone reach out to talk it through with you directly.

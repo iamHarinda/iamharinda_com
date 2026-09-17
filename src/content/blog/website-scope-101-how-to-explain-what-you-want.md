@@ -1,7 +1,7 @@
 ---
 title: "Website Scope 101: How to Explain What You Want to a Developer"
 description: "You don't need technical language to describe a website project well. A simple structure that gets you an accurate quote without any jargon."
-publishDate: 2026-12-04
+publishDate: 2026-07-12
 ---
 
 "I need a website" is the start of a conversation, not really enough for anyone to quote accurately off of without a lot of follow-up questions first. The good news is that describing what you actually need doesn't require technical language at all. It just needs a bit of structure, and here's a template for building that structure yourself before that first call.

@@ -1,7 +1,7 @@
 ---
 title: "AI vs. Human Photo Editing: What US Wedding Photographers Should Know in 2026"
 description: "AI editing tools are fast and cheap, but they don't fit every gallery. Here's when AI makes sense, when you need a real editor, and how photographers are mixing both in 2026."
-publishDate: 2026-09-17
+publishDate: 2026-05-13
 ---
 
 Every wedding photographer hits the same fork in the road eventually. Keep editing every gallery by hand, or start handing some of it to AI. Neither choice is wrong on its own. The trick is knowing which photos should go where.

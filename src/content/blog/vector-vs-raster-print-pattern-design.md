@@ -1,7 +1,7 @@
 ---
 title: "Vector vs. Raster: Why Print Pattern Designs Need to Be Vector Files"
 description: "This distinction gets mentioned constantly in apparel design without much explanation. Why it actually matters for anything going to print."
-publishDate: 2027-01-01
+publishDate: 2026-08-02
 ---
 
 If you've ordered design work and been told your files are "vector," or asked whether you need "the vector version," and weren't entirely sure why it mattered, it's a genuinely important distinction for anything headed to print, embroidery, or reproduction at more than one size on different products.

@@ -1,7 +1,7 @@
 ---
 title: "How to Color Grade Wedding Photos in Lightroom (A Practical Guide)"
 description: "Color grading and color correction aren't the same thing. Here's how wedding photographers actually use Lightroom's tools to set a mood without wrecking skin tones."
-publishDate: 2026-07-06
+publishDate: 2026-03-20
 ---
 
 Color correction fixes what's actually wrong with a photo, a bad white balance, a colour cast picked up from venue lighting. Color grading is something else entirely. It's shaping an already-correct image into a specific mood. Mixing these two up is exactly why so many self-taught colour grades end up looking like a colour cast nobody bothered to fix.

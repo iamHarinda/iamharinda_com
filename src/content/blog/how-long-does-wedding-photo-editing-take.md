@@ -1,7 +1,7 @@
 ---
 title: "How Long Should Wedding Photo Editing Take? A Realistic Turnaround Guide"
 description: "Turnaround times for wedding photo editing swing wildly depending on method and volume. Here's what's realistic to expect, and to promise your clients."
-publishDate: 2026-08-12
+publishDate: 2026-04-13
 ---
 
 "When will I get my photos?" It's one of the first questions a couple asks after the wedding, and one of the harder ones for a photographer to answer honestly, because the real answer depends on editing method, gallery size, and how much of the work is happening by hand versus running through a bulk tool.

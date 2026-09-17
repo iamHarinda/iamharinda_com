@@ -1,7 +1,7 @@
 ---
 title: "What 'Mobile-Friendly' Actually Means, and Why It's Not Optional in 2026"
 description: "Every developer says their sites are mobile-friendly. What that actually looks like in practice, and how to check for yourself."
-publishDate: 2026-11-14
+publishDate: 2026-06-27
 ---
 
 "Mobile-friendly" is one of those phrases that gets used so often in website marketing that it's easy to assume every site already qualifies without anyone checking. It doesn't, and for most small businesses, the majority of visitors are arriving on a phone, which makes this one of the more consequential things a website can get wrong without the owner ever realizing it's happening.

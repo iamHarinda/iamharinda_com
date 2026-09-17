@@ -1,7 +1,7 @@
 ---
 title: "Common Editing Mistakes That Make Wedding Photos Look Unnatural"
 description: "A handful of specific editing choices are behind most wedding photos that look 'off' without any obvious cause. Here's what to check for."
-publishDate: 2026-09-04
+publishDate: 2026-04-28
 ---
 
 Most viewers can't name why a wedding photo looks slightly wrong. They just sense it. Almost every case traces back to one of a small set of specific editing choices, and every single one is more common than it should be given how avoidable they actually are once you know to look for them.

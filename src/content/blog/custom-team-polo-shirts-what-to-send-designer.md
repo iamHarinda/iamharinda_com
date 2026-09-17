@@ -1,7 +1,7 @@
 ---
 title: "Custom Team Polo Shirts: What to Send a Designer Before You Order"
 description: "The clearer your brief, the closer the first concept lands to what you actually want. Exactly what to have ready before ordering a team polo design."
-publishDate: 2027-01-13
+publishDate: 2026-08-11
 ---
 
 Ordering a custom polo design for a team, club, or company goes faster and lands closer to right on the first attempt when your brief is specific and well-organized from the start. None of what's needed here requires any design skill at all, just a bit of preparation before you actually reach out to begin the process.

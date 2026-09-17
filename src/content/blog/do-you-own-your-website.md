@@ -1,7 +1,7 @@
 ---
 title: "Do You Own Your Website? The Question Most Business Owners Never Ask"
 description: "A lot of business owners only find out they don't actually own their site when they try to leave the person who built it. How to check, before it's a problem."
-publishDate: 2026-10-09
+publishDate: 2026-05-31
 ---
 
 It's an uncomfortable question to even think to ask. If you paid for your website, don't you automatically own it? Not always, and the moment this usually comes up is exactly the wrong time to find out, right when you're trying to switch developers or platforms and discover you can't actually take anything with you at all.

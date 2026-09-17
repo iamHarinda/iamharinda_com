@@ -1,7 +1,7 @@
 ---
 title: "How to Brief a Polo or Golf Shirt Design Without Any Design Background"
 description: "You don't need design vocabulary to describe what you want well. A simple structure that gets you an accurate first concept without the jargon."
-publishDate: 2027-02-02
+publishDate: 2026-08-26
 ---
 
 Ordering a custom polo or golf shirt design without a design background can feel like you already need to know the right terminology just to explain what you want clearly. You don't. You just need to be specific about a handful of practical things, in totally plain language you already use every day without thinking twice about it.

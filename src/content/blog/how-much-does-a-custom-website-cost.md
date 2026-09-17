@@ -1,7 +1,7 @@
 ---
 title: "How Much Does a Custom Website Really Cost? A Small Business Guide"
 description: "Quotes for a website can range from $200 to $30,000 for what sounds like the same thing. What actually drives that difference, explained plainly."
-publishDate: 2026-09-23
+publishDate: 2026-05-19
 ---
 
 Ask three people what a website costs and you'll get three wildly different answers back. All of them can be technically correct too, because "a website" covers everything from a two hundred dollar DIY template to a thirty thousand dollar custom web application. The number only starts making sense once you know what's actually getting built and what it needs to do.

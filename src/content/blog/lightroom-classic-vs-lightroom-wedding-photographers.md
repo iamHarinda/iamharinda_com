@@ -1,7 +1,7 @@
 ---
 title: "Lightroom Classic vs. Lightroom: Which One Should Wedding Photographers Use?"
 description: "Adobe sells two apps called Lightroom. Here's the real difference and which one actually fits a wedding photographer's workflow."
-publishDate: 2026-07-01
+publishDate: 2026-03-17
 ---
 
 Adobe's naming here doesn't help anyone. Lightroom Classic and Lightroom, the one that used to be called Lightroom CC, are two separate applications that just happen to share a name and a subscription plan. If you're picking where to build your editing workflow, that difference matters more than it looks at first glance.

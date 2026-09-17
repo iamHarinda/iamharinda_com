@@ -1,7 +1,7 @@
 ---
 title: "What Happens If Your Website Breaks? Who's Responsible, and What It Costs"
 description: "Websites do occasionally break, a plugin conflict, an expired certificate, a hosting outage. What to actually expect and who should be fixing it."
-publishDate: 2026-10-29
+publishDate: 2026-06-15
 ---
 
 At some point, most websites have a moment where something just stops working. A page won't load, a form stops sending, an image disappears overnight for no obvious reason anyone can immediately explain. It's rarely a disaster, but the panic of not knowing who's supposed to fix it, or what it'll cost, is a genuinely common and completely avoidable problem that a bit of planning solves ahead of time.

@@ -1,7 +1,7 @@
 ---
 title: "What File Formats Do You Actually Need From a Print Pattern Designer?"
 description: "Ai, EPS, PDF, PNG, JPG. The list of formats can be confusing if you're not a designer. What each one is actually for, in plain terms."
-publishDate: 2027-02-10
+publishDate: 2026-09-01
 ---
 
 Getting a finished design back and seeing a folder full of files with unfamiliar extensions, Ai, EPS, PDF, PNG, JPG, is a common moment of "which of these do I actually need for what?" Here's what each format is really for, so you know exactly what to hand a printer, a supplier, or just keep for your own records going forward without confusion.

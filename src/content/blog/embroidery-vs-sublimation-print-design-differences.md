@@ -1,7 +1,7 @@
 ---
 title: "Embroidery vs. Sublimation Print: Why the Method Changes the Design"
 description: "The same logo can need two genuinely different design approaches depending on whether it's being embroidered or sublimation printed. Here's why."
-publishDate: 2027-01-17
+publishDate: 2026-08-14
 ---
 
 It's a reasonable assumption that a finished design is a finished design, regardless of how it eventually gets applied to the garment it's headed for. In practice, embroidery and sublimation printing are different enough as physical processes that the same artwork often needs adapting, sometimes significantly, to actually work well in each one of these very different production methods.

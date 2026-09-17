@@ -1,7 +1,7 @@
 ---
 title: "Skin Retouching in Photoshop Without Losing Texture (A Wedding Photographer's Guide)"
 description: "Over-smoothed skin is the fastest way to make a wedding photo look fake. Here's how to retouch in Photoshop while keeping real skin texture intact."
-publishDate: 2026-08-03
+publishDate: 2026-04-07
 ---
 
 There's a specific look that gives away over-retouched skin almost instantly, a plastic, waxy smoothness that reads as "filtered" even to people who couldn't tell you exactly why. It happens when retouching strips out texture along with blemishes. The fix isn't retouching less. It's retouching differently, with a method that separates what actually needs fixing from what should be left alone.

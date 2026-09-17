@@ -1,7 +1,7 @@
 ---
 title: "Half-Drop, Brick, and Mirror Repeats: The Difference Explained Simply"
 description: "These are the standard ways a pattern tile can repeat, and each one gives a genuinely different look. What each one means, without the technical jargon."
-publishDate: 2026-12-20
+publishDate: 2026-07-24
 ---
 
 If a designer asks whether you want a straight repeat, a half-drop, or a brick repeat for your pattern, and you don't have a design background, that's a completely reasonable thing to not know offhand without ever having worked in this field before. Each one is just a different way of arranging how the tile repeats, and the choice genuinely changes how the finished pattern looks and feels once it's actually printed across a real product.

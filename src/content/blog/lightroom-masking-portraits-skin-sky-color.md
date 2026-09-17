@@ -1,7 +1,7 @@
 ---
 title: "Lightroom Masking for Portraits: Skin, Sky and Selective Color Explained"
 description: "Lightroom's masking tools let you edit one part of a photo without touching the rest. Here's how wedding and portrait photographers actually put them to work."
-publishDate: 2026-07-10
+publishDate: 2026-03-23
 ---
 
 Lightroom's masking panel, the AI-assisted Select Subject, Select Sky, and range masks, is what separates a flat, global edit from one that actually looks shaped on purpose. For portraits and weddings specifically, three masks cover almost everything you'll need.

@@ -1,7 +1,7 @@
 ---
 title: "What to Prepare Before You Hire a Web Developer (So the Quote Isn't a Guess)"
 description: "The clearer your brief, the more accurate your quote and the faster your project moves. Exactly what to have ready before that first conversation."
-publishDate: 2026-10-17
+publishDate: 2026-06-06
 ---
 
 The vaguer the brief, the vaguer the quote, and the more likely a project runs into scope surprises halfway through the build that nobody planned for. None of what a developer needs from you upfront is technical in nature. It's just organized, and most of it takes an afternoon to pull together if you sit down and actually do it deliberately.

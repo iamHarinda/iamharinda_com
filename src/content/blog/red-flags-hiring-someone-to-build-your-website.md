@@ -1,7 +1,7 @@
 ---
 title: "Red Flags to Watch For When Hiring Someone to Build Your Website"
 description: "Most bad website experiences were avoidable in hindsight. What to watch for before you sign a contract or hand over a deposit."
-publishDate: 2026-10-21
+publishDate: 2026-06-09
 ---
 
 Almost everyone who's had a bad experience getting a website built can point to a warning sign they noticed and talked themselves out of at the time, usually because everything else about the conversation felt fine. None of these require technical knowledge to spot either. They're about how someone communicates and structures the work, not about code at all.

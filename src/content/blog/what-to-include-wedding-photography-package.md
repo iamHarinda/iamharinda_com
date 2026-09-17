@@ -1,7 +1,7 @@
 ---
 title: "What to Include in a Wedding Photography Package (Editing, Turnaround, Extras)"
 description: "Package structure is one of the first things couples compare between photographers. What's usually included, what's an add-on, and where editing fits in."
-publishDate: 2026-08-26
+publishDate: 2026-04-22
 ---
 
 Wedding photography packages vary a lot from studio to studio, but couples comparing quotes are usually trying to answer the same underlying question. What am I actually getting for this price, and what's going to cost more later that I didn't see coming? Being explicit about your package structure, especially around editing, is what keeps that question from turning into a mid-project argument down the line.

@@ -1,7 +1,7 @@
 ---
 title: "Mockups Before Production: Why You Should Never Send Flat Artwork Straight to a Printer"
 description: "Approving flat artwork without a realistic mockup is one of the most common causes of an expensive production mistake. Why the mockup step actually matters."
-publishDate: 2027-02-18
+publishDate: 2026-09-07
 ---
 
 A flat piece of artwork, a logo or pattern viewed as its own isolated image, no garment in sight anywhere around it, can look completely finished and correct, and still produce a genuinely disappointing result once it's actually applied to a real product. This is exactly the gap a mockup exists to close, and skipping it is one of the more expensive mistakes you can make ordering custom apparel at any scale.

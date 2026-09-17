@@ -1,7 +1,7 @@
 ---
 title: "What Is a CMS, and Do You Actually Need One?"
 description: "A CMS gets mentioned in nearly every website quote, but rarely explained. What it actually does, and how to tell if your site needs one."
-publishDate: 2026-10-05
+publishDate: 2026-05-28
 ---
 
 "Do you want a CMS?" It's a question a lot of business owners get asked without ever getting a plain answer to what it actually means or why it matters for their specific situation. A CMS, short for content management system, is simply a way to edit your website's content, text, images, blog posts, product listings, without needing to know how to code or touch the underlying files directly at all.

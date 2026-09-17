@@ -1,7 +1,7 @@
 ---
 title: "The Real Ongoing Costs of Owning a Website Nobody Mentions Upfront"
 description: "A website isn't a one-time purchase, even when it gets quoted that way. The full picture of what it actually costs to keep one running."
-publishDate: 2026-11-26
+publishDate: 2026-07-06
 ---
 
 A website quote often reads like a one-time cost. Pay once, own it forever, no further thought needed. In reality, a live website carries ongoing costs baked into what it actually is, and not knowing about them upfront is exactly how business owners end up surprised a year down the road when the bills start arriving.

@@ -1,7 +1,7 @@
 ---
 title: "Freelancer, Agency, or DIY Builder: Who Should Actually Build Your Website?"
 description: "Three genuinely different paths to a finished website, each with real tradeoffs. How to pick without any assumptions about what's supposedly 'best.'"
-publishDate: 2026-10-25
+publishDate: 2026-06-12
 ---
 
 There's no universally correct answer to "should I hire a freelancer, hire an agency, or just build it myself?" The right choice depends on your budget, your timeline, and how much ongoing involvement you actually want in running the thing afterward, month after month. Here's what each path really looks like once you're actually in it, past the initial decision.

@@ -1,7 +1,7 @@
 ---
 title: "How to Deliver a Sneak Peek Gallery Within 48 Hours Without Rushing the Full Edit"
 description: "Most couples want a preview gallery fast. Here's how to deliver one within 48 hours without wrecking the quality of the final, complete edit."
-publishDate: 2026-08-17
+publishDate: 2026-04-16
 ---
 
 Most couples say a quick sneak peek gallery matters to them, sometimes more than the actual final delivery date, because the wait right after the wedding is when anticipation is at its highest. The good news is that delivering one fast doesn't mean rushing the whole job. It just means treating it as its own separate, smaller task from the start, with its own plan.

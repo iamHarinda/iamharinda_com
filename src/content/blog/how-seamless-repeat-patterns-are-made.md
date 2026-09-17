@@ -1,7 +1,7 @@
 ---
 title: "How Seamless Repeat Patterns Are Made for Print (No Design Software Needed to Understand It)"
 description: "You don't need to know Illustrator to understand how a repeat pattern gets built. The process explained for someone ordering one, not making one."
-publishDate: 2026-12-12
+publishDate: 2026-07-18
 ---
 
 If you're ordering a repeat pattern rather than designing one yourself, you don't need to know the software behind it at all. But understanding the actual process makes it a lot easier to brief a designer well and know exactly what you're approving at each stage of the work as it comes together.

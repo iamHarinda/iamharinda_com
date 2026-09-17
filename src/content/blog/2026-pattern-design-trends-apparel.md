@@ -1,7 +1,7 @@
 ---
 title: "2026 Pattern Design Trends for Apparel: What's Actually Selling"
 description: "A look at what's genuinely trending in apparel and textile pattern design in 2026, for brands and teams trying to decide on a direction."
-publishDate: 2026-12-28
+publishDate: 2026-07-30
 ---
 
 Pattern trends shift year to year, and knowing roughly where things are heading is useful when you're briefing a design for your own brand or team. Not so you chase every trend literally without thought, but so you understand what's currently reading as fresh versus what's already starting to feel dated to people who see a lot of apparel design regularly.

@@ -1,7 +1,7 @@
 ---
 title: "Why a Slow Website Is Costing You Customers (Explained Without Jargon)"
 description: "Site speed sounds like a technical detail, but it directly affects how many visitors actually stick around. Why, explained in plain terms."
-publishDate: 2026-11-10
+publishDate: 2026-06-24
 ---
 
 Site speed gets talked about like a technical nitpick, something for developers to worry about, not something that actually touches your business or your bottom line. In practice, it's one of the more direct ways a website quietly loses you customers, and none of it takes technical knowledge to understand once someone actually explains it clearly.

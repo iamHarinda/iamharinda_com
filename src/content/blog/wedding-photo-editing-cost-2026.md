@@ -1,7 +1,7 @@
 ---
 title: "How Much Does Wedding Photo Editing Cost in 2026? A Pricing Guide for Photographers"
 description: "A real breakdown of what wedding and portrait photographers pay to outsource editing in 2026. AI pricing, per-photo rates, and what actually moves the cost."
-publishDate: 2026-09-15
+publishDate: 2026-05-10
 ---
 
 "How much should I even pay for this?" That's usually the first real question once a photographer's season gets busy enough that editing every gallery solo stops making sense. There's no single number that answers it. The method you pick, how complicated the work is, and how much of the gallery actually needs a close look all push the price around.

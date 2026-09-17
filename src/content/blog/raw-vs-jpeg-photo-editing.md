@@ -1,7 +1,7 @@
 ---
 title: "RAW vs. JPEG for Editing: Why RAW Files Give You More Room to Correct"
 description: "JPEGs can be edited too, but they've already had decisions baked in. Here's what RAW actually gives an editor that JPEG doesn't, in practical terms."
-publishDate: 2026-08-07
+publishDate: 2026-04-10
 ---
 
 Every camera that shoots RAW also spits out a JPEG preview alongside it, a version the camera has already processed. White balance applied, contrast curve baked in, sharpening and noise reduction handled in-camera. That processing is exactly what an editor loses the ability to undo the moment you hand over a JPEG instead of the original RAW file.

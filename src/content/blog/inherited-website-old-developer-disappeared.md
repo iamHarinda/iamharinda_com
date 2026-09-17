@@ -1,7 +1,7 @@
 ---
 title: "Inherited a Website From an Old Developer Who Disappeared? Here's What to Do"
 description: "A surprisingly common situation. The person who built your site is gone, and nobody can change anything. How to figure out what you actually have and what comes next."
-publishDate: 2026-11-02
+publishDate: 2026-06-18
 ---
 
 It's a more common situation than it sounds. A business owner has a working website, but the freelancer or agency who built it is nowhere to be found anymore, moved on, stopped answering, or just vanished entirely without a word of warning. Nobody currently has the access needed to change a single thing on the site. If this is you, the good news is it's almost always fixable. The steps just aren't obvious if you've never had to do this before in your life.

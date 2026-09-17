@@ -1,7 +1,7 @@
 ---
 title: "Business Email at Your Own Domain: Why 'yourname@gmail.com' Is Costing You Trust"
 description: "A free Gmail address is fine for personal use, but it quietly undercuts a business's credibility. What a domain-based email actually fixes."
-publishDate: 2026-11-22
+publishDate: 2026-07-03
 ---
 
 It's an easy detail to overlook. Your website is professionally built, your branding is consistent across every page, and then your contact page lists yourbusiness@gmail.com right at the bottom of it all. It's a small thing on the surface, and it quietly signals something most business owners never intended it to say to a potential customer sizing them up.

@@ -832,6 +832,28 @@ body::after {
     animation: none;
   }
 }
+@media (max-width: 30rem) {
+  /* The fixed avatar size + padding left too little room for the name on
+     narrow phones, pushing the pill wider than the viewport. Scale it down
+     and let the meta text wrap onto two lines instead. */
+  .presence {
+    gap: 0.9rem;
+    padding: 0.7rem 1.4rem 0.7rem 0.7rem;
+    font-size: var(--step-1);
+    max-width: 100%;
+  }
+  .presence__ring {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+  .presence__dot {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .presence__meta {
+    min-width: 0;
+  }
+}
 
 /* 11. Glass card + spotlight + beam + tilt ------------------------------- */
 

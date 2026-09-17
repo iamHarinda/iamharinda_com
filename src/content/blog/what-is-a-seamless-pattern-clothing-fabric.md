@@ -1,7 +1,7 @@
 ---
 title: "What Is a Seamless Pattern, and Why Does It Matter for Clothing and Fabric Print?"
 description: "'Seamless pattern' gets used constantly in apparel and fabric printing. Not everyone ordering one knows exactly what makes a pattern seamless. The plain explanation."
-publishDate: 2026-12-08
+publishDate: 2026-07-15
 ---
 
 If you're sourcing a print for a polo shirt, a fabric run, or a product line, and someone asks "is this seamless," that's a fair question to not immediately know the answer to. A seamless pattern is a design built so that when it repeats, side by side, over and over across a length of fabric or a print run, the edges line up with no visible seam, break, or mismatch where one tile meets the next one in the sequence.
