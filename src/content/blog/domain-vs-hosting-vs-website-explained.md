@@ -36,4 +36,12 @@ A legitimate developer registers the domain directly under your name and your pa
 
 If someone can't explain which of these three things they're quoting you for, ask them to break it down clearly before you agree to anything at all. It's a completely fair question, and any legitimate developer will answer it without hesitation or defensiveness.
 
+## What happens if your hosting or domain lapses
+
+A missed hosting payment can take a working site offline within days, sometimes with little warning beyond an email easy to miss in a busy inbox. A missed domain renewal is worse, since after a grace period the domain can become available for anyone else to register, including a competitor or a squatter hoping to sell it back to you at an inflated price. Setting up auto-renewal on both, and making sure the payment method on file stays current, is a small piece of maintenance that prevents a genuinely disruptive problem from happening at the worst possible moment, often right before a busy season when traffic matters most.
+
+## Renewing early versus waiting until the last minute
+
+Most registrars send renewal reminders well before a domain actually expires, but those emails are easy to dismiss as spam or simply overlook during a busy stretch. Renewing a year or two in advance when you have the budget for it removes this risk entirely and costs the same total amount either way, just paid on a different schedule that removes the anxiety of watching a countdown clock every single year.
+
 Getting a site built and want the domain and hosting set up correctly from day one, in your own name? That's part of the standard launch process here.
