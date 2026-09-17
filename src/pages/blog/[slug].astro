@@ -1,0 +1,76 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import site, { waLink, abs } from "../../data/site.js";
+import { professionalService, breadcrumb } from "../../lib/schema.js";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const path = `/blog/${post.id}/`;
+
+const jsonLd = [
+  professionalService(),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog/" },
+    { name: post.data.title, path },
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.data.title,
+    description: post.data.description,
+    datePublished: post.data.publishDate.toISOString(),
+    dateModified: (post.data.updatedDate ?? post.data.publishDate).toISOString(),
+    author: { "@type": "Person", name: site.personName, url: abs("/about/") },
+    url: abs(path),
+  },
+];
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  path={path}
+  ogType="article"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h1 class="h1"><span class="split">{post.data.title}</span></h1>
+        <p>
+          {post.data.publishDate.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+      </div>
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      <div class="btn-row" style="margin-top:2.5rem">
+        <a
+          class="btn"
+          data-magnetic
+          href={waLink(`Hi Harinda, I read "${post.data.title}" on your blog. Could you do a free sample edit?`)}
+        >
+          {site.freeSample.cta}
+        </a>
+        <a class="btn btn--grad" href="/blog/">More posts</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
