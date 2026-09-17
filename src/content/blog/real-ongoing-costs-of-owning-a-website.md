@@ -42,4 +42,8 @@ Most businesses already budget for recurring costs elsewhere, rent, insurance, s
 
 A developer who walks you through the full realistic cost picture at the start, not just the build price, is setting you up to budget properly rather than face an unpleasant surprise a year in. This kind of upfront honesty is worth valuing when choosing who to work with, even if the full picture feels like more to absorb in that very first conversation than a single simple number would on its own.
 
+## A final thought on planning ahead
+
+None of these ongoing costs should discourage anyone from building a website. They're simply worth knowing about upfront so the decision to move forward is made with the full picture in view, not just the number on the first invoice you happen to see.
+
 Ongoing maintenance here is a stated flat monthly rate, no surprise invoices, listed right alongside the build pricing from the start.
