@@ -38,6 +38,6 @@ Plenty of businesses only have their logo as a JPEG or PNG, often because it was
 
 ## Why keeping your vector source safe matters long term
 
-Once you have a proper vector file, store it somewhere secure and easy to find again, since it becomes the master reference for every future use of that design, resized for a new product, adapted for a new colour, printed at a completely different scale years down the line. Losing the vector source means starting the redraw process over from scratch the next time a scalable version is needed for something new.
+Once you have a proper vector file, store it somewhere secure and easy to find again, since it becomes the master reference for every future use of that design, resized for a new product, adapted for a new colour, printed at a completely different scale years down the line. Losing the vector source means starting the redraw process over from scratch the next time a scalable version is needed for something new, which costs real time and money that a simple backup would have avoided entirely.
 
 Every design here includes the editable Ai vector source file, alongside PDF, PNG and JPG, not just flattened images handed over at the end of a project.
