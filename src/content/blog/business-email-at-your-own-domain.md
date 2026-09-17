@@ -40,7 +40,7 @@ Once business email is live, a properly formatted signature, your name, role, bu
 
 ## Why this small change often gets postponed for years
 
-Business email feels like a low-priority task compared to bigger decisions, choosing a logo, finalizing pricing, building the actual website. That's exactly why it tends to get postponed indefinitely, filed under "eventually" rather than treated as the quick, high-value fix it actually is. Recognizing it as a small task with outsized impact, rather than a project requiring careful planning, is often what finally gets it done after months or years of good intentions.
+Business email feels like a low-priority task compared to bigger decisions, choosing a logo, finalizing pricing, building the actual website. That's exactly why it tends to get postponed indefinitely, filed under "eventually" rather than treated as the quick, high-value fix it actually is. Recognizing it as a small task with outsized impact, rather than a project requiring careful planning, is often what finally gets it done after months or years of good intentions that never quite turned into action.
 
 ## A common hesitation worth addressing directly
 
