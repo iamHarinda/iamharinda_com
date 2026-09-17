@@ -22,11 +22,19 @@ For a studio handling its own editing in-house, two to six weeks is a common ran
 
 ## Why a sneak peek matters no matter your full turnaround
 
-A large share of couples specifically want a small preview gallery within forty-eight hours of the wedding, even when they fully understand the full gallery will take longer. This isn't about rushing the complete edit. It's a separate, smaller deliverable, ten to twenty hero images edited quickly and well, while the full gallery keeps moving on its normal timeline in the background. It manages the anxious wait without compromising the finished product.
+A large share of couples specifically want a small preview gallery within forty-eight hours of the wedding, even when they fully understand the full gallery will take longer to finish. This isn't about rushing the complete edit. It's a separate, smaller deliverable, ten to twenty hero images edited quickly and well, while the full gallery keeps moving on its normal timeline in the background. It manages the anxious wait without compromising the finished product.
 
 ## Setting a turnaround that's honest, not aspirational
 
 The biggest source of client frustration isn't actually a longer turnaround. It's a promise that gets missed. A studio that says four weeks and delivers in three looks great. One that says two weeks and delivers in five looks unreliable, even if five weeks would've been a perfectly reasonable number to promise from the start. Whatever number ends up in the contract should account for your actual backlog and season, not just the best-case editing time on a single isolated gallery.
+
+## Building slack into your promised date on purpose
+
+A useful habit is quoting a turnaround date that's roughly twenty to thirty percent longer than your genuine best-case estimate, then treating any early delivery as a pleasant surprise for the client rather than the expected baseline. This isn't about setting a lazy deadline. It's about accounting for the reality that unexpected things come up, a computer crash, a family emergency, a technical issue with a batch of files, and having buffer room means one bad week doesn't turn into a broken promise to a client who's been checking their inbox every day.
+
+## What happens when a photographer consistently misses deadlines
+
+Beyond the immediate awkward conversation, a pattern of missed delivery dates tends to show up in reviews eventually, even when the actual photos turn out beautifully. Couples remember the stress of not knowing when their gallery would arrive more vividly than they remember the exact quality of any single edit. Protecting your turnaround promise is, in a very real sense, protecting your reputation just as much as protecting the quality of the work itself.
 
 ## If turnaround keeps slipping on you
 
