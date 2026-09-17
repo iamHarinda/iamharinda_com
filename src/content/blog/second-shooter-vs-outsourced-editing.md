@@ -10,7 +10,7 @@ At a certain booking volume, every wedding photographer hits the same fork. The 
 
 A second shooter adds coverage, not time. They let you cover more of a wedding day at once, getting-ready on both sides, multiple ceremony angles you couldn't catch alone. They let you take on larger or more complex weddings without turning down other bookings purely for capacity reasons. They also reduce risk, since you've got a backup shooter if something goes wrong with the primary on the day itself.
 
-What a second shooter doesn't do is touch your editing backlog at all. Every extra photo they take still runs through the same culling and editing process as before, often making the post-production bottleneck worse instead of better, since there are now more images per wedding than you had before.
+What a second shooter doesn't do is touch your editing backlog at all. Every extra photo they take still runs through the same culling and editing process as before, often making the post-production bottleneck worse instead of better, since there are now more images per wedding than you had before adding a second set of hands.
 
 ## What outsourced editing actually buys you
 
@@ -29,6 +29,14 @@ Ask yourself which of these sounds true right now. "I'm turning down bookings be
 ## The cost comparison isn't really apples to apples
 
 A second shooter usually runs a per-event flat fee or day rate. Outsourced editing usually runs per photo or per gallery. Comparing them head to head on cost misses the point entirely. They're not substitutes for each other. They're fixes for different constraints, and the right question isn't which one's cheaper. It's which constraint is actually limiting your business right now, today, not in some hypothetical future.
+
+## What growth actually looks like once you fix the real bottleneck
+
+Photographers who correctly identify and fix their real bottleneck tend to see the effect show up within a single season. If editing was the true constraint, fixing it usually means galleries go out faster, reviews mention quick turnaround more often, and referrals start arriving sooner after each wedding instead of months later once the gallery finally lands. If coverage was the true constraint, fixing it usually shows up as more bookings accepted for the same busy weekends, since you're no longer turning away good leads purely because your calendar was already full.
+
+## Signs you've picked the wrong fix
+
+If you hire a second shooter and your editing backlog somehow gets worse, that's a clear signal the coverage hire didn't address your actual problem, it just added more raw material to an already struggling post-production process. Conversely, if you outsource editing and you're still turning down bookings for lack of shoot-day availability, that tells you the editing fix was worth doing on its own merits but it was never going to solve the growth ceiling you're actually running into. Recognizing this quickly saves months of assuming the wrong lever just needs more time to show results.
 
 ## Don't solve the wrong problem twice
 
