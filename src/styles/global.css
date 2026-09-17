@@ -130,6 +130,10 @@ html {
   font-size: 106.25%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* Safety net: nothing should ever be wide enough to cause horizontal
+     scroll, but this keeps one stray element from breaking the whole page.
+     Set on html (not body) so it doesn't interfere with position: sticky. */
+  overflow-x: hidden;
 }
 body {
   min-height: 100dvh;
