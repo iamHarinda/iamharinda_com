@@ -38,4 +38,12 @@ For a team or club order, gathering input from a few key stakeholders before fin
 
 If you're ordering for a team or company, get one person to sign off on the final mockup rather than collecting opinions from everyone involved in the decision. Design by committee tends to water down exactly the choices that made the first concept work well in the first place.
 
+## Why the details that seem small actually matter most
+
+Things like collar colour, button colour, and even the specific shade of the garment fabric under different lighting all interact with a design in ways that are easy to overlook until the finished product arrives and something feels subtly off. A designer who asks about these small details upfront, rather than assuming a generic garment, is doing the kind of careful work that prevents a disappointing surprise once the actual shirts are produced and delivered.
+
+## How to evaluate a finished design objectively
+
+Before approving a final polo design, try viewing the mockup at a small size, roughly how it would appear in a group photo or from across a room, not just zoomed in on a screen during review. Many design elements that look impressive up close lose their impact or clarity at a normal viewing distance, and catching that gap before production saves a genuinely disappointing result once the real shirts are in hand and being worn.
+
 Every polo and golf shirt design here includes a realistic front and back mockup on the actual garment, not just flat artwork sitting on a plain background.
