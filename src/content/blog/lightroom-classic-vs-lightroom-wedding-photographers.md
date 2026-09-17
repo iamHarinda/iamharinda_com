@@ -40,4 +40,12 @@ Ask yourself how many photos you're actually processing per shoot, whether you n
 
 If you start on one version and later realize the other fits better, Adobe does offer paths to migrate a catalog between the two, though it's rarely a perfectly clean process for a large existing library. Photos, edits, and keywording mostly carry over, but some local-only features in Classic, certain plugins, specific export presets, don't translate directly to the cloud version. It's worth testing the switch on a small sample catalog before committing a full multi-year archive to a migration you can't easily undo.
 
+## Plugins and third-party tools only run on Classic
+
+If your workflow leans on third-party plugins, noise reduction tools, specific export automation, batch watermarking scripts, most of that ecosystem was built for Classic and simply doesn't exist for the cloud version yet. Photographers who've built a workflow around a handful of favourite plugins over the years often find that alone decides the question for them, regardless of storage preferences or device habits. It's worth checking whether any tool you already rely on daily has cloud Lightroom support at all before assuming you can switch freely between the two.
+
+## Team and delivery considerations
+
+If you work with a second shooter, an assistant editor, or send files to an outside service, Classic's local catalog structure makes it straightforward to hand off a folder of RAW files or an exported catalog to someone else entirely, no shared cloud account required. Cloud Lightroom can technically support shared access too, but it ties collaborators into the same Adobe ecosystem and storage plan, which isn't always practical when you're working with an outside editor who has their own separate tools and setup. For studios that regularly outsource part of their editing, Classic's simpler file-based handoff tends to cause fewer headaches.
+
 Sending a gallery out for editing? Every photo gets processed in Lightroom Classic and Photoshop on a Calman-verified, factory-calibrated monitor, RAW files in, full-resolution files out. A free sample edit is the easiest way to see how it looks before committing to anything bigger, and the pricing page breaks down what full galleries cost.
