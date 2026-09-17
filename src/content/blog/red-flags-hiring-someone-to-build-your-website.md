@@ -42,4 +42,12 @@ Pay attention to how quickly and clearly someone responds during the sales conve
 
 A written proposal before any payment changes hands at all. A clear, fixed price once scope is set in stone and agreed by both sides. Real, verifiable past work you can actually check for yourself. A stated plan for ownership transfer and post-launch support laid out clearly. No pressure to decide on the spot, ever, under any circumstances. None of this is unusual to ask for, and a developer who bristles at reasonable questions like these is telling you something useful before you've spent a single dollar.
 
+## Trusting your own gut alongside this checklist
+
+None of these red flags are foolproof on their own, and a developer can technically check every box above while still being a poor fit for your specific project or working style. Alongside this list, pay attention to your own comfort level during early conversations. If something feels off even when you can't quite name why, that instinct is worth taking seriously rather than talking yourself out of it because everything on paper looked fine at first glance.
+
+## Where to look for a second opinion before committing
+
+If you're unsure about a developer after an initial conversation, asking to speak with a past client directly, not just viewing a portfolio, is a completely reasonable request that a confident, established freelancer or agency should have no trouble accommodating for a serious potential client. A quick five-minute call with someone who's actually worked with them tells you more than any number of polished case studies or curated testimonials ever could on their own.
+
 Every project here starts with a free scope call and a written, fixed-price proposal before anything gets charged.
