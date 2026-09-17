@@ -91,7 +91,52 @@ const jsonLd = [
         }
       </div>
 
-      <p class="bulk-note rise">{site.bulkNote}</p>
+      <div
+        class="card calc rise beam"
+        data-spot
+        data-calc
+        data-rate={(site.packages[0].price / site.packages[0].photos).toFixed(2)}
+        style="margin-top:2rem"
+      >
+        <div class="calc__head">
+          <h3>Not sure how many? Work it out.</h3>
+          <p>Drag to your photo count and see the price update.</p>
+        </div>
+        <label class="sr-only" for="calc-range">Number of photos</label>
+        <input
+          type="range"
+          id="calc-range"
+          class="calc__range"
+          min={site.packages[0].photos}
+          max="2000"
+          step="50"
+          value="100"
+        />
+        <div class="calc__readout">
+          <span><b id="calc-count">100</b> photos</span>
+          <span class="calc__amount grad-text" id="calc-price">$20.00</span>
+        </div>
+        <p class="calc__note" id="calc-note" hidden>{site.bulkNote}</p>
+      </div>
+
+      <script define:vars={{ cap: site.packages[site.packages.length - 1].photos }}>
+        const calc = document.querySelector("[data-calc]");
+        if (calc) {
+          const rate = Number(calc.dataset.rate);
+          const range = calc.querySelector("#calc-range");
+          const countEl = calc.querySelector("#calc-count");
+          const priceEl = calc.querySelector("#calc-price");
+          const noteEl = calc.querySelector("#calc-note");
+          const update = () => {
+            const photos = Number(range.value);
+            countEl.textContent = photos.toLocaleString("en-US");
+            priceEl.textContent = `$${(photos * rate).toFixed(2)}`;
+            noteEl.hidden = photos <= cap;
+          };
+          range.addEventListener("input", update);
+          update();
+        }
+      </script>
 
       <div class="callout beam rise" style="margin-top:2.5rem">
         <div>
