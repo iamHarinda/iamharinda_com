@@ -34,6 +34,10 @@ A designer who only produces polished-looking flat images without accounting for
 
 Ask your printer directly what format and colour mode they need before final files get built, not after the design is already finished and approved. A five-minute question upfront saves a full round of rework later, once you've already committed time and money to a version that doesn't actually match what your production partner needs to run the job.
 
+## The cost of finding out too late
+
+Discovering a file isn't production-ready only after paying for a full print run, rather than before, turns a simple fix into a genuinely expensive mistake involving wasted materials, wasted production time, and a delayed launch date that can ripple into missed sales windows or disappointed customers waiting on a product that isn't ready when promised.
+
 ## What happens when a rejected file needs fixing
 
 If a printer bounces a file back as unusable, the fix usually isn't starting over completely, it's converting or adjusting the existing design to meet the specific requirement that failed, colour mode, resolution, vector versus raster. This is faster and cheaper than a full redesign, but it does mean extra time and sometimes an extra cost if the original designer didn't build the file correctly the first time and now needs to go back and rework it properly.
