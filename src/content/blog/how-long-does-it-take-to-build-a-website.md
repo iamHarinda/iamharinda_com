@@ -30,4 +30,12 @@ A quote with no timeline attached at all, or one that says "it depends" without 
 
 Most delays trace back to communication gaps, not the actual coding work itself. A developer who's clear about deadlines and a client who responds promptly usually finishes close to the original estimate, no matter how the project started out or how complex it initially seemed.
 
+## Why bigger projects don't scale timelines evenly
+
+It's tempting to assume a sixteen-page site simply takes twice as long as an eight-page one, but that's rarely how it actually works out in practice. A lot of the timeline on any project is fixed setup time, the scope call, the technical foundation, domain and hosting configuration, that doesn't grow much just because there are more pages involved. Larger projects often move faster per page than smaller ones once that foundational work is already done, which is one reason a mid-sized site sometimes surprises clients by finishing sooner relative to its size than a tiny one-page project that still needed all the same setup steps regardless of its smaller scope.
+
+## What to do if a project starts running behind
+
+If a timeline starts slipping, the most useful thing you can do as the client is ask directly what's causing the delay rather than just waiting anxiously and wondering. Sometimes it's genuinely on the developer's end, other times it traces back to a content delay or a slow review turnaround on your own side that's easy to forget about once a few weeks have passed. A quick, honest conversation usually gets things back on track faster than silence does on either side of the relationship.
+
 Want an actual date, not a wide range? A written proposal here includes a dated timeline once scope is agreed, no open-ended "it depends" left hanging over the project.
