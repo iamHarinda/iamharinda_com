@@ -36,4 +36,12 @@ You don't need a huge site on day one. A handful of pages, what you do, who you 
 
 A lot of business owners wait years to build a site because it feels like a big project. It doesn't have to be. Even a simple three or four page site, built once and left mostly alone, beats no website at all by a wide margin, and it can usually go live faster than most people expect once they actually start.
 
+## Why algorithm changes make relying on social alone risky
+
+Platforms change how content gets shown constantly, and not always in your favour. A business that built its entire following around organic reach on one platform can watch that reach quietly shrink over a year as the algorithm shifts toward paid promotion or a different type of content entirely. A website doesn't have this problem. Once it's live and findable, it keeps working the same way regardless of what any single platform decides to change next. That stability alone is worth something to a business that's been burned by a sudden drop in visibility they had no control over.
+
+## What a website adds even for a heavily social-first business
+
+Even businesses that get most of their actual bookings through Instagram or TikTok often benefit from a simple site as a landing point, somewhere to send a link in bio that actually converts, rather than hoping a potential customer scrolls through an entire feed to find pricing or contact details. A single well-built landing page can outperform a link-in-bio tool for exactly this reason, since it's built specifically around getting someone from curious to booked, not around generic profile navigation the platform designed for a completely different purpose.
+
 Thinking about a first website, or wondering if you actually need one? A free scope call is the easiest way to find out what you'd actually need, no pressure, no charge attached.
