@@ -1,0 +1,76 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { professionalService, breadcrumb } from "../../lib/schema.js";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+const jsonLd = [
+  professionalService(),
+  breadcrumb([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog/" },
+  ]),
+];
+---
+
+<BaseLayout
+  title="Blog"
+  description="Notes on colour correction, retouching and pricing for photographers who outsource their editing."
+  path="/blog/"
+  jsonLd={jsonLd}
+>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Blog</span>
+        <h1 class="h1"><span class="split">Notes on colour, retouching and running a photo business.</span></h1>
+      </div>
+
+      <ul class="blog-list">
+        {posts.map((post) => (
+          <li class="blog-list__item card">
+            <a href={`/blog/${post.id}/`}>
+              <h2>{post.data.title}</h2>
+            </a>
+            <p class="blog-list__date">
+              {post.data.publishDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+            <p>{post.data.description}</p>
+            <a class="blog-list__link" href={`/blog/${post.id}/`}>Read more &rarr;</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .blog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+  .blog-list__item h2 {
+    margin: 0 0 0.4rem;
+    font-size: 1.3rem;
+  }
+  .blog-list__date {
+    opacity: 0.65;
+    font-size: 0.85rem;
+    margin: 0 0 0.6rem;
+  }
+  .blog-list__link {
+    display: inline-block;
+    margin-top: 0.6rem;
+    font-weight: 600;
+  }
+</style>
