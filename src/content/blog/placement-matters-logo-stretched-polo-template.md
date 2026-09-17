@@ -46,4 +46,8 @@ Placement problems frequently trace back to a logo built without ever considerin
 
 If you're reviewing a polo design built by a previous designer or an in-house team member without much apparel experience, checking specifically for these placement issues, stretching, ignoring the collar and placket, wrong scale, gives you a clear, objective way to assess quality even without any design background yourself. It turns a vague "something feels off" into specific, actionable feedback you can actually communicate clearly to whoever's doing the revision work, which tends to get a faster, more accurate fix than a general complaint alone would.
 
+## A final reminder before signing off on any design
+
+Placement issues are almost always fixable at little to no cost when caught early, and almost always expensive once a production run is already underway. That asymmetry alone justifies the extra few minutes it takes to check a mockup properly before giving final approval on any order, large or small.
+
 Every design here gets shown on a realistic front and back mockup before it's finalized, never a flat template with artwork just pasted on top.
