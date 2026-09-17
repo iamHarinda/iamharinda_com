@@ -28,6 +28,10 @@ Specify the production method for each placement on the garment, not just once f
 
 A logo with a subtle drop shadow and fine text might look great sublimation printed on a back panel, but that same logo embroidered small on a chest would probably lose the shadow entirely and blur the tiny text into an unreadable mess. Two versions, same logo, same brand, built specifically for what each method can actually deliver on the finished product.
 
+## How to explain your needs if you genuinely don't know the method yet
+
+If you haven't decided on a production method, describing your priorities, budget per unit, expected order size, how the garments will be used and washed over time, lets a designer or supplier recommend a method that fits, rather than you needing to research and decide on a technical production process entirely on your own before even starting the design conversation.
+
 ## A cost consideration worth knowing upfront
 
 Embroidery generally costs more per unit for small runs but holds up better to repeated washing over years of wear. Sublimation tends to be more cost-effective for larger runs and complex, full-colour designs, but the finish can feel different to the touch compared to embroidered thread. Factoring in both design fit and this cost tradeoff together, rather than choosing a method purely on appearance, gives a more complete picture before committing to either option.
