@@ -36,4 +36,8 @@ A pattern designer approached for construction pattern work should redirect you 
 
 This isn't something to guess at or Google quickly before placing an order. A five-minute conversation describing your actual project, in plain language, to any designer or patternmaker gets you a clear, honest answer about whether they're the right fit before any money changes hands or time gets wasted.
 
+## Where to look if you genuinely need patternmaking instead
+
+If your project actually requires cut-and-sew patternmaking, garment construction, sizing and grading, technical tech packs for manufacturers, search specifically for a patternmaker or a technical designer rather than a general apparel designer. Industry-specific directories and manufacturing consultants are often better starting points than a general freelance marketplace search for this particular specialty.
+
 This is pattern and print design, artwork and mockups for existing garments, not cut-and-sew patternmaking. If that's what you actually need, it's worth knowing before you order. Ask first if you're not sure it's a fit.
