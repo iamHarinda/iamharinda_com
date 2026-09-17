@@ -38,6 +38,10 @@ Before committing significant content to a new platform, ask directly what happe
 
 If you've already built significant content on a platform with poor export options, the situation isn't hopeless, just slower to unwind than switching earlier would have been. A developer can often manually rebuild a site's content and design onto a new, more flexible foundation, treating the old site as a visual reference rather than something to extract programmatically. It costs more time than a clean migration would have, but it's still far better than staying stuck somewhere that no longer serves your business well, purely because leaving feels like too much work to face.
 
+## A middle path some businesses choose deliberately
+
+Not every business needs to avoid platforms entirely to sidestep lock-in risk. Some deliberately choose a builder for a low-stakes, easily replaceable part of their presence, a temporary campaign page, a one-off event listing, while keeping their core, long-term site on infrastructure they fully control. This split approach captures a builder's convenience for disposable content while protecting the parts of the business that genuinely need to last for years without a costly migration hanging over them.
+
 ## The bottom line worth remembering
 
 Convenience today and freedom later aren't always the same thing, and it's worth being honest with yourself about which one matters more for your specific business before committing years of content to any single platform you haven't fully researched yet.
