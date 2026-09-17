@@ -34,6 +34,10 @@ If a screen-printed design is creeping past six colours during development, ask 
 
 If your design could reasonably work with either screen printing or sublimation, weigh order size against colour complexity as the deciding factor. Smaller orders with simple, few-colour designs usually favour screen printing on cost. Larger orders or anything with rich, photo-realistic colour usually favour sublimation despite its different cost structure, which becomes more efficient at scale.
 
+## Why this decision benefits from being made early, not late
+
+Colour count and production method form a foundation the rest of the design builds on top of, similar to how a house's foundation shapes everything constructed above it. Changing this decision midway through a project usually means revisiting most of the work already completed, which is exactly why it deserves a firm answer before the first concept even gets sketched out.
+
 ## A practical way to visualize the cost difference
 
 Picture two identical designs, one built with three flat colours for screen printing, one built with a full photographic gradient for sublimation. The screen-printed version costs less per unit at small quantities because setup is simple, but that cost stays roughly flat per colour regardless of order size. The sublimation version costs more per unit at very small quantities but scales more efficiently as order size grows, since the complexity of the design doesn't add incremental cost the way each extra screen printing colour does.
