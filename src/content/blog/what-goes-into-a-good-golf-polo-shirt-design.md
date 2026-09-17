@@ -30,6 +30,10 @@ As covered elsewhere in more depth, whether the design is headed for embroidery,
 
 The garment colour, the intended placement, chest, back, sleeve, the production method, and critically, a realistic mockup showing the design on the actual shirt shape, not just floating on a flat background somewhere disconnected from the real product. That mockup step is what catches placement and scale problems before anything ever goes to a printer and becomes an expensive mistake to correct after the fact.
 
+## Why sampling one garment before a full order pays off
+
+For larger team orders, requesting a single sample garment with the final design applied, before committing to the full production run, catches issues a digital mockup sometimes can't fully reveal, how the fabric actually takes the specific ink or thread, how the finished piece feels and drapes in person. This extra step adds a bit of time and cost upfront but meaningfully reduces the risk of an expensive mistake across dozens or hundreds of units ordered at once.
+
 ## How team input can help or hurt this process
 
 For a team or club order, gathering input from a few key stakeholders before finalizing a design usually improves the result, catching preferences or concerns a single decision-maker might miss entirely. But opening the review to too many people, especially without a clear final decision-maker named upfront, tends to produce watered-down feedback that pulls a strong design in conflicting directions. A small, decisive review group works better than a large, unstructured one gathering opinions from everyone involved.
