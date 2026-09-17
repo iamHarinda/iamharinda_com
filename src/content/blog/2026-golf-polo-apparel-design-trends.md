@@ -42,4 +42,8 @@ Rather than committing an entire team order to one design direction based on ass
 
 Golf and polo apparel often gets planned as part of a rotating wardrobe refreshed every season or two, which means a specific trending colour palette doesn't need to define your entire identity permanently. Building a core design that stays consistent, with seasonal colour or motif variations layered on top periodically, balances staying current with maintaining the recognizable identity your team or club has built up over time among members and competitors alike.
 
+## A last word on staying grounded amid shifting trends
+
+Trend cycles will keep moving regardless of what any brand does, and trying to chase every shift as it happens is a losing game for most teams and clubs without a dedicated design department. A stronger long-term strategy is checking in on trend direction once or twice a year, at natural decision points like a new season or a uniform refresh, rather than treating every passing shift as an urgent call to redesign everything from scratch.
+
 Bold or understated, the design gets built around your brand, not a generic trend template pulled off a shelf.
