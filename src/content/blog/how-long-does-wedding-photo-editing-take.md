@@ -52,4 +52,8 @@ Even with careful planning, sometimes a delay happens anyway, illness, equipment
 
 Understanding the wait from the client's side helps explain why turnaround communication matters so much. Many couples check their email daily in the weeks after a wedding, sometimes refreshing a gallery link that isn't live yet just in case. That anticipation is part of why a missed promise stings more than it might for a less emotionally loaded purchase. Treating the wait itself as part of the client experience, not just something to survive before the real deliverable shows up, changes how much communication effort feels worth investing along the way.
 
+## A simple habit that keeps this whole system honest
+
+Track your actual delivery times against your promised times for every gallery, even informally in a spreadsheet. Patterns show up fast, certain months consistently run longer, certain gallery sizes consistently take more hours than expected, and that data makes your next round of promised dates genuinely more accurate instead of just optimistic guessing repeated over and over.
+
 Need a realistic turnaround on your next gallery? First proofs typically come back within a day, and full fifty to two hundred photo galleries usually finish in two to four days. Send a free sample edit request to see the process, or check current pricing.
