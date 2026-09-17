@@ -36,4 +36,12 @@ Beyond cost and capacity, think about how you personally prefer to communicate a
 
 Price alone shouldn't decide this for you. A freelancer who's a poor fit for a complex project can cost more in wasted time and rework than a slightly pricier agency that gets it right the first time around without needing a second attempt.
 
+## A hybrid path that sometimes makes sense
+
+Some businesses start with a DIY builder to get online fast and validate their idea works, then bring in a freelancer a year or two later once revenue justifies a more polished, custom site. This staged approach isn't a compromise, it's often the smartest way to spend money at each stage of a growing business, matching the investment to what the business can actually justify at that specific point in time rather than overcommitting on day one before there's proof the idea works.
+
+## Questions worth asking whichever path you choose
+
+Regardless of which of the three routes you pick, a few questions apply universally. What happens if I want to make changes myself later, and does the path I've chosen make that easy or hard? What's the realistic total cost over three years, not just the upfront number I'm quoted today? And how much of my own time will this actually require, both now during the build and later during ongoing maintenance? Answering these honestly for each option often makes the right choice for your specific situation much clearer than comparing price tags alone ever could.
+
 Working directly with the person actually building your site, with fixed pricing from a free scope call? That's the freelancer path, and it's what this is built around.
