@@ -44,7 +44,7 @@ Rather than a long list of vague impressions, structure feedback around specific
 
 ## Why patience in the first round pays off later
 
-The first gallery with any new editor is genuinely a two-way learning process, them learning your style, you learning how to communicate it clearly. Treating that first round with a bit of extra patience, rather than judging the entire relationship on one imperfect first pass, tends to produce a much better working relationship across every gallery that follows.
+The first gallery with any new editor is genuinely a two-way learning process, them learning your style, you learning how to communicate it clearly. Treating that first round with a bit of extra patience, rather than judging the entire relationship on one imperfect first pass, tends to produce a much better working relationship across every gallery that follows for years afterward.
 
 ## What a reasonable number of revision rounds actually looks like
 
