@@ -42,6 +42,10 @@ A designer who regularly works with real printers and embroiderers, not just oth
 
 Once a sample is approved, keep it physically or photograph it clearly alongside notes on the exact colours and settings used. This becomes a genuinely useful reference point for reorders or related future projects, saving real time re-establishing what "correct" actually looked like the first time around, months or years later, once memory alone isn't reliable enough.
 
+## The overall mindset worth adopting here
+
+Treat the digital mockup as a strong prediction, not a guarantee, and the physical sample as the actual confirmation before scaling up. That two-step mindset, rather than trusting a screen preview completely, is what protects a full production order from an avoidable, expensive surprise.
+
 ## Why smaller test batches make sense for uncertain orders
 
 If you're not entirely confident in a design direction yet, ordering a small test batch of five or ten shirts before committing to a full run of fifty or a hundred limits your exposure to a disappointing result. This costs a bit more per unit at the small scale, but it's cheap insurance against a much larger, more expensive mistake if something doesn't translate the way you expected.
