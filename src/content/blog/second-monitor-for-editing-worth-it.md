@@ -44,7 +44,7 @@ A second monitor purchase also usually means a monitor arm or additional desk sp
 
 ## What other photographers actually report after switching
 
-Photographers who add a second monitor after years of single-screen editing often describe an adjustment period of a week or two before the new arrangement feels natural, followed by genuinely not wanting to go back to a single screen afterward. This is worth knowing going in, since an initial "this doesn't feel like a big difference yet" reaction in the first few days isn't necessarily a sign the upgrade wasn't worth it.
+Photographers who add a second monitor after years of single-screen editing often describe an adjustment period of a week or two before the new arrangement feels natural, followed by genuinely not wanting to go back to a single screen afterward. This is worth knowing going in, since an initial "this doesn't feel like a big difference yet" reaction in the first few days isn't necessarily a sign the upgrade wasn't worth it, just that any new habit takes a little time to actually settle in.
 
 ## Revisiting the decision as your workflow changes
 
