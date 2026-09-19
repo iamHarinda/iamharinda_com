@@ -36,7 +36,7 @@ Once you've ordered from a specific designer and supplier combination successful
 
 ## What a designer experienced in production actually adds here
 
-A designer who regularly works with real printers and embroiderers, not just other designers, tends to build files correctly for production from the start, catching potential CMYK or fabric-interaction issues before they ever become a problem you'd otherwise discover only at the sample stage.
+A designer who regularly works with real printers and embroiderers, not just other designers, tends to build files correctly for production from the start, catching potential CMYK or fabric-interaction issues before they ever become a problem you'd otherwise only discover much later, at the sample stage or worse.
 
 ## Why smaller test batches make sense for uncertain orders
 
