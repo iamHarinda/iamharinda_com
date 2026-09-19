@@ -32,7 +32,7 @@ For teams needing genuine custom design, a logo adaptation, a repeat pattern, a 
 
 ## What to do if you genuinely can't decide between options
 
-If you're stuck comparing two or three reasonable options and can't settle on one, send the exact same brief to each and compare the actual concepts that come back rather than trying to decide based on portfolios alone. A direct, apples-to-apples comparison of real proposed work settles this far more reliably than guessing from past projects done for other clients.
+If you're stuck comparing two or three reasonable options and can't settle on one, send the exact same brief to each and compare the actual concepts that come back rather than trying to decide based on portfolios alone. A direct, apples-to-apples comparison of real proposed work settles this far more reliably than guessing from past projects done for entirely different clients with different needs.
 
 ## Why word of mouth still matters in this space
 
