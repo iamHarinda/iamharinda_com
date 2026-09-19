@@ -36,7 +36,7 @@ Ask a specific, slightly technical question you don't fully understand yourself,
 
 ## What to do if everything checks out but something still feels off
 
-Trust that instinct even when every objective box has been ticked. A vague discomfort after an otherwise clean evaluation is worth a bit more digging, another reference call, one more clarifying question, before committing, rather than overriding a genuine gut feeling purely because the paperwork looked fine.
+Trust that instinct even when every objective box has been ticked. A vague discomfort after an otherwise clean evaluation is worth a bit more digging, another reference call, one more clarifying question, before committing, rather than overriding a genuine gut feeling purely because everything on paper appeared to check out fine.
 
 ## Why price alone tells you almost nothing about quality
 
