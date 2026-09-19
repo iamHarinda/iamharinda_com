@@ -48,7 +48,7 @@ Most cloud backup services support automatic syncing of a specific folder, meani
 
 ## Testing a restore before you actually need one
 
-A backup you've never tested restoring from is really just an assumption of safety rather than a confirmed one. Periodically downloading a sample file from your cloud backup, or restoring a small folder from a local backup drive, confirms the whole system genuinely works end to end, rather than discovering a silent failure only during an actual emergency when it's far too late to fix quietly.
+A backup you've never tested restoring from is really just an assumption of safety rather than a confirmed one. Periodically downloading a sample file from your cloud backup, or restoring a small folder from a local backup drive, confirms the whole system genuinely works end to end, rather than discovering a silent failure only during an actual emergency, exactly when there's no time left to fix it quietly.
 
 ## A word on encryption and client privacy
 
