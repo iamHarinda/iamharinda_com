@@ -54,4 +54,8 @@ Add a specific check to your gear preparation routine before every wedding: conf
 
 Compared to autofocus speed or megapixel count, dual card slots don't photograph well in a spec sheet comparison and don't show up in a portfolio. That's exactly why it's worth actively seeking out and understanding, rather than assuming any camera marketed toward professionals automatically includes it.
 
+## A small feature, a large amount of peace of mind
+
+Dual card slots cost nothing extra to use once a camera has them, and the peace of mind they provide on the single most important day a couple will ever hire you for is worth far more than the feature's modest place on any spec sheet suggests.
+
 Once files are safely off the cards and backed up, [a free sample edit](/contact/) is a low-risk way to see how the actual editing side of the process works, on a calibrated screen, before committing a full gallery to anyone.
