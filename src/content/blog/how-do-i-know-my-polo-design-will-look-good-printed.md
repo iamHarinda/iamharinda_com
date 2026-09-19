@@ -40,7 +40,7 @@ A designer who regularly works with real printers and embroiderers, not just oth
 
 ## Keeping copies of approved samples for future reference
 
-Once a sample is approved, keep it physically or photograph it clearly alongside notes on the exact colours and settings used. This becomes a genuinely useful reference point for reorders or related future projects, saving time re-establishing what "correct" looked like the first time around.
+Once a sample is approved, keep it physically or photograph it clearly alongside notes on the exact colours and settings used. This becomes a genuinely useful reference point for reorders or related future projects, saving real time re-establishing what "correct" actually looked like the first time around, months or years later.
 
 ## Why smaller test batches make sense for uncertain orders
 
