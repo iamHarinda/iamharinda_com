@@ -34,6 +34,10 @@ For a small team or club needing a functional, well-executed logo with reasonabl
 
 A logo that needs revisiting within a year because it never quite worked well at garment scale, or never felt quite right to the team, ends up costing more in total than paying slightly more for a version that got it right the first time. Value here is about the total cost of getting to a logo you're happy keeping, not just the number on the initial invoice.
 
+## Why timing in the season can affect pricing and availability
+
+Requesting design work during a designer's busiest stretch, right before a new season starts and every team is ordering at once, can mean longer wait times or a fuller schedule than requesting the same work during a quieter month. Planning a season or two ahead, rather than waiting until the last minute, often gives more flexibility on both timeline and finding the right designer available to take the project.
+
 ## How to compare quotes that look wildly different at first glance
 
 When two quotes for a similar-sounding project differ significantly, ask each designer directly what's included, number of concepts, revision rounds, final file formats, rather than comparing the bottom-line numbers alone. This levels the comparison and often reveals that the apparently cheaper option is missing something the pricier one includes as standard.
