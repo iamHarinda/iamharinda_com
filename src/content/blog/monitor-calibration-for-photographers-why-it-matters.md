@@ -38,4 +38,12 @@ Control your ambient lighting while editing, since a bright window or a warm lam
 
 If you're choosing between a new lens and getting your monitor properly calibrated, the monitor wins almost every time for editing quality specifically. A lens affects what you capture. A calibrated screen affects every single decision you make about every photo you've ever shot, for as long as you keep editing on it.
 
+## A common excuse worth addressing directly
+
+"I've been editing for years without one and my clients haven't complained" is the most common reason photographers give for skipping calibration. It's not actually reassuring, since a client with no reference point for what a photo should look like has no way to flag a subtle colour shift, they just quietly notice something feels slightly off without being able to name it, or they simply don't print the photo as often as they would have with colours that felt genuinely accurate. Absence of complaints isn't the same as absence of a problem.
+
+## What happens the first time you actually calibrate
+
+Photographers who calibrate for the first time after years of working uncalibrated often describe a real moment of surprise, realizing their whites had a faint cast, or skin tones sat slightly warmer than they'd assumed. This isn't a sign anything was done badly before. It's simply what happens when you finally have a trustworthy reference after working without one, and it's worth expecting rather than being caught off guard by.
+
 Every edit delivered here happens on a Calman-verified, factory-calibrated monitor specifically because of everything above — skin tones and whites get judged against something trustworthy, not a guess. If you want to see the difference for yourself, [send two or three photos over for a free sample edit](/contact/) and compare it against your own screen.
