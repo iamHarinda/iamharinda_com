@@ -38,6 +38,14 @@ Before assuming you need new hardware, watch your computer's activity monitor wh
 
 A computer that fights you during every editing session doesn't just cost time, it costs patience and attention exactly when careful colour and detail judgments matter most. Fixing a genuine bottleneck, whether that's a cheap RAM upgrade or a full replacement, pays for itself in both speed and the quality of focus you can actually bring to each photo.
 
+## Why exports specifically feel so slow
+
+Exporting a full gallery, running full-resolution renders across hundreds or thousands of images, is one of the more processor and storage-intensive tasks in the entire workflow, which is why it often feels disproportionately slow even on a machine that handles everyday browsing and editing just fine. This is a genuinely different bottleneck than sluggish preview loading while culling, and it's worth diagnosing separately rather than assuming one fix solves both.
+
+## A middle-ground option worth knowing about
+
+If a full new laptop feels like too big a jump but your current machine is genuinely struggling, an external GPU or a dedicated external drive enclosure for your working catalog can extend the useful life of an otherwise capable machine at a fraction of replacement cost. These aren't solutions for every bottleneck, but they're worth researching before committing to a full upgrade if budget is a real constraint this season.
+
 ## Desktop versus laptop for a primary editing machine
 
 If portability genuinely doesn't matter for your workflow, editing exclusively at a home office desk, a desktop computer typically delivers more raw performance per dollar than an equivalent laptop, since desktop components don't need to be miniaturized or optimized for battery life. Photographers who never edit away from their desk sometimes overpay for laptop portability they don't actually use, when a desktop would have stretched the same budget further.
