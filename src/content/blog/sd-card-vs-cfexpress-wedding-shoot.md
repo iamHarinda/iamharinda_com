@@ -48,7 +48,7 @@ Memory card technology keeps advancing, and there's always a slightly faster, sl
 
 Whatever card ends up in your camera, the files it captures still need careful, colour-accurate editing once the day is over. ## What to actually check before your next purchase
 
-Look up your specific camera body's supported card types and maximum write speeds rather than assuming faster is always better. Some bodies cap the actual usable speed well below what a premium card can theoretically deliver, meaning the extra money spent on the fastest available card goes entirely to waste if the camera itself can't take advantage of it.
+Look up your specific camera body's supported card types and maximum write speeds rather than assuming faster is always better. Some bodies cap the actual usable speed well below what a premium card can theoretically deliver, meaning the extra money spent on the fastest available card goes entirely to waste if the camera itself can't take advantage of it in the first place.
 
 ## The bottom line for most wedding shooters
 
