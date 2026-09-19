@@ -34,6 +34,10 @@ This entire scenario is the strongest possible argument for insisting on domain 
 
 Ask directly, before hiring anyone, what happens to access and files if the relationship ends unexpectedly partway through. A legitimate developer answers this without hesitation, and the answer itself tells you a great deal about how seriously they take client protection, regardless of how good their portfolio looks on the surface.
 
+## The emotional side of this that's worth acknowledging
+
+Beyond the practical and financial disruption, being ghosted mid-project feels genuinely unsettling, especially for a business owner who isn't deeply familiar with this industry and doesn't have an easy way to judge whether what happened is normal or a rare exception. It's worth knowing upfront that this experience, while real, is not the typical outcome, and it doesn't mean the next hire is doomed to repeat it.
+
 ## What a partially finished project is actually worth to a new developer
 
 Don't assume a half-finished project needs to start completely over if you have to bring in someone new. A new developer can often assess what exists, the design direction, any code already written, and decide honestly whether it's worth continuing from that point or better to start fresh, which is usually faster and cheaper than either extreme assumption going in.
