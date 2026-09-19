@@ -38,4 +38,12 @@ A photographer editing in an uncomfortable, poorly lit, cluttered space tends to
 
 None of this requires an expensive overhaul all at once. A decent chair, a properly positioned monitor arm, and better lighting can be added incrementally over a few months without derailing a tight budget, and each individual improvement makes an immediate, noticeable difference on its own rather than needing the full setup complete to feel worthwhile.
 
+## Sound and environment beyond just the visual setup
+
+A quiet, distraction-free environment matters more for editing than it gets credit for, since careful colour and detail judgments require sustained attention in a way that's easily broken by background noise, notifications, or interruptions. Headphones with noise cancellation, or simply a dedicated room with a closed door during focused editing blocks, protect the kind of concentration that catches a subtle skin tone issue before it ships in a delivered gallery.
+
+## Building the setup around your actual habits, not an ideal
+
+Some photographers edit best in short, frequent sessions between other tasks. Others block out long, uninterrupted stretches. Neither is wrong, but the desk setup that serves each style differs, quick access to frequently referenced folders and presets for the first, a setup that stays comfortable across many consecutive hours for the second. Building around how you actually work, rather than copying someone else's setup wholesale, produces a space that genuinely reduces friction instead of just looking impressive.
+
 Whatever your own setup looks like, the actual editing still needs a careful, colour-accurate eye behind it. [A free sample edit](/contact/) shows what that looks like here, done by hand on a properly calibrated screen.
