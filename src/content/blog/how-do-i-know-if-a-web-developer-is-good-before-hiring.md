@@ -56,6 +56,6 @@ None of these checks are perfectly reliable on their own, but together they buil
 
 ## A final thought worth keeping in mind
 
-No evaluation process removes all risk entirely, but a thorough one removes most of it, which is realistically the best any business owner can do when hiring someone whose actual technical work they can't personally judge in fine detail themselves.
+No evaluation process removes all risk entirely, but a thorough one removes most of it, which is realistically the best any business owner can do when hiring someone whose actual technical work they can't personally judge in fine detail themselves, no matter how much research goes into the decision.
 
 Not sure how to evaluate this for your own project? A [free scope call](/web-development/) is a low-risk way to see communication style and process firsthand, before any money or commitment is involved.
