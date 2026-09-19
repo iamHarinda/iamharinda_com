@@ -38,6 +38,10 @@ What works well at fifty stored weddings might need adjusting at two hundred. Pe
 
 Before a gallery moves from active working files into long-term archive storage, a quick final check, confirming file names are correct, the folder structure matches your convention, nothing got miscategorized during a busy week, catches small inconsistencies while they're still easy to fix. Skipping this step lets small errors compound silently across years of galleries, each one a little harder to untangle than the last.
 
+## Why a digital system beats relying on drive labels alone
+
+Physical labels on drives help, but they're not searchable and they fall apart the moment a drive gets swapped, replaced, or renamed. A simple digital index, even a plain spreadsheet listing client, date, and which physical drive or cloud folder holds each gallery, survives drive changes and stays searchable in a way handwritten labels never fully manage on their own.
+
 ## What to do about years of past work that predate your current system
 
 If you've been shooting for years before settling on a consistent naming and folder convention, retroactively fixing everything at once is a genuinely large undertaking, and it doesn't need to happen all in one sitting. Prioritize recent years first, since they're more likely to be referenced again soon, and work backward gradually during slower stretches rather than treating it as an all-or-nothing project that never actually gets started.
