@@ -36,7 +36,7 @@ Being careful about who touches irreplaceable client files isn't paranoia, it's 
 
 ## What a genuine, verifiable track record actually looks like
 
-Reviews spread naturally across a real span of time, mentioning specific, believable details rather than generic praise, are a stronger signal than a large number of reviews clustered suspiciously close together. A quick look at how reviews are distributed over time tells you more about legitimacy than the star rating alone ever could.
+Reviews spread naturally across a real span of time, mentioning specific, believable details rather than generic praise, are a stronger signal than a large number of reviews clustered suspiciously close together. A quick look at how reviews are distributed over time tells you more about legitimacy than the star rating alone ever could on its own.
 
 ## Questions worth asking directly before committing anything
 
