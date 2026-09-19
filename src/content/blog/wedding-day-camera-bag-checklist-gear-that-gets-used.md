@@ -26,6 +26,10 @@ A dual camera harness, letting you carry two bodies comfortably without shoulder
 
 This sounds unrelated to photography equipment, but a full wedding day involves hours of standing, walking, and moving quickly between locations, and uncomfortable footwear becomes a genuine distraction and energy drain well before the reception even starts. Experienced wedding photographers treat proper footwear as seriously as any piece of actual camera gear.
 
+## Weather-specific additions worth keeping on hand
+
+Rain covers for both camera bodies, a small towel, and a plastic bag or two for improvised protection cost almost nothing and take up minimal space, but they're the difference between confidently continuing to shoot through unexpected weather and scrambling to protect gear while missing moments that won't happen again.
+
 ## An emergency kit that covers real, common problems
 
 A small kit with lens cleaning supplies, gaffer tape, a multi-tool, and a basic first aid supply covers the most common small emergencies that come up across a wedding day, a smudged lens, a loose strap connector, an unexpected minor scrape. None of this is expensive or heavy, and having it available turns a potential disruption into a thirty-second fix.
