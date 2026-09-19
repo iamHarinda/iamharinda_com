@@ -38,6 +38,10 @@ Buying additional storage capacity during a slower off-season, rather than in a 
 
 Once a year, ideally during your slowest stretch, calculate your actual storage usage from the past twelve months and project forward based on expected bookings for the year ahead. This turns storage from a recurring emergency into a predictable, budgeted part of running the business.
 
+## A note on how camera format changes the baseline
+
+Shooting compressed RAW versus uncompressed RAW, or a smaller sensor versus a full-frame body, changes average file size meaningfully, sometimes by a significant margin per image. Basing your storage math on your own actual camera and settings, rather than a generic average pulled from somewhere online, gives a far more accurate number to plan around.
+
 ## Accounting for second shooters in the total
 
 If you regularly work with a second shooter, their files add to the total storage picture even if you're not the one directly responsible for backing them up. Factor their typical output into your planning if you end up storing or archiving their files alongside your own, since forgetting this piece is a common reason a seemingly generous storage calculation still comes up short by the end of a busy season.
