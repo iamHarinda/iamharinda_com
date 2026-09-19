@@ -38,4 +38,12 @@ Laptop screens, even good ones, are usually smaller, dimmer, and less accurate o
 
 If budget is tight, prioritize a monitor that meets the accuracy specs above, then add a colorimeter to calibrate it, before spending on anything else in your setup, a faster computer, extra storage, a nicer chair. None of those other upgrades fix inaccurate colour, and inaccurate colour is the thing most likely to show up as a visible problem in delivered work.
 
+## A quick way to sanity-check a monitor before buying
+
+Search the specific model name alongside "photo editing review" and see whether photographers, not just general tech reviewers, discuss using it for colour-critical work. General tech coverage tends to focus on brightness and gaming performance, while photography-specific reviews actually test the numbers that matter here, Delta E, gamut coverage, calibration behaviour, giving a far more relevant picture before you commit to a purchase.
+
+## What to do if you already own a monitor that falls short
+
+Not every photographer is in a position to buy a new monitor right away, and that's a completely reasonable constraint to work within. A colorimeter still improves an imperfect monitor meaningfully, even if it can't fully close every gap a genuinely accurate panel would. Calibrating what you already have is almost always worth doing before assuming a full upgrade is the only path forward.
+
 Wondering whether your current setup is holding your edits back? Every photo delivered here runs through a Calman-verified, factory-calibrated display, and [a free sample edit](/contact/) is an easy way to compare the result against your own screen.
