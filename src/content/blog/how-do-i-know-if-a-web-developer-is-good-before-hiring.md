@@ -34,6 +34,10 @@ Reluctance to provide any verifiable past client contact. Vagueness about code a
 
 Ask a specific, slightly technical question you don't fully understand yourself, how they'd handle mobile responsiveness, or what platform they'd recommend and why, and see whether the answer is a clear, plain-language explanation or a wall of jargon meant to sound impressive without actually informing you of anything useful. A developer who can explain their thinking simply, without talking down to you, is usually a good sign about how the rest of the relationship will go.
 
+## What to do if everything checks out but something still feels off
+
+Trust that instinct even when every objective box has been ticked. A vague discomfort after an otherwise clean evaluation is worth a bit more digging, another reference call, one more clarifying question, before committing, rather than overriding a genuine gut feeling purely because the paperwork looked fine.
+
 ## Why price alone tells you almost nothing about quality
 
 A higher price doesn't guarantee better work, and a lower price doesn't guarantee worse work. Both extremes can be poor value depending on what's actually behind the number, which is exactly why the evaluation steps above matter more than simply comparing quotes and assuming the pricing itself answers the quality question for you.
