@@ -46,4 +46,4 @@ A second monitor purchase also usually means a monitor arm or additional desk sp
 
 A setup that felt unnecessary a year ago can become genuinely worth it once your business grows into heavier retouching work, more frequent client back-and-forth during editing, or simply more volume that makes every small efficiency add up. This isn't a decision that needs to be made once and never revisited; checking back in periodically as your actual workflow evolves keeps the setup matched to real, current needs rather than an outdated assumption.
 
-Whatever your setup looks like, [a free sample edit](/contact/) shows the kind of careful, unhurried attention each photo gets here, on a single properly calibrated screen.
+Whatever your setup looks like, [a free sample edit](/contact/) shows the kind of careful, unhurried attention each photo gets here, on a single properly calibrated screen, regardless of how many monitors sit on the other end of the process.
