@@ -30,6 +30,10 @@ Experience specifically with polo and golf apparel matters, since placement arou
 
 For teams needing genuine custom design, a logo adaptation, a repeat pattern, a coordinated front-and-back concept, working with an independent designer who specializes in apparel, then taking the finished print-ready files to whichever supplier or print shop fits your budget and timeline, usually produces the best result. This separates the creative decision from the production decision, letting you choose the best option for each independently.
 
+## Why word of mouth still matters in this space
+
+Asking another team, club, or business you know for a recommendation, someone who's actually gone through this process and can speak honestly about the result, often surfaces better options than searching cold. A genuine referral carries information a portfolio or review page can't fully capture, including how smoothly the actual process felt from the client's side.
+
 ## What to ask before committing to any option
 
 Does this include actual design work, or just placement of an existing logo into a template? Will I receive print-ready files I can take anywhere for production, or am I locked into this specific platform's production service? Do you have experience specifically with polo and golf apparel, not just general branded merchandise?
