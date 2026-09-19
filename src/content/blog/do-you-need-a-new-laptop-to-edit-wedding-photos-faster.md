@@ -56,6 +56,6 @@ Beyond the physical machine, Lightroom's own preview and cache settings affect p
 
 ## The honest bottom line on this whole decision
 
-Diagnose before you buy. A cheap RAM upgrade or a cleaned-up catalog solves more slowdown than people expect, and a full replacement is worth every penny only once those cheaper fixes have genuinely been ruled out first, not before.
+Diagnose before you buy. A cheap RAM upgrade or a cleaned-up catalog solves more slowdown than people expect, and a full replacement is worth every penny only once those cheaper fixes have genuinely been ruled out first, not before spending the money.
 
 Whatever machine you're editing on, [a free sample edit](/contact/) shows what a hand-corrected result looks like when it's judged on a properly calibrated screen rather than rushed through on a struggling laptop that's fighting you the whole way.
