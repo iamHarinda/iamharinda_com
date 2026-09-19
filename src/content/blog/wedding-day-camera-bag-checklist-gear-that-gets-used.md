@@ -46,6 +46,10 @@ Even a well-prepared kit occasionally has something fail, a dead battery nobody 
 
 Gear needs and priorities shift as your business changes, a new lens becomes essential, an old piece of equipment stops earning its space in the bag. Reviewing the full kit at least once a season, rather than letting it calcify into whatever configuration felt right years ago, keeps it matched to how you actually shoot now rather than how you happened to shoot back when you first built the bag out.
 
+## Packing the bag the same way every single time
+
+Beyond just what's in the bag, packing everything in the same specific spot every single time means you can find and grab anything without looking, purely by feel, during a fast-moving moment when there's no time to search. This muscle memory, built through consistent repetition rather than reorganizing the bag differently each week, becomes genuinely valuable exactly when speed matters most.
+
 ## Why the RAW files this gear captures matter more than the gear itself
 
 All of this equipment exists to capture RAW files that still need careful, colour-accurate editing afterward to actually become the finished gallery a couple receives. [Send two or three photos over for a free sample edit](/contact/) and see what that final step looks like, done by hand on a calibrated screen, regardless of which camera bag got you there.
