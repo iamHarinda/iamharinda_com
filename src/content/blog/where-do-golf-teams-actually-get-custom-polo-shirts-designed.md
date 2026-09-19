@@ -44,7 +44,7 @@ Does this include actual design work, or just placement of an existing logo into
 
 ## A quick summary of the three main paths
 
-Big platforms suit simple logo placement on a budget and a tight timeline. Independent designers suit genuine custom artwork, patterns, and coordinated multi-placement designs. Local shops suit smaller orders where seeing physical samples in person before committing matters most. Matching the option to what your specific project actually needs, rather than defaulting to whichever comes up first in a search, produces the best result for the least wasted effort and the least amount of second-guessing along the way.
+Big platforms suit simple logo placement on a budget and a tight timeline. Independent designers suit genuine custom artwork, patterns, and coordinated multi-placement designs. Local shops suit smaller orders where seeing physical samples in person before committing matters most. Matching the option to what your specific project actually needs, rather than defaulting to whichever comes up first in a search, produces the best result for the least wasted effort and the least amount of second-guessing along the way once the order is actually placed.
 
 ## Why this decision matters more for larger orders
 
