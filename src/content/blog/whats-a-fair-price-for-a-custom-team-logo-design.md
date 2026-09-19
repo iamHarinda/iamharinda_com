@@ -50,6 +50,10 @@ A logo itself is typically a one-time cost, but factor in the cost of actually p
 
 Mention upfront whether the logo needs to work on embroidered garments, digital platforms, printed materials, or all three, since this genuinely affects how a designer approaches colour count, detail level, and overall complexity. A designer working blind to these constraints may produce something beautiful that later needs real rework once its actual intended use becomes clear.
 
+## A closing thought on what "fair" actually means here
+
+Fair pricing isn't a fixed number that applies universally, it's a price that matches the actual scope, effort, and deliverables involved for your specific project. Understanding what goes into that calculation, rather than anchoring purely on the lowest number you've seen advertised somewhere, is what actually leads to a satisfying outcome for both sides of the transaction.
+
 ## What to do if your budget genuinely can't stretch to a fuller package
 
 If cost is a real constraint, ask a designer directly whether a simpler, more limited engagement, fewer concepts, a slightly smaller scope, fits your actual budget rather than assuming the full package price is the only option available. Many designers can scale a project down reasonably rather than losing the work entirely to a budget mismatch.
