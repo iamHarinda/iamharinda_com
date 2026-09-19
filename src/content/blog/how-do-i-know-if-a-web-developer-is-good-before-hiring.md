@@ -38,6 +38,10 @@ Ask a specific, slightly technical question you don't fully understand yourself,
 
 Rushing this evaluation to get a project started sooner often costs more time overall than a careful week spent checking references and comparing communication styles across a couple of candidates. The upfront patience is small compared to the disruption of discovering a poor fit only after real money and real time have already gone into the relationship.
 
+## Why asking for time to decide is a completely fair request
+
+A legitimate developer expects that a serious business decision takes a few days to properly consider, compare against other options, and discuss internally if needed. Feeling free to say "let me think about this and get back to you" without apology is a normal, healthy part of hiring anyone for meaningful work.
+
 ## What to do if everything checks out but something still feels off
 
 Trust that instinct even when every objective box has been ticked. A vague discomfort after an otherwise clean evaluation is worth a bit more digging, another reference call, one more clarifying question, before committing, rather than overriding a genuine gut feeling purely because everything on paper appeared to check out fine.
