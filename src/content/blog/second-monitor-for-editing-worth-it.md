@@ -44,7 +44,7 @@ A second monitor purchase also usually means a monitor arm or additional desk sp
 
 ## How to arrange two monitors for the least strain
 
-Position your primary editing monitor directly in front of you, centered, with the secondary monitor angled slightly to one side rather than placed dead center between you and the main screen. This keeps your neck in a neutral position for the work that actually needs sustained focus, while the secondary screen stays within easy glancing distance for reference material without ever competing for your primary line of sight during real editing work.
+Position your primary editing monitor directly in front of you, centered, with the secondary monitor angled slightly to one side rather than placed dead center between you and the main screen. This keeps your neck in a neutral position for the work that actually needs sustained focus, while the secondary screen stays within easy glancing distance for reference material without ever competing for your primary line of sight during genuinely focused editing work.
 
 ## What other photographers actually report after switching
 
