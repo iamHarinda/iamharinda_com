@@ -50,4 +50,4 @@ If you're hiring or working with a second shooter, checking that their camera is
 
 Compared to autofocus speed or megapixel count, dual card slots don't photograph well in a spec sheet comparison and don't show up in a portfolio. That's exactly why it's worth actively seeking out and understanding, rather than assuming any camera marketed toward professionals automatically includes it.
 
-Once files are safely off the cards and backed up, [a free sample edit](/contact/) is a low-risk way to see how the actual editing side of the process works, on a calibrated screen, before committing a full gallery.
+Once files are safely off the cards and backed up, [a free sample edit](/contact/) is a low-risk way to see how the actual editing side of the process works, on a calibrated screen, before committing a full gallery to anyone.
