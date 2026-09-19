@@ -38,4 +38,12 @@ If you're not sure whether a second monitor would genuinely help, borrowing one 
 
 If your workflow regularly involves referencing multiple things at once, client notes, past galleries for style consistency, heavier retouching work, a second monitor genuinely earns its desk space. If your editing stays fairly simple and contained, the money might be better spent on calibrating the one monitor you already have.
 
+## Cost considerations beyond the monitor itself
+
+A second monitor purchase also usually means a monitor arm or additional desk space, possibly a graphics card upgrade if your current computer doesn't support driving two displays well, and extra cabling. Budgeting for the full setup, not just the display itself, avoids an unpleasant surprise once you're partway through the upgrade and realize the monitor alone wasn't the whole cost.
+
+## Revisiting the decision as your workflow changes
+
+A setup that felt unnecessary a year ago can become genuinely worth it once your business grows into heavier retouching work, more frequent client back-and-forth during editing, or simply more volume that makes every small efficiency add up. This isn't a decision that needs to be made once and never revisited; checking back in periodically as your actual workflow evolves keeps the setup matched to real, current needs rather than an outdated assumption.
+
 Whatever your setup looks like, [a free sample edit](/contact/) shows the kind of careful, unhurried attention each photo gets here, on a single properly calibrated screen.
