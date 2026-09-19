@@ -42,6 +42,10 @@ A copy sitting on the same laptop you'll also use to edit isn't a second locatio
 
 If you're working with a second shooter, their cards need the exact same same-day treatment as your own, not a more relaxed timeline just because they're not the primary photographer. Agree on the handoff process before the wedding day itself, whether they back up their own cards or hand physical cards to you, so nobody assumes the other person already handled it while the cards sit untouched in a bag.
 
+## Setting a reminder if habit alone isn't reliable yet
+
+If building this into automatic habit feels like a stretch right now, a simple phone reminder set for the evening of every wedding, specifically labeled "back up cards," bridges the gap until the routine becomes second nature. There's no shame in needing a prompt for something this important while the habit is still forming.
+
 ## A quick gut check for your current habits
 
 Think back to your last wedding. Were the cards backed up to a second location within twenty-four hours, or did they sit for several days first? If it's the latter, that gap is worth closing before it turns into an actual loss rather than just a lingering risk.
