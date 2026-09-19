@@ -34,6 +34,10 @@ Time yourself building just the homepage using a builder platform's free trial b
 
 Neither choice is universally right. DIY suits businesses with more time than money, hiring suits businesses with more money than time, and knowing honestly which category your own situation falls into settles this decision better than any general advice ever could.
 
+## A quick way to estimate your own real hourly value
+
+If you don't already know what your time is worth to the business, divide your typical monthly revenue by the hours you actually spend generating it. That rough number, even if imprecise, gives you something concrete to compare against the hours a DIY website build would realistically consume, rather than treating your own time as free simply because no invoice shows up for it.
+
 ## What happens to a DIY site as the business grows
 
 A site built quickly through a DIY builder in a business's early days sometimes needs a full rebuild once the business outgrows what that platform can handle, meaning the "savings" from the original DIY effort get partially undone by a second project down the line. This isn't a reason to avoid DIY entirely, just a cost worth factoring into the honest total rather than only counting the upfront number.
