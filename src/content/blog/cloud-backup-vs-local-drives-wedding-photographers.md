@@ -46,6 +46,10 @@ Beyond raw storage pricing, check upload bandwidth throttling, some services slo
 
 Most cloud backup services support automatic syncing of a specific folder, meaning completed galleries moved into that folder upload automatically without requiring a manual trigger every time. Setting this up once removes the risk of forgetting to manually back up a gallery during a busy stretch, turning an easily-skipped manual step into something that happens reliably in the background.
 
+## Testing a restore before you actually need one
+
+A backup you've never tested restoring from is really just an assumption of safety rather than a confirmed one. Periodically downloading a sample file from your cloud backup, or restoring a small folder from a local backup drive, confirms the whole system genuinely works end to end, rather than discovering a silent failure only during an actual emergency when it's far too late to fix quietly.
+
 ## A word on encryption and client privacy
 
 Wedding photos are deeply personal, and a cloud service with genuine end-to-end encryption protects client privacy in a way that matters beyond just your own peace of mind. This is worth checking specifically when comparing providers, rather than assuming all cloud storage services handle security and privacy identically across the board.
