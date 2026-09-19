@@ -34,4 +34,16 @@ Regardless of how many initial concepts a package includes, the revision process
 
 If you already have strong opinions about direction, colours, style references, a single concept package with solid revision support is often the more efficient, cost-effective choice. If you're starting from a blank slate or need to satisfy multiple decision-makers with different tastes, paying for multiple initial concepts genuinely earns its extra cost.
 
+## What happens when you genuinely can't choose between concepts
+
+If multiple concepts all feel appealing and you're stuck deciding, get input from a few trusted people outside the immediate decision-making group, since fresh eyes without the fatigue of having stared at all the options for hours often see clearly what feels muddied by too much deliberation. A tie-breaking outside opinion is a completely normal, reasonable way to resolve this kind of stall.
+
+## Why the number of concepts shouldn't be the only factor in choosing a package
+
+Two designers offering the same number of initial concepts can differ enormously in the quality of thinking behind each one. Looking at actual past work and how thoughtfully it addresses each client's specific brief matters more than simply comparing raw concept counts across different providers' package descriptions.
+
+## A final practical note on managing this decision well
+
+Whichever approach you choose, going in with realistic expectations about what that specific package includes prevents disappointment partway through. A single-concept package isn't a lesser choice, and a five-concept package isn't automatically the premium one; they're simply different tools suited to different starting points and different decision-making situations.
+
 Not sure which approach fits your own project? [See how packages compare here](/fashion-designing/#pricing), or [send your idea over](/contact/) and get a straight recommendation based on where your own brief currently stands.
