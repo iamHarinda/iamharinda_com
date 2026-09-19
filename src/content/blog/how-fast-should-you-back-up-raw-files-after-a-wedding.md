@@ -34,6 +34,10 @@ The photographers who reliably back up quickly aren't relying on remembering to 
 
 For destination weddings or multi-day shoots away from your usual setup, bring a portable backup drive specifically for this purpose, and back up each day's cards before the next day's shooting begins rather than waiting until you're home. A stolen or lost bag mid-trip is a real risk that a same-day habit protects against just as effectively as it does at home.
 
+## What "backed up" actually means, precisely
+
+A copy sitting on the same laptop you'll also use to edit isn't a second location, it's still one point of failure away from losing everything if that single machine fails. A genuine backup means a second, physically separate device holding an independent copy, checked to confirm it actually opened and matched the original, not just a progress bar that reached completion without a spot check afterward.
+
 ## What second shooters need to know about this too
 
 If you're working with a second shooter, their cards need the exact same same-day treatment as your own, not a more relaxed timeline just because they're not the primary photographer. Agree on the handoff process before the wedding day itself, whether they back up their own cards or hand physical cards to you, so nobody assumes the other person already handled it while the cards sit untouched in a bag.
