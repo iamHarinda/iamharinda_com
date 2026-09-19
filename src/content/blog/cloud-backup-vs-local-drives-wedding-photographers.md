@@ -48,6 +48,6 @@ Most cloud backup services support automatic syncing of a specific folder, meani
 
 ## A word on encryption and client privacy
 
-Wedding photos are deeply personal, and a cloud service with genuine end-to-end encryption protects client privacy in a way that matters beyond just your own peace of mind. This is worth checking specifically when comparing providers, rather than assuming all cloud storage services handle security identically.
+Wedding photos are deeply personal, and a cloud service with genuine end-to-end encryption protects client privacy in a way that matters beyond just your own peace of mind. This is worth checking specifically when comparing providers, rather than assuming all cloud storage services handle security and privacy identically across the board.
 
 However your files end up stored, the actual editing still needs a careful, colour-accurate eye behind it. [Send a free sample edit request](/contact/) to see what that looks like before committing a full gallery to anyone.
