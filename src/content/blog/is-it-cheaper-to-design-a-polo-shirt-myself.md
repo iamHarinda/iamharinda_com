@@ -36,7 +36,7 @@ A team wanting to genuinely stand out, needing a repeat pattern or a coordinated
 
 ## A cost comparison worth keeping in perspective
 
-Professional design costs for a modest polo project are often a small fraction of what the finished garments themselves will cost across a full team order. Framed against the total spend, the design portion is rarely the part worth cutting corners on to save money.
+Professional design costs for a modest polo project are often a small fraction of what the finished garments themselves will cost across a full team order. Framed against the total spend, the design portion is rarely the part worth cutting corners on to save a relatively small amount of money.
 
 ## What team members or stakeholders actually notice
 
