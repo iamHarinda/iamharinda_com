@@ -48,7 +48,7 @@ Photographers who've outsourced for a full season or more rarely describe going 
 
 ## What growth actually looks like once the math works out
 
-Photographers who make this switch at the right moment, not too early, not too late, often describe a genuine shift in how the business feels, less reactive scrambling to clear a backlog, more room to actually plan bookings, marketing, and client relationships instead of every free hour disappearing into a queue of unedited galleries.
+Photographers who make this switch at the right moment, not too early, not too late, often describe a genuine shift in how the business feels, less reactive scrambling to clear a backlog, more room to actually plan bookings, marketing, and client relationships instead of every free hour disappearing into a queue of unedited galleries that never seems to get shorter.
 
 ## A middle-ground worth considering if you're not ready to fully commit
 
