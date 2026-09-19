@@ -42,6 +42,10 @@ If your feedback tool allows marking up an image directly, circling an area, add
 
 Rather than a long list of vague impressions, structure feedback around specific images and specific issues, "photo 14, the shadows need to open up a bit" is far more actionable than "some of these feel dark." Editors work fastest and most accurately from concrete, image-specific notes rather than broad emotional reactions to a whole gallery at once.
 
+## Why patience in the first round pays off later
+
+The first gallery with any new editor is genuinely a two-way learning process, them learning your style, you learning how to communicate it clearly. Treating that first round with a bit of extra patience, rather than judging the entire relationship on one imperfect first pass, tends to produce a much better working relationship across every gallery that follows.
+
 ## What a reasonable number of revision rounds actually looks like
 
 Most galleries settle within two or three rounds of feedback once a working relationship with an editor is established, sometimes fewer once your style is well documented through references. If a gallery is still noticeably off after several genuine attempts with specific feedback each time, that's worth a direct conversation about whether the fit is right, rather than continuing to iterate indefinitely without real progress.
