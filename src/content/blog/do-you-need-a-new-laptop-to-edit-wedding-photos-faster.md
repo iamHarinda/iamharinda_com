@@ -46,4 +46,4 @@ If portability genuinely doesn't matter for your workflow, editing exclusively a
 
 Beyond the physical machine, Lightroom's own preview and cache settings affect perceived speed meaningfully. Building standard previews ahead of time during an idle moment, rather than generating them on the fly while you're trying to work, smooths out a lot of the stutter photographers blame on their computer when it's really a software setting worth adjusting first.
 
-Whatever machine you're editing on, [a free sample edit](/contact/) shows what a hand-corrected result looks like when it's judged on a properly calibrated screen rather than rushed through on a struggling laptop.
+Whatever machine you're editing on, [a free sample edit](/contact/) shows what a hand-corrected result looks like when it's judged on a properly calibrated screen rather than rushed through on a struggling laptop that's fighting you the whole way.
