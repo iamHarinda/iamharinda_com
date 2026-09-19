@@ -34,4 +34,16 @@ If a service charges extra for every revision round, or caps revisions at one or
 
 If after multiple honest attempts a specific service still isn't matching your style, that's useful information, not a personal failure on your part. Not every editor fits every photographer's aesthetic, and recognizing a mismatch early, before committing a full season, protects both your time and theirs.
 
+## How to word feedback so it actually gets acted on well
+
+Rather than a long list of vague impressions, structure feedback around specific images and specific issues, "photo 14, the shadows need to open up a bit" is far more actionable than "some of these feel dark." Editors work fastest and most accurately from concrete, image-specific notes rather than broad emotional reactions to a whole gallery at once.
+
+## What a reasonable number of revision rounds actually looks like
+
+Most galleries settle within two or three rounds of feedback once a working relationship with an editor is established, sometimes fewer once your style is well documented through references. If a gallery is still noticeably off after several genuine attempts with specific feedback each time, that's worth a direct conversation about whether the fit is right, rather than continuing to iterate indefinitely without real progress.
+
+## Why this fear shouldn't stop you from testing the option at all
+
+The photographers who avoid outsourcing entirely because of this exact worry often end up more constrained by their own workload than they'd be by a slightly imperfect first-round edit that's simply fixable through the normal revision process every legitimate service already builds in.
+
 Worried this might happen with your own galleries? Revisions here are unlimited and built into the price for exactly this reason, and [a free sample edit](/contact/) lets you see the actual first-pass result before any real gallery is on the line.
