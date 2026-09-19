@@ -58,4 +58,4 @@ You don't need to outsource every single gallery to get real value from the opti
 
 Nobody hands off irreplaceable client work casually, and the instinct to be cautious here is healthy rather than something to override quickly. The goal isn't rushing into outsourcing, it's making an informed decision based on real numbers and a real test, rather than avoiding the question indefinitely out of general unease.
 
-If you're testing this decision for yourself, [sending two or three photos over for a free sample edit](/contact/) is a completely reasonable place to start, with [pricing running flat by photo count](/pricing/#photo-editing) so the actual cost is never a guess.
+If you're testing this decision for yourself right now, [sending two or three photos over for a free sample edit](/contact/) is a completely reasonable place to start, with [pricing running flat by photo count](/pricing/#photo-editing) so the actual cost is never a guess.
