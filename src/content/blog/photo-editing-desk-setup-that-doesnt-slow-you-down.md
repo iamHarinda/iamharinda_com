@@ -48,7 +48,7 @@ Some photographers edit best in short, frequent sessions between other tasks. Ot
 
 Whatever your own setup looks like, the actual editing still needs a careful, colour-accurate eye behind it. ## Ergonomic accessories that pay for themselves quickly
 
-A proper monitor arm, rather than a fixed stand, lets you fine-tune height and distance precisely instead of settling for whatever position a stock stand happens to land at. A wrist rest and a mouse suited to hours of repetitive clicking rather than occasional casual use round out the small, inexpensive additions that meaningfully reduce physical strain over a long career of screen-heavy work.
+A proper monitor arm, rather than a fixed stand, lets you fine-tune height and distance precisely instead of settling for whatever position a stock stand happens to land at. A wrist rest and a mouse suited to hours of repetitive clicking rather than occasional casual use round out the small, inexpensive additions that meaningfully reduce physical strain over a long career of screen-heavy work, one that's easy to overlook until it's already causing discomfort.
 
 ## A final thought on treating this as a real investment
 
