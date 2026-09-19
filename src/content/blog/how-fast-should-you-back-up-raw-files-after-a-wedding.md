@@ -50,6 +50,10 @@ If building this into automatic habit feels like a stretch right now, a simple p
 
 Think back to your last wedding. Were the cards backed up to a second location within twenty-four hours, or did they sit for several days first? If it's the latter, that gap is worth closing before it turns into an actual loss rather than just a lingering risk.
 
+## Why this is worth treating as non-negotiable
+
+Plenty of parts of a photography business allow for flexibility, adjusting a workflow, trying a new tool, changing a pricing structure. Backup timing isn't one of them, because the cost of getting it wrong even once is a couple's only record of their wedding day, permanently gone. Treating this specific step as completely non-negotiable, regardless of how tired or busy a particular weekend gets, is what actually protects against the failure mode that matters most.
+
 ## The bigger picture this fits into
 
 Fast backup is the first link in the chain that eventually leads to a finished, delivered gallery. Getting files safe quickly means whatever happens next, culling, editing yourself, or [sending files out for a free sample edit](/contact/) to test an outsourced service, starts from a position of real security rather than quiet, background anxiety about a card that hasn't been backed up yet, sitting somewhere in a bag you're hoping nothing happens to.
