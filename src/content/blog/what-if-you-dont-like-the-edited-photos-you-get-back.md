@@ -34,6 +34,10 @@ If a service charges extra for every revision round, or caps revisions at one or
 
 If after multiple honest attempts a specific service still isn't matching your style, that's useful information, not a personal failure on your part. Not every editor fits every photographer's aesthetic, and recognizing a mismatch early, before committing a full season, protects both your time and theirs.
 
+## What to do if feedback keeps getting misunderstood
+
+If written notes keep landing wrong despite your best effort to be specific, a short call or voice message walking through the concerns directly often resolves confusion faster than another round of written back-and-forth. Some things are simply easier to explain out loud than to type precisely, and there's no downside to switching communication methods when one isn't working well.
+
 ## Screenshots and annotations speed up the whole process
 
 If your feedback tool allows marking up an image directly, circling an area, adding a note right on the photo, use it. Visual feedback removes any ambiguity about which specific spot you mean, cutting down the back-and-forth clarification that pure written descriptions sometimes require before an editor can act on them confidently and correctly the first time.
