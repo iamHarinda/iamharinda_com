@@ -50,6 +50,10 @@ Don't assume a half-finished project needs to start completely over if you have 
 
 Once you've been through this once, structuring the next hire with smaller, more frequent milestones, weekly check-ins rather than one big deposit and a long silence until launch, gives you an early warning if something starts going wrong again, well before a full payment or a long stretch of radio silence has already happened.
 
+## What a healthy client-developer relationship feels like by comparison
+
+Regular, predictable check-ins, a clear sense of where the project stands at any given moment, and no long unexplained gaps in communication are what a functioning relationship actually feels like day to day. Knowing what "normal" looks like makes it much easier to notice early when something has started to drift away from it.
+
 ## Why this experience shouldn't sour you on freelancers generally
 
 One bad experience with an unreliable freelancer doesn't mean freelance hiring is inherently risky, it means that specific vetting process had a gap worth closing next time. The vast majority of freelance developers complete their projects professionally, and the protective steps outlined here exist specifically to filter out the exceptions before they become a costly problem.
