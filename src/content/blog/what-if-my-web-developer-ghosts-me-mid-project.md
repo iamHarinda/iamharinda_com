@@ -36,7 +36,7 @@ Ask directly, before hiring anyone, what happens to access and files if the rela
 
 ## The emotional side of this that's worth acknowledging
 
-Beyond the practical and financial disruption, being ghosted mid-project feels genuinely unsettling, especially for a business owner who isn't deeply familiar with this industry and doesn't have an easy way to judge whether what happened is normal or a rare exception. It's worth knowing upfront that this experience, while real, is not the typical outcome, and it doesn't mean the next hire is doomed to repeat it.
+Beyond the practical and financial disruption, being ghosted mid-project feels genuinely unsettling, especially for a business owner who isn't deeply familiar with this industry and doesn't have an easy way to judge whether what happened is normal or a rare exception. It's worth knowing upfront that this experience, while real, is not the typical outcome, and it doesn't mean the next hire is doomed to repeat the exact same outcome all over again.
 
 ## What a partially finished project is actually worth to a new developer
 
