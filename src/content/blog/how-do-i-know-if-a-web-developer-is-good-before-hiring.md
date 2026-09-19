@@ -34,4 +34,16 @@ Reluctance to provide any verifiable past client contact. Vagueness about code a
 
 Ask a specific, slightly technical question you don't fully understand yourself, how they'd handle mobile responsiveness, or what platform they'd recommend and why, and see whether the answer is a clear, plain-language explanation or a wall of jargon meant to sound impressive without actually informing you of anything useful. A developer who can explain their thinking simply, without talking down to you, is usually a good sign about how the rest of the relationship will go.
 
+## Why price alone tells you almost nothing about quality
+
+A higher price doesn't guarantee better work, and a lower price doesn't guarantee worse work. Both extremes can be poor value depending on what's actually behind the number, which is exactly why the evaluation steps above matter more than simply comparing quotes and assuming the pricing itself answers the quality question for you.
+
+## What a genuinely good first conversation actually feels like
+
+A strong initial conversation asks you real questions about your business and goals, not just your budget, and offers honest pushback if something you're describing doesn't quite make sense or could be approached more effectively. A developer purely agreeing with everything you say, with no genuine input of their own, is sometimes more concerning than one willing to respectfully challenge an assumption.
+
+## Trusting your own judgment alongside these checks
+
+None of these checks are perfectly reliable on their own, but together they build a reasonably accurate picture even without technical expertise of your own. Combine the objective checks, performance tools, verifiable past clients, with your own honest gut read on communication and professionalism throughout the process.
+
 Not sure how to evaluate this for your own project? A [free scope call](/web-development/) is a low-risk way to see communication style and process firsthand, before any money or commitment is involved.
