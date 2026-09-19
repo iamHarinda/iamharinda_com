@@ -42,6 +42,10 @@ Reviews spread naturally across a real span of time, mentioning specific, believ
 
 How long have you been editing professionally, and can I see verifiable reviews? What happens to my files after delivery, are they deleted, kept, backed up on your end? Do I pay before or after I've approved the work? A legitimate service answers all three clearly and without hesitation, and hesitation or vagueness on any of them is worth taking seriously as a signal.
 
+## What a lack of transparency actually tells you
+
+If a service dodges direct questions about their process or gets vague when asked something reasonable, that reaction itself is useful data, regardless of how good their portfolio looks. Confidence in a legitimate process usually shows up as directness, not evasiveness, when a potential client asks fair, specific questions upfront.
+
 ## Why communication style itself is a meaningful signal
 
 How someone communicates during the sales conversation, before any money has changed hands, tends to predict how they'll communicate once you're an actual paying client with real work in progress. Clear, prompt, specific answers now are a reasonable proxy for what to expect later, when a real gallery and a real deadline are on the line.
