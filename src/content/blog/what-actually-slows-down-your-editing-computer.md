@@ -38,6 +38,10 @@ Driving two or three monitors, especially at high resolution, places real demand
 
 Just like a Lightroom catalog, an operating system that's run for years without a fresh setup accumulates background services, leftover files from uninstalled software, and startup programs that quietly consume resources every time the machine boots. A clean reinstall, done occasionally, sometimes restores noticeable speed to a machine that otherwise seemed to be aging out, without spending a single cent on new hardware to get there, just an afternoon and a proper backup beforehand.
 
+## Keeping a simple log of what you've already tried
+
+Jot down what you've checked and changed each time you troubleshoot slowdown, since it's easy to repeat the same failed fix months later after forgetting it didn't help the first time. A short running note saves real repeated effort across a career of occasional computer frustration.
+
 ## Why blaming the wrong cause wastes real money
 
 Assuming a slow computer needs a full replacement, when the actual issue is a bloated catalog or a throttling laptop on a soft surface, means spending significant money on new hardware that inherits the exact same unaddressed problem the moment it's set up the same way. Diagnosing correctly first, even if it takes an extra hour of testing, protects against this exact expensive mistake before any money actually changes hands.
