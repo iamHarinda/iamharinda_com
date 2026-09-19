@@ -34,6 +34,10 @@ Skipping the sample step to save a few days on a tight timeline risks discoverin
 
 Once you've ordered from a specific designer and supplier combination successfully once, and confirmed the digital preview reliably matches the physical result, subsequent orders carry much less of this uncertainty. The extra caution matters most on a first order with any new combination of designer and production partner.
 
+## Why smaller test batches make sense for uncertain orders
+
+If you're not entirely confident in a design direction yet, ordering a small test batch of five or ten shirts before committing to a full run of fifty or a hundred limits your exposure to a disappointing result. This costs a bit more per unit at the small scale, but it's cheap insurance against a much larger, more expensive mistake if something doesn't translate the way you expected.
+
 ## What to do if a sample reveals a problem
 
 Finding an issue at the sample stage isn't a failure of the process, it's the process doing exactly what it's meant to do. A colour that reads slightly off, a placement that needs nudging, these are far cheaper and faster to fix on a single sample garment than they would be discovered only after an entire production run has already been completed and shipped.
