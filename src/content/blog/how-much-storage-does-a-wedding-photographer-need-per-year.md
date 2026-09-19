@@ -46,6 +46,10 @@ If you regularly work with a second shooter, their files add to the total storag
 
 Running out of storage mid-wedding, or mid-season, forces rushed decisions, deleting files that shouldn't be deleted yet, delaying an offload because there's nowhere to put it, or scrambling to buy an expensive drive at retail price with no time to shop around. None of these are decisions you want to make under pressure, which is exactly why calculating ahead of time and buying with genuine headroom matters more than it might seem worth the effort in a calm moment.
 
+## Why this planning habit gets easier every year you do it
+
+The first year of calculating actual storage needs is the hardest, since you're often estimating without much real data to work from. Every subsequent year gets easier and more accurate, because you're refining an existing estimate against real numbers from the year before rather than guessing from scratch each time.
+
 ## A simple spreadsheet that keeps this manageable
 
 A basic spreadsheet tracking bookings, average file size per wedding, and running storage totals, updated a few times a season, turns this from a vague worry into a number you can actually see coming. It takes minutes to set up and pays for itself the first time it prevents a mid-season storage crisis.
