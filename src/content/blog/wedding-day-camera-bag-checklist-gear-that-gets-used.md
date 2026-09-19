@@ -44,7 +44,7 @@ Even a well-prepared kit occasionally has something fail, a dead battery nobody 
 
 ## Rotating and reviewing your kit at least once a season
 
-Gear needs and priorities shift as your business changes, a new lens becomes essential, an old piece of equipment stops earning its space in the bag. Reviewing the full kit at least once a season, rather than letting it calcify into whatever configuration felt right years ago, keeps it matched to how you actually shoot now rather than how you shot when you first built it.
+Gear needs and priorities shift as your business changes, a new lens becomes essential, an old piece of equipment stops earning its space in the bag. Reviewing the full kit at least once a season, rather than letting it calcify into whatever configuration felt right years ago, keeps it matched to how you actually shoot now rather than how you happened to shoot back when you first built the bag out.
 
 ## Why the RAW files this gear captures matter more than the gear itself
 
