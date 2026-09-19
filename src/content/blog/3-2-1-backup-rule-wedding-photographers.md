@@ -42,7 +42,7 @@ Set a fixed point in your workflow, immediately after every shoot, before anythi
 
 ## What to do the first time you set this up properly
 
-If none of this exists in your current workflow yet, don't try to build the full system in one sitting. Start with the cheapest, highest-impact piece first, usually a second local drive for an immediate backup after each shoot, then add cloud backup once that habit is solid, then revisit dual card slots the next time you're due for a camera body upgrade. A partial system built steadily beats an ambitious one that never actually gets finished because it felt too big to start.
+If none of this exists in your current workflow yet, don't try to build the full system in one sitting. Start with the cheapest, highest-impact piece first, usually a second local drive for an immediate backup after each shoot, then add cloud backup once that habit is solid, then revisit dual card slots the next time you're due for a camera body upgrade. A partial system built steadily beats an ambitious one that never actually gets finished because it felt too big to start all at once, right from the very first attempt.
 
 ## A simple checklist worth keeping near your desk
 
