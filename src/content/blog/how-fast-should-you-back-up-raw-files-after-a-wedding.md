@@ -34,6 +34,14 @@ The photographers who reliably back up quickly aren't relying on remembering to 
 
 For destination weddings or multi-day shoots away from your usual setup, bring a portable backup drive specifically for this purpose, and back up each day's cards before the next day's shooting begins rather than waiting until you're home. A stolen or lost bag mid-trip is a real risk that a same-day habit protects against just as effectively as it does at home.
 
+## What second shooters need to know about this too
+
+If you're working with a second shooter, their cards need the exact same same-day treatment as your own, not a more relaxed timeline just because they're not the primary photographer. Agree on the handoff process before the wedding day itself, whether they back up their own cards or hand physical cards to you, so nobody assumes the other person already handled it while the cards sit untouched in a bag.
+
+## A quick gut check for your current habits
+
+Think back to your last wedding. Were the cards backed up to a second location within twenty-four hours, or did they sit for several days first? If it's the latter, that gap is worth closing before it turns into an actual loss rather than just a lingering risk.
+
 ## The bigger picture this fits into
 
 Fast backup is the first link in the chain that eventually leads to a finished, delivered gallery. Getting files safe quickly means whatever happens next, culling, editing yourself, or [sending files out for a free sample edit](/contact/) to test an outsourced service, starts from a position of real security rather than quiet, background anxiety about a card that hasn't been backed up yet.
