@@ -32,7 +32,7 @@ Bundle your feedback into one clear, complete note per round rather than sending
 
 ## What editors actually appreciate from clients during revisions
 
-Clients who explain the reasoning behind a request, not just what to change but why it matters to them, tend to get better, more targeted results than those who give purely mechanical instructions with no context. Sharing that this particular gallery is for a couple who specifically wanted a bright, airy feel, for instance, helps an editor make better judgment calls on the smaller details you didn't explicitly mention.
+Clients who explain the reasoning behind a request, not just what to change but why it matters to them, tend to get better, more targeted results than those who give purely mechanical instructions with no context. Sharing that this particular gallery is for a couple who specifically wanted a bright, airy feel, for instance, helps an editor make better judgment calls on the smaller details you didn't explicitly mention in the note itself.
 
 ## What genuinely crosses a reasonable line
 
