@@ -62,4 +62,8 @@ Whichever approach you choose, going in with realistic expectations about what t
 
 Concept count is a tool, not a scorecard. Pick the number that fits how clear your own vision already is, not the number that simply sounds the most generous printed on a pricing page somewhere.
 
+## One more thing worth keeping in mind
+
+Whichever package you choose, the working relationship that follows matters more long-term than the exact concept count on this first order, since most teams and brands return to the same designer for future needs once a good fit is established.
+
 Not sure which approach fits your own project? [See how packages compare here](/fashion-designing/#pricing), or [send your idea over](/contact/) and get a straight recommendation based on where your own brief currently stands.
