@@ -52,7 +52,7 @@ Two designers offering the same number of initial concepts can differ enormously
 
 ## Why trusting the designer's recommendation is often reasonable
 
-If you're genuinely unsure which package fits, ask the designer directly which they'd recommend based on your brief, and expect an honest answer even if it means recommending the smaller, cheaper option. A designer confident in their process usually gives this kind of straightforward guidance rather than steering you toward whatever package happens to cost more regardless of whether it actually fits your situation.
+If you're genuinely unsure which package fits, ask the designer directly which they'd recommend based on your brief, and expect an honest answer even if it means recommending the smaller, cheaper option. A designer confident in their process usually gives this kind of straightforward guidance rather than steering you toward whatever package happens to cost more regardless of whether it genuinely fits your particular situation and brief.
 
 ## A final practical note on managing this decision well
 
