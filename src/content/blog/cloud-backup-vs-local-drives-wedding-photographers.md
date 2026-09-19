@@ -1,0 +1,41 @@
+---
+title: "Cloud Backup vs. Local Drives: What Wedding Photographers Should Actually Use"
+description: "Cloud backup and local drives solve different problems. Here's how wedding photographers should actually combine them instead of picking just one."
+publishDate: 2026-03-11
+---
+
+"Should I use cloud backup or just stick with external drives?" comes up constantly, usually framed as an either-or decision. In practice, these two solve different problems, and a wedding photography business genuinely needs both working together rather than picking one and abandoning the other.
+
+## What local drives are actually good at
+
+Local external drives offer fast transfer speeds, no ongoing subscription cost beyond the initial purchase, and immediate access without depending on an internet connection. For active working files, the gallery you're editing this week, local storage is simply faster and more practical than anything cloud-based.
+
+## What local drives can't protect against
+
+A local drive, no matter how many copies you keep, doesn't protect against anything that affects your physical location all at once, a house fire, a burglary, a natural disaster. If every copy of a gallery lives in the same building, a single catastrophic event takes out all of them simultaneously, regardless of how careful your local backup discipline has been.
+
+## What cloud backup actually solves
+
+Cloud backup exists specifically to close that gap, since it stores a copy somewhere entirely separate from your physical location. This is the "1" in the 3-2-1 backup rule, the off-site copy that survives whatever might happen to your home or studio. It doesn't need to be your fastest or most frequently accessed copy, just a genuinely separate one.
+
+## Why cloud alone isn't enough either
+
+Relying purely on cloud storage, with no local copy, means every single file access depends on your internet connection's speed and reliability, which becomes a real problem when you need to quickly pull a specific RAW file for a client request and your upload speed makes even downloading it back down painfully slow. Cloud-only setups also mean a full restore after any local loss takes considerably longer than simply plugging in a local backup drive.
+
+## A realistic combined approach
+
+Keep active working files and your most recent local backup on external drives for speed and immediate access. Push completed, delivered galleries to cloud storage as your off-site copy once the active editing work is done. This combined approach gives you fast daily access where you need it and genuine disaster protection where local storage alone can't provide it.
+
+## What cloud storage actually costs at real volume
+
+Cloud storage pricing scales with how much you're storing, and a photographer with years of full-resolution galleries can see monthly costs climb meaningfully if everything from every year sits in active cloud storage indefinitely. Many photographers manage this by keeping only a defined recent window, the last one or two years, in cloud backup, with older archives living on local cold storage drives instead.
+
+## Choosing a cloud provider that actually fits photography work
+
+Not every cloud service is built with large RAW files and photography workflows in mind. Look specifically at upload speed limits, whether the service handles large individual files well, and total storage pricing at the volume you actually need, rather than assuming a general-purpose consumer cloud service scales comfortably to a professional photography archive.
+
+## A simple way to start if you have neither right now
+
+If you're currently running with no real backup system at all, start with a single local backup drive this week, the cheapest, fastest fix for the most immediate risk. Add cloud backup as the next step once that habit is solid, rather than trying to build the complete, ideal system all at once and never quite getting around to starting.
+
+However your files end up stored, the actual editing still needs a careful, colour-accurate eye behind it. [Send a free sample edit request](/contact/) to see what that looks like before committing a full gallery to anyone.
