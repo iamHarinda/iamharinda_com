@@ -48,6 +48,6 @@ Memory card technology keeps advancing, and there's always a slightly faster, sl
 
 Whatever card ends up in your camera, the files it captures still need careful, colour-accurate editing once the day is over. ## The bottom line for most wedding shooters
 
-Unless your camera body requires it or you're regularly hitting a buffer wall during real shoots, a quality SD card handles wedding work completely reliably, and the money saved versus CFexpress is better spent elsewhere in the business, on backup drives, on a calibrated monitor, or on the editing time that actually determines how the final gallery looks.
+Unless your camera body requires it or you're regularly hitting a buffer wall during real shoots, a quality SD card handles wedding work completely reliably, and the money saved versus CFexpress is better spent elsewhere in the business, on backup drives, on a calibrated monitor, or on the editing time that actually determines how the final gallery looks once it's finished and delivered.
 
 [A free sample edit](/contact/) shows what that looks like before you commit a full gallery, and [pricing runs flat by photo count](/pricing/#photo-editing) regardless of which card format the RAW files came from.
