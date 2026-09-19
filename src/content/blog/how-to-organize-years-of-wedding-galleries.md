@@ -46,6 +46,10 @@ If you've been shooting for years before settling on a consistent naming and fol
 
 If a second shooter, an assistant, or an outsourced editor ever handles part of your workflow, a written, one-page description of your naming and folder convention means they can follow it correctly from day one, rather than guessing and introducing inconsistency into a system you've otherwise kept clean for years of careful, deliberate effort.
 
+## A quick test to see if your current system actually works
+
+Try to locate a specific wedding from two or three years ago right now, using only client name or approximate date, without checking old invoices or emails for a reminder. If that search takes more than a minute or two, or requires checking multiple drives blindly, your current system has real room for improvement, and it's worth treating that friction as a signal rather than something to just live with indefinitely.
+
 ## Why this organization work pays off beyond convenience
 
 A well-organized archive isn't just about convenience when a client calls with a request years later. It's also what makes it realistic to ever hand off editing work to someone else, an assistant, an outsourced service, without them needing to first untangle years of inconsistent folder structures before they can even begin. [A free sample edit](/contact/) works the same whether your files are perfectly organized or a bit of a mess, but a clean system makes the whole handoff smoother on your end.
