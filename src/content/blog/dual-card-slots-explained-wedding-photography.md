@@ -38,4 +38,16 @@ Some photographers mention dual card slots specifically in their marketing or bo
 
 Dual card slots are the earliest, cheapest point of redundancy in an overall backup strategy, not a replacement for the rest of it. The two card copies still both need to make it to separate drives and eventually off-site storage once you're home; dual slots simply mean you're not depending on a single fragile card for the entire journey between the ceremony and your first proper backup.
 
+## What to check regularly, not just at purchase time
+
+Even with dual slots enabled, it's worth periodically confirming the camera is actually still writing to both cards as configured, rather than assuming a setting made once will never accidentally change. A settings reset during a firmware update, or an accidental menu change, can silently disable the mirrored write mode without any obvious warning, which defeats the entire point until someone actually checks.
+
+## A second shooter's cards deserve the same standard
+
+If you're hiring or working with a second shooter, checking that their camera is also configured for dual-slot redundancy is worth confirming directly rather than assuming it, since a second shooter's footage matters just as much to the finished gallery and deserves the same protection standard as your own.
+
+## Why this feature rarely gets the attention it deserves
+
+Compared to autofocus speed or megapixel count, dual card slots don't photograph well in a spec sheet comparison and don't show up in a portfolio. That's exactly why it's worth actively seeking out and understanding, rather than assuming any camera marketed toward professionals automatically includes it.
+
 Once files are safely off the cards and backed up, [a free sample edit](/contact/) is a low-risk way to see how the actual editing side of the process works, on a calibrated screen, before committing a full gallery.
