@@ -38,6 +38,10 @@ Outsourcing the standard correction pass doesn't mean giving up your say over th
 
 Test it on your next wedding's least sentimentally important gallery, not your most important booking of the year. See how the communication, turnaround, and quality actually feel in practice before deciding whether to build it into your regular workflow going forward.
 
+## A quick way to run your own numbers this week
+
+Pull your last five galleries and time roughly how long each took to edit, then multiply by what an hour of your time is actually worth to the business, whether that's a booking call, a shoot, or genuine rest. Compare that number against a real quote for outsourcing the same volume. This ten-minute exercise settles the question with your own real data far better than any general advice ever could.
+
 ## What experienced photographers say once they've made the switch
 
 Photographers who've outsourced for a full season or more rarely describe going back to full in-house editing once volume justifies the switch. The common regret isn't trying it, it's waiting too long to test it while turning down bookings or working through exhausted weekends that outsourcing could have prevented much earlier.
