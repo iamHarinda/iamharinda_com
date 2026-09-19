@@ -54,6 +54,10 @@ Beyond financial protection, tying payments to milestones gives both sides a nat
 
 Once a written scope and a reasonable payment structure are in place, paying the agreed deposit is a normal, unremarkable step, not something that should carry ongoing anxiety. The upfront diligence is what removes the risk; the deposit itself, once that diligence is done, is simply how legitimate projects begin.
 
+## Why hesitating too long can cost you the right developer
+
+A good freelancer with a solid reputation often has a real, limited schedule, and excessive hesitation over a genuinely reasonable deposit request can mean losing your preferred start date, or the developer entirely, to another client who moved forward with confidence once the terms were clear.
+
 ## A final note on moving forward with confidence
 
 Once the scope is written, the terms are clear, and the deposit size feels reasonable relative to the total, there's genuinely nothing unusual or risky left in the transaction. It's simply how legitimate freelance projects begin, for web development and for nearly every other professional service you've likely already hired before without a second thought.
