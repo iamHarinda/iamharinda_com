@@ -34,6 +34,10 @@ Keeping Lightroom and your operating system reasonably current generally helps p
 
 Driving two or three monitors, especially at high resolution, places real demand on a computer's graphics capability, and an underpowered or older graphics setup can introduce lag specifically when multiple displays are active that wouldn't appear on a single-screen setup. If slowdown started right after adding a second monitor, this connection is worth checking before assuming something else broke.
 
+## A note on operating system bloat over time
+
+Just like a Lightroom catalog, an operating system that's run for years without a fresh setup accumulates background services, leftover files from uninstalled software, and startup programs that quietly consume resources every time the machine boots. A clean reinstall, done occasionally, sometimes restores noticeable speed to a machine that otherwise seemed to be aging out, without spending a cent on new hardware.
+
 ## Why blaming the wrong cause wastes real money
 
 Assuming a slow computer needs a full replacement, when the actual issue is a bloated catalog or a throttling laptop on a soft surface, means spending significant money on new hardware that inherits the exact same unaddressed problem the moment it's set up the same way. Diagnosing correctly first, even if it takes an extra hour of testing, protects against this exact expensive mistake before any money actually changes hands.
