@@ -36,7 +36,7 @@ Driving two or three monitors, especially at high resolution, places real demand
 
 ## Why blaming the wrong cause wastes real money
 
-Assuming a slow computer needs a full replacement, when the actual issue is a bloated catalog or a throttling laptop on a soft surface, means spending significant money on new hardware that inherits the exact same unaddressed problem the moment it's set up the same way. Diagnosing correctly first, even if it takes an extra hour of testing, protects against this exact expensive mistake.
+Assuming a slow computer needs a full replacement, when the actual issue is a bloated catalog or a throttling laptop on a soft surface, means spending significant money on new hardware that inherits the exact same unaddressed problem the moment it's set up the same way. Diagnosing correctly first, even if it takes an extra hour of testing, protects against this exact expensive mistake before any money actually changes hands.
 
 ## A simple diagnostic process worth running once
 
