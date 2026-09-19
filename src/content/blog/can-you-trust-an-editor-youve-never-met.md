@@ -52,7 +52,7 @@ How someone communicates during the sales conversation, before any money has cha
 
 ## How this gets easier after the first successful gallery
 
-Once one gallery has gone well, genuinely, with real files and a real outcome you were happy with, the trust question largely resolves itself for future bookings. The hardest part of this whole process is always the first attempt, before you have any personal, direct evidence beyond what a stranger's reviews and portfolio can tell you.
+Once one gallery has gone well, genuinely, with real files and a real outcome you were happy with, the trust question largely resolves itself for future bookings. The hardest part of this whole process is always the first attempt, before you have any personal, direct evidence beyond what a stranger's reviews and portfolio can tell you from a distance.
 
 ## The bigger picture worth remembering here
 
