@@ -34,6 +34,18 @@ A small kit with lens cleaning supplies, gaffer tape, a multi-tool, and a basic 
 
 A surprising amount of gear that feels essential when building out a kit for the first time ends up rarely used in practice, extra specialty lenses for effects rarely requested, elaborate lighting setups beyond what a single flash covers, backup equipment for backup equipment. Reviewing what actually got used after a season of real weddings, and trimming the bag accordingly, keeps the kit practical rather than theoretically comprehensive.
 
+## A pre-wedding gear check worth doing every single time
+
+The night before every wedding, not just for a handful of "important" ones, run through a full gear check: batteries charged, cards formatted and empty, lenses clean, bag packed and complete. Treating this as a fixed, non-negotiable ritual rather than something done only when you remember protects against the exact kind of oversight that's easy to make when rushing out the door on a busy wedding morning.
+
+## What to do when something in the bag actually fails mid-day
+
+Even a well-prepared kit occasionally has something fail, a dead battery nobody caught, a corrupted card, a jammed lens. Having a clear, calm mental plan for this, which backup body or lens covers the gap, how to communicate a brief pause to the couple if genuinely needed, matters more than trying to prevent every possible failure in advance, since some things will occasionally go wrong regardless of preparation.
+
+## Rotating and reviewing your kit at least once a season
+
+Gear needs and priorities shift as your business changes, a new lens becomes essential, an old piece of equipment stops earning its space in the bag. Reviewing the full kit at least once a season, rather than letting it calcify into whatever configuration felt right years ago, keeps it matched to how you actually shoot now rather than how you shot when you first built it.
+
 ## Why the RAW files this gear captures matter more than the gear itself
 
 All of this equipment exists to capture RAW files that still need careful, colour-accurate editing afterward to actually become the finished gallery a couple receives. [Send two or three photos over for a free sample edit](/contact/) and see what that final step looks like, done by hand on a calibrated screen, regardless of which camera bag got you there.
