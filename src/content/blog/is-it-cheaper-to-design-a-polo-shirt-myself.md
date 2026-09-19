@@ -42,6 +42,10 @@ Professional design costs for a modest polo project are often a small fraction o
 
 If cost genuinely is the deciding constraint, ask a designer directly whether a smaller, simplified version of your vision fits your budget, rather than assuming professional design is entirely out of reach. Many designers can scale a project's scope to match a real budget rather than assuming it has to be strictly all-or-nothing between DIY and a full, expensive custom package.
 
+## A last word on making this call without regret
+
+Whichever way you decide, the goal is a result you're genuinely happy with once the shirts actually arrive, not simply the cheapest path on paper. Weighing the real tradeoffs honestly, rather than defaulting to whichever option requires the least upfront effort to start, tends to produce the outcome worth remembering for the right reasons.
+
 ## What team members or stakeholders actually notice
 
 Even people with no design background tend to notice when a logo looks stretched, awkwardly placed, or oddly scaled on a finished shirt, even if they can't articulate exactly why it looks off. This matters because the perceived professionalism of a team or brand's apparel often gets judged by people without any technical eye at all, which is exactly why getting placement and scale right matters regardless of who's actually doing the design work.
