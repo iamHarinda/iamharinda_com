@@ -26,6 +26,10 @@ Relying purely on cloud storage, with no local copy, means every single file acc
 
 Keep active working files and your most recent local backup on external drives for speed and immediate access. Push completed, delivered galleries to cloud storage as your off-site copy once the active editing work is done. This combined approach gives you fast daily access where you need it and genuine disaster protection where local storage alone can't provide it.
 
+## Why this decision isn't permanent once made
+
+Whatever combination of local and cloud storage you settle on today doesn't need to stay fixed forever. As pricing changes, as your volume grows, and as new services enter the market, it's worth periodically revisiting whether your current setup is still the best fit, rather than assuming a decision made years ago automatically remains the right one indefinitely.
+
 ## What cloud storage actually costs at real volume
 
 Cloud storage pricing scales with how much you're storing, and a photographer with years of full-resolution galleries can see monthly costs climb meaningfully if everything from every year sits in active cloud storage indefinitely. Many photographers manage this by keeping only a defined recent window, the last one or two years, in cloud backup, with older archives living on local cold storage drives instead.
