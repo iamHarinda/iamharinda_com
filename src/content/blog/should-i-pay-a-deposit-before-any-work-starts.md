@@ -34,4 +34,16 @@ Paying by credit card generally offers more dispute protection than a direct ban
 
 A clear, written proposal outlining exactly what's included. A deposit tied to that written scope, reasonable in size relative to the total. Subsequent payments tied to actual milestones reached, not just time passed. Full ownership transfer, domain, code, hosting access, happening at launch as a standard, expected part of the process rather than something you have to fight for afterward.
 
+## What to do if you're asked for an unusually large deposit
+
+If a deposit request sits well above the twenty five to fifty percent range without a clear justification, larger projects with significant upfront material costs are one legitimate exception, ask directly why. A reasonable explanation should be easy to give, and a vague or defensive response to that question is worth weighing seriously before committing anything.
+
+## How milestone payments actually protect the timeline too
+
+Beyond financial protection, tying payments to milestones gives both sides a natural checkpoint to confirm the project is actually on track, not just financially, but in terms of scope and direction, before moving to the next phase. This structure benefits a smooth, well-run project even when nothing ever goes wrong.
+
+## A final word on trusting the process once terms are clear
+
+Once a written scope and a reasonable payment structure are in place, paying the agreed deposit is a normal, unremarkable step, not something that should carry ongoing anxiety. The upfront diligence is what removes the risk; the deposit itself, once that diligence is done, is simply how legitimate projects begin.
+
 Every project here follows exactly this structure, a written, fixed-price proposal and a reasonable deposit before work begins, with [a free scope call](/web-development/) available first to work out the details with no obligation attached.
