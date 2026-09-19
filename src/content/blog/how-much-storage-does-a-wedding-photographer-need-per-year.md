@@ -38,4 +38,12 @@ Buying additional storage capacity during a slower off-season, rather than in a 
 
 Once a year, ideally during your slowest stretch, calculate your actual storage usage from the past twelve months and project forward based on expected bookings for the year ahead. This turns storage from a recurring emergency into a predictable, budgeted part of running the business.
 
+## What happens if you underestimate and run out mid-season
+
+Running out of storage mid-wedding, or mid-season, forces rushed decisions, deleting files that shouldn't be deleted yet, delaying an offload because there's nowhere to put it, or scrambling to buy an expensive drive at retail price with no time to shop around. None of these are decisions you want to make under pressure, which is exactly why calculating ahead of time and buying with genuine headroom matters more than it might seem worth the effort in a calm moment.
+
+## A simple spreadsheet that keeps this manageable
+
+A basic spreadsheet tracking bookings, average file size per wedding, and running storage totals, updated a few times a season, turns this from a vague worry into a number you can actually see coming. It takes minutes to set up and pays for itself the first time it prevents a mid-season storage crisis.
+
 Whatever your storage setup looks like, the files inside it eventually need real editing attention. [Pricing for that runs flat by photo count](/pricing/#photo-editing), regardless of how large your storage system has grown to support it.
