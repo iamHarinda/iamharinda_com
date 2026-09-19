@@ -56,6 +56,6 @@ Once a written scope and a reasonable payment structure are in place, paying the
 
 ## A final note on moving forward with confidence
 
-Once the scope is written, the terms are clear, and the deposit size feels reasonable relative to the total, there's genuinely nothing unusual or risky left in the transaction. It's simply how legitimate freelance projects begin, for web development and for nearly every other professional service you've likely already hired before.
+Once the scope is written, the terms are clear, and the deposit size feels reasonable relative to the total, there's genuinely nothing unusual or risky left in the transaction. It's simply how legitimate freelance projects begin, for web development and for nearly every other professional service you've likely already hired before without a second thought.
 
 Every project here follows exactly this structure, a written, fixed-price proposal and a reasonable deposit before work begins, with [a free scope call](/web-development/) available first to work out the details with no obligation attached.
