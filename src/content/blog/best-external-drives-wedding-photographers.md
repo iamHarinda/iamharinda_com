@@ -38,4 +38,12 @@ Physical damage from drops is the most common failure mode for photographers who
 
 Start with one solid rugged SSD for on-location and active working files, add a second drive as a local backup of the first, and layer in cloud storage as your off-site copy once budget allows. This mirrors the 3-2-1 backup approach directly and scales naturally as booking volume grows, rather than requiring a complete overhaul of your storage setup every time business picks up.
 
+## Labeling drives so a future you isn't guessing
+
+A simple physical label on each drive, stating roughly what date range or client range it covers, saves real time years later when you're hunting for a specific gallery among a shelf of similar-looking drives. This sounds like a minor detail until you're the one digging through a box of unlabeled drives trying to find one specific wedding from three years ago.
+
+## When it's actually time to retire an aging drive
+
+External drives don't last forever, and most have a realistic working lifespan of three to five years under regular use before failure risk climbs meaningfully. Rather than waiting for a drive to actually fail, proactively migrating its contents to a newer drive on a set schedule, even while the old one still seems to work fine, is cheap insurance against the alternative of discovering a failure only once you actually need a file back.
+
 Once files are safely backed up, getting them edited well is the next step. [Send a free sample edit request](/contact/) to see how RAW files from any card or drive setup get handled here, hand-corrected on a calibrated screen.
