@@ -58,4 +58,8 @@ A backup you've never tested restoring from is really just an assumption of safe
 
 Wedding photos are deeply personal, and a cloud service with genuine end-to-end encryption protects client privacy in a way that matters beyond just your own peace of mind. This is worth checking specifically when comparing providers, rather than assuming all cloud storage services handle security and privacy identically across the board.
 
+## The simplest possible summary to remember
+
+Local for speed, cloud for safety, both together for a setup that actually holds up when something eventually goes wrong, because for a business built on irreplaceable moments, something eventually does.
+
 However your files end up stored, the actual editing still needs a careful, colour-accurate eye behind it. [Send a free sample edit request](/contact/) to see what that looks like before committing a full gallery to anyone, whether your originals live on a shelf full of drives or scattered across a cloud account.
