@@ -38,4 +38,16 @@ Outsourcing the standard correction pass doesn't mean giving up your say over th
 
 Test it on your next wedding's least sentimentally important gallery, not your most important booking of the year. See how the communication, turnaround, and quality actually feel in practice before deciding whether to build it into your regular workflow going forward.
 
+## What experienced photographers say once they've made the switch
+
+Photographers who've outsourced for a full season or more rarely describe going back to full in-house editing once volume justifies the switch. The common regret isn't trying it, it's waiting too long to test it while turning down bookings or working through exhausted weekends that outsourcing could have prevented much earlier.
+
+## A middle-ground worth considering if you're not ready to fully commit
+
+You don't need to outsource every single gallery to get real value from the option. Some photographers keep their favourite, most creatively meaningful weddings in-house while sending higher-volume, more straightforward bookings out, getting time back without giving up the hands-on work they genuinely enjoy doing themselves.
+
+## Why hesitation here is understandable, not a flaw
+
+Nobody hands off irreplaceable client work casually, and the instinct to be cautious here is healthy rather than something to override quickly. The goal isn't rushing into outsourcing, it's making an informed decision based on real numbers and a real test, rather than avoiding the question indefinitely out of general unease.
+
 If you're testing this decision for yourself, [sending two or three photos over for a free sample edit](/contact/) is a completely reasonable place to start, with [pricing running flat by photo count](/pricing/#photo-editing) so the actual cost is never a guess.
