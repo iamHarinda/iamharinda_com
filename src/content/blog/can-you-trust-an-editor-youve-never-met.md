@@ -58,4 +58,8 @@ Once one gallery has gone well, genuinely, with real files and a real outcome yo
 
 Every professional relationship in this business, a venue, a second shooter, a printing lab, started as a stranger you had to extend some initial trust to. An editing service is no different in principle, it just deserves the same careful, deliberate evaluation before that trust gets extended, rather than either blind faith or permanent refusal to ever try.
 
+## A final thought worth sitting with
+
+Trust built gradually, through small tests and verified evidence, holds up far better over a long working relationship than trust extended all at once based purely on a good first impression.
+
 Wondering whether this specific service is trustworthy enough for your own files? [A free sample edit](/contact/) is exactly the low-risk way to find out, on your own photos, before anything real is ever on the line.
