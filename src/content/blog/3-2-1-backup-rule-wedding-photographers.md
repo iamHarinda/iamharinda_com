@@ -38,6 +38,10 @@ A genuine 3-2-1 setup for an active wedding photographer runs a few hundred doll
 
 Set a fixed point in your workflow, immediately after every shoot, before anything else, where backup happens without exception, rather than treating it as something to get to eventually. The photographers who lose files almost always trace it back to a backup step that got delayed "just this once" during a busy week.
 
+## The cost of getting this wrong once
+
+Photographers who've lost a gallery once, to a corrupted card, a failed drive with no backup, a stolen laptop, almost universally describe rebuilding their backup discipline immediately afterward, often obsessively so. It's a genuinely painful way to learn this lesson, and building the habit before that first disaster happens is simply the cheaper path to the same outcome.
+
 ## Why this matters even before editing starts
 
 ## What to do the first time you set this up properly
