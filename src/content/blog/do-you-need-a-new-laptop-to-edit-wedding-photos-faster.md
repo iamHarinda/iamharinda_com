@@ -38,4 +38,12 @@ Before assuming you need new hardware, watch your computer's activity monitor wh
 
 A computer that fights you during every editing session doesn't just cost time, it costs patience and attention exactly when careful colour and detail judgments matter most. Fixing a genuine bottleneck, whether that's a cheap RAM upgrade or a full replacement, pays for itself in both speed and the quality of focus you can actually bring to each photo.
 
+## Desktop versus laptop for a primary editing machine
+
+If portability genuinely doesn't matter for your workflow, editing exclusively at a home office desk, a desktop computer typically delivers more raw performance per dollar than an equivalent laptop, since desktop components don't need to be miniaturized or optimized for battery life. Photographers who never edit away from their desk sometimes overpay for laptop portability they don't actually use, when a desktop would have stretched the same budget further.
+
+## Software settings that help regardless of hardware
+
+Beyond the physical machine, Lightroom's own preview and cache settings affect perceived speed meaningfully. Building standard previews ahead of time during an idle moment, rather than generating them on the fly while you're trying to work, smooths out a lot of the stutter photographers blame on their computer when it's really a software setting worth adjusting first.
+
 Whatever machine you're editing on, [a free sample edit](/contact/) shows what a hand-corrected result looks like when it's judged on a properly calibrated screen rather than rushed through on a struggling laptop.
