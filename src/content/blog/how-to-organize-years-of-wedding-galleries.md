@@ -34,6 +34,18 @@ Culling should ideally happen once, before files get backed up to their permanen
 
 What works well at fifty stored weddings might need adjusting at two hundred. Periodically reviewing whether your current structure is still serving you well, rather than assuming a system set up years ago automatically still fits your current volume, keeps the whole archive genuinely usable rather than just technically organized.
 
+## Building in a review step before anything gets archived
+
+Before a gallery moves from active working files into long-term archive storage, a quick final check, confirming file names are correct, the folder structure matches your convention, nothing got miscategorized during a busy week, catches small inconsistencies while they're still easy to fix. Skipping this step lets small errors compound silently across years of galleries, each one a little harder to untangle than the last.
+
+## What to do about years of past work that predate your current system
+
+If you've been shooting for years before settling on a consistent naming and folder convention, retroactively fixing everything at once is a genuinely large undertaking, and it doesn't need to happen all in one sitting. Prioritize recent years first, since they're more likely to be referenced again soon, and work backward gradually during slower stretches rather than treating it as an all-or-nothing project that never actually gets started.
+
+## Teaching this system to anyone else who touches your files
+
+If a second shooter, an assistant, or an outsourced editor ever handles part of your workflow, a written, one-page description of your naming and folder convention means they can follow it correctly from day one, rather than guessing and introducing inconsistency into a system you've otherwise kept clean for years.
+
 ## Why this organization work pays off beyond convenience
 
 A well-organized archive isn't just about convenience when a client calls with a request years later. It's also what makes it realistic to ever hand off editing work to someone else, an assistant, an outsourced service, without them needing to first untangle years of inconsistent folder structures before they can even begin. [A free sample edit](/contact/) works the same whether your files are perfectly organized or a bit of a mess, but a clean system makes the whole handoff smoother on your end.
