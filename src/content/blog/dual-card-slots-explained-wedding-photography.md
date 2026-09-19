@@ -46,6 +46,10 @@ Even with dual slots enabled, it's worth periodically confirming the camera is a
 
 If you're hiring or working with a second shooter, checking that their camera is also configured for dual-slot redundancy is worth confirming directly rather than assuming it, since a second shooter's footage matters just as much to the finished gallery and deserves the same protection standard as your own.
 
+## A quick habit worth adding to your pre-wedding checklist
+
+Add a specific check to your gear preparation routine before every wedding: confirm both card slots are formatted, empty, and the camera is set to write identical copies to each. This takes thirty seconds and removes any chance of discovering a misconfiguration only after the ceremony has already happened, when it's far too late to fix.
+
 ## Why this feature rarely gets the attention it deserves
 
 Compared to autofocus speed or megapixel count, dual card slots don't photograph well in a spec sheet comparison and don't show up in a portfolio. That's exactly why it's worth actively seeking out and understanding, rather than assuming any camera marketed toward professionals automatically includes it.
