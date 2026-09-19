@@ -36,7 +36,7 @@ If after multiple honest attempts a specific service still isn't matching your s
 
 ## Screenshots and annotations speed up the whole process
 
-If your feedback tool allows marking up an image directly, circling an area, adding a note right on the photo, use it. Visual feedback removes any ambiguity about which specific spot you mean, cutting down the back-and-forth clarification that pure written descriptions sometimes require before an editor can act on them confidently.
+If your feedback tool allows marking up an image directly, circling an area, adding a note right on the photo, use it. Visual feedback removes any ambiguity about which specific spot you mean, cutting down the back-and-forth clarification that pure written descriptions sometimes require before an editor can act on them confidently and correctly the first time.
 
 ## How to word feedback so it actually gets acted on well
 
