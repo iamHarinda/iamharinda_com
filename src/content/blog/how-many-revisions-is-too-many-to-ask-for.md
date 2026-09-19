@@ -36,7 +36,7 @@ Clients who explain the reasoning behind a request, not just what to change but 
 
 ## Trusting the process even when it feels slower than expected
 
-A gallery that needs several honest rounds before it's right isn't a sign anything went wrong, it's the revision system working exactly as intended for a genuinely tricky set of photos. The end result, a gallery you're actually happy sending to a client, is worth more than hitting some arbitrary, self-imposed limit on how many times you allowed yourself to ask for something.
+A gallery that needs several honest rounds before it's right isn't a sign anything went wrong, it's the revision system working exactly as intended for a genuinely tricky set of photos. The end result, a gallery you're actually proud to hand a client, is worth more than hitting some arbitrary, self-imposed limit on how many times you allowed yourself to ask for something better.
 
 ## What genuinely crosses a reasonable line
 
