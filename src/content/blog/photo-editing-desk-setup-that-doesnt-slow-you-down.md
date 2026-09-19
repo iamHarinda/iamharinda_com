@@ -46,4 +46,8 @@ A quiet, distraction-free environment matters more for editing than it gets cred
 
 Some photographers edit best in short, frequent sessions between other tasks. Others block out long, uninterrupted stretches. Neither is wrong, but the desk setup that serves each style differs, quick access to frequently referenced folders and presets for the first, a setup that stays comfortable across many consecutive hours for the second. Building around how you actually work, rather than copying someone else's setup wholesale, produces a space that genuinely reduces friction instead of just looking impressive.
 
-Whatever your own setup looks like, the actual editing still needs a careful, colour-accurate eye behind it. [A free sample edit](/contact/) shows what that looks like here, done by hand on a properly calibrated screen.
+Whatever your own setup looks like, the actual editing still needs a careful, colour-accurate eye behind it. ## A final thought on treating this as a real investment
+
+A well-built editing space isn't a luxury purchase, it's infrastructure for a business built around thousands of hours of screen time. Treating it with the same seriousness as camera gear, budgeting for it deliberately rather than making do with whatever furniture happened to already be in the room, pays off in both comfort and the quality of attention you can bring to every single gallery.
+
+[A free sample edit](/contact/) shows what that looks like here, done by hand on a properly calibrated screen.
