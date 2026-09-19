@@ -52,4 +52,4 @@ Beyond just what's in the bag, packing everything in the same specific spot ever
 
 ## Why the RAW files this gear captures matter more than the gear itself
 
-All of this equipment exists to capture RAW files that still need careful, colour-accurate editing afterward to actually become the finished gallery a couple receives. [Send two or three photos over for a free sample edit](/contact/) and see what that final step looks like, done by hand on a calibrated screen, regardless of which camera bag got you there.
+All of this equipment exists to capture RAW files that still need careful, colour-accurate editing afterward to actually become the finished gallery a couple receives. [Send two or three photos over for a free sample edit](/contact/) and see what that final step looks like, done by hand on a calibrated screen, regardless of which camera bag, budget, or brand of gear actually got you there in the first place.
