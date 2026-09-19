@@ -34,6 +34,10 @@ If a service charges extra for every revision round, or caps revisions at one or
 
 If after multiple honest attempts a specific service still isn't matching your style, that's useful information, not a personal failure on your part. Not every editor fits every photographer's aesthetic, and recognizing a mismatch early, before committing a full season, protects both your time and theirs.
 
+## Screenshots and annotations speed up the whole process
+
+If your feedback tool allows marking up an image directly, circling an area, adding a note right on the photo, use it. Visual feedback removes any ambiguity about which specific spot you mean, cutting down the back-and-forth clarification that pure written descriptions sometimes require before an editor can act on them confidently.
+
 ## How to word feedback so it actually gets acted on well
 
 Rather than a long list of vague impressions, structure feedback around specific images and specific issues, "photo 14, the shadows need to open up a bit" is far more actionable than "some of these feel dark." Editors work fastest and most accurately from concrete, image-specific notes rather than broad emotional reactions to a whole gallery at once.
