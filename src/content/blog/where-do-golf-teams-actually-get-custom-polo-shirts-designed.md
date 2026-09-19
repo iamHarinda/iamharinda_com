@@ -34,4 +34,16 @@ For teams needing genuine custom design, a logo adaptation, a repeat pattern, a 
 
 Does this include actual design work, or just placement of an existing logo into a template? Will I receive print-ready files I can take anywhere for production, or am I locked into this specific platform's production service? Do you have experience specifically with polo and golf apparel, not just general branded merchandise?
 
+## Why this decision matters more for larger orders
+
+For a small handful of shirts, any reasonable option works fine even if it's not perfectly optimized. For a larger team or club order, dozens or hundreds of shirts, getting the design right the first time matters considerably more, since a mistake or disappointing result multiplies across every single unit produced rather than affecting just one or two garments.
+
+## What experienced teams do differently on repeat orders
+
+Clubs and teams that order custom apparel regularly, season after season, often settle into a consistent relationship with one designer once they've found a good fit, rather than starting the search over from scratch every single year. This builds a documented, reusable style over time and speeds up every subsequent order once the initial relationship is established.
+
+## A note on timeline expectations across these different options
+
+Big custom platforms with built-in tools often move fastest since design and production happen through the same system without any handoff between separate parties. Independent designers plus a separate supplier typically take a bit longer due to that handoff, but the design quality gained often justifies the extra few days for anything beyond the simplest logo placement.
+
 Looking for genuine custom design work for your team's polos, not just a logo dropped onto a template? [See how packages work here](/fashion-designing/#pricing), or [send your idea over](/contact/) to talk through what you're picturing first.
