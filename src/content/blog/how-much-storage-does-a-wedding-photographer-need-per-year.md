@@ -48,7 +48,7 @@ Running out of storage mid-wedding, or mid-season, forces rushed decisions, dele
 
 ## Why this planning habit gets easier every year you do it
 
-The first year of calculating actual storage needs is the hardest, since you're often estimating without much real data to work from. Every subsequent year gets easier and more accurate, because you're refining an existing estimate against real numbers from the year before rather than guessing from scratch each time.
+The first year of calculating actual storage needs is the hardest, since you're often estimating without much real data to work from. Every subsequent year gets easier and more accurate, because you're refining an existing estimate against real numbers from the year before rather than guessing from scratch each time a new season starts.
 
 ## A simple spreadsheet that keeps this manageable
 
