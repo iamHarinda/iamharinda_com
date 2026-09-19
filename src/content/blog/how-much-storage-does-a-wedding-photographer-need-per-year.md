@@ -40,7 +40,7 @@ Once a year, ideally during your slowest stretch, calculate your actual storage 
 
 ## A note on how camera format changes the baseline
 
-Shooting compressed RAW versus uncompressed RAW, or a smaller sensor versus a full-frame body, changes average file size meaningfully, sometimes by a significant margin per image. Basing your storage math on your own actual camera and settings, rather than a generic average pulled from somewhere online, gives a far more accurate number to plan around.
+Shooting compressed RAW versus uncompressed RAW, or a smaller sensor versus a full-frame body, changes average file size meaningfully, sometimes by a significant margin per image. Basing your storage math on your own actual camera and settings, rather than a generic average pulled from somewhere online, gives a far more accurate number to plan around, and it's worth redoing that calculation any time your equipment changes.
 
 ## Accounting for second shooters in the total
 
