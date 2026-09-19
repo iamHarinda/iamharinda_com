@@ -50,6 +50,10 @@ If a service dodges direct questions about their process or gets vague when aske
 
 How someone communicates during the sales conversation, before any money has changed hands, tends to predict how they'll communicate once you're an actual paying client with real work in progress. Clear, prompt, specific answers now are a reasonable proxy for what to expect later, when a real gallery and a real deadline are on the line.
 
+## How this gets easier after the first successful gallery
+
+Once one gallery has gone well, genuinely, with real files and a real outcome you were happy with, the trust question largely resolves itself for future bookings. The hardest part of this whole process is always the first attempt, before you have any personal, direct evidence beyond what a stranger's reviews and portfolio can tell you.
+
 ## The bigger picture worth remembering here
 
 Every professional relationship in this business, a venue, a second shooter, a printing lab, started as a stranger you had to extend some initial trust to. An editing service is no different in principle, it just deserves the same careful, deliberate evaluation before that trust gets extended, rather than either blind faith or permanent refusal to ever try.
