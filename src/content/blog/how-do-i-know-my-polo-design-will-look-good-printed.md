@@ -34,4 +34,16 @@ Skipping the sample step to save a few days on a tight timeline risks discoverin
 
 Once you've ordered from a specific designer and supplier combination successfully once, and confirmed the digital preview reliably matches the physical result, subsequent orders carry much less of this uncertainty. The extra caution matters most on a first order with any new combination of designer and production partner.
 
+## What to do if a sample reveals a problem
+
+Finding an issue at the sample stage isn't a failure of the process, it's the process doing exactly what it's meant to do. A colour that reads slightly off, a placement that needs nudging, these are far cheaper and faster to fix on a single sample garment than they would be discovered only after an entire production run has already been completed and shipped.
+
+## How lighting affects your own judgment of a sample
+
+Examine a physical sample under a few different lighting conditions, daylight near a window, indoor artificial light, before making a final judgment, since colour can genuinely look different depending on the light it's viewed under. A quick check across a couple of lighting environments avoids approving, or rejecting, a sample based on one potentially misleading lighting condition alone.
+
+## Why this extra step builds confidence for future orders
+
+Once you've gone through the sample process once with a specific designer and supplier, and confirmed the final physical result matched what was promised digitally, you gain real, earned confidence in that specific combination for future orders. This isn't a step you necessarily need to repeat every single time once that trust is established.
+
 Want to see exactly how a design will look before committing to production? Every order here includes a realistic mockup on the actual garment and colour, and [a straightforward conversation first](/contact/) helps make sure nothing gets left to guesswork.
