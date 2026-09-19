@@ -40,7 +40,7 @@ Professional design costs for a modest polo project are often a small fraction o
 
 ## What to do if budget is the deciding factor either way
 
-If cost genuinely is the deciding constraint, ask a designer directly whether a smaller, simplified version of your vision fits your budget, rather than assuming professional design is entirely out of reach. Many designers can scale a project's scope to match a real budget rather than it being all-or-nothing between DIY and a full custom package.
+If cost genuinely is the deciding constraint, ask a designer directly whether a smaller, simplified version of your vision fits your budget, rather than assuming professional design is entirely out of reach. Many designers can scale a project's scope to match a real budget rather than assuming it has to be strictly all-or-nothing between DIY and a full custom package.
 
 ## What team members or stakeholders actually notice
 
