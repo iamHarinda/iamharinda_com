@@ -34,4 +34,16 @@ For a small team or club needing a functional, well-executed logo with reasonabl
 
 A logo that needs revisiting within a year because it never quite worked well at garment scale, or never felt quite right to the team, ends up costing more in total than paying slightly more for a version that got it right the first time. Value here is about the total cost of getting to a logo you're happy keeping, not just the number on the initial invoice.
 
+## How to compare quotes that look wildly different at first glance
+
+When two quotes for a similar-sounding project differ significantly, ask each designer directly what's included, number of concepts, revision rounds, final file formats, rather than comparing the bottom-line numbers alone. This levels the comparison and often reveals that the apparently cheaper option is missing something the pricier one includes as standard.
+
+## Why a logo's intended use should shape the conversation from day one
+
+Mention upfront whether the logo needs to work on embroidered garments, digital platforms, printed materials, or all three, since this genuinely affects how a designer approaches colour count, detail level, and overall complexity. A designer working blind to these constraints may produce something beautiful that later needs real rework once its actual intended use becomes clear.
+
+## What to do if your budget genuinely can't stretch to a fuller package
+
+If cost is a real constraint, ask a designer directly whether a simpler, more limited engagement, fewer concepts, a slightly smaller scope, fits your actual budget rather than assuming the full package price is the only option available. Many designers can scale a project down reasonably rather than losing the work entirely to a budget mismatch.
+
 Wondering what a fair price looks like for your specific team's needs? [See how packages work here](/fashion-designing/#pricing), or [send your idea over](/contact/) for a straight answer based on your actual project, not a generic range.
