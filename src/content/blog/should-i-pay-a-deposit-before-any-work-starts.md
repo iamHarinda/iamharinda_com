@@ -42,6 +42,10 @@ A contractor renovating part of your home, a caterer booking your event, a photo
 
 If a deposit request sits well above the twenty five to fifty percent range without a clear justification, larger projects with significant upfront material costs are one legitimate exception, ask directly why. A reasonable explanation should be easy to give, and a vague or defensive response to that question is worth weighing seriously before committing anything.
 
+## What to do if you've never navigated this before
+
+If this is genuinely your first time hiring any kind of freelancer for anything, it's worth naming that upfront in the conversation itself. A good developer will walk you through their process clearly and patiently rather than assuming you already know the norms, and how they respond to that honesty tells you something real about how they'll handle you as a client throughout the rest of the project.
+
 ## How milestone payments actually protect the timeline too
 
 Beyond financial protection, tying payments to milestones gives both sides a natural checkpoint to confirm the project is actually on track, not just financially, but in terms of scope and direction, before moving to the next phase. This structure benefits a smooth, well-run project even when nothing ever goes wrong.
