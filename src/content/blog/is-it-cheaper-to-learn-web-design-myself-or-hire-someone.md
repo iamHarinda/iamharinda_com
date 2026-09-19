@@ -36,7 +36,7 @@ Neither choice is universally right. DIY suits businesses with more time than mo
 
 ## A quick way to estimate your own real hourly value
 
-If you don't already know what your time is worth to the business, divide your typical monthly revenue by the hours you actually spend generating it. That rough number, even if imprecise, gives you something concrete to compare against the hours a DIY website build would realistically consume, rather than treating your own time as free simply because no invoice shows up for it.
+If you don't already know what your time is worth to the business, divide your typical monthly revenue by the hours you actually spend generating it. That rough number, even if imprecise, gives you something concrete to compare against the hours a DIY website build would realistically consume, rather than treating your own time as free simply because no invoice ever shows up for spending it this way.
 
 ## What happens to a DIY site as the business grows
 
