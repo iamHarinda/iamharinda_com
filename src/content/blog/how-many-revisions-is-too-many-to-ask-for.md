@@ -34,4 +34,16 @@ Bundle your feedback into one clear, complete note per round rather than sending
 
 Revisions that ask an editor to redo work based on your own indecision, approving something and then changing your mind days later with no new information, are a different category than revisions addressing an actual quality issue. Most services handle occasional indecision graciously, but it's worth being mindful of the difference between refining toward accuracy and simply not having made a decision yet.
 
+## What to do if you're genuinely unsure whether you're asking too much
+
+If you find yourself hesitating before sending another round of feedback, worried about becoming a difficult client, ask yourself whether the concern is specific and real, not it still doesn't feel right versus this exact area still has a colour issue. If it's specific and real, send it without hesitation. A legitimate service would rather fix a genuine issue now than have you quietly settle for a gallery you're not actually happy with.
+
+## Why some galleries genuinely need more rounds than others
+
+A gallery shot in especially tricky mixed lighting, or one where your style has recently shifted and your reference material hasn't caught up yet, reasonably needs more revision rounds than a straightforward, evenly-lit gallery matched against well-established references. Judging what's "normal" against your hardest galleries rather than your easiest ones sets an unfair, inaccurate benchmark for yourself.
+
+## How to tell the difference between a style mismatch and a fixable issue
+
+If revisions keep circling without progress despite specific feedback, it's worth asking honestly whether the issue is a technical one that's fixable, or a genuine style mismatch that no amount of revision will close. The first is worth continuing to work through. The second is worth a direct conversation about whether this particular editor is the right long-term fit for your specific aesthetic.
+
 If you're not sure what a reasonable revision process actually feels like, [a free sample edit](/contact/) is a low-stakes way to find out firsthand, with revisions here genuinely unlimited and built into the [flat, per-photo pricing](/pricing/#photo-editing) from the start.
