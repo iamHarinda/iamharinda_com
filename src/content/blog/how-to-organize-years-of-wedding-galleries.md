@@ -48,7 +48,7 @@ If a second shooter, an assistant, or an outsourced editor ever handles part of 
 
 ## A quick test to see if your current system actually works
 
-Try to locate a specific wedding from two or three years ago right now, using only client name or approximate date, without checking old invoices or emails for a reminder. If that search takes more than a minute or two, or requires checking multiple drives blindly, your current system has real room for improvement, and it's worth treating that friction as a signal rather than something to just live with indefinitely.
+Try to locate a specific wedding from two or three years ago right now, using only client name or approximate date, without checking old invoices or emails for a reminder. If that search takes more than a minute or two, or requires checking multiple drives blindly, your current system has real room for improvement, and it's worth treating that friction as a genuine signal rather than something to just quietly live with indefinitely.
 
 ## Why this organization work pays off beyond convenience
 
