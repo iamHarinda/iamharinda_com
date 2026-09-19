@@ -38,6 +38,10 @@ Laptop screens, even good ones, are usually smaller, dimmer, and less accurate o
 
 If budget is tight, prioritize a monitor that meets the accuracy specs above, then add a colorimeter to calibrate it, before spending on anything else in your setup, a faster computer, extra storage, a nicer chair. None of those other upgrades fix inaccurate colour, and inaccurate colour is the thing most likely to show up as a visible problem in delivered work.
 
+## Why matching your monitor to your actual work matters
+
+A photographer who only ever delivers digitally, with no printing involved, can lean more heavily on sRGB accuracy alone and worry less about wider gamut coverage. A photographer who regularly delivers printed albums benefits from a monitor with strong Adobe RGB coverage too, since prints can reproduce a wider range of colour than a typical screen or web display. Buying for the work you actually do, rather than the most feature-complete option available, keeps the decision grounded in something real.
+
 ## A quick way to sanity-check a monitor before buying
 
 Search the specific model name alongside "photo editing review" and see whether photographers, not just general tech reviewers, discuss using it for colour-critical work. General tech coverage tends to focus on brightness and gaming performance, while photography-specific reviews actually test the numbers that matter here, Delta E, gamut coverage, calibration behaviour, giving a far more relevant picture before you commit to a purchase.
