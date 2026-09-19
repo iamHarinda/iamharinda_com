@@ -58,4 +58,8 @@ Most galleries settle within two or three rounds of feedback once a working rela
 
 The photographers who avoid outsourcing entirely because of this exact worry often end up more constrained by their own workload than they'd be by a slightly imperfect first-round edit that's simply fixable through the normal revision process every legitimate service already builds in.
 
+## A closing thought worth holding onto
+
+The fear of disliking a result keeps a lot of photographers from ever testing outsourcing at all, and that fear rarely survives an actual, honest attempt with clear references and a willingness to give specific feedback along the way.
+
 Worried this might happen with your own galleries? Revisions here are unlimited and built into the price for exactly this reason, and [a free sample edit](/contact/) lets you see the actual first-pass result before any real gallery is on the line.
