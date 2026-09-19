@@ -54,4 +54,8 @@ A strong initial conversation asks you real questions about your business and go
 
 None of these checks are perfectly reliable on their own, but together they build a reasonably accurate picture even without technical expertise of your own. Combine the objective checks, performance tools, verifiable past clients, with your own honest gut read on communication and professionalism throughout the process.
 
+## A final thought worth keeping in mind
+
+No evaluation process removes all risk entirely, but a thorough one removes most of it, which is realistically the best any business owner can do when hiring someone whose actual technical work they can't personally judge in detail.
+
 Not sure how to evaluate this for your own project? A [free scope call](/web-development/) is a low-risk way to see communication style and process firsthand, before any money or commitment is involved.
