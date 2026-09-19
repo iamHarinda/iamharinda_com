@@ -44,7 +44,7 @@ How long have you been editing professionally, and can I see verifiable reviews?
 
 ## What a lack of transparency actually tells you
 
-If a service dodges direct questions about their process or gets vague when asked something reasonable, that reaction itself is useful data, regardless of how good their portfolio looks. Confidence in a legitimate process usually shows up as directness, not evasiveness, when a potential client asks fair, specific questions upfront.
+If a service dodges direct questions about their process or gets vague when asked something reasonable, that reaction itself is useful data, regardless of how polished and impressive their portfolio happens to look on the surface. Confidence in a legitimate process usually shows up as directness, not evasiveness, when a potential client asks fair, specific questions upfront.
 
 ## Why communication style itself is a meaningful signal
 
