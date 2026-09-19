@@ -44,6 +44,6 @@ Search the specific model name alongside "photo editing review" and see whether 
 
 ## What to do if you already own a monitor that falls short
 
-Not every photographer is in a position to buy a new monitor right away, and that's a completely reasonable constraint to work within. A colorimeter still improves an imperfect monitor meaningfully, even if it can't fully close every gap a genuinely accurate panel would. Calibrating what you already have is almost always worth doing before assuming a full upgrade is the only path forward.
+Not every photographer is in a position to buy a new monitor right away, and that's a completely reasonable constraint to work within. A colorimeter still improves an imperfect monitor meaningfully, even if it can't fully close every gap a genuinely accurate panel would. Calibrating what you already have is almost always worth doing before assuming a full upgrade is the only path forward, and it costs a fraction of a new monitor while still catching most of the drift that's actually hurting your editing decisions.
 
 Wondering whether your current setup is holding your edits back? Every photo delivered here runs through a Calman-verified, factory-calibrated display, and [a free sample edit](/contact/) is an easy way to compare the result against your own screen.
