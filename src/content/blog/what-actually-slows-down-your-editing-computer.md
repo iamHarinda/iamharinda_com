@@ -38,4 +38,12 @@ Close everything except your editing software, disable background sync temporari
 
 A computer that lags during editing doesn't just cost time, it interrupts the careful, sustained attention that catches subtle colour and consistency issues before a gallery goes out. Diagnosing the actual cause, rather than assuming a full hardware replacement is the only fix, often solves the real problem for a fraction of the cost and effort.
 
+## Plugins and third-party tools worth auditing
+
+Third-party Lightroom plugins, especially older ones that haven't been updated to match current software versions, can introduce real slowdown or instability without an obvious connection to the plugin itself. Periodically reviewing which plugins are actually still in active use, and disabling or removing ones that aren't, is a simple maintenance step that's easy to skip for years.
+
+## Temperature and thermal throttling, an overlooked factor on laptops
+
+Laptops pushed hard during long editing or export sessions can hit thermal limits, causing the processor to deliberately slow itself down to avoid overheating, a phenomenon called throttling. A laptop placed on a soft surface like a bed or a couch, blocking its cooling vents, throttles far more aggressively than the same machine on a hard, well-ventilated surface. This single, free fix solves more unexplained slowdown than people expect.
+
 Whatever's happening on your own machine, [a free sample edit](/contact/) shows what a careful, unhurried edit looks like when it's done without a computer fighting the process every step of the way.
