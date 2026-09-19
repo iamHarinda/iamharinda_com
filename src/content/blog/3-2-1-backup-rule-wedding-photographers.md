@@ -40,6 +40,10 @@ Set a fixed point in your workflow, immediately after every shoot, before anythi
 
 ## Why this matters even before editing starts
 
+## What to do the first time you set this up properly
+
+If none of this exists in your current workflow yet, don't try to build the full system in one sitting. Start with the cheapest, highest-impact piece first, usually a second local drive for an immediate backup after each shoot, then add cloud backup once that habit is solid, then revisit dual card slots the next time you're due for a camera body upgrade. A partial system built steadily beats an ambitious one that never actually gets finished.
+
 ## A simple checklist worth keeping near your desk
 
 Two cards in camera during the shoot. Copy to two separate drives immediately after. Verify both copies before formatting anything. Get a third copy into cloud storage within the first week. Four steps, none of them complicated on their own, and together they cover the overwhelming majority of ways a wedding gallery actually gets lost.
