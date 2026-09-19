@@ -48,7 +48,7 @@ If you're hiring or working with a second shooter, checking that their camera is
 
 ## A quick habit worth adding to your pre-wedding checklist
 
-Add a specific check to your gear preparation routine before every wedding: confirm both card slots are formatted, empty, and the camera is set to write identical copies to each. This takes thirty seconds and removes any chance of discovering a misconfiguration only after the ceremony has already happened, when it's far too late to fix.
+Add a specific check to your gear preparation routine before every wedding: confirm both card slots are formatted, empty, and the camera is set to write identical copies to each. This takes thirty seconds and removes any chance of discovering a misconfiguration only after the ceremony has already happened, when it's far too late to do anything about it.
 
 ## Why this feature rarely gets the attention it deserves
 
