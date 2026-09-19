@@ -42,6 +42,10 @@ Asking another team, club, or business you know for a recommendation, someone wh
 
 Does this include actual design work, or just placement of an existing logo into a template? Will I receive print-ready files I can take anywhere for production, or am I locked into this specific platform's production service? Do you have experience specifically with polo and golf apparel, not just general branded merchandise?
 
+## A quick summary of the three main paths
+
+Big platforms suit simple logo placement on a budget and a tight timeline. Independent designers suit genuine custom artwork, patterns, and coordinated multi-placement designs. Local shops suit smaller orders where seeing physical samples in person before committing matters most. Matching the option to what your specific project actually needs, rather than defaulting to whichever comes up first in a search, produces the best result for the least wasted effort.
+
 ## Why this decision matters more for larger orders
 
 For a small handful of shirts, any reasonable option works fine even if it's not perfectly optimized. For a larger team or club order, dozens or hundreds of shirts, getting the design right the first time matters considerably more, since a mistake or disappointing result multiplies across every single unit produced rather than affecting just one or two garments.
