@@ -34,6 +34,10 @@ Keeping Lightroom and your operating system reasonably current generally helps p
 
 Driving two or three monitors, especially at high resolution, places real demand on a computer's graphics capability, and an underpowered or older graphics setup can introduce lag specifically when multiple displays are active that wouldn't appear on a single-screen setup. If slowdown started right after adding a second monitor, this connection is worth checking before assuming something else broke.
 
+## Why blaming the wrong cause wastes real money
+
+Assuming a slow computer needs a full replacement, when the actual issue is a bloated catalog or a throttling laptop on a soft surface, means spending significant money on new hardware that inherits the exact same unaddressed problem the moment it's set up the same way. Diagnosing correctly first, even if it takes an extra hour of testing, protects against this exact expensive mistake.
+
 ## A simple diagnostic process worth running once
 
 Close everything except your editing software, disable background sync temporarily, and see if performance improves noticeably. If it does, background processes were a real factor. If nothing changes, the bottleneck is more likely hardware or catalog-related, and you've just saved yourself from chasing the wrong fix based on a guess.
