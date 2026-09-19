@@ -40,7 +40,7 @@ Test it on your next wedding's least sentimentally important gallery, not your m
 
 ## A quick way to run your own numbers this week
 
-Pull your last five galleries and time roughly how long each took to edit, then multiply by what an hour of your time is actually worth to the business, whether that's a booking call, a shoot, or genuine rest. Compare that number against a real quote for outsourcing the same volume. This ten-minute exercise settles the question with your own real data far better than any general advice ever could.
+Pull your last five galleries and time roughly how long each took to edit, then multiply by what an hour of your time is actually worth to the business, whether that's a booking call, a shoot, or genuine rest. Compare that number against a real quote for outsourcing the same volume. This ten-minute exercise settles the question with your own real data far better than any general advice ever could, since your business's numbers are the only ones that actually matter here.
 
 ## What experienced photographers say once they've made the switch
 
