@@ -28,7 +28,7 @@ Keep active working files and your most recent local backup on external drives f
 
 ## Why this decision isn't permanent once made
 
-Whatever combination of local and cloud storage you settle on today doesn't need to stay fixed forever. As pricing changes, as your volume grows, and as new services enter the market, it's worth periodically revisiting whether your current setup is still the best fit, rather than assuming a decision made years ago automatically remains the right one indefinitely without ever checking back in on it.
+Whatever combination of local and cloud storage you settle on today doesn't need to stay fixed forever. As pricing changes, as your volume grows, and as new services enter the market, it's worth periodically revisiting whether your current setup is still the best fit, rather than assuming a decision made years ago automatically remains the right one indefinitely without ever bothering to check back in on it properly.
 
 ## What cloud storage actually costs at real volume
 
