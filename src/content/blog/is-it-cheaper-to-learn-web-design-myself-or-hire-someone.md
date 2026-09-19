@@ -38,6 +38,10 @@ Neither choice is universally right. DIY suits businesses with more time than mo
 
 If you don't already know what your time is worth to the business, divide your typical monthly revenue by the hours you actually spend generating it. That rough number, even if imprecise, gives you something concrete to compare against the hours a DIY website build would realistically consume, rather than treating your own time as free simply because no invoice ever shows up for spending it this way.
 
+## Why this decision deserves an honest answer, not a default one
+
+Plenty of business owners default to DIY simply because it feels like the safer, more responsible choice on the surface, avoiding an upfront cost. That instinct is worth questioning directly rather than following automatically, since the actual cheaper option depends entirely on your specific time, skills, and business stage, not on which choice merely feels more frugal at first glance.
+
 ## What happens to a DIY site as the business grows
 
 A site built quickly through a DIY builder in a business's early days sometimes needs a full rebuild once the business outgrows what that platform can handle, meaning the "savings" from the original DIY effort get partially undone by a second project down the line. This isn't a reason to avoid DIY entirely, just a cost worth factoring into the honest total rather than only counting the upfront number.
