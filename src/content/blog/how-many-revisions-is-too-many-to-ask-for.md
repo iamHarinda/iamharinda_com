@@ -30,6 +30,10 @@ An editor who's built their pricing around unlimited revisions has already accou
 
 Bundle your feedback into one clear, complete note per round rather than sending a new small request every few minutes throughout the day. This keeps the process efficient for both sides and tends to produce faster overall turnaround than a scattered stream of individual, disconnected requests sent piecemeal.
 
+## What editors actually appreciate from clients during revisions
+
+Clients who explain the reasoning behind a request, not just what to change but why it matters to them, tend to get better, more targeted results than those who give purely mechanical instructions with no context. Sharing that this particular gallery is for a couple who specifically wanted a bright, airy feel, for instance, helps an editor make better judgment calls on the smaller details you didn't explicitly mention.
+
 ## What genuinely crosses a reasonable line
 
 Revisions that ask an editor to redo work based on your own indecision, approving something and then changing your mind days later with no new information, are a different category than revisions addressing an actual quality issue. Most services handle occasional indecision graciously, but it's worth being mindful of the difference between refining toward accuracy and simply not having made a decision yet.
