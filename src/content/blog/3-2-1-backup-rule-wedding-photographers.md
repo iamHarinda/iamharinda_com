@@ -46,6 +46,6 @@ Two cards in camera during the shoot. Copy to two separate drives immediately af
 
 ## Why this discipline pays off long after the wedding itself
 
-A solid backup habit isn't just insurance against disaster, it also means you can confidently hand files off, to a second editor, an outsourced service, a future version of yourself revisiting an old gallery for a client's anniversary request, without ever worrying that the copy you're sharing is the only one that exists.
+A solid backup habit isn't just insurance against disaster, it also means you can confidently hand files off, to a second editor, an outsourced service, a future version of yourself revisiting an old gallery for a client's anniversary request, without ever worrying that the copy you're sharing is the only one that exists anywhere in the world.
 
 Whether you edit everything yourself or send files out, a solid backup means the RAW files handed over for editing are never your only copy of that wedding. That peace of mind is worth building before you ever need it, and it's exactly the kind of foundation that makes [outsourcing part of your editing](/pricing/#photo-editing) a low-risk decision rather than a nerve-wracking one.
