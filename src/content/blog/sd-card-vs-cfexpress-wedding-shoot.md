@@ -38,4 +38,12 @@ Check what your specific camera body actually supports first, since that sometim
 
 Counterfeit memory cards, sold at suspiciously low prices through unverified third-party sellers, are a genuine risk in this category, and a corrupted counterfeit card is far more dangerous than a slightly slower genuine one. Buy from authorized retailers or directly from the manufacturer, especially for anything holding an entire wedding day's irreplaceable files.
 
+## A hybrid approach worth considering
+
+Some photographers with cameras that support both slot types run a fast CFexpress card for the primary shooting slot and a reliable SD card as the instant backup slot, getting speed where it matters most while still keeping a second physical copy the moment a photo is taken. This isn't necessary for everyone, but it's a reasonable middle ground for anyone genuinely torn between the two formats rather than facing a clear-cut decision either way.
+
+## Why chasing the newest card generation rarely pays off
+
+Memory card technology keeps advancing, and there's always a slightly faster, slightly newer generation available at a premium price. For working wedding photographers, a card that's a generation or two behind the absolute cutting edge, from a reputable brand, at a proven reliability track record, is almost always the smarter buy than paying extra to be first in line for marginal speed gains that don't address an actual bottleneck in your workflow.
+
 Whatever card ends up in your camera, the files it captures still need careful, colour-accurate editing once the day is over. [A free sample edit](/contact/) shows what that looks like before you commit a full gallery, and [pricing runs flat by photo count](/pricing/#photo-editing) regardless of which card format the RAW files came from.
