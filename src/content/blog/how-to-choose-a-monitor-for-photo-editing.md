@@ -40,7 +40,7 @@ If budget is tight, prioritize a monitor that meets the accuracy specs above, th
 
 ## Why matching your monitor to your actual work matters
 
-A photographer who only ever delivers digitally, with no printing involved, can lean more heavily on sRGB accuracy alone and worry less about wider gamut coverage. A photographer who regularly delivers printed albums benefits from a monitor with strong Adobe RGB coverage too, since prints can reproduce a wider range of colour than a typical screen or web display. Buying for the work you actually do, rather than the most feature-complete option available, keeps the decision grounded in something real.
+A photographer who only ever delivers digitally, with no printing involved, can lean more heavily on sRGB accuracy alone and worry less about wider gamut coverage. A photographer who regularly delivers printed albums benefits from a monitor with strong Adobe RGB coverage too, since prints can reproduce a wider range of colour than a typical screen or web display. Buying for the work you actually do, rather than the most feature-complete option available, keeps the decision grounded in something real rather than a spec sheet you'll never fully use.
 
 ## A quick way to sanity-check a monitor before buying
 
