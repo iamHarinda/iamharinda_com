@@ -46,6 +46,10 @@ Pull your last five galleries and time roughly how long each took to edit, then 
 
 Photographers who've outsourced for a full season or more rarely describe going back to full in-house editing once volume justifies the switch. The common regret isn't trying it, it's waiting too long to test it while turning down bookings or working through exhausted weekends that outsourcing could have prevented much earlier.
 
+## What growth actually looks like once the math works out
+
+Photographers who make this switch at the right moment, not too early, not too late, often describe a genuine shift in how the business feels, less reactive scrambling to clear a backlog, more room to actually plan bookings, marketing, and client relationships instead of every free hour disappearing into a queue of unedited galleries.
+
 ## A middle-ground worth considering if you're not ready to fully commit
 
 You don't need to outsource every single gallery to get real value from the option. Some photographers keep their favourite, most creatively meaningful weddings in-house while sending higher-volume, more straightforward bookings out, getting time back without giving up the hands-on work they genuinely enjoy doing themselves.
