@@ -34,6 +34,10 @@ Paying by credit card generally offers more dispute protection than a direct ban
 
 A clear, written proposal outlining exactly what's included. A deposit tied to that written scope, reasonable in size relative to the total. Subsequent payments tied to actual milestones reached, not just time passed. Full ownership transfer, domain, code, hosting access, happening at launch as a standard, expected part of the process rather than something you have to fight for afterward.
 
+## How this compares to deposits in other industries you already trust
+
+A contractor renovating part of your home, a caterer booking your event, a photographer holding your wedding date, all typically require some deposit before committing their time and turning away other work. Web development follows the exact same logic, and recognizing that parallel to industries you likely already navigate comfortably can make the request feel less uniquely risky than it might otherwise seem.
+
 ## What to do if you're asked for an unusually large deposit
 
 If a deposit request sits well above the twenty five to fifty percent range without a clear justification, larger projects with significant upfront material costs are one legitimate exception, ask directly why. A reasonable explanation should be easy to give, and a vague or defensive response to that question is worth weighing seriously before committing anything.
