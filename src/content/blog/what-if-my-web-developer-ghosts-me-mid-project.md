@@ -34,4 +34,16 @@ This entire scenario is the strongest possible argument for insisting on domain 
 
 Ask directly, before hiring anyone, what happens to access and files if the relationship ends unexpectedly partway through. A legitimate developer answers this without hesitation, and the answer itself tells you a great deal about how seriously they take client protection, regardless of how good their portfolio looks on the surface.
 
+## What a partially finished project is actually worth to a new developer
+
+Don't assume a half-finished project needs to start completely over if you have to bring in someone new. A new developer can often assess what exists, the design direction, any code already written, and decide honestly whether it's worth continuing from that point or better to start fresh, which is usually faster and cheaper than either extreme assumption going in.
+
+## How to structure future hires to prevent a repeat
+
+Once you've been through this once, structuring the next hire with smaller, more frequent milestones, weekly check-ins rather than one big deposit and a long silence until launch, gives you an early warning if something starts going wrong again, well before a full payment or a long stretch of radio silence has already happened.
+
+## Why this experience shouldn't sour you on freelancers generally
+
+One bad experience with an unreliable freelancer doesn't mean freelance hiring is inherently risky, it means that specific vetting process had a gap worth closing next time. The vast majority of freelance developers complete their projects professionally, and the protective steps outlined here exist specifically to filter out the exceptions before they become a costly problem.
+
 Every project here starts with a written, milestone-based proposal and [a free scope call](/web-development/) before any payment changes hands, specifically to avoid situations like this from the very start.
