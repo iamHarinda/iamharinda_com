@@ -58,4 +58,8 @@ If you're genuinely unsure which package fits, ask the designer directly which t
 
 Whichever approach you choose, going in with realistic expectations about what that specific package includes prevents disappointment partway through. A single-concept package isn't a lesser choice, and a five-concept package isn't automatically the premium one; they're simply different tools suited to different starting points and different decision-making situations.
 
+## The simplest way to sum this whole question up
+
+Concept count is a tool, not a scorecard. Pick the number that fits how clear your own vision already is, not the number that simply sounds the most generous on a pricing page.
+
 Not sure which approach fits your own project? [See how packages compare here](/fashion-designing/#pricing), or [send your idea over](/contact/) and get a straight recommendation based on where your own brief currently stands.
