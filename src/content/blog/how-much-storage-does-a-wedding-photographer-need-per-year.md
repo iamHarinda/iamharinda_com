@@ -38,6 +38,10 @@ Buying additional storage capacity during a slower off-season, rather than in a 
 
 Once a year, ideally during your slowest stretch, calculate your actual storage usage from the past twelve months and project forward based on expected bookings for the year ahead. This turns storage from a recurring emergency into a predictable, budgeted part of running the business.
 
+## Accounting for second shooters in the total
+
+If you regularly work with a second shooter, their files add to the total storage picture even if you're not the one directly responsible for backing them up. Factor their typical output into your planning if you end up storing or archiving their files alongside your own, since forgetting this piece is a common reason a seemingly generous storage calculation still comes up short by the end of a busy season.
+
 ## What happens if you underestimate and run out mid-season
 
 Running out of storage mid-wedding, or mid-season, forces rushed decisions, deleting files that shouldn't be deleted yet, delaying an offload because there's nowhere to put it, or scrambling to buy an expensive drive at retail price with no time to shop around. None of these are decisions you want to make under pressure, which is exactly why calculating ahead of time and buying with genuine headroom matters more than it might seem worth the effort in a calm moment.
