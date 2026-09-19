@@ -34,6 +34,10 @@ A very tight budget, a genuinely simple placement need, and a logo that's alread
 
 A team wanting to genuinely stand out, needing a repeat pattern or a coordinated multi-placement design, or working with a logo that's never been adapted for garment use before, benefits enough from professional design work that the modest cost is easy to justify against the alternative of a disappointing DIY result.
 
+## What team members or stakeholders actually notice
+
+Even people with no design background tend to notice when a logo looks stretched, awkwardly placed, or oddly scaled on a finished shirt, even if they can't articulate exactly why it looks off. This matters because the perceived professionalism of a team or brand's apparel often gets judged by people without any technical eye at all, which is exactly why getting placement and scale right matters regardless of who's actually doing the design work.
+
 ## A quick way to test which category your project falls into
 
 Try building your design in a free platform tool for fifteen minutes before deciding either way. If it comes together cleanly and looks the way you pictured, DIY is probably the right, cost-effective call for this specific project. If you're fighting the tool or the result looks noticeably off, that's a clear, practical signal that professional design help is worth the modest cost.
