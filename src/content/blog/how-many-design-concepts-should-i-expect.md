@@ -42,6 +42,10 @@ An extremely long, exhaustive brief covering every possible preference can somet
 
 If multiple concepts all feel appealing and you're stuck deciding, get input from a few trusted people outside the immediate decision-making group, since fresh eyes without the fatigue of having stared at all the options for hours often see clearly what feels muddied by too much deliberation. A tie-breaking outside opinion is a completely normal, reasonable way to resolve this kind of stall.
 
+## A quick gut check before finalizing which package to book
+
+If you can already picture roughly what you want and just need someone to execute it well, a single-concept package is likely the more efficient fit. If you genuinely have no strong preference yet and want to see real options before deciding anything, a multi-concept package earns its extra cost by giving you something concrete to react to.
+
 ## Why the number of concepts shouldn't be the only factor in choosing a package
 
 Two designers offering the same number of initial concepts can differ enormously in the quality of thinking behind each one. Looking at actual past work and how thoughtfully it addresses each client's specific brief matters more than simply comparing raw concept counts across different providers' package descriptions.
