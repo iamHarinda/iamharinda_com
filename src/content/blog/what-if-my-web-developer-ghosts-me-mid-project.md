@@ -34,6 +34,10 @@ This entire scenario is the strongest possible argument for insisting on domain 
 
 Ask directly, before hiring anyone, what happens to access and files if the relationship ends unexpectedly partway through. A legitimate developer answers this without hesitation, and the answer itself tells you a great deal about how seriously they take client protection, regardless of how good their portfolio looks on the surface.
 
+## Why a slower, more careful start beats a rushed one
+
+The temptation to skip vetting and jump straight into a project usually comes from wanting the website live as soon as possible. That urgency is understandable, but it's exactly the pressure that leads to skipping the checks that would have caught a bad fit before any money or time was actually lost to it.
+
 ## The emotional side of this that's worth acknowledging
 
 Beyond the practical and financial disruption, being ghosted mid-project feels genuinely unsettling, especially for a business owner who isn't deeply familiar with this industry and doesn't have an easy way to judge whether what happened is normal or a rare exception. It's worth knowing upfront that this experience, while real, is not the typical outcome, and it doesn't mean the next hire is doomed to repeat the exact same outcome all over again, especially once you know what to check for beforehand.
