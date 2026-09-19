@@ -38,6 +38,10 @@ A team wanting to genuinely stand out, needing a repeat pattern or a coordinated
 
 Professional design costs for a modest polo project are often a small fraction of what the finished garments themselves will cost across a full team order. Framed against the total spend, the design portion is rarely the part worth cutting corners on to save a relatively small amount of money.
 
+## What to do if budget is the deciding factor either way
+
+If cost genuinely is the deciding constraint, ask a designer directly whether a smaller, simplified version of your vision fits your budget, rather than assuming professional design is entirely out of reach. Many designers can scale a project's scope to match a real budget rather than it being all-or-nothing between DIY and a full custom package.
+
 ## What team members or stakeholders actually notice
 
 Even people with no design background tend to notice when a logo looks stretched, awkwardly placed, or oddly scaled on a finished shirt, even if they can't articulate exactly why it looks off. This matters because the perceived professionalism of a team or brand's apparel often gets judged by people without any technical eye at all, which is exactly why getting placement and scale right matters regardless of who's actually doing the design work.
