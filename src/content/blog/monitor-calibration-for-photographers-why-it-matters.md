@@ -44,6 +44,6 @@ If you're choosing between a new lens and getting your monitor properly calibrat
 
 ## What happens the first time you actually calibrate
 
-Photographers who calibrate for the first time after years of working uncalibrated often describe a real moment of surprise, realizing their whites had a faint cast, or skin tones sat slightly warmer than they'd assumed. This isn't a sign anything was done badly before. It's simply what happens when you finally have a trustworthy reference after working without one, and it's worth expecting rather than being caught off guard by once you finally make the switch.
+Photographers who calibrate for the first time after years of working uncalibrated often describe a real moment of surprise, realizing their whites had a faint cast, or skin tones sat slightly warmer than they'd assumed. This isn't a sign anything was done badly before. It's simply what happens when you finally have a trustworthy reference after working without one, and it's worth expecting rather than being caught off guard by once you finally make the switch and see your own past edits in a genuinely accurate light for the first time.
 
 Every edit delivered here happens on a Calman-verified, factory-calibrated monitor specifically because of everything above — skin tones and whites get judged against something trustworthy, not a guess. If you want to see the difference for yourself, [send two or three photos over for a free sample edit](/contact/) and compare it against your own screen.
