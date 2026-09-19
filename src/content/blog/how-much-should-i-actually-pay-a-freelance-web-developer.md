@@ -30,6 +30,10 @@ Timeline pressure, a rush project condensed into a much shorter window than norm
 
 Rather than asking "what's a fair price for a website," describe your specific project, page count, required features, whether you'll manage content yourself, to a few different developers and compare the quotes you actually receive. This grounds the pricing question in your real project instead of a generic range that might not reflect what you specifically need built.
 
+## Why comparing yourself to a friend's quote rarely helps
+
+A friend's website, even one that sounds similar on the surface, often differs meaningfully in scope, complexity, or the specific developer's experience level, none of which shows up in a casual comparison of the final number alone. Getting your own accurate quote based on your own actual project remains more useful than trying to benchmark against someone else's secondhand story.
+
 ## What ongoing costs to budget for beyond the initial build
 
 Beyond the upfront project cost, factor in hosting, typically a modest monthly or annual fee, a domain renewal, and either your own time or a maintenance arrangement for updates and occasional fixes after launch. A quote that only covers the build itself is telling you half the real financial picture, and asking directly about these ongoing costs before signing anything avoids an unpleasant surprise once the invoice for the actual build has already been paid.
