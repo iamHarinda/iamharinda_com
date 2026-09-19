@@ -42,6 +42,10 @@ Requesting design work during a designer's busiest stretch, right before a new s
 
 When two quotes for a similar-sounding project differ significantly, ask each designer directly what's included, number of concepts, revision rounds, final file formats, rather than comparing the bottom-line numbers alone. This levels the comparison and often reveals that the apparently cheaper option is missing something the pricier one includes as standard.
 
+## What ongoing costs to expect beyond the initial design fee
+
+A logo itself is typically a one-time cost, but factor in the cost of actually producing it, embroidery digitizing fees, print setup costs, which are separate from the design fee and sometimes overlooked when budgeting for the whole project. Asking about these production-side costs alongside the design quote gives a more complete, accurate picture of the total investment.
+
 ## Why a logo's intended use should shape the conversation from day one
 
 Mention upfront whether the logo needs to work on embroidered garments, digital platforms, printed materials, or all three, since this genuinely affects how a designer approaches colour count, detail level, and overall complexity. A designer working blind to these constraints may produce something beautiful that later needs real rework once its actual intended use becomes clear.
