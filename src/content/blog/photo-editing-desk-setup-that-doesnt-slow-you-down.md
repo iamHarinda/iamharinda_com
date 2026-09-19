@@ -50,6 +50,10 @@ Whatever your own setup looks like, the actual editing still needs a careful, co
 
 A proper monitor arm, rather than a fixed stand, lets you fine-tune height and distance precisely instead of settling for whatever position a stock stand happens to land at. A wrist rest and a mouse suited to hours of repetitive clicking rather than occasional casual use round out the small, inexpensive additions that meaningfully reduce physical strain over a long career of screen-heavy work, one that's easy to overlook until it's already causing discomfort.
 
+## A last consideration for small or shared spaces
+
+Not everyone has a dedicated home office to build an ideal setup in. If you're editing from a shared space or a small apartment, a fold-away monitor arm and a portable calibrated display setup can be packed away between sessions without sacrificing the accuracy or comfort a fixed desk provides, proving that space constraints don't have to mean settling for a worse editing environment.
+
 ## A final thought on treating this as a real investment
 
 A well-built editing space isn't a luxury purchase, it's infrastructure for a business built around thousands of hours of screen time. Treating it with the same seriousness as camera gear, budgeting for it deliberately rather than making do with whatever furniture happened to already be in the room, pays off in both comfort and the quality of attention you can bring to every single gallery.
