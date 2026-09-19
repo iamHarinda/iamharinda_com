@@ -34,4 +34,16 @@ Time yourself building just the homepage using a builder platform's free trial b
 
 Neither choice is universally right. DIY suits businesses with more time than money, hiring suits businesses with more money than time, and knowing honestly which category your own situation falls into settles this decision better than any general advice ever could.
 
+## What happens to a DIY site as the business grows
+
+A site built quickly through a DIY builder in a business's early days sometimes needs a full rebuild once the business outgrows what that platform can handle, meaning the "savings" from the original DIY effort get partially undone by a second project down the line. This isn't a reason to avoid DIY entirely, just a cost worth factoring into the honest total rather than only counting the upfront number.
+
+## Why some business owners regret the DIY route specifically
+
+The most common regret isn't the time spent, it's discovering months later that a DIY site was quietly underperforming in ways its owner had no way to recognize, poor mobile experience, weak search visibility, slow load times, none of which show up as an obvious problem until a professional points them out or a competitor's site simply performs better.
+
+## A final way to frame this decision honestly
+
+This isn't really a question of which option is objectively cheaper in the abstract. It's a question of which currency, your own time or your business's money, is currently the scarcer resource, and being honest with yourself about that answer usually makes the right choice for your specific situation fairly obvious.
+
 If hiring seems like the better fit for where your business actually stands right now, a [free scope call](/web-development/) turns a vague idea into a clear, fixed-price plan without requiring you to learn anything technical first.
