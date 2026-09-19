@@ -42,6 +42,10 @@ If your workflow regularly involves referencing multiple things at once, client 
 
 A second monitor purchase also usually means a monitor arm or additional desk space, possibly a graphics card upgrade if your current computer doesn't support driving two displays well, and extra cabling. Budgeting for the full setup, not just the display itself, avoids an unpleasant surprise once you're partway through the upgrade and realize the monitor alone wasn't the whole cost.
 
+## What other photographers actually report after switching
+
+Photographers who add a second monitor after years of single-screen editing often describe an adjustment period of a week or two before the new arrangement feels natural, followed by genuinely not wanting to go back to a single screen afterward. This is worth knowing going in, since an initial "this doesn't feel like a big difference yet" reaction in the first few days isn't necessarily a sign the upgrade wasn't worth it.
+
 ## Revisiting the decision as your workflow changes
 
 A setup that felt unnecessary a year ago can become genuinely worth it once your business grows into heavier retouching work, more frequent client back-and-forth during editing, or simply more volume that makes every small efficiency add up. This isn't a decision that needs to be made once and never revisited; checking back in periodically as your actual workflow evolves keeps the setup matched to real, current needs rather than an outdated assumption.
