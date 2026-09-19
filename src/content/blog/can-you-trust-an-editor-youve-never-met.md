@@ -34,6 +34,10 @@ Start with a small, low-stakes batch rather than your most important wedding of 
 
 Being careful about who touches irreplaceable client files isn't paranoia, it's basic professional diligence that protects both you and the couples trusting you with their wedding day. A legitimate service expects and welcomes this level of scrutiny rather than being put off by it.
 
+## What a genuine, verifiable track record actually looks like
+
+Reviews spread naturally across a real span of time, mentioning specific, believable details rather than generic praise, are a stronger signal than a large number of reviews clustered suspiciously close together. A quick look at how reviews are distributed over time tells you more about legitimacy than the star rating alone ever could.
+
 ## Questions worth asking directly before committing anything
 
 How long have you been editing professionally, and can I see verifiable reviews? What happens to my files after delivery, are they deleted, kept, backed up on your end? Do I pay before or after I've approved the work? A legitimate service answers all three clearly and without hesitation, and hesitation or vagueness on any of them is worth taking seriously as a signal.
