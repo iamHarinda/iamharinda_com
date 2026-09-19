@@ -34,4 +34,16 @@ Start with a small, low-stakes batch rather than your most important wedding of 
 
 Being careful about who touches irreplaceable client files isn't paranoia, it's basic professional diligence that protects both you and the couples trusting you with their wedding day. A legitimate service expects and welcomes this level of scrutiny rather than being put off by it.
 
+## Questions worth asking directly before committing anything
+
+How long have you been editing professionally, and can I see verifiable reviews? What happens to my files after delivery, are they deleted, kept, backed up on your end? Do I pay before or after I've approved the work? A legitimate service answers all three clearly and without hesitation, and hesitation or vagueness on any of them is worth taking seriously as a signal.
+
+## Why communication style itself is a meaningful signal
+
+How someone communicates during the sales conversation, before any money has changed hands, tends to predict how they'll communicate once you're an actual paying client with real work in progress. Clear, prompt, specific answers now are a reasonable proxy for what to expect later, when a real gallery and a real deadline are on the line.
+
+## The bigger picture worth remembering here
+
+Every professional relationship in this business, a venue, a second shooter, a printing lab, started as a stranger you had to extend some initial trust to. An editing service is no different in principle, it just deserves the same careful, deliberate evaluation before that trust gets extended, rather than either blind faith or permanent refusal to ever try.
+
 Wondering whether this specific service is trustworthy enough for your own files? [A free sample edit](/contact/) is exactly the low-risk way to find out, on your own photos, before anything real is ever on the line.
