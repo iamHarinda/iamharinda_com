@@ -34,6 +34,10 @@ Regardless of how many initial concepts a package includes, the revision process
 
 If you already have strong opinions about direction, colours, style references, a single concept package with solid revision support is often the more efficient, cost-effective choice. If you're starting from a blank slate or need to satisfy multiple decision-makers with different tastes, paying for multiple initial concepts genuinely earns its extra cost.
 
+## Why over-explaining your brief sometimes backfires
+
+An extremely long, exhaustive brief covering every possible preference can sometimes constrain a designer into producing safe, literal interpretations rather than genuinely creative options, especially in a multi-concept package meant to explore different directions. A clear but reasonably concise brief, leaving some room for creative interpretation, often produces more interesting initial concepts than one that tries to specify every detail upfront.
+
 ## What happens when you genuinely can't choose between concepts
 
 If multiple concepts all feel appealing and you're stuck deciding, get input from a few trusted people outside the immediate decision-making group, since fresh eyes without the fatigue of having stared at all the options for hours often see clearly what feels muddied by too much deliberation. A tie-breaking outside opinion is a completely normal, reasonable way to resolve this kind of stall.
