@@ -36,7 +36,7 @@ Physical damage from drops is the most common failure mode for photographers who
 
 ## Why brand reputation matters more here than in most categories
 
-Storage is one area where buying a lesser-known brand purely to save money carries outsized risk, since the entire value of a drive is trusting it with irreplaceable files. Established brands with a genuine track record in professional use are worth the modest premium over unfamiliar alternatives promising similar specs at a lower price, especially for anything holding client work you can't recreate.
+Storage is one area where buying a lesser-known brand purely to save money carries outsized risk, since the entire value of a drive is trusting it with irreplaceable files. Established brands with a genuine track record in professional use are worth the modest premium over unfamiliar alternatives promising similar specs at a lower price, especially for anything holding client work you can't recreate if something actually goes wrong.
 
 ## A realistic buying plan for a growing wedding business
 
