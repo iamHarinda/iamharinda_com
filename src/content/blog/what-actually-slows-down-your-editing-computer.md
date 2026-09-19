@@ -30,6 +30,10 @@ Where your active catalog and current working files live matters more than which
 
 Keeping Lightroom and your operating system reasonably current generally helps performance and stability, but immediately installing every update the moment it releases, without checking for known issues first, occasionally introduces new problems rather than fixing old ones. A brief check of user reports before updating, especially right before a busy season, is a reasonable middle ground.
 
+## Multiple monitors and graphics card limitations
+
+Driving two or three monitors, especially at high resolution, places real demand on a computer's graphics capability, and an underpowered or older graphics setup can introduce lag specifically when multiple displays are active that wouldn't appear on a single-screen setup. If slowdown started right after adding a second monitor, this connection is worth checking before assuming something else broke.
+
 ## A simple diagnostic process worth running once
 
 Close everything except your editing software, disable background sync temporarily, and see if performance improves noticeably. If it does, background processes were a real factor. If nothing changes, the bottleneck is more likely hardware or catalog-related, and you've just saved yourself from chasing the wrong fix based on a guess.
