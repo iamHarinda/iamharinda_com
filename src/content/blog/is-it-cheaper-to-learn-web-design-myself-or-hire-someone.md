@@ -40,7 +40,7 @@ If you don't already know what your time is worth to the business, divide your t
 
 ## Why this decision deserves an honest answer, not a default one
 
-Plenty of business owners default to DIY simply because it feels like the safer, more responsible choice on the surface, avoiding an upfront cost. That instinct is worth questioning directly rather than following automatically, since the actual cheaper option depends entirely on your specific time, skills, and business stage, not on which choice merely feels more frugal at first glance.
+Plenty of business owners default to DIY simply because it feels like the safer, more responsible choice on the surface, avoiding an upfront cost. That instinct is worth questioning directly rather than following automatically, since the actual cheaper option depends entirely on your specific time, skills, and business stage, not on which choice merely feels more frugal or responsible at first glance.
 
 ## What happens to a DIY site as the business grows
 
