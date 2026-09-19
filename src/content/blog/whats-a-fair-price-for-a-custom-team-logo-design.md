@@ -52,7 +52,7 @@ Mention upfront whether the logo needs to work on embroidered garments, digital 
 
 ## A closing thought on what "fair" actually means here
 
-Fair pricing isn't a fixed number that applies universally, it's a price that matches the actual scope, effort, and deliverables involved for your specific project. Understanding what goes into that calculation, rather than anchoring purely on the lowest number you've seen advertised somewhere, is what actually leads to a satisfying outcome for both sides of the transaction, not just a number that felt cheap on the day you paid it.
+Fair pricing isn't a fixed number that applies universally, it's a price that matches the actual scope, effort, and deliverables involved for your specific project. Understanding what goes into that calculation, rather than anchoring purely on the lowest number you've seen advertised somewhere, is what actually leads to a satisfying outcome for both sides of the transaction, not just a number that happened to feel cheap on the specific day you paid it.
 
 ## What to do if your budget genuinely can't stretch to a fuller package
 
