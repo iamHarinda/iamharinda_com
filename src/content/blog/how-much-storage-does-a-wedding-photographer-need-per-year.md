@@ -58,4 +58,8 @@ The first year of calculating actual storage needs is the hardest, since you're 
 
 A basic spreadsheet tracking bookings, average file size per wedding, and running storage totals, updated a few times a season, turns this from a vague worry into a number you can actually see coming. It takes minutes to set up and pays for itself the first time it prevents a mid-season storage crisis.
 
+## A final word on treating storage as a solved problem
+
+Once a proper plan is in place, storage stops being a recurring source of stress and becomes just another predictable line item in running the business, checked once a year and otherwise left to quietly do its job in the background.
+
 Whatever your storage setup looks like, the files inside it eventually need real editing attention. [Pricing for that runs flat by photo count](/pricing/#photo-editing), regardless of how large your storage system has grown to support it over the years.
