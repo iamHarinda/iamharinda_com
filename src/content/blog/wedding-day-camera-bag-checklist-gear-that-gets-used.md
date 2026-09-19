@@ -48,7 +48,7 @@ Gear needs and priorities shift as your business changes, a new lens becomes ess
 
 ## Packing the bag the same way every single time
 
-Beyond just what's in the bag, packing everything in the same specific spot every single time means you can find and grab anything without looking, purely by feel, during a fast-moving moment when there's no time to search. This muscle memory, built through consistent repetition rather than reorganizing the bag differently each week, becomes genuinely valuable exactly when speed matters most.
+Beyond just what's in the bag, packing everything in the same specific spot every single time means you can find and grab anything without looking, purely by feel, during a fast-moving moment when there's no time to search. This muscle memory, built through consistent repetition rather than reorganizing the bag differently each week, becomes genuinely valuable exactly when speed matters most and there's no time to think twice about where anything is.
 
 ## Why the RAW files this gear captures matter more than the gear itself
 
