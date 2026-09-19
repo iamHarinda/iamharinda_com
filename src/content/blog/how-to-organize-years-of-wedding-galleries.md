@@ -44,7 +44,7 @@ If you've been shooting for years before settling on a consistent naming and fol
 
 ## Teaching this system to anyone else who touches your files
 
-If a second shooter, an assistant, or an outsourced editor ever handles part of your workflow, a written, one-page description of your naming and folder convention means they can follow it correctly from day one, rather than guessing and introducing inconsistency into a system you've otherwise kept clean for years.
+If a second shooter, an assistant, or an outsourced editor ever handles part of your workflow, a written, one-page description of your naming and folder convention means they can follow it correctly from day one, rather than guessing and introducing inconsistency into a system you've otherwise kept clean for years of careful, deliberate effort.
 
 ## Why this organization work pays off beyond convenience
 
