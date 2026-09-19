@@ -38,4 +38,16 @@ Not every cloud service is built with large RAW files and photography workflows 
 
 If you're currently running with no real backup system at all, start with a single local backup drive this week, the cheapest, fastest fix for the most immediate risk. Add cloud backup as the next step once that habit is solid, rather than trying to build the complete, ideal system all at once and never quite getting around to starting.
 
+## What to check when comparing cloud providers directly
+
+Beyond raw storage pricing, check upload bandwidth throttling, some services slow uploads noticeably once you exceed a certain volume in a billing period, and file size limits on individual uploads, since some consumer-focused services cap individual file sizes in ways that complicate uploading large RAW files or exported video. These details rarely show up prominently in marketing but matter enormously once you're actually depending on the service daily.
+
+## Automating the process so it doesn't rely on memory
+
+Most cloud backup services support automatic syncing of a specific folder, meaning completed galleries moved into that folder upload automatically without requiring a manual trigger every time. Setting this up once removes the risk of forgetting to manually back up a gallery during a busy stretch, turning an easily-skipped manual step into something that happens reliably in the background.
+
+## A word on encryption and client privacy
+
+Wedding photos are deeply personal, and a cloud service with genuine end-to-end encryption protects client privacy in a way that matters beyond just your own peace of mind. This is worth checking specifically when comparing providers, rather than assuming all cloud storage services handle security identically.
+
 However your files end up stored, the actual editing still needs a careful, colour-accurate eye behind it. [Send a free sample edit request](/contact/) to see what that looks like before committing a full gallery to anyone.
