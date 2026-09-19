@@ -44,4 +44,4 @@ Think back to your last wedding. Were the cards backed up to a second location w
 
 ## The bigger picture this fits into
 
-Fast backup is the first link in the chain that eventually leads to a finished, delivered gallery. Getting files safe quickly means whatever happens next, culling, editing yourself, or [sending files out for a free sample edit](/contact/) to test an outsourced service, starts from a position of real security rather than quiet, background anxiety about a card that hasn't been backed up yet.
+Fast backup is the first link in the chain that eventually leads to a finished, delivered gallery. Getting files safe quickly means whatever happens next, culling, editing yourself, or [sending files out for a free sample edit](/contact/) to test an outsourced service, starts from a position of real security rather than quiet, background anxiety about a card that hasn't been backed up yet, sitting somewhere in a bag you're hoping nothing happens to.
