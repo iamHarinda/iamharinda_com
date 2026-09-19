@@ -31,7 +31,21 @@ const jsonLd = [breadcrumb([
         </p>
       </div>
 
-      <div class="blog-grid">
+      <div class="field blog-search">
+        <label for="blog-search-input" class="sr-only">Search articles</label>
+        <input
+          type="search"
+          id="blog-search-input"
+          placeholder={`Search ${posts.length} articles…`}
+          autocomplete="off"
+        />
+      </div>
+
+      <p class="blog-search__empty" id="blog-search-empty" hidden>
+        No articles match that search. Try a different word.
+      </p>
+
+      <div class="blog-grid" id="blog-grid">
         {
           posts.map((post) => (
             <a class="card blog-card rise" href={`/blog/${post.id}/`} data-spot>
@@ -50,4 +64,26 @@ const jsonLd = [breadcrumb([
       </div>
     </div>
   </section>
+
+  <script>
+    const input = document.getElementById("blog-search-input");
+    const grid = document.getElementById("blog-grid");
+    const empty = document.getElementById("blog-search-empty");
+    if (input && grid && empty) {
+      const cards = Array.from(grid.querySelectorAll(".blog-card"));
+      const haystacks = cards.map((card) =>
+        (card.textContent || "").toLowerCase()
+      );
+      input.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+        let visible = 0;
+        cards.forEach((card, i) => {
+          const match = query === "" || haystacks[i].includes(query);
+          card.hidden = !match;
+          if (match) visible++;
+        });
+        empty.hidden = visible !== 0;
+      });
+    }
+  </script>
 </BaseLayout>
