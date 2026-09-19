@@ -34,6 +34,10 @@ Buying two drives doesn't automatically mean you have a real backup if both driv
 
 Physical damage from drops is the most common failure mode for photographers who travel with drives between shoots and a home office. Connector wear from frequent plugging and unplugging is another common, less-discussed issue, one that a drive with a sturdier port and cable connection resists better than the cheapest options on the market. Buying a reasonably durable drive upfront costs less over a career than replacing failed budget drives repeatedly.
 
+## Why brand reputation matters more here than in most categories
+
+Storage is one area where buying a lesser-known brand purely to save money carries outsized risk, since the entire value of a drive is trusting it with irreplaceable files. Established brands with a genuine track record in professional use are worth the modest premium over unfamiliar alternatives promising similar specs at a lower price, especially for anything holding client work you can't recreate.
+
 ## A realistic buying plan for a growing wedding business
 
 Start with one solid rugged SSD for on-location and active working files, add a second drive as a local backup of the first, and layer in cloud storage as your off-site copy once budget allows. This mirrors the 3-2-1 backup approach directly and scales naturally as booking volume grows, rather than requiring a complete overhaul of your storage setup every time business picks up.
