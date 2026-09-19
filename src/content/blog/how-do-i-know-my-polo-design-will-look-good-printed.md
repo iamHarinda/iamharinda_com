@@ -38,6 +38,10 @@ Once you've ordered from a specific designer and supplier combination successful
 
 A designer who regularly works with real printers and embroiderers, not just other designers, tends to build files correctly for production from the start, catching potential CMYK or fabric-interaction issues before they ever become a problem you'd otherwise only discover much later, at the sample stage or worse.
 
+## Keeping copies of approved samples for future reference
+
+Once a sample is approved, keep it physically or photograph it clearly alongside notes on the exact colours and settings used. This becomes a genuinely useful reference point for reorders or related future projects, saving time re-establishing what "correct" looked like the first time around.
+
 ## Why smaller test batches make sense for uncertain orders
 
 If you're not entirely confident in a design direction yet, ordering a small test batch of five or ten shirts before committing to a full run of fifty or a hundred limits your exposure to a disappointing result. This costs a bit more per unit at the small scale, but it's cheap insurance against a much larger, more expensive mistake if something doesn't translate the way you expected.
