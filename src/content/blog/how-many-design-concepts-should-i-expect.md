@@ -50,6 +50,10 @@ If you can already picture roughly what you want and just need someone to execut
 
 Two designers offering the same number of initial concepts can differ enormously in the quality of thinking behind each one. Looking at actual past work and how thoughtfully it addresses each client's specific brief matters more than simply comparing raw concept counts across different providers' package descriptions.
 
+## Why trusting the designer's recommendation is often reasonable
+
+If you're genuinely unsure which package fits, ask the designer directly which they'd recommend based on your brief, and expect an honest answer even if it means recommending the smaller, cheaper option. A designer confident in their process usually gives this kind of straightforward guidance rather than steering you toward whatever package costs more regardless of fit.
+
 ## A final practical note on managing this decision well
 
 Whichever approach you choose, going in with realistic expectations about what that specific package includes prevents disappointment partway through. A single-concept package isn't a lesser choice, and a five-concept package isn't automatically the premium one; they're simply different tools suited to different starting points and different decision-making situations.
