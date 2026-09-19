@@ -36,7 +36,7 @@ Driving two or three monitors, especially at high resolution, places real demand
 
 ## A note on operating system bloat over time
 
-Just like a Lightroom catalog, an operating system that's run for years without a fresh setup accumulates background services, leftover files from uninstalled software, and startup programs that quietly consume resources every time the machine boots. A clean reinstall, done occasionally, sometimes restores noticeable speed to a machine that otherwise seemed to be aging out, without spending a single cent on new hardware to get there.
+Just like a Lightroom catalog, an operating system that's run for years without a fresh setup accumulates background services, leftover files from uninstalled software, and startup programs that quietly consume resources every time the machine boots. A clean reinstall, done occasionally, sometimes restores noticeable speed to a machine that otherwise seemed to be aging out, without spending a single cent on new hardware to get there, just an afternoon and a proper backup beforehand.
 
 ## Why blaming the wrong cause wastes real money
 
