@@ -46,6 +46,10 @@ A second monitor purchase also usually means a monitor arm or additional desk sp
 
 Position your primary editing monitor directly in front of you, centered, with the secondary monitor angled slightly to one side rather than placed dead center between you and the main screen. This keeps your neck in a neutral position for the work that actually needs sustained focus, while the secondary screen stays within easy glancing distance for reference material without ever competing for your primary line of sight during genuinely focused editing work.
 
+## A note on matching brightness between two screens
+
+Two monitors with mismatched brightness or colour temperature side by side create a subtle but real distraction, since your eyes keep readjusting every time you glance between them. Setting both screens to a similar brightness level, even if only one is fully colour-calibrated, makes the whole arrangement feel more cohesive during long sessions.
+
 ## What other photographers actually report after switching
 
 Photographers who add a second monitor after years of single-screen editing often describe an adjustment period of a week or two before the new arrangement feels natural, followed by genuinely not wanting to go back to a single screen afterward. This is worth knowing going in, since an initial "this doesn't feel like a big difference yet" reaction in the first few days isn't necessarily a sign the upgrade wasn't worth it, just that any new habit takes a little time to actually settle in.
