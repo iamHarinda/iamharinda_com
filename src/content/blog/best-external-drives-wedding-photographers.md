@@ -34,6 +34,10 @@ Buying two drives doesn't automatically mean you have a real backup if both driv
 
 Physical damage from drops is the most common failure mode for photographers who travel with drives between shoots and a home office. Connector wear from frequent plugging and unplugging is another common, less-discussed issue, one that a drive with a sturdier port and cable connection resists better than the cheapest options on the market. Buying a reasonably durable drive upfront costs less over a career than replacing failed budget drives repeatedly.
 
+## A note on warranty and support
+
+Reputable drive manufacturers typically back their products with multi-year warranties, and while a warranty doesn't recover lost data, it does signal a manufacturer's own confidence in their product's reliability. A suspiciously short or absent warranty on an unfamiliar brand is worth treating as a warning sign rather than dismissing as unimportant.
+
 ## Why brand reputation matters more here than in most categories
 
 Storage is one area where buying a lesser-known brand purely to save money carries outsized risk, since the entire value of a drive is trusting it with irreplaceable files. Established brands with a genuine track record in professional use are worth the modest premium over unfamiliar alternatives promising similar specs at a lower price, especially for anything holding client work you can't recreate if something actually goes wrong down the line.
