@@ -1,0 +1,30 @@
+---
+// Legal page body: title, dates, table of contents (sticky on ≥1024px) and prose.
+// Every section in `toc` must have a matching <h2 id> in the slot so Play
+// reviewers can deep-link to it.
+import { studio, longDate } from "../../lib/orbitra.js";
+
+const { title, subtitle, toc = [], updated = studio.lastUpdated, effective = studio.effective } = Astro.props;
+---
+
+<div class="o-legal">
+  <div class="o-wrap o-legal__grid">
+    <nav class="o-toc" aria-label="On this page">
+      <p class="o-caption">On this page</p>
+      <ol>
+        {toc.map((s) => <li><a href={`#${s.id}`}>{s.label}</a></li>)}
+      </ol>
+    </nav>
+    <article class="o-doc">
+      <header class="o-doc__head">
+        <h1 class="o-title">{title}</h1>
+        {subtitle && <p class="o-lead" style="margin-top: var(--space-2)">{subtitle}</p>}
+        <p class="o-caption">
+          <span>Last updated: <time datetime={updated}>{longDate(updated)}</time></span>
+          <span>Effective: <time datetime={effective}>{longDate(effective)}</time></span>
+        </p>
+      </header>
+      <slot />
+    </article>
+  </div>
+</div>

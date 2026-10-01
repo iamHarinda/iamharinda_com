@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habit Tracker — Brand Guidelines</title>
+<style>
+  @font-face { font-family: Inter; src: url(fonts/Inter-Regular.otf); font-weight: 400; }
+  @font-face { font-family: Inter; src: url(fonts/Inter-SemiBold.otf); font-weight: 600; }
+  @font-face { font-family: Inter; src: url(fonts/Inter-Bold.otf); font-weight: 700; }
+  @font-face { font-family: Inter; src: url(fonts/Inter-ExtraBold.otf); font-weight: 800; }
+  :root { --navy:#14213D; --coral:#FF6B4A; --teal:#2EC4B6; --sun:#FFC857; --cream:#FFF8F0; --ink:#0B1220; --slate:#5C6B7A; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Inter, system-ui, sans-serif; background: var(--cream); color: var(--navy); line-height: 1.55; }
+  header { background: var(--navy); color: var(--cream); padding: 72px 24px 64px; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header .wrap { display:flex; gap:32px; align-items:center; flex-wrap:wrap; }
+  header img { width: 120px; height:120px; }
+  h1 { font-size: clamp(36px, 6vw, 56px); font-weight: 800; letter-spacing: -0.02em; margin: 0; }
+  header p { margin: 8px 0 0; opacity: .8; font-size: 18px; }
+  section { padding: 56px 0; border-bottom: 1px solid #E8DED2; }
+  h2 { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--coral); margin: 0 0 8px; }
+  h3 { font-size: 28px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 16px; }
+  p.lead { font-size: 18px; color: var(--slate); max-width: 680px; }
+  .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .tile { background:#fff; border:1px solid #E8DED2; border-radius:16px; padding:16px; }
+  .tile img { width:100%; display:block; border-radius:10px; }
+  .tile.dark { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+  .tile small { display:block; margin-top:10px; color: var(--slate); font-size:13px; }
+  .tile.dark small { color:#A9B4C2; }
+  .swatch { border-radius:16px; overflow:hidden; border:1px solid #E8DED2; background:#fff; }
+  .swatch div { height:110px; }
+  .swatch p { margin:0; padding:12px 14px; font-size:14px; }
+  .swatch b { display:block; font-size:15px; }
+  .wide img { width:100%; border-radius:12px; display:block; }
+  table { border-collapse: collapse; width:100%; font-size:15px; background:#fff; border-radius:12px; overflow:hidden; }
+  td, th { text-align:left; padding:12px 14px; border-bottom:1px solid #F0E8DD; }
+  th { background:#F4ECE2; font-weight:600; }
+  .do, .dont { border-radius:16px; padding:20px; }
+  .do { background:#E6F7F5; } .dont { background:#FFEDE8; }
+  .do h4, .dont h4 { margin:0 0 8px; }
+  ul { margin: 0; padding-left: 20px; }
+  .type-sample { background:#fff; border-radius:16px; padding:24px; border:1px solid #E8DED2; }
+  footer { padding: 40px 24px; text-align:center; color: var(--slate); font-size:14px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="logo/png/habit-tracker-icon.png" alt="Habit Tracker app icon">
+    <div>
+      <h1>Habit Tracker</h1>
+      <p>Brand guidelines · by Orbitra · v1.0</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>01 · The idea</h2>
+    <h3>Log it. Count it. Remember it.</h3>
+    <p class="lead">Habit Tracker is a calm, private life log. People add the things they do — office days, gym, visiting Mom, a haircut — and instantly see when, how often, and how long ago. The brand should feel like a trusted notebook: warm, clear, and quietly satisfying when you tick something off.</p>
+  </section>
+
+  <section>
+    <h2>02 · Logo</h2>
+    <h3>The Orbit Check</h3>
+    <p class="lead">Twelve day-segments orbit a check mark. Nine are complete and a teal planet marks where you are now. It reads as "a cycle of days, ticked off" — the one thing the app does best. The orbit also ties the app to its maker, Orbitra.</p>
+    <div class="grid">
+      <div class="tile"><img src="logo/png/habit-tracker-icon.png" alt=""><small>App icon (rounded)</small></div>
+      <div class="tile"><img src="logo/png/habit-tracker-mark-on-light.png" alt=""><small>Mark on light</small></div>
+      <div class="tile dark"><img src="logo/png/habit-tracker-mark-on-dark.png" alt=""><small>Mark on dark</small></div>
+      <div class="tile"><img src="logo/png/habit-tracker-mark-mono-black.png" alt=""><small>Mono black (print, stamps)</small></div>
+    </div>
+    <div class="grid" style="margin-top:16px; grid-template-columns: 1fr 1fr;">
+      <div class="tile"><img src="logo/png/habit-tracker-horizontal-light.png" alt=""><small>Horizontal · light</small></div>
+      <div class="tile dark"><img src="logo/png/habit-tracker-horizontal-dark.png" alt=""><small>Horizontal · dark</small></div>
+    </div>
+    <div class="grid" style="margin-top:16px; grid-template-columns: 1fr 1fr;">
+      <div class="do"><h4>Do</h4><ul><li>Keep clear space of 25% of the mark's width on all sides</li><li>Use the full-colour icon on Navy whenever possible</li><li>Use the mono versions on photos or single-colour print</li><li>Minimum size: 24 px (mark), 120 px wide (horizontal)</li></ul></div>
+      <div class="dont"><h4>Don't</h4><ul><li>Change the number of done segments or recolour the check</li><li>Rotate, stretch, outline or add shadows to the mark</li><li>Place the colour mark on Coral or busy photos</li><li>Rewrite "Habit Tracker" in another typeface</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>03 · Developer brand</h2>
+    <h3>Orbitra</h3>
+    <p class="lead">Orbitra is the studio that publishes Habit Tracker and future apps. Its ringed-planet mark shares the Coral accent and the orbit idea, so every Orbitra app feels part of one family.</p>
+    <div class="grid" style="grid-template-columns: 220px 1fr 1fr;">
+      <div class="tile dark"><img src="logo/png/orbitra-icon.png" alt=""><small>Orbitra icon</small></div>
+      <div class="tile"><img src="logo/png/orbitra-horizontal-light.png" alt=""><small>Light</small></div>
+      <div class="tile dark"><img src="logo/png/orbitra-horizontal-dark.png" alt=""><small>Dark</small></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>04 · Colour</h2>
+    <h3>Navy, Coral, and a little Teal</h3>
+    <p class="lead">Navy and Cream do most of the work. Coral is the action colour — buttons, the check, the add button. Teal means "done". Sun Yellow is only for streaks.</p>
+    <div class="grid">
+      <div class="swatch"><div style="background:#14213D"></div><p><b>Midnight Navy</b>#14213D · Brand, headers</p></div>
+      <div class="swatch"><div style="background:#FF6B4A"></div><p><b>Comet Coral</b>#FF6B4A · Actions, check</p></div>
+      <div class="swatch"><div style="background:#2EC4B6"></div><p><b>Orbit Teal</b>#2EC4B6 · Done / success</p></div>
+      <div class="swatch"><div style="background:#FFC857"></div><p><b>Sun Yellow</b>#FFC857 · Streaks only</p></div>
+      <div class="swatch"><div style="background:#FFF8F0"></div><p><b>Moon Cream</b>#FFF8F0 · Light background</p></div>
+      <div class="swatch"><div style="background:#0B1220"></div><p><b>Deep Ink</b>#0B1220 · Dark background</p></div>
+      <div class="swatch"><div style="background:#5C6B7A"></div><p><b>Slate</b>#5C6B7A · Secondary text</p></div>
+    </div>
+    <p style="margin-top:20px;font-size:15px;color:var(--slate)">Text on Coral buttons uses Deep Ink (#0B1220), not white — it passes WCAG AA (contrast 6.6:1); white on Coral does not. Full light/dark tokens: <code>tokens/design-tokens.json</code>.</p>
+  </section>
+
+  <section>
+    <h2>05 · Typography</h2>
+    <h3>Inter, everywhere</h3>
+    <div class="type-sample">
+      <div style="font-size:40px;font-weight:800;letter-spacing:-0.02em">23 days ago</div>
+      <div style="font-size:28px;font-weight:700;margin-top:8px">Visited Mom</div>
+      <div style="font-size:16px;margin-top:8px;color:var(--slate)">You've visited 14 times this year — about once every 3 weeks.</div>
+      <div style="font-size:12px;margin-top:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);font-weight:700">This month · 3</div>
+    </div>
+    <table style="margin-top:16px">
+      <tr><th>Style</th><th>Size / line</th><th>Weight</th><th>Use</th></tr>
+      <tr><td>Display</td><td>40 / 44</td><td>Inter Display ExtraBold</td><td>Big numbers in stats</td></tr>
+      <tr><td>H1</td><td>28 / 34</td><td>Bold</td><td>Screen titles</td></tr>
+      <tr><td>H2</td><td>22 / 28</td><td>Bold</td><td>Section titles</td></tr>
+      <tr><td>Body</td><td>16 / 22</td><td>Regular</td><td>Everything else</td></tr>
+      <tr><td>Label</td><td>14 / 18</td><td>Medium</td><td>Buttons, chips</td></tr>
+      <tr><td>Caption</td><td>12 / 16</td><td>Regular</td><td>Dates, hints</td></tr>
+    </table>
+    <p style="font-size:15px;color:var(--slate)">Inter is free under the SIL Open Font License. Font files are in <code>fonts/</code>.</p>
+  </section>
+
+  <section>
+    <h2>06 · Voice</h2>
+    <h3>Calm, clear, encouraging</h3>
+    <div class="grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="do"><h4>Sounds like</h4><ul><li>"Nice — 12 this month."</li><li>"Last time: 23 days ago."</li><li>"Your log stays on your phone."</li></ul></div>
+      <div class="dont"><h4>Doesn't sound like</h4><ul><li>"You broke your streak! 😢"</li><li>"The #1 ULTIMATE habit app!!!"</li><li>"Don't lose your progress — act now!"</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>07 · Store &amp; social</h2>
+    <h3>Ready-made assets</h3>
+    <div class="wide"><img src="play-store/feature-graphic-1024x500.png" alt="Play Store feature graphic"></div>
+    <div class="grid" style="margin-top:16px;grid-template-columns:1fr 1fr">
+      <div class="tile"><img src="social-media/habit-tracker/x-header-1500x500.png" alt=""><small>X header · Habit Tracker</small></div>
+      <div class="tile"><img src="social-media/orbitra/x-header-1500x500.png" alt=""><small>X header · Orbitra</small></div>
+    </div>
+    <p style="font-size:15px;color:var(--slate)">Profile pictures and covers for Instagram, Facebook, X, LinkedIn, YouTube, TikTok and Threads are in <code>social-media/habit-tracker/</code> and <code>social-media/orbitra/</code>, as SVG masters plus PNGs at each platform's size.</p>
+  </section>
+</main>
+<footer>Habit Tracker · com.orbitra.habittracker · © 2026 Orbitra</footer>
+</body>
+</html>

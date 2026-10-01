@@ -1,0 +1,162 @@
+---
+// Layout for every page under /orbitra/. Fully separate from BaseLayout: its own
+// stylesheet, header, footer, fonts and favicon, so the Orbitra section and the
+// personal site cannot affect each other's styles.
+import "../styles/orbitra.css";
+import Mark from "../components/orbitra/Mark.astro";
+import Icon from "../components/orbitra/Icon.astro";
+import { studio, abs } from "../lib/orbitra.js";
+
+const {
+  title,
+  description,
+  /** Path only, with trailing slash. Defaults to the current URL. */
+  path = Astro.url.pathname,
+  /** [{ label, href? }] — rendered under the header bar. Last item is the current page. */
+  crumbs = [],
+  jsonLd = [],
+  /** App object, for the per-app accent, favicon and data-app attribute. */
+  app,
+  ogImage = "/orbitra/assets/brand/og-orbitra-1200x630.png",
+  active,
+} = Astro.props;
+
+const canonical = abs(path);
+const noindex = studio.draft;
+const favicon = app ? `/orbitra/assets/apps/${app.slug}/icon.svg` : "/orbitra/assets/brand/orbitra-app-icon.svg";
+const bodyStyle = app?.accent ? `--app-accent: ${app.accent}` : undefined;
+const home = studio.basePath;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
+    <meta name="theme-color" content="#F7F4EE" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0B0E1A" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Orbitra" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={abs(ogImage)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Orbitra — Many worlds, one orbit." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={abs(ogImage)} />
+
+    <link rel="icon" href={favicon} type="image/svg+xml" />
+    <link rel="icon" href="/orbitra/assets/brand/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/orbitra/assets/brand/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&family=Space+Grotesk:wght@600&display=swap"
+    />
+
+    <!-- Apply the saved theme before first paint so there is no flash. -->
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem("orbitra-theme");
+          if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+          else if (matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.dataset.theme = "dark";
+        } catch (e) {}
+      })();
+    </script>
+
+    {jsonLd.map((node) => <script type="application/ld+json" set:html={JSON.stringify(node)} />)}
+  </head>
+
+  <body data-app={app?.slug} style={bodyStyle}>
+    <a class="o-skip" href="#main">Skip to content</a>
+
+    {
+      studio.draft && (
+        <div class="o-draft" role="note">
+          Draft — these pages are not published yet. Items marked TODO(owner) need confirming.
+        </div>
+      )
+    }
+
+    <header class="o-header" id="o-header">
+      <div class="o-wrap o-header__bar">
+        <a class="o-brand" href={home} aria-label="Orbitra home">
+          <Mark size={28} />
+          <span class="o-brand__word" aria-hidden="true">orbitra</span>
+        </a>
+        <nav class="o-nav" aria-label="Orbitra">
+          <ul class="o-nav__links" id="o-nav-links">
+            <li><a href={`${home}#apps`} aria-current={active === "apps" ? "page" : undefined}>Apps</a></li>
+            <li><a href={`${home}#contact`}>Contact</a></li>
+          </ul>
+          <button class="o-iconbtn o-theme" type="button" id="o-theme" aria-label="Switch colour theme">
+            <Icon name="sun" size={20} />
+            <Icon name="moon" size={20} />
+          </button>
+          <button
+            class="o-iconbtn o-menu-btn"
+            type="button"
+            id="o-menu"
+            aria-label="Menu"
+            aria-expanded="false"
+            aria-controls="o-nav-links"
+          >
+            <Icon name="menu" size={20} />
+          </button>
+        </nav>
+      </div>
+      {
+        crumbs.length > 0 && (
+          <nav class="o-crumbs" aria-label="Breadcrumb">
+            <ol class="o-wrap">
+              {crumbs.map((c, i) =>
+                i === crumbs.length - 1 ? (
+                  <li aria-current="page">{c.label}</li>
+                ) : (
+                  <li>
+                    <a href={c.href}>{c.label}</a>
+                  </li>
+                ),
+              )}
+            </ol>
+          </nav>
+        )
+      }
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="o-footer">
+      <div class="o-wrap o-footer__inner">
+        <div class="o-footer__brand">
+          <Mark size={24} color="#F2EFE8" />
+          <span>© <span data-year>2026</span> Orbitra. Many worlds, one orbit.</span>
+        </div>
+        <ul>
+          <li><a href={`${home}#apps`}>Apps</a></li>
+          <li><a href={`${home}privacy-policy/`}>Privacy</a></li>
+          <li><a href={`${home}#contact`}>Contact</a></li>
+          <li><a href={studio.personalSiteUrl}>iamharinda.com</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      import "../scripts/orbitra.js";
+    </script>
+  </body>
+</html>

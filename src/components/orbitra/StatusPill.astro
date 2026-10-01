@@ -1,0 +1,9 @@
+---
+import { STATUS_LABEL } from "../../lib/orbitra.js";
+const { status } = Astro.props;
+---
+
+<span class:list={["o-pill", `o-pill--${status}`]}>
+  {status === "live" && <span class="o-pill__dot" aria-hidden="true" />}
+  {STATUS_LABEL[status] ?? status}
+</span>

@@ -1,0 +1,44 @@
+{"name": "Orbitra", "version": 1,
+ "color": {"themes": [{"id": "light", "name": "Light"}, {"id": "dark", "name": "Dark"}],
+  "note": "Warm neutrals, one hot brand orange, one cool teal. Orange carries identity; teal is the rare second voice.",
+  "tokens": [
+   {"name": "solar", "value": {"light": "#FF5A1F", "dark": "#FF6B35"}, "usage": "Brand orange: the mark, primary buttons, key highlights. Put ink text on it, never white (white fails contrast)."},
+   {"name": "solar-text", "value": {"light": "#B93A0B", "dark": "#FF8A5C"}, "usage": "Orange for text and links on surface (5.2:1 light, 8.3:1 dark)."},
+   {"name": "ion", "value": {"light": "#1C9C8C", "dark": "#34C6B4"}, "usage": "Secondary accent for icons, charts, success and 'new' badges. Fills and icons only in light theme (3.1:1), not body text."},
+   {"name": "halo", "value": {"light": "#FFD8C4", "dark": "#4A2A1A"}, "usage": "Soft orange tint: highlight backgrounds, selected rows, illustration relief."},
+   {"name": "deep", "value": {"light": "#0F1222", "dark": "#2E3554"}, "usage": "Deep-space block: app icon ground, hero bands, dark cards."},
+   {"name": "ink", "value": {"light": "#0F1222", "dark": "#F2EFE8"}, "usage": "Primary text on surface and on solar."},
+   {"name": "ink-muted", "value": {"light": "#565B6E", "dark": "#A3A8BA"}, "usage": "Secondary text, captions, taglines on surface (6.1:1 / 8.1:1)."},
+   {"name": "surface", "value": {"light": "#F7F4EE", "dark": "#0B0E1A"}, "usage": "Page background."},
+   {"name": "surface-raised", "value": {"light": "#FFFFFF", "dark": "#161A2B"}, "usage": "Cards, sheets, inputs above the surface."},
+   {"name": "line", "value": {"light": "#E4DFD4", "dark": "#262B40"}, "usage": "Hairline borders and dividers."}
+  ]},
+ "type": {"fonts": [],
+  "families": {
+   "display": "\"Space Grotesk\", \"Helvetica Neue\", Arial, sans-serif",
+   "sans": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+   "mono": "\"JetBrains Mono\", ui-monospace, Menlo, monospace"},
+  "groups": [
+   {"name": "Display", "family": "display", "note": "Space Grotesk (Google Fonts): geometric, slightly technical. Headlines and the wordmark only.",
+    "styles": [
+     {"name": "display", "fontSize": "48px", "lineHeight": "52px", "fontWeight": 600, "letterSpacing": "-0.02em", "sample": "Many worlds, one orbit.", "usage": "Hero headlines, store feature graphics."},
+     {"name": "title", "fontSize": "28px", "lineHeight": "34px", "fontWeight": 600, "letterSpacing": "-0.01em", "sample": "Tools that just work", "usage": "Screen and page titles."}]},
+   {"name": "Text", "family": "sans", "note": "Inter (Google Fonts) for all UI and reading text.",
+    "styles": [
+     {"name": "heading", "fontSize": "20px", "lineHeight": "28px", "fontWeight": 600, "sample": "Your projects", "usage": "Section headings."},
+     {"name": "body", "fontSize": "16px", "lineHeight": "24px", "fontWeight": 400, "sample": "Edit, convert and create in seconds, right from your phone.", "usage": "Everything else."},
+     {"name": "caption", "fontSize": "12px", "lineHeight": "16px", "fontWeight": 500, "letterSpacing": "0.02em", "sample": "by Orbitra · v1.0", "usage": "Labels, metadata, the 'by Orbitra' endorsement."}]},
+   {"name": "Code", "family": "mono",
+    "styles": [
+     {"name": "code", "fontSize": "13px", "lineHeight": "20px", "fontWeight": 400, "sample": "orbitra.app/tools", "usage": "Code, URLs, version numbers."}]}
+  ]},
+ "spacing": {"note": "8px rhythm.", "tokens": [
+   {"name": "space-2", "value": "8px", "usage": "Icon-to-label gap, inside small controls."},
+   {"name": "space-4", "value": "16px", "usage": "Card padding, gutters."},
+   {"name": "space-6", "value": "24px", "usage": "Between groups; screen edge margin."},
+   {"name": "space-8", "value": "32px", "usage": "Between sections."}]},
+ "radius": {"note": "Rounded like the orbit: soft corners, full circles for anything that orbits.", "tokens": [
+   {"name": "radius-sm", "value": "6px", "usage": "Inputs, badges."},
+   {"name": "radius-md", "value": "12px", "usage": "Buttons, cards, sheets."},
+   {"name": "radius-full", "value": "9999px", "usage": "Pills, avatars, status dots."}]}
+}

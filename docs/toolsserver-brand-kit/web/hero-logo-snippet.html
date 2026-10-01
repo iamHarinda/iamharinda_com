@@ -1,0 +1,20 @@
+<!-- ToolsServer homepage hero mark.
+     Brand moment: on load the three knobs slide into position, like a setting being dialed in.
+     Plays once, ~0.9s, and is skipped entirely for users who prefer reduced motion. -->
+<div class="ts-hero-mark">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="120 120 272 272" class="ts-mark" role="img" aria-label="ToolsServer"><defs><mask id="md" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512"><rect width="512" height="512" fill="#fff"/><circle cx="316" cy="156" r="40" fill="#000"/><circle cx="256" cy="256" r="40" fill="#000"/><circle cx="196" cy="356" r="40" fill="#000"/></mask></defs><path d="M364 156H148V256H364V356H148" fill="none" stroke="#FF6B1A" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" mask="url(#md)"/><circle class="knob" cx="316" cy="156" r="30" fill="#F3F5FA"/><circle class="knob" cx="256" cy="256" r="30" fill="#F3F5FA"/><circle class="knob" cx="196" cy="356" r="30" fill="#F3F5FA"/></svg>
+</div>
+
+<style>
+  .ts-hero-mark { width: clamp(96px, 14vw, 168px); }
+  .ts-mark { display: block; width: 100%; height: auto; overflow: visible; }
+  .ts-mark .knob { transform-box: fill-box; transform-origin: center; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .ts-mark .knob { animation: ts-dial .9s cubic-bezier(.2,.9,.2,1) both; }
+    .ts-mark .knob:nth-of-type(1) { --from: -130px; animation-delay: .05s; }
+    .ts-mark .knob:nth-of-type(2) { --from: 110px;  animation-delay: .15s; }
+    .ts-mark .knob:nth-of-type(3) { --from: -70px;  animation-delay: .25s; }
+  }
+  @keyframes ts-dial { from { transform: translateX(var(--from)); opacity: 0; } to { transform: none; opacity: 1; } }
+</style>

@@ -1,0 +1,26 @@
+{
+  "name": "ProductWhite",
+  "store_title": "ProductWhite: White Background",
+  "short_description": "Remove background & make Amazon, Etsy, eBay-ready product photos in 1 tap.",
+  "tagline": "White-background product photos in one tap.",
+  "publisher": "Orbitra",
+  "developer_email": "hello@premiumphotoedits.com",
+  "package_name": "com.orbitra.productwhite",
+  "privacy_policy_url": "https://premiumphotoedits.com/productwhite/privacy",
+  "support_url": "https://premiumphotoedits.com/productwhite",
+  "partner_service": {
+    "name": "Premium Photo Edits",
+    "url": "https://premiumphotoedits.com",
+    "role": "Optional pro-edit service shown as a secondary call to action"
+  },
+  "primary_color": "#1E4DFF",
+  "ink_color": "#121826",
+  "font": "Plus Jakarta Sans",
+  "logo": {
+    "mark": "01-logo/svg/productwhite-mark.svg",
+    "horizontal": "01-logo/svg/productwhite-logo-horizontal.svg",
+    "app_icon_play": "02-app-icon/play-store-icon-512.png"
+  },
+  "version": "1.0.0",
+  "created": "2026-10-01"
+}

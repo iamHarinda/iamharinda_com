@@ -1,0 +1,13 @@
+---
+// An app's icon from its own brand kit (public/orbitra/assets/apps/<slug>/icon.svg).
+const { app, size = 64, class: cls, decorative = false } = Astro.props;
+---
+
+<img
+  src={`/orbitra/assets/apps/${app.slug}/icon.svg`}
+  width={size}
+  height={size}
+  alt={decorative ? "" : `${app.name} app icon`}
+  class:list={["o-appicon", cls]}
+  decoding="async"
+/>
