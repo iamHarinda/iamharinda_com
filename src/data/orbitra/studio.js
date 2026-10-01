@@ -11,15 +11,13 @@ export default {
   // is resolved and the Play Console Data safety forms match the pages.
   draft: true,
 
-  // {{CONTACT_EMAIL}} — taken from the Habit Tracker brand kit
-  // (docs/Habit-Tracker-Orbitra-Kit/.../tokens/brand.json). Set confirmed: true once
-  // the mailbox exists and matches the Play Console developer email.
-  contactEmail: "privacy@orbitra.app",
-  contactEmailConfirmed: false,
+  // {{CONTACT_EMAIL}} — confirmed by the owner (2026-10-02).
+  contactEmail: "orbitra.dev@gmail.com",
+  contactEmailConfirmed: true,
 
-  // {{PLAY_DEVELOPER_URL}}
+  // {{PLAY_DEVELOPER_URL}} — confirmed by the owner (2026-10-02).
   playDeveloperUrl: "https://play.google.com/store/apps/developer?id=Orbitra",
-  playDeveloperUrlConfirmed: false,
+  playDeveloperUrlConfirmed: true,
 
   // Shown on every legal page.
   lastUpdated: "2026-10-02",
