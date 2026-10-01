@@ -1,0 +1,139 @@
+---
+// One template for every app page: /orbitra/<slug>/
+import OrbitraLayout from "../../../layouts/OrbitraLayout.astro";
+import Icon from "../../../components/orbitra/Icon.astro";
+import AppIcon from "../../../components/orbitra/AppIcon.astro";
+import StatusPill from "../../../components/orbitra/StatusPill.astro";
+import { studio, apps, appPath, abs, rich, todoHtml } from "../../../lib/orbitra.js";
+
+export function getStaticPaths() {
+  return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
+}
+
+const { app } = Astro.props;
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: app.name,
+    operatingSystem: "Android",
+    applicationCategory: app.category,
+    description: app.summary,
+    url: abs(appPath(app.slug)),
+    image: abs(`/orbitra/assets/apps/${app.slug}/icon.svg`),
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    publisher: { "@type": "Organization", name: "Orbitra", url: abs(studio.basePath) },
+  },
+];
+---
+
+<OrbitraLayout
+  title={`${app.name}, by Orbitra`}
+  description={`${app.name} by Orbitra: ${app.summary}`}
+  app={app}
+  active="apps"
+  crumbs={[{ label: "Orbitra", href: studio.basePath }, { label: app.name }]}
+  jsonLd={jsonLd}
+>
+  <section class="o-apphero">
+    <div class="o-wrap">
+      <div class="o-apphero__card">
+        <AppIcon app={app} size={96} class="o-apphero__icon" />
+        <div class="o-apphero__meta">
+          <h1 class="o-title">{app.name}</h1>
+          <p class="o-caption">by Orbitra</p>
+          <p class="o-lead">{app.tagline}</p>
+          <div class="o-apphero__row">
+            {
+              app.status === "live" ? (
+                <a href={app.playUrl} rel="noopener">
+                  <img
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    alt="Get it on Google Play"
+                    width="180"
+                    height="53"
+                  />
+                </a>
+              ) : (
+                <StatusPill status={app.status} />
+              )
+            }
+            <code class="o-muted">{app.package}</code>
+            {!app.packageConfirmed && <Fragment set:html={todoHtml("confirm package name")} />}
+          </div>
+          {
+            app.website && (
+              <p class="o-caption">
+                Also on the web: <a href={app.website} rel="noopener">{app.website.replace(/^https?:\/\//, "")}</a>
+              </p>
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="features-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="features-title">What it does</h2>
+        <p class="o-muted">{app.summary}</p>
+      </div>
+      <div class="o-grid o-grid--3">
+        {
+          app.features.map((f) => (
+            <div class="o-feature">
+              <Icon name={f.icon} size={28} />
+              <h3 class="o-heading">{f.title}</h3>
+              <p set:html={rich(f.text, app)} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="shots-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="shots-title">Screenshots</h2>
+        <p class="o-muted">{app.screenshotsNote}</p>
+      </div>
+      <div class="o-shots" tabindex="0" aria-label={`${app.name} screenshots`}>
+        {
+          app.screenshots.length > 0
+            ? app.screenshots.map((s) => (
+                <img src={s.src} alt={s.alt} width="200" loading="lazy" decoding="async" />
+              ))
+            : [1, 2, 3].map(() => <div class="o-shot-ph" aria-hidden="true">Screenshot coming soon</div>)
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="glance-title">
+    <div class="o-wrap">
+      <div class="o-callout" style="max-width: var(--maxw-prose)">
+        <h2 class="o-heading" id="glance-title">Privacy at a glance</h2>
+        <ul>
+          {app.glance.map((g) => <li set:html={rich(g, app)} />)}
+        </ul>
+        <p>
+          <a href={appPath(app.slug, "privacy-policy")}>Read the full privacy policy</a> ·
+          <a href={appPath(app.slug, "delete-data")}>Delete your data</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" id="support" aria-labelledby="support-title">
+    <div class="o-wrap">
+      <h2 class="o-title" id="support-title">Support</h2>
+      <p style="margin-top: var(--space-3)" set:html={rich(`Questions or a bug to report? Email {email}.`)} />
+      <p class="o-muted" style="margin-top: var(--space-2)">
+        Include your app version (Settings → About). We reply within 2–3 working days.
+      </p>
+    </div>
+  </section>
+</OrbitraLayout>
