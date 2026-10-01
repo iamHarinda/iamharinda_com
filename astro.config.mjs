@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import orbitraStudio from "./src/data/orbitra/studio.js";
 
 // Canonical host is https://www.iamharinda.com (see public/.htaccess for the redirect).
 // No UI framework: the animated background (scripts/aurora.js) and the interaction
@@ -25,7 +26,12 @@ export default defineConfig({
       changefreq: "monthly",
       priority: 0.7,
       lastmod: new Date(),
-      filter: (page) => !page.endsWith("/404/") && !page.endsWith("/404.html"),
+      // The /orbitra/ section joins the sitemap once its draft flag is turned off
+      // (src/data/orbitra/studio.js).
+      filter: (page) =>
+        !page.endsWith("/404/") &&
+        !page.endsWith("/404.html") &&
+        !(orbitraStudio.draft && page.includes("/orbitra/")),
     }),
   ],
   vite: {
