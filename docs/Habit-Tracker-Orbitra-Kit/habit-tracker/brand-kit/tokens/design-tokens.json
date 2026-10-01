@@ -1,0 +1,81 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "brand": "Habit Tracker",
+    "developer": "Orbitra",
+    "package": "com.orbitra.habittracker",
+    "version": "1.0.0"
+  },
+  "color": {
+    "brand": {
+      "navy":   { "$value": "#14213D", "$description": "Midnight Navy — primary brand, app icon background, headers" },
+      "coral":  { "$value": "#FF6B4A", "$description": "Comet Coral — primary action, the check mark, FAB" },
+      "teal":   { "$value": "#2EC4B6", "$description": "Orbit Teal — success, 'done' state, the planet" },
+      "sun":    { "$value": "#FFC857", "$description": "Sun Yellow — streaks, highlights (use sparingly)" },
+      "cream":  { "$value": "#FFF8F0", "$description": "Moon Cream — light background" },
+      "ink":    { "$value": "#0B1220", "$description": "Deep Ink — dark background, Orbitra icon" },
+      "slate":  { "$value": "#5C6B7A", "$description": "Slate — secondary text" }
+    },
+    "light": {
+      "background":     { "$value": "#FFF8F0" },
+      "surface":        { "$value": "#FFFFFF" },
+      "surfaceMuted":   { "$value": "#F4ECE2" },
+      "border":         { "$value": "#E8DED2" },
+      "textPrimary":    { "$value": "#14213D" },
+      "textSecondary":  { "$value": "#5C6B7A" },
+      "textOnPrimary":  { "$value": "#0B1220" },
+      "primary":        { "$value": "#FF6B4A" },
+      "primaryPressed": { "$value": "#E8553A" },
+      "success":        { "$value": "#158A7F" },
+      "planned":        { "$value": "#8C99A6" },
+      "danger":         { "$value": "#D64545" }
+    },
+    "dark": {
+      "background":     { "$value": "#0B1220" },
+      "surface":        { "$value": "#14213D" },
+      "surfaceMuted":   { "$value": "#1C2B4D" },
+      "border":         { "$value": "#26365C" },
+      "textPrimary":    { "$value": "#FFF8F0" },
+      "textSecondary":  { "$value": "#A9B4C2" },
+      "textOnPrimary":  { "$value": "#0B1220" },
+      "primary":        { "$value": "#FF7A5C" },
+      "primaryPressed": { "$value": "#FF6B4A" },
+      "success":        { "$value": "#2EC4B6" },
+      "planned":        { "$value": "#6B7A8C" },
+      "danger":         { "$value": "#F06A6A" }
+    },
+    "topicPalette": {
+      "$description": "12 user-selectable topic colours, each tested ≥3:1 against light & dark surfaces",
+      "$value": ["#FF6B4A", "#2EC4B6", "#FFC857", "#6C8CFF", "#B07CFF", "#FF7EB6", "#34C26B", "#FF9F43", "#3DB2FF", "#E85D75", "#8BC34A", "#A1887F"]
+    }
+  },
+  "font": {
+    "family": {
+      "display": { "$value": "Inter Display", "$description": "Headings, numbers in stats" },
+      "body":    { "$value": "Inter", "$description": "All UI text" }
+    },
+    "weight": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700, "extrabold": 800 },
+    "size": {
+      "display": { "$value": 40, "lineHeight": 44 },
+      "h1":      { "$value": 28, "lineHeight": 34 },
+      "h2":      { "$value": 22, "lineHeight": 28 },
+      "h3":      { "$value": 18, "lineHeight": 24 },
+      "body":    { "$value": 16, "lineHeight": 22 },
+      "label":   { "$value": 14, "lineHeight": 18 },
+      "caption": { "$value": 12, "lineHeight": 16 }
+    }
+  },
+  "space":  { "xxs": 2, "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "xxl": 32, "xxxl": 48 },
+  "radius": { "sm": 8, "md": 12, "lg": 16, "xl": 24, "pill": 999 },
+  "elevation": {
+    "card":  { "$value": "0 1 2 rgba(20,33,61,0.06), 0 4 12 rgba(20,33,61,0.06)" },
+    "sheet": { "$value": "0 -8 32 rgba(11,18,32,0.18)" },
+    "fab":   { "$value": "0 6 18 rgba(255,107,74,0.35)" }
+  },
+  "motion": {
+    "fast":   { "$value": "150ms", "easing": "cubic-bezier(0.2, 0, 0, 1)" },
+    "base":   { "$value": "250ms", "easing": "cubic-bezier(0.2, 0, 0, 1)" },
+    "check":  { "$value": "400ms", "easing": "spring(1, 120, 14)", "$description": "Tick animation: ring segment fills, check draws" }
+  },
+  "size": { "touchTarget": 48, "fab": 56, "iconSm": 20, "iconMd": 24, "dayCell": 44 }
+}

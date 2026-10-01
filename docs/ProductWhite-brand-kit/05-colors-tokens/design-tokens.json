@@ -1,0 +1,260 @@
+{
+  "$description": "ProductWhite design tokens (W3C DTCG format). Source of truth for app, web and marketing.",
+  "color": {
+    "chroma-blue": {
+      "$type": "color",
+      "$value": "#1E4DFF",
+      "$description": "Primary brand + primary action. From blue-screen compositing: the colour you cut away."
+    },
+    "chroma-blue-600": {
+      "$type": "color",
+      "$value": "#1A3FD6",
+      "$description": "Pressed state of primary"
+    },
+    "chroma-blue-50": {
+      "$type": "color",
+      "$value": "#EDF1FF",
+      "$description": "Selected chips, tinted surfaces"
+    },
+    "ink": {
+      "$type": "color",
+      "$value": "#121826",
+      "$description": "Text, product silhouette in logo"
+    },
+    "slate": {
+      "$type": "color",
+      "$value": "#4A5568",
+      "$description": "Secondary text"
+    },
+    "mist": {
+      "$type": "color",
+      "$value": "#8A94A6",
+      "$description": "Disabled text, captions"
+    },
+    "line": {
+      "$type": "color",
+      "$value": "#E3E7EE",
+      "$description": "Dividers, borders"
+    },
+    "sweep": {
+      "$type": "color",
+      "$value": "#E9ECF2",
+      "$description": "Studio floor in logo; secondary surface"
+    },
+    "paper": {
+      "$type": "color",
+      "$value": "#F4F6FA",
+      "$description": "App background (light)"
+    },
+    "studio-white": {
+      "$type": "color",
+      "$value": "#FFFFFF",
+      "$description": "The white background itself; cards and canvas"
+    },
+    "score-good": {
+      "$type": "color",
+      "$value": "#12A150",
+      "$description": "Quality score 80-100"
+    },
+    "score-fair": {
+      "$type": "color",
+      "$value": "#C97A00",
+      "$description": "Quality score 60-79"
+    },
+    "score-poor": {
+      "$type": "color",
+      "$value": "#D93A3F",
+      "$description": "Quality score 0-59"
+    },
+    "night": {
+      "$type": "color",
+      "$value": "#0B1020",
+      "$description": "Dark theme background"
+    },
+    "night-surface": {
+      "$type": "color",
+      "$value": "#161D30",
+      "$description": "Dark theme cards"
+    }
+  },
+  "font": {
+    "family": {
+      "brand": {
+        "$type": "fontFamily",
+        "$value": [
+          "Plus Jakarta Sans",
+          "Roboto",
+          "system-ui",
+          "sans-serif"
+        ]
+      }
+    },
+    "weight": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "extrabold": {
+        "$type": "fontWeight",
+        "$value": 800
+      }
+    }
+  },
+  "typescale": {
+    "display": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.brand}",
+        "fontWeight": 800,
+        "fontSize": "32px",
+        "lineHeight": "38px",
+        "letterSpacing": "-0.03em"
+      }
+    },
+    "title": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.brand}",
+        "fontWeight": 700,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "headline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.brand}",
+        "fontWeight": 700,
+        "fontSize": "17px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.01em"
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.brand}",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "lineHeight": "22px",
+        "letterSpacing": "0"
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.brand}",
+        "fontWeight": 600,
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "0"
+      }
+    },
+    "caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.brand}",
+        "fontWeight": 500,
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0.01em"
+      }
+    }
+  },
+  "space": {
+    "4": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "20": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "40": {
+      "$type": "dimension",
+      "$value": "40px"
+    },
+    "48": {
+      "$type": "dimension",
+      "$value": "48px"
+    }
+  },
+  "radius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "14px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "22px"
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": "999px"
+    }
+  },
+  "elevation": {
+    "sheet": {
+      "$type": "shadow",
+      "$value": {
+        "color": "#1218261F",
+        "offsetX": "0px",
+        "offsetY": "-8px",
+        "blur": "24px",
+        "spread": "0px"
+      }
+    }
+  },
+  "motion": {
+    "fast": {
+      "$type": "duration",
+      "$value": "150ms"
+    },
+    "base": {
+      "$type": "duration",
+      "$value": "240ms"
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.2,
+        0,
+        0,
+        1
+      ]
+    }
+  }
+}

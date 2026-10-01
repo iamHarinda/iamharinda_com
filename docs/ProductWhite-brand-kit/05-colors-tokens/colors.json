@@ -1,0 +1,17 @@
+{
+  "chroma-blue": "#1E4DFF",
+  "chroma-blue-600": "#1A3FD6",
+  "chroma-blue-50": "#EDF1FF",
+  "ink": "#121826",
+  "slate": "#4A5568",
+  "mist": "#8A94A6",
+  "line": "#E3E7EE",
+  "sweep": "#E9ECF2",
+  "paper": "#F4F6FA",
+  "studio-white": "#FFFFFF",
+  "score-good": "#12A150",
+  "score-fair": "#C97A00",
+  "score-poor": "#D93A3F",
+  "night": "#0B1020",
+  "night-surface": "#161D30"
+}

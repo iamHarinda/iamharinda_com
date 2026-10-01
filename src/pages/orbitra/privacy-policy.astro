@@ -1,0 +1,64 @@
+---
+// /orbitra/privacy-policy/ — studio-wide summary that points to each app's own policy.
+import OrbitraLayout from "../../layouts/OrbitraLayout.astro";
+import LegalDoc from "../../components/orbitra/LegalDoc.astro";
+import AppIcon from "../../components/orbitra/AppIcon.astro";
+import { studio, apps, appPath, rich } from "../../lib/orbitra.js";
+
+const toc = [
+  ["short-version", "Short version"],
+  ["each-app", "Each app’s policy"],
+  ["this-website", "This website"],
+  ["contact", "Contact"],
+].map(([id, label]) => ({ id, label }));
+---
+
+<OrbitraLayout
+  title="Privacy — Orbitra"
+  description="How Orbitra apps handle your data. Every app has its own privacy policy and data deletion page."
+  crumbs={[{ label: "Orbitra", href: studio.basePath }, { label: "Privacy" }]}
+>
+  <LegalDoc title="Privacy at Orbitra" toc={toc}>
+    <section class="o-callout" aria-labelledby="short-version">
+      <h2 id="short-version" class="o-heading">Short version</h2>
+      <ul>
+        <li>We collect as little as we can. Most of what you make in our apps stays on your phone.</li>
+        <li>We never sell your personal data.</li>
+        <li>Every app has its own privacy policy and its own page for deleting your data.</li>
+      </ul>
+    </section>
+
+    <h2 id="each-app">Each app’s policy</h2>
+    <p>Each app works differently, so each one explains its own data in its own policy.</p>
+    <div class="o-table-wrap">
+      <table class="o-table">
+        <thead><tr><th scope="col">App</th><th scope="col">Privacy policy</th><th scope="col">Delete data</th></tr></thead>
+        <tbody>
+          {
+            apps.map((app) => (
+              <tr>
+                <td>
+                  <span style="display:flex;align-items:center;gap:8px">
+                    <AppIcon app={app} size={24} decorative />
+                    {app.name}
+                  </span>
+                </td>
+                <td><a href={appPath(app.slug, "privacy-policy")}>Privacy policy</a></td>
+                <td><a href={appPath(app.slug, "delete-data")}>Delete data</a></td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="this-website">This website</h2>
+    <p>
+      The Orbitra pages on iamharinda.com do not use cookies or analytics of their own. Fonts are loaded from Google
+      Fonts, which receives your IP address to send them. Your colour theme choice is saved only in your browser.
+    </p>
+
+    <h2 id="contact">Contact</h2>
+    <p set:html={rich("Questions about privacy? Email {email}.")} />
+  </LegalDoc>
+</OrbitraLayout>

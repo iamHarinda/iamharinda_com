@@ -1,0 +1,109 @@
+---
+import OrbitraLayout from "../../layouts/OrbitraLayout.astro";
+import Mark from "../../components/orbitra/Mark.astro";
+import Icon from "../../components/orbitra/Icon.astro";
+import AppIcon from "../../components/orbitra/AppIcon.astro";
+import StatusPill from "../../components/orbitra/StatusPill.astro";
+import { studio, apps, appPath, abs, rich, todoHtml } from "../../lib/orbitra.js";
+
+const values = [
+  { icon: "box", title: "Small and useful.", text: "Each app does one job well." },
+  { icon: "lock", title: "Your data, your device.", text: "We collect as little as we can." },
+  { icon: "tag", title: "Free to start.", text: "Most of our tools cost nothing." },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Orbitra",
+    slogan: studio.tagline,
+    url: abs(studio.basePath),
+    logo: abs("/orbitra/assets/brand/orbitra-app-icon-512x512.png"),
+    email: studio.contactEmail,
+  },
+];
+---
+
+<OrbitraLayout
+  title="Orbitra — Apps and web tools"
+  description="Orbitra makes small, useful apps and web tools: Habit Tracker, Periodic Element Table, ToolsServer and ProductWhite."
+  jsonLd={jsonLd}
+>
+  <section class="o-hero">
+    <Mark size={360} color="#FF5A1F" class="o-hero__ring" />
+    <div class="o-wrap">
+      <div class="o-hero__inner">
+        <h1 class="o-display">Many worlds, one orbit.</h1>
+        <p>Orbitra makes small, useful apps and web tools. Each one is its own world.</p>
+        <a class="o-btn o-btn--primary" href="#apps">See our apps <Icon name="arrow" size={18} /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" id="apps" aria-labelledby="apps-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="apps-title">Our apps</h2>
+        <p class="o-muted">Every app keeps its own name. Each one is made by Orbitra.</p>
+      </div>
+      <div class="o-grid o-grid--2">
+        {
+          apps.map((app) => (
+            <article class="o-card">
+              <div class="o-card__top">
+                <AppIcon app={app} size={64} decorative />
+                <div>
+                  <h3 class="o-heading o-card__name">
+                    <a href={appPath(app.slug)}>{app.name}</a>
+                  </h3>
+                  <p class="o-caption">by Orbitra</p>
+                </div>
+              </div>
+              <p>{app.summary}</p>
+              <StatusPill status={app.status} />
+              <div class="o-card__links">
+                <a href={appPath(app.slug)} aria-label={`View ${app.name}`}>View app</a>
+                <a href={appPath(app.slug, "privacy-policy")} aria-label={`${app.name} privacy policy`}>Privacy</a>
+                <a href={appPath(app.slug, "delete-data")} aria-label={`Delete ${app.name} data`}>Delete data</a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="values-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="values-title">What we care about</h2>
+      </div>
+      <div class="o-grid o-grid--3">
+        {
+          values.map((v) => (
+            <div class="o-feature">
+              <Icon name={v.icon} size={28} />
+              <h3 class="o-heading">{v.title}</h3>
+              <p>{v.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" id="contact" aria-labelledby="contact-title">
+    <div class="o-wrap o-contact">
+      <div>
+        <h2 class="o-title" id="contact-title">Contact</h2>
+        <p class="o-contact__mail" style="margin-top: var(--space-3)" set:html={rich("{email}")} />
+        <p class="o-muted" style="margin-top: var(--space-2)">We reply within 2–3 working days.</p>
+      </div>
+      <p>
+        <a class="o-btn" href={studio.playDeveloperUrl} rel="noopener">Orbitra on Google Play</a>
+        {!studio.playDeveloperUrlConfirmed && <Fragment set:html={` ${todoHtml("confirm developer page id")}`} />}
+      </p>
+    </div>
+  </section>
+</OrbitraLayout>

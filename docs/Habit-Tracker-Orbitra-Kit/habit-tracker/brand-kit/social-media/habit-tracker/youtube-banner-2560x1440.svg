@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440">
+  
+  <rect width="2560" height="1440" fill="#14213D"/><path d="M1857.32 540.55 A180.0 180.0 0 0 1 1920.69 557.53" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1945.15 571.66 A180.0 180.0 0 0 1 1991.54 618.05" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M2005.67 642.51 A180.0 180.0 0 0 1 2022.65 705.88" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M2022.65 734.12 A180.0 180.0 0 0 1 2005.67 797.49" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1991.54 821.95 A180.0 180.0 0 0 1 1945.15 868.34" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1920.69 882.47 A180.0 180.0 0 0 1 1857.32 899.45" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1829.08 899.45 A180.0 180.0 0 0 1 1765.71 882.47" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1741.25 868.34 A180.0 180.0 0 0 1 1694.86 821.95" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1680.73 797.49 A180.0 180.0 0 0 1 1663.75 734.12" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1663.75 705.88 A180.0 180.0 0 0 1 1680.73 642.51" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1694.86 618.05 A180.0 180.0 0 0 1 1741.25 571.66" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="27.6" stroke-linecap="round"/>
+  <path d="M1765.71 557.53 A180.0 180.0 0 0 1 1829.08 540.55" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="27.6" stroke-linecap="round"/>
+  <circle cx="1663.75" cy="734.12" r="24.0" fill="#2EC4B6"/>
+  <path d="M1772.4 724.8 L1824.0 775.2 L1922.4 664.8" fill="none" stroke="#FF6B4A" stroke-width="42.0" stroke-linecap="round" stroke-linejoin="round"/><text x="602" y="677" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="800" font-size="120" letter-spacing="-2.4" fill="#FFF8F0">Habit Tracker</text><text x="605" y="864" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="500" font-size="50" fill="#FFF8F0" fill-opacity="0.8">Log anything. See when &amp; how often.</text>
+</svg>

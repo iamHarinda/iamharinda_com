@@ -1,0 +1,71 @@
+---
+// /orbitra/<slug>/delete-data/ — the Play Console "Delete data" URL for each app.
+// Section ids are fixed (see docs/ORBITRA_PAGES_PLAN.md §5.4); do not rename them.
+import OrbitraLayout from "../../../layouts/OrbitraLayout.astro";
+import LegalDoc from "../../../components/orbitra/LegalDoc.astro";
+import Icon from "../../../components/orbitra/Icon.astro";
+import { studio, apps, appPath, rich, mailto } from "../../../lib/orbitra.js";
+
+export function getStaticPaths() {
+  return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
+}
+
+const { app } = Astro.props;
+const d = app.deletion;
+const r = (s) => rich(s, app);
+const subject = `Delete data – ${app.name}`;
+
+const toc = [
+  ["short-version", "Short version"],
+  ["delete-on-device", "Delete on your phone"],
+  ["delete-analytics", "Analytics data"],
+  ["what-is-deleted", "What is deleted"],
+  ["request-form", "Send a request"],
+  ["contact", "Contact"],
+].map(([id, label]) => ({ id, label }));
+---
+
+<OrbitraLayout
+  title={`Delete your data — ${app.name} by Orbitra`}
+  description={`How to delete your ${app.name} data, and how to ask Orbitra to delete analytics data linked to your device.`}
+  app={app}
+  crumbs={[
+    { label: "Orbitra", href: studio.basePath },
+    { label: app.name, href: appPath(app.slug) },
+    { label: "Delete data" },
+  ]}
+>
+  <LegalDoc title="Delete your data" subtitle={`${app.name}, by Orbitra`} toc={toc}>
+    <section class="o-callout" aria-labelledby="short-version">
+      <h2 id="short-version" class="o-heading">Short version</h2>
+      <p set:html={r(d.short)} />
+      <p set:html={r(`This page is for **{app}** (\`${app.package}\`), published by **Orbitra**.`)} />
+    </section>
+
+    <h2 id="delete-on-device">Delete on your phone</h2>
+    <ol>
+      {d.inApp && <li set:html={r(d.inApp)} />}
+      <li set:html={r(`Open **Settings → Apps → {app}** on your phone.`)} />
+      <li set:html={r(`Tap **Storage & cache → Clear storage**. This deletes all your data in the app.`)} />
+      <li set:html={r(`Or **uninstall** the app. Uninstalling also deletes its data.`)} />
+    </ol>
+    {d.inAppNote && <p set:html={r(d.inAppNote)} />}
+
+    <h2 id="delete-analytics">Analytics data</h2>
+    <p set:html={r(d.analytics)} />
+    <p set:html={r(`To ask us to delete data linked to your device, email {email} with the subject \`${subject}\`. We’ll confirm within 30 days.`)} />
+
+    <h2 id="what-is-deleted">What is deleted, and what may be kept</h2>
+    <h3>Deleted</h3>
+    <ul>{d.deleted.map((s) => <li set:html={r(s)} />)}</ul>
+    <h3>May be kept</h3>
+    <ul>{d.kept.map((s) => <li set:html={r(s)} />)}</ul>
+
+    <h2 id="request-form">Send a deletion request</h2>
+    <p>No form to fill in. This button opens an email with the subject already filled in.</p>
+    <a class="o-btn o-btn--primary" href={mailto(subject)}><Icon name="mail" size={18} /> Email a deletion request</a>
+
+    <h2 id="contact">Contact</h2>
+    <p set:html={r(`Orbitra — {email}. See also the [{app} privacy policy](${appPath(app.slug, "privacy-policy")}).`)} />
+  </LegalDoc>
+</OrbitraLayout>

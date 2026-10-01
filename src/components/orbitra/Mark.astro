@@ -1,0 +1,20 @@
+---
+// The Orbitra mark (ring + satellite dot), inline so it costs no request.
+// Geometry is copied verbatim from docs/Orbitra-Brand-Kit/svg/orbitra-mark.svg —
+// never rotate the ring, close the gap or move the dot.
+const { size = 28, color = "var(--solar)", class: cls, title } = Astro.props;
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  width={size}
+  height={size}
+  class={cls}
+  role={title ? "img" : undefined}
+  aria-label={title}
+  aria-hidden={title ? undefined : "true"}
+>
+  <path d="M53.25 26.31 A22 22 0 1 1 37.69 10.75" fill="none" stroke={color} stroke-width="8" stroke-linecap="round"></path>
+  <circle cx="47.56" cy="16.44" r="6" fill={color}></circle>
+</svg>

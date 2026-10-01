@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1200" viewBox="0 0 1024 1200">
+  <rect width="1024" height="1200" fill="#FFF8F0"/>
+  <rect x="262" y="80" width="500" height="500" rx="112" fill="#14213D"/><path d="M521.65 207.38 A122.99999999999999 122.99999999999999 0 0 1 564.95 218.98" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M581.67 228.63 A122.99999999999999 122.99999999999999 0 0 1 613.37 260.33" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M623.02 277.05 A122.99999999999999 122.99999999999999 0 0 1 634.62 320.35" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M634.62 339.65 A122.99999999999999 122.99999999999999 0 0 1 623.02 382.95" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M613.37 399.67 A122.99999999999999 122.99999999999999 0 0 1 581.67 431.37" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M564.95 441.02 A122.99999999999999 122.99999999999999 0 0 1 521.65 452.62" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M502.35 452.62 A122.99999999999999 122.99999999999999 0 0 1 459.05 441.02" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M442.33 431.37 A122.99999999999999 122.99999999999999 0 0 1 410.63 399.67" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M400.98 382.95 A122.99999999999999 122.99999999999999 0 0 1 389.38 339.65" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M389.38 320.35 A122.99999999999999 122.99999999999999 0 0 1 400.98 277.05" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M410.63 260.33 A122.99999999999999 122.99999999999999 0 0 1 442.33 228.63" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="18.9" stroke-linecap="round"/>
+  <path d="M459.05 218.98 A122.99999999999999 122.99999999999999 0 0 1 502.35 207.38" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="18.9" stroke-linecap="round"/>
+  <circle cx="389.38" cy="339.65" r="16.4" fill="#2EC4B6"/>
+  <path d="M463.6 333.3 L498.9 367.7 L566.1 292.3" fill="none" stroke="#FF6B4A" stroke-width="28.7" stroke-linecap="round" stroke-linejoin="round"/><text x="512" y="800" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="800" font-size="128" letter-spacing="-2.6" fill="#14213D" text-anchor="middle">Habit Tracker</text>
+  <text x="512" y="879" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="600" font-size="44" letter-spacing="5.2" fill="#FF6B4A" text-anchor="middle">BY ORBITRA</text>
+</svg>

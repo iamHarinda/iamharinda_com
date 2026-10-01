@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "Habit Tracker",
+    "launcherLabel": "Habit Tracker",
+    "playStoreTitle": "Habit Tracker & Day Counter",
+    "shortDescription": "Day counter, activity log & days since tracker. Count how often you do anything.",
+    "package": "com.orbitra.habittracker",
+    "category": "Productivity",
+    "tagline": "Log it. Count it. Remember it.",
+    "elevatorPitch": "Habit Tracker lets you log anything you do on a calendar and instantly see when, how often, and how long ago you did it — by month, quarter, or year.",
+    "brandPromise": "Private by design. Your log lives on your phone.",
+    "audience": ["United States", "Canada", "United Kingdom", "European Union"],
+    "language": "en"
+  },
+  "developer": {
+    "name": "Orbitra",
+    "playConsoleDeveloperName": "Orbitra",
+    "tagline": "Simple apps for everyday life.",
+    "website": "https://orbitra.app",
+    "supportEmail": "support@orbitra.app",
+    "privacyEmail": "privacy@orbitra.app"
+  },
+  "logo": {
+    "concept": "Orbit Check",
+    "description": "Twelve day-segments orbit a check mark. Nine are complete; a teal planet marks today's progress. Reads as 'a cycle of days, ticked off' — the core action of the app.",
+    "masters": "logo/svg/",
+    "minSizePx": 24,
+    "clearSpace": "25% of mark width on every side"
+  },
+  "voice": {
+    "personality": ["calm", "clear", "encouraging", "never preachy"],
+    "do": ["Use plain words: log, count, see", "Celebrate gently: 'Nice — 12 this month.'", "Write in second person"],
+    "dont": ["Guilt-trip users about missed days", "Use hype words: ultimate, best, #1", "Use exclamation marks more than once per screen"]
+  },
+  "colors": "tokens/design-tokens.json",
+  "fonts": { "primary": "Inter", "display": "Inter Display", "license": "SIL Open Font License 1.1", "files": "fonts/" }
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "slug": "habittracker",
+    "name": "Habit Tracker",
+    "package": "com.orbitra.habittracker",
+    "packageConfirmed": true,
+    "category": "ProductivityApplication",
+    "tagline": "Log it. Count it. Remember it.",
+    "summary": "Create your own topics, tick them on a calendar, and see how often each one happened this month, in 3 months, or this year.",
+    "accent": "#FF6B4A",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.habittracker",
+    "website": null,
+    "status": "testing",
+    "lastUpdated": "2026-10-02",
+    "features": [
+      { "icon": "pen", "title": "Your own topics", "text": "Make a topic for anything — gym, office days, calls home. Pick a name, colour and icon." },
+      { "icon": "calendar", "title": "Tap a day, add a topic", "text": "Add one day or a whole date range in one go, like “Office, 1–3 Oct”." },
+      { "icon": "check", "title": "Plan, then tick off", "text": "Entries are planned or done. One tap switches between them." },
+      { "icon": "chart", "title": "Counts that add up", "text": "See totals for this month, the last 3 months, this year or a custom range." },
+      { "icon": "history", "title": "Topic history", "text": "Open a topic to see every date it happened, newest first, with your notes." },
+      { "icon": "download", "title": "Your data, your copy", "text": "Export to CSV or JSON and import a backup whenever you like." }
+    ],
+    "screenshots": [
+      { "src": "/orbitra/assets/apps/habittracker/screen-1.webp", "alt": "Habit Tracker calendar with ticked days" },
+      { "src": "/orbitra/assets/apps/habittracker/screen-2.webp", "alt": "Adding a topic to a day in Habit Tracker" },
+      { "src": "/orbitra/assets/apps/habittracker/screen-3.webp", "alt": "Habit Tracker stats with counts per period" },
+      { "src": "/orbitra/assets/apps/habittracker/screen-4.webp", "alt": "A topic’s history in Habit Tracker" }
+    ],
+    "screenshotsNote": "Design previews. Real screenshots will replace them after the closed test.",
+    "glance": [
+      "Your topics, entries and notes stay **on your phone**. We never receive them.",
+      "No account. No ads.",
+      "Anonymous usage stats and crash reports are sent **only if you agree**, and you can turn them off in Settings."
+    ],
+    "privacy": {
+      "short": [
+        "Your topics, entries, notes and reminders are stored **only on your phone**. We never receive them.",
+        "There are **no ads** and **no account**.",
+        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. You can turn this off anytime in **Settings → Privacy & analytics**.",
+        "We never sell your data."
+      ],
+      "collected": [
+        { "type": "App interactions (e.g. “an entry was added”, “stats screen opened”) — never your topic names, notes or dates", "why": "See which features are useful", "where": "Google Analytics for Firebase", "shared": "Google, as our service provider. Only with your consent." },
+        { "type": "Crash logs and diagnostics (device model, Android version, app version)", "why": "Find and fix bugs", "where": "Firebase Crashlytics", "shared": "Google, as our service provider. Only with your consent." },
+        { "type": "App instance ID (a random ID Firebase creates for this install)", "why": "Count unique installs without knowing who you are", "where": "Google Analytics for Firebase", "shared": "Google, as our service provider. Only with your consent." }
+      ],
+      "notCollected": [
+        "Your topics, calendar entries, notes and reminder times — they stay on your device.",
+        "Your name, email address or any account details — there is no account.",
+        "Your advertising ID, contacts, precise location, photos, microphone or other apps."
+      ],
+      "permissions": [
+        { "name": "Notifications", "why": "Only if you turn on reminders. Reminders are scheduled on your device; no data is sent to create them." },
+        { "name": "Internet", "why": "Only used to send anonymous stats and crash reports when you have agreed to it." }
+      ],
+      "permissionsNote": "[[TODO: confirm the final permission list in AndroidManifest.xml]]",
+      "thirdParties": [
+        { "name": "Google Analytics for Firebase", "url": "https://firebase.google.com/support/privacy", "use": "Anonymous usage statistics, with your consent." },
+        { "name": "Firebase Crashlytics", "url": "https://firebase.google.com/support/privacy", "use": "Crash reports, with your consent." },
+        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." }
+      ],
+      "howWeUse": [
+        "To understand which features people use, so we know what to improve.",
+        "To find and fix crashes.",
+        "Legal basis in the EU/UK: your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time in Settings."
+      ],
+      "retention": [
+        "Data on your device stays until you delete it, clear the app’s storage or uninstall the app.",
+        "Analytics data is kept for **14 months**. [[TODO: confirm the GA4 data-retention setting]]",
+        "Crash reports are kept for up to **90 days**."
+      ],
+      "children": "{app} is not directed at children under 13 (under 16 in the EU), and we do not knowingly collect their data. [[TODO: confirm the target age group in Play Console]]"
+    },
+    "deletion": {
+      "short": "Your data lives on your phone. Deleting the app deletes it.",
+      "inApp": null,
+      "inAppNote": "[[TODO: if the app gets a “Delete all data” option in Settings, add it here as step 1]]",
+      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy & analytics**. Reinstalling the app also resets the app instance ID.",
+      "deleted": [
+        "Everything you entered in the app: topics, entries, notes, reminders and settings.",
+        "On request, analytics and crash data linked to your app instance ID, where technically possible."
+      ],
+      "kept": [
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Analytics events already processed are removed when the retention period ends (14 months). [[TODO: confirm GA4 retention]]",
+        "Any export files you saved yourself (CSV/JSON) — delete those from your phone or cloud storage.",
+        "Data Google keeps under its own policies, such as your Play Store install history."
+      ]
+    }
+  },
+  {
+    "slug": "periodicelementtable",
+    "name": "Periodic Element Table",
+    "package": "com.orbitra.periodicelementtable",
+    "packageConfirmed": false,
+    "category": "EducationalApplication",
+    "tagline": "The periodic table, in your pocket.",
+    "summary": "The Android app of PeriodicElementTable.com — an interactive periodic table with chemistry tools and learning content.",
+    "accent": "#1E3A8A",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.periodicelementtable",
+    "website": "https://periodicelementtable.com",
+    "status": "coming-soon",
+    "lastUpdated": "2026-10-02",
+    "features": [
+      { "icon": "grid", "title": "Interactive table", "text": "Tap any element to see its group, period, block and more." },
+      { "icon": "atom", "title": "Element details", "text": "Atomic mass, electron configuration and key properties on one page." },
+      { "icon": "calculator", "title": "Molar mass calculator", "text": "Type a formula and get its molar mass." },
+      { "icon": "scale", "title": "Equation balancer", "text": "Balance chemical equations step by step." },
+      { "icon": "columns", "title": "Compare elements", "text": "Put two elements side by side." },
+      { "icon": "book", "title": "Learn as you go", "text": "Short articles that explain the ideas behind the table." }
+    ],
+    "screenshots": [],
+    "screenshotsNote": "Screenshots coming soon.",
+    "glance": [
+      "No account needed.",
+      "The app shows the PeriodicElementTable.com website, so the website’s cookies and analytics apply.",
+      "[[TODO: confirm ads (AdSense/AdMob) before publishing]]"
+    ],
+    "privacy": {
+      "short": [
+        "The app opens **PeriodicElementTable.com** inside the app, so the website’s cookies and analytics apply.",
+        "There is **no account** and we don’t ask for your name or email.",
+        "We use **Google Analytics** to see which pages are useful.",
+        "Ads: [[TODO: confirm whether Google AdSense/AdMob ads are on, and whether they are personalised]]",
+        "We never sell your data."
+      ],
+      "collected": [
+        { "type": "Pages viewed and how the app is used", "why": "See which content is useful", "where": "Google Analytics", "shared": "Google, as our service provider" },
+        { "type": "Device and browser info, approximate location from IP (country)", "why": "Analytics and keeping the site working", "where": "Google Analytics", "shared": "Google, as our service provider" },
+        { "type": "Cookies and similar identifiers", "why": "Analytics. Advertising if ads are on.", "where": "In the app’s web view on your device", "shared": "Google. [[TODO: list ad partners if ads are on]]" }
+      ],
+      "notCollected": [
+        "Your name, email address or any account details — there is no account.",
+        "Your contacts, precise location, photos, microphone or files."
+      ],
+      "permissions": [
+        { "name": "Internet", "why": "To load PeriodicElementTable.com." }
+      ],
+      "permissionsNote": "[[TODO: confirm the app asks for Internet permission only]]",
+      "thirdParties": [
+        { "name": "Google Analytics", "url": "https://policies.google.com/privacy", "use": "Website and app usage statistics." },
+        { "name": "Google AdSense / AdMob", "url": "https://policies.google.com/technologies/ads", "use": "Ads, once they are switched on. [[TODO: confirm]]" },
+        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." }
+      ],
+      "permissionsExtra": null,
+      "howWeUse": [
+        "To understand which pages and tools are useful, so we know what to improve.",
+        "To keep the site and app working and secure.",
+        "To show ads that keep the app free, once ads are on. You can reset or delete your advertising ID in **Android Settings → Privacy → Ads**."
+      ],
+      "retention": [
+        "Analytics data is kept for **14 months**. [[TODO: confirm the GA4 data-retention setting]]",
+        "Cookies stay in the app’s web view until they expire or you clear the app’s storage."
+      ],
+      "children": "Chemistry is studied by students of all ages. [[TODO: confirm the target age group in Play Console — if it includes children under 13, Google Play’s Families Policy applies and this section must be rewritten]]",
+      "extra": "This policy covers the Android app. The website also has its own privacy policy. [[TODO: add the link to periodicelementtable.com’s privacy policy if it has one]]"
+    },
+    "deletion": {
+      "short": "There is no account. Clearing the app’s storage deletes everything the app saved on your phone.",
+      "inApp": null,
+      "inAppNote": null,
+      "analytics": "Analytics data is collected without your name or email.",
+      "deleted": [
+        "Cookies, cache and anything the website saved in the app on your phone.",
+        "On request, analytics data linked to your device, where technically possible."
+      ],
+      "kept": [
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Analytics events are removed when the retention period ends (14 months). [[TODO: confirm GA4 retention]]",
+        "Data Google keeps under its own policies, such as your Play Store install history and ad settings."
+      ]
+    }
+  },
+  {
+    "slug": "toolsserver",
+    "name": "ToolsServer",
+    "package": "com.orbitra.toolsserver",
+    "packageConfirmed": false,
+    "category": "UtilitiesApplication",
+    "tagline": "Calculate. Convert. Create.",
+    "summary": "The Android app of ToolsServer.com — free online tools in one place.",
+    "accent": "#FF6B1A",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.toolsserver",
+    "website": "https://toolsserver.com",
+    "status": "coming-soon",
+    "lastUpdated": "2026-10-02",
+    "features": [
+      { "icon": "calculator", "title": "Calculate", "text": "Everyday calculators, one search away." },
+      { "icon": "repeat", "title": "Convert", "text": "Units, formats and files, converted in a few taps." },
+      { "icon": "pen", "title": "Create", "text": "Small tools to make the things you need." },
+      { "icon": "wrench", "title": "All in one app", "text": "The tools from ToolsServer.com, without opening a browser. [[TODO: list the top 4–6 tools]]" }
+    ],
+    "screenshots": [],
+    "screenshotsNote": "Screenshots coming soon.",
+    "glance": [
+      "No account needed.",
+      "The app shows the ToolsServer.com website, so the website’s cookies and analytics apply.",
+      "[[TODO: say whether files you choose are processed on your device or uploaded, and for how long uploads are kept]]"
+    ],
+    "privacy": {
+      "short": [
+        "The app opens **ToolsServer.com** inside the app, so the website’s cookies and analytics apply.",
+        "There is **no account** and we don’t ask for your name or email.",
+        "Files you choose: [[TODO: confirm per tool — processed on your device, or uploaded to our server and deleted after how long?]]",
+        "Ads: [[TODO: confirm]]",
+        "We never sell your data."
+      ],
+      "collected": [
+        { "type": "Pages viewed and how the tools are used", "why": "See which tools are useful", "where": "Google Analytics", "shared": "Google, as our service provider" },
+        { "type": "Device and browser info, approximate location from IP (country)", "why": "Analytics and keeping the site working", "where": "Google Analytics", "shared": "Google, as our service provider" },
+        { "type": "Files you choose to process", "why": "To run the tool you picked", "where": "[[TODO: on device or our server]]", "shared": "[[TODO: confirm]]" },
+        { "type": "Cookies and similar identifiers", "why": "Analytics. Advertising if ads are on.", "where": "In the app’s web view on your device", "shared": "Google. [[TODO: confirm]]" }
+      ],
+      "notCollected": [
+        "Your name, email address or any account details — there is no account.",
+        "Your contacts, precise location or microphone."
+      ],
+      "permissions": [
+        { "name": "Internet", "why": "To load ToolsServer.com." },
+        { "name": "File / photo picker", "why": "Only when a tool needs a file, and only the file you pick." }
+      ],
+      "permissionsNote": "[[TODO: confirm the final permission list]]",
+      "thirdParties": [
+        { "name": "Google Analytics", "url": "https://policies.google.com/privacy", "use": "Website and app usage statistics." },
+        { "name": "Google AdSense / AdMob", "url": "https://policies.google.com/technologies/ads", "use": "Ads, if they are on. [[TODO: confirm]]" },
+        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." }
+      ],
+      "howWeUse": [
+        "To run the tool you chose.",
+        "To understand which tools are useful, so we know what to improve.",
+        "To keep the site and app working and secure."
+      ],
+      "retention": [
+        "Analytics data is kept for **14 months**. [[TODO: confirm the GA4 data-retention setting]]",
+        "Uploaded files: [[TODO: confirm how long, e.g. deleted within 1 hour]]",
+        "Cookies stay in the app’s web view until they expire or you clear the app’s storage."
+      ],
+      "children": "{app} is not directed at children under 13, and we do not knowingly collect their data. [[TODO: confirm the target age group in Play Console]]",
+      "extra": "This policy covers the Android app. [[TODO: add the link to toolsserver.com’s privacy policy if it has one]]"
+    },
+    "deletion": {
+      "short": "There is no account. Clearing the app’s storage deletes everything the app saved on your phone.",
+      "inApp": null,
+      "inAppNote": null,
+      "analytics": "Analytics data is collected without your name or email.",
+      "deleted": [
+        "Cookies, cache and anything the website saved in the app on your phone.",
+        "On request, analytics data linked to your device, where technically possible.",
+        "Uploaded files, if any: [[TODO: confirm they are deleted automatically and when]]"
+      ],
+      "kept": [
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Analytics events are removed when the retention period ends (14 months). [[TODO: confirm GA4 retention]]",
+        "Files you saved to your phone yourself.",
+        "Data Google keeps under its own policies, such as your Play Store install history."
+      ]
+    }
+  },
+  {
+    "slug": "productwhite",
+    "name": "ProductWhite",
+    "package": "com.orbitra.productwhite",
+    "packageConfirmed": true,
+    "category": "PhotographyApplication",
+    "tagline": "White-background product photos in one tap.",
+    "summary": "Remove the background from your product photos and size them for Amazon, Etsy, eBay and Shopify. Free, on your phone.",
+    "accent": "#1E4DFF",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.productwhite",
+    "website": null,
+    "status": "coming-soon",
+    "lastUpdated": "2026-10-02",
+    "features": [
+      { "icon": "image", "title": "Remove the background", "text": "Pick a product photo and get a clean, pure white background." },
+      { "icon": "store", "title": "Ready for your shop", "text": "Sized for Amazon, Etsy, eBay and Shopify listings." },
+      { "icon": "gauge", "title": "Photo check", "text": "Tells you how to fix a photo, like “Product fills 68%. Aim for 85%.”" },
+      { "icon": "download", "title": "Save to phone", "text": "Export ready-to-upload images straight to your gallery." }
+    ],
+    "screenshots": [
+      { "src": "/orbitra/assets/apps/productwhite/screen-1.webp", "alt": "ProductWhite home screen" },
+      { "src": "/orbitra/assets/apps/productwhite/screen-2.webp", "alt": "Choosing a product photo in ProductWhite" },
+      { "src": "/orbitra/assets/apps/productwhite/screen-3.webp", "alt": "A product on a white background in ProductWhite" },
+      { "src": "/orbitra/assets/apps/productwhite/screen-4.webp", "alt": "ProductWhite photo check" },
+      { "src": "/orbitra/assets/apps/productwhite/screen-5.webp", "alt": "Saving a finished photo in ProductWhite" }
+    ],
+    "screenshotsNote": "Store artwork. Real screenshots will replace them once the app runs.",
+    "glance": [
+      "No account needed.",
+      "Your photos: [[TODO: confirm — processed on your phone, or uploaded for background removal?]]",
+      "Links to Premium Photo Edits and WhatsApp open separate services with their own privacy policies."
+    ],
+    "privacy": {
+      "short": [
+        "There is **no account** and we don’t ask for your name or email.",
+        "Your photos: [[TODO: confirm — processed on your phone, or uploaded to a server/API for background removal? If uploaded: which service and how long they are kept. Do not publish until confirmed.]]",
+        "Analytics: [[TODO: confirm whether Firebase/Google Analytics is used]]",
+        "We never sell your data."
+      ],
+      "collected": [
+        { "type": "Photos you choose to edit", "why": "To remove the background", "where": "[[TODO: on device or which server/API]]", "shared": "[[TODO: confirm]]" },
+        { "type": "App interactions and crash logs", "why": "Improve the app and fix bugs", "where": "[[TODO: confirm analytics provider]]", "shared": "[[TODO: confirm]]" }
+      ],
+      "notCollected": [
+        "Your name, email address or any account details — there is no account.",
+        "Your contacts, precise location, microphone or photos you did not pick."
+      ],
+      "permissions": [
+        { "name": "Photo picker", "why": "Only the photos you pick are opened." },
+        { "name": "Camera", "why": "Only if you take a new product photo in the app." }
+      ],
+      "permissionsNote": "[[TODO: confirm the final permission list]]",
+      "thirdParties": [
+        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." },
+        { "name": "Background-removal service", "url": "#", "use": "[[TODO: name the service and link its privacy policy, or remove this row if processing is on-device]]" }
+      ],
+      "howWeUse": [
+        "To put your product on a white background and save the result.",
+        "To fix bugs and improve the app. [[TODO: confirm]]"
+      ],
+      "retention": [
+        "Edited photos you save stay in your gallery until you delete them.",
+        "Uploaded photos, if any: [[TODO: confirm how long they are kept]]"
+      ],
+      "children": "{app} is a tool for online sellers and is not directed at children under 13. We do not knowingly collect their data. [[TODO: confirm the target age group in Play Console]]",
+      "extra": "The app links to [Premium Photo Edits](https://premiumphotoedits.com) for optional professional edits, and to WhatsApp to contact that service. Those are separate services with their own privacy policies. This page replaces the earlier policy at premiumphotoedits.com/productwhite/privacy. [[TODO: redirect that old URL here]]"
+    },
+    "deletion": {
+      "short": "There is no account. Clearing the app’s storage or uninstalling deletes what the app saved on your phone.",
+      "inApp": null,
+      "inAppNote": null,
+      "analytics": "Any analytics data is collected without your name or email. [[TODO: confirm analytics]]",
+      "deleted": [
+        "Settings and anything the app saved in its own storage on your phone.",
+        "Uploaded photos, if any: [[TODO: confirm they are deleted automatically and when]]"
+      ],
+      "kept": [
+        "Finished photos you saved to your gallery — delete them from your gallery.",
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Data Google keeps under its own policies, such as your Play Store install history."
+      ]
+    }
+  }
+]

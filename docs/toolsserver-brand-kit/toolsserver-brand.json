@@ -1,0 +1,47 @@
+{
+  "brand": "ToolsServer",
+  "domain": "toolsserver.com",
+  "tagline": "Thousands of Useful Tools. One Simple Place.",
+  "altTaglines": ["Calculate. Convert. Create.", "Your Everyday Online Toolkit.", "Everything You Need, One Search Away."],
+  "logo": {
+    "name": "Signal Stack",
+    "concept": "Three rack-units of a server joined into one continuous 'S'. Each unit carries a slider knob, so the mark reads as a server stack and a control panel at the same time. The three knobs stand for Calculate, Convert, Create, and they step diagonally from top-right to bottom-left like a setting being dialed in.",
+    "geometry": {
+      "grid": 512,
+      "sPath": "M364 156H148V256H364V356H148",
+      "strokeWidth": 48,
+      "lineCap": "round",
+      "lineJoin": "round",
+      "knobRadius": 30,
+      "knobClearGap": 10,
+      "knobs": [{"x": 316, "y": 156, "meaning": "Calculate"}, {"x": 256, "y": 256, "meaning": "Convert"}, {"x": 196, "y": 356, "meaning": "Create"}],
+      "appIconCornerRadius": 116,
+      "faviconVariant": {"strokeWidth": 68, "knobs": 1, "knobRadius": 26, "note": "Simplified for 16-48px so it stays sharp"}
+    },
+    "wordmark": {"text": "ToolsServer", "typeface": "Poppins Bold (SIL OFL, outlined to paths)", "tracking": "-2.5%", "case": "Camel case, never all caps"},
+    "clearSpace": "Keep empty space around the logo at least equal to the height of one knob (the diameter of a circle).",
+    "minimumSize": {"markDigitalPx": 16, "horizontalLogoDigitalPx": 96, "horizontalLogoPrintMm": 25}
+  },
+  "colors": {
+    "deepCurrent": {"hex": "#0F1B4C", "rgb": [15, 27, 76], "role": "Primary. App-icon tile, dark backgrounds, wordmark on light."},
+    "signalTangerine": {"hex": "#FF6B1A", "rgb": [255, 107, 26], "role": "Brand signal. The S on dark, knobs on light, key buttons."},
+    "cloud": {"hex": "#F3F5FA", "rgb": [243, 245, 250], "role": "Light background, knobs on dark, wordmark on dark."},
+    "steel": {"hex": "#5A6484", "rgb": [90, 100, 132], "role": "Secondary text, borders, icons."},
+    "sky": {"hex": "#8FB2FF", "rgb": [143, 178, 255], "role": "Secondary accent on dark (tagline, links)."}
+  },
+  "colorRules": [
+    "On light backgrounds: Deep Current S with Signal Tangerine knobs.",
+    "On dark backgrounds: Signal Tangerine S with Cloud knobs.",
+    "One-colour print/emboss: use the mono files; the knob gaps keep the mark readable in a single colour.",
+    "Do not put Signal Tangerine text on white for body copy (contrast too low); use it for shapes and large display only."
+  ],
+  "dontDo": ["Do not rotate, skew or stretch the mark", "Do not move the knobs or change their count (except the official favicon)", "Do not add gradients, shadows or outlines", "Do not recolour outside the palette", "Do not retype the wordmark in another font"],
+  "files": {
+    "favicon": ["favicon.ico", "favicon.svg", "png/favicon-16.png", "png/favicon-32.png", "png/favicon-48.png"],
+    "appIcons": {"iosAppleTouch": "png/apple-touch-icon-180.png", "pwa192": "png/android-chrome-192.png", "pwa512": "png/android-chrome-512.png", "maskable": "png/maskable-icon-512.png", "androidAdaptiveForeground": "svg/android-adaptive-foreground.svg", "androidAdaptiveBackground": "svg/android-adaptive-background.svg"},
+    "playStore": {"icon512": "png/play-store-icon-512.png", "featureGraphic": "png/play-feature-graphic-1024x500.png"},
+    "social": {"avatar": "png/social-avatar-1080.png", "openGraph": "png/og-image-1200x630.png"},
+    "logos": {"horizontalLight": "svg/toolsserver-logo-horizontal-light.svg", "horizontalDark": "svg/toolsserver-logo-horizontal-dark.svg", "horizontalWithTile": "svg/toolsserver-logo-horizontal-tile.svg", "stackedLight": "svg/toolsserver-logo-stacked-light.svg", "stackedDark": "svg/toolsserver-logo-stacked-dark.svg", "markOnLight": "svg/toolsserver-mark-on-light.svg", "markOnDark": "svg/toolsserver-mark-on-dark.svg", "monoBlack": "svg/toolsserver-mark-mono-black.svg", "monoWhite": "svg/toolsserver-mark-mono-white.svg"}
+  },
+  "web": {"themeColor": "#0F1B4C", "backgroundColor": "#0F1B4C", "headSnippet": "web/head-snippet.html", "manifest": "web/site.webmanifest", "heroSnippet": "web/hero-logo-snippet.html"}
+}
