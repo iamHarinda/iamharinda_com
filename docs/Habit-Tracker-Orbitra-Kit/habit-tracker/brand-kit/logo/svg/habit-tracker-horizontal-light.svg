@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520">
+  <rect width="1600" height="520" fill="#FFF8F0"/>
+  <g></g><rect x="40" y="40" width="440" height="440" rx="99" fill="#14213D"/><path d="M268.47 152.33 A108.0 108.0 0 0 1 306.50 162.52" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M321.17 170.99 A108.0 108.0 0 0 1 349.01 198.83" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M357.48 213.50 A108.0 108.0 0 0 1 367.67 251.53" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M367.67 268.47 A108.0 108.0 0 0 1 357.48 306.50" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M349.01 321.17 A108.0 108.0 0 0 1 321.17 349.01" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M306.50 357.48 A108.0 108.0 0 0 1 268.47 367.67" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M251.53 367.67 A108.0 108.0 0 0 1 213.50 357.48" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M198.83 349.01 A108.0 108.0 0 0 1 170.99 321.17" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M162.52 306.50 A108.0 108.0 0 0 1 152.33 268.47" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M152.33 251.53 A108.0 108.0 0 0 1 162.52 213.50" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M170.99 198.83 A108.0 108.0 0 0 1 198.83 170.99" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="16.6" stroke-linecap="round"/>
+  <path d="M213.50 162.52 A108.0 108.0 0 0 1 251.53 152.33" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="16.6" stroke-linecap="round"/>
+  <circle cx="152.33" cy="268.47" r="14.4" fill="#2EC4B6"/>
+  <path d="M217.5 262.9 L248.5 293.1 L307.5 226.9" fill="none" stroke="#FF6B4A" stroke-width="25.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="540" y="270" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="800" font-size="120" letter-spacing="-2.4" fill="#14213D" text-anchor="start">Habit Tracker</text>
+  <text x="540" y="344" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="600" font-size="41" letter-spacing="4.9" fill="#FF6B4A" text-anchor="start">BY ORBITRA</text>
+</svg>

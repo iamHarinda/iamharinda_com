@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 0 1024 500">
+  
+  <defs><radialGradient id="g" cx="78%" cy="45%" r="60%"><stop offset="0" stop-color="#22325A"/><stop offset="1" stop-color="#14213D"/></radialGradient></defs><rect width="1024" height="500" fill="url(#g)"/><path d="M814.59 64.57 A186.0 186.0 0 0 1 880.08 82.12" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M905.35 96.71 A186.0 186.0 0 0 1 953.29 144.65" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M967.88 169.92 A186.0 186.0 0 0 1 985.43 235.41" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M985.43 264.59 A186.0 186.0 0 0 1 967.88 330.08" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M953.29 355.35 A186.0 186.0 0 0 1 905.35 403.29" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M880.08 417.88 A186.0 186.0 0 0 1 814.59 435.43" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M785.41 435.43 A186.0 186.0 0 0 1 719.92 417.88" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M694.65 403.29 A186.0 186.0 0 0 1 646.71 355.35" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M632.12 330.08 A186.0 186.0 0 0 1 614.57 264.59" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M614.57 235.41 A186.0 186.0 0 0 1 632.12 169.92" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M646.71 144.65 A186.0 186.0 0 0 1 694.65 96.71" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="28.5" stroke-linecap="round"/>
+  <path d="M719.92 82.12 A186.0 186.0 0 0 1 785.41 64.57" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="28.5" stroke-linecap="round"/>
+  <circle cx="614.57" cy="264.59" r="24.8" fill="#2EC4B6"/>
+  <path d="M726.8 255.0 L780.2 307.0 L881.8 193.0" fill="none" stroke="#FF6B4A" stroke-width="43.4" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="200" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="800" font-size="76" letter-spacing="-1.5" fill="#FFF8F0">Habit Tracker</text><text x="74" y="262" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="500" font-size="34" fill="#FFF8F0" fill-opacity="0.82">When did I last…? How often?</text><text x="74" y="306" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="500" font-size="34" fill="#FFF8F0" fill-opacity="0.82">Log it. Count it. Remember it.</text><rect x="74" y="352" width="360" height="56" rx="28" fill="#FF6B4A"/><text x="254" y="389" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="700" font-size="24" fill="#0B1220" text-anchor="middle">Private · Offline · No ads</text>
+</svg>

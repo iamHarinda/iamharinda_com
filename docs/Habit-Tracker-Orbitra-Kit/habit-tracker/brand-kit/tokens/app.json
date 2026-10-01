@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Habit Tracker",
+    "slug": "habit-tracker",
+    "owner": "orbitra",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "habittracker",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "primaryColor": "#FF6B4A",
+    "description": "Log anything you do and see when, how often, and how long ago. Private, offline-first habit tracker and day counter.",
+    "githubUrl": "https://github.com/orbitra/habit-tracker",
+    "android": {
+      "package": "com.orbitra.habittracker",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon-foreground.png",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png",
+        "backgroundColor": "#14213D"
+      },
+      "googleServicesFile": "./google-services.json",
+      "permissions": ["POST_NOTIFICATIONS", "SCHEDULE_EXACT_ALARM", "RECEIVE_BOOT_COMPLETED", "USE_BIOMETRIC"],
+      "blockedPermissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_CONTACTS",
+        "android.permission.RECORD_AUDIO",
+        "com.google.android.gms.permission.AD_ID"
+      ],
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-localization",
+      ["expo-splash-screen", {
+        "image": "./assets/splash-icon.png",
+        "imageWidth": 160,
+        "resizeMode": "contain",
+        "backgroundColor": "#14213D",
+        "dark": { "image": "./assets/splash-icon.png", "backgroundColor": "#0B1220" }
+      }],
+      ["expo-notifications", { "icon": "./assets/adaptive-icon-monochrome.png", "color": "#FF6B4A" }],
+      ["expo-font", { "fonts": ["./assets/fonts/Inter-Regular.otf", "./assets/fonts/Inter-Medium.otf", "./assets/fonts/Inter-SemiBold.otf", "./assets/fonts/Inter-Bold.otf", "./assets/fonts/InterDisplay-ExtraBold.otf"] }],
+      "@react-native-firebase/app",
+      ["expo-build-properties", { "android": { "compileSdkVersion": 36, "targetSdkVersion": 36, "minSdkVersion": 26 } }]
+    ],
+    "experiments": { "typedRoutes": true },
+    "extra": {
+      "privacyPolicyUrl": "https://orbitra.app/habit-tracker/privacy",
+      "supportEmail": "support@orbitra.app",
+      "eas": { "projectId": "REPLACE_WITH_EAS_PROJECT_ID" }
+    }
+  }
+}

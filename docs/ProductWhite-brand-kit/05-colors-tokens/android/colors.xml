@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ProductWhite brand colours -->
+<resources>
+    <color name="pw_chroma_blue">#1E4DFF</color>
+    <color name="pw_chroma_blue_600">#1A3FD6</color>
+    <color name="pw_chroma_blue_50">#EDF1FF</color>
+    <color name="pw_ink">#121826</color>
+    <color name="pw_slate">#4A5568</color>
+    <color name="pw_mist">#8A94A6</color>
+    <color name="pw_line">#E3E7EE</color>
+    <color name="pw_sweep">#E9ECF2</color>
+    <color name="pw_paper">#F4F6FA</color>
+    <color name="pw_studio_white">#FFFFFF</color>
+    <color name="pw_score_good">#12A150</color>
+    <color name="pw_score_fair">#C97A00</color>
+    <color name="pw_score_poor">#D93A3F</color>
+    <color name="pw_night">#0B1020</color>
+    <color name="pw_night_surface">#161D30</color>
+</resources>

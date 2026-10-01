@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habit Tracker — UI Screens</title>
+<style>
+@font-face{font-family:Inter;src:url(../../brand-kit/fonts/Inter-Regular.otf);font-weight:400}
+@font-face{font-family:Inter;src:url(../../brand-kit/fonts/Inter-Medium.otf);font-weight:500}
+@font-face{font-family:Inter;src:url(../../brand-kit/fonts/Inter-SemiBold.otf);font-weight:600}
+@font-face{font-family:Inter;src:url(../../brand-kit/fonts/Inter-Bold.otf);font-weight:700}
+@font-face{font-family:Inter;src:url(../../brand-kit/fonts/Inter-ExtraBold.otf);font-weight:800}
+@font-face{font-family:"Inter Display";src:url(../../brand-kit/fonts/InterDisplay-ExtraBold.otf);font-weight:800}
+:root{
+  --bg:#FFF8F0;--surface:#FFFFFF;--muted:#F4ECE2;--border:#E8DED2;--text:#14213D;--text2:#5C6B7A;
+  --primary:#FF6B4A;--onprimary:#0B1220;--success:#158A7F;--planned:#8C99A6;--navy:#14213D;--cream:#FFF8F0;--sun:#FFC857;
+  --page:#EFE6DA;--shadow:0 1px 2px rgba(20,33,61,.06),0 4px 12px rgba(20,33,61,.06);
+}
+body.dark{
+  --bg:#0B1220;--surface:#14213D;--muted:#1C2B4D;--border:#26365C;--text:#FFF8F0;--text2:#A9B4C2;
+  --primary:#FF7A5C;--success:#2EC4B6;--planned:#6B7A8C;--page:#05080F;--shadow:0 0 0 1px #26365C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:var(--page);color:var(--text);transition:background .25s}
+.top{max-width:1500px;margin:0 auto;padding:40px 24px 8px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.top h1{font-family:"Inter Display",Inter;font-weight:800;font-size:34px;letter-spacing:-.02em}
+.top p{color:var(--text2);margin-top:4px}
+.toggle{border:0;background:var(--navy);color:var(--cream);font:600 14px Inter;padding:12px 18px;border-radius:999px;cursor:pointer}
+body.dark .toggle{background:var(--cream);color:var(--navy)}
+.board{max-width:1500px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:40px 28px;justify-items:center}
+figure{display:flex;flex-direction:column;align-items:center;gap:12px}
+figcaption{font:600 13px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--text2)}
+figcaption b{color:var(--primary);margin-right:6px}
+.phone{width:360px;height:760px;border-radius:36px;background:var(--bg);overflow:hidden;position:relative;box-shadow:0 30px 60px -20px rgba(11,18,32,.35),0 0 0 8px #0B1220;display:flex;flex-direction:column}
+.status{height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 22px;font:600 12px Inter;color:var(--text)}
+.content{flex:1;overflow:hidden;padding:4px 16px 0;position:relative}
+.h-row{display:flex;justify-content:space-between;align-items:center;margin:8px 0 16px}
+.eyebrow{font:700 11px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--primary)}
+.h1{font:700 26px/1.2 Inter;letter-spacing:-.01em}
+.h2{font:700 18px Inter;margin:20px 0 10px}
+.cap{font:400 12px Inter;color:var(--text2)}
+.iconbtn{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--muted);color:var(--text)}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card{background:var(--surface);border-radius:20px;box-shadow:var(--shadow)}
+.row{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border)}
+.row:last-child{border-bottom:0}
+.dot{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none;color:#0B1220}
+.dot svg.i{width:20px;height:20px}
+.name{font:600 15px Inter}
+.grow{flex:1;min-width:0}
+.check{width:32px;height:32px;border-radius:50%;border:2px solid var(--planned);display:grid;place-items:center;flex:none}
+.check.done{background:var(--success);border-color:var(--success);color:#fff}
+body.dark .check.done{color:#0B1220}
+.check svg.i{width:18px;height:18px;stroke-width:3}
+.count{font:800 22px "Inter Display",Inter;text-align:right}
+.chips{display:flex;gap:8px;overflow:hidden;margin:4px 0 14px}
+.chip{flex:none;height:34px;padding:0 14px;border-radius:999px;background:var(--muted);font:500 13px/34px Inter;color:var(--text)}
+.chip.on{background:var(--navy);color:var(--cream)}
+body.dark .chip.on{background:var(--cream);color:var(--navy)}
+.nav{height:76px;background:var(--surface);border-top:1px solid var(--border);display:flex;justify-content:space-around;align-items:center;padding-bottom:8px}
+.nav div{display:flex;flex-direction:column;align-items:center;gap:4px;font:500 11px Inter;color:var(--text2);width:72px}
+.nav div.on{color:var(--text)}
+.nav div.on span.pill{background:rgba(255,107,74,.18);color:var(--primary)}
+.nav span.pill{width:56px;height:30px;border-radius:999px;display:grid;place-items:center}
+.fab{position:absolute;right:16px;bottom:92px;width:56px;height:56px;border-radius:18px;background:var(--primary);color:var(--onprimary);display:grid;place-items:center;box-shadow:0 6px 18px rgba(255,107,74,.35);z-index:3}
+.fab svg.i{width:26px;height:26px;stroke-width:2.5}
+.lastchips{display:flex;gap:8px;overflow:hidden}
+.lt{flex:none;background:var(--surface);border-radius:16px;padding:10px 12px;box-shadow:var(--shadow);min-width:104px}
+.lt b{display:block;font:800 20px "Inter Display",Inter}
+.prompt{background:rgba(255,200,87,.22);border-radius:16px;padding:12px 14px;display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.btn{height:44px;border-radius:999px;border:0;font:600 14px Inter;padding:0 18px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn.pri{background:var(--primary);color:var(--onprimary)}
+.btn.sec{background:var(--surface);color:var(--text);border:1px solid var(--border)}
+.btn.sm{height:32px;padding:0 12px;font-size:13px}
+.btn.full{width:100%}
+/* calendar */
+.cal-head{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font:600 11px Inter;color:var(--text2);margin-bottom:6px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);row-gap:4px}
+.day{height:46px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:6px;font:500 14px Inter;position:relative}
+.day.out{color:var(--text2);opacity:.45}
+.day .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center}
+.day.today .n{box-shadow:inset 0 0 0 2px var(--primary);font-weight:700}
+.day.sel .n{background:var(--navy);color:var(--cream)}
+body.dark .day.sel .n{background:var(--cream);color:var(--navy)}
+.day.range::before{content:"";position:absolute;top:6px;left:0;right:0;height:30px;background:rgba(255,107,74,.16)}
+.day.rs::before{left:50%}.day.re::before{right:50%}
+.day.rs .n,.day.re .n{background:var(--primary);color:var(--onprimary);position:relative}
+.day .dots{display:flex;gap:3px;margin-top:3px;height:6px}
+.day .dots i{width:6px;height:6px;border-radius:50%;display:block}
+/* sheet */
+.scrim{position:absolute;inset:0;background:rgba(11,18,32,.45);z-index:4}
+.sheet{position:absolute;left:0;right:0;bottom:0;background:var(--surface);border-radius:24px 24px 0 0;padding:10px 16px 20px;z-index:5}
+.handle{width:36px;height:4px;border-radius:2px;background:var(--border);margin:0 auto 14px}
+.seg{display:flex;background:var(--muted);border-radius:999px;padding:4px;margin:12px 0}
+.seg div{flex:1;text-align:center;height:34px;line-height:34px;border-radius:999px;font:600 13px Inter;color:var(--text2)}
+.seg div.on{background:var(--surface);color:var(--text);box-shadow:var(--shadow)}
+body.dark .seg div.on{background:var(--navy)}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 8px;margin:6px 0 4px}
+.tg{display:flex;flex-direction:column;align-items:center;gap:6px;font:500 11px Inter;text-align:center}
+.tg .dot{width:52px;height:52px}
+.tg.on .dot{box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--text)}
+.field{display:flex;gap:10px}
+.field>div{flex:1;background:var(--muted);border-radius:14px;padding:8px 12px}
+.field label{font:600 10px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--text2)}
+.field p{font:600 15px Inter;margin-top:2px}
+.note{background:var(--muted);border-radius:14px;padding:12px;font:400 14px Inter;color:var(--text2);margin:10px 0 14px}
+/* stats */
+.stat{padding:18px 18px 16px}
+.big{font:800 52px/1 "Inter Display",Inter;letter-spacing:-.02em}
+.split{display:flex;gap:10px}
+.split .card{flex:1;padding:14px}
+.bars{display:flex;align-items:flex-end;gap:14px;height:92px;padding:6px 4px 0}
+.bars div{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;justify-content:flex-end;height:100%}
+.bars i{display:block;width:100%;border-radius:6px 6px 2px 2px}
+.bars span{font:500 10px Inter;color:var(--text2)}
+.hbar{height:8px;border-radius:4px;background:var(--muted);margin-top:6px;overflow:hidden}
+.hbar i{display:block;height:100%;border-radius:4px}
+.mon{font:700 11px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin:14px 2px 6px}
+/* onboarding */
+.onb{display:flex;flex-direction:column;height:100%;padding:12px 8px 20px}
+.dots3{display:flex;gap:6px;justify-content:center;margin:14px 0}
+.dots3 i{width:8px;height:8px;border-radius:4px;background:var(--border)}
+.dots3 i.on{width:22px;background:var(--primary)}
+.tmpl{display:flex;flex-wrap:wrap;gap:8px}
+.tmpl span{height:38px;padding:0 14px 0 6px;border-radius:999px;background:var(--surface);border:1px solid var(--border);display:inline-flex;align-items:center;gap:8px;font:500 13px Inter}
+.tmpl span i{width:26px;height:26px;border-radius:50%;display:block}
+.tmpl span.on{border:2px solid var(--text)}
+.set{padding:14px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);font:500 15px Inter}
+.set:last-child{border-bottom:0}
+.set .cap{margin-left:auto}
+.sw{width:44px;height:26px;border-radius:13px;background:var(--success);position:relative;margin-left:auto;flex:none}
+.sw::after{content:"";position:absolute;right:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff}
+.sw.off{background:var(--border)}.sw.off::after{right:auto;left:3px}
+.notes{max-width:1100px;margin:20px auto 60px;padding:0 24px;color:var(--text2);font-size:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+  <symbol id="dumbbell" viewBox="0 0 24 24"><path d="M6 7v10M3 9v6M18 7v10M21 9v6M6 12h12"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.6-9 9-9 9z"/></symbol>
+  <symbol id="house" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 21V5"/></symbol>
+  <symbol id="scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 20 20M8.5 15.5 20 4"/></symbol>
+  <symbol id="dollar" viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="today" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></symbol>
+  <symbol id="chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1A1.7 1.7 0 0 0 7 19.4l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0-1.2-2.9H3a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 4.6 7l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 2.9-1.2V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0 1.2 2.9H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+  <symbol id="left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+  <symbol id="bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10 21h4"/></symbol>
+  <symbol id="lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></symbol>
+  <symbol id="moon" viewBox="0 0 24 24"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></symbol>
+  <symbol id="pencil" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16zM14 6l4 4"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+</svg>
+
+<div class="top">
+  <div>
+    <h1>Habit Tracker · UI screens</h1>
+    <p>v1.0 · Android · 360 × 760 dp · Thursday, October 1, 2026 (en-US locale, week starts Sunday)</p>
+  </div>
+  <button class="toggle" onclick="document.body.classList.toggle('dark')">Toggle dark mode</button>
+</div>
+
+<div class="board" id="board"></div>
+
+<div class="notes">
+  <p><b>How to read this file:</b> each frame is one screen at real phone size. Use the button above to see dark mode. Specs (spacing, components, motion) are in <code>docs/04-ui-designer/UI_DESIGNER_REPORT.md</code>; flows in <code>design/flows/user-flows.md</code>. Core requirements C1–C8 are labelled on the screens that satisfy them.</p>
+</div>
+
+<script>
+const T = {
+  office:{n:"Office",c:"#FF6B4A",i:"briefcase"}, gym:{n:"Gym",c:"#2EC4B6",i:"dumbbell"},
+  mom:{n:"Visited Mom",c:"#FF7EB6",i:"heart"}, friend:{n:"Friend's house",c:"#6C8CFF",i:"house"},
+  read:{n:"Read",c:"#B07CFF",i:"book"}, hair:{n:"Haircut",c:"#FF9F43",i:"scissors"},
+  money:{n:"Gave money",c:"#34C26B",i:"dollar"}, walk:{n:"Evening walk",c:"#FFC857",i:"clock"}
+};
+const ic = (id, cls="i") => `<svg class="${cls}"><use href="#${id}"/></svg>`;
+const dot = (k, size) => `<div class="dot" style="background:${T[k].c}${size?`;width:${size}px;height:${size}px`:""}">${ic(T[k].i)}</div>`;
+const status = `<div class="status"><span>9:41</span><span>▴ ◼ 87%</span></div>`;
+const nav = (on) => `<div class="nav">${[["today","Today"],["cal","Calendar"],["list","Topics"],["chart","Stats"]].map(([i,l])=>`<div class="${l===on?"on":""}"><span class="pill">${ic(i)}</span>${l}</div>`).join("")}</div>`;
+const fab = `<div class="fab">${ic("plus")}</div>`;
+const chips = (on) => `<div class="chips">${["This month","3 months","This year","Custom"].map(c=>`<span class="chip ${c===on?"on":""}">${c}</span>`).join("")}</div>`;
+const phone = (inner) => `<div class="phone">${status}${inner}</div>`;
+const frame = (n, title, html) => `<figure>${html}<figcaption><b>${n}</b>${title}</figcaption></figure>`;
+
+// Calendar data: October 2026, Oct 1 = Thursday
+function calendar({sel=null, range=null}={}){
+  const marks = {1:["office","gym"],2:["office"],3:["friend","money"],4:["friend"],5:["office","read"],6:["office","gym"],7:["office"],
+    10:["mom"],12:["office"],13:["office","gym"],14:["office"],17:["hair"],20:["gym"],24:["friend"]};
+  const planned = new Set([3,4,5,6,7,10,12,13,14,17,20,24]);
+  let cells = "";
+  for (const d of [27,28,29,30]) cells += `<div class="day out"><span class="n">${d}</span><span class="dots"></span></div>`;
+  for (let d=1; d<=31; d++){
+    let cls = "day"; if (d===1) cls+=" today"; if (d===sel) cls+=" sel";
+    if (range && d>=range[0] && d<=range[1]){ cls+=" range"; if(d===range[0]) cls+=" rs"; if(d===range[1]) cls+=" re"; }
+    const ds = (marks[d]||[]).map(k=>`<i style="background:${T[k].c};${planned.has(d)?"opacity:.45":""}"></i>`).join("");
+    cells += `<div class="${cls}"><span class="n">${d}</span><span class="dots">${ds}</span></div>`;
+  }
+  return `<div class="cal-head"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="cal">${cells}</div>`;
+}
+
+const screens = [];
+
+// 1 Onboarding — welcome
+screens.push(frame("01","Onboarding · Welcome", phone(`
+<div class="content"><div class="onb">
+  <div style="flex:1;display:grid;place-items:center">
+    <div style="width:230px;height:230px;border-radius:52px;background:#14213D;display:grid;place-items:center">
+      <img src="../../brand-kit/logo/png/habit-tracker-mark-on-dark.png" width="200" alt="">
+    </div>
+  </div>
+  <div class="eyebrow" style="text-align:center">Welcome</div>
+  <div class="h1" style="text-align:center;font-size:28px;margin:8px 0 10px">Log anything.<br>See when &amp; how often.</div>
+  <p class="cap" style="text-align:center;font-size:15px;line-height:1.5">Office days, gym, visiting Mom, a haircut — tick it off and Habit Tracker counts it for you.</p>
+  <div class="dots3"><i class="on"></i><i></i><i></i></div>
+  <button class="btn pri full">Get started</button>
+</div></div>`)));
+
+// 2 Onboarding — templates
+const tm = [["office",1],["gym",1],["mom",1],["friend",0],["read",1],["hair",0],["money",0],["walk",0]];
+screens.push(frame("02","Onboarding · Pick topics (C1)", phone(`
+<div class="content"><div class="onb">
+  <div class="eyebrow">Step 2 of 3</div>
+  <div class="h1" style="margin:8px 0 6px">What do you want to keep track of?</div>
+  <p class="cap" style="font-size:14px;margin-bottom:18px">Pick a few to start. You can add your own anytime.</p>
+  <div class="tmpl">${tm.map(([k,on])=>`<span class="${on?"on":""}"><i style="background:${T[k].c}"></i>${T[k].n}</span>`).join("")}
+    <span><i style="background:var(--muted)"></i>Doctor</span><span><i style="background:#3DB2FF"></i>Call parents</span><span><i style="background:#8BC34A"></i>Meditate</span>
+    <span style="border-style:dashed">${ic("plus")} Custom topic</span></div>
+  <div style="flex:1"></div>
+  <div class="dots3"><i></i><i class="on"></i><i></i></div>
+  <button class="btn pri full">Continue with 4 topics</button>
+</div></div>`)));
+
+// 3 Onboarding — consent
+screens.push(frame("03","Onboarding · Analytics consent", phone(`
+<div class="content"><div class="onb">
+  <div class="eyebrow">Step 3 of 3</div>
+  <div class="h1" style="margin:8px 0 14px">Your log stays on your phone</div>
+  <div class="card" style="padding:16px;margin-bottom:12px">
+    <div style="display:flex;gap:12px;align-items:center"><div class="iconbtn">${ic("lock")}</div><div><div class="name">Private by design</div><div class="cap">No account. No ads. Works offline.</div></div></div>
+  </div>
+  <div class="card" style="padding:16px">
+    <div class="name" style="margin-bottom:6px">Help improve Habit Tracker?</div>
+    <p class="cap" style="font-size:14px;line-height:1.5">Share anonymous usage statistics, like which screens you use. We never see your topics, notes or dates. Change this anytime in Settings.</p>
+  </div>
+  <div style="flex:1"></div>
+  <div class="dots3"><i></i><i></i><i class="on"></i></div>
+  <button class="btn pri full" style="margin-bottom:10px">Share anonymous stats</button>
+  <button class="btn sec full">No thanks</button>
+</div></div>`)));
+
+// 4 Today
+screens.push(frame("04","Today (C4)", phone(`
+<div class="content">
+  <div class="h-row"><div><div class="eyebrow">Thursday, Oct 1</div><div class="h1">Today</div></div><div class="iconbtn">${ic("gear")}</div></div>
+  <div class="prompt"><span style="font-size:20px">☀️</span><div class="grow"><div class="name" style="font-size:14px">Did you go to the gym yesterday?</div><div class="cap">It was planned for Wed, Sep 30</div></div><button class="btn sec sm">No</button><button class="btn pri sm">Yes</button></div>
+  <div class="cap" style="font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:6px 2px 8px">Planned · 1</div>
+  <div class="card" style="margin-bottom:14px">
+    <div class="row">${dot("gym")}<div class="grow"><div class="name">Gym</div><div class="cap">Last time · 2 days ago</div></div><div class="check"></div></div>
+  </div>
+  <div class="cap" style="font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin:6px 2px 8px">Done today · 2</div>
+  <div class="card">
+    <div class="row">${dot("office")}<div class="grow"><div class="name">Office</div><div class="cap">1 this month · 12 last month</div></div><div class="check done">${ic("check")}</div></div>
+    <div class="row">${dot("read")}<div class="grow"><div class="name">Read</div><div class="cap">“Finished chapter 4”</div></div><div class="check done">${ic("check")}</div></div>
+  </div>
+  <div class="h2" style="font-size:16px">Last time</div>
+  <div class="lastchips">
+    <div class="lt"><span class="cap">Haircut</span><b>41 days</b></div>
+    <div class="lt"><span class="cap">Visited Mom</span><b>23 days</b></div>
+    <div class="lt"><span class="cap">Gave money</span><b>9 days</b></div>
+  </div>
+</div>${fab}${nav("Today")}`)));
+
+// 5 Calendar
+screens.push(frame("05","Calendar (C2)", phone(`
+<div class="content">
+  <div class="h-row"><div class="h1">October 2026</div><div style="display:flex;gap:8px"><div class="iconbtn">${ic("left")}</div><div class="iconbtn">${ic("right")}</div></div></div>
+  <div class="card" style="padding:12px 8px 8px">${calendar({})}</div>
+  <div class="h2" style="font-size:16px;display:flex;justify-content:space-between"><span>Thu, Oct 1</span><span class="cap" style="font-size:13px">2 done · 1 planned</span></div>
+  <div class="card">
+    <div class="row">${dot("office")}<div class="grow"><div class="name">Office</div></div><div class="check done">${ic("check")}</div></div>
+    <div class="row">${dot("gym")}<div class="grow"><div class="name">Gym</div><div class="cap">Planned</div></div><div class="check"></div></div>
+  </div>
+  <p class="cap" style="text-align:center;margin-top:10px">Faded dots = planned · Long-press and drag to select a range</p>
+</div>${fab}${nav("Calendar")}`)));
+
+// 6 Add entry — single
+const tg = (keys, on) => `<div class="tgrid">${keys.map(k=>`<div class="tg ${k===on?"on":""}">${dot(k)}<span>${T[k].n}</span></div>`).join("")}</div>`;
+screens.push(frame("06","Add entry · Single day (C2, C5)", phone(`
+<div class="content"><div class="card" style="padding:16px;opacity:.5"><div class="h1">Today</div></div></div>
+<div class="scrim"></div>
+<div class="sheet">
+  <div class="handle"></div>
+  <div class="h1" style="font-size:22px">Add to calendar</div>
+  <div class="seg"><div class="on">Single day</div><div>Date range</div></div>
+  ${tg(["office","gym","mom","friend","read","hair","money","walk"],"money")}
+  <div class="field" style="margin-top:10px"><div><label>Date</label><p>Thu, Oct 1</p></div><div><label>Status</label><p style="color:var(--success)">✓ Done</p></div></div>
+  <div class="note">Gave John $50 for the concert tickets</div>
+  <button class="btn pri full">Save</button>
+</div>`)));
+
+// 7 Add entry — range
+screens.push(frame("07","Add entry · Date range (C3, C4)", phone(`
+<div class="content">
+  <div class="h-row"><div class="h1">October 2026</div></div>
+  <div class="card" style="padding:12px 8px 8px">${calendar({range:[5,7]})}</div>
+</div>
+<div class="sheet" style="box-shadow:0 -8px 32px rgba(11,18,32,.18)">
+  <div class="handle"></div>
+  <div class="seg" style="margin-top:0"><div>Single day</div><div class="on">Date range</div></div>
+  <div class="field"><div><label>From</label><p>Mon, Oct 5</p></div><div><label>To</label><p>Wed, Oct 7</p></div></div>
+  <div style="display:flex;align-items:center;gap:12px;margin:14px 2px">${dot("office")}<div class="grow"><div class="name">Office</div><div class="cap">3 days · will be added as Planned</div></div><span class="chip on" style="height:30px;line-height:30px">Planned</span></div>
+  <button class="btn pri full">Add 3 days</button>
+</div>`)));
+
+// 8 Topics
+const topics = [["office",31,"Today"],["read",24,"Today"],["gym",19,"2 days ago"],["friend",6,"5 days ago"],["mom",3,"23 days ago"],["money",3,"9 days ago"],["hair",1,"41 days ago"]];
+screens.push(frame("08","Topics · counts by period (C1, C7)", phone(`
+<div class="content">
+  <div class="h-row"><div class="h1">Topics</div><div class="iconbtn">${ic("pencil")}</div></div>
+  ${chips("3 months")}
+  <div class="card">${topics.map(([k,n,l])=>`<div class="row">${dot(k)}<div class="grow"><div class="name">${T[k].n}</div><div class="cap">Last time · ${l}</div></div><div class="count">${n}</div></div>`).join("")}</div>
+</div>${fab}${nav("Topics")}`)));
+
+// 9 Topic detail
+screens.push(frame("09","Topic detail · History (C6, C7, C8)", phone(`
+<div class="content">
+  <div class="h-row"><div style="display:flex;align-items:center;gap:10px"><div class="iconbtn">${ic("left")}</div>${dot("mom",36)}<div class="h1" style="font-size:22px">Visited Mom</div></div><div class="iconbtn">${ic("pencil")}</div></div>
+  ${chips("This year")}
+  <div class="split" style="margin-bottom:12px">
+    <div class="card"><div class="eyebrow">This year</div><div class="big" style="font-size:44px;margin-top:6px">14</div><div class="cap">Jan 1 – Dec 31, 2026</div></div>
+    <div class="card"><div class="eyebrow" style="color:var(--success)">Last time</div><div class="big" style="font-size:44px;margin-top:6px">23<span style="font-size:18px"> days</span></div><div class="cap">Tue, Sep 8</div></div>
+  </div>
+  <div class="card" style="padding:12px 12px 8px">
+    <div class="bars">${[["J",2],["F",1],["M",2],["A",1],["M",2],["J",1],["J",2],["A",1],["S",2],["O",0]].map(([m,v])=>`<div><i style="height:${v*34+3}px;background:${v?T.mom.c:"var(--muted)"}"></i><span>${m}</span></div>`).join("")}</div>
+  </div>
+  <div class="mon">September · 2</div>
+  <div class="card">
+    <div class="row" style="padding:10px 14px"><div class="grow"><div class="name">Tue, Sep 8</div><div class="cap">Brought the photo album</div></div><div class="check done">${ic("check")}</div></div>
+    <div class="row" style="padding:10px 14px"><div class="grow"><div class="name">Sun, Sep 6</div><div class="cap">Sunday lunch</div></div><div class="check done">${ic("check")}</div></div>
+  </div>
+  <div class="mon">August · 1</div>
+</div>${nav("Topics")}`)));
+
+// 10 Stats
+const st = [["office",31],["read",24],["gym",19],["friend",6],["mom",3],["money",3],["hair",1]];
+screens.push(frame("10","Stats · Compare topics (C7, C8)", phone(`
+<div class="content">
+  <div class="h-row"><div class="h1">Stats</div><div class="iconbtn">${ic("download")}</div></div>
+  ${chips("3 months")}
+  <div class="card stat" style="margin-bottom:12px;background:var(--navy);color:var(--cream)">
+    <div class="eyebrow">Aug 1 – Oct 31</div>
+    <div style="display:flex;align-items:flex-end;gap:10px;margin-top:6px"><div class="big">87</div><div style="padding-bottom:8px;opacity:.8">things done<br>across 7 topics</div></div>
+  </div>
+  <div class="card" style="padding:4px 0">${st.map(([k,n])=>`<div class="row" style="padding:10px 14px">${dot(k,32)}<div class="grow"><div style="display:flex;justify-content:space-between"><span class="name" style="font-size:14px">${T[k].n}</span><b style="font:800 16px 'Inter Display',Inter">${n}</b></div><div class="hbar"><i style="width:${n/31*100}%;background:${T[k].c}"></i></div></div></div>`).join("")}</div>
+</div>${nav("Stats")}`)));
+
+// 11 Settings
+screens.push(frame("11","Settings · Privacy & backup", phone(`
+<div class="content">
+  <div class="h-row"><div style="display:flex;gap:10px;align-items:center"><div class="iconbtn">${ic("left")}</div><div class="h1">Settings</div></div></div>
+  <div class="mon">Appearance</div>
+  <div class="card"><div class="set">${ic("moon")}Theme<span class="cap">System</span></div><div class="set">${ic("cal")}Week starts on<span class="cap">Sunday</span></div></div>
+  <div class="mon">Reminders</div>
+  <div class="card"><div class="set">${ic("bell")}Daily reminder · 8:00 PM<div class="sw"></div></div></div>
+  <div class="mon">Your data</div>
+  <div class="card"><div class="set">${ic("download")}Export CSV / JSON<span class="cap">›</span></div><div class="set">${ic("download")}Import backup<span class="cap">›</span></div></div>
+  <div class="mon">Privacy</div>
+  <div class="card"><div class="set">${ic("lock")}<div><div>Anonymous usage stats</div><div class="cap">Never includes topics, notes or dates</div></div><div class="sw off"></div></div></div>
+  <p class="cap" style="text-align:center;margin-top:16px">Habit Tracker 1.0.0 · by Orbitra</p>
+</div>`)));
+
+// 12 Empty state
+screens.push(frame("12","Empty state · First topic", phone(`
+<div class="content" style="display:flex;flex-direction:column">
+  <div class="h-row"><div class="h1">Topics</div></div>
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 20px 80px">
+    <img src="../../brand-kit/logo/png/habit-tracker-icon.png" width="112" alt="">
+    <div class="h1" style="font-size:22px;margin:18px 0 8px">Nothing to count yet</div>
+    <p class="cap" style="font-size:14px;line-height:1.5;margin-bottom:18px">Create a topic for anything you want to remember — then add it to your calendar.</p>
+    <button class="btn pri">${ic("plus")} Create a topic</button>
+    <button class="btn" style="background:none;color:var(--text);margin-top:6px">Choose from templates</button>
+  </div>
+</div>${nav("Topics")}`)));
+
+document.getElementById("board").innerHTML = screens.join("");
+</script>
+</body>
+</html>

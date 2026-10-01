@@ -1,0 +1,65 @@
+{
+  "family": "Plus Jakarta Sans",
+  "license": "SIL Open Font License 1.1 (free for apps, web, print)",
+  "source": "https://fonts.google.com/specimen/Plus+Jakarta+Sans",
+  "weights": {
+    "400": "Body",
+    "600": "Labels, buttons",
+    "700": "Titles",
+    "800": "Display, wordmark"
+  },
+  "fallback": [
+    "Roboto",
+    "system-ui",
+    "sans-serif"
+  ],
+  "scale": {
+    "display": {
+      "fontFamily": "{font.family.brand}",
+      "fontWeight": 800,
+      "fontSize": "32px",
+      "lineHeight": "38px",
+      "letterSpacing": "-0.03em"
+    },
+    "title": {
+      "fontFamily": "{font.family.brand}",
+      "fontWeight": 700,
+      "fontSize": "22px",
+      "lineHeight": "28px",
+      "letterSpacing": "-0.02em"
+    },
+    "headline": {
+      "fontFamily": "{font.family.brand}",
+      "fontWeight": 700,
+      "fontSize": "17px",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.01em"
+    },
+    "body": {
+      "fontFamily": "{font.family.brand}",
+      "fontWeight": 400,
+      "fontSize": "15px",
+      "lineHeight": "22px",
+      "letterSpacing": "0"
+    },
+    "label": {
+      "fontFamily": "{font.family.brand}",
+      "fontWeight": 600,
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "letterSpacing": "0"
+    },
+    "caption": {
+      "fontFamily": "{font.family.brand}",
+      "fontWeight": 500,
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "letterSpacing": "0.01em"
+    }
+  },
+  "rules": [
+    "Sentence case everywhere, including buttons",
+    "No all-caps labels",
+    "Wordmark is outlined artwork, never typed"
+  ]
+}

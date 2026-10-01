@@ -1,0 +1,35 @@
+{
+  "handle_suggestion": "@productwhiteapp (check availability before registering)",
+  "profile_pictures": {
+    "Instagram / Threads": "profile/profile-1080x1080.png (shows as circle)",
+    "Facebook": "profile/profile-800x800.png",
+    "TikTok": "profile/profile-400x400.png",
+    "YouTube": "profile/profile-800x800.png",
+    "X": "profile/profile-400x400.png",
+    "LinkedIn": "profile/profile-400x400.png",
+    "Pinterest": "profile/profile-170x170.png or 400"
+  },
+  "covers": {
+    "Facebook page cover": "covers/facebook-cover-1640x624.png",
+    "X header": "covers/x-header-1500x500.png",
+    "LinkedIn page banner": "covers/linkedin-banner-1584x396.png",
+    "YouTube banner": "covers/youtube-banner-2560x1440.png (logo sits inside the 1546x423 safe area)"
+  },
+  "post_templates": [
+    "post-templates/launch-post-1080x1080.png",
+    "post-templates/story-1080x1920.png"
+  ],
+  "bio": {
+    "short": "Free white-background product photos for online sellers.",
+    "long": "ProductWhite removes the background from your product photos and sizes them for Amazon, Etsy, eBay and Shopify. Free, on your phone. An Orbitra app."
+  },
+  "hashtags": [
+    "#productphotography",
+    "#etsyseller",
+    "#amazonseller",
+    "#ebayseller",
+    "#shopifystore",
+    "#whitebackground",
+    "#smallbusiness"
+  ]
+}

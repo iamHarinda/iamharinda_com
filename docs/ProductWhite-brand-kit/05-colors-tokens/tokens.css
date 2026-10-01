@@ -1,0 +1,20 @@
+/* ProductWhite tokens — generated from design-tokens.json */
+:root{
+  --pw-chroma-blue: #1E4DFF;
+  --pw-chroma-blue-600: #1A3FD6;
+  --pw-chroma-blue-50: #EDF1FF;
+  --pw-ink: #121826;
+  --pw-slate: #4A5568;
+  --pw-mist: #8A94A6;
+  --pw-line: #E3E7EE;
+  --pw-sweep: #E9ECF2;
+  --pw-paper: #F4F6FA;
+  --pw-studio-white: #FFFFFF;
+  --pw-score-good: #12A150;
+  --pw-score-fair: #C97A00;
+  --pw-score-poor: #D93A3F;
+  --pw-night: #0B1020;
+  --pw-night-surface: #161D30;
+  --pw-font: "Plus Jakarta Sans", Roboto, system-ui, sans-serif;
+  --pw-radius-sm: 8px; --pw-radius-md: 14px; --pw-radius-lg: 22px;
+}

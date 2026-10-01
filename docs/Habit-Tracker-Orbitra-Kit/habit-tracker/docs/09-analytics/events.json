@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "rules": [
+    "Only events in this file may be sent.",
+    "Never send topic names, notes, entry dates, or any free text.",
+    "All events are blocked until the user grants analytics consent.",
+    "Param values are enums, booleans or small integers only."
+  ],
+  "user_properties": {
+    "theme":            { "type": "enum", "values": ["light", "dark", "system"] },
+    "week_start":       { "type": "enum", "values": ["sun", "mon"] },
+    "topic_count_band": { "type": "enum", "values": ["0", "1-2", "3-5", "6-10", "11+"] },
+    "reminders_on":     { "type": "boolean" }
+  },
+  "events": {
+    "onboarding_started":   { "params": {} },
+    "onboarding_completed": { "params": { "templates_picked": "int", "analytics_consent": "boolean" }, "key_event": true },
+    "topic_created":        { "params": { "source": ["template", "custom"], "template_id": ["office", "gym", "visited_family", "date_night", "doctor", "haircut", "read", "meditate", "walk", "call_parents", "gave_money", "other"], "has_icon": "boolean" } },
+    "topic_archived":       { "params": {} },
+    "topic_deleted":        { "params": { "entry_count_band": ["0", "1-10", "11-50", "51+"] } },
+    "entry_added":          { "params": { "mode": ["single", "range"], "range_days": "int", "status": ["planned", "done"], "has_note": "boolean", "entry_point": ["today", "calendar", "topic", "fab"] }, "key_event": true },
+    "entry_checked":        { "params": { "from": ["planned"], "to": ["done"], "surface": ["today", "calendar", "topic"] } },
+    "entry_deleted":        { "params": { "undo_used": "boolean" } },
+    "history_viewed":       { "params": { "period": ["month", "3m", "year", "custom"] } },
+    "stats_viewed":         { "params": { "period": ["month", "3m", "year", "custom"] } },
+    "period_changed":       { "params": { "screen": ["topic", "stats"], "period": ["month", "3m", "year", "custom"] } },
+    "last_time_viewed":     { "params": { "surface": ["today", "topic"] } },
+    "reminder_set":         { "params": { "scope": ["topic", "daily"], "days_per_week": "int" } },
+    "export_completed":     { "params": { "format": ["csv", "json"] } },
+    "import_completed":     { "params": { "result": ["success", "error"] } },
+    "review_prompt_shown":  { "params": {} },
+    "analytics_consent_changed": { "params": { "granted": "boolean", "surface": ["onboarding", "settings"] }, "note": "Sent only when granted=true (cannot be sent after opt-out)." }
+  },
+  "screens": ["onboarding_welcome", "onboarding_templates", "onboarding_consent", "today", "calendar", "add_entry", "topics", "topic_detail", "stats", "settings", "privacy"]
+}

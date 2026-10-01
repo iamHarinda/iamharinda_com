@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="624" viewBox="0 0 1640 624">
+  
+  <rect width="1640" height="624" fill="#14213D"/><path d="M1291.68 153.37 A159.12 159.12 0 0 1 1347.70 168.38" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1369.33 180.87 A159.12 159.12 0 0 1 1410.33 221.87" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1422.82 243.50 A159.12 159.12 0 0 1 1437.83 299.52" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1437.83 324.48 A159.12 159.12 0 0 1 1422.82 380.50" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1410.33 402.13 A159.12 159.12 0 0 1 1369.33 443.13" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1347.70 455.62 A159.12 159.12 0 0 1 1291.68 470.63" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1266.72 470.63 A159.12 159.12 0 0 1 1210.70 455.62" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1189.07 443.13 A159.12 159.12 0 0 1 1148.07 402.13" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1135.58 380.50 A159.12 159.12 0 0 1 1120.57 324.48" fill="none" stroke="#FFF8F0" stroke-opacity="1" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1120.57 299.52 A159.12 159.12 0 0 1 1135.58 243.50" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1148.07 221.87 A159.12 159.12 0 0 1 1189.07 180.87" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="24.4" stroke-linecap="round"/>
+  <path d="M1210.70 168.38 A159.12 159.12 0 0 1 1266.72 153.37" fill="none" stroke="#FFF8F0" stroke-opacity="0.22" stroke-width="24.4" stroke-linecap="round"/>
+  <circle cx="1120.57" cy="324.48" r="21.2" fill="#2EC4B6"/>
+  <path d="M1216.6 316.2 L1262.2 360.8 L1349.2 263.2" fill="none" stroke="#FF6B4A" stroke-width="37.1" stroke-linecap="round" stroke-linejoin="round"/><text x="164" y="293" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="800" font-size="94" letter-spacing="-1.9" fill="#FFF8F0">Habit Tracker</text><text x="166" y="374" font-family="Inter, 'Inter Display', Arial, sans-serif" font-weight="500" font-size="39" fill="#FFF8F0" fill-opacity="0.8">Log anything. See when &amp; how often.</text>
+</svg>
