@@ -1,0 +1,149 @@
+---
+// /orbitra/<slug>/privacy-policy/ — one template, facts from apps.json.
+// Section ids are fixed (see docs/ORBITRA_PAGES_PLAN.md §5.3); do not rename them.
+import OrbitraLayout from "../../../layouts/OrbitraLayout.astro";
+import LegalDoc from "../../../components/orbitra/LegalDoc.astro";
+import { studio, apps, appPath, rich } from "../../../lib/orbitra.js";
+
+export function getStaticPaths() {
+  return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
+}
+
+const { app } = Astro.props;
+const p = app.privacy;
+const r = (s) => rich(s, app);
+
+const toc = [
+  ["short-version", "Short version"],
+  ["who-we-are", "Who we are"],
+  ["data-we-collect", "What data we collect"],
+  ["data-we-dont-collect", "What we don’t collect"],
+  ["permissions", "Device permissions"],
+  ["third-parties", "Third-party services"],
+  ["how-we-use", "How we use data"],
+  ["sharing", "Sharing"],
+  ["retention", "Retention"],
+  ["deletion", "Deleting your data"],
+  ["security", "Security"],
+  ["children", "Children"],
+  ["your-rights", "Your rights"],
+  ["international", "International transfers"],
+  ["changes", "Changes to this policy"],
+  ["contact", "Contact"],
+].map(([id, label]) => ({ id, label }));
+---
+
+<OrbitraLayout
+  title={`Privacy Policy — ${app.name} by Orbitra`}
+  description={`How ${app.name} (${app.package}) by Orbitra handles your data: what is collected, why, and how to delete it.`}
+  app={app}
+  crumbs={[
+    { label: "Orbitra", href: studio.basePath },
+    { label: app.name, href: appPath(app.slug) },
+    { label: "Privacy" },
+  ]}
+>
+  <LegalDoc title="Privacy Policy" subtitle={`${app.name}, by Orbitra`} toc={toc}>
+    <section class="o-callout" aria-labelledby="short-version">
+      <h2 id="short-version" class="o-heading">Short version</h2>
+      <ul>{p.short.map((s) => <li set:html={r(s)} />)}</ul>
+    </section>
+
+    <h2 id="who-we-are">Who we are</h2>
+    <p set:html={r(`**{app}** (\`${app.package}\`) is published by **Orbitra**, the Google Play developer. In this policy, “we” and “us” mean Orbitra. Privacy contact: {email}.`)} />
+
+    <h2 id="data-we-collect">What data we collect</h2>
+    <div class="o-table-wrap">
+      <table class="o-table">
+        <thead>
+          <tr><th scope="col">Data type</th><th scope="col">Why</th><th scope="col">Stored where</th><th scope="col">Shared with</th></tr>
+        </thead>
+        <tbody>
+          {
+            p.collected.map((c) => (
+              <tr>
+                <td set:html={r(c.type)} />
+                <td set:html={r(c.why)} />
+                <td set:html={r(c.where)} />
+                <td set:html={r(c.shared)} />
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="data-we-dont-collect">What we don’t collect</h2>
+    <ul>{p.notCollected.map((s) => <li set:html={r(s)} />)}</ul>
+
+    <h2 id="permissions">Device permissions the app uses and why</h2>
+    <ul>{p.permissions.map((x) => <li set:html={r(`**${x.name}** — ${x.why}`)} />)}</ul>
+    {p.permissionsNote && <p set:html={r(p.permissionsNote)} />}
+
+    <h2 id="third-parties">Third-party services</h2>
+    <p>These services have their own privacy policies:</p>
+    <ul>
+      {
+        p.thirdParties.map((t) => (
+          <li set:html={r(t.url && t.url !== "#" ? `[${t.name}](${t.url}) — ${t.use}` : `**${t.name}** — ${t.use}`)} />
+        ))
+      }
+    </ul>
+
+    <h2 id="how-we-use">How we use data</h2>
+    <ul>{p.howWeUse.map((s) => <li set:html={r(s)} />)}</ul>
+
+    <h2 id="sharing">Sharing</h2>
+    <p>
+      We do not sell your personal data. Data is only passed to the service providers listed above, who process it
+      for us, or when the law requires it.
+    </p>
+
+    <h2 id="retention">Retention</h2>
+    <ul>{p.retention.map((s) => <li set:html={r(s)} />)}</ul>
+
+    <h2 id="deletion">Deleting your data</h2>
+    <p>
+      You can delete your data at any time. The steps are on the
+      <a href={appPath(app.slug, "delete-data")}>{app.name} data deletion page</a>.
+    </p>
+
+    <h2 id="security">Security</h2>
+    <p>
+      Data sent over the internet is encrypted in transit (HTTPS). Data stored on your phone is kept in the app’s
+      private storage, protected by the Android app sandbox. No method is perfectly secure, but we keep what we
+      collect to a minimum.
+    </p>
+
+    <h2 id="children">Children</h2>
+    <p set:html={r(p.children)} />
+
+    <h2 id="your-rights">Your rights</h2>
+    <p>
+      <strong>Europe and the UK (GDPR / UK GDPR):</strong> you can ask to access, correct, delete or restrict your data,
+      object to its use, and get a portable copy. Where we rely on your consent, you can withdraw it at any time. You
+      can also complain to your local data protection authority.
+    </p>
+    <p>
+      <strong>California (CCPA / CPRA):</strong> you can ask what personal information we hold and ask us to delete it.
+      We do not sell personal information.
+    </p>
+    <p set:html={r(`To make a request, email {email} with the app name in the subject. We will reply within 30 days.`)} />
+
+    <h2 id="international">International transfers</h2>
+    <p>
+      Google services may process data outside your country, including in the United States. Google uses safeguards
+      such as the EU Standard Contractual Clauses for these transfers.
+    </p>
+    {p.extra && <p set:html={r(p.extra)} />}
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>
+      If this policy changes, we will update this page and the “Last updated” date at the top. Important changes will
+      also be shown in the app.
+    </p>
+
+    <h2 id="contact">Contact</h2>
+    <p set:html={r(`Orbitra — {email}. ${"[[TODO: business address / country if required]]"}`)} />
+  </LegalDoc>
+</OrbitraLayout>
