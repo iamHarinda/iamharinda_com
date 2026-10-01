@@ -65,7 +65,11 @@ body {
   font: 400 16px/24px var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+main { flex: 1; }
 img, svg { display: block; max-width: 100%; }
 h1, h2, h3, p, ul, ol, figure { margin: 0; }
 ul, ol { padding-left: 1.25em; }
