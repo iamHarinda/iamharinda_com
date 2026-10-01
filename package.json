@@ -14,7 +14,8 @@
     "fetch:fonts": "node scripts/fetch-fonts.mjs",
     "gen:placeholders": "node scripts/gen-placeholders.mjs",
     "optimise:photos": "node scripts/optimise-photos.mjs",
-    "gen:icons": "node scripts/gen-icons.mjs"
+    "gen:icons": "node scripts/gen-icons.mjs",
+    "gen:orbitra": "node scripts/gen-orbitra-assets.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",
