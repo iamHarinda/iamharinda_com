@@ -36,12 +36,19 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 </svg>`;
 await sharp(Buffer.from(og)).png({ compressionLevel: 9 }).toFile(out("brand/og-orbitra-1200x630.png"));
 
-// ── screenshots (design previews from the app kits) ─────────────────────────
+// ── screenshots (design previews and Play listing shots from the app kits) ──
 const shots = {
   habittracker: [1, 2, 4, 6].map((n) =>
     docs(`brand-kits/habit-tracker/design/screens/screen-0${n}-light.png`)),
   productwhite: [1, 2, 3, 4, 5].map((n) =>
     docs(`brand-kits/productwhite/03-play-store/phone-screenshot-${n}-1080x1920.png`)),
+  // Portrait phone shots only; 02 is the landscape table.
+  periodicelementtable: ["01-home", "03-element-copper", "04-molar-mass-calculator", "05-trends", "06-dark-mode-gold"]
+    .map((n) => docs(`brand-kits/periodic-element-table/play-store/screenshots/${n}.png`)),
+  toolsserver: ["01-home", "02-all-tools", "03-loan-calculator", "04-qr-code-generator", "05-json-formatter-dark"]
+    .map((n) => docs(`brand-kits/toolsserver/store-assets/screenshots/phone-${n}.png`)),
+  budgettracker: ["01-home", "02-journey", "03-budgets", "04-insights", "05-wealth"]
+    .map((n) => docs(`brand-kits/budgettracker/store/screenshots/${n}-1080x1920.png`)),
 };
 for (const [slug, files] of Object.entries(shots)) {
   for (const [i, src] of files.entries()) {

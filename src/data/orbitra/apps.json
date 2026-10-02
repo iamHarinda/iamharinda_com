@@ -7,7 +7,7 @@
     "packageConfirmed": true,
     "category": "ProductivityApplication",
     "tagline": "Log it. Count it. Remember it.",
-    "summary": "Create your own topics, tick them on a calendar, and see how often each one happened this month, in 3 months, or this year.",
+    "summary": "Create your own topics, tick them on a calendar, and see how often each one happened this month, in 3 months, or this year. With a simple to-do list too.",
     "accent": "#FF6B4A",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.habittracker",
     "website": null,
@@ -33,6 +33,16 @@
         "icon": "chart",
         "title": "Counts that add up",
         "text": "See totals for this month, the last 3 months, this year or a custom range."
+      },
+      {
+        "icon": "note",
+        "title": "A simple to-do list",
+        "text": "Tasks with an optional due date and a reminder. Kept apart from your habits, so they never count in Stats."
+      },
+      {
+        "icon": "bell",
+        "title": "Reminders",
+        "text": "A daily reminder to log, and on-time reminders for to-dos, with a Mark done button."
       },
       {
         "icon": "history",
@@ -65,15 +75,15 @@
     ],
     "screenshotsNote": "Design previews. Real screenshots will replace them after the closed test.",
     "glance": [
-      "Your topics, entries and notes stay **on your phone**. We never receive them.",
-      "No account. No ads.",
+      "Your topics, entries, notes and to-dos stay **on your phone**. We never receive them.",
+      "No account. No ads. No advertising ID.",
       "Anonymous usage stats and crash reports are sent **only if you agree**, and you can turn them off in Settings."
     ],
     "privacy": {
       "short": [
-        "Your topics, entries, notes and reminders are stored **only on your phone**. We never receive them.",
-        "There are **no ads** and **no account**.",
-        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. You can turn this off anytime in **Settings → Privacy & analytics**.",
+        "Your topics, entries, notes, to-dos and reminders are stored **only on your phone**. We never receive them.",
+        "There are **no ads**, **no account** and **no advertising ID**.",
+        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. You can turn this off anytime in **Settings → Privacy → Anonymous usage stats**.",
         "We never sell your data."
       ],
       "collected": [
@@ -97,21 +107,33 @@
         }
       ],
       "notCollected": [
-        "Your topics, calendar entries, notes and reminder times — they stay on your device.",
+        "Your topics, calendar entries, notes, to-dos and reminder times — they stay on your device.",
         "Your name, email address or any account details — there is no account.",
-        "Your advertising ID, contacts, precise location, photos, microphone or other apps."
+        "Your advertising ID, contacts, precise location, camera, microphone, photos or other apps."
       ],
       "permissions": [
         {
           "name": "Notifications",
-          "why": "Only if you turn on reminders. Reminders are scheduled on your device; no data is sent to create them."
+          "why": "Only if you turn on the daily reminder or a to-do reminder. Reminders are scheduled on your device; no data is sent to create them."
+        },
+        {
+          "name": "Alarms & reminders",
+          "why": "So to-do reminders arrive on time. Without it, reminders still come, possibly a few minutes late."
+        },
+        {
+          "name": "Run at startup",
+          "why": "To set your reminders again after the phone restarts."
+        },
+        {
+          "name": "Vibration",
+          "why": "A short tap of feedback when you tick something off."
         },
         {
           "name": "Internet",
           "why": "Only used to send anonymous stats and crash reports when you have agreed to it."
         }
       ],
-      "permissionsNote": "[[TODO: confirm the final permission list in AndroidManifest.xml]]",
+      "permissionsNote": "The app blocks location, contacts, microphone and advertising-ID permissions.",
       "thirdParties": [
         {
           "name": "Google Analytics for Firebase",
@@ -136,24 +158,26 @@
       ],
       "retention": [
         "Data on your device stays until you delete it, clear the app’s storage or uninstall the app.",
-        "Analytics data is kept for **14 months**. [[TODO: confirm the GA4 data-retention setting]]",
+        "If Android backup is on for your phone, Android may include the app’s data in your own Google account backup so it can be restored on a new phone. Google manages that backup under your account; we cannot access it.",
+        "Analytics data is kept for **14 months**.",
         "Crash reports are kept for up to **90 days**."
       ],
-      "children": "{app} is not directed at children under 13 (under 16 in the EU), and we do not knowingly collect their data. [[TODO: confirm the target age group in Play Console]]"
+      "children": "{app} is meant for adults and is not directed at children under 13 (under 16 in the EU/UK). We do not knowingly collect their data."
     },
     "deletion": {
       "short": "Your data lives on your phone. Deleting the app deletes it.",
       "inApp": null,
-      "inAppNote": "[[TODO: if the app gets a “Delete all data” option in Settings, add it here as step 1]]",
-      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy & analytics**. Reinstalling the app also resets the app instance ID.",
+      "inAppNote": "To delete only part of your data: open **Topics → the topic → Delete topic** (removes its history too), tap an entry → **Delete entry**, or tap a to-do → **Delete task** (or use **Clear done** on the To do page).",
+      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy → Anonymous usage stats**. Reinstalling the app also resets the app instance ID.",
       "deleted": [
-        "Everything you entered in the app: topics, entries, notes, reminders and settings.",
+        "Everything you entered in the app: topics, entries, notes, to-dos, reminders and settings.",
         "On request, analytics and crash data linked to your app instance ID, where technically possible."
       ],
       "kept": [
         "Aggregated, anonymous statistics that cannot be linked back to you.",
-        "Analytics events already processed are removed when the retention period ends (14 months). [[TODO: confirm GA4 retention]]",
+        "Analytics events already processed are removed when the retention period ends (14 months). Crash reports go after 90 days.",
         "Any export files you saved yourself (CSV/JSON) — delete those from your phone or cloud storage.",
+        "Your phone’s Android backup, if it is on — remove it in **Android Settings → Google → Backup**.",
         "Data Google keeps under its own policies, such as your Play Store install history."
       ]
     },
@@ -167,20 +191,24 @@
         "a": "Tap a day, pick the topic, then switch to **Date range** and choose the last day. “Office, 1–3 Oct” makes three entries in one go."
       },
       {
+        "q": "What is the To do tab?",
+        "a": "A simple task list, separate from your habits. Give a task a due date and a reminder time if you like. To-dos never count in Stats."
+      },
+      {
         "q": "How do I back up my data?",
-        "a": "Go to **Settings → Backup** and export to CSV or JSON. Keep the file somewhere safe, like your email or cloud drive."
+        "a": "Go to **Settings → Your data** and export a CSV (for spreadsheets) or a JSON backup. Keep the file somewhere safe, like your email or cloud drive."
       },
       {
         "q": "Will I lose my data if I change phones?",
-        "a": "Your data lives only on your phone. Export a JSON backup on the old phone and import it on the new one from **Settings → Backup**."
+        "a": "Export a JSON backup on the old phone and use **Settings → Your data → Import backup** on the new one. Importing merges with what is already there, so it is safe to run twice."
       },
       {
-        "q": "My reminders don’t show up.",
-        "a": "Check that notifications are allowed for Habit Tracker in **Android Settings → Apps → Habit Tracker → Notifications**, and that battery saver isn’t stopping the app."
+        "q": "My reminders don’t show up, or come late.",
+        "a": "Check that notifications are allowed in **Android Settings → Apps → Habit Tracker → Notifications**. On Android 14 and newer, also allow **Alarms & reminders** for on-time to-do reminders, and make sure battery saver isn’t stopping the app."
       },
       {
         "q": "How do I turn off anonymous stats?",
-        "a": "Go to **Settings → Privacy & analytics** and turn it off. Collection stops straight away."
+        "a": "Go to **Settings → Privacy → Anonymous usage stats** and turn it off. Collection stops straight away."
       }
     ],
     "termsNotes": [
@@ -194,7 +222,7 @@
     "packageConfirmed": true,
     "category": "EducationalApplication",
     "tagline": "The periodic table, in your pocket.",
-    "summary": "The Android app of PeriodicElementTable.com — an interactive periodic table with chemistry tools and learning content.",
+    "summary": "The Android app of PeriodicElementTable.com — an interactive periodic table with 118 element pages, 44 chemistry calculators and 627 study guides.",
     "accent": "#1E3A8A",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.periodicelementtable",
     "website": "https://periodicelementtable.com",
@@ -204,80 +232,105 @@
       {
         "icon": "grid",
         "title": "Interactive table",
-        "text": "Tap any element to see its group, period, block and more."
+        "text": "Tap any of the 118 elements. Drag the temperature slider to see which are solid, liquid or gas."
       },
       {
         "icon": "atom",
-        "title": "Element details",
-        "text": "Atomic mass, electron configuration and key properties on one page."
+        "title": "A page for every element",
+        "text": "Atomic mass, electron configuration, isotopes, compounds, uses and history."
       },
       {
         "icon": "calculator",
-        "title": "Molar mass calculator",
-        "text": "Type a formula and get its molar mass."
+        "title": "44 calculators",
+        "text": "Molar mass, equation balancer, gas laws, pH and more. Each one shows the working."
       },
       {
-        "icon": "scale",
-        "title": "Equation balancer",
-        "text": "Balance chemical equations step by step."
-      },
-      {
-        "icon": "columns",
-        "title": "Compare elements",
-        "text": "Put two elements side by side."
+        "icon": "chart",
+        "title": "Periodic trends",
+        "text": "Atomic radius, ionization energy, electronegativity: what changes, and why."
       },
       {
         "icon": "book",
-        "title": "Learn as you go",
-        "text": "Short articles that explain the ideas behind the table."
+        "title": "Chemistry library",
+        "text": "627 study guides on bonding, reactions, the elements and lab skills."
+      },
+      {
+        "icon": "download",
+        "title": "Printables",
+        "text": "Print-ready periodic tables and worksheets as PDFs, in A4 and US Letter."
       }
     ],
-    "screenshots": [],
-    "screenshotsNote": "Screenshots coming soon.",
+    "screenshots": [
+      {
+        "src": "/orbitra/assets/apps/periodicelementtable/screen-1.webp",
+        "alt": "Periodic Element Table home screen"
+      },
+      {
+        "src": "/orbitra/assets/apps/periodicelementtable/screen-2.webp",
+        "alt": "The element page for copper"
+      },
+      {
+        "src": "/orbitra/assets/apps/periodicelementtable/screen-3.webp",
+        "alt": "The molar mass calculator"
+      },
+      {
+        "src": "/orbitra/assets/apps/periodicelementtable/screen-4.webp",
+        "alt": "Periodic trends guide"
+      },
+      {
+        "src": "/orbitra/assets/apps/periodicelementtable/screen-5.webp",
+        "alt": "Periodic Element Table in dark mode"
+      }
+    ],
+    "screenshotsNote": "Screenshots from the Google Play listing.",
     "glance": [
-      "No account needed.",
+      "No account needed. No ads in the app.",
       "The app shows the PeriodicElementTable.com website, so the website’s cookies and analytics apply.",
-      "[[TODO: confirm ads (AdSense/AdMob) before publishing]]"
+      "Light and dark mode. Share any element, calculator or guide in one tap."
     ],
     "privacy": {
       "short": [
         "The app opens **PeriodicElementTable.com** inside the app, so the website’s cookies and analytics apply.",
         "There is **no account** and we don’t ask for your name or email.",
-        "We use **Google Analytics** to see which pages are useful.",
-        "Ads: [[TODO: confirm whether Google AdSense/AdMob ads are on, and whether they are personalised]]",
+        "There are **no ads** in the app.",
+        "The website uses **Google Analytics**, **Microsoft Clarity**, **Ahrefs Web Analytics** and **Cloudflare Web Analytics** to see which pages are useful.",
         "We never sell your data."
       ],
       "collected": [
         {
           "type": "Pages viewed and how the app is used",
           "why": "See which content is useful",
-          "where": "Google Analytics",
-          "shared": "Google, as our service provider"
+          "where": "Google Analytics, Microsoft Clarity, Ahrefs Web Analytics, Cloudflare Web Analytics",
+          "shared": "Those providers, as our service providers"
         },
         {
-          "type": "Device and browser info, approximate location from IP (country)",
+          "type": "Device and browser info, page performance, approximate location from IP (country/city)",
           "why": "Analytics and keeping the site working",
-          "where": "Google Analytics",
-          "shared": "Google, as our service provider"
+          "where": "Google Analytics, Microsoft Clarity, Cloudflare",
+          "shared": "Those providers, as our service providers"
         },
         {
           "type": "Cookies and similar identifiers",
-          "why": "Analytics. Advertising if ads are on.",
+          "why": "Analytics",
           "where": "In the app’s web view on your device",
-          "shared": "Google. [[TODO: list ad partners if ads are on]]"
+          "shared": "Google and Microsoft, as our service providers"
         }
       ],
       "notCollected": [
         "Your name, email address or any account details — there is no account.",
-        "Your contacts, precise location, photos, microphone or files."
+        "Your advertising ID, contacts, precise location, photos, microphone or files."
       ],
       "permissions": [
         {
           "name": "Internet",
           "why": "To load PeriodicElementTable.com."
+        },
+        {
+          "name": "Network state",
+          "why": "To show the offline screen, with a Retry button, when you have no connection."
         }
       ],
-      "permissionsNote": "[[TODO: confirm the app asks for Internet permission only]]",
+      "permissionsNote": "The app asks for no other permissions. Printable PDFs are handed to your browser or download manager.",
       "thirdParties": [
         {
           "name": "Google Analytics",
@@ -285,9 +338,19 @@
           "use": "Website and app usage statistics."
         },
         {
-          "name": "Google AdSense / AdMob",
-          "url": "https://policies.google.com/technologies/ads",
-          "use": "Ads, once they are switched on. [[TODO: confirm]]"
+          "name": "Microsoft Clarity",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "use": "How pages are used, to improve the site."
+        },
+        {
+          "name": "Ahrefs Web Analytics",
+          "url": "https://ahrefs.com/privacy",
+          "use": "Privacy-friendly page statistics."
+        },
+        {
+          "name": "Cloudflare Web Analytics",
+          "url": "https://www.cloudflare.com/privacypolicy/",
+          "use": "Page performance statistics, without cookies."
         },
         {
           "name": "Google Play Services",
@@ -298,15 +361,14 @@
       "permissionsExtra": null,
       "howWeUse": [
         "To understand which pages and tools are useful, so we know what to improve.",
-        "To keep the site and app working and secure.",
-        "To show ads that keep the app free, once ads are on. You can reset or delete your advertising ID in **Android Settings → Privacy → Ads**."
+        "To keep the site and app working, fast and secure."
       ],
       "retention": [
         "Analytics data is kept for **14 months**. [[TODO: confirm the GA4 data-retention setting]]",
         "Cookies stay in the app’s web view until they expire or you clear the app’s storage."
       ],
-      "children": "Chemistry is studied by students of all ages. [[TODO: confirm the target age group in Play Console — if it includes children under 13, Google Play’s Families Policy applies and this section must be rewritten]]",
-      "extra": "This policy covers the Android app. The website also has its own privacy policy. [[TODO: add the link to periodicelementtable.com’s privacy policy if it has one]]"
+      "children": "Chemistry is studied by students of all ages. {app} is meant for people aged 13 and over. [[TODO: confirm the target age group in Play Console (recommended: 13–15, 16–17 and 18+). If it includes children under 13, Google Play’s Families Policy applies and this section must be rewritten]]",
+      "extra": "This policy covers the Android app. The website’s own [privacy policy](https://periodicelementtable.com/privacy-policy/) also applies to the pages shown in the app. Microsoft Clarity, Ahrefs and Cloudflare may also process data outside your country."
     },
     "deletion": {
       "short": "There is no account. Clearing the app’s storage deletes everything the app saved on your phone.",
@@ -320,13 +382,14 @@
       "kept": [
         "Aggregated, anonymous statistics that cannot be linked back to you.",
         "Analytics events are removed when the retention period ends (14 months). [[TODO: confirm GA4 retention]]",
-        "Data Google keeps under its own policies, such as your Play Store install history and ad settings."
+        "Printable PDFs you downloaded — delete them from your Downloads folder.",
+        "Data Google keeps under its own policies, such as your Play Store install history."
       ]
     },
     "faq": [
       {
         "q": "Is the app the same as the website?",
-        "a": "Yes. The app shows [PeriodicElementTable.com](https://periodicelementtable.com), so you get the same table, tools and articles."
+        "a": "Yes. The app shows [PeriodicElementTable.com](https://periodicelementtable.com), so you get the same table, calculators and guides."
       },
       {
         "q": "Do I need an account?",
@@ -334,7 +397,11 @@
       },
       {
         "q": "Does it work offline?",
-        "a": "No. The app loads PeriodicElementTable.com, so it needs an internet connection."
+        "a": "No. The app loads PeriodicElementTable.com, so it needs an internet connection. Without one, it shows an offline screen with a **Retry** button."
+      },
+      {
+        "q": "Can I print a periodic table?",
+        "a": "Yes. Open **Printables** and pick a PDF. It opens in your browser or download manager, in A4 or US Letter."
       },
       {
         "q": "I found a mistake in an element’s data.",
@@ -353,7 +420,7 @@
     "packageConfirmed": true,
     "category": "UtilitiesApplication",
     "tagline": "Calculate. Convert. Create.",
-    "summary": "The Android app of ToolsServer.com — free online tools in one place.",
+    "summary": "The Android app of ToolsServer.com — hundreds of free calculators, converters, text and developer tools in one place. No account, no ads.",
     "accent": "#FF6B1A",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.toolsserver",
     "website": "https://toolsserver.com",
@@ -362,69 +429,95 @@
     "features": [
       {
         "icon": "calculator",
-        "title": "Calculate",
-        "text": "Everyday calculators, one search away."
+        "title": "Calculators",
+        "text": "Percentage, loan, BMI, age, discount, tip, GPA and more. Every result shows the formula."
       },
       {
         "icon": "repeat",
-        "title": "Convert",
-        "text": "Units, formats and files, converted in a few taps."
+        "title": "Converters",
+        "text": "Units, time zones, colours, number bases and data sizes, with results as you type."
       },
       {
         "icon": "pen",
-        "title": "Create",
-        "text": "Small tools to make the things you need."
+        "title": "Text tools",
+        "text": "Word counter, case converter, find and replace, text diff, text to speech."
       },
       {
         "icon": "wrench",
-        "title": "All in one app",
-        "text": "The tools from ToolsServer.com, without opening a browser. [[TODO: list the top 4–6 tools]]"
+        "title": "Developer tools",
+        "text": "JSON formatter, regex tester, Base64 and URL encoders, hash generator."
+      },
+      {
+        "icon": "image",
+        "title": "Generators and image tools",
+        "text": "QR codes, passwords, favicons, and image compress, resize, crop and convert. Save straight to Downloads."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Made for everyday use",
+        "text": "Keep favourites in My tools. Tools you have opened keep working offline."
       }
     ],
-    "screenshots": [],
-    "screenshotsNote": "Screenshots coming soon.",
+    "screenshots": [
+      {
+        "src": "/orbitra/assets/apps/toolsserver/screen-1.webp",
+        "alt": "ToolsServer home screen"
+      },
+      {
+        "src": "/orbitra/assets/apps/toolsserver/screen-2.webp",
+        "alt": "All tools by category"
+      },
+      {
+        "src": "/orbitra/assets/apps/toolsserver/screen-3.webp",
+        "alt": "The loan calculator"
+      },
+      {
+        "src": "/orbitra/assets/apps/toolsserver/screen-4.webp",
+        "alt": "The QR code generator"
+      },
+      {
+        "src": "/orbitra/assets/apps/toolsserver/screen-5.webp",
+        "alt": "The JSON formatter in dark mode"
+      }
+    ],
+    "screenshotsNote": "Screenshots from the Google Play listing.",
     "glance": [
-      "No account needed.",
-      "The app shows the ToolsServer.com website, so the website’s cookies and analytics apply.",
-      "[[TODO: say whether files you choose are processed on your device or uploaded, and for how long uploads are kept]]"
+      "No account. No ads.",
+      "Tools run **on your phone**. What you type, paste or pick in a tool is not sent to our servers.",
+      "The app shows the ToolsServer.com website, so the website’s analytics apply."
     ],
     "privacy": {
       "short": [
         "The app opens **ToolsServer.com** inside the app, so the website’s cookies and analytics apply.",
         "There is **no account** and we don’t ask for your name or email.",
-        "Files you choose: [[TODO: confirm per tool — processed on your device, or uploaded to our server and deleted after how long?]]",
-        "Ads: [[TODO: confirm]]",
+        "Tools run **on your phone**. The text, images and files you use in a tool are **not uploaded** to our servers.",
+        "There are **no ads** and the app doesn’t use the advertising ID.",
         "We never sell your data."
       ],
       "collected": [
         {
           "type": "Pages viewed and how the tools are used",
           "why": "See which tools are useful",
-          "where": "Google Analytics",
-          "shared": "Google, as our service provider"
+          "where": "Google Analytics, Microsoft Clarity",
+          "shared": "Google and Microsoft, as our service providers"
         },
         {
-          "type": "Device and browser info, approximate location from IP (country)",
+          "type": "Device and browser info, error events, approximate location from IP (country)",
           "why": "Analytics and keeping the site working",
           "where": "Google Analytics",
           "shared": "Google, as our service provider"
         },
         {
-          "type": "Files you choose to process",
-          "why": "To run the tool you picked",
-          "where": "[[TODO: on device or our server]]",
-          "shared": "[[TODO: confirm]]"
-        },
-        {
           "type": "Cookies and similar identifiers",
-          "why": "Analytics. Advertising if ads are on.",
+          "why": "Analytics",
           "where": "In the app’s web view on your device",
-          "shared": "Google. [[TODO: confirm]]"
+          "shared": "Google and Microsoft, as our service providers"
         }
       ],
       "notCollected": [
+        "What you type, paste or pick in a tool — text, images and files are processed on your phone.",
         "Your name, email address or any account details — there is no account.",
-        "Your contacts, precise location or microphone."
+        "Your advertising ID, contacts, precise location or microphone."
       ],
       "permissions": [
         {
@@ -432,11 +525,19 @@
           "why": "To load ToolsServer.com."
         },
         {
+          "name": "Network state",
+          "why": "To show the offline screen when you have no connection."
+        },
+        {
+          "name": "Storage (Android 9 and older only)",
+          "why": "To save tool results to your Downloads folder. Newer Android versions don’t need it."
+        },
+        {
           "name": "File / photo picker",
-          "why": "Only when a tool needs a file, and only the file you pick."
+          "why": "Only when a tool needs a file, and only the file you pick. No permission is needed for this."
         }
       ],
-      "permissionsNote": "[[TODO: confirm the final permission list]]",
+      "permissionsNote": null,
       "thirdParties": [
         {
           "name": "Google Analytics",
@@ -444,9 +545,9 @@
           "use": "Website and app usage statistics."
         },
         {
-          "name": "Google AdSense / AdMob",
-          "url": "https://policies.google.com/technologies/ads",
-          "use": "Ads, if they are on. [[TODO: confirm]]"
+          "name": "Microsoft Clarity",
+          "url": "https://privacy.microsoft.com/privacystatement",
+          "use": "How pages are used, to improve the tools."
         },
         {
           "name": "Google Play Services",
@@ -455,17 +556,17 @@
         }
       ],
       "howWeUse": [
-        "To run the tool you chose.",
+        "To run the tool you chose, on your phone.",
         "To understand which tools are useful, so we know what to improve.",
         "To keep the site and app working and secure."
       ],
       "retention": [
         "Analytics data is kept for **14 months**. [[TODO: confirm the GA4 data-retention setting]]",
-        "Uploaded files: [[TODO: confirm how long, e.g. deleted within 1 hour]]",
-        "Cookies stay in the app’s web view until they expire or you clear the app’s storage."
+        "Files you save stay in your Downloads folder until you delete them.",
+        "Cookies and tools saved for offline use stay in the app’s web view until they expire or you clear the app’s storage."
       ],
-      "children": "{app} is not directed at children under 13, and we do not knowingly collect their data. [[TODO: confirm the target age group in Play Console]]",
-      "extra": "This policy covers the Android app. [[TODO: add the link to toolsserver.com’s privacy policy if it has one]]"
+      "children": "{app} is meant for people aged 13 and over and is not directed at children under 13. We do not knowingly collect their data.",
+      "extra": "This policy covers the Android app. The website’s own [privacy policy](https://toolsserver.com/privacy/) also applies to the pages shown in the app; you can turn analytics off under **Your choices** on that page. Microsoft may also process data outside your country."
     },
     "deletion": {
       "short": "There is no account. Clearing the app’s storage deletes everything the app saved on your phone.",
@@ -473,9 +574,8 @@
       "inAppNote": null,
       "analytics": "Analytics data is collected without your name or email.",
       "deleted": [
-        "Cookies, cache and anything the website saved in the app on your phone.",
-        "On request, analytics data linked to your device, where technically possible.",
-        "Uploaded files, if any: [[TODO: confirm they are deleted automatically and when]]"
+        "Cookies, cache, your My tools list and anything the website saved in the app on your phone.",
+        "On request, analytics data linked to your device, where technically possible."
       ],
       "kept": [
         "Aggregated, anonymous statistics that cannot be linked back to you.",
@@ -487,7 +587,7 @@
     "faq": [
       {
         "q": "Is the app the same as the website?",
-        "a": "Yes. The app shows [ToolsServer.com](https://toolsserver.com), so you get the same tools."
+        "a": "Yes. The app shows [ToolsServer.com](https://toolsserver.com), so you get the same tools. New tools appear in the app automatically, without an update."
       },
       {
         "q": "Do I need an account?",
@@ -495,7 +595,15 @@
       },
       {
         "q": "What happens to files I use in a tool?",
-        "a": "See the [privacy policy](/orbitra/toolsserver/privacy-policy/#data-we-collect). [[TODO: confirm per tool]]"
+        "a": "They stay on your phone. Tools run on your device, so what you type, paste or pick is not uploaded to our servers. See the [privacy policy](/orbitra/toolsserver/privacy-policy/#data-we-collect)."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "Tools you have opened before keep working offline. A tool you haven’t opened yet needs an internet connection the first time."
+      },
+      {
+        "q": "Where are my downloads saved?",
+        "a": "In your phone’s **Downloads** folder."
       },
       {
         "q": "A tool gave me a wrong result.",
@@ -504,7 +612,8 @@
     ],
     "termsNotes": [
       "Tool results are provided as-is. Check important numbers before you rely on them.",
-      "Only upload files you have the right to use."
+      "Finance and health calculators (such as loan or BMI) are calculations only, not financial or medical advice.",
+      "Only use files you have the right to use."
     ]
   },
   {
@@ -515,7 +624,7 @@
     "packageConfirmed": true,
     "category": "PhotographyApplication",
     "tagline": "White-background product photos in one tap.",
-    "summary": "Remove the background from your product photos and size them for Amazon, Etsy, eBay and Shopify. Free, on your phone.",
+    "summary": "Remove the background from your product photos and size them for Amazon, Etsy, eBay, Shopify and Instagram. Free, and done on your phone.",
     "accent": "#1E4DFF",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.productwhite",
     "website": null,
@@ -525,12 +634,22 @@
       {
         "icon": "image",
         "title": "Remove the background",
-        "text": "Pick a product photo and get a clean, pure white background."
+        "text": "Pick or take a product photo and get a clean, pure white background."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Done on your phone",
+        "text": "Background removal runs on the device. Your photos are never uploaded."
       },
       {
         "icon": "store",
         "title": "Ready for your shop",
-        "text": "Sized for Amazon, Etsy, eBay and Shopify listings."
+        "text": "Sized for Amazon, Etsy, eBay, Shopify and Instagram, or a custom size."
+      },
+      {
+        "icon": "crop",
+        "title": "Size, margin and shadow",
+        "text": "Adjust how much the product fills the frame, and add a soft floor shadow."
       },
       {
         "icon": "gauge",
@@ -539,8 +658,8 @@
       },
       {
         "icon": "download",
-        "title": "Save to phone",
-        "text": "Export ready-to-upload images straight to your gallery."
+        "title": "Save or share",
+        "text": "Save JPG or PNG straight to your gallery, or share it to another app."
       }
     ],
     "screenshots": [
@@ -567,92 +686,119 @@
     ],
     "screenshotsNote": "Store artwork. Real screenshots will replace them once the app runs.",
     "glance": [
-      "No account needed.",
-      "Your photos: [[TODO: confirm — processed on your phone, or uploaded for background removal?]]",
+      "No account. No ads.",
+      "Your photos are processed **on your phone** and never uploaded.",
+      "Anonymous usage stats and crash reports help us fix bugs. They never include your photos or file names.",
       "Links to Premium Photo Edits and WhatsApp open separate services with their own privacy policies."
     ],
     "privacy": {
       "short": [
-        "There is **no account** and we don’t ask for your name or email.",
-        "Your photos: [[TODO: confirm — processed on your phone, or uploaded to a server/API for background removal? If uploaded: which service and how long they are kept. Do not publish until confirmed.]]",
-        "Analytics: [[TODO: confirm whether Firebase/Google Analytics is used]]",
+        "Your photos are processed **on your phone**. Photos, edited images and file names are **never uploaded** to us or anyone else.",
+        "There is **no account**, **no ads** and **no advertising ID**.",
+        "The app sends **anonymous usage statistics** and **crash reports** through Google Firebase. They never include your photos or file names.",
         "We never sell your data."
       ],
       "collected": [
         {
-          "type": "Photos you choose to edit",
-          "why": "To remove the background",
-          "where": "[[TODO: on device or which server/API]]",
-          "shared": "[[TODO: confirm]]"
+          "type": "App interactions (e.g. “export saved”, the marketplace you chose, screens viewed) — never your photos or file names",
+          "why": "See which features are useful",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider"
         },
         {
-          "type": "App interactions and crash logs",
-          "why": "Improve the app and fix bugs",
-          "where": "[[TODO: confirm analytics provider]]",
-          "shared": "[[TODO: confirm]]"
+          "type": "Crash logs and diagnostics (device model, Android version, app version, error details with file paths removed)",
+          "why": "Find and fix bugs",
+          "where": "Firebase Crashlytics",
+          "shared": "Google, as our service provider"
+        },
+        {
+          "type": "App instance ID (a random ID Firebase creates for this install)",
+          "why": "Count installs without knowing who you are",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider"
         }
       ],
       "notCollected": [
+        "Your photos, the edited images and their file names — they stay on your phone.",
         "Your name, email address or any account details — there is no account.",
-        "Your contacts, precise location, microphone or photos you did not pick."
+        "Your advertising ID, contacts, precise location, microphone or photos you did not pick."
       ],
       "permissions": [
         {
           "name": "Photo picker",
-          "why": "Only the photos you pick are opened."
+          "why": "Android’s photo picker shows the app only the photo you choose. No permission is needed."
         },
         {
-          "name": "Camera",
-          "why": "Only if you take a new product photo in the app."
+          "name": "Take photo",
+          "why": "Opens your phone’s own camera app. ProductWhite has no camera permission."
+        },
+        {
+          "name": "Internet",
+          "why": "To send anonymous stats and crash reports, and to open links you tap."
         }
       ],
-      "permissionsNote": "[[TODO: confirm the final permission list]]",
+      "permissionsNote": "The app asks for no storage, media, camera or advertising-ID permission. On Android 10 and newer, finished photos are saved to **Pictures/ProductWhite**; on older phones you choose where to save.",
       "thirdParties": [
+        {
+          "name": "Google ML Kit",
+          "url": "https://developers.google.com/ml-kit/android-data-disclosure",
+          "use": "Finds the product in your photo, on your phone. The photo is not sent to Google."
+        },
+        {
+          "name": "Google Analytics for Firebase",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Anonymous usage statistics."
+        },
+        {
+          "name": "Firebase Crashlytics",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Crash reports."
+        },
         {
           "name": "Google Play Services",
           "url": "https://policies.google.com/privacy",
-          "use": "Installing and updating the app."
-        },
-        {
-          "name": "Background-removal service",
-          "url": "#",
-          "use": "[[TODO: name the service and link its privacy policy, or remove this row if processing is on-device]]"
+          "use": "Installing and updating the app, and the optional in-app review card."
         }
       ],
       "howWeUse": [
-        "To put your product on a white background and save the result.",
-        "To fix bugs and improve the app. [[TODO: confirm]]"
+        "To put your product on a white background and save the result — all on your phone.",
+        "To understand which features are used, so we know what to improve.",
+        "To find and fix crashes.",
+        "[[TODO: analytics is on by default with no switch in the app — confirm the legal basis for EU/UK users, or add an opt-in like Habit Tracker’s]]"
       ],
       "retention": [
-        "Edited photos you save stay in your gallery until you delete them.",
-        "Uploaded photos, if any: [[TODO: confirm how long they are kept]]"
+        "Finished photos stay where you saved them until you delete them.",
+        "The app keeps your settings and small thumbnails of your last 3 exports on your phone until you clear its storage.",
+        "Analytics data: [[TODO: set the GA4 data retention (2 or 14 months) and state it here]]",
+        "Crash reports are kept for up to **90 days**."
       ],
-      "children": "{app} is a tool for online sellers and is not directed at children under 13. We do not knowingly collect their data. [[TODO: confirm the target age group in Play Console]]",
-      "extra": "The app links to [Premium Photo Edits](https://premiumphotoedits.com) for optional professional edits, and to WhatsApp to contact that service. Those are separate services with their own privacy policies. This page replaces the earlier policy at premiumphotoedits.com/productwhite/privacy. [[TODO: redirect that old URL here]]"
+      "children": "{app} is a tool for adults who sell products online and is not directed at children under 13. We do not knowingly collect their data.",
+      "extra": "The app links to [Premium Photo Edits](https://premiumphotoedits.com) for optional professional edits, and to WhatsApp to contact that service. Those are separate services with their own privacy policies. A photo is only shared there if you send it yourself. [[TODO: the app and Play listing still point to premiumphotoedits.com/productwhite/privacy — redirect that URL here or update the app]]"
     },
     "deletion": {
       "short": "There is no account. Clearing the app’s storage or uninstalling deletes what the app saved on your phone.",
       "inApp": null,
       "inAppNote": null,
-      "analytics": "Any analytics data is collected without your name or email. [[TODO: confirm analytics]]",
+      "analytics": "Usage stats and crash reports are linked only to a random app instance ID — never your name, email or photos. Reinstalling the app resets that ID.",
       "deleted": [
-        "Settings and anything the app saved in its own storage on your phone.",
-        "Uploaded photos, if any: [[TODO: confirm they are deleted automatically and when]]"
+        "Your settings, recent export thumbnails and anything else the app saved in its own storage on your phone.",
+        "On request, analytics and crash data linked to your app instance ID, where technically possible."
       ],
       "kept": [
-        "Finished photos you saved to your gallery — delete them from your gallery.",
+        "Finished photos you saved to your gallery (**Pictures/ProductWhite**) — delete them from your gallery.",
         "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Analytics events until the retention period ends. [[TODO: confirm GA4 retention]]",
         "Data Google keeps under its own policies, such as your Play Store install history."
       ]
     },
     "faq": [
       {
         "q": "Is ProductWhite free?",
-        "a": "Yes, the app is free."
+        "a": "Yes, the app is free, with no ads and no account."
       },
       {
         "q": "Which shops are the photos ready for?",
-        "a": "Amazon, Etsy, eBay and Shopify."
+        "a": "Amazon, Etsy, eBay, Shopify and Instagram. You can also set a custom size."
       },
       {
         "q": "How do I get the best result?",
@@ -660,7 +806,11 @@
       },
       {
         "q": "Do my photos leave my phone?",
-        "a": "See the [privacy policy](/orbitra/productwhite/privacy-policy/). [[TODO: confirm on-device vs upload]]"
+        "a": "No. Background removal runs on your phone. A photo only leaves it if you share it yourself."
+      },
+      {
+        "q": "Where are my photos saved?",
+        "a": "In **Pictures/ProductWhite** on Android 10 and newer. On older phones, you choose the folder."
       },
       {
         "q": "Can someone edit a photo for me?",
@@ -670,6 +820,241 @@
     "termsNotes": [
       "You keep all rights to your photos. Only edit photos you have the right to use.",
       "Premium Photo Edits is a separate service. Its own terms apply to any order you place there."
+    ]
+  },
+  {
+    "slug": "budgettracker",
+    "name": "Budget Tracker",
+    "storeTitle": "Budget & Expense Tracker",
+    "package": "com.orbitra.budgettracker",
+    "packageConfirmed": false,
+    "category": "FinanceApplication",
+    "tagline": "Every dollar moves you up.",
+    "summary": "Track expenses, budgets, bills and net worth in any currency, and climb your Road to Billionaire milestone by milestone. Private, offline, no ads.",
+    "accent": "#0F6E52",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.budgettracker",
+    "website": null,
+    "status": "coming-soon",
+    "lastUpdated": "2026-10-02",
+    "features": [
+      {
+        "icon": "pen",
+        "title": "Log it in seconds",
+        "text": "Fast entry with a built-in calculator, categories, tags, notes and split transactions."
+      },
+      {
+        "icon": "gauge",
+        "title": "Budgets that keep you on track",
+        "text": "Monthly budgets per category or overall, with rollover and alerts at 80% and 100%."
+      },
+      {
+        "icon": "bell",
+        "title": "Never miss a bill",
+        "text": "Recurring transactions and bill reminders, posted for you or on your confirmation."
+      },
+      {
+        "icon": "repeat",
+        "title": "Any currency, one net worth",
+        "text": "Each account in its own currency, with daily exchange rates and one total in your base currency."
+      },
+      {
+        "icon": "chart",
+        "title": "Insights",
+        "text": "Spending by category, income vs expenses, cash flow, savings rate and period comparisons."
+      },
+      {
+        "icon": "lock",
+        "title": "Private by design",
+        "text": "No account, no bank login, no ads. App lock with fingerprint or PIN, and encrypted backups."
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-1.webp",
+        "alt": "Budget Tracker home dashboard"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-2.webp",
+        "alt": "The Road to Billionaire journey with milestones"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-3.webp",
+        "alt": "Monthly budgets"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-4.webp",
+        "alt": "Spending insights"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-5.webp",
+        "alt": "Accounts and net worth in several currencies"
+      }
+    ],
+    "screenshotsNote": "Design concepts. Real screenshots will replace them before launch.",
+    "glance": [
+      "Your money data stays **on your phone**. No account, no bank login.",
+      "No ads. The core app is free; **Orbitra Pro** adds more.",
+      "Anonymous usage stats and crash reports are sent **only if you agree**."
+    ],
+    "privacy": {
+      "short": [
+        "Your accounts, transactions, budgets, goals and notes are stored **only on your phone**. We never receive them.",
+        "There is **no account**, **no bank login** and **no ads**.",
+        "To show exchange rates, the app downloads daily rates. That request contains only currency codes, not your data.",
+        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. They never include amounts, payees, notes or account names.",
+        "Orbitra Pro purchases are handled by **Google Play**. We never see your payment details.",
+        "We never sell your data."
+      ],
+      "collected": [
+        {
+          "type": "App interactions (e.g. “a budget was created”, “insights opened”) — never amounts, payees, notes or account names",
+          "why": "See which features are useful",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "Crash logs and diagnostics (device model, Android version, app version), with anything you typed removed",
+          "why": "Find and fix bugs",
+          "where": "Firebase Crashlytics",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "App instance ID (a random ID Firebase creates for this install)",
+          "why": "Count unique installs without knowing who you are",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "Exchange-rate requests (currency codes and your IP address)",
+          "why": "Download daily exchange rates",
+          "where": "Frankfurter API (European Central Bank rates)",
+          "shared": "The rates provider, to answer the request. No identifiers are sent."
+        },
+        {
+          "type": "Purchase status for Orbitra Pro",
+          "why": "Unlock Pro features you paid for",
+          "where": "Google Play Billing",
+          "shared": "Google, which handles the payment"
+        }
+      ],
+      "notCollected": [
+        "Your accounts, balances, transactions, payees, budgets, goals and notes — they stay on your device.",
+        "Your name, email address or any account details — there is no account. An optional display name stays on your phone.",
+        "Bank logins or card numbers — there is no bank sync.",
+        "Your advertising ID, SMS, contacts, call log, location or files."
+      ],
+      "permissions": [
+        {
+          "name": "Internet",
+          "why": "For exchange rates, Google Play purchases, and anonymous stats if you agreed."
+        },
+        {
+          "name": "Notifications",
+          "why": "Asked only when you set a bill reminder or budget alert. Reminders are scheduled on your device."
+        },
+        {
+          "name": "Fingerprint / face unlock",
+          "why": "Only if you turn on app lock."
+        },
+        {
+          "name": "Run at startup",
+          "why": "To set your reminders again after the phone restarts."
+        },
+        {
+          "name": "Google Play Billing",
+          "why": "To buy Orbitra Pro."
+        }
+      ],
+      "permissionsNote": "The app never asks for SMS, contacts, location, camera or storage permissions. Receipts are added with Android’s photo picker or your camera app. [[TODO: confirm against the final AndroidManifest.xml before launch]]",
+      "thirdParties": [
+        {
+          "name": "Google Analytics for Firebase",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Anonymous usage statistics, with your consent."
+        },
+        {
+          "name": "Firebase Crashlytics",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Crash reports, with your consent."
+        },
+        {
+          "name": "Frankfurter",
+          "url": "https://frankfurter.dev/",
+          "use": "Daily European Central Bank exchange rates. No key, no personal data. [[TODO: confirm its terms before launch]]"
+        },
+        {
+          "name": "Google Play Billing",
+          "url": "https://policies.google.com/privacy",
+          "use": "Orbitra Pro subscriptions and purchases."
+        },
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        }
+      ],
+      "howWeUse": [
+        "Your money data is used only on your phone, to run the app for you.",
+        "To understand which features people use, so we know what to improve.",
+        "To find and fix crashes.",
+        "Legal basis in the EU/UK: providing the app you asked for (Art. 6(1)(b) GDPR) for data on your phone, and your consent (Art. 6(1)(a)) for analytics. You can withdraw consent at any time in Settings."
+      ],
+      "retention": [
+        "Data on your device stays until you use **Delete all data**, clear the app’s storage or uninstall the app.",
+        "Your money data is **not** included in Android’s automatic Google backup. Backups are only the files you create yourself, encrypted with AES-256.",
+        "Analytics data: [[TODO: confirm the GA4 data-retention setting]]",
+        "Crash reports are kept for up to **90 days**."
+      ],
+      "children": "{app} is meant for adults (18+). It is not directed at children and we do not knowingly collect their data.",
+      "extra": null
+    },
+    "deletion": {
+      "short": "Your data lives on your phone. Use Delete all data in Settings, or uninstall the app.",
+      "inApp": "In the app, open **Settings → Delete all data**. This wipes your accounts, transactions, budgets, goals and settings, and resets the analytics ID.",
+      "inAppNote": "Deleting your data does **not** cancel an Orbitra Pro subscription. Cancel it in **Google Play → Payments & subscriptions → Subscriptions**. [[TODO: confirm the menu path once the app is built]]",
+      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy & data**. Delete all data and reinstalling both reset the app instance ID.",
+      "deleted": [
+        "Everything you entered in the app: accounts, transactions, budgets, bills, goals, notes and settings.",
+        "Your app lock PIN and saved exchange rates.",
+        "On request, analytics and crash data linked to your app instance ID, where technically possible."
+      ],
+      "kept": [
+        "Backup and export files you saved yourself — delete those from your phone or cloud storage.",
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Your purchase history, kept by Google Play under its own policies."
+      ]
+    },
+    "faq": [
+      {
+        "q": "When will Budget Tracker be available?",
+        "a": "We are building it now. Follow our [Google Play developer page](https://play.google.com/store/apps/dev?id=7254338090363385545) for the launch."
+      },
+      {
+        "q": "Is it free?",
+        "a": "Yes. The core app is free and has no ads. **Orbitra Pro** adds unlimited accounts, budgets and goals, full insights history and more."
+      },
+      {
+        "q": "Do I need to connect my bank?",
+        "a": "No. There is no bank sync. Add transactions yourself, import a CSV, or set up recurring ones."
+      },
+      {
+        "q": "Does it handle more than one currency?",
+        "a": "Yes. Each account has its own currency. The app uses daily European Central Bank rates, and you can set your own rate or add a custom currency."
+      },
+      {
+        "q": "Is the Road to Billionaire financial advice?",
+        "a": "No. Milestones, the pace calculator and projections are illustrations to keep you motivated, not financial advice."
+      },
+      {
+        "q": "How do I back up my data?",
+        "a": "Create an encrypted backup file and save it where you like, such as Google Drive. You can also export to CSV."
+      }
+    ],
+    "termsNotes": [
+      "{app} records and analyses the money you enter. It does not move money, give loans, or offer banking or investment services.",
+      "Projections, the pace calculator and milestones are illustrations only, not financial advice.",
+      "Orbitra Pro is billed by Google Play and renews until you cancel it in Google Play. Google Play’s refund rules apply.",
+      "Everything you log stays on your device. Keep your own backups, and remember your backup password — we cannot recover it."
     ]
   }
 ]
