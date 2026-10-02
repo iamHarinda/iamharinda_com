@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import FiverrLogo from "../components/FiverrLogo.astro";
 import PageHero from "../components/PageHero.astro";
 import Pricing from "../components/Pricing.astro";
 import Faq from "../components/Faq.astro";
@@ -39,7 +40,7 @@ const jsonLd = [service({ name: "Photo editing", path: "/pricing/", description:
       </div>
       <div class="btn-row" style="margin-top:1.25rem">
         <a class="btn btn--p" href="/free-sample/">Start with a free sample</a>
-        <a class="btn btn--s" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">Order on Fiverr</a>
+        <a class="btn btn--s" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">Order on <FiverrLogo height={15} label="Fiverr" /></a>
       </div>
       <p class="price-note">Payment methods for direct orders: {payments.join(" · ")}.</p>
     </div>

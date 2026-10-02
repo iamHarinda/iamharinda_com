@@ -1,16 +1,51 @@
 ---
 import Logo from "./Logo.astro";
+import BrandIcon from "./BrandIcon.astro";
+import FiverrLogo from "./FiverrLogo.astro";
 import site, { waLink } from "../data/site.js";
 import orbitra from "../data/orbitra/studio.js";
 const year = new Date().getFullYear();
+const wa = waLink("Hi Harinda, I found your site and I'd like to talk about editing.");
+// Card, Venmo, Apple Pay and Google Pay all go through a PayPal invoice (see /pricing/).
+// `text`: the mark alone isn't recognisable, so show the name next to it.
+const payLogos = [
+  { name: "paypal", label: "PayPal", size: 18, text: true },
+  { name: "venmo", label: "Venmo", size: 12 },
+  { name: "applepay", label: "Apple Pay", size: 22 },
+  { name: "googlepay", label: "Google Pay", size: 16 },
+  { name: "payoneer", label: "Payoneer", size: 18, text: true },
+];
+const payText = ["Remitly", "TapSend", "Bank transfer"];
 ---
 
 <footer class="foot">
   <div class="wrap">
+    <!-- WhatsApp first: it's the fastest way to start a job. -->
+    <div class="foot__wa">
+      <span class="foot__wa-ic"><BrandIcon name="whatsapp" size={30} color="#fff" /></span>
+      <div class="foot__wa-copy">
+        <p class="foot__wa-title">Questions? Message me on WhatsApp.</p>
+        <p class="foot__wa-text">The fastest way to reach me. Send your shoot type, photo count and deadline, and I'll reply with a plan.</p>
+      </div>
+      <a class="foot__wa-btn" href={wa} data-track="whatsapp">
+        <BrandIcon name="whatsapp" size={20} color="currentColor" />
+        <span>Chat on WhatsApp<small>{site.contact.whatsappDisplay}</small></span>
+      </a>
+    </div>
+
     <div class="foot__grid">
       <div class="foot__brand">
         <Logo variant="full" />
-        <p style="margin-top:1rem;max-width:30ch">{site.tagline} Hand-edited photo editing for photographers in the US, UK, Canada, Europe and Australia.</p>
+        <p>{site.tagline} Hand-edited photo editing for photographers in the US, UK, Canada, Europe and Australia.</p>
+        <ul class="foot__social" aria-label="Contact">
+          <li><a href={wa} data-track="whatsapp" aria-label="WhatsApp"><BrandIcon name="whatsapp" size={20} /></a></li>
+          <li>
+            <a href={`mailto:${site.contact.email}`} data-track="email" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+            </a>
+          </li>
+          <li><a class="foot__social-fiverr" href={site.contact.fiverr} rel="me noopener" target="_blank" data-track="fiverr" aria-label="Fiverr profile (opens in a new tab)"><FiverrLogo height={14} /></a></li>
+        </ul>
       </div>
       <div>
         <p class="foot__title">Photo editing</p>
@@ -35,16 +70,34 @@ const year = new Date().getFullYear();
         </ul>
       </div>
       <div>
-        <p class="foot__title">Contact</p>
-        <ul>
+        <p class="foot__title">Get in touch</p>
+        <ul class="foot__contact">
+          <li><a href={wa} data-track="whatsapp"><BrandIcon name="whatsapp" size={16} />{site.contact.whatsappDisplay}</a></li>
+          <li>
+            <a href={`mailto:${site.contact.email}`} data-track="email">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>{site.contact.email}
+            </a>
+          </li>
+          <li><a href={site.contact.fiverr} rel="me noopener" target="_blank" data-track="fiverr"><FiverrLogo height={13} /><span>profile</span></a></li>
           <li><a href="/free-sample/">Free sample edit</a></li>
           <li><a href="/contact/">Contact form</a></li>
-          <li><a href={waLink("Hi Harinda, I found your site and I'd like to talk about editing.")} data-track="whatsapp">WhatsApp {site.contact.whatsappDisplay}</a></li>
-          <li><a href={`mailto:${site.contact.email}`} data-track="email">{site.contact.email}</a></li>
-          <li><a href={site.contact.fiverr} rel="me noopener" target="_blank" data-track="fiverr">Fiverr profile</a></li>
         </ul>
+        <p class="foot__reply">I reply {site.replyTime}.</p>
       </div>
     </div>
+
+    <div class="foot__pay">
+      <p class="foot__title">Payments for direct orders</p>
+      <ul>
+        {payLogos.map((p) => (
+          <li title={p.label}>
+            {p.text ? <><BrandIcon name={p.name} size={p.size} color="currentColor" /><span>{p.label}</span></> : <BrandIcon name={p.name} size={p.size} color="currentColor" label={p.label} />}
+          </li>
+        ))}
+        {payText.map((t) => <li class="foot__pay-text">{t}</li>)}
+      </ul>
+    </div>
+
     <div class="foot__legal">
       <span>© {year} {site.personName}, trading as {site.legalName}. {site.location.note}</span>
       <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a>{!orbitra.draft && <> · <a href="/orbitra/">Apps by Orbitra</a></>}</span>

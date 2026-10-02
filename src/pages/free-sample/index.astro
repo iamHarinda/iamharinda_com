@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/PageHero.astro";
+import BrandIcon from "../../components/BrandIcon.astro";
 import site, { waLink } from "../../data/site.js";
 import { breadcrumb } from "../../lib/schema.js";
 import { featured } from "../../data/reviews.js";
@@ -18,9 +19,15 @@ const crumbs = [{ name: "Home", path: "/" }, { name: "Free sample edit", path: "
         <p class="alert alert--err" id="form-error" hidden>That didn't go through. Please try again, or send the link on WhatsApp instead.</p>
         <form class="form" method="POST" action="/contact.php" data-lead="free-sample">
           <input type="hidden" name="form" value="sample" />
+          <input type="hidden" name="via" value="email" />
           <div class="row2">
-            <div class="field"><label for="fs-name">Your name</label><input id="fs-name" name="name" autocomplete="name" required /></div>
-            <div class="field"><label for="fs-email">Email</label><input id="fs-email" name="email" type="email" autocomplete="email" required /></div>
+            <div class="field"><label for="fs-first">First name</label><input id="fs-first" name="first_name" autocomplete="given-name" required /></div>
+            <div class="field"><label for="fs-last">Last name</label><input id="fs-last" name="last_name" autocomplete="family-name" required /></div>
+          </div>
+          <div class="field">
+            <label for="fs-email">Email (optional)</label>
+            <input id="fs-email" name="email" type="email" autocomplete="email" aria-describedby="fs-email-hint" />
+            <span class="hint" id="fs-email-hint">Not needed if you send on WhatsApp. Needed if you send by email.</span>
           </div>
           <div class="field">
             <label for="fs-link">Link to 3 photos</label>
@@ -59,7 +66,11 @@ const crumbs = [{ name: "Home", path: "/" }, { name: "Free sample edit", path: "
           </div>
           <div class="hp" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off" /></label></div>
           {site.turnstileSiteKey && <div class="cf-turnstile" data-sitekey={site.turnstileSiteKey}></div>}
-          <button class="btn btn--p" type="submit">Send my free sample request</button>
+          <div class="btn-row">
+            <button class="btn btn--wa" type="button" data-wa-submit><BrandIcon name="whatsapp" size={20} color="currentColor" /> Send on WhatsApp</button>
+            <button class="btn btn--s" type="submit" data-email-submit>Send by email instead</button>
+          </div>
+          <p class="small muted">WhatsApp opens with your details already filled in. Just press send. A copy also comes to me by email.</p>
           <p class="small muted">Your photos are only used to edit your sample and are deleted afterwards. See the <a href="/privacy/">privacy policy</a>.</p>
         </form>
       </div>
@@ -83,7 +94,41 @@ const crumbs = [{ name: "Home", path: "/" }, { name: "Free sample edit", path: "
       </aside>
     </div>
   </section>
-  <script is:inline>
+  <script is:inline define:vars={{ waNumber: site.contact.whatsapp }}>
     if (location.search.includes("error=1")) document.getElementById("form-error").hidden = false;
+
+    // "Send on WhatsApp": check the form, email a copy in the background, then open
+    // WhatsApp with every answer already in the message.
+    const form = document.querySelector("form[data-lead='free-sample']");
+    const waBtn = form?.querySelector("[data-wa-submit]");
+    const emailInput = form?.querySelector("#fs-email");
+    // Email is only required when the request goes by email.
+    form?.querySelector("[data-email-submit]")?.addEventListener("click", () => {
+      emailInput.required = true;
+      form.elements.via.value = "email";
+    });
+    waBtn?.addEventListener("click", () => {
+      emailInput.required = false;
+      form.elements.via.value = "whatsapp";
+      if (!form.reportValidity()) return;
+      const d = new FormData(form);
+      if (d.get("company")) return; // honeypot
+      const v = (k) => String(d.get(k) ?? "").trim();
+      const fields = [
+        `Name: ${v("first_name")} ${v("last_name")}`,
+        v("email") && `Email: ${v("email")}`,
+        `Photos: ${v("photos_link")}`,
+        `Shoot: ${v("shoot_type")}`,
+        v("gallery_size") && `Full gallery: about ${v("gallery_size")} photos`,
+        `Style: ${v("style")}`,
+        v("reference") && `Reference: ${v("reference")}`,
+        v("message") && `Notes: ${v("message")}`,
+      ].filter(Boolean);
+      const lines = ["Hi Harinda, I'd like a free sample edit (3 photos).", "", ...fields];
+      // Email copy, so the request is on record even if the WhatsApp message isn't sent.
+      try { fetch(form.action, { method: "POST", body: d, keepalive: true, mode: "no-cors" }); } catch (e) {}
+      window.gtag?.("event", "generate_lead", { form: "free-sample", method: "whatsapp" });
+      location.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(lines.join("\n"))}`;
+    });
   </script>
 </BaseLayout>

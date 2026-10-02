@@ -51,10 +51,15 @@ if ($TURNSTILE_SECRET !== '') {
 // ── Gather + validate ──────────────────────────────────────────────────────
 $clean = static fn($v, $max = 500) => mb_substr(trim(str_replace(["\r", "\n", "\t", "%0a", "%0d", "%0A", "%0D"], ' ', (string) $v)), 0, $max);
 $name    = $clean($_POST['name'] ?? '', 120);
+if ($name === '') $name = $clean(trim(($_POST['first_name'] ?? '') . ' ' . ($_POST['last_name'] ?? '')), 120);
 $email   = $clean($_POST['email'] ?? '', 200);
 $message = mb_substr(trim((string) ($_POST['message'] ?? '')), 0, 8000);
+// The free-sample form can go out on WhatsApp, where the client's number is the
+// contact detail; then email is optional but must still be valid if given.
+$viaWhatsApp = $form === 'sample' && ($_POST['via'] ?? '') === 'whatsapp';
+$emailOk = filter_var($email, FILTER_VALIDATE_EMAIL) || ($viaWhatsApp && $email === '');
 
-$ok = $name !== '' && filter_var($email, FILTER_VALIDATE_EMAIL);
+$ok = $name !== '' && $emailOk;
 if ($form === 'sample') {
     $link = $clean($_POST['photos_link'] ?? '', 1000);
     $ok = $ok && preg_match('#^https?://#i', $link);
@@ -65,9 +70,9 @@ if (!$ok) { header('Location: ' . $back . '?error=1', true, 303); exit; }
 
 // ── Compose ────────────────────────────────────────────────────────────────
 if ($form === 'sample') {
-    $subject = 'Free sample request — ' . $clean($_POST['shoot_type'] ?? 'photos', 80);
+    $subject = 'Free sample request' . ($viaWhatsApp ? ' (sent on WhatsApp)' : '') . ' — ' . $clean($_POST['shoot_type'] ?? 'photos', 80);
     $fields = [
-        'Name' => $name, 'Email' => $email,
+        'Name' => $name, 'Email' => $email, 'Sent via' => $viaWhatsApp ? 'WhatsApp' : 'Email',
         'Photos link' => $link,
         'Shoot type' => $clean($_POST['shoot_type'] ?? ''),
         'Gallery size' => $clean($_POST['gallery_size'] ?? '', 40),
@@ -84,10 +89,10 @@ $body .= "-----------------------------------\n\n" . $message . "\n";
 
 $headers = [
     'From: iamharinda.com <' . $FROM . '>',
-    'Reply-To: ' . $name . ' <' . $email . '>',
+    $email !== '' ? 'Reply-To: ' . $name . ' <' . $email . '>' : null,
     'Content-Type: text/plain; charset=UTF-8',
 ];
-$sent = @mail($TO, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, implode("\r\n", $headers), '-f' . $FROM);
+$sent = @mail($TO, '=?UTF-8?B?' . base64_encode($subject) . '?=', $body, implode("\r\n", array_filter($headers)), '-f' . $FROM);
 
 header('Location: ' . ($sent ? $thanks : $back . '?error=1'), true, 303);
 exit;

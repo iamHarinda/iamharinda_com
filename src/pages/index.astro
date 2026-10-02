@@ -6,16 +6,16 @@ import Pricing from "../components/Pricing.astro";
 import Reviews from "../components/Reviews.astro";
 import WorldMap from "../components/WorldMap.astro";
 import Faq from "../components/Faq.astro";
+import FiverrLogo from "../components/FiverrLogo.astro";
+import BeforeAfter from "../components/BeforeAfter.astro";
 import Cta from "../components/Cta.astro";
 import site, { waLink } from "../data/site.js";
 import { portfolio, pick, cld, cldSrcset } from "../data/portfolio.js";
 import { service, faqPage } from "../lib/schema.js";
 import { getCollection } from "astro:content";
 
-const hero = pick("DSC01850")[0];
-const heroSizes = "100vw";
-const heroWidths = [640, 960, 1280, 1600, 2000];
 const fe = site.featuredEdit;
+const feWidths = [640, 960, 1280, 1600];
 const railImgs = pick("DSC_0943-Enhanced-NR", "DSC01720", "IMG_9342", "IMG_3960", "DSC_0960-Enhanced-NR", "IMG_8873", "DSC02117", "IMG_3993");
 const printImg = pick("DSC_0972-Enhanced-NR")[0];
 const faqs = site.faqs.slice(0, 5);
@@ -34,22 +34,9 @@ const jsonLd = [
   description="Outsource your wedding and portrait editing to a human editor. Lightroom, no AI, from $0.20 a photo. 3 free sample edits, pay after you approve."
   path="/"
   jsonLd={jsonLd}
-  preloadImage={cld(hero, { w: 1280 })}
-  preloadSrcset={heroWidths.map((w) => `${cld(hero, { w })} ${w}w`).join(", ")}
-  preloadSizes={heroSizes}
 >
-  <header class="hero">
+  <header class="hero hero--text">
     <div class="hero__frame">
-      <img
-        src={cld(hero, { w: 1280 })}
-        srcset={heroWidths.map((w) => `${cld(hero, { w })} ${w}w`).join(", ")}
-        sizes={heroSizes}
-        width="1280"
-        height={Math.round((1280 * hero.h) / hero.w)}
-        alt={hero.alt}
-        fetchpriority="high"
-        decoding="async"
-      />
       <div class="hero__copy">
         <span class="eyebrow">Wedding &amp; portrait editing · No AI</span>
         <h1 class="display" style="margin-top:.9rem">
@@ -62,9 +49,13 @@ const jsonLd = [
           <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
           <a class="btn btn--s btn--light" href="/work/">See the work</a>
         </div>
-        <p class="hero__rating"><span class="stars" aria-hidden="true">★★★★★</span> {site.fiverrStats.rating} · {site.fiverrStats.reviews}+ Fiverr reviews · {site.fiverrStats.ordersPlus}+ orders</p>
+        <ul class="hero__facts">
+          <li>Lightroom Classic · Photoshop</li>
+          <li>Calibrated ASUS ProArt screen</li>
+          <li>From {site.perPhoto} a photo</li>
+        </ul>
+        <p class="hero__rating"><FiverrLogo height={16} label="Fiverr" /> {site.fiverrStats.reviews}+ reviews · {site.fiverrStats.ordersPlus}+ orders</p>
       </div>
-      <div class="hero__meta">ASUS ProArt · Calman Verified<br />Lightroom Classic · Photoshop<br />From {site.perPhoto} a photo</div>
     </div>
   </header>
 
@@ -76,12 +67,16 @@ const jsonLd = [
       <div class="head">
         <span class="eyebrow">How I edit</span>
         <h2 class="h2">Real settings from a real gallery.</h2>
-        <p class="lede">These are the exact Lightroom Classic values saved in this bridal shower photo. Scroll and watch them land. Every frame gets the same care: exposure first, then tone, then color, then a final check on a calibrated screen.</p>
+        <p class="lede">Lightroom Classic values from a real client gallery. Scroll and watch them land. Every frame gets the same care: exposure first, then tone, then color, then a final check on a calibrated screen.</p>
       </div>
       <div class="edit" data-edit>
-        <figure class="edit__photo" data-parallax>
-          <img src={cld(fe, { w: 1280, ar: "3:2" })} srcset={cldSrcset(fe, [640, 960, 1280, 1600], { ar: "3:2" })} sizes="(min-width: 861px) 60vw, 100vw" width="1280" height="853" alt={fe.alt} loading="lazy" decoding="async" />
-        </figure>
+        {fe.before && fe.after ? (
+          <BeforeAfter before={fe.before} after={fe.after} alt={fe.alt} />
+        ) : (
+          <figure class="edit__photo edit__photo--tall" data-parallax>
+            <img src={`${fe.src}-1280.webp`} srcset={feWidths.map((w) => `${fe.src}-${w}.webp ${w}w`).join(", ")} sizes="(min-width: 861px) 45vw, 100vw" width={fe.w} height={fe.h} alt={fe.alt} loading="lazy" decoding="async" />
+          </figure>
+        )}
         <div class="panel" aria-label="Lightroom Classic develop settings for this photo">
           <div class="panel__top"><span>Develop · Basic</span><span data-pct>100%</span></div>
           {fe.settings.map((s) => (
@@ -92,7 +87,7 @@ const jsonLd = [
             </div>
           ))}
           <div class="panel__passes">{fe.passes.map((p) => <span class="pill">{p}</span>)}</div>
-          <p class="panel__foot">{fe.camera}</p>
+          {fe.camera && <p class="panel__foot">{fe.camera}</p>}
         </div>
       </div>
     </div>

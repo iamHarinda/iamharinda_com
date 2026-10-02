@@ -4,25 +4,19 @@ import PageHero from "../components/PageHero.astro";
 import Bits from "../components/Bits.astro";
 import WorldMap from "../components/WorldMap.astro";
 import Cta from "../components/Cta.astro";
+import FiverrLogo from "../components/FiverrLogo.astro";
 import site from "../data/site.js";
-import { reviews, reviewDate, stars } from "../data/reviews.js";
+import { best, reviewDate, stars } from "../data/reviews.js";
 import { breadcrumb } from "../lib/schema.js";
 
 const crumbs = [{ name: "Home", path: "/" }, { name: "Reviews", path: "/reviews/" }];
 const SHOWN = 24;
-
-// Breakdown for the summary bar: exact 5★, then each whole-star band below it
-// (4–4.9★ etc.), so a 4.7 is never counted as a five.
-const buckets = [
-  { label: "5★", n: reviews.filter((r) => r.rating === 5).length },
-  ...[4, 3, 2, 1].map((s) => ({ label: `${s}★`, n: reviews.filter((r) => r.rating >= s && r.rating < s + 1).length })),
-]
-  .filter((b) => b.n > 0)
-  .map((b) => ({ ...b, pct: Math.round((b.n / reviews.length) * 100) }));
+// 50 of the most detailed 5★ reviews, one per client (see best() in reviews.js).
+const reviews = best(50);
 ---
-<BaseLayout rawTitle={`Photo Editing Reviews — ${site.fiverrStats.rating} Stars from ${site.fiverrStats.reviews}+ Clients`} description={`What photographers say about Harinda Fernando's photo editing: ${site.fiverrStats.rating} stars from ${site.fiverrStats.reviews}+ Fiverr reviews and ${site.fiverrStats.ordersPlus}+ orders.`} path="/reviews/" jsonLd={[breadcrumb(crumbs)]}>
-  <PageHero eyebrow="Reviews" title={`${site.fiverrStats.rating} stars from ${site.fiverrStats.reviews}+ Fiverr reviews`} lede="Every review below is real feedback from a completed Fiverr order, word for word. Client names are masked for privacy." crumbs={crumbs}>
-    <p style="margin-top:.5rem"><a class="link" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">See the profile on Fiverr</a></p>
+<BaseLayout rawTitle={`Photo Editing Reviews — ${site.fiverrStats.reviews}+ Fiverr Reviews from Real Clients`} description={`What photographers say about Harinda Fernando's photo editing: ${site.fiverrStats.reviews}+ Fiverr reviews and ${site.fiverrStats.ordersPlus}+ orders.`} path="/reviews/" jsonLd={[breadcrumb(crumbs)]}>
+  <PageHero eyebrow="Reviews" title={`${site.fiverrStats.reviews}+ reviews from real clients`} lede="Every review below is real feedback from a completed Fiverr order, word for word. Client names are masked for privacy." crumbs={crumbs}>
+    <p style="margin-top:.5rem"><a class="link" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">See the profile on <FiverrLogo height={15} label="Fiverr" /></a></p>
   </PageHero>
   <section class="sec sec--top0"><div class="wrap"><Bits kind="stats" /></div></section>
 
@@ -31,13 +25,10 @@ const buckets = [
       <div class="head head--row">
         <div>
           <span class="eyebrow">In their words</span>
-          <h2 class="h2">{reviews.length} reviews, earned order by order.</h2>
+          <h2 class="h2">{reviews.length} of the best, word for word.</h2>
+          <p class="muted" style="margin-top:.75rem;max-width:40em">The most detailed review from each of {reviews.length} clients, picked from {site.fiverrStats.reviews}+ on Fiverr. Every one is copied exactly as the client wrote it.</p>
         </div>
-        <ul class="rv-bars" aria-label="Ratings breakdown">
-          {buckets.map((b) => (
-            <li><span>{b.label}</span><i style={`--w:${b.pct}%`}></i><span>{b.n}</span></li>
-          ))}
-        </ul>
+        <a class="btn btn--s btn--light" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">All reviews on <FiverrLogo height={14} label="Fiverr" /></a>
       </div>
       <div class="grid g3 rv-list" data-more>
         {reviews.map((r) => (
@@ -62,11 +53,6 @@ const buckets = [
 </BaseLayout>
 
 <style>
-  .rv-bars { list-style: none; margin: 0; padding: 0; display: grid; gap: .35rem; min-width: 14rem; font-size: var(--t-sm); color: #A6A5A0; }
-  .rv-bars li { display: grid; grid-template-columns: 2rem 1fr 2.2rem; align-items: center; gap: .6rem; margin: 0; }
-  .rv-bars i { display: block; height: 6px; border-radius: 999px; background: #33333A; position: relative; overflow: hidden; }
-  .rv-bars i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--w); background: #F7B08E; border-radius: inherit; }
-  .rv-bars li span:last-child { text-align: right; }
   .rv-more { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 2rem; }
 </style>
 

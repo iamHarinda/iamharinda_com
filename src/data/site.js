@@ -53,9 +53,9 @@ export const site = {
 
   // Public social proof, matched to premiumphotoedits.com (same business,
   // owner-confirmed 2 Oct 2026). `reviews` and `ordersPlus` are shown with a "+".
-  // The 4.9 rating is the average of the reviews in src/data/reviews.json.
   // Shown as text only, never as review schema.
-  fiverrStats: { rating: "4.9", reviews: 195, ordersPlus: 1150, countries: 49 },
+  // No star rating is shown anywhere (owner decision, 2 Oct 2026): counts only.
+  fiverrStats: { reviews: 195, ordersPlus: 1150, countries: 49 },
 
   // Client map (src/components/WorldMap.astro). Order counts are the two
   // biggest markets; the regions list every client country.
@@ -90,7 +90,7 @@ export const site = {
   location: {
     country: "Sri Lanka",
     countryCode: "LK",
-    note: "Studio in Sri Lanka, UK WhatsApp number, hours that overlap US mornings.",
+    note: "Studio in Sri Lanka, with hours that overlap US mornings.",
   },
   // Optional: Cloudflare Turnstile site key for the forms. Leave empty to skip.
   turnstileSiteKey: "",
@@ -136,13 +136,15 @@ export const site = {
 
   // The edit shown in the home-page "How I edit" section. Settings are the
   // real Lightroom Classic values read from this photo's XMP metadata.
+  // The "How I edit" photo: the wedding couple from premiumphotoedits.com (same business).
+  // Served locally from public/images/featured/. The slider values are example
+  // Lightroom Classic settings from a real client gallery, not read from this file.
   featuredEdit: {
-    id: "DSC_9296-Enhanced-NR",
-    v: 1790496395,
-    w: 8256,
-    h: 5504,
-    alt: "Bridal shower portrait lit by on-camera flash, edited in Lightroom Classic",
-    camera: "Nikon D850 · 85mm f/1.8 · 1/100 s · ISO 200",
+    src: "/images/featured/wedding-couple",
+    w: 1600,
+    h: 2000,
+    alt: "Bride and groom laughing together on a bench under string lights, edited in Lightroom Classic",
+    camera: null,
     settings: [
       { label: "Exposure", value: -0.16, min: -1, max: 1, dec: 2 },
       { label: "Contrast", value: 6, min: -50, max: 50 },
@@ -152,6 +154,13 @@ export const site = {
       { label: "Vibrance", value: 10, min: -100, max: 100 },
     ],
     passes: ["Denoise", "Enhance details", "Lens corrections", "sRGB export"],
+    // Before/after pair from Cloudinary. When both are set, "How I edit" shows a
+    // drag-to-compare slider instead of the single photo above. Same crop, same shot:
+    // `before` is the untouched camera file, `after` the finished edit.
+    //   before: { id: "wedding-before", v: 1790000000, w: 1600, h: 2000 },
+    //   after:  { id: "wedding-after",  v: 1790000000, w: 1600, h: 2000 },
+    before: null,
+    after: null,
   },
 
   // ── Analytics (GA4 + Clarity, loaded on every visit; see /privacy/) ───────
