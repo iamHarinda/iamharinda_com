@@ -13,18 +13,54 @@
     "status": "testing",
     "lastUpdated": "2026-10-02",
     "features": [
-      { "icon": "pen", "title": "Your own topics", "text": "Make a topic for anything — gym, office days, calls home. Pick a name, colour and icon." },
-      { "icon": "calendar", "title": "Tap a day, add a topic", "text": "Add one day or a whole date range in one go, like “Office, 1–3 Oct”." },
-      { "icon": "check", "title": "Plan, then tick off", "text": "Entries are planned or done. One tap switches between them." },
-      { "icon": "chart", "title": "Counts that add up", "text": "See totals for this month, the last 3 months, this year or a custom range." },
-      { "icon": "history", "title": "Topic history", "text": "Open a topic to see every date it happened, newest first, with your notes." },
-      { "icon": "download", "title": "Your data, your copy", "text": "Export to CSV or JSON and import a backup whenever you like." }
+      {
+        "icon": "pen",
+        "title": "Your own topics",
+        "text": "Make a topic for anything — gym, office days, calls home. Pick a name, colour and icon."
+      },
+      {
+        "icon": "calendar",
+        "title": "Tap a day, add a topic",
+        "text": "Add one day or a whole date range in one go, like “Office, 1–3 Oct”."
+      },
+      {
+        "icon": "check",
+        "title": "Plan, then tick off",
+        "text": "Entries are planned or done. One tap switches between them."
+      },
+      {
+        "icon": "chart",
+        "title": "Counts that add up",
+        "text": "See totals for this month, the last 3 months, this year or a custom range."
+      },
+      {
+        "icon": "history",
+        "title": "Topic history",
+        "text": "Open a topic to see every date it happened, newest first, with your notes."
+      },
+      {
+        "icon": "download",
+        "title": "Your data, your copy",
+        "text": "Export to CSV or JSON and import a backup whenever you like."
+      }
     ],
     "screenshots": [
-      { "src": "/orbitra/assets/apps/habittracker/screen-1.webp", "alt": "Habit Tracker calendar with ticked days" },
-      { "src": "/orbitra/assets/apps/habittracker/screen-2.webp", "alt": "Adding a topic to a day in Habit Tracker" },
-      { "src": "/orbitra/assets/apps/habittracker/screen-3.webp", "alt": "Habit Tracker stats with counts per period" },
-      { "src": "/orbitra/assets/apps/habittracker/screen-4.webp", "alt": "A topic’s history in Habit Tracker" }
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-1.webp",
+        "alt": "Habit Tracker calendar with ticked days"
+      },
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-2.webp",
+        "alt": "Adding a topic to a day in Habit Tracker"
+      },
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-3.webp",
+        "alt": "Habit Tracker stats with counts per period"
+      },
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-4.webp",
+        "alt": "A topic’s history in Habit Tracker"
+      }
     ],
     "screenshotsNote": "Design previews. Real screenshots will replace them after the closed test.",
     "glance": [
@@ -40,9 +76,24 @@
         "We never sell your data."
       ],
       "collected": [
-        { "type": "App interactions (e.g. “an entry was added”, “stats screen opened”) — never your topic names, notes or dates", "why": "See which features are useful", "where": "Google Analytics for Firebase", "shared": "Google, as our service provider. Only with your consent." },
-        { "type": "Crash logs and diagnostics (device model, Android version, app version)", "why": "Find and fix bugs", "where": "Firebase Crashlytics", "shared": "Google, as our service provider. Only with your consent." },
-        { "type": "App instance ID (a random ID Firebase creates for this install)", "why": "Count unique installs without knowing who you are", "where": "Google Analytics for Firebase", "shared": "Google, as our service provider. Only with your consent." }
+        {
+          "type": "App interactions (e.g. “an entry was added”, “stats screen opened”) — never your topic names, notes or dates",
+          "why": "See which features are useful",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "Crash logs and diagnostics (device model, Android version, app version)",
+          "why": "Find and fix bugs",
+          "where": "Firebase Crashlytics",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "App instance ID (a random ID Firebase creates for this install)",
+          "why": "Count unique installs without knowing who you are",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        }
       ],
       "notCollected": [
         "Your topics, calendar entries, notes and reminder times — they stay on your device.",
@@ -50,14 +101,32 @@
         "Your advertising ID, contacts, precise location, photos, microphone or other apps."
       ],
       "permissions": [
-        { "name": "Notifications", "why": "Only if you turn on reminders. Reminders are scheduled on your device; no data is sent to create them." },
-        { "name": "Internet", "why": "Only used to send anonymous stats and crash reports when you have agreed to it." }
+        {
+          "name": "Notifications",
+          "why": "Only if you turn on reminders. Reminders are scheduled on your device; no data is sent to create them."
+        },
+        {
+          "name": "Internet",
+          "why": "Only used to send anonymous stats and crash reports when you have agreed to it."
+        }
       ],
       "permissionsNote": "[[TODO: confirm the final permission list in AndroidManifest.xml]]",
       "thirdParties": [
-        { "name": "Google Analytics for Firebase", "url": "https://firebase.google.com/support/privacy", "use": "Anonymous usage statistics, with your consent." },
-        { "name": "Firebase Crashlytics", "url": "https://firebase.google.com/support/privacy", "use": "Crash reports, with your consent." },
-        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." }
+        {
+          "name": "Google Analytics for Firebase",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Anonymous usage statistics, with your consent."
+        },
+        {
+          "name": "Firebase Crashlytics",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Crash reports, with your consent."
+        },
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        }
       ],
       "howWeUse": [
         "To understand which features people use, so we know what to improve.",
@@ -86,7 +155,36 @@
         "Any export files you saved yourself (CSV/JSON) — delete those from your phone or cloud storage.",
         "Data Google keeps under its own policies, such as your Play Store install history."
       ]
-    }
+    },
+    "faq": [
+      {
+        "q": "Is Habit Tracker free?",
+        "a": "Yes. There are no ads and no account."
+      },
+      {
+        "q": "How do I add a topic to several days at once?",
+        "a": "Tap a day, pick the topic, then switch to **Date range** and choose the last day. “Office, 1–3 Oct” makes three entries in one go."
+      },
+      {
+        "q": "How do I back up my data?",
+        "a": "Go to **Settings → Backup** and export to CSV or JSON. Keep the file somewhere safe, like your email or cloud drive."
+      },
+      {
+        "q": "Will I lose my data if I change phones?",
+        "a": "Your data lives only on your phone. Export a JSON backup on the old phone and import it on the new one from **Settings → Backup**."
+      },
+      {
+        "q": "My reminders don’t show up.",
+        "a": "Check that notifications are allowed for Habit Tracker in **Android Settings → Apps → Habit Tracker → Notifications**, and that battery saver isn’t stopping the app."
+      },
+      {
+        "q": "How do I turn off anonymous stats?",
+        "a": "Go to **Settings → Privacy & analytics** and turn it off. Collection stops straight away."
+      }
+    ],
+    "termsNotes": [
+      "Everything you log stays on your device. You are responsible for keeping your own backups."
+    ]
   },
   {
     "slug": "periodicelementtable",
@@ -102,12 +200,36 @@
     "status": "coming-soon",
     "lastUpdated": "2026-10-02",
     "features": [
-      { "icon": "grid", "title": "Interactive table", "text": "Tap any element to see its group, period, block and more." },
-      { "icon": "atom", "title": "Element details", "text": "Atomic mass, electron configuration and key properties on one page." },
-      { "icon": "calculator", "title": "Molar mass calculator", "text": "Type a formula and get its molar mass." },
-      { "icon": "scale", "title": "Equation balancer", "text": "Balance chemical equations step by step." },
-      { "icon": "columns", "title": "Compare elements", "text": "Put two elements side by side." },
-      { "icon": "book", "title": "Learn as you go", "text": "Short articles that explain the ideas behind the table." }
+      {
+        "icon": "grid",
+        "title": "Interactive table",
+        "text": "Tap any element to see its group, period, block and more."
+      },
+      {
+        "icon": "atom",
+        "title": "Element details",
+        "text": "Atomic mass, electron configuration and key properties on one page."
+      },
+      {
+        "icon": "calculator",
+        "title": "Molar mass calculator",
+        "text": "Type a formula and get its molar mass."
+      },
+      {
+        "icon": "scale",
+        "title": "Equation balancer",
+        "text": "Balance chemical equations step by step."
+      },
+      {
+        "icon": "columns",
+        "title": "Compare elements",
+        "text": "Put two elements side by side."
+      },
+      {
+        "icon": "book",
+        "title": "Learn as you go",
+        "text": "Short articles that explain the ideas behind the table."
+      }
     ],
     "screenshots": [],
     "screenshotsNote": "Screenshots coming soon.",
@@ -125,22 +247,52 @@
         "We never sell your data."
       ],
       "collected": [
-        { "type": "Pages viewed and how the app is used", "why": "See which content is useful", "where": "Google Analytics", "shared": "Google, as our service provider" },
-        { "type": "Device and browser info, approximate location from IP (country)", "why": "Analytics and keeping the site working", "where": "Google Analytics", "shared": "Google, as our service provider" },
-        { "type": "Cookies and similar identifiers", "why": "Analytics. Advertising if ads are on.", "where": "In the app’s web view on your device", "shared": "Google. [[TODO: list ad partners if ads are on]]" }
+        {
+          "type": "Pages viewed and how the app is used",
+          "why": "See which content is useful",
+          "where": "Google Analytics",
+          "shared": "Google, as our service provider"
+        },
+        {
+          "type": "Device and browser info, approximate location from IP (country)",
+          "why": "Analytics and keeping the site working",
+          "where": "Google Analytics",
+          "shared": "Google, as our service provider"
+        },
+        {
+          "type": "Cookies and similar identifiers",
+          "why": "Analytics. Advertising if ads are on.",
+          "where": "In the app’s web view on your device",
+          "shared": "Google. [[TODO: list ad partners if ads are on]]"
+        }
       ],
       "notCollected": [
         "Your name, email address or any account details — there is no account.",
         "Your contacts, precise location, photos, microphone or files."
       ],
       "permissions": [
-        { "name": "Internet", "why": "To load PeriodicElementTable.com." }
+        {
+          "name": "Internet",
+          "why": "To load PeriodicElementTable.com."
+        }
       ],
       "permissionsNote": "[[TODO: confirm the app asks for Internet permission only]]",
       "thirdParties": [
-        { "name": "Google Analytics", "url": "https://policies.google.com/privacy", "use": "Website and app usage statistics." },
-        { "name": "Google AdSense / AdMob", "url": "https://policies.google.com/technologies/ads", "use": "Ads, once they are switched on. [[TODO: confirm]]" },
-        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." }
+        {
+          "name": "Google Analytics",
+          "url": "https://policies.google.com/privacy",
+          "use": "Website and app usage statistics."
+        },
+        {
+          "name": "Google AdSense / AdMob",
+          "url": "https://policies.google.com/technologies/ads",
+          "use": "Ads, once they are switched on. [[TODO: confirm]]"
+        },
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        }
       ],
       "permissionsExtra": null,
       "howWeUse": [
@@ -169,7 +321,28 @@
         "Analytics events are removed when the retention period ends (14 months). [[TODO: confirm GA4 retention]]",
         "Data Google keeps under its own policies, such as your Play Store install history and ad settings."
       ]
-    }
+    },
+    "faq": [
+      {
+        "q": "Is the app the same as the website?",
+        "a": "Yes. The app shows [PeriodicElementTable.com](https://periodicelementtable.com), so you get the same table, tools and articles."
+      },
+      {
+        "q": "Do I need an account?",
+        "a": "No. Open the app and start using it."
+      },
+      {
+        "q": "Does it work offline?",
+        "a": "[[TODO: confirm offline behaviour]]"
+      },
+      {
+        "q": "I found a mistake in an element’s data.",
+        "a": "Thank you — please email {email} with the element and what looks wrong. We check every report."
+      }
+    ],
+    "termsNotes": [
+      "Element data and tool results are for learning. Check important values against a trusted reference before using them in lab work or exams."
+    ]
   },
   {
     "slug": "toolsserver",
@@ -185,10 +358,26 @@
     "status": "coming-soon",
     "lastUpdated": "2026-10-02",
     "features": [
-      { "icon": "calculator", "title": "Calculate", "text": "Everyday calculators, one search away." },
-      { "icon": "repeat", "title": "Convert", "text": "Units, formats and files, converted in a few taps." },
-      { "icon": "pen", "title": "Create", "text": "Small tools to make the things you need." },
-      { "icon": "wrench", "title": "All in one app", "text": "The tools from ToolsServer.com, without opening a browser. [[TODO: list the top 4–6 tools]]" }
+      {
+        "icon": "calculator",
+        "title": "Calculate",
+        "text": "Everyday calculators, one search away."
+      },
+      {
+        "icon": "repeat",
+        "title": "Convert",
+        "text": "Units, formats and files, converted in a few taps."
+      },
+      {
+        "icon": "pen",
+        "title": "Create",
+        "text": "Small tools to make the things you need."
+      },
+      {
+        "icon": "wrench",
+        "title": "All in one app",
+        "text": "The tools from ToolsServer.com, without opening a browser. [[TODO: list the top 4–6 tools]]"
+      }
     ],
     "screenshots": [],
     "screenshotsNote": "Screenshots coming soon.",
@@ -206,24 +395,62 @@
         "We never sell your data."
       ],
       "collected": [
-        { "type": "Pages viewed and how the tools are used", "why": "See which tools are useful", "where": "Google Analytics", "shared": "Google, as our service provider" },
-        { "type": "Device and browser info, approximate location from IP (country)", "why": "Analytics and keeping the site working", "where": "Google Analytics", "shared": "Google, as our service provider" },
-        { "type": "Files you choose to process", "why": "To run the tool you picked", "where": "[[TODO: on device or our server]]", "shared": "[[TODO: confirm]]" },
-        { "type": "Cookies and similar identifiers", "why": "Analytics. Advertising if ads are on.", "where": "In the app’s web view on your device", "shared": "Google. [[TODO: confirm]]" }
+        {
+          "type": "Pages viewed and how the tools are used",
+          "why": "See which tools are useful",
+          "where": "Google Analytics",
+          "shared": "Google, as our service provider"
+        },
+        {
+          "type": "Device and browser info, approximate location from IP (country)",
+          "why": "Analytics and keeping the site working",
+          "where": "Google Analytics",
+          "shared": "Google, as our service provider"
+        },
+        {
+          "type": "Files you choose to process",
+          "why": "To run the tool you picked",
+          "where": "[[TODO: on device or our server]]",
+          "shared": "[[TODO: confirm]]"
+        },
+        {
+          "type": "Cookies and similar identifiers",
+          "why": "Analytics. Advertising if ads are on.",
+          "where": "In the app’s web view on your device",
+          "shared": "Google. [[TODO: confirm]]"
+        }
       ],
       "notCollected": [
         "Your name, email address or any account details — there is no account.",
         "Your contacts, precise location or microphone."
       ],
       "permissions": [
-        { "name": "Internet", "why": "To load ToolsServer.com." },
-        { "name": "File / photo picker", "why": "Only when a tool needs a file, and only the file you pick." }
+        {
+          "name": "Internet",
+          "why": "To load ToolsServer.com."
+        },
+        {
+          "name": "File / photo picker",
+          "why": "Only when a tool needs a file, and only the file you pick."
+        }
       ],
       "permissionsNote": "[[TODO: confirm the final permission list]]",
       "thirdParties": [
-        { "name": "Google Analytics", "url": "https://policies.google.com/privacy", "use": "Website and app usage statistics." },
-        { "name": "Google AdSense / AdMob", "url": "https://policies.google.com/technologies/ads", "use": "Ads, if they are on. [[TODO: confirm]]" },
-        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." }
+        {
+          "name": "Google Analytics",
+          "url": "https://policies.google.com/privacy",
+          "use": "Website and app usage statistics."
+        },
+        {
+          "name": "Google AdSense / AdMob",
+          "url": "https://policies.google.com/technologies/ads",
+          "use": "Ads, if they are on. [[TODO: confirm]]"
+        },
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        }
       ],
       "howWeUse": [
         "To run the tool you chose.",
@@ -254,7 +481,29 @@
         "Files you saved to your phone yourself.",
         "Data Google keeps under its own policies, such as your Play Store install history."
       ]
-    }
+    },
+    "faq": [
+      {
+        "q": "Is the app the same as the website?",
+        "a": "Yes. The app shows [ToolsServer.com](https://toolsserver.com), so you get the same tools."
+      },
+      {
+        "q": "Do I need an account?",
+        "a": "No. Open the app and pick a tool."
+      },
+      {
+        "q": "What happens to files I use in a tool?",
+        "a": "See the [privacy policy](/orbitra/toolsserver/privacy-policy/#data-we-collect). [[TODO: confirm per tool]]"
+      },
+      {
+        "q": "A tool gave me a wrong result.",
+        "a": "Please email {email} with the tool name and what you entered. We fix reported bugs as fast as we can."
+      }
+    ],
+    "termsNotes": [
+      "Tool results are provided as-is. Check important numbers before you rely on them.",
+      "Only upload files you have the right to use."
+    ]
   },
   {
     "slug": "productwhite",
@@ -270,17 +519,48 @@
     "status": "coming-soon",
     "lastUpdated": "2026-10-02",
     "features": [
-      { "icon": "image", "title": "Remove the background", "text": "Pick a product photo and get a clean, pure white background." },
-      { "icon": "store", "title": "Ready for your shop", "text": "Sized for Amazon, Etsy, eBay and Shopify listings." },
-      { "icon": "gauge", "title": "Photo check", "text": "Tells you how to fix a photo, like “Product fills 68%. Aim for 85%.”" },
-      { "icon": "download", "title": "Save to phone", "text": "Export ready-to-upload images straight to your gallery." }
+      {
+        "icon": "image",
+        "title": "Remove the background",
+        "text": "Pick a product photo and get a clean, pure white background."
+      },
+      {
+        "icon": "store",
+        "title": "Ready for your shop",
+        "text": "Sized for Amazon, Etsy, eBay and Shopify listings."
+      },
+      {
+        "icon": "gauge",
+        "title": "Photo check",
+        "text": "Tells you how to fix a photo, like “Product fills 68%. Aim for 85%.”"
+      },
+      {
+        "icon": "download",
+        "title": "Save to phone",
+        "text": "Export ready-to-upload images straight to your gallery."
+      }
     ],
     "screenshots": [
-      { "src": "/orbitra/assets/apps/productwhite/screen-1.webp", "alt": "ProductWhite home screen" },
-      { "src": "/orbitra/assets/apps/productwhite/screen-2.webp", "alt": "Choosing a product photo in ProductWhite" },
-      { "src": "/orbitra/assets/apps/productwhite/screen-3.webp", "alt": "A product on a white background in ProductWhite" },
-      { "src": "/orbitra/assets/apps/productwhite/screen-4.webp", "alt": "ProductWhite photo check" },
-      { "src": "/orbitra/assets/apps/productwhite/screen-5.webp", "alt": "Saving a finished photo in ProductWhite" }
+      {
+        "src": "/orbitra/assets/apps/productwhite/screen-1.webp",
+        "alt": "ProductWhite home screen"
+      },
+      {
+        "src": "/orbitra/assets/apps/productwhite/screen-2.webp",
+        "alt": "Choosing a product photo in ProductWhite"
+      },
+      {
+        "src": "/orbitra/assets/apps/productwhite/screen-3.webp",
+        "alt": "A product on a white background in ProductWhite"
+      },
+      {
+        "src": "/orbitra/assets/apps/productwhite/screen-4.webp",
+        "alt": "ProductWhite photo check"
+      },
+      {
+        "src": "/orbitra/assets/apps/productwhite/screen-5.webp",
+        "alt": "Saving a finished photo in ProductWhite"
+      }
     ],
     "screenshotsNote": "Store artwork. Real screenshots will replace them once the app runs.",
     "glance": [
@@ -296,21 +576,45 @@
         "We never sell your data."
       ],
       "collected": [
-        { "type": "Photos you choose to edit", "why": "To remove the background", "where": "[[TODO: on device or which server/API]]", "shared": "[[TODO: confirm]]" },
-        { "type": "App interactions and crash logs", "why": "Improve the app and fix bugs", "where": "[[TODO: confirm analytics provider]]", "shared": "[[TODO: confirm]]" }
+        {
+          "type": "Photos you choose to edit",
+          "why": "To remove the background",
+          "where": "[[TODO: on device or which server/API]]",
+          "shared": "[[TODO: confirm]]"
+        },
+        {
+          "type": "App interactions and crash logs",
+          "why": "Improve the app and fix bugs",
+          "where": "[[TODO: confirm analytics provider]]",
+          "shared": "[[TODO: confirm]]"
+        }
       ],
       "notCollected": [
         "Your name, email address or any account details — there is no account.",
         "Your contacts, precise location, microphone or photos you did not pick."
       ],
       "permissions": [
-        { "name": "Photo picker", "why": "Only the photos you pick are opened." },
-        { "name": "Camera", "why": "Only if you take a new product photo in the app." }
+        {
+          "name": "Photo picker",
+          "why": "Only the photos you pick are opened."
+        },
+        {
+          "name": "Camera",
+          "why": "Only if you take a new product photo in the app."
+        }
       ],
       "permissionsNote": "[[TODO: confirm the final permission list]]",
       "thirdParties": [
-        { "name": "Google Play Services", "url": "https://policies.google.com/privacy", "use": "Installing and updating the app." },
-        { "name": "Background-removal service", "url": "#", "use": "[[TODO: name the service and link its privacy policy, or remove this row if processing is on-device]]" }
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        },
+        {
+          "name": "Background-removal service",
+          "url": "#",
+          "use": "[[TODO: name the service and link its privacy policy, or remove this row if processing is on-device]]"
+        }
       ],
       "howWeUse": [
         "To put your product on a white background and save the result.",
@@ -337,6 +641,32 @@
         "Aggregated, anonymous statistics that cannot be linked back to you.",
         "Data Google keeps under its own policies, such as your Play Store install history."
       ]
-    }
+    },
+    "faq": [
+      {
+        "q": "Is ProductWhite free?",
+        "a": "Yes, the app is free."
+      },
+      {
+        "q": "Which shops are the photos ready for?",
+        "a": "Amazon, Etsy, eBay and Shopify."
+      },
+      {
+        "q": "How do I get the best result?",
+        "a": "Shoot in good light and let the product fill most of the frame. The photo check tells you what to fix, like “Product fills 68%. Aim for 85%.”"
+      },
+      {
+        "q": "Do my photos leave my phone?",
+        "a": "See the [privacy policy](/orbitra/productwhite/privacy-policy/). [[TODO: confirm on-device vs upload]]"
+      },
+      {
+        "q": "Can someone edit a photo for me?",
+        "a": "Yes. The optional pro-edit service is [Premium Photo Edits](https://premiumphotoedits.com), a separate service with its own terms."
+      }
+    ],
+    "termsNotes": [
+      "You keep all rights to your photos. Only edit photos you have the right to use.",
+      "Premium Photo Edits is a separate service. Its own terms apply to any order you place there."
+    ]
   }
 ]

@@ -6,9 +6,9 @@ export default {
   tagline: "Many worlds, one orbit.",
   basePath: "/orbitra/",
 
-  // While true, every /orbitra/ page shows a "Draft" banner, is marked noindex and
-  // is left out of the sitemap. Flip to false only after every TODO(owner) marker
-  // is resolved and the Play Console Data safety forms match the pages.
+  // While true, every /orbitra/ page is marked noindex and left out of the sitemap.
+  // Flip to false only after every TODO(owner) marker is resolved and the Play
+  // Console Data safety forms match the pages.
   draft: true,
 
   // {{CONTACT_EMAIL}} — confirmed by the owner (2026-10-02).

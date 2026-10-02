@@ -82,14 +82,6 @@ const home = studio.basePath;
   <body data-app={app?.slug} style={bodyStyle}>
     <a class="o-skip" href="#main">Skip to content</a>
 
-    {
-      studio.draft && (
-        <div class="o-draft" role="note">
-          Draft — these pages are not published yet. Items marked TODO(owner) need confirming.
-        </div>
-      )
-    }
-
     <header class="o-header" id="o-header">
       <div class="o-wrap o-header__bar">
         <a class="o-brand" href={home} aria-label="Orbitra home">
@@ -99,7 +91,7 @@ const home = studio.basePath;
         <nav class="o-nav" aria-label="Orbitra">
           <ul class="o-nav__links" id="o-nav-links">
             <li><a href={`${home}#apps`} aria-current={active === "apps" ? "page" : undefined}>Apps</a></li>
-            <li><a href={`${home}#contact`}>Contact</a></li>
+            <li><a href={`${home}contact/`} aria-current={active === "contact" ? "page" : undefined}>Contact</a></li>
           </ul>
           <button class="o-iconbtn o-theme" type="button" id="o-theme" aria-label="Switch colour theme">
             <Icon name="sun" size={20} />
@@ -149,7 +141,8 @@ const home = studio.basePath;
         <ul>
           <li><a href={`${home}#apps`}>Apps</a></li>
           <li><a href={`${home}privacy-policy/`}>Privacy</a></li>
-          <li><a href={`${home}#contact`}>Contact</a></li>
+          <li><a href={`${home}terms/`}>Terms</a></li>
+          <li><a href={`${home}contact/`}>Contact</a></li>
           <li><a href={studio.personalSiteUrl}>iamharinda.com</a></li>
         </ul>
       </div>

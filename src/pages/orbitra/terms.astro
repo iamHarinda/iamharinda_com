@@ -1,0 +1,64 @@
+---
+// /orbitra/terms/ — studio-wide index that points to each app's own terms.
+import OrbitraLayout from "../../layouts/OrbitraLayout.astro";
+import LegalDoc from "../../components/orbitra/LegalDoc.astro";
+import AppIcon from "../../components/orbitra/AppIcon.astro";
+import { studio, apps, appPath, rich } from "../../lib/orbitra.js";
+
+const toc = [
+  ["short-version", "Short version"],
+  ["each-app", "Each app’s terms"],
+  ["this-website", "This website"],
+  ["contact", "Contact"],
+].map(([id, label]) => ({ id, label }));
+---
+
+<OrbitraLayout
+  title="Terms — Orbitra"
+  description="The terms for using Orbitra apps. Every app has its own terms of use."
+  crumbs={[{ label: "Orbitra", href: studio.basePath }, { label: "Terms" }]}
+>
+  <LegalDoc title="Terms at Orbitra" toc={toc}>
+    <section class="o-callout" aria-labelledby="short-version">
+      <h2 id="short-version" class="o-heading">Short version</h2>
+      <ul>
+        <li>Each app has its own terms of use, written in plain words.</li>
+        <li>What you create in our apps is yours.</li>
+        <li>Google Play’s terms also apply to apps you download from Google Play.</li>
+      </ul>
+    </section>
+
+    <h2 id="each-app">Each app’s terms</h2>
+    <div class="o-table-wrap">
+      <table class="o-table">
+        <thead><tr><th scope="col">App</th><th scope="col">Terms of use</th><th scope="col">Support</th></tr></thead>
+        <tbody>
+          {
+            apps.map((app) => (
+              <tr>
+                <td>
+                  <span style="display:flex;align-items:center;gap:8px">
+                    <AppIcon app={app} size={24} decorative />
+                    {app.name}
+                  </span>
+                </td>
+                <td><a href={appPath(app.slug, "terms")}>Terms of use</a></td>
+                <td><a href={appPath(app.slug, "support")}>Support</a></td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="this-website">This website</h2>
+    <p>
+      The Orbitra pages on iamharinda.com are here to describe our apps and how they handle data. You may link to them
+      freely. The Orbitra name, logo and app icons belong to Orbitra; please don’t use them in a way that suggests we
+      endorse something we don’t.
+    </p>
+
+    <h2 id="contact">Contact</h2>
+    <p set:html={rich("Questions about these terms? Email {email}.")} />
+  </LegalDoc>
+</OrbitraLayout>

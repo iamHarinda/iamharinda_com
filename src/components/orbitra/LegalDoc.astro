@@ -4,7 +4,15 @@
 // reviewers can deep-link to it.
 import { studio, longDate } from "../../lib/orbitra.js";
 
-const { title, subtitle, toc = [], updated = studio.lastUpdated, effective = studio.effective } = Astro.props;
+const {
+  title,
+  subtitle,
+  toc = [],
+  updated = studio.lastUpdated,
+  effective = studio.effective,
+  /** false for help pages that are not legal documents. */
+  dates = true,
+} = Astro.props;
 ---
 
 <div class="o-legal">
@@ -19,10 +27,14 @@ const { title, subtitle, toc = [], updated = studio.lastUpdated, effective = stu
       <header class="o-doc__head">
         <h1 class="o-title">{title}</h1>
         {subtitle && <p class="o-lead" style="margin-top: var(--space-2)">{subtitle}</p>}
-        <p class="o-caption">
-          <span>Last updated: <time datetime={updated}>{longDate(updated)}</time></span>
-          <span>Effective: <time datetime={effective}>{longDate(effective)}</time></span>
-        </p>
+        {
+          dates && (
+            <p class="o-caption">
+              <span>Last updated: <time datetime={updated}>{longDate(updated)}</time></span>
+              <span>Effective: <time datetime={effective}>{longDate(effective)}</time></span>
+            </p>
+          )
+        }
       </header>
       <slot />
     </article>

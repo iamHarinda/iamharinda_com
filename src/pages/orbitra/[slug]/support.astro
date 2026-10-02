@@ -1,0 +1,88 @@
+---
+// /orbitra/<slug>/support/ — FAQ, how to get help, and links to the legal pages.
+import OrbitraLayout from "../../../layouts/OrbitraLayout.astro";
+import LegalDoc from "../../../components/orbitra/LegalDoc.astro";
+import Icon from "../../../components/orbitra/Icon.astro";
+import { studio, apps, appPath, abs, rich, mailto } from "../../../lib/orbitra.js";
+
+export function getStaticPaths() {
+  return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
+}
+
+const { app } = Astro.props;
+const r = (s) => rich(s, app);
+
+const toc = [
+  ["faq", "Common questions"],
+  ["troubleshooting", "If something isn’t working"],
+  ["contact", "Contact support"],
+  ["more", "Privacy and terms"],
+].map(([id, label]) => ({ id, label }));
+
+// FAQPage rich result — only questions whose answers are final (no TODO markers).
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    url: abs(appPath(app.slug, "support")),
+    mainEntity: app.faq
+      .filter((f) => !f.a.includes("[[TODO"))
+      .map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: r(f.a).replace(/<[^>]+>/g, "") },
+      })),
+  },
+];
+---
+
+<OrbitraLayout
+  title={`Support — ${app.name} by Orbitra`}
+  description={`Help for ${app.name} by Orbitra: common questions, fixes and how to contact support.`}
+  app={app}
+  crumbs={[
+    { label: "Orbitra", href: studio.basePath },
+    { label: app.name, href: appPath(app.slug) },
+    { label: "Support" },
+  ]}
+  jsonLd={jsonLd}
+>
+  <LegalDoc title="Support" subtitle={`${app.name}, by Orbitra`} toc={toc} dates={false}>
+    <h2 id="faq">Common questions</h2>
+    <div class="o-faq">
+      {
+        app.faq.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p set:html={r(f.a)} />
+          </details>
+        ))
+      }
+    </div>
+
+    <h2 id="troubleshooting">If something isn’t working</h2>
+    <ol>
+      <li>Update the app to the latest version from Google Play.</li>
+      <li>Close the app fully and open it again.</li>
+      <li>Restart your phone.</li>
+      <li>Still stuck? Email us — see below.</li>
+    </ol>
+
+    <h2 id="contact">Contact support</h2>
+    <p set:html={r("Email {email}. We reply within 2–3 working days.")} />
+    <p>To help us fix it faster, please include:</p>
+    <ul>
+      <li>Your app version (<strong>Settings → About</strong>)</li>
+      <li>Your phone model and Android version</li>
+      <li>What you did, what you expected, and what happened — a screenshot helps</li>
+    </ul>
+    <a class="o-btn o-btn--primary" href={mailto(`Support – ${app.name}`)}><Icon name="mail" size={18} /> Email support</a>
+
+    <h2 id="more">Privacy and terms</h2>
+    <ul>
+      <li><a href={appPath(app.slug, "privacy-policy")}>Privacy policy</a></li>
+      <li><a href={appPath(app.slug, "delete-data")}>Delete your data</a></li>
+      <li><a href={appPath(app.slug, "terms")}>Terms of use</a></li>
+    </ul>
+  </LegalDoc>
+</OrbitraLayout>
