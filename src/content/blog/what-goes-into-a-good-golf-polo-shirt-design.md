@@ -1,6 +1,7 @@
 ---
 title: "What Goes Into a Good Golf Polo Shirt Design (Beyond Just a Logo)"
 description: "A strong polo design is more than placing a logo on a template. What actually separates a design that looks right on the garment from one that doesn't."
+category: apparel-design
 publishDate: 2026-08-08
 ---
 

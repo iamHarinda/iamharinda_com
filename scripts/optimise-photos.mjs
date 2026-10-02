@@ -7,7 +7,6 @@
  * Outputs (all overwritten each run):
  *   public/images/about-harinda.webp   1600×1067  — About page lead image
  *   public/images/harinda-portrait.webp 800×800   — Person schema / small uses
- *   public/og/og-default.jpg           1200×630   — social share card
  */
 
 import { mkdir, access } from "node:fs/promises";
@@ -32,7 +31,6 @@ async function main() {
     }
   }
   await mkdir(out("public", "images"), { recursive: true });
-  await mkdir(out("public", "og"), { recursive: true });
 
   // About lead image — 3:2 landscape from the desk portrait.
   await sharp(src("1.webp"))
@@ -48,45 +46,9 @@ async function main() {
     .toFile(out("public", "images", "harinda-portrait.webp"));
   console.log("+ public/images/harinda-portrait.webp  800×800");
 
-  // OG card — neutral paper panel on the left, headshot on the right,
-  // one ochre divider. Mirrors the favicon.
-  const W = 1200, H = 630, split = 660;
-  const photo = await sharp(src("2.webp"))
-    .resize(W - split, H, { fit: "cover", position: "attention" })
-    .toBuffer();
-  // Dark card, to match the site.
-  const layer = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
-      <defs>
-        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#38bdf8"/>
-          <stop offset="0.55" stop-color="#a855f7"/>
-          <stop offset="1" stop-color="#f472b6"/>
-        </linearGradient>
-        <linearGradient id="seam" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#0a0910"/>
-          <stop offset="1" stop-color="#0a0910" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <rect x="${split}" y="0" width="150" height="${H}" fill="url(#seam)"/>
-      <rect x="${split - 2}" y="0" width="4" height="${H}" fill="url(#g)"/>
-      <text x="76" y="250" font-family="Georgia,'Times New Roman',serif"
-            font-size="68" fill="#f4f4f6">iamharinda</text>
-      <text x="78" y="314" font-family="Helvetica,Arial,sans-serif"
-            font-size="27" fill="#a7a7b3">Colour correction and retouching,</text>
-      <text x="78" y="352" font-family="Helvetica,Arial,sans-serif"
-            font-size="27" fill="#a7a7b3">done by a human eye.</text>
-      <text x="78" y="432" font-family="Helvetica,Arial,sans-serif"
-            font-size="22" fill="#a855f7">Free sample edit &#183; Rated 4.9 on Fiverr</text>
-    </svg>`;
-  await sharp({ create: { width: W, height: H, channels: 3, background: "#0a0910" } })
-    .composite([
-      { input: photo, left: split, top: 0 },
-      { input: Buffer.from(layer), left: 0, top: 0 },
-    ])
-    .jpeg({ quality: 86 })
-    .toFile(out("public", "og", "og-default.jpg"));
-  console.log("+ public/og/og-default.jpg  1200×630 (dark)");
+  // Social share cards (public/og/*.jpg) are committed artwork now and are
+  // not regenerated here. See README → "Social share images".
+
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

@@ -1,6 +1,7 @@
 ---
 title: "Can You Trust an Editor You've Never Met With Your Client's Wedding?"
 description: "Handing irreplaceable files to a stranger online feels like a real leap. Here's how to actually evaluate trust before you take it."
+category: photo-editing
 publishDate: 2025-12-23
 ---
 

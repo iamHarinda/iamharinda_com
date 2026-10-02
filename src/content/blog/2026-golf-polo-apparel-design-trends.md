@@ -1,6 +1,7 @@
 ---
 title: "2026 Golf and Polo Apparel Design Trends Worth Knowing About"
 description: "Golf apparel design has moved well past plain, minimal polos. What's actually trending in 2026 for teams, clubs, and brands ordering custom designs."
+category: apparel-design
 publishDate: 2026-08-17
 ---
 

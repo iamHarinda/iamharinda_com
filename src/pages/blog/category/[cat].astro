@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PageHero from "../../../components/PageHero.astro";
+import PostList from "../../../components/PostList.astro";
+import Cta from "../../../components/Cta.astro";
+import { categories, catKeys } from "../../../data/blog.js";
+import { breadcrumb } from "../../../lib/schema.js";
+
+export function getStaticPaths() {
+  return catKeys.map((cat) => ({ params: { cat } }));
+}
+const { cat } = Astro.params;
+const c = categories[cat];
+const posts = (await getCollection("blog", (p) => !p.data.draft && p.data.category === cat)).sort((a, b) => b.data.publishDate - a.data.publishDate);
+const crumbs = [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog/" }, { name: c.label, path: `/blog/category/${cat}/` }];
+---
+<BaseLayout rawTitle={`${c.title} | Harinda Fernando`} description={c.description} path={`/blog/category/${cat}/`} jsonLd={[breadcrumb(crumbs)]} image={c.og}>
+  <PageHero eyebrow={`Blog · ${posts.length} articles`} title={c.title} lede={c.description} crumbs={crumbs}>
+    <p style="margin-top:.25rem"><a class="link" href={c.service.href}>{c.service.label}</a></p>
+  </PageHero>
+  <section class="sec sec--top0"><div class="wrap"><PostList posts={posts} active={cat} /></div></section>
+  <Cta title={c.cta.title} text={c.cta.text} href={c.cta.href} label={c.cta.label} />
+</BaseLayout>

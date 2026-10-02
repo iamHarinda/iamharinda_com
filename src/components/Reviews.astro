@@ -1,0 +1,28 @@
+---
+import site from "../data/site.js";
+const { limit = 3, heading = "What photographers say.", link = true } = Astro.props;
+const items = site.testimonials.slice(0, limit);
+---
+<section class="sec dark">
+  <div class="wrap">
+    <div class="head head--row">
+      <div>
+        <span class="eyebrow">Reviews</span>
+        <h2 class="h2">{heading}</h2>
+      </div>
+      <div class="score">
+        <b>{site.fiverrStats.rating}</b>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><br /><span class="muted small">{site.fiverrStats.reviews} reviews on Fiverr</span></div>
+      </div>
+    </div>
+    <div class="grid g3" data-rise>
+      {items.map((t) => (
+        <blockquote class="rv">
+          <q>{t.quote}</q>
+          <footer><b>Fiverr client</b><span>{t.tag}</span></footer>
+        </blockquote>
+      ))}
+    </div>
+    {link && <p style="margin-top:1.75rem"><a class="link" href="/reviews/" style="color:#F7B08E">Read more reviews</a></p>}
+  </div>
+</section>

@@ -1,6 +1,7 @@
 ---
 title: "What Happens If My Website Developer Ghosts Me Mid-Project?"
 description: "It's a genuine fear when hiring a freelancer online. Here's how to protect yourself upfront and what to actually do if it happens anyway."
+category: web-development
 publishDate: 2026-01-04
 ---
 

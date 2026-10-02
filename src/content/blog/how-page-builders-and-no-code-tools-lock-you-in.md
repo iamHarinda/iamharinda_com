@@ -1,6 +1,7 @@
 ---
 title: "Why Page Builders and No-Code Tools Can Quietly Lock You In"
 description: "Drag-and-drop tools promise freedom and flexibility, but a lot of them make it genuinely hard to ever leave. What to watch for before you commit."
+category: web-development
 publishDate: 2026-07-09
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Commercial Use Rights on Pattern Designs: What 'Print-Ready' Should Actually Include"
 description: "Getting a finished design isn't the same as being legally clear to sell products with it. What commercial use rights actually mean, in plain terms."
+category: apparel-design
 publishDate: 2026-09-04
 ---
 

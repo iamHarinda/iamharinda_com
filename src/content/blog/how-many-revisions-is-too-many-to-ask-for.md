@@ -1,6 +1,7 @@
 ---
 title: "How Many Revisions Is Too Many to Ask For?"
 description: "Unlimited revisions sound great until you're worried about actually using them. Here's a realistic sense of what's normal and what isn't."
+category: photo-editing
 publishDate: 2025-12-26
 ---
 

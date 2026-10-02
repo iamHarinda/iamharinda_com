@@ -1,30 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import FaqAccordion from "../components/FaqAccordion.astro";
+import PageHero from "../components/PageHero.astro";
+import Faq from "../components/Faq.astro";
+import Cta from "../components/Cta.astro";
 import site, { waLink } from "../data/site.js";
-import {
-  professionalService,
-  service,
-  faqPage,
-  breadcrumb,
-} from "../lib/schema.js";
+import { service, faqPage, breadcrumb } from "../lib/schema.js";
 
-// ── Frontmatter from fashion-designing.md ──────────────────────────────────
-// note_for_dev: this page used to live at /apparel-pattern-tech-packs/ — a
-// leftover from when this service was framed as technical sewing patterns
-// and factory tech packs. It's now fashion/print pattern design for polo and
-// golf shirts (Illustrator/Photoshop artwork + mockups), so the URL moved to
-// /fashion-designing/. The old URL 301s here — see public/.htaccess. Update
-// the Fiverr profile link if it still points at the old path.
 const meta = {
   route: "/fashion-designing/",
-  title: "Fashion Designing — Polo & Golf Patterns | Harinda Fernando",
-  description:
-    "Polo and golf shirt pattern design with realistic mockups, built in Adobe Illustrator and Photoshop. Unlimited revisions, packages from $10.",
-  ogImage: "/images/og/fashion-designing.jpg",
-  ctaLabel: "Send me your design",
+  title: "Custom Polo & Golf Shirt Design — Print-Ready Patterns",
+  description: "Custom polo and golf shirt designs with front and back mockups and print-ready AI, PDF and PNG files. Sublimation-ready patterns from $10.",
 };
-
 const services = [
   {
     h: "Golf & polo shirt design.",
@@ -157,182 +143,56 @@ const faqs = [
 const waMsg =
   "Hi Harinda, here's a design I'd like a polo/golf shirt pattern and mockup for:";
 
-const jsonLd = [
-  professionalService(),
-  service({
-    name: "Polo shirt pattern design and mockups",
-    description: meta.description,
-    serviceType: "Polo & golf shirt fashion and print pattern design",
-    path: meta.route,
-    lowPrice: 10,
-  }),
-  faqPage(faqs),
-  breadcrumb([
-    { name: "Home", path: "/" },
-    { name: "Fashion designing", path: meta.route },
-  ]),
-];
+
+const crumbs = [{ name: "Home", path: "/" }, { name: "Polo & golf shirt design", path: meta.route }];
+const jsonLd = [service({ name: "Polo and golf shirt design", path: meta.route, description: meta.description, offers: 10 }), faqPage(faqs), breadcrumb(crumbs)];
 ---
+<BaseLayout rawTitle={meta.title} description={meta.description} path={meta.route} jsonLd={jsonLd} image="/og/og-polo-design.jpg">
+  <PageHero eyebrow="Polo & golf shirt design" title="Custom polo and golf shirt design with print-ready patterns" lede="Front and back designs built for the garment, not a logo stretched onto a template. Made in Illustrator and Photoshop, delivered with realistic mockups and files a printer can run." crumbs={crumbs}>
+    <div class="btn-row" style="margin-top:.75rem">
+      <a class="btn btn--p" href={waLink(waMsg)} data-track="whatsapp">Start your design brief</a>
+      <a class="btn btn--s" href="#pricing">See packages</a>
+    </div>
+  </PageHero>
 
-<BaseLayout
-  title={meta.title}
-  rawTitle={meta.title}
-  description={meta.description}
-  path={meta.route}
-  image={meta.ogImage}
-  imageAlt="Polo and golf shirt pattern design by Harinda Fernando — print-ready artwork and mockups for clothing brands."
-  jsonLd={jsonLd}
->
-  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
-  <section class="hero">
-    <div class="container hero__text">
-      <span class="eyebrow">Fashion designing</span>
-      <h1 class="h1">
-        <span class="split">Polo Shirt Pattern Design and Mockups, Print-Ready</span>
-      </h1>
-      <p>
-        Fashion designing covers a lot of ground — what I do, specifically, is
-        pattern designing: print artwork and repeat patterns for polo and golf
-        shirts, plus a realistic mockup, ready to hand to a print shop or
-        supplier.
-      </p>
-      <p>
-        You've got a clothing brand, a golf team, or a corporate order, and you
-        need a polo design that actually works — right proportions, right
-        placement, nothing left for a supplier to guess at. I design it in
-        Illustrator and Photoshop and hand you every source file you need to
-        take it to production.
-      </p>
-      <div class="btn-row">
-        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
-        <a class="btn btn--ghost" href="#pricing">See packages</a>
-      </div>
+  <section class="sec sec--top0">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">What you get</span><h2 class="h2">From concept to print-ready files.</h2></div>
+      <div class="grid g3" data-rise>{services.map((f) => <article class="card"><h3>{f.h}</h3><p>{f.p}</p></article>)}</div>
     </div>
   </section>
 
-  <!-- ── Services ────────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Services</span>
-        <h2 class="h2 reveal">From concept to print-ready files.</h2>
+  <section class="sec sec--alt" id="pricing">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Packages</span><h2 class="h2">Three packages. Unlimited revisions on all of them.</h2></div>
+      <div class="grid g3" data-rise>
+        {packages.map((p) => (
+          <article class={`pc${p.featured ? " pc--hot" : ""}`}>
+            {p.featured && <span class="pc__tag">Most popular</span>}
+            <div class="pc__k">{p.name} · {p.designs}</div>
+            <div class="pc__v">${p.price}</div>
+            <div class="pc__u">{p.delivery}</div>
+            <ul class="checks" style="margin-top:1rem">{p.features.map((f) => <li>{f}</li>)}</ul>
+          </article>
+        ))}
       </div>
-      <div class="grid">
-        {
-          services.map((f) => (
-            <article class="card feature rise" data-spot data-tilt>
-              <h3>{f.h}</h3>
-              <p>{f.p}</p>
-            </article>
-          ))
-        }
-      </div>
-      <p class="price-note rise">
-        <strong>Software.</strong> Every design is built in Adobe Illustrator
-        and Adobe Photoshop — clean vector artwork where it belongs, and
-        photoreal mockups where they help you sell the idea.
-      </p>
+      <p class="price-note">All prices in USD. More than 5 designs or a full collection? Message me for a separate quote.</p>
     </div>
   </section>
 
-  <!-- ── How it works ────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
+  <section class="sec">
+    <div class="wrap grid g2" style="align-items:start">
+      <div>
         <span class="eyebrow">How it works</span>
-        <h2 class="h2 reveal">Five steps to print-ready artwork.</h2>
+        <h2 class="h2" style="margin:.75rem 0 1.5rem">Five steps to print-ready artwork.</h2>
+        <ol class="steps">{steps.map((s) => <li><div><b>{s.h}</b><p>{s.p}</p></div></li>)}</ol>
       </div>
-      <ol class="steps">
-        {
-          steps.map((s) => (
-            <li class="step rise">
-              <span class="step__n" aria-hidden="true" />
-              <h3>{s.h}</h3>
-              <p>{s.p}</p>
-            </li>
-          ))
-        }
-      </ol>
-    </div>
-  </section>
-
-  <!-- ── Samples ─────────────────────────────────────────────────────── -->
-  {/* Hidden until real sample work replaces the placeholder slots — a
-      "coming soon" grid isn't fit for a live site. Re-add with real polo/golf
-      shirt mockups and print pattern artwork (client details removed): serve
-      WebP or AVIF, set width and height, and give every image a descriptive
-      alt (e.g. "Front and back mockup of a navy golf polo with an
-      embroidered crest"). */}
-
-  <!-- ── Pricing ─────────────────────────────────────────────────────── -->
-  <section class="section" id="pricing">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Pricing</span>
-        <h2 class="h2 reveal">Three packages. Unlimited revisions on all of them.</h2>
-        <p>All prices in USD. Message me before ordering so I know what you need.</p>
-      </div>
-      <div class="price-grid">
-        {
-          packages.map((p) => (
-            <article class={`card price-card rise${p.featured ? " price-card--featured beam" : ""}`} data-spot>
-              <div class="price-card__photos">{p.name} · {p.designs}</div>
-              <div class="price-card__amount grad-text">${p.price}</div>
-              <div class="price-card__unit">{p.delivery}</div>
-              <p style="margin-top:1rem">{p.desc}</p>
-              <ul class="list-check" style="margin-top:1rem;text-align:left">
-                {p.features.map((item) => <li>{item}</li>)}
-              </ul>
-            </article>
-          ))
-        }
-      </div>
-      <p class="price-note rise">
-        <strong>Need more than 5 designs, or a full seasonal collection?</strong>
-        {" "}Message me before ordering and I'll quote it separately from the
-        packages above.
-      </p>
-    </div>
-  </section>
-
-  <!-- ── FAQ ─────────────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
+      <div>
         <span class="eyebrow">Questions</span>
-        <h2 class="h2 reveal">Frequently asked questions</h2>
+        <h2 class="h2" style="margin:.75rem 0 1.25rem">Polo design FAQ</h2>
+        <Faq items={faqs} />
       </div>
-      <FaqAccordion items={faqs} />
     </div>
   </section>
-
-  <!-- ── Closing CTA ─────────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container center-narrow">
-      <h2 class="h1 shine">Send me your design</h2>
-      <p class="lede" style="margin-top:1rem;margin-inline:auto">
-        A logo and a rough idea of the look is enough to start. Message me
-        first and I'll come back with a timeline and a firm price.
-      </p>
-      <div class="btn-row" style="margin-top:1.75rem;justify-content:center">
-        <a class="btn" data-magnetic href={waLink(waMsg)}>{meta.ctaLabel}</a>
-        <a class="btn btn--grad" href="/contact/">Use the contact form</a>
-      </div>
-      <p class="form-note" style="margin-top:1rem">
-        Every enquiry gets a reply within one business day.
-      </p>
-    </div>
-  </section>
-
-  <!-- ── Also available ──────────────────────────────────────────────── -->
-  <section class="section">
-    <div class="container">
-      <span class="eyebrow">Also available</span>
-      <ul class="also-strip">
-        <li><a class="text-link" href="/photo-editing/">Wedding photo editing</a></li>
-        <li><a class="text-link" href="/web-development/">Custom web development</a></li>
-        <li><a class="text-link" href="/about/">About Harinda</a></li>
-      </ul>
-    </div>
-  </section>
+  <Cta title="Send me your idea" text="A logo, a sketch or just a description. Concepts with front and back mockups come back in 1–2 days." href={waLink(waMsg)} label="Start on WhatsApp" />
 </BaseLayout>

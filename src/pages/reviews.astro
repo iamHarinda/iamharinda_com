@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Bits from "../components/Bits.astro";
+import Cta from "../components/Cta.astro";
+import site from "../data/site.js";
+import { breadcrumb } from "../lib/schema.js";
+
+const crumbs = [{ name: "Home", path: "/" }, { name: "Reviews", path: "/reviews/" }];
+---
+<BaseLayout rawTitle="Photo Editing Reviews — 4.9 Stars from 183 Fiverr Clients" description={`What photographers say about Harinda Fernando's photo editing: ${site.fiverrStats.rating} stars from ${site.fiverrStats.reviews} Fiverr reviews and ${site.fiverrStats.ordersPlus}+ orders.`} path="/reviews/" jsonLd={[breadcrumb(crumbs)]}>
+  <PageHero eyebrow="Reviews" title={`${site.fiverrStats.rating} stars from ${site.fiverrStats.reviews} Fiverr reviews`} lede="Every review below comes from public feedback on my Fiverr profile, where buyers can only review a completed order." crumbs={crumbs}>
+    <p style="margin-top:.5rem"><a class="link" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">Read every review on Fiverr</a></p>
+  </PageHero>
+  <section class="sec sec--top0"><div class="wrap"><Bits kind="stats" /></div></section>
+  <section class="sec dark">
+    <div class="wrap grid g3" data-rise>
+      {site.testimonials.map((t) => (
+        <blockquote class="rv"><q>{t.quote}</q><footer><b>Fiverr client</b><span>{t.tag}</span></footer></blockquote>
+      ))}
+    </div>
+  </section>
+  <section class="sec">
+    <div class="wrap narrow">
+      <div class="head"><span class="eyebrow">Clients in {site.fiverrStats.countries} countries</span><h2 class="h2">Where galleries come from</h2></div>
+      <div class="chips">{site.clientCountries.map((c) => <span class="pill">{c}</span>)}</div>
+    </div>
+  </section>
+  <Cta />
+</BaseLayout>

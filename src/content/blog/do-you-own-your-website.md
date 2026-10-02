@@ -1,6 +1,7 @@
 ---
 title: "Do You Own Your Website? The Question Most Business Owners Never Ask"
 description: "A lot of business owners only find out they don't actually own their site when they try to leave the person who built it. How to check, before it's a problem."
+category: web-development
 publishDate: 2026-05-31
 ---
 

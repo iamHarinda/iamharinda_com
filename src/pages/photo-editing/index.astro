@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import Bits from "../../components/Bits.astro";
+import Shot from "../../components/Shot.astro";
+import Pricing from "../../components/Pricing.astro";
+import Reviews from "../../components/Reviews.astro";
+import Faq from "../../components/Faq.astro";
+import Cta from "../../components/Cta.astro";
+import site, { waLink } from "../../data/site.js";
+import { services } from "../../data/services.js";
+import { pick } from "../../data/portfolio.js";
+import { service, faqPage, breadcrumb } from "../../lib/schema.js";
+
+const crumbs = [{ name: "Home", path: "/" }, { name: "Photo editing", path: "/photo-editing/" }];
+const cards = [
+  { s: services.wedding, img: pick("DSC_9296-Enhanced-NR")[0] },
+  { s: services.portrait, img: pick("DSC01720")[0] },
+  { s: services.product, img: pick("IMG_8713")[0] },
+];
+const jsonLd = [
+  service({ name: "Photo editing for photographers", path: "/photo-editing/", description: site.description }),
+  faqPage(site.faqs),
+  breadcrumb(crumbs),
+];
+---
+<BaseLayout
+  rawTitle="Photo Editing Services for Photographers — Lightroom, No AI"
+  description="Hand-edited Lightroom photo editing for wedding, portrait, event and product photographers. Color correction, culling, retouching. From $10 per 50 photos."
+  path="/photo-editing/"
+  jsonLd={jsonLd}
+  image="/og/og-photo-editing.jpg"
+>
+  <PageHero eyebrow="Photo editing" title="Photo editing services for professional photographers" lede="Photo editing that looks like you edited it. Color correction, exposure, skin and consistency, done by hand in Lightroom Classic and Photoshop on a calibrated screen." crumbs={crumbs}>
+    <div class="btn-row" style="margin-top:.75rem">
+      <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
+      <a class="btn btn--s" href="#pricing">See pricing</a>
+    </div>
+  </PageHero>
+
+  <section class="sec sec--top0">
+    <div class="wrap grid g3" data-rise>
+      {cards.map(({ s, img }) => (
+        <a class="card card--link" href={s.path} style="padding:8px 8px 20px">
+          <Shot img={img} caption={false} sizes="(min-width: 960px) 30vw, 90vw" />
+          <div style="padding:6px 10px 0"><h3>{s.name}</h3><p>{s.lede}</p><span class="link" style="display:inline-block;margin-top:.75rem">Learn more</span></div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <Bits kind="guarantees" />
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">What's included</span><h2 class="h2">Every order includes</h2></div>
+      <div class="grid g3" data-rise>
+        <article class="card"><h3>White balance &amp; color</h3><p>Accurate color judged on a factory-calibrated, Calman-verified monitor, not guessed on a laptop.</p></article>
+        <article class="card"><h3>Exposure &amp; tone</h3><p>Highlights recovered, shadows opened and contrast placed where the image needs it, worked from the RAW.</p></article>
+        <article class="card"><h3>Consistent grading</h3><p>One look across the whole set, so every frame sits next to the others.</p></article>
+        <article class="card"><h3>Noise &amp; sharpening</h3><p>Clean detail at high ISO, sharpened for print and screen without looking processed.</p></article>
+        <article class="card"><h3>Lens corrections &amp; crops</h3><p>Distortion and vignetting corrected, horizons straightened, crops set with intent.</p></article>
+        <article class="card"><h3>Culling on request</h3><p>Send the full card and I pick the keepers, so you only pay to edit what makes the cut.</p></article>
+      </div>
+      <p class="price-note"><strong>Honest limit:</strong> editing improves the detail that's already in the frame. Very blurry, tiny or badly underexposed photos can't be fully rescued. RAW files give the most room.</p>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="pricing">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Pricing</span><h2 class="h2">{site.perPhoto} a photo. Unlimited revisions.</h2></div>
+      <Pricing />
+    </div>
+  </section>
+
+  <Reviews />
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Questions</span><h2 class="h2">Photo editing FAQ</h2></div>
+      <Faq items={site.faqs} />
+    </div>
+  </section>
+
+  <Cta />
+</BaseLayout>

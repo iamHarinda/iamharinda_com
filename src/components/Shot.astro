@@ -1,0 +1,34 @@
+---
+// One portfolio photo from Cloudinary with responsive srcset.
+import { cld, cldSrcset, arHeight } from "../data/portfolio.js";
+const {
+  img,
+  ar = "4:5",
+  sizes = "(min-width: 900px) 30vw, 85vw",
+  widths = [400, 640, 960, 1280],
+  caption = true,
+  eager = false,
+  cls = "",
+  parallax = false,
+} = Astro.props;
+const w = 960;
+const h = arHeight(w, ar, img);
+const ratioClass = ar === "4:5" ? "ph--4x5" : ar === "3:2" ? "ph--3x2" : ar === "1:1" ? "ph--1x1" : "";
+const genreLabel = { events: "Events", portrait: "Portrait", product: "Product", food: "Food" }[img.genre];
+---
+<figure class={`shot ${cls}`} data-genre={img.genre}>
+  <div class={`ph ${ratioClass}`} data-parallax={parallax ? "" : undefined} style={ar ? undefined : `aspect-ratio:${img.w}/${img.h}`}>
+    <img
+      src={cld(img, { w, ar })}
+      srcset={cldSrcset(img, widths, { ar })}
+      sizes={sizes}
+      width={w}
+      height={h}
+      alt={img.alt}
+      loading={eager ? "eager" : "lazy"}
+      decoding="async"
+      fetchpriority={eager ? "high" : undefined}
+    />
+  </div>
+  {caption && <figcaption>{img.title}<span>{genreLabel} · LR Classic</span></figcaption>}
+</figure>

@@ -23,7 +23,7 @@ import sharp from "sharp";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const pub = (...p) => join(root, "public", ...p);
-const BG = "#0a0910";
+const BG = "#17171A";
 
 const { site } = await import(pathToFileURL(join(root, "src/data/site.js")).href);
 const svg = await readFile(pub("favicon.svg"));
@@ -65,7 +65,7 @@ await sharp({ create: { width: 512, height: 512, channels: 4, background: BG } }
   .toFile(pub("icon-maskable-512.png"));
 
 const manifest = {
-  name: `${site.name} — human photo editing`,
+  name: `${site.name} — Photo Editing`,
   short_name: site.name,
   description: site.description,
   start_url: "/",

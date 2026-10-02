@@ -1,0 +1,86 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import site, { waLink } from "../../data/site.js";
+import { breadcrumb } from "../../lib/schema.js";
+
+const crumbs = [{ name: "Home", path: "/" }, { name: "Free sample edit", path: "/free-sample/" }];
+---
+<BaseLayout rawTitle="Get 3 Photos Edited Free — Free Sample Photo Editing" description="Send three photos and get them back edited in your style, free, usually within 24 hours. No payment details, no obligation." path="/free-sample/" jsonLd={[breadcrumb(crumbs)]}>
+  {site.turnstileSiteKey && <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer is:inline></script>}
+  <PageHero eyebrow="Free sample edit" title="Get 3 photos edited free" lede={`No payment details, no obligation. The edited photos come back ${site.freeSample.turnaround}, so you can judge the style before ordering.`} crumbs={crumbs} />
+  <section class="sec sec--top0">
+    <div class="wrap grid g-form">
+      <div class="card">
+        <p class="alert alert--err" id="form-error" hidden>That didn't go through. Please try again, or send the link on WhatsApp instead.</p>
+        <form class="form" method="POST" action="/contact.php" data-lead="free-sample">
+          <input type="hidden" name="form" value="sample" />
+          <div class="row2">
+            <div class="field"><label for="fs-name">Your name</label><input id="fs-name" name="name" autocomplete="name" required /></div>
+            <div class="field"><label for="fs-email">Email</label><input id="fs-email" name="email" type="email" autocomplete="email" required /></div>
+          </div>
+          <div class="field">
+            <label for="fs-link">Link to 3 photos</label>
+            <input id="fs-link" name="photos_link" type="url" inputmode="url" placeholder="https://drive.google.com/…" required aria-describedby="fs-link-hint" />
+            <span class="hint" id="fs-link-hint">Google Drive, Dropbox or WeTransfer. RAW files give the best result.</span>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="fs-type">Type of shoot</label>
+              <select id="fs-type" name="shoot_type">
+                {site.contact.services.slice(0, 3).map((s) => <option>{s}</option>)}
+                <option>Other photo work</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fs-size">Full gallery size (roughly)</label>
+              <input id="fs-size" name="gallery_size" inputmode="numeric" placeholder="e.g. 500" />
+            </div>
+          </div>
+          <fieldset class="field">
+            <legend>Style</legend>
+            <div class="radios">
+              <label><input type="radio" name="style" value="Match my reference" checked /> Match my reference or preset</label>
+              <label><input type="radio" name="style" value="Natural and true-to-life" /> Natural and true-to-life</label>
+              <label><input type="radio" name="style" value="Your choice" /> Your choice</label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="fs-ref">Reference edits or preset link (optional)</label>
+            <input id="fs-ref" name="reference" type="url" placeholder="https://…" />
+          </div>
+          <div class="field">
+            <label for="fs-notes">Notes (optional)</label>
+            <textarea id="fs-notes" name="message" rows="4" aria-describedby="fs-notes-hint"></textarea>
+            <span class="hint" id="fs-notes-hint">Deadline, anything to avoid, sneak-peek images you need first.</span>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Company <input type="text" name="company" tabindex="-1" autocomplete="off" /></label></div>
+          {site.turnstileSiteKey && <div class="cf-turnstile" data-sitekey={site.turnstileSiteKey}></div>}
+          <button class="btn btn--p" type="submit">Send my free sample request</button>
+          <p class="small muted">Your photos are only used to edit your sample and are deleted afterwards. See the <a href="/privacy/">privacy policy</a>.</p>
+        </form>
+      </div>
+      <aside class="stack">
+        <div class="card card--soft">
+          <h2 class="h3" style="font:600 1.2rem/1.3 var(--f-body)">What happens next</h2>
+          <ol class="steps" style="margin-top:1rem">
+            <li><div><b>I check your photos</b><p>And reply {site.replyTime} if anything is unclear.</p></div></li>
+            <li><div><b>Three edits come back</b><p>{site.freeSample.turnaround[0].toUpperCase() + site.freeSample.turnaround.slice(1)}, in your style.</p></div></li>
+            <li><div><b>You decide</b><p>Order the full gallery, ask for changes, or walk away. No pressure.</p></div></li>
+          </ol>
+        </div>
+        <div class="card">
+          <h2 style="font:600 1.05rem/1.3 var(--f-body)">Prefer WhatsApp?</h2>
+          <p>Send the link to <a class="link" href={waLink("Hi Harinda, here's a link to 3 photos for a free sample edit:")} data-track="whatsapp">{site.contact.whatsappDisplay}</a></p>
+        </div>
+        <blockquote class="card">
+          <p style="font:400 1.1rem/1.45 var(--f-display);color:var(--fg)">“{site.testimonials[0].quote}”</p>
+          <p class="small muted" style="margin-top:.75rem">Fiverr client · {site.testimonials[0].tag}</p>
+        </blockquote>
+      </aside>
+    </div>
+  </section>
+  <script is:inline>
+    if (location.search.includes("error=1")) document.getElementById("form-error").hidden = false;
+  </script>
+</BaseLayout>

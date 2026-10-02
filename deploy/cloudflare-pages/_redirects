@@ -1,0 +1,9 @@
+# Optional: copy to public/_redirects if you move hosting to Cloudflare Pages.
+/wedding-photo-editing/        /photo-editing/wedding/              301
+/wedding-photo-editing         /photo-editing/wedding/              301
+/custom-web-development/       /web-development/                    301
+/custom-web-development        /web-development/                    301
+/apparel-pattern-tech-packs/   /fashion-designing/                  301
+/apparel-pattern-tech-packs    /fashion-designing/                  301
+/portfolio/                    /work/                               301
+/sample/                       /free-sample/                        301

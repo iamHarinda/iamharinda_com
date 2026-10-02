@@ -1,6 +1,7 @@
 ---
 title: "What's a Fair Price for a Custom Team Logo Design in 2026?"
 description: "Logo design pricing swings wildly online. Here's a realistic, current sense of what's actually fair for a team or club logo in 2026."
+category: apparel-design
 publishDate: 2026-01-22
 ---
 

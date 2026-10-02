@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import site from "../data/site.js";
+const updated = "2 October 2026";
+---
+<BaseLayout rawTitle="Terms, Revisions & Refunds | Harinda Fernando" description="Terms for photo editing orders: free samples, revisions, turnaround, payment after approval, file retention and confidentiality." path="/terms/">
+  <PageHero eyebrow="Legal" title="Terms, revisions and refunds" lede={`Last updated ${updated}. These terms cover direct orders. Orders placed on Fiverr follow Fiverr's terms.`} />
+  <section class="sec sec--top0">
+    <div class="wrap prose">
+      <h2>Free sample</h2>
+      <p>Up to {site.freeSample.count} photos are edited free so you can judge the style. There's no obligation to order.</p>
+
+      <h2>Prices and turnaround</h2>
+      <p>Prices are listed on the <a href="/pricing/">pricing page</a> in US dollars. Turnaround starts once all files and style references are received: {site.packages.map((p) => `${p.photos} photos in ${p.days} days`).join(", ")}. Rush deadlines are agreed in writing before work starts.</p>
+
+      <h2>Revisions</h2>
+      <p>Revisions are unlimited for the edit you ordered: color, tone, crops and consistency changes are included until the gallery matches your style. A completely new style after approval of the sample, or retouching beyond what was ordered (compositing, body reshaping, object replacement), is quoted separately.</p>
+
+      <h2>Payment</h2>
+      <p>Direct photo editing orders are invoiced after you approve the delivered gallery and are due within 7 days of approval. Web development projects are paid 40% to start and 60% on launch. Polo design orders are paid as agreed in the quote.</p>
+
+      <h2>Refunds</h2>
+      <p>Because direct photo orders are paid only after approval, refunds rarely arise. If something goes wrong after payment, email me and I'll fix it or refund the affected photos.</p>
+
+      <h2>Your files and confidentiality</h2>
+      <p>You keep all rights to your photos. I never share, sell or post client images without written permission. Files are deleted 30 days after approval unless you ask me to keep them.</p>
+
+      <h2>Limits</h2>
+      <p>Editing improves the detail already in a photo. Very blurry, low-resolution or severely underexposed images can't be fully rescued; I'll tell you before starting if that applies.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about these terms: <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>.</p>
+    </div>
+  </section>
+</BaseLayout>

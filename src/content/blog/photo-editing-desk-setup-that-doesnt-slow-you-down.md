@@ -1,6 +1,7 @@
 ---
 title: "Building a Photo Editing Desk Setup That Doesn't Slow You Down"
 description: "A cluttered, awkward desk setup adds real friction to every editing session. Here's how to build one that actually speeds up your workflow."
+category: photo-editing
 publishDate: 2026-02-18
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "SD Card vs. CFexpress: Which Do You Actually Need for a Wedding Shoot?"
 description: "CFexpress cards cost more and promise more speed, but not every wedding photographer actually needs them. Here's how to decide honestly."
+category: photo-editing
 publishDate: 2026-02-09
 ---
 

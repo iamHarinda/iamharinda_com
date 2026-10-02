@@ -1,6 +1,7 @@
 ---
 title: "Is It Cheaper to Design a Polo Shirt Myself or Hire a Designer?"
 description: "DIY design tools make it tempting to skip a designer entirely. Here's an honest comparison for a team or small brand deciding which way to go."
+category: apparel-design
 publishDate: 2026-01-19
 ---
 

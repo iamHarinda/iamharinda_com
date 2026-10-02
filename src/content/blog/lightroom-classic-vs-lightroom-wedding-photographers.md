@@ -1,6 +1,7 @@
 ---
 title: "Lightroom Classic vs. Lightroom: Which One Should Wedding Photographers Use?"
 description: "Adobe sells two apps called Lightroom. Here's the real difference and which one actually fits a wedding photographer's workflow."
+category: photo-editing
 publishDate: 2026-03-17
 ---
 
