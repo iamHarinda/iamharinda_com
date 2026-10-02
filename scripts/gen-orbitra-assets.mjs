@@ -1,4 +1,4 @@
-// Builds the raster assets for /orbitra/ from the brand kits in docs/.
+// Builds the raster assets for /orbitra/ from the brand kits in docs/brand-kits/.
 //   node scripts/gen-orbitra-assets.mjs
 // Writes favicon PNGs, the social share image and web-sized screenshots into
 // public/orbitra/assets/. Safe to re-run; it overwrites its own outputs only.
@@ -39,9 +39,9 @@ await sharp(Buffer.from(og)).png({ compressionLevel: 9 }).toFile(out("brand/og-o
 // ── screenshots (design previews from the app kits) ─────────────────────────
 const shots = {
   habittracker: [1, 2, 4, 6].map((n) =>
-    docs(`Habit-Tracker-Orbitra-Kit/habit-tracker/design/screens/screen-0${n}-light.png`)),
+    docs(`brand-kits/habit-tracker/design/screens/screen-0${n}-light.png`)),
   productwhite: [1, 2, 3, 4, 5].map((n) =>
-    docs(`ProductWhite-brand-kit/03-play-store/phone-screenshot-${n}-1080x1920.png`)),
+    docs(`brand-kits/productwhite/03-play-store/phone-screenshot-${n}-1080x1920.png`)),
 };
 for (const [slug, files] of Object.entries(shots)) {
   for (const [i, src] of files.entries()) {
