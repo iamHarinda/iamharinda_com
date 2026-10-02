@@ -2,6 +2,7 @@
   {
     "slug": "habittracker",
     "name": "Habit Tracker",
+    "storeTitle": "Habit Tracker & Day Counter",
     "package": "com.orbitra.habittracker",
     "packageConfirmed": true,
     "category": "ProductivityApplication",
@@ -190,7 +191,7 @@
     "slug": "periodicelementtable",
     "name": "Periodic Element Table",
     "package": "com.orbitra.periodicelementtable",
-    "packageConfirmed": false,
+    "packageConfirmed": true,
     "category": "EducationalApplication",
     "tagline": "The periodic table, in your pocket.",
     "summary": "The Android app of PeriodicElementTable.com — an interactive periodic table with chemistry tools and learning content.",
@@ -347,8 +348,9 @@
   {
     "slug": "toolsserver",
     "name": "ToolsServer",
+    "storeTitle": "ToolsServer: All-in-One Tools",
     "package": "com.orbitra.toolsserver",
-    "packageConfirmed": false,
+    "packageConfirmed": true,
     "category": "UtilitiesApplication",
     "tagline": "Calculate. Convert. Create.",
     "summary": "The Android app of ToolsServer.com — free online tools in one place.",
@@ -508,6 +510,7 @@
   {
     "slug": "productwhite",
     "name": "ProductWhite",
+    "storeTitle": "ProductWhite: White Background",
     "package": "com.orbitra.productwhite",
     "packageConfirmed": true,
     "category": "PhotographyApplication",
