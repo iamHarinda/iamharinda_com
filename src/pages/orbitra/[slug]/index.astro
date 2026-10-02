@@ -18,6 +18,8 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: app.name,
+    ...(app.storeTitle && { alternateName: app.storeTitle }),
+    identifier: app.package,
     operatingSystem: "Android",
     applicationCategory: app.category,
     description: app.summary,
@@ -56,6 +58,7 @@ const jsonLd = [
             <code class="o-muted">{app.package}</code>
             {!app.packageConfirmed && <Fragment set:html={todoHtml("confirm package name")} />}
           </div>
+          {app.storeTitle && <p class="o-caption">On Google Play as “{app.storeTitle}”</p>}
           {
             app.website && (
               <p class="o-caption">
