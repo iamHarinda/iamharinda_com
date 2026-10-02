@@ -4,7 +4,8 @@ import Mark from "../../components/orbitra/Mark.astro";
 import Icon from "../../components/orbitra/Icon.astro";
 import AppIcon from "../../components/orbitra/AppIcon.astro";
 import StatusPill from "../../components/orbitra/StatusPill.astro";
-import { studio, apps, appPath, abs, rich, todoHtml, EXTERNAL, NEW_TAB_HTML } from "../../lib/orbitra.js";
+import GooglePlayBadge from "../../components/orbitra/GooglePlayBadge.astro";
+import { studio, apps, appPath, abs, rich, todoHtml } from "../../lib/orbitra.js";
 
 const values = [
   { icon: "box", title: "Small and useful.", text: "Each app does one job well." },
@@ -101,9 +102,7 @@ const jsonLd = [
         <p class="o-muted" style="margin-top: var(--space-2)">We reply within 2–3 working days.</p>
       </div>
       <p>
-        <a class="o-btn" href={studio.playDeveloperUrl} {...EXTERNAL}>
-          Orbitra on Google Play<Fragment set:html={NEW_TAB_HTML} />
-        </a>
+        <GooglePlayBadge href={studio.playDeveloperUrl} width={200} />
         {!studio.playDeveloperUrlConfirmed && <Fragment set:html={` ${todoHtml("confirm developer page id")}`} />}
       </p>
     </div>
