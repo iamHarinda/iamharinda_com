@@ -333,7 +333,7 @@
       },
       {
         "q": "Does it work offline?",
-        "a": "[[TODO: confirm offline behaviour]]"
+        "a": "No. The app loads PeriodicElementTable.com, so it needs an internet connection."
       },
       {
         "q": "I found a mistake in an element’s data.",
