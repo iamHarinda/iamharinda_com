@@ -27,8 +27,30 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Analytics IDs and the site URL are GitHub repository variables
+      # (Settings → Secrets and variables → Actions → Variables). Only this build
+      # gets them, so localhost and preview builds never send analytics.
       - name: Build
         run: npm run build
+        env:
+          PUBLIC_GA_ID: ${{ vars.GA_ID }}
+          PUBLIC_CLARITY_ID: ${{ vars.CLARITY_ID }}
+          PUBLIC_AHREFS_KEY: ${{ vars.AHREFS_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: Check analytics IDs are in the build
+        run: |
+          grep -q "gtag/js?id=${{ vars.GA_ID }}" dist/index.html || { echo "::warning::GA_ID missing from the build"; }
+          grep -q "analytics.ahrefs.com" dist/index.html || { echo "::warning::AHREFS_KEY missing from the build"; }
+          grep -q "__clarityId" dist/index.html || { echo "::warning::CLARITY_ID missing from the build"; }
+
+      # Hashes of the pages from the last deploy, so IndexNow only sends what changed.
+      - name: Restore IndexNow state
+        uses: actions/cache@v4
+        with:
+          path: .indexnow
+          key: indexnow-state-${{ github.run_id }}
+          restore-keys: indexnow-state-
 
       - name: Deploy dist/ to Hostinger public_html
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -48,3 +70,11 @@ jobs:
             **/.git*
             **/.git*/**
             **/.DS_Store
+
+      # After the upload, so the key file is live when IndexNow checks it.
+      # A failed ping never fails the deploy; unsent URLs go out next time.
+      - name: Notify search engines (IndexNow)
+        continue-on-error: true
+        run: node scripts/indexnow.mjs
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}

@@ -11,7 +11,8 @@ export const site = {
   personName: "Harinda Fernando",
   personTitles: ["Photo editor", "Web developer", "Polo and golf shirt designer"],
   domain: "www.iamharinda.com",
-  url: "https://www.iamharinda.com",
+  // SITE_URL (GitHub variable) via Astro's `site`; falls back to the live domain.
+  url: (import.meta.env?.SITE ?? "https://www.iamharinda.com").replace(/\/$/, ""),
 
   tagline: "Your style. Hand-edited. On deadline.",
   description:
@@ -163,8 +164,15 @@ export const site = {
     after: null,
   },
 
-  // ── Analytics (GA4 + Clarity, loaded on every visit; see /privacy/) ───────
-  analytics: { gaMeasurementId: "G-QP1FK83BL2", clarityProjectId: "un99vlx16e" },
+  // ── Analytics (GA4, Clarity, Ahrefs; loaded on every visit; see /privacy/) ─
+  // IDs come from build-time env vars, set as GitHub repository variables and
+  // passed in by .github/workflows/deploy.yml. A local build has none of them,
+  // so localhost and previews never send analytics.
+  analytics: {
+    gaMeasurementId: import.meta.env?.PUBLIC_GA_ID ?? "",
+    clarityProjectId: import.meta.env?.PUBLIC_CLARITY_ID ?? "",
+    ahrefsKey: import.meta.env?.PUBLIC_AHREFS_KEY ?? "",
+  },
 
   seo: {
     ogImage: "/og/og-default.jpg",

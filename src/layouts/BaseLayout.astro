@@ -33,7 +33,7 @@ const canonical = abs(path);
 const ogImage = image.startsWith("http") ? image : abs(image);
 const fullTitle = rawTitle ?? `${title} | Harinda Fernando`;
 const ld = graph(jsonLd);
-const ga = site.analytics.gaMeasurementId;
+const { gaMeasurementId: ga, clarityProjectId: clarity, ahrefsKey } = site.analytics;
 ---
 
 <!doctype html>
@@ -80,15 +80,20 @@ const ga = site.analytics.gaMeasurementId;
 
     <!-- Analytics run on every visit (owner's choice, 2 Oct 2026; see /privacy/).
          Advertising signals stay off: this site shows no ads. -->
-    <script is:inline define:vars={{ ga }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      window.gtag = gtag;
-      gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "granted" });
-      gtag("js", new Date());
-      gtag("config", ga, { anonymize_ip: true });
-    </script>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>
+    {ga && (
+      <>
+        <script is:inline define:vars={{ ga }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "granted" });
+          gtag("js", new Date());
+          gtag("config", ga, { anonymize_ip: true });
+        </script>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>
+      </>
+    )}
+    {ahrefsKey && <script is:inline async src="https://analytics.ahrefs.com/analytics.js" data-key={ahrefsKey}></script>}
   </head>
 
   <body>
@@ -116,8 +121,10 @@ const ga = site.analytics.gaMeasurementId;
       import "../scripts/site.js";
       import "../scripts/motion.js";
     </script>
-    <script is:inline define:vars={{ clarity: site.analytics.clarityProjectId }}>
-      window.__clarityId = clarity;
-    </script>
+    {clarity && (
+      <script is:inline define:vars={{ clarity }}>
+        window.__clarityId = clarity;
+      </script>
+    )}
   </body>
 </html>
