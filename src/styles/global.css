@@ -365,7 +365,7 @@ td.num { font-variant-numeric: tabular-nums; }
 .rv__meta { display: flex; align-items: center; gap: .6rem; font-size: var(--t-sm); color: #A6A5A0; }
 .rv__stars { color: #F7B08E; letter-spacing: .1em; }
 /* Reviews page: the rest of the list is revealed by "Show more" (site.js). */
-.rv-list[data-more] .rv:nth-child(n + 25) { display: none; }
+.rv-list[data-more] .rv:nth-child(n + 51) { display: none; } /* keep in step with SHOWN in reviews.astro */
 .score { display: flex; align-items: center; gap: 1rem; }
 .score b { font: 500 3.6rem/1 var(--f-display); }
 
