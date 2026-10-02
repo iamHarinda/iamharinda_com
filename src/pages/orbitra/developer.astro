@@ -1,0 +1,226 @@
+---
+// /orbitra/developer/ — who is behind Orbitra: the developer profile, the apps and how they are built.
+import OrbitraLayout from "../../layouts/OrbitraLayout.astro";
+import Icon from "../../components/orbitra/Icon.astro";
+import AppIcon from "../../components/orbitra/AppIcon.astro";
+import StatusPill from "../../components/orbitra/StatusPill.astro";
+import GooglePlayBadge from "../../components/orbitra/GooglePlayBadge.astro";
+import { studio, apps, appPath, abs, rich, mailto } from "../../lib/orbitra.js";
+
+const facts = [
+  ["Developer", "Orbitra"],
+  ["Made by", "Harinda Fernando"],
+  ["Based in", "Sri Lanka"],
+  ["Platform", "Android, on Google Play"],
+  ["Apps", `${apps.length}, with more on the way`],
+  ["Language", "English"],
+];
+
+const principles = [
+  { icon: "lock", title: "Private by default", text: "Your data stays on your phone wherever it can. No accounts unless an app truly needs one, and only the analytics we need to fix bugs and improve." },
+  { icon: "box", title: "Small and light", text: "Each app does one job well and stays small, so it runs on older phones too." },
+  { icon: "tag", title: "Free to start", text: "Every app is free to download. No ads in our own apps." },
+  { icon: "check", title: "Accessible", text: "Large touch targets, screen reader labels, dark mode and support for big font sizes." },
+];
+
+const stack = [
+  ["Native Android", "Kotlin, Jetpack Compose and Material 3"],
+  ["Cross-platform", "React Native with Expo, and Capacitor"],
+  ["Web apps", "Light Android shells for our own websites, with an offline screen and native sharing"],
+  ["On-device AI", "Google ML Kit, so photos are processed on the phone"],
+  ["Quality", "Automated tests, accessibility checks and testing on real, older phones"],
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: abs(`${studio.basePath}developer/`),
+    mainEntity: {
+      "@type": "Organization",
+      name: "Orbitra",
+      url: abs(studio.basePath),
+      logo: abs("/orbitra/assets/brand/orbitra-app-icon-512x512.png"),
+      email: studio.contactEmail,
+      slogan: studio.tagline,
+      sameAs: [studio.playDeveloperUrl],
+      founder: { "@type": "Person", name: "Harinda Fernando", url: studio.personalSiteUrl },
+      address: { "@type": "PostalAddress", addressCountry: "LK" },
+    },
+  },
+];
+---
+
+<OrbitraLayout
+  title="Developer profile — Orbitra"
+  description="Orbitra is an independent Android app developer from Sri Lanka, run by Harinda Fernando. Meet the developer, the apps and how they are made."
+  active="developer"
+  crumbs={[{ label: "Orbitra", href: studio.basePath }, { label: "Developer" }]}
+  jsonLd={jsonLd}
+>
+  <section class="o-apphero">
+    <div class="o-wrap">
+      <div class="o-apphero__card o-dev">
+        <img
+          class="o-dev__logo"
+          src="/orbitra/assets/brand/orbitra-app-icon.svg"
+          width="160"
+          height="160"
+          alt="Orbitra logo"
+          decoding="async"
+        />
+        <div class="o-apphero__meta">
+          <p class="o-caption">Developer profile</p>
+          <h1 class="o-title">Orbitra</h1>
+          <p class="o-lead">Independent app developer from Sri Lanka, run by Harinda Fernando.</p>
+          <div class="o-apphero__row">
+            <a class="o-btn o-btn--primary" href={mailto("Hello Orbitra")}><Icon name="mail" size={18} /> Contact</a>
+            <a class="o-btn" href={studio.personalSiteUrl}>iamharinda.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="about-title">
+    <div class="o-wrap o-dev__about">
+      <div class="o-prose">
+        <h2 class="o-title" id="about-title">About the developer</h2>
+        <p>
+          Orbitra is a one-person studio. I’m Harinda Fernando, a photo editor and web developer in Sri Lanka. I build
+          the apps I wish I had: small tools that do one thing well, respect your privacy and work on the phone you
+          already own.
+        </p>
+        <p>
+          Some of our apps started as websites, like PeriodicElementTable.com and ToolsServer.com. Others, like
+          ProductWhite, came from years of editing product photos for online sellers. Every app is designed, built,
+          tested and supported by the same person you email.
+        </p>
+      </div>
+      <dl class="o-dev__facts">
+        {
+          facts.map(([k, v]) => (
+            <div>
+              <dt class="o-caption">{k}</dt>
+              <dd>{v}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="apps-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="apps-title">Apps by Orbitra</h2>
+        <p class="o-muted">Each app keeps its own name and brand.</p>
+      </div>
+      <div class="o-grid o-grid--3">
+        {
+          apps.map((app) => (
+            <article class="o-card">
+              <div class="o-card__top">
+                <AppIcon app={app} size={56} decorative />
+                <h3 class="o-heading o-card__name">
+                  <a class="o-card__main" href={appPath(app.slug)}>{app.name}</a>
+                </h3>
+              </div>
+              <p class="o-muted">{app.tagline}</p>
+              <StatusPill status={app.status} />
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="values-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="values-title">How we make apps</h2>
+      </div>
+      <div class="o-grid o-grid--2">
+        {
+          principles.map((v) => (
+            <div class="o-feature">
+              <Icon name={v.icon} size={28} />
+              <h3 class="o-heading">{v.title}</h3>
+              <p>{v.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="stack-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="stack-title">Tools and technology</h2>
+      </div>
+      <div class="o-table-wrap">
+        <table class="o-table">
+          <tbody>
+            {stack.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" id="work-with-us" aria-labelledby="work-title">
+    <div class="o-wrap">
+      <div class="o-apphero__card o-dev__hire">
+        <div>
+          <h2 class="o-title" id="work-title">Need an app designed?</h2>
+          <p class="o-lead" style="margin-top: var(--space-2)">
+            Orbitra also designs and builds Android apps for others, from the first idea to Google Play. Tell us what
+            you have in mind and we’ll reply with next steps.
+          </p>
+          <p class="o-contact__mail" style="margin-top: var(--space-4)">
+            <a href={mailto("App project")}>{studio.contactEmail}</a>
+          </p>
+        </div>
+        <p><a class="o-btn o-btn--primary" href={mailto("App project")}><Icon name="mail" size={18} /> Email about your app</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" id="contact" aria-labelledby="contact-title">
+    <div class="o-wrap o-contact">
+      <div>
+        <h2 class="o-title" id="contact-title">Get in touch</h2>
+        <p class="o-contact__mail" style="margin-top: var(--space-3)" set:html={rich("{email}")} />
+        <p class="o-muted" style="margin-top: var(--space-2)">
+          App support, privacy requests or ideas. We reply within 2–3 working days.
+        </p>
+      </div>
+      <p><GooglePlayBadge href={studio.playDeveloperUrl} width={200} /></p>
+    </div>
+  </section>
+</OrbitraLayout>
+
+<style>
+  .o-dev { grid-template-columns: auto 1fr; }
+  .o-dev__logo {
+    width: 120px; height: 120px; border-radius: 22.5%;
+    box-shadow: 0 12px 32px -8px rgba(255, 90, 31, 0.45);
+  }
+  @media (min-width: 640px) { .o-dev__logo { width: 160px; height: 160px; } }
+  @media (max-width: 479px) { .o-dev { grid-template-columns: 1fr; } }
+  .o-dev__about { display: grid; gap: var(--space-8); }
+  @media (min-width: 900px) { .o-dev__about { grid-template-columns: minmax(0, 1fr) 320px; gap: var(--space-12); } }
+  .o-prose { max-width: var(--maxw-prose); }
+  .o-prose p { margin-top: var(--space-4); }
+  .o-dev__facts {
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin: 0; align-self: start;
+    padding: var(--space-6); border-radius: var(--radius-glass, var(--radius-md));
+    background: var(--glass-fill, var(--surface-raised)); border: 1px solid var(--glass-line, var(--line));
+    -webkit-backdrop-filter: var(--glass-blur, none); backdrop-filter: var(--glass-blur, none);
+    box-shadow: inset 1px 1px 0 var(--glass-edge, transparent), var(--glass-shadow, none);
+  }
+  .o-dev__hire { grid-template-columns: 1fr; }
+  @media (min-width: 800px) { .o-dev__hire { grid-template-columns: 1fr auto; } }
+  .o-dev__facts dd { margin: 2px 0 0; font-weight: 600; }
+</style>

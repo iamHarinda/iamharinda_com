@@ -3,6 +3,7 @@
 // stylesheet, header, footer, fonts and favicon, so the Orbitra section and the
 // personal site cannot affect each other's styles.
 import "../styles/orbitra.css";
+import "../styles/orbitra-glass.css";
 import Mark from "../components/orbitra/Mark.astro";
 import Icon from "../components/orbitra/Icon.astro";
 import { studio, abs } from "../lib/orbitra.js";
@@ -91,6 +92,7 @@ const home = studio.basePath;
         <nav class="o-nav" aria-label="Orbitra">
           <ul class="o-nav__links" id="o-nav-links">
             <li><a href={`${home}#apps`} aria-current={active === "apps" ? "page" : undefined}>Apps</a></li>
+            <li><a href={`${home}developer/`} aria-current={active === "developer" ? "page" : undefined}>Developer</a></li>
             <li><a href={`${home}contact/`} aria-current={active === "contact" ? "page" : undefined}>Contact</a></li>
           </ul>
           <button class="o-iconbtn o-theme" type="button" id="o-theme" aria-label="Switch colour theme">
@@ -140,6 +142,7 @@ const home = studio.basePath;
         </div>
         <ul>
           <li><a href={`${home}#apps`}>Apps</a></li>
+          <li><a href={`${home}developer/`}>Developer</a></li>
           <li><a href={`${home}privacy-policy/`}>Privacy</a></li>
           <li><a href={`${home}terms/`}>Terms</a></li>
           <li><a href={`${home}contact/`}>Contact</a></li>
