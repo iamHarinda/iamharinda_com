@@ -17,7 +17,7 @@ const postDates = Object.fromEntries(
 );
 
 export default defineConfig({
-  site: "https://www.iamharinda.com",
+  site: process.env.SITE_URL || "https://www.iamharinda.com",
   output: "static",
   trailingSlash: "always",
   build: { format: "directory", inlineStylesheets: "always", assets: "_astro" },

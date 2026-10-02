@@ -72,6 +72,9 @@ if (sticky) {
     t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
     y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
   })(window, document, "clarity", "script", window.__clarityId);
+  // No cookie banner (owner's choice): analytics is accepted up front, ads stay off,
+  // matching the GA4 consent defaults in BaseLayout.
+  window.clarity("consentv2", { ad_Storage: "denied", analytics_Storage: "granted" });
 })();
 
 /* ── Conversion tracking (GA4 events) ──────────────────────────────────── */

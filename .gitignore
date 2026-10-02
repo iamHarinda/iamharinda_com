@@ -16,3 +16,6 @@ node_modules/
 npm-debug.log*
 .vscode/
 .idea/
+
+# IndexNow state (kept in the GitHub Actions cache, not in git)
+.indexnow/
