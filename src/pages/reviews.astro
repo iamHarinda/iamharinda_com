@@ -6,13 +6,13 @@ import WorldMap from "../components/WorldMap.astro";
 import Cta from "../components/Cta.astro";
 import FiverrLogo from "../components/FiverrLogo.astro";
 import site from "../data/site.js";
-import { best, reviewDate, stars } from "../data/reviews.js";
+import { bestFirst, reviewDate, stars } from "../data/reviews.js";
 import { breadcrumb } from "../lib/schema.js";
 
 const crumbs = [{ name: "Home", path: "/" }, { name: "Reviews", path: "/reviews/" }];
-const SHOWN = 24;
-// 50 of the most detailed 5★ reviews, one per client (see best() in reviews.js).
-const reviews = best(50);
+// The 50 most detailed 5★ reviews (one per client) come first; "Show all" reveals the rest.
+const SHOWN = 50;
+const reviews = bestFirst(SHOWN);
 ---
 <BaseLayout rawTitle={`Photo Editing Reviews — ${site.fiverrStats.reviews}+ Fiverr Reviews from Real Clients`} description={`What photographers say about Harinda Fernando's photo editing: ${site.fiverrStats.reviews}+ Fiverr reviews and ${site.fiverrStats.ordersPlus}+ orders.`} path="/reviews/" jsonLd={[breadcrumb(crumbs)]}>
   <PageHero eyebrow="Reviews" title={`${site.fiverrStats.reviews}+ reviews from real clients`} lede="Every review below is real feedback from a completed Fiverr order, word for word. Client names are masked for privacy." crumbs={crumbs}>
@@ -25,8 +25,8 @@ const reviews = best(50);
       <div class="head head--row">
         <div>
           <span class="eyebrow">In their words</span>
-          <h2 class="h2">{reviews.length} of the best, word for word.</h2>
-          <p class="muted" style="margin-top:.75rem;max-width:40em">The most detailed review from each of {reviews.length} clients, picked from {site.fiverrStats.reviews}+ on Fiverr. Every one is copied exactly as the client wrote it.</p>
+          <h2 class="h2">{reviews.length} reviews, word for word.</h2>
+          <p class="muted" style="margin-top:.75rem;max-width:40em">The {SHOWN} most detailed come first, one per client. Every review is copied exactly as the client wrote it on Fiverr.</p>
         </div>
         <a class="btn btn--s btn--light" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">All reviews on <FiverrLogo height={14} label="Fiverr" /></a>
       </div>

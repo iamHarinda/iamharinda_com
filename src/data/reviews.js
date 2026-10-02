@@ -42,3 +42,11 @@ export function best(limit = 50) {
     .slice(0, limit)
     .sort((a, b) => String(b.date).localeCompare(String(a.date)));
 }
+
+/** Every review for the reviews page: the `top` best (see best()) first, then the rest newest first. */
+export function bestFirst(top = 50) {
+  const lead = best(top);
+  const picked = new Set(lead);
+  const rest = all.filter((r) => !picked.has(r)).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  return [...lead, ...rest];
+}
