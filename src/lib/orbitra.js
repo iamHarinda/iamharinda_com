@@ -31,14 +31,20 @@ export function rich(text, app) {
   html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
   html = html.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, t, href) => {
     const ext = /^https?:/.test(href);
-    return `<a href="${href}"${ext ? ' rel="noopener"' : ""}>${t}</a>`;
+    return ext
+      ? `<a href="${href}" target="_blank" rel="noopener noreferrer">${t}${NEW_TAB_HTML}</a>`
+      : `<a href="${href}">${t}</a>`;
   });
   html = html.replace(/\{email\}/g, emailHtml());
   if (app) html = html.replace(/\{app\}/g, escapeHtml(app.name));
   return html;
 }
 
-export const todoHtml = (note) => `<mark class="o-todo">TODO(owner): ${note}</mark>`;
+/** Spread onto every link that leaves iamharinda.com: <a href={url} {...EXTERNAL}>. */
+export const EXTERNAL = { target: "_blank", rel: "noopener noreferrer" };
+export const NEW_TAB_HTML = '<span class="o-sr"> (opens in a new tab)</span>';
+
+export const todoHtml =(note) => `<mark class="o-todo">TODO(owner): ${note}</mark>`;
 
 export function emailHtml() {
   const e = studio.contactEmail;

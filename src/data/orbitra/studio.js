@@ -16,7 +16,8 @@ export default {
   contactEmailConfirmed: true,
 
   // {{PLAY_DEVELOPER_URL}} — confirmed by the owner (2026-10-02).
-  playDeveloperUrl: "https://play.google.com/store/apps/developer?id=Orbitra",
+  // Numeric developer account IDs use /dev?id=, not /developer?id=<name>.
+  playDeveloperUrl: "https://play.google.com/store/apps/dev?id=7254338090363385545",
   playDeveloperUrlConfirmed: true,
 
   // Shown on every legal page.

@@ -4,7 +4,7 @@ import OrbitraLayout from "../../../layouts/OrbitraLayout.astro";
 import Icon from "../../../components/orbitra/Icon.astro";
 import AppIcon from "../../../components/orbitra/AppIcon.astro";
 import StatusPill from "../../../components/orbitra/StatusPill.astro";
-import { studio, apps, appPath, abs, rich, todoHtml } from "../../../lib/orbitra.js";
+import { studio, apps, appPath, abs, rich, todoHtml, EXTERNAL, NEW_TAB_HTML } from "../../../lib/orbitra.js";
 
 export function getStaticPaths() {
   return apps.map((app) => ({ params: { slug: app.slug }, props: { app } }));
@@ -47,10 +47,10 @@ const jsonLd = [
           <div class="o-apphero__row">
             {
               app.status === "live" ? (
-                <a href={app.playUrl} rel="noopener">
+                <a href={app.playUrl} {...EXTERNAL}>
                   <img
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                    alt="Get it on Google Play"
+                    alt="Get it on Google Play (opens in a new tab)"
                     width="180"
                     height="53"
                   />
@@ -65,7 +65,9 @@ const jsonLd = [
           {
             app.website && (
               <p class="o-caption">
-                Also on the web: <a href={app.website} rel="noopener">{app.website.replace(/^https?:\/\//, "")}</a>
+                Also on the web: <a href={app.website} {...EXTERNAL}>
+                  {app.website.replace(/^https?:\/\//, "")}<Fragment set:html={NEW_TAB_HTML} />
+                </a>
               </p>
             )
           }
