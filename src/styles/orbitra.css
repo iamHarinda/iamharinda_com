@@ -106,11 +106,7 @@ strong { font-weight: 600; }
 .o-muted { color: var(--ink-muted); }
 .o-lead { font-size: 18px; line-height: 28px; color: var(--ink-muted); }
 
-/* ── draft banner + TODO markers ─────────────────────────────────────────── */
-.o-draft {
-  background: var(--halo); color: var(--ink); border-bottom: 1px solid var(--line);
-  font: 500 13px/20px var(--font-sans); padding: var(--space-2) 0; text-align: center;
-}
+/* ── TODO markers ──────────────────────────────────────────────────────── */
 mark.o-todo {
   background: transparent; color: var(--solar-text);
   border: 1px dashed currentColor; border-radius: var(--radius-sm);
@@ -166,6 +162,9 @@ mark.o-todo {
 .o-btn--primary:hover, .o-btn--primary:focus-visible { border-color: #0F1222; }
 .o-btn--on-deep { color: var(--on-deep); border-color: rgba(242, 239, 232, 0.3); }
 
+.o-linkrow { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-6); list-style: none; padding: 0; margin-top: var(--space-4); font-weight: 500; }
+.o-linkrow li { margin: 0; }
+
 .o-play-badge { display: inline-block; line-height: 0; border-radius: var(--radius-md); }
 
 /* ── sections ────────────────────────────────────────────────────────────── */
@@ -195,12 +194,17 @@ mark.o-todo {
   background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-6);
   transition: border-color 0.15s ease;
 }
+.o-card { position: relative; cursor: pointer; }
 .o-card:hover, .o-card:focus-within { border-color: var(--solar); }
+/* The title link stretches over the whole card; the small links sit above it. */
+.o-card__main::after { content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 0; }
+.o-card__main:focus-visible { outline: none; }
+.o-card:has(.o-card__main:focus-visible) { outline: 2px solid var(--solar); outline-offset: 2px; }
+.o-card__links { position: relative; z-index: 1; }
 .o-card__top { display: flex; align-items: center; gap: var(--space-4); }
 .o-card__name { color: var(--ink); }
 .o-card__name a { color: inherit; }
 .o-card__links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); margin-top: auto; padding-top: var(--space-2); font-weight: 500; }
-.o-card__links a:first-child { font-weight: 600; }
 
 .o-appicon { flex: none; border-radius: 22.5%; overflow: hidden; }
 
@@ -279,6 +283,17 @@ mark.o-todo {
 .o-doc .o-callout { margin-top: var(--space-6); }
 .o-doc .o-callout h2 { margin-top: 0; }
 .o-doc .o-btn { margin-top: var(--space-4); }
+
+.o-faq { border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface-raised); margin-top: var(--space-4); }
+.o-faq details + details { border-top: 1px solid var(--line); }
+.o-faq summary {
+  display: flex; justify-content: space-between; gap: var(--space-4); cursor: pointer; list-style: none;
+  padding: var(--space-4); font-weight: 600;
+}
+.o-faq summary::-webkit-details-marker { display: none; }
+.o-faq summary::after { content: "+"; flex: none; color: var(--ink-muted); font: 400 20px/24px var(--font-sans); }
+.o-faq details[open] summary::after { content: "–"; }
+.o-faq details p { padding: 0 var(--space-4) var(--space-4); color: var(--ink-muted); }
 
 .o-table-wrap { overflow-x: auto; margin-top: var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-md); }
 .o-table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 20px; background: var(--surface-raised); }

@@ -125,11 +125,14 @@ const jsonLd = [
 
   <section class="o-section" id="support" aria-labelledby="support-title">
     <div class="o-wrap">
-      <h2 class="o-title" id="support-title">Support</h2>
-      <p style="margin-top: var(--space-3)" set:html={rich(`Questions or a bug to report? Email {email}.`)} />
-      <p class="o-muted" style="margin-top: var(--space-2)">
-        Include your app version (Settings → About). We reply within 2–3 working days.
-      </p>
+      <h2 class="o-title" id="support-title">Help and legal</h2>
+      <p style="margin-top: var(--space-3)" set:html={rich(`Questions or a bug to report? Email {email}. We reply within 2–3 working days.`)} />
+      <ul class="o-linkrow">
+        <li><a href={appPath(app.slug, "support")}>Support &amp; FAQ</a></li>
+        <li><a href={appPath(app.slug, "privacy-policy")}>Privacy policy</a></li>
+        <li><a href={appPath(app.slug, "delete-data")}>Delete your data</a></li>
+        <li><a href={appPath(app.slug, "terms")}>Terms of use</a></li>
+      </ul>
     </div>
   </section>
 </OrbitraLayout>

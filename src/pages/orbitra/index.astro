@@ -56,7 +56,7 @@ const jsonLd = [
                 <AppIcon app={app} size={64} decorative />
                 <div>
                   <h3 class="o-heading o-card__name">
-                    <a href={appPath(app.slug)}>{app.name}</a>
+                    <a class="o-card__main" href={appPath(app.slug)}>{app.name}</a>
                   </h3>
                   <p class="o-caption">by Orbitra</p>
                 </div>
@@ -64,9 +64,10 @@ const jsonLd = [
               <p>{app.summary}</p>
               <StatusPill status={app.status} />
               <div class="o-card__links">
-                <a href={appPath(app.slug)} aria-label={`View ${app.name}`}>View app</a>
+                <a href={appPath(app.slug, "support")} aria-label={`${app.name} support`}>Support</a>
                 <a href={appPath(app.slug, "privacy-policy")} aria-label={`${app.name} privacy policy`}>Privacy</a>
                 <a href={appPath(app.slug, "delete-data")} aria-label={`Delete ${app.name} data`}>Delete data</a>
+                <a href={appPath(app.slug, "terms")} aria-label={`${app.name} terms of use`}>Terms</a>
               </div>
             </article>
           ))

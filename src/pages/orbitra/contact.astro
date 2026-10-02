@@ -1,0 +1,85 @@
+---
+// /orbitra/contact/ — one place to reach Orbitra, with per-app support links.
+import OrbitraLayout from "../../layouts/OrbitraLayout.astro";
+import Icon from "../../components/orbitra/Icon.astro";
+import AppIcon from "../../components/orbitra/AppIcon.astro";
+import GooglePlayBadge from "../../components/orbitra/GooglePlayBadge.astro";
+import { studio, apps, appPath, abs, rich, mailto } from "../../lib/orbitra.js";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    url: abs(`${studio.basePath}contact/`),
+    about: {
+      "@type": "Organization",
+      name: "Orbitra",
+      url: abs(studio.basePath),
+      email: studio.contactEmail,
+      contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: studio.contactEmail, availableLanguage: "English" },
+    },
+  },
+];
+---
+
+<OrbitraLayout
+  title="Contact — Orbitra"
+  description="Contact Orbitra for app support, privacy requests or anything else. We reply within 2–3 working days."
+  active="contact"
+  crumbs={[{ label: "Orbitra", href: studio.basePath }, { label: "Contact" }]}
+  jsonLd={jsonLd}
+>
+  <section class="o-apphero">
+    <div class="o-wrap"><div style="max-width: var(--maxw-prose)">
+      <h1 class="o-title">Contact Orbitra</h1>
+      <p class="o-lead" style="margin-top: var(--space-2)">Questions, bugs, ideas or privacy requests — we read everything.</p>
+      <p class="o-contact__mail" style="margin-top: var(--space-6)" set:html={rich("{email}")} />
+      <p class="o-muted" style="margin-top: var(--space-2)">We reply within 2–3 working days, in English.</p>
+      <p style="margin-top: var(--space-6)">
+        <a class="o-btn o-btn--primary" href={mailto("Hello Orbitra")}><Icon name="mail" size={18} /> Send an email</a>
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="help-title">
+    <div class="o-wrap">
+      <div class="o-section__head">
+        <h2 class="o-title" id="help-title">Help with an app</h2>
+        <p class="o-muted">Each app has its own support page with common questions.</p>
+      </div>
+      <div class="o-grid o-grid--2">
+        {
+          apps.map((app) => (
+            <article class="o-card">
+              <div class="o-card__top">
+                <AppIcon app={app} size={48} decorative />
+                <h3 class="o-heading o-card__name">
+                  <a class="o-card__main" href={appPath(app.slug, "support")}>{app.name} support</a>
+                </h3>
+              </div>
+              <div class="o-card__links">
+                <a href={appPath(app.slug, "privacy-policy")} aria-label={`${app.name} privacy policy`}>Privacy</a>
+                <a href={appPath(app.slug, "delete-data")} aria-label={`Delete ${app.name} data`}>Delete data</a>
+                <a href={appPath(app.slug, "terms")} aria-label={`${app.name} terms of use`}>Terms</a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="o-section" aria-labelledby="requests-title">
+    <div class="o-wrap"><div style="max-width: var(--maxw-prose)">
+      <h2 class="o-title" id="requests-title">Privacy and data requests</h2>
+      <p style="margin-top: var(--space-3)">
+        To see, correct or delete data linked to you, email us with the app name in the subject. We’ll confirm within
+        30 days. You can also start from an app’s <em>Delete data</em> page above.
+      </p>
+      <h2 class="o-title" style="margin-top: var(--space-12)">Find us on Google Play</h2>
+      <p style="margin-top: var(--space-4)"><GooglePlayBadge href={studio.playDeveloperUrl} width={200} /></p>
+    </div>
+    </div>
+  </section>
+</OrbitraLayout>
