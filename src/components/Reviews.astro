@@ -1,7 +1,8 @@
 ---
 import site from "../data/site.js";
+import { featured, reviewDate, stars } from "../data/reviews.js";
 const { limit = 3, heading = "What photographers say.", link = true } = Astro.props;
-const items = site.testimonials.slice(0, limit);
+const items = featured(limit);
 ---
 <section class="sec dark">
   <div class="wrap">
@@ -12,17 +13,18 @@ const items = site.testimonials.slice(0, limit);
       </div>
       <div class="score">
         <b>{site.fiverrStats.rating}</b>
-        <div><span class="stars" aria-hidden="true">★★★★★</span><br /><span class="muted small">{site.fiverrStats.reviews} reviews on Fiverr</span></div>
+        <div><span class="stars" aria-hidden="true">★★★★★</span><br /><span class="muted small">{site.fiverrStats.reviews}+ reviews on Fiverr</span></div>
       </div>
     </div>
     <div class="grid g3" data-rise>
-      {items.map((t) => (
+      {items.map((r) => (
         <blockquote class="rv">
-          <q>{t.quote}</q>
-          <footer><b>Fiverr client</b><span>{t.tag}</span></footer>
+          <p class="rv__meta"><span class="rv__stars" aria-hidden="true">{stars(r.rating)}</span><span class="sr-only">{r.rating} out of 5</span> {reviewDate(r.date)}</p>
+          <q>{r.text}</q>
+          <footer><b>{r.name}</b><span><span aria-hidden="true">{r.flag}</span> {r.country}</span></footer>
         </blockquote>
       ))}
     </div>
-    {link && <p style="margin-top:1.75rem"><a class="link" href="/reviews/" style="color:#F7B08E">Read more reviews</a></p>}
+    {link && <p style="margin-top:1.75rem"><a class="link" href="/reviews/" style="color:#F7B08E">Read all {site.fiverrStats.reviews}+ reviews</a></p>}
   </div>
 </section>

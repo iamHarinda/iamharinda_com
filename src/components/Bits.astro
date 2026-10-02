@@ -22,7 +22,7 @@ const ico = {
 {kind === "stats" && (
   <div class="stats">
     <div class="stat"><b data-count={site.fiverrStats.rating} data-dec="1">{site.fiverrStats.rating}</b><span>Fiverr rating</span></div>
-    <div class="stat"><b data-count={site.fiverrStats.reviews}>{site.fiverrStats.reviews}</b><span>Fiverr reviews</span></div>
+    <div class="stat"><b data-count={site.fiverrStats.reviews} data-suffix="+">{site.fiverrStats.reviews}+</b><span>Fiverr reviews</span></div>
     <div class="stat"><b data-count={site.fiverrStats.ordersPlus} data-suffix="+">{site.fiverrStats.ordersPlus}+</b><span>orders delivered</span></div>
     <div class="stat"><b data-count={site.fiverrStats.countries}>{site.fiverrStats.countries}</b><span>client countries</span></div>
   </div>

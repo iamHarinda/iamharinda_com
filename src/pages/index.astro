@@ -4,6 +4,7 @@ import Bits from "../components/Bits.astro";
 import Shot from "../components/Shot.astro";
 import Pricing from "../components/Pricing.astro";
 import Reviews from "../components/Reviews.astro";
+import WorldMap from "../components/WorldMap.astro";
 import Faq from "../components/Faq.astro";
 import Cta from "../components/Cta.astro";
 import site, { waLink } from "../data/site.js";
@@ -61,7 +62,7 @@ const jsonLd = [
           <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
           <a class="btn btn--s btn--light" href="/work/">See the work</a>
         </div>
-        <p class="hero__rating"><span class="stars" aria-hidden="true">★★★★★</span> {site.fiverrStats.rating} · {site.fiverrStats.reviews} Fiverr reviews · {site.fiverrStats.ordersPlus}+ orders</p>
+        <p class="hero__rating"><span class="stars" aria-hidden="true">★★★★★</span> {site.fiverrStats.rating} · {site.fiverrStats.reviews}+ Fiverr reviews · {site.fiverrStats.ordersPlus}+ orders</p>
       </div>
       <div class="hero__meta">ASUS ProArt · Calman Verified<br />Lightroom Classic · Photoshop<br />From {site.perPhoto} a photo</div>
     </div>
@@ -100,6 +101,8 @@ const jsonLd = [
   <section class="sec sec--alt sec--tight">
     <div class="wrap"><Bits kind="stats" /></div>
   </section>
+
+  <WorldMap />
 
   <!-- Work rail -->
   <section class="sec" id="work">

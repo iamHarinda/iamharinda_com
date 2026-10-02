@@ -1,0 +1,87 @@
+---
+// Client map: every country an order has come from, with pins on the two
+// biggest markets and the full list grouped by region. The outline paths come
+// from premiumphotoedits.com (same business) in src/data/world-map.json.
+import site from "../data/site.js";
+import map from "../data/world-map.json";
+
+const { heading = true } = Astro.props;
+const total = site.clientRegions.reduce((n, r) => n + r.countries.length, 0);
+const allNames = site.clientRegions.flatMap((r) => r.countries.map(([, c]) => c)).join(", ");
+---
+
+<section class="sec" id="clients">
+  <div class="wrap">
+    {
+      heading && (
+        <div class="head">
+          <span class="eyebrow">Clients worldwide</span>
+          <h2 class="h2">Trusted in {total} countries.</h2>
+          <p class="lede">From wedding photographers in North America to studios across Europe, Asia and Oceania.</p>
+        </div>
+      )
+    }
+    <figure class="wmap" role="img" aria-label={`World map highlighting ${total} client countries: ${allNames}.`}>
+      <svg viewBox="0 0 180 67" aria-hidden="true" fill="none">
+        <path d={map.land} class="wmap__land" stroke-width="0.62" stroke-linecap="round" />
+        <path d={map.clients} class="wmap__clients" stroke-width="0.72" stroke-linecap="round" />
+      </svg>
+      {
+        site.clientMarkets.map((m) => (
+          <div class="wmap__pin" style={`left:${m.left}%;top:${m.top}%`} aria-hidden="true">
+            <span class="wmap__dot" />
+            <span class="wmap__tag"><b>{m.orders}</b> orders · {m.country === "United States" ? "USA" : m.country}</span>
+          </div>
+        ))
+      }
+    </figure>
+    <dl class="wmap__markets">
+      {site.clientMarkets.map((m) => (<div><dd class="wmap__num">{m.orders}</dd><dt>orders from {m.country === "United States" ? "the USA" : m.country}</dt></div>))}
+    </dl>
+    <details class="wmap__list">
+      <summary>See all {total} countries</summary>
+      <div class="wmap__regions">
+        {
+          site.clientRegions.map((r) => (
+            <div>
+              <h3>{r.name}</h3>
+              <ul>
+                {r.countries.map(([flag, name]) => (
+                  <li><span aria-hidden="true">{flag}</span> {name}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </details>
+  </div>
+</section>
+
+<style>
+  .wmap { position: relative; margin: 2rem 0 0; color: var(--fg); }
+  .wmap svg { display: block; width: 100%; height: auto; }
+  .wmap__land { stroke: currentColor; opacity: 0.15; }
+  .wmap__clients { stroke: currentColor; opacity: 0.8; }
+  .wmap__pin { position: absolute; }
+  .wmap__dot { position: absolute; top: -6px; left: -6px; width: 12px; height: 12px; border-radius: 50%; border: 1px solid var(--fg); background: var(--accent); }
+  .wmap__tag {
+    position: absolute; top: 50%; right: 14px; transform: translateY(-50%); display: none; white-space: nowrap;
+    padding: 0.35rem 0.75rem; border: 1px solid var(--line); border-radius: 999px; background: color-mix(in srgb, var(--bg) 90%, transparent);
+    font: 400 0.75rem/1 var(--f-body); color: var(--fg-2, var(--fg));
+  }
+  .wmap__tag b { font-weight: 800; color: var(--fg); font-size: 0.95rem; margin-right: 0.15rem; }
+  @media (min-width: 640px) { .wmap__tag { display: inline-block; } }
+
+  .wmap__markets { display: flex; gap: 2.5rem; margin: 1.5rem 0 0; }
+  .wmap__markets div { display: flex; flex-direction: column-reverse; }
+  .wmap__markets dd { margin: 0; font: 800 1.9rem/1.1 var(--f-display); }
+  .wmap__markets dt { font-size: 0.8rem; color: var(--fg-3, var(--fg)); }
+  @media (min-width: 640px) { .wmap__markets { display: none; } }
+
+  .wmap__list { margin-top: 1.75rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+  .wmap__list summary { cursor: pointer; font-weight: 600; width: fit-content; }
+  .wmap__regions { display: grid; gap: 1.5rem; margin-top: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+  .wmap__regions h3 { font: 600 0.75rem/1.2 var(--f-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-3, var(--fg)); margin: 0 0 0.6rem; }
+  .wmap__regions ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; font-size: 0.92rem; }
+</style>

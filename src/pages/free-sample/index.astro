@@ -3,6 +3,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/PageHero.astro";
 import site, { waLink } from "../../data/site.js";
 import { breadcrumb } from "../../lib/schema.js";
+import { featured } from "../../data/reviews.js";
+
+const quote = featured(1)[0];
 
 const crumbs = [{ name: "Home", path: "/" }, { name: "Free sample edit", path: "/free-sample/" }];
 ---
@@ -74,8 +77,8 @@ const crumbs = [{ name: "Home", path: "/" }, { name: "Free sample edit", path: "
           <p>Send the link to <a class="link" href={waLink("Hi Harinda, here's a link to 3 photos for a free sample edit:")} data-track="whatsapp">{site.contact.whatsappDisplay}</a></p>
         </div>
         <blockquote class="card">
-          <p style="font:400 1.1rem/1.45 var(--f-display);color:var(--fg)">“{site.testimonials[0].quote}”</p>
-          <p class="small muted" style="margin-top:.75rem">Fiverr client · {site.testimonials[0].tag}</p>
+          <p style="font:400 1.1rem/1.45 var(--f-display);color:var(--fg)">“{quote.text}”</p>
+          <p class="small muted" style="margin-top:.75rem">{quote.name} · {quote.flag} {quote.country}</p>
         </blockquote>
       </aside>
     </div>

@@ -4,20 +4,40 @@ import site from "../data/site.js";
 
 const { path = "/" } = Astro.props;
 const isCurrent = (href) => href === path || (href !== "/" && path.startsWith(href));
+const groupCurrent = (item) => item.children?.some((c) => isCurrent(c.href));
 ---
 
 <nav class="nav" aria-label="Primary">
   <a class="nav__brand" href="/" aria-label="Harinda Fernando — home"><Logo variant="sig" /></a>
   <ul class="nav__links">
-    {site.nav.map((item) => (
-      <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>
-    ))}
+    {site.nav.map((item) =>
+      item.children ? (
+        <li class="nav__dd" data-dd>
+          <button type="button" class="nav__ddbtn" aria-expanded="false" aria-haspopup="true" aria-current={groupCurrent(item) ? "page" : undefined}>
+            {item.label}
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </button>
+          <ul class="nav__menu">
+            {item.children.map((c) => (
+              <li>
+                <a href={c.href} aria-current={isCurrent(c.href) ? "page" : undefined}>
+                  <strong>{c.label}</strong>
+                  {c.line && <span>{c.line}</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+      ) : (
+        <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>
+      )
+    )}
   </ul>
   <a class="btn btn--p btn--sm nav__cta" href="/free-sample/">Get 3 free edits</a>
   <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" id="nav-toggle">Menu</button>
 </nav>
 <div class="nav__sheet" id="nav-sheet" data-open="false">
-  {site.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+  {site.nav.flatMap((item) => item.children ?? [item]).map((item) => <a href={item.href}>{item.label}</a>)}
   <a href="/contact/">Contact</a>
   <a class="btn btn--p" href="/free-sample/">Get 3 photos edited free</a>
 </div>

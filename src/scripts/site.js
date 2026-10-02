@@ -19,6 +19,16 @@ if (toggle && sheet) {
   addEventListener("keydown", (e) => { if (e.key === "Escape" && sheet.dataset.open === "true") { set(false); toggle.focus(); } });
 }
 
+/* ── Services dropdown: click/tap toggle, Escape and outside click close ─ */
+document.querySelectorAll("[data-dd]").forEach((dd) => {
+  const btn = dd.querySelector("button");
+  const set = (open) => { dd.dataset.open = String(open); btn.setAttribute("aria-expanded", String(open)); };
+  btn.addEventListener("click", () => set(dd.dataset.open !== "true"));
+  dd.addEventListener("mouseleave", () => set(false));
+  addEventListener("click", (e) => { if (!dd.contains(e.target)) set(false); });
+  dd.addEventListener("keydown", (e) => { if (e.key === "Escape") { set(false); btn.focus(); } });
+});
+
 /* ── Liquid glass: edge refraction map (Chromium only; others keep the blur) */
 const nav = $(".nav");
 const mapImg = document.getElementById("lg-map");

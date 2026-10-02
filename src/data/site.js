@@ -51,13 +51,23 @@ export const site = {
     { label: "Order on Fiverr", price: "Same packages, plus Fiverr's service fee", pay: "Upfront, held by Fiverr until delivery", protection: "Fiverr buyer protection", best: "A first order through a platform you know" },
   ],
 
-  // Public social proof from the Fiverr profile. Check these against Fiverr
-  // before every redeploy — they are shown as text only, never as review schema.
-  fiverrStats: { rating: "4.9", reviews: 183, ordersPlus: 300, countries: 15 },
+  // Public social proof, matched to premiumphotoedits.com (same business,
+  // owner-confirmed 2 Oct 2026). `reviews` and `ordersPlus` are shown with a "+".
+  // The 4.9 rating is the average of the reviews in src/data/reviews.json.
+  // Shown as text only, never as review schema.
+  fiverrStats: { rating: "4.9", reviews: 195, ordersPlus: 1150, countries: 49 },
 
-  clientCountries: [
-    "United States", "Canada", "United Kingdom", "France", "Germany", "Spain", "Italy",
-    "Colombia", "South Africa", "India", "Thailand", "Philippines", "Japan", "Australia", "New Zealand",
+  // Client map (src/components/WorldMap.astro). Order counts are the two
+  // biggest markets; the regions list every client country.
+  clientMarkets: [
+    { country: "United States", orders: "400+", left: 22.78, top: 29.10 },
+    { country: "Canada", orders: "100+", left: 20.56, top: 16.42 },
+  ],
+  clientRegions: [
+    { name: "Americas", countries: [["🇺🇸", "United States"], ["🇨🇦", "Canada"], ["🇲🇽", "Mexico"], ["🇩🇴", "Dominican Republic"], ["🇵🇷", "Puerto Rico"], ["🇦🇬", "Antigua and Barbuda"], ["🇨🇴", "Colombia"], ["🇧🇴", "Bolivia"], ["🇵🇾", "Paraguay"]] },
+    { name: "Europe", countries: [["🇬🇧", "United Kingdom"], ["🇳🇱", "Netherlands"], ["🇧🇪", "Belgium"], ["🇫🇷", "France"], ["🇩🇪", "Germany"], ["🇪🇸", "Spain"], ["🇵🇹", "Portugal"], ["🇨🇭", "Switzerland"], ["🇦🇹", "Austria"], ["🇮🇹", "Italy"], ["🇩🇰", "Denmark"], ["🇳🇴", "Norway"], ["🇫🇮", "Finland"], ["🇵🇱", "Poland"], ["🇨🇿", "Czech Republic"], ["🇭🇺", "Hungary"], ["🇷🇴", "Romania"], ["🇦🇱", "Albania"], ["🇬🇷", "Greece"], ["🇧🇾", "Belarus"], ["🇷🇺", "Russia"]] },
+    { name: "Middle East & Africa", countries: [["🇦🇪", "United Arab Emirates"], ["🇸🇦", "Saudi Arabia"], ["🇮🇱", "Israel"], ["🇿🇦", "South Africa"]] },
+    { name: "Asia & Oceania", countries: [["🇮🇳", "India"], ["🇵🇰", "Pakistan"], ["🇧🇩", "Bangladesh"], ["🇱🇰", "Sri Lanka"], ["🇲🇻", "Maldives"], ["🇹🇭", "Thailand"], ["🇲🇾", "Malaysia"], ["🇸🇬", "Singapore"], ["🇮🇩", "Indonesia"], ["🇵🇭", "Philippines"], ["🇭🇰", "Hong Kong"], ["🇹🇼", "Taiwan"], ["🇯🇵", "Japan"], ["🇦🇺", "Australia"], ["🇳🇿", "New Zealand"]] },
   ],
   areasServed: ["United States", "United Kingdom", "Canada", "Europe", "Australia"],
   areasServedCodes: ["US", "GB", "CA", "AU", "EU"],
@@ -86,8 +96,17 @@ export const site = {
   turnstileSiteKey: "",
 
   // ── Navigation ────────────────────────────────────────────────────────────
+  // An item with `children` renders as a dropdown on desktop and a group in the
+  // mobile sheet. Photo editing stays first: it is the main service.
   nav: [
-    { label: "Photo editing", href: "/photo-editing/" },
+    {
+      label: "Services",
+      children: [
+        { label: "Photo editing", href: "/photo-editing/", line: "Wedding, portrait, product and food" },
+        { label: "Web development", href: "/web-development/", line: "Hand-coded sites, fixed price" },
+        { label: "Polo & golf shirt design", href: "/fashion-designing/", line: "Print-ready artwork and mockups" },
+      ],
+    },
     { label: "Work", href: "/work/" },
     { label: "Pricing", href: "/pricing/" },
     { label: "Reviews", href: "/reviews/" },
@@ -101,16 +120,7 @@ export const site = {
     { label: "Polo & golf shirt design", href: "/fashion-designing/", line: "Print-ready polo and golf shirt patterns with front and back mockups, from $10." },
   ],
 
-  // ── Reviews (paraphrased from public Fiverr feedback) ─────────────────────
-  // Replace with verbatim quotes and first names when clients agree.
-  testimonials: [
-    { quote: "I sent some really dark pictures and they came back looking exactly how I wanted. Fast, too.", tag: "Event photos" },
-    { quote: "The photos came back clean, vibrant and professionally done. A great eye for detail, with everything enhanced in a natural, balanced way.", tag: "Portrait session" },
-    { quote: "Fernando was very professional: quick response time, fast delivery and really flexible. I'll definitely use his services again.", tag: "Repeat client" },
-    { quote: "Fernando did an excellent job editing some portraits for me. Super happy with the edits.", tag: "Portraits" },
-    { quote: "The whole process was really smooth. Quick replies, good communication, fast delivery. No drama, just solid work.", tag: "Gallery edit" },
-    { quote: "Communication was easy from start to finish, and the edits came back looking natural, exactly the style I was after. Will order again.", tag: "Style match" },
-  ],
+  // Reviews live in src/data/reviews.json (verbatim, see src/data/reviews.js).
 
   // ── Photo editing FAQ (standalone answers; quotable by AI answer engines) ─
   faqs: [
