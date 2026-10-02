@@ -1,5 +1,6 @@
 ---
 import site from "../data/site.js";
+import FiverrLogo from "./FiverrLogo.astro";
 import { featured, reviewDate, stars } from "../data/reviews.js";
 const { limit = 3, heading = "What photographers say.", link = true } = Astro.props;
 const items = featured(limit);
@@ -12,8 +13,8 @@ const items = featured(limit);
         <h2 class="h2">{heading}</h2>
       </div>
       <div class="score">
-        <b>{site.fiverrStats.rating}</b>
-        <div><span class="stars" aria-hidden="true">★★★★★</span><br /><span class="muted small">{site.fiverrStats.reviews}+ reviews on Fiverr</span></div>
+        <FiverrLogo height={30} label="Fiverr" />
+        <div><b>{site.fiverrStats.reviews}+</b><br /><span class="muted small">reviews on Fiverr</span></div>
       </div>
     </div>
     <div class="grid g3" data-rise>

@@ -7,6 +7,7 @@ import Pricing from "./Pricing.astro";
 import Reviews from "./Reviews.astro";
 import Faq from "./Faq.astro";
 import Cta from "./Cta.astro";
+import FiverrLogo from "./FiverrLogo.astro";
 import site, { waLink } from "../data/site.js";
 import { portfolio } from "../data/portfolio.js";
 import { service, faqPage, breadcrumb } from "../lib/schema.js";
@@ -31,7 +32,7 @@ const jsonLd = [service({ name: s.name, path: s.path, description: s.description
       <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
       <a class="btn btn--s" href={waLink(`Hi Harinda, I'd like to talk about ${s.name.toLowerCase()}.`)}>WhatsApp me</a>
     </div>
-    <p class="small muted" style="margin-top:.5rem"><span class="stars" style="color:var(--accent)" aria-hidden="true">★★★★★</span> {site.fiverrStats.rating} from {site.fiverrStats.reviews}+ Fiverr reviews · from {site.perPhoto} a photo</p>
+    <p class="small muted" style="margin-top:.5rem"><FiverrLogo height={14} label="Fiverr" /> {site.fiverrStats.reviews}+ reviews · from {site.perPhoto} a photo</p>
   </PageHero>
 
   <section class="sec sec--top0">
