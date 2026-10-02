@@ -1,61 +1,23 @@
 ---
+import Logo from "./Logo.astro";
 import site from "../data/site.js";
 
 const { path = "/" } = Astro.props;
-const isCurrent = (href) =>
-  href === path || (href !== "/" && path.startsWith(href));
+const isCurrent = (href) => href === path || (href !== "/" && path.startsWith(href));
 ---
 
-<header class="site-header">
-  <div class="container site-header__inner">
-    <a class="wordmark" href="/">iam<span>harinda</span></a>
-
-    <nav class="site-nav" aria-label="Primary" data-open="false">
-      <button
-        type="button"
-        class="site-nav__toggle"
-        aria-expanded="false"
-        aria-controls="primary-nav"
-      >
-        <span class="site-nav__toggle-label">Menu</span>
-      </button>
-
-      <ul class="site-nav__panel" id="primary-nav">
-        {
-          site.nav.map((item) => (
-            <li>
-              <a
-                href={item.href}
-                aria-current={isCurrent(item.href) ? "page" : undefined}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
-  </div>
-
-  {/* With JavaScript disabled the toggle can't work, so just show the links. */}
-  <noscript>
-    <style>
-      @media (max-width: 44rem) {
-        .site-nav__toggle { display: none !important; }
-        .site-nav__panel,
-        .site-nav[data-open="false"] .site-nav__panel {
-          position: static !important;
-          display: flex !important;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 0.25rem 1rem !important;
-          min-width: 0 !important;
-          padding: 0 !important;
-          border: 0 !important;
-          background: transparent !important;
-          box-shadow: none !important;
-        }
-      }
-    </style>
-  </noscript>
-</header>
+<nav class="nav" aria-label="Primary">
+  <a class="nav__brand" href="/" aria-label="Harinda Fernando — home"><Logo variant="sig" /></a>
+  <ul class="nav__links">
+    {site.nav.map((item) => (
+      <li><a href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>{item.label}</a></li>
+    ))}
+  </ul>
+  <a class="btn btn--p btn--sm nav__cta" href="/free-sample/">Get 3 free edits</a>
+  <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sheet" id="nav-toggle">Menu</button>
+</nav>
+<div class="nav__sheet" id="nav-sheet" data-open="false">
+  {site.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+  <a href="/contact/">Contact</a>
+  <a class="btn btn--p" href="/free-sample/">Get 3 photos edited free</a>
+</div>

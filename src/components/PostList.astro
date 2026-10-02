@@ -1,0 +1,26 @@
+---
+import { categories, fmtDate } from "../data/blog.js";
+const { posts, active = "all", search = true, total } = Astro.props;
+---
+<div class="chips" style="margin-bottom:1.25rem" aria-label="Blog categories">
+  <a class="chip" href="/blog/" aria-current={active === "all" ? "page" : undefined} style="display:inline-flex;align-items:center;text-decoration:none">All</a>
+  {Object.entries(categories).map(([k, c]) => (
+    <a class="chip" href={`/blog/category/${k}/`} aria-current={active === k ? "page" : undefined} style="display:inline-flex;align-items:center;text-decoration:none">{c.label}</a>
+  ))}
+</div>
+{search && (
+  <div class="field" style="max-width:28rem;margin-bottom:1.5rem">
+    <label for="blog-q" class="sr-only">Search articles</label>
+    <input id="blog-q" type="search" placeholder={`Search ${total ?? posts.length} articles…`} autocomplete="off" />
+  </div>
+)}
+<p id="blog-empty" class="muted" hidden>No articles match that search.</p>
+<div class="grid g3">
+  {posts.map((p) => (
+    <a class="post-card" href={`/blog/${p.id}/`} data-post>
+      <span class="mono">{categories[p.data.category].label} · {fmtDate(p.data.publishDate)}</span>
+      <h2>{p.data.title}</h2>
+      <p>{p.data.description}</p>
+    </a>
+  ))}
+</div>

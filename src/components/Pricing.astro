@@ -1,0 +1,16 @@
+---
+import site from "../data/site.js";
+const { note = true } = Astro.props;
+---
+<div class="price" data-rise>
+  {site.packages.map((p) => (
+    <article class={`pc${p.featured ? " pc--hot" : ""}`}>
+      {p.featured && <span class="pc__tag">Most popular</span>}
+      <div class="pc__k">{p.photos} photos</div>
+      <div class="pc__v">${p.price}</div>
+      <div class="pc__u">{p.days}-day delivery · ${(p.price / p.photos).toFixed(2)} each</div>
+      <p>{p.note}. Unlimited revisions.</p>
+    </article>
+  ))}
+</div>
+{note && <p class="price-note">{site.bulkNote} Prices in USD, last reviewed {new Date(site.pricesUpdated).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}.</p>}

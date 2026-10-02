@@ -1,6 +1,7 @@
 ---
 title: "Lightroom Masking for Portraits: Skin, Sky and Selective Color Explained"
 description: "Lightroom's masking tools let you edit one part of a photo without touching the rest. Here's how wedding and portrait photographers actually put them to work."
+category: photo-editing
 publishDate: 2026-03-23
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "How Much Does Professional Photo Editing Cost? A Pricing Guide for Photographers"
 description: "A breakdown of how photo editing services actually price their work — per photo, per hour, or flat rate — and what drives the cost up or down."
+category: photo-editing
 publishDate: 2026-09-17
 ---
 

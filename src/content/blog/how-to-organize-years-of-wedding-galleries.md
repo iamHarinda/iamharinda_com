@@ -1,6 +1,7 @@
 ---
 title: "How to Organize Years of Wedding Galleries Without Losing Anything"
 description: "A messy folder structure across years of client work makes finding anything a nightmare. Here's a system that actually holds up as your archive grows."
+category: photo-editing
 publishDate: 2026-03-08
 ---
 

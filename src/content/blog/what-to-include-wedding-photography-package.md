@@ -1,6 +1,7 @@
 ---
 title: "What to Include in a Wedding Photography Package (Editing, Turnaround, Extras)"
 description: "Package structure is one of the first things couples compare between photographers. What's usually included, what's an add-on, and where editing fits in."
+category: photo-editing
 publishDate: 2026-04-22
 ---
 

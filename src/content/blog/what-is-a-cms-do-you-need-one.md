@@ -1,6 +1,7 @@
 ---
 title: "What Is a CMS, and Do You Actually Need One?"
 description: "A CMS gets mentioned in nearly every website quote, but rarely explained. What it actually does, and how to tell if your site needs one."
+category: web-development
 publishDate: 2026-05-28
 ---
 

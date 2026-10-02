@@ -1,203 +1,62 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import site, { waLink } from "../data/site.js";
-import {
-  professionalService,
-  offerCatalogDocument,
-  faqPage,
-  breadcrumb,
-} from "../lib/schema.js";
+import PageHero from "../components/PageHero.astro";
+import Pricing from "../components/Pricing.astro";
+import Faq from "../components/Faq.astro";
+import Cta from "../components/Cta.astro";
+import site from "../data/site.js";
+import { service, faqPage, breadcrumb } from "../lib/schema.js";
 
-const pricesUpdated = new Date(site.pricesUpdated).toLocaleDateString("en-GB", {
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-});
-
-const pricingFaqs = site.faqs.filter((f) =>
-  [
-    "Do you offer a free sample edit?",
-    "What does photo editing cost?",
-    "When do I pay?",
-    "How many revisions do I get?",
-  ].includes(f.q)
-);
-
-const jsonLd = [
-  professionalService(),
-  offerCatalogDocument(),
-  faqPage(pricingFaqs),
-  breadcrumb([
-    { name: "Home", path: "/" },
-    { name: "Pricing", path: "/pricing/" },
-  ]),
-];
+const crumbs = [{ name: "Home", path: "/" }, { name: "Pricing", path: "/pricing/" }];
+const faqs = site.faqs.filter((f) => /cost|pay|revisions|free/i.test(f.q));
+const payments = ["PayPal invoice (card, Venmo, Apple Pay, Google Pay)", "PayPal transfer", "Payoneer", "Remitly", "TapSend", "Bank transfer"];
+const jsonLd = [service({ name: "Photo editing", path: "/pricing/", description: "Photo editing packages from $10 per 50 photos." }), faqPage(faqs), breadcrumb(crumbs)];
 ---
+<BaseLayout rawTitle="Photo Editing Prices per Image, Web & Design Rates" description="Photo editing from $0.20 per image, no deposit, pay after approval. Custom websites from $750, polo shirt design from $10. All prices in USD." path="/pricing/" jsonLd={jsonLd}>
+  <PageHero eyebrow="Pricing" title="Prices for photo editing, web development and polo design" lede="Flat, published prices in US dollars. Photo editing is paid after you approve the gallery when you order direct." crumbs={crumbs} />
 
-<BaseLayout
-  title="Pricing"
-  description={`What each service costs: photo editing from $10, web development from $750, fashion designing from $10. All prices in USD.`}
-  path="/pricing/"
-  jsonLd={jsonLd}
->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Pricing</span>
-        <h1 class="h1"><span class="split">What everything costs.</span></h1>
-        <p>
-          Four services, each priced its own way. Here is the summary — follow a
-          card for the full breakdown. Every service is quoted or invoiced in US
-          dollars.
-        </p>
-        <p class="form-note">Prices last reviewed {pricesUpdated}.</p>
-      </div>
-
-      <div class="price-grid">
-        {
-          site.pricingSummary.map((s) => (
-            <a class="card price-card rise" href={s.href} data-spot>
-              <div class="price-card__photos">{s.label}</div>
-              <div class="price-card__amount grad-text">from {s.from}</div>
-              <div class="price-card__unit">{s.unit}</div>
-              <p style="margin-top:1rem">{s.line}</p>
-            </a>
-          ))
-        }
-      </div>
+  <section class="sec sec--top0" id="photo-editing">
+    <div class="wrap">
+      <div class="head"><h2 class="h2">Photo editing · {site.perPhoto} a photo</h2><p class="lede">Weddings, portraits, events, product and food. {site.freeSample.short} before you order.</p></div>
+      <Pricing />
+      <ul class="checks" style="margin-top:1.75rem">{site.includes.map((i) => <li>{i}</li>)}</ul>
     </div>
   </section>
 
-  <!-- ── Photo editing — full breakdown ──────────────────────────────── -->
-  <section class="section" id="photo-editing">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Photo editing</span>
-        <h2 class="h2 reveal"><span class="split">Flat rates. Paid after delivery.</span></h2>
-        <p>Priced by the number of photos. No subscription, no deposit, no per-revision fee.</p>
+  <section class="sec sec--alt">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Two ways to order</span><h2 class="h2">Order direct or on Fiverr</h2></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col"></th>{site.orderWays.map((o) => <th scope="col">{o.label}</th>)}</tr></thead>
+          <tbody>
+            <tr><th scope="row">Price</th>{site.orderWays.map((o) => <td>{o.price}</td>)}</tr>
+            <tr><th scope="row">When you pay</th>{site.orderWays.map((o) => <td>{o.pay}</td>)}</tr>
+            <tr><th scope="row">Protection</th>{site.orderWays.map((o) => <td>{o.protection}</td>)}</tr>
+            <tr><th scope="row">Best for</th>{site.orderWays.map((o) => <td>{o.best}</td>)}</tr>
+          </tbody>
+        </table>
       </div>
-
-      <div class="price-grid">
-        {
-          site.packages.map((p, i) => (
-            <article class={`card price-card rise${i === 1 ? " price-card--featured beam" : ""}`} data-spot>
-              <div class="price-card__photos">{p.photos} photos</div>
-              <div class="price-card__amount grad-text">${p.price}</div>
-              <div class="price-card__unit">
-                ${(p.price / p.photos).toFixed(2)} per photo · {site.currency}
-              </div>
-            </article>
-          ))
-        }
+      <div class="btn-row" style="margin-top:1.25rem">
+        <a class="btn btn--p" href="/free-sample/">Start with a free sample</a>
+        <a class="btn btn--s" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">Order on Fiverr</a>
       </div>
-
-      <div
-        class="card calc rise beam"
-        data-spot
-        data-calc
-        data-rate={(site.packages[0].price / site.packages[0].photos).toFixed(2)}
-        style="margin-top:2rem"
-      >
-        <div class="calc__head">
-          <h3>Not sure how many? Work it out.</h3>
-          <p>Drag to your photo count and see the price update.</p>
-        </div>
-        <label class="sr-only" for="calc-range">Number of photos</label>
-        <input
-          type="range"
-          id="calc-range"
-          class="calc__range"
-          min={site.packages[0].photos}
-          max="2000"
-          step="50"
-          value="100"
-        />
-        <div class="calc__readout">
-          <span><b id="calc-count">100</b> photos</span>
-          <span class="calc__amount grad-text" id="calc-price">$20.00</span>
-        </div>
-        <p class="calc__note" id="calc-note" hidden>{site.bulkNote}</p>
-      </div>
-
-      <script define:vars={{ cap: site.packages[site.packages.length - 1].photos }}>
-        const calc = document.querySelector("[data-calc]");
-        if (calc) {
-          const rate = Number(calc.dataset.rate);
-          const range = calc.querySelector("#calc-range");
-          const countEl = calc.querySelector("#calc-count");
-          const priceEl = calc.querySelector("#calc-price");
-          const noteEl = calc.querySelector("#calc-note");
-          const update = () => {
-            const photos = Number(range.value);
-            countEl.textContent = photos.toLocaleString("en-US");
-            priceEl.textContent = `$${(photos * rate).toFixed(2)}`;
-            noteEl.hidden = photos <= cap;
-          };
-          range.addEventListener("input", update);
-          update();
-        }
-      </script>
-
-      <div class="callout beam rise" style="margin-top:2.5rem">
-        <div>
-          <h2 class="grad-text">{site.freeSample.short}</h2>
-          <p>{site.freeSample.line} The best way to check the quality before you order.</p>
-        </div>
-        <a class="btn" data-magnetic href={waLink("Hi Harinda, could you do a free sample edit of a few of my photos?")}>{site.freeSample.cta}</a>
-      </div>
+      <p class="price-note">Payment methods for direct orders: {payments.join(" · ")}.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Every photo order includes</span>
-        <h2 class="h2 reveal">What is always in the price.</h2>
-      </div>
-      <ul class="list-check rise">
-        {site.includes.map((item) => <li>{item}</li>)}
-      </ul>
+  <section class="sec">
+    <div class="wrap grid g2">
+      <a class="card card--link" href="/web-development/#pricing"><span class="eyebrow">Web development</span><h3 style="font:500 2.4rem/1 var(--f-display);margin:.5rem 0">From $750</h3><p>Fixed price after a free scope call. Hand-coded, no WordPress, and you keep the code. Optional upkeep $150/month.</p><span class="link" style="margin-top:auto">See web development prices</span></a>
+      <a class="card card--link" href="/fashion-designing/#pricing"><span class="eyebrow">Polo &amp; golf shirt design</span><h3 style="font:500 2.4rem/1 var(--f-display);margin:.5rem 0">From $10</h3><p>Print-ready designs with front and back mockups. $10 for 1 design, $25 for 3, $40 for 5. Unlimited revisions.</p><span class="link" style="margin-top:auto">See polo design packages</span></a>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Payment methods</span>
-        <h2 class="h2 reveal">However works for you.</h2>
-        <p>Photo work is invoiced once the edited photos are delivered and approved. Web and fashion design projects are staged — see each service page.</p>
-      </div>
-      <div class="tools-grid">
-        {
-          site.paymentLogos.map((p) => (
-            <div class="tool-card rise" data-spot>
-              <span class="tool-card__logo">
-                <img src={p.logo} alt={p.name} width="40" height="40" loading="lazy" decoding="async" />
-              </span>
-              <span class="tool-card__name">{p.name}</span>
-            </div>
-          ))
-        }
-      </div>
-      <ul class="pay-list rise" style="margin-top:2rem">
-        {site.payments.map((item) => <li>{item}</li>)}
-      </ul>
+  <section class="sec sec--alt">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Questions</span><h2 class="h2">Pricing FAQ</h2></div>
+      <Faq items={faqs} />
     </div>
   </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Ordering photo editing</span>
-        <h2 class="h2 reveal">How to place an order.</h2>
-      </div>
-      <ol class="list-check rise">
-        {site.ordering.map((item) => <li>{item}</li>)}
-      </ol>
-      <div class="btn-row" style="margin-top:2rem">
-        <a class="btn" data-magnetic href={waLink("Hi Harinda, I'd like to order photo editing. Here are the details:")}>Order on WhatsApp</a>
-        <a class="btn btn--grad" href={site.contact.fiverr} target="_blank" rel="noopener">Book on Fiverr</a>
-      </div>
-    </div>
-  </section>
+  <Cta />
 </BaseLayout>

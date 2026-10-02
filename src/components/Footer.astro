@@ -1,63 +1,53 @@
 ---
+import Logo from "./Logo.astro";
 import site, { waLink } from "../data/site.js";
+import orbitra from "../data/orbitra/studio.js";
 const year = new Date().getFullYear();
 ---
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div>
-        <p class="footer__brand">iamharinda</p>
-        <p style="margin-top:.5rem;max-width:32ch">
-          Photo editing, web development, and fashion designing. One person,
-          working with clients in the United States, Canada and Europe.
-        </p>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <Logo variant="full" />
+        <p style="margin-top:1rem;max-width:30ch">{site.tagline} Hand-edited photo editing for photographers in the US, UK, Canada, Europe and Australia.</p>
       </div>
-
       <div>
-        <h2>Get in touch</h2>
+        <p class="foot__title">Photo editing</p>
         <ul>
-          <li><a href={waLink("Hi Harinda, I found your site and I'd like to get in touch.")}>WhatsApp</a></li>
-          <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
-          <li><a href={site.contact.fiverr} rel="me noopener" target="_blank">Fiverr profile</a></li>
+          <li><a href="/photo-editing/">All photo editing</a></li>
+          <li><a href="/photo-editing/wedding/">Wedding photo editing</a></li>
+          <li><a href="/photo-editing/portrait-headshot/">Portrait &amp; headshot editing</a></li>
+          <li><a href="/photo-editing/product-food/">Product &amp; food editing</a></li>
+          <li><a href="/photo-editing/how-to-send-files/">How to send your files</a></li>
         </ul>
       </div>
-
       <div>
-        <h2>Services</h2>
+        <p class="foot__title">Studio</p>
         <ul>
-          <li><a href="/photo-editing/">Wedding photo editing</a></li>
-          <li><a href="/web-development/">Web development</a></li>
-          <li><a href="/fashion-designing/">Fashion Designing</a></li>
-          <li><a href="/pricing/#photo-editing">Photo editing</a></li>
+          <li><a href="/work/">Work</a></li>
           <li><a href="/pricing/">Pricing</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Pages</h2>
-        <ul>
+          <li><a href="/reviews/">Reviews</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/web-development/">Web development</a></li>
+          <li><a href="/fashion-designing/">Polo &amp; golf shirt design</a></li>
         </ul>
       </div>
-
       <div>
-        <h2>Areas served</h2>
+        <p class="foot__title">Contact</p>
         <ul>
-          {site.areasServed.map((a) => <li>{a}</li>)}
+          <li><a href="/free-sample/">Free sample edit</a></li>
+          <li><a href="/contact/">Contact form</a></li>
+          <li><a href={waLink("Hi Harinda, I found your site and I'd like to talk about editing.")} data-track="whatsapp">WhatsApp {site.contact.whatsappDisplay}</a></li>
+          <li><a href={`mailto:${site.contact.email}`} data-track="email">{site.contact.email}</a></li>
+          <li><a href={site.contact.fiverr} rel="me noopener" target="_blank" data-track="fiverr">Fiverr profile</a></li>
         </ul>
       </div>
     </div>
-
-    <div class="footer__legal">
-      <span>
-        &copy; {year} {site.personName}, trading as iamharinda. Based in
-        {" "}{site.location.country}, working with clients in the United States,
-        Canada and Europe.
-      </span>
-      <span><a href="/llms.txt">llms.txt</a></span>
+    <div class="foot__legal">
+      <span>© {year} {site.personName}, trading as {site.legalName}. {site.location.note}</span>
+      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="#" data-consent-open>Cookie settings</a>{!orbitra.draft && <> · <a href="/orbitra/">Apps by Orbitra</a></>}</span>
     </div>
   </div>
 </footer>

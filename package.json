@@ -1,32 +1,30 @@
 {
   "name": "iamharinda-com",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Personal business site for iamharinda.com — human photo retouching and colour correction.",
+  "description": "iamharinda.com — hand-edited photo editing for photographers, plus web development and polo shirt design.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "setup": "npm run fetch:fonts && npm run gen:placeholders && npm run optimise:photos && npm run gen:icons",
-    "fetch:fonts": "node scripts/fetch-fonts.mjs",
-    "gen:placeholders": "node scripts/gen-placeholders.mjs",
-    "optimise:photos": "node scripts/optimise-photos.mjs",
     "gen:icons": "node scripts/gen-icons.mjs",
+    "optimise:photos": "node scripts/optimise-photos.mjs",
     "gen:orbitra": "node scripts/gen-orbitra-assets.mjs"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
+    "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.6.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/instrument-sans": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
     "astro": "^5.13.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26"
   },
   "devDependencies": {
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
     "sharp": "^0.34.4"
   },
   "engines": {

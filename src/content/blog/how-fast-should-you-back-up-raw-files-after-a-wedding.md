@@ -1,6 +1,7 @@
 ---
 title: "How Fast Should You Back Up RAW Files After a Wedding?"
 description: "Waiting until 'later' to back up wedding photos is how galleries actually get lost. Here's a realistic timeline for getting files safe."
+category: photo-editing
 publishDate: 2026-02-15
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Do You Need an Online Store, or Just a Website With a 'Contact Me' Button?"
 description: "E-commerce sounds like the obvious upgrade, but it's a genuinely different, and more expensive, kind of project than most businesses actually need."
+category: web-development
 publishDate: 2026-06-21
 ---
 

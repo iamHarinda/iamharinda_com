@@ -1,12 +1,12 @@
 {
-  "name": "iamharinda — human photo editing",
-  "short_name": "iamharinda",
-  "description": "Human photo editing and colour correction for photographers and studios in the United States, Canada and Europe. No AI presets, no one-click batch looks. True colours — skin stays skin, whites stay white. Free sample edit, unlimited revisions, payment after delivery.",
+  "name": "Harinda — Photo Editing",
+  "short_name": "Harinda",
+  "description": "Hand-edited wedding, portrait and product photo editing for professional photographers in the US, UK, Canada, Europe and Australia. Lightroom, no AI, 3 free sample edits, pay after you approve.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#0a0910",
-  "theme_color": "#0a0910",
+  "background_color": "#17171A",
+  "theme_color": "#17171A",
   "lang": "en",
   "icons": [
     {

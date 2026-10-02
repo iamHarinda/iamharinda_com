@@ -1,6 +1,7 @@
 ---
 title: "Cloud Backup vs. Local Drives: What Wedding Photographers Should Actually Use"
 description: "Cloud backup and local drives solve different problems. Here's how wedding photographers should actually combine them instead of picking just one."
+category: photo-editing
 publishDate: 2026-03-11
 ---
 

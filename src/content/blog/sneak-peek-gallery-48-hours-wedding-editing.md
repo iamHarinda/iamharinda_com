@@ -1,6 +1,7 @@
 ---
 title: "How to Deliver a Sneak Peek Gallery Within 48 Hours Without Rushing the Full Edit"
 description: "Most couples want a preview gallery fast. Here's how to deliver one within 48 hours without wrecking the quality of the final, complete edit."
+category: photo-editing
 publishDate: 2026-04-16
 ---
 

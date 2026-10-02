@@ -1,6 +1,7 @@
 ---
 title: "Where Do Golf Teams Actually Get Custom Polo Shirts Designed?"
 description: "There's no single obvious place to start when your team needs custom polos. Here's a real breakdown of the actual options and how they differ."
+category: apparel-design
 publishDate: 2026-01-13
 ---
 

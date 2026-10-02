@@ -1,7 +1,7 @@
 name: Build and deploy
 
-# Runs only for the production branch. Day-to-day work happens on `development`;
-# merging `development` into `live` is what ships the site to Hostinger.
+# Runs for the production branch. Day-to-day work happens on `development`;
+# merging `development` into `live` ships the site to Hostinger.
 on:
   push:
     branches: [live]
@@ -14,7 +14,6 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,23 +21,11 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Fetch self-hosted fonts
-        run: npm run fetch:fonts
-        continue-on-error: true
-
-      - name: Generate any missing placeholder images
-        run: npm run gen:placeholders
-        continue-on-error: true
-
-      - name: Optimise source photos
-        run: npm run optimise:photos
-        continue-on-error: true
 
       - name: Build
         run: npm run build
@@ -53,11 +40,10 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: ./
-          # Files on the server that the build does not produce (e.g. contact.php
-          # is in the build, but mailbox autoconfig files are not) are left in
-          # place. Flip to true only if you want an exact mirror.
+          # Leaves server-only files (mail autoconfig etc.) in place. The old
+          # site's files that no longer exist in the build (e.g. /images/sample-*.webp,
+          # /images/world-map.svg, /fonts/) must be deleted once by hand in hPanel.
           dangerous-clean-slate: false
-          # Do not upload the deploy log into the webroot.
           exclude: |
             **/.git*
             **/.git*/**

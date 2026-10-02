@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import Faq from "../../components/Faq.astro";
+import Cta from "../../components/Cta.astro";
+import site from "../../data/site.js";
+import { breadcrumb, faqPage } from "../../lib/schema.js";
+
+const crumbs = [{ name: "Home", path: "/" }, { name: "Photo editing", path: "/photo-editing/" }, { name: "How to send your files", path: "/photo-editing/how-to-send-files/" }];
+const faqs = [
+  { q: "Should I send RAW files or JPEGs?", a: "RAW files (CR2, CR3, NEF, ARW, DNG) give the most room to recover highlights, shadows and color. High-quality JPEGs can be edited too, with less latitude." },
+  { q: "Can I send a Lightroom catalog instead?", a: "Yes. Export a catalog with Smart Previews and your edits travel with it. I edit the previews and send the catalog back, so you can sync the edits to your own RAW files and export locally." },
+  { q: "How do I share my editing style?", a: "Send your Lightroom preset (.xmp), or three to five photos you've already edited. Both work. The free sample is where we confirm the look." },
+  { q: "How long do you keep my files?", a: "Client files are deleted 30 days after the final gallery is approved, unless you ask me to keep them longer for repeat work." },
+];
+const jsonLd = [breadcrumb(crumbs), faqPage(faqs)];
+---
+<BaseLayout rawTitle="How to Send Photos to Your Editor: RAW, Catalogs & Presets" description="How to send RAW files, a Lightroom catalog with Smart Previews, or your preset to Harinda for editing, by Google Drive, Dropbox or WeTransfer." path="/photo-editing/how-to-send-files/" jsonLd={jsonLd}>
+  <PageHero eyebrow="Guide" title="How to send your photos for editing" lede="Three ways to hand over a gallery, from the simplest to the fastest. Pick whichever matches how you already work." crumbs={crumbs} />
+  <section class="sec sec--top0">
+    <div class="wrap grid g3" data-rise>
+      <article class="card">
+        <span class="eyebrow">Option 1 · Simplest</span>
+        <h3 style="margin-top:.6rem">Share a folder of RAW files</h3>
+        <ol class="steps" style="margin-top:1rem">
+          <li><div><b>Upload</b><p>Put the RAW files in a Google Drive, Dropbox or WeTransfer folder.</p></div></li>
+          <li><div><b>Add your style</b><p>Drop in your preset (.xmp) or 3–5 photos you've edited.</p></div></li>
+          <li><div><b>Send the link</b><p>Through the free sample form or WhatsApp.</p></div></li>
+        </ol>
+      </article>
+      <article class="card card--soft">
+        <span class="eyebrow">Option 2 · Fastest for weddings</span>
+        <h3 style="margin-top:.6rem">Lightroom catalog with Smart Previews</h3>
+        <ol class="steps" style="margin-top:1rem">
+          <li><div><b>Export</b><p>In Lightroom Classic: select the photos, File → Export as Catalog, tick "Build / Include Smart Previews", untick negative files.</p></div></li>
+          <li><div><b>Zip and share</b><p>The catalog is a fraction of the RAW size, so it uploads quickly.</p></div></li>
+          <li><div><b>Sync back</b><p>I return the catalog; import it with File → Import from Another Catalog and your RAWs pick up the edits.</p></div></li>
+        </ol>
+      </article>
+      <article class="card">
+        <span class="eyebrow">Option 3 · JPEGs</span>
+        <h3 style="margin-top:.6rem">High-quality JPEGs</h3>
+        <ol class="steps" style="margin-top:1rem">
+          <li><div><b>Export at full size</b><p>Quality 100, sRGB or Adobe RGB, no resizing.</p></div></li>
+          <li><div><b>Share the folder</b><p>Any cloud link works.</p></div></li>
+          <li><div><b>Expect less latitude</b><p>JPEGs can be edited, but RAW recovers more highlight and shadow detail.</p></div></li>
+        </ol>
+      </article>
+    </div>
+  </section>
+  <section class="sec sec--alt">
+    <div class="wrap narrow">
+      <div class="head"><span class="eyebrow">Brief checklist</span><h2 class="h2">What to include in your message</h2></div>
+      <ul class="checks">
+        <li>Shoot type and number of images</li>
+        <li>Your deadline, and any sneak-peek images you need first</li>
+        <li>Your style: preset, catalog or reference photos</li>
+        <li>Anything to avoid (heavy skin smoothing, strong grades, crops)</li>
+        <li>Delivery format: JPEG by default, TIFF or PNG on request</li>
+      </ul>
+      <h2 class="h2" style="margin:3rem 0 1.25rem">Questions</h2>
+      <Faq items={faqs} />
+    </div>
+  </section>
+  <Cta title="Ready? Send 3 photos first." />
+</BaseLayout>

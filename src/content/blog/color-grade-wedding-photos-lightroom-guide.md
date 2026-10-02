@@ -1,6 +1,7 @@
 ---
 title: "How to Color Grade Wedding Photos in Lightroom (A Practical Guide)"
 description: "Color grading and color correction aren't the same thing. Here's how wedding photographers actually use Lightroom's tools to set a mood without wrecking skin tones."
+category: photo-editing
 publishDate: 2026-03-20
 ---
 

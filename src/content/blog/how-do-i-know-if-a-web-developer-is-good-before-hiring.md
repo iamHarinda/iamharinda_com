@@ -1,6 +1,7 @@
 ---
 title: "How Do I Know If a Web Developer Is Actually Good Before Hiring Them?"
 description: "You can't code-review a stranger's work yourself. Here's how to actually evaluate quality without any technical background of your own."
+category: web-development
 publishDate: 2026-01-10
 ---
 

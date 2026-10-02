@@ -1,6 +1,7 @@
 ---
 title: "How Much Should I Actually Pay a Freelance Web Developer in 2026?"
 description: "Quoted rates for web development vary wildly, and it's genuinely confusing to know what's fair. Here's a real, current breakdown for 2026."
+category: web-development
 publishDate: 2025-12-29
 ---
 

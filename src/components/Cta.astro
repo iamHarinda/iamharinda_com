@@ -1,0 +1,16 @@
+---
+import site from "../data/site.js";
+const {
+  title = "Send 3 photos. See the difference.",
+  text = `No payment details. The sample comes back ${site.freeSample.turnaround}.`,
+  href = "/free-sample/",
+  label = site.freeSample.cta,
+} = Astro.props;
+---
+<section class="cta">
+  <div class="cta__in">
+    <h2 set:html={title} />
+    <p>{text}</p>
+    <a class="btn btn--p" href={href}>{label}</a>
+  </div>
+</section>

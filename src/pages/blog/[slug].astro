@@ -1,64 +1,77 @@
 ---
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import site, { waLink } from "../../data/site.js";
+import Cta from "../../components/Cta.astro";
+import site from "../../data/site.js";
+import { categories, fmtDate } from "../../data/blog.js";
 import { blogPosting, breadcrumb } from "../../lib/schema.js";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+  const posts = await getCollection("blog", (p) => !p.data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post, posts } }));
 }
-
-const { post } = Astro.props;
+const { post, posts } = Astro.props;
 const { Content } = await render(post);
-
-const jsonLd = [
-  blogPosting(post),
-  breadcrumb([
-    { name: "Home", path: "/" },
-    { name: "Blog", path: "/blog/" },
-    { name: post.data.title, path: `/blog/${post.id}/` },
-  ]),
-];
+const c = categories[post.data.category];
+const related = posts
+  .filter((p) => p.id !== post.id && p.data.category === post.data.category)
+  .sort((a, b) => Math.abs(a.data.publishDate - post.data.publishDate) - Math.abs(b.data.publishDate - post.data.publishDate))
+  .slice(0, 3);
+const path = `/blog/${post.id}/`;
+const crumbs = [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog/" }, { name: c.label, path: `/blog/category/${post.data.category}/` }, { name: post.data.title, path }];
+// Short <title>: keep the H1 if it fits, else the part before "?"/":", else
+// drop a trailing parenthetical. Long natural titles are kept whole (search
+// engines truncate them cleanly) rather than cut mid-phrase.
+const cut = (t) => {
+  const i = t.search(/[?:]/);
+  if (i >= 35) t = t.slice(0, t[i] === "?" ? i + 1 : i).trim();
+  if (t.length > 58) t = t.replace(/\s*\([^)]*\)\s*$/, "").trim();
+  return t;
+};
+const titleTag = post.data.seoTitle ?? (post.data.title.length <= 58 ? post.data.title : cut(post.data.title));
+const jsonLd = [blogPosting(post, c.og), breadcrumb(crumbs)];
 ---
-
-<BaseLayout
-  title={post.data.title}
-  description={post.data.description}
-  path={`/blog/${post.id}/`}
-  ogType="article"
-  jsonLd={jsonLd}
->
-  <article class="section">
-    <div class="container center-narrow">
-      <div class="section-head">
-        <span class="eyebrow">Blog</span>
-        <h1 class="h1"><span class="split">{post.data.title}</span></h1>
-        <p class="form-note">
-          Published {post.data.publishDate.toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </p>
-      </div>
-
-      <div class="prose">
-        <Content />
-      </div>
-
-      <div class="callout beam rise" style="margin-top:3rem">
-        <div>
-          <h2 class="grad-text">{site.freeSample.short}</h2>
-          <p>{site.freeSample.line}</p>
+<BaseLayout rawTitle={titleTag.length > 52 ? titleTag : `${titleTag} | Harinda`} description={post.data.description} path={path} ogType="article" jsonLd={jsonLd} image={c.og}>
+  <article>
+    <header class="phero">
+      <div class="wrap narrow">
+        <div class="head">
+          <ol class="crumbs" aria-label="Breadcrumb">{crumbs.slice(0, 3).map((x) => <li><a href={x.path}>{x.name}</a></li>)}</ol>
+          <span class="eyebrow">{c.label}</span>
+          <h1 class="h1">{post.data.title}</h1>
+          <p class="muted small">By <a href="/about/">{site.personName}</a> · {fmtDate(post.data.publishDate)}{post.data.updatedDate && ` · Updated ${fmtDate(post.data.updatedDate)}`}</p>
         </div>
-        <a class="btn" data-magnetic href={waLink("Hi Harinda, I read your blog and I'd like a free sample edit.")}>{site.freeSample.cta}</a>
       </div>
+    </header>
+    <div class="wrap narrow">
+      <div class="prose"><Content /></div>
 
-      <p style="margin-top:2rem"><a href="/blog/">&larr; Back to the blog</a></p>
+      <aside class="card card--accent" style="margin-top:2.5rem">
+        <h2 style="font:600 1.2rem/1.3 var(--f-body)">{c.cta.title}</h2>
+        <p>{c.cta.text}</p>
+        <div class="btn-row" style="margin-top:1rem"><a class="btn btn--p btn--sm" href={c.cta.href}>{c.cta.label}</a><a class="btn btn--s btn--sm" href={c.service.href}>{c.service.label}</a></div>
+      </aside>
+
+      <div class="author" style="margin-top:1.5rem">
+        <img src={site.personImage} width="64" height="64" alt="" loading="lazy" decoding="async" />
+        <div>
+          <b>{site.personName}</b>
+          <p>Former photographer, now a full-time photo editor and web developer. Edits wedding, portrait and product galleries in Lightroom Classic for clients in {site.fiverrStats.countries} countries. <a class="link" href="/about/">About me</a></p>
+        </div>
+      </div>
     </div>
   </article>
+
+  {related.length > 0 && (
+    <section class="sec">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow">Keep reading</span><h2 class="h2">Related guides</h2></div>
+        <div class="grid g3">
+          {related.map((p) => <a class="post-card" href={`/blog/${p.id}/`}><span class="mono">{fmtDate(p.data.publishDate)}</span><h3>{p.data.title}</h3><p>{p.data.description}</p></a>)}
+        </div>
+        <p style="margin-top:1.25rem"><a class="link" href={`/blog/category/${post.data.category}/`}>All {c.label.toLowerCase()} guides</a></p>
+      </div>
+    </section>
+  )}
+  <Cta title={c.cta.title} text={c.cta.text} href={c.cta.href} label={c.cta.label} />
 </BaseLayout>

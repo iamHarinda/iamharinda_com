@@ -1,6 +1,7 @@
 ---
 title: "Do You Need a New Laptop to Edit Wedding Photos Faster?"
 description: "A slow computer makes editing miserable, but a new laptop isn't always the actual fix. Here's how to tell what's really causing the slowdown."
+category: photo-editing
 publishDate: 2026-02-21
 ---
 

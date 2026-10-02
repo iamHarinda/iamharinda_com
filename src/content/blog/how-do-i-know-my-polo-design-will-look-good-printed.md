@@ -1,6 +1,7 @@
 ---
 title: "How Do I Know My Custom Polo Design Will Actually Look Good Printed?"
 description: "A design that looks great on screen can come back disappointing once it's actually on fabric. Here's how to genuinely tell before committing to a full order."
+category: apparel-design
 publishDate: 2026-01-16
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Why a Slow Website Is Costing You Customers (Explained Without Jargon)"
 description: "Site speed sounds like a technical detail, but it directly affects how many visitors actually stick around. Why, explained in plain terms."
+category: web-development
 publishDate: 2026-06-24
 ---
 
