@@ -30,10 +30,8 @@ if (!reduce) {
 
   /* Hero entrance (time-based, once) */
   if (document.querySelector(".hero")) {
-    gsap.from(".hero__frame img", { scale: 1.1, duration: 1.6, ease: "expo.out" });
     gsap.from(".hero h1 .ln > span", { yPercent: 105, duration: 1.05, ease: "expo.out", stagger: 0.09, delay: 0.1 });
-    gsap.from(".hero__copy p, .hero__copy .btn-row, .hero__rating", { y: 16, opacity: 0, duration: 0.8, ease: "power3.out", stagger: 0.07, delay: 0.4 });
-    gsap.fromTo(".hero__frame img", { yPercent: 0 }, { yPercent: 5, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+    gsap.from(".hero__copy p, .hero__facts, .hero__copy .btn-row, .hero__rating", { y: 16, opacity: 0, duration: 0.8, ease: "power3.out", stagger: 0.07, delay: 0.4 });
   }
   gsap.from(".nav", { y: -20, opacity: 0, duration: 0.8, ease: "power3.out", clearProps: "opacity,transform" });
 
