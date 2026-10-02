@@ -166,6 +166,8 @@ mark.o-todo {
 .o-btn--primary:hover, .o-btn--primary:focus-visible { border-color: #0F1222; }
 .o-btn--on-deep { color: var(--on-deep); border-color: rgba(242, 239, 232, 0.3); }
 
+.o-play-badge { display: inline-block; line-height: 0; border-radius: var(--radius-md); }
+
 /* ── sections ────────────────────────────────────────────────────────────── */
 .o-section { padding: var(--space-12) 0; }
 @media (min-width: 640px) { .o-section { padding: var(--space-16) 0; } }

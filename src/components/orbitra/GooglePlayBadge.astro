@@ -1,0 +1,18 @@
+---
+// Official "Get it on Google Play" badge, self-hosted and never recoloured or
+// cropped (Google's badge guidelines). The PNG includes its own clear space.
+import { EXTERNAL } from "../../lib/orbitra.js";
+
+const { href, width = 180 } = Astro.props;
+const height = Math.round((width * 250) / 646);
+---
+
+<a class="o-play-badge" href={href} {...EXTERNAL}>
+  <img
+    src="/orbitra/assets/brand/google-play-badge.png"
+    alt="Get it on Google Play (opens in a new tab)"
+    width={width}
+    height={height}
+    decoding="async"
+  />
+</a>
