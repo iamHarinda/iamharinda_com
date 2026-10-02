@@ -154,7 +154,7 @@ export const site = {
     passes: ["Denoise", "Enhance details", "Lens corrections", "sRGB export"],
   },
 
-  // ── Analytics (loaded only after cookie consent) ──────────────────────────
+  // ── Analytics (GA4 + Clarity, loaded on every visit; see /privacy/) ───────
   analytics: { gaMeasurementId: "G-QP1FK83BL2", clarityProjectId: "un99vlx16e" },
 
   seo: {

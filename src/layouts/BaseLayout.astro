@@ -78,13 +78,13 @@ const ga = site.analytics.gaMeasurementId;
 
     <script type="application/ld+json" set:html={JSON.stringify(ld)} />
 
-    <!-- Google Consent Mode v2: everything denied until the visitor accepts. -->
+    <!-- Analytics run on every visit (owner's choice, 2 Oct 2026; see /privacy/).
+         Advertising signals stay off: this site shows no ads. -->
     <script is:inline define:vars={{ ga }}>
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       window.gtag = gtag;
-      gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "denied", wait_for_update: 500 });
-      try { if (localStorage.getItem("hf-consent") === "granted") gtag("consent", "update", { analytics_storage: "granted" }); } catch (e) {}
+      gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "granted" });
       gtag("js", new Date());
       gtag("config", ga, { anonymize_ip: true });
     </script>
@@ -111,14 +111,6 @@ const ga = site.analytics.gaMeasurementId;
         <a class="btn btn--s" href={`https://wa.me/${site.contact.whatsapp}`} data-track="whatsapp">WhatsApp</a>
       </div>
     )}
-
-    <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie choices" hidden>
-      <p>I use Google Analytics and Microsoft Clarity to see which pages help photographers. They only run if you allow them. <a href="/privacy/">Privacy policy</a></p>
-      <div class="btn-row">
-        <button class="btn btn--s btn--sm" type="button" data-consent="denied">Decline</button>
-        <button class="btn btn--p btn--sm" type="button" data-consent="granted">Allow analytics</button>
-      </div>
-    </div>
 
     <script>
       import "../scripts/site.js";

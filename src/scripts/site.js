@@ -1,5 +1,5 @@
 // Site-wide behaviour that is not animation: mobile menu, liquid-glass
-// refraction, cookie consent, sticky mobile CTA and conversion tracking.
+// refraction, Microsoft Clarity, sticky mobile CTA and conversion tracking.
 
 const $ = (s, r = document) => r.querySelector(s);
 
@@ -64,33 +64,17 @@ if (sticky) {
   onScroll();
 }
 
-/* ── Cookie consent (Consent Mode v2 + Clarity only after "Allow") ─────── */
-const banner = $("#consent");
-const KEY = "hf-consent";
-const get = () => { try { return localStorage.getItem(KEY); } catch (e) { return null; } };
-function loadClarity() {
+/* ── Microsoft Clarity (runs on every visit, like GA4; see /privacy/) ───── */
+(function loadClarity() {
   if (window.clarity || !window.__clarityId) return;
   (function (c, l, a, r, i, t, y) {
     c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
     t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
     y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
   })(window, document, "clarity", "script", window.__clarityId);
-}
-function choose(v) {
-  try { localStorage.setItem(KEY, v); } catch (e) {}
-  window.gtag?.("consent", "update", { analytics_storage: v === "granted" ? "granted" : "denied" });
-  if (v === "granted") loadClarity();
-  if (banner) banner.hidden = true;
-}
-if (banner) {
-  const prior = get();
-  if (prior === "granted") loadClarity();
-  if (!prior) setTimeout(() => { banner.hidden = false; }, 1200);
-  banner.querySelectorAll("[data-consent]").forEach((b) => b.addEventListener("click", () => choose(b.dataset.consent)));
-  document.querySelectorAll("[data-consent-open]").forEach((a) => a.addEventListener("click", (e) => { e.preventDefault(); banner.hidden = false; }));
-}
+})();
 
-/* ── Conversion tracking (GA4 events; respects consent mode) ───────────── */
+/* ── Conversion tracking (GA4 events) ──────────────────────────────────── */
 document.addEventListener("click", (e) => {
   const a = e.target.closest("a");
   if (!a || !window.gtag) return;
