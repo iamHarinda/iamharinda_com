@@ -1,0 +1,2 @@
+Kept on purpose: FTP-Deploy-Action fails (550) when it tries to delete a
+removed folder on Hostinger. This empty folder stops that. Safe to leave.
