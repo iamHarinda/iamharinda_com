@@ -1,6 +1,7 @@
 ---
 title: "Second Shooter or Outsourced Editing: Which Scales a Wedding Business Faster?"
 description: "Both cost money and both buy back time, but they solve completely different bottlenecks. How to tell which one your business actually needs next."
+category: photo-editing
 publishDate: 2026-04-25
 ---
 

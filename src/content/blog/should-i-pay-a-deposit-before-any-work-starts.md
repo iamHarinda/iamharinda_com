@@ -1,6 +1,7 @@
 ---
 title: "Should I Pay a Deposit Before Any Work Starts on My Website?"
 description: "Deposits feel risky when you're hiring someone new. Here's what's actually normal, what protects you, and what should raise concern."
+category: web-development
 publishDate: 2026-01-07
 ---
 

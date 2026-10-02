@@ -1,6 +1,7 @@
 ---
 title: "Second Monitor for Editing: Is It Worth the Desk Space?"
 description: "A second monitor sounds like an obvious upgrade, but it's not automatically the right call for every photographer's workflow. Here's how to decide."
+category: photo-editing
 publishDate: 2026-03-05
 ---
 

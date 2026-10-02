@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import site from "../data/site.js";
+const updated = "2 October 2026";
+---
+<BaseLayout rawTitle="Privacy Policy | Harinda Fernando" description="How iamharinda.com handles your photos, messages and analytics data." path="/privacy/">
+  <PageHero eyebrow="Legal" title="Privacy policy" lede={`Last updated ${updated}. Plain-English, short, and specific to how this site actually works.`} />
+  <section class="sec sec--top0">
+    <div class="wrap prose">
+      <h2>Who is responsible</h2>
+      <p>{site.personName}, trading as {site.legalName}, based in {site.location.country}. Contact: <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>.</p>
+
+      <h2>What I collect and why</h2>
+      <ul>
+        <li><strong>Forms (free sample and contact):</strong> your name, email, the links you share and your message. Used only to reply and to do the work you ask for. Lawful basis: taking steps at your request before a contract.</li>
+        <li><strong>Your photos:</strong> only accessed through the links you send, used only to edit them for you. Never used in my portfolio, social media or for training any AI without your written permission.</li>
+        <li><strong>WhatsApp and email:</strong> messages you send are kept to manage your order and invoices.</li>
+        <li><strong>Analytics:</strong> Google Analytics 4 and Microsoft Clarity measure which pages are visited and how they're used, so I can see which pages help photographers. They run on every visit. IP addresses are anonymised and no advertising signals are sent. Lawful basis: legitimate interests in understanding and improving the site.</li>
+      </ul>
+
+      <h2>How long I keep things</h2>
+      <ul>
+        <li>Client photos: deleted 30 days after the final gallery is approved, unless you ask me to keep them for repeat work.</li>
+        <li>Free sample photos: deleted within 30 days if you don't place an order.</li>
+        <li>Messages and invoices: kept as long as needed for accounting records.</li>
+      </ul>
+
+      <h2>Who else processes data</h2>
+      <p>Hostinger (website hosting and email), Cloudflare (content delivery and security), Cloudinary (portfolio image delivery), Google Drive (file delivery), Google Analytics and Microsoft Clarity, WhatsApp, PayPal, Payoneer, Remitly and TapSend (only if you use them to pay). Some of these providers are outside your country; each uses its own safeguards for international transfers.</p>
+
+      <h2>Cookies</h2>
+      <p>Google Analytics and Microsoft Clarity set cookies to tell visits apart. They are not used for advertising. To opt out, block cookies for this site in your browser settings, or install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out add-on</a>.</p>
+
+      <h2>Your rights</h2>
+      <p>You can ask for a copy of your data, a correction, or deletion, and you can object to analytics at any time. If you're in the UK or EU you can also complain to your data protection authority. Email <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a> and I'll respond within 30 days.</p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,6 +1,7 @@
 ---
 title: "Website Builder, WordPress, or Custom-Coded? How to Choose Without Any Tech Background"
 description: "Three completely different ways to get a website built, with no obvious way to tell them apart from the outside. What each one actually means for you."
+category: web-development
 publishDate: 2026-05-22
 ---
 

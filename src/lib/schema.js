@@ -1,170 +1,112 @@
-// JSON-LD builders. Pages pass the results to BaseLayout via the `jsonLd` prop.
-// No aggregateRating anywhere — add that only when real reviews are on the site.
+// JSON-LD builders. BaseLayout merges every page's nodes into one @graph with
+// stable @ids, so search engines see one consistent entity across the site.
+// No aggregateRating: Fiverr reviews are third-party and self-serving review
+// markup is not eligible for rich results.
 
-import site, { priceRange, abs } from "../data/site.js";
+import site, { abs } from "../data/site.js";
 
-/** schema.org OfferCatalog for the three fixed packages. */
-export function offerCatalog() {
-  return {
-    "@type": "OfferCatalog",
-    name: "Photo editing packages",
-    itemListElement: site.packages.map((p) => ({
-      "@type": "Offer",
-      name: `${p.photos} photos edited`,
-      description: `Colour correction and retouching for ${p.photos} photos, by hand.`,
-      price: String(p.price),
-      priceCurrency: site.currency,
-      category: "Photo retouching and colour correction",
-      availability: "https://schema.org/InStock",
-      url: abs("/pricing/"),
-    })),
-  };
+const ID = {
+  site: abs("/#website"),
+  person: abs("/#harinda"),
+  biz: abs("/#business"),
+};
+
+export function website() {
+  return { "@type": "WebSite", "@id": ID.site, url: site.url, name: "Harinda Fernando", inLanguage: "en-US", publisher: { "@id": ID.biz } };
 }
 
-/** Standalone OfferCatalog node (with @context) for the pricing page. */
-export function offerCatalogDocument() {
-  return { "@context": "https://schema.org", ...offerCatalog() };
-}
-
-/** The person behind the business. */
 export function person() {
   return {
     "@type": "Person",
-    "@id": abs("/#harinda"),
+    "@id": ID.person,
     name: site.personName,
     jobTitle: site.personTitles,
-    url: site.url,
-    mainEntityOfPage: abs("/about/"),
+    url: abs("/about/"),
     image: abs(site.personImage),
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: site.location.country,
-    },
-    nationality: { "@type": "Country", name: site.location.country },
     sameAs: [site.contact.fiverr],
-    knowsAbout: site.services,
+    knowsAbout: ["Wedding photo editing", "Adobe Lightroom Classic", "Adobe Photoshop", "Color correction", "Portrait retouching", "Product photo editing", "Web development"],
+    worksFor: { "@id": ID.biz },
   };
 }
 
-/** Standalone Person node (with @context) for the About page. */
-export function personDocument() {
-  return { "@context": "https://schema.org", ...person() };
+export function business() {
+  return {
+    "@type": "ProfessionalService",
+    "@id": ID.biz,
+    name: site.legalName,
+    alternateName: site.handle,
+    url: site.url,
+    logo: abs("/icon-512.png"),
+    image: abs(site.seo.ogImage),
+    description: site.description,
+    slogan: site.tagline,
+    email: site.contact.email,
+    founder: { "@id": ID.person },
+    address: { "@type": "PostalAddress", addressCountry: site.location.countryCode },
+    areaServed: site.areasServedCodes,
+    priceRange: "$10–$100",
+    currenciesAccepted: site.currency,
+    paymentAccepted: "PayPal, Payoneer, Remitly, TapSend, Bank transfer",
+    sameAs: [site.contact.fiverr],
+  };
 }
 
-/**
- * A single service line. Pass the frontmatter title/description straight through
- * so the structured data matches the visible page.
- */
-export function service({ name, description, serviceType, path, lowPrice }) {
+/** A service with one Offer per real package. */
+export function service({ name, path, description, offers = true }) {
   const node = {
-    "@context": "https://schema.org",
     "@type": "Service",
+    "@id": abs(path) + "#service",
     name,
+    serviceType: name,
     description,
-    serviceType,
     url: abs(path),
-    provider: person(),
-    areaServed: site.areasServed.map((n) => ({ "@type": "Country", name: n })),
+    provider: { "@id": ID.biz },
+    areaServed: site.areasServedCodes,
   };
-  if (lowPrice != null) {
-    node.offers = {
-      "@type": "AggregateOffer",
+  if (offers === true) {
+    node.offers = site.packages.map((p) => ({
+      "@type": "Offer",
+      name: `${p.photos} photos`,
+      price: p.price.toFixed(2),
       priceCurrency: site.currency,
-      lowPrice: String(lowPrice),
-      availability: "https://schema.org/InStock",
-      url: abs(path),
-    };
+      url: abs("/pricing/"),
+    }));
+  } else if (typeof offers === "number") {
+    node.offers = { "@type": "Offer", price: offers.toFixed(2), priceCurrency: site.currency, url: abs(path) };
   }
   return node;
 }
 
-/** The core business entity. Repeated site-wide, which is fine and expected. */
-export function professionalService() {
-  return {
-    "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "Service"],
-    "@id": abs("/#business"),
-    name: site.name,
-    alternateName: "iamharinda photo editing",
-    description: site.description,
-    slogan: site.tagline,
-    url: site.url,
-    image: abs(site.seo.ogImage),
-    email: site.contact.email,
-    priceRange: priceRange(),
-    currenciesAccepted: site.currency,
-    paymentAccepted:
-      "PayPal, Payoneer, Remitly, TapSend, Bank deposit, Credit Card, Debit Card",
-    serviceType: site.services,
-    knowsLanguage: "en",
-    founder: person(),
-    provider: person(),
-    areaServed: site.areasServed.map((name) => ({ "@type": "Country", name })),
-    availableChannel: {
-      "@type": "ServiceChannel",
-      serviceUrl: site.contact.fiverr,
-      availableLanguage: "en",
-    },
-    sameAs: [site.contact.fiverr],
-    hasOfferCatalog: offerCatalog(),
-  };
-}
-
-/** schema.org WebSite node — helps search understand the site as an entity. */
-export function webSite() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": abs("/#website"),
-    url: site.url,
-    name: site.name,
-    description: site.description,
-    inLanguage: "en",
-    publisher: { "@id": abs("/#business") },
-  };
-}
-
-/** FAQPage from an array of { q, a }. */
 export function faqPage(faqs) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  return { "@type": "FAQPage", mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
 }
 
-/** BlogPosting for a single article, built from its content-collection entry. */
-export function blogPosting(post) {
+export function breadcrumb(trail) {
+  return { "@type": "BreadcrumbList", itemListElement: trail.map((t, i) => ({ "@type": "ListItem", position: i + 1, name: t.name, item: abs(t.path) })) };
+}
+
+export function blogPosting(post, image) {
   const path = `/blog/${post.id}/`;
   return {
-    "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.data.title,
     description: post.data.description,
+    image: [abs(image)],
     datePublished: post.data.publishDate.toISOString(),
     dateModified: (post.data.updatedDate ?? post.data.publishDate).toISOString(),
     url: abs(path),
     mainEntityOfPage: abs(path),
-    inLanguage: "en",
-    author: person(),
-    publisher: { "@id": abs("/#business") },
+    inLanguage: "en-US",
+    author: { "@id": ID.person },
+    publisher: { "@id": ID.biz },
   };
 }
 
-/** BreadcrumbList for interior pages. */
-export function breadcrumb(trail) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: trail.map((item, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: item.name,
-      item: abs(item.path),
-    })),
-  };
+export function imageObject(img, url) {
+  return { "@type": "ImageObject", contentUrl: url, name: img.title, description: img.alt, creator: { "@id": ID.person }, creditText: "Edited by Harinda Fernando" };
+}
+
+/** Merge page nodes with the site-wide entities into a single @graph. */
+export function graph(nodes = []) {
+  return { "@context": "https://schema.org", "@graph": [website(), business(), person(), ...nodes] };
 }

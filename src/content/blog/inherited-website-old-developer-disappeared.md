@@ -1,6 +1,7 @@
 ---
 title: "Inherited a Website From an Old Developer Who Disappeared? Here's What to Do"
 description: "A surprisingly common situation. The person who built your site is gone, and nobody can change anything. How to figure out what you actually have and what comes next."
+category: web-development
 publishDate: 2026-06-18
 ---
 

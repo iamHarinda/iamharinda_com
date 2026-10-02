@@ -1,6 +1,7 @@
 ---
 title: "Domain, Hosting and a Website: What's the Actual Difference?"
 description: "These three terms get used interchangeably all the time, but they're three separate things you're actually paying for. What each one is, in plain language."
+category: web-development
 publishDate: 2026-05-25
 ---
 

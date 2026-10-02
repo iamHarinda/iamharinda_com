@@ -1,6 +1,7 @@
 ---
 title: "Pattern Design vs. Patternmaking: Why They're Not the Same Thing"
 description: "These two terms sound almost identical and mean completely different jobs. Confusing them is one of the most common, and costly, mistakes when sourcing help."
+category: apparel-design
 publishDate: 2026-08-29
 ---
 

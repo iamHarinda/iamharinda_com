@@ -1,6 +1,7 @@
 ---
 title: "RAW vs. JPEG for Editing: Why RAW Files Give You More Room to Correct"
 description: "JPEGs can be edited too, but they've already had decisions baked in. Here's what RAW actually gives an editor that JPEG doesn't, in practical terms."
+category: photo-editing
 publishDate: 2026-04-10
 ---
 

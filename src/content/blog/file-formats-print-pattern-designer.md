@@ -1,6 +1,7 @@
 ---
 title: "What File Formats Do You Actually Need From a Print Pattern Designer?"
 description: "Ai, EPS, PDF, PNG, JPG. The list of formats can be confusing if you're not a designer. What each one is actually for, in plain terms."
+category: apparel-design
 publishDate: 2026-09-01
 ---
 

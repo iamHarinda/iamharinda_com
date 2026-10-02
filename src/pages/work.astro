@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import Shot from "../components/Shot.astro";
+import Cta from "../components/Cta.astro";
+import { portfolio, genres, cld } from "../data/portfolio.js";
+import { breadcrumb, imageObject } from "../lib/schema.js";
+
+const crumbs = [{ name: "Home", path: "/" }, { name: "Work", path: "/work/" }];
+const jsonLd = [breadcrumb(crumbs), ...portfolio.slice(0, 12).map((p) => imageObject(p, cld(p, { w: 1600 })))];
+---
+<BaseLayout rawTitle="Photo Editing Portfolio — Weddings, Portraits, Product & Food" description="Finished photo edits by Harinda Fernando: weddings and events, portraits, product and food photography, all hand-edited in Lightroom Classic." path="/work/" jsonLd={jsonLd} image="/og/og-photo-editing.jpg">
+  <PageHero eyebrow="Portfolio" title="Finished edits from real client galleries" lede="Every photo here was edited by hand in Lightroom Classic for photographers and brands. Filter by the kind of work you shoot." crumbs={crumbs}>
+    <div class="chips" role="group" aria-label="Filter by genre" style="margin-top:.75rem">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All ({portfolio.length})</button>
+      {genres.map((g) => <button class="chip" type="button" data-filter={g.key} aria-pressed="false">{g.label} ({portfolio.filter((p) => p.genre === g.key).length})</button>)}
+    </div>
+  </PageHero>
+  <section class="sec sec--top0">
+    <div class="wrap">
+      <div class="masonry">
+        {portfolio.map((img, i) => <Shot img={img} ar={null} eager={i < 2} sizes="(min-width: 1100px) 360px, (min-width: 640px) 45vw, 92vw" widths={[400, 640, 900, 1200]} />)}
+      </div>
+      <p class="price-note">Client work, edited by Harinda in Lightroom Classic. Want your photos edited like this? The first three are free.</p>
+    </div>
+  </section>
+  <Cta title="Like what you see?<br />Send 3 of yours." />
+</BaseLayout>

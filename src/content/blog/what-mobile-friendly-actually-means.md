@@ -1,6 +1,7 @@
 ---
 title: "What 'Mobile-Friendly' Actually Means, and Why It's Not Optional in 2026"
 description: "Every developer says their sites are mobile-friendly. What that actually looks like in practice, and how to check for yourself."
+category: web-development
 publishDate: 2026-06-27
 ---
 

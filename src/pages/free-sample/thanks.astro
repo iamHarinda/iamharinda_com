@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import site, { waLink } from "../../data/site.js";
+---
+<BaseLayout title="Sample request received" path="/free-sample/thanks/" noindex>
+  <PageHero eyebrow="Received" title="Thanks. Your sample request is in." lede={`I'll look at your photos and send the three edits back ${site.freeSample.turnaround}. If anything is unclear I'll reply ${site.replyTime}.`}>
+    <div class="btn-row" style="margin-top:.75rem">
+      <a class="btn btn--p" href="/work/">Browse the portfolio</a>
+      <a class="btn btn--s" href={waLink("Hi Harinda, I just sent a free sample request.")}>Message on WhatsApp</a>
+    </div>
+  </PageHero>
+  <script is:inline>window.gtag && gtag("event", "sample_request_sent");</script>
+</BaseLayout>

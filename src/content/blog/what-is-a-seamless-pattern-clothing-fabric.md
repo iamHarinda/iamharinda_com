@@ -1,6 +1,7 @@
 ---
 title: "What Is a Seamless Pattern, and Why Does It Matter for Clothing and Fabric Print?"
 description: "'Seamless pattern' gets used constantly in apparel and fabric printing. Not everyone ordering one knows exactly what makes a pattern seamless. The plain explanation."
+category: apparel-design
 publishDate: 2026-07-15
 ---
 

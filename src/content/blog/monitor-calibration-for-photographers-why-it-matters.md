@@ -1,6 +1,7 @@
 ---
 title: "Monitor Calibration for Photographers: Why It Matters More Than Your Camera"
 description: "A new camera body won't fix colors that are already wrong on your screen. Why monitor calibration is the upgrade most wedding photographers skip too long."
+category: photo-editing
 publishDate: 2026-01-31
 ---
 

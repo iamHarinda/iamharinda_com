@@ -1,44 +1,41 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import { readdirSync, readFileSync } from "node:fs";
 import orbitraStudio from "./src/data/orbitra/studio.js";
 
-// Canonical host is https://www.iamharinda.com (see public/.htaccess for the redirect).
-// No UI framework: the animated background (scripts/aurora.js) and the interaction
-// effects (scripts/fx.js) are hand-written vanilla + WebGL. Re-add `@astrojs/react`
-// only if the dormant BeforeAfter/Sample components are brought back.
+// Real per-post dates for the sitemap (Google ignores lastmod values that
+// change on every build, so core pages simply omit it).
+const postDates = Object.fromEntries(
+  readdirSync("./src/content/blog")
+    .filter((f) => f.endsWith(".md"))
+    .map((f) => {
+      const src = readFileSync(`./src/content/blog/${f}`, "utf8");
+      const d = (src.match(/^updatedDate:\s*(.+)$/m) || src.match(/^publishDate:\s*(.+)$/m))?.[1]?.trim();
+      return [`/blog/${f.replace(/\.md$/, "")}/`, d ? new Date(d).toISOString() : undefined];
+    })
+);
+
 export default defineConfig({
   site: "https://www.iamharinda.com",
   output: "static",
   trailingSlash: "always",
-  build: {
-    format: "directory",
-    // Inline all CSS into <head> — one small stylesheet, no render-blocking request,
-    // no separate round-trip on a brochure site with no client-side routing.
-    inlineStylesheets: "always",
-    assets: "_astro",
-  },
+  build: { format: "directory", inlineStylesheets: "always", assets: "_astro" },
   integrations: [
     sitemap({
-      // Every page is public and equally important; keep it simple.
-      // New routes (the service pages) are picked up automatically — every
-      // static page is included except the 404.
-      changefreq: "monthly",
-      priority: 0.7,
-      lastmod: new Date(),
-      // The /orbitra/ section joins the sitemap once its draft flag is turned off
-      // (src/data/orbitra/studio.js).
       filter: (page) =>
-        !page.endsWith("/404/") &&
-        !page.endsWith("/404.html") &&
+        !page.includes("/404") &&
+        !page.includes("/thanks/") &&
         !(orbitraStudio.draft && page.includes("/orbitra/")),
+      serialize(item) {
+        const path = new URL(item.url).pathname;
+        if (postDates[path]) item.lastmod = postDates[path];
+        else delete item.lastmod;
+        delete item.changefreq;
+        delete item.priority;
+        return item;
+      },
     }),
   ],
-  vite: {
-    build: {
-      // Never base64-inline assets — keep them as hashed files so .htaccess can
-      // cache them for a year.
-      assetsInlineLimit: 0,
-    },
-  },
+  vite: { build: { assetsInlineLimit: 0 } },
 });

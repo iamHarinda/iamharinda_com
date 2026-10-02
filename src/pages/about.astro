@@ -1,148 +1,60 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import WorldMap from "../components/WorldMap.astro";
+import PageHero from "../components/PageHero.astro";
+import Bits from "../components/Bits.astro";
+import Cta from "../components/Cta.astro";
 import site, { waLink } from "../data/site.js";
-import {
-  professionalService,
-  personDocument,
-  breadcrumb,
-} from "../lib/schema.js";
+import { breadcrumb } from "../lib/schema.js";
 
-const jsonLd = [
-  professionalService(),
-  personDocument(),
-  breadcrumb([
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about/" },
-  ]),
+const crumbs = [{ name: "Home", path: "/" }, { name: "About", path: "/about/" }];
+const setup = [
+  ["Monitor", "Factory-calibrated ASUS ProArt, Calman Verified"],
+  ["Software", "Adobe Lightroom Classic, Lightroom and Photoshop"],
+  ["Room", "Neutral grey, controlled light, so color is judged without a cast"],
+  ["Delivery", "Google Drive, full-resolution files, no compression"],
+  ["Connection", "Starlink, so large RAW uploads and downloads don't stall"],
 ];
 ---
-
-<BaseLayout
-  title={`About ${site.personName}`}
-  description={`${site.personName} runs a one-person studio from ${site.location.country}: photo editing, web development, and fashion designing for clients in the US, Canada and Europe.`}
-  path="/about/"
-  jsonLd={jsonLd}
->
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">About</span>
-        <h1 class="h1"><span class="split">One person. Three things, done properly.</span></h1>
-      </div>
-
-      <figure class="page-figure rise">
-        <img
-          src={site.aboutImage.src}
-          alt={site.aboutImage.alt}
-          width={site.aboutImage.width}
-          height={site.aboutImage.height}
-          loading="eager"
-          fetchpriority="high"
-          decoding="async"
-        />
-        <figcaption>{site.personName} — every file is judged by eye on this screen.</figcaption>
+<BaseLayout rawTitle="About Harinda Fernando — Photo Editor & Web Developer" description="Meet Harinda Fernando: a former photographer turned full-time Lightroom editor and web developer, working with photographers in the US, UK and Europe." path="/about/" jsonLd={[breadcrumb(crumbs)]}>
+  <PageHero eyebrow="About" title="Hi, I'm Harinda. I'm the person who edits your photos." crumbs={crumbs} />
+  <section class="sec sec--top0">
+    <div class="wrap grid g2" style="align-items:start">
+      <figure class="ph ph--3x2" data-parallax>
+        <img src={site.aboutImage.src} width={site.aboutImage.width} height={site.aboutImage.height} alt={site.aboutImage.alt} fetchpriority="high" decoding="async" />
       </figure>
-
       <div class="prose">
-        <p>
-          I am {site.personName}. I run a one-person studio from
-          {" "}{site.location.country}, for clients in
-          {" "}{site.areasServed.join(", ")}. It is not a studio floor and not a
-          queue of freelancers — the person you message is the person who does
-          the work, and everything is delivered online.
-        </p>
-        <p>
-          Three services, each with its own page, its own pricing and its own
-          turnaround:
-        </p>
-        <ul>
-          <li>
-            <strong><a href="/pricing/#photo-editing">Photo editing and colour correction</a></strong>
-            {" "}— retouching and grading for photographers, done by hand and
-            priced by the photo. For wedding, portrait and headshot work
-            specifically, see
-            {" "}<a href="/photo-editing/">photo editing packages</a>.
-          </li>
-          <li>
-            <strong><a href="/web-development/">Custom web development</a></strong>
-            {" "}— sites and web apps coded from scratch, no WordPress and no
-            page builders. Fixed-price projects, and the code is handed to you.
-          </li>
-          <li>
-            <strong><a href="/fashion-designing/">Polo shirt design and print patterns</a></strong>
-            {" "}— print-ready polo and golf shirt designs, patterns and mockups
-            for clothing brands and teams.
-          </li>
-        </ul>
-
-        <h2>Why by hand</h2>
-        <p>
-          The through-line across all three is that a person does the judging. In
-          photo editing that means a colour grading suite painted neutral grey so
-          the eye can read colour without being pulled one way or another. The
-          screen is calibrated, the room is neutral, and every image is compared
-          against a known reference before it is called done.
-        </p>
-        <p>
-          AI editing tools are fast, but they apply a look. They guess at white
-          balance, smooth skin into plastic, and drift across a set so the
-          hundredth photo does not match the first. A person catches that. A
-          person knows that the white dress is white, that the client&rsquo;s skin
-          has a particular warmth, and that the light changed when the sun went
-          behind a cloud halfway through the ceremony.
-        </p>
-        <p>
-          It is the same instinct in the other two services: a website that is
-          written rather than assembled from plugins, and a polo design that's
-          ready to print without a supplier guessing at scale or placement.
-        </p>
-
-        <h2>The photo editing setup</h2>
-        <ul>
-          {site.tools.map((t) => <li><strong>{t.label}:</strong> {t.value}</li>)}
-        </ul>
-
-        <h2>What the photo editing covers</h2>
-        <ul>
-          {site.services.map((s) => <li>{s}</li>)}
-          <li>Removing distractions — sensor dust, stray objects, blemishes</li>
-          <li>Matching every frame in a set to one consistent look</li>
-        </ul>
-
-        <h2>Who I work with</h2>
-        <p>
-          Photographers and studios, small business owners, and indie clothing
-          brands in {site.areasServed.join(", ")}. Everything is handled online,
-          so where you are does not matter. The Fiverr profile has a
-          {" "}{site.fiverrStats.rating} rating over {site.fiverrStats.reviews}
-          {" "}reviews and {site.fiverrStats.ordersPlus}+ completed orders.
-        </p>
-
-        <h2>Try it first</h2>
-        <p>
-          Photo editing comes with a free sample edit — {site.freeSample.line}
-          {" "}Message me before ordering a photo editing package and I'll
-          confirm the right size and timeline first. Web and fashion design
-          projects start with a no-charge scope call before any price is
-          agreed.
-        </p>
-
-        <h2>How you pay</h2>
-        <p>
-          Photo work is paid after delivery, never before — you see the edited
-          photos, you approve them, then you are invoiced, by PayPal, Payoneer,
-          Remitly, TapSend or bank deposit. Web and fashion design projects
-          are staged, with the split set out on each service page.
-        </p>
-      </div>
-
-      <WorldMap />
-
-      <div class="btn-row" style="margin-top:2.5rem">
-        <a class="btn" data-magnetic href={waLink("Hi Harinda, I read your About page and I'd like to talk about a project.")}>Message on WhatsApp</a>
-        <a class="btn btn--grad" href="/pricing/">See pricing</a>
+        <p class="lede">I spent years behind the camera before moving to the other side of the workflow. Now I edit full time, from a small studio in Sri Lanka, for photographers in the US, UK, Canada, Europe and Australia.</p>
+        <p>It isn't a studio floor or a queue of freelancers. The person you message is the person who edits your gallery, in Lightroom Classic and Photoshop, on a calibrated screen. I don't hand a gallery back until it looks like you edited it.</p>
+        <p>AI editing tools are fast, but they apply a look. They guess white balance, smooth skin into plastic and drift across a set so the hundredth photo doesn't match the first. A person notices that the dress is white, that the bride's skin has a particular warmth, and that the light changed when the sun went behind a cloud halfway through the ceremony.</p>
+        <div class="btn-row"><a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a><a class="btn btn--s" href={waLink("Hi Harinda, I read your About page.")} data-track="whatsapp">WhatsApp me</a></div>
       </div>
     </div>
   </section>
+
+  <section class="sec sec--alt sec--tight"><div class="wrap"><Bits kind="stats" /></div></section>
+
+  <section class="sec">
+    <div class="wrap grid g2" style="align-items:start">
+      <div>
+        <span class="eyebrow">The setup</span>
+        <h2 class="h2" style="margin:.75rem 0 1.25rem">Where your photos get edited</h2>
+        <div class="table-wrap"><table><tbody>{setup.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody></table></div>
+      </div>
+      <div>
+        <span class="eyebrow">Working together</span>
+        <h2 class="h2" style="margin:.75rem 0 1.25rem">Practical details</h2>
+        <ul class="checks">
+          <li>{site.location.note}</li>
+          <li>I reply {site.replyTime}, usually much faster on WhatsApp.</li>
+          <li>Direct photo orders are paid after you approve the gallery.</li>
+          <li>The Fiverr profile has a {site.fiverrStats.rating} rating from {site.fiverrStats.reviews}+ reviews and {site.fiverrStats.ordersPlus}+ orders.</li>
+          <li>I also build websites and design polo and golf shirts, each with its own page and pricing.</li>
+        </ul>
+        <div class="chips" style="margin-top:1.5rem">
+          {site.otherServices.map((s) => <a class="pill" href={s.href} style="text-decoration:none">{s.label} →</a>)}
+        </div>
+      </div>
+    </div>
+  </section>
+  <Cta />
 </BaseLayout>

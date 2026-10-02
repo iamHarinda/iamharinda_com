@@ -1,0 +1,18 @@
+---
+const { eyebrow, title, lede, crumbs = [] } = Astro.props;
+---
+<section class="phero">
+  <div class="wrap">
+    <div class="head">
+      {crumbs.length > 0 && (
+        <ol class="crumbs" aria-label="Breadcrumb">
+          {crumbs.map((c, i) => <li>{i < crumbs.length - 1 ? <a href={c.path}>{c.name}</a> : <span aria-current="page">{c.name}</span>}</li>)}
+        </ol>
+      )}
+      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+      <h1 class="h1" set:html={title} />
+      {lede && <p class="lede">{lede}</p>}
+      <slot />
+    </div>
+  </div>
+</section>

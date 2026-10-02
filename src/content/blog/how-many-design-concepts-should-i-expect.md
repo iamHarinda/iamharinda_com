@@ -1,6 +1,7 @@
 ---
 title: "How Many Design Concepts Should I Expect for My Money?"
 description: "Some services offer one concept, others offer five. Here's what's actually reasonable to expect, and why more isn't always better."
+category: apparel-design
 publishDate: 2026-01-25
 ---
 

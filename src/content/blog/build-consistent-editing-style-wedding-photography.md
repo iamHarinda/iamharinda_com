@@ -1,6 +1,7 @@
 ---
 title: "How to Build a Consistent Editing Style Clients Recognize as 'Yours'"
 description: "A recognizable editing style is a real business asset for a wedding photographer. How it actually gets built, and how to keep it consistent as you scale up."
+category: photo-editing
 publishDate: 2026-05-01
 ---
 

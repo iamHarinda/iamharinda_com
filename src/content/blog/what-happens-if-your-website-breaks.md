@@ -1,6 +1,7 @@
 ---
 title: "What Happens If Your Website Breaks? Who's Responsible, and What It Costs"
 description: "Websites do occasionally break, a plugin conflict, an expired certificate, a hosting outage. What to actually expect and who should be fixing it."
+category: web-development
 publishDate: 2026-06-15
 ---
 

@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import site from "../../data/site.js";
+---
+<BaseLayout title="Message sent" path="/contact/thanks/" noindex>
+  <PageHero eyebrow="Sent" title="Thanks. Your message is in." lede={`You'll hear back ${site.replyTime}. If it's urgent, message on WhatsApp.`}>
+    <div class="btn-row" style="margin-top:.75rem"><a class="btn btn--p" href="/work/">Browse the portfolio</a><a class="btn btn--s" href="/blog/">Read the blog</a></div>
+  </PageHero>
+  <script is:inline>window.gtag && gtag("event", "contact_sent");</script>
+</BaseLayout>

@@ -1,6 +1,7 @@
 ---
 title: "Is It Cheaper to Learn Web Design Myself or Hire Someone?"
 description: "DIY feels free, but it rarely actually is once you count the real cost. Here's an honest comparison for a small business owner weighing both options."
+category: web-development
 publishDate: 2026-01-01
 ---
 

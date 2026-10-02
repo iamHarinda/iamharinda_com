@@ -1,0 +1,29 @@
+---
+// Small shared sections. Usage: <Bits kind="guarantees" /> etc.
+import site from "../data/site.js";
+const { kind } = Astro.props;
+const ico = {
+  gift: '<path d="M20 12v8H4v-8M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+  repeat: '<path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>',
+  clock: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/>',
+};
+---
+{kind === "guarantees" && (
+  <div class="guar">
+    <div class="wrap">
+      <div class="guar__item"><span class="ic"><svg viewBox="0 0 24 24" set:html={ico.gift} /></span><span>{site.freeSample.short}<small>No card, no obligation</small></span></div>
+      <div class="guar__item"><span class="ic"><svg viewBox="0 0 24 24" set:html={ico.shield} /></span><span>Pay after you approve<small>On direct orders</small></span></div>
+      <div class="guar__item"><span class="ic"><svg viewBox="0 0 24 24" set:html={ico.repeat} /></span><span>Unlimited revisions<small>Until it looks like yours</small></span></div>
+      <div class="guar__item"><span class="ic"><svg viewBox="0 0 24 24" set:html={ico.clock} /></span><span>2–4 day turnaround<small>Sample {site.freeSample.turnaround}</small></span></div>
+    </div>
+  </div>
+)}
+{kind === "stats" && (
+  <div class="stats">
+    <div class="stat"><b data-count={site.fiverrStats.rating} data-dec="1">{site.fiverrStats.rating}</b><span>Fiverr rating</span></div>
+    <div class="stat"><b data-count={site.fiverrStats.reviews} data-suffix="+">{site.fiverrStats.reviews}+</b><span>Fiverr reviews</span></div>
+    <div class="stat"><b data-count={site.fiverrStats.ordersPlus} data-suffix="+">{site.fiverrStats.ordersPlus}+</b><span>orders delivered</span></div>
+    <div class="stat"><b data-count={site.fiverrStats.countries}>{site.fiverrStats.countries}</b><span>client countries</span></div>
+  </div>
+)}

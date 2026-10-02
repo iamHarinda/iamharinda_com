@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "./PageHero.astro";
+import Bits from "./Bits.astro";
+import Shot from "./Shot.astro";
+import Pricing from "./Pricing.astro";
+import Reviews from "./Reviews.astro";
+import Faq from "./Faq.astro";
+import Cta from "./Cta.astro";
+import site, { waLink } from "../data/site.js";
+import { portfolio } from "../data/portfolio.js";
+import { service, faqPage, breadcrumb } from "../lib/schema.js";
+import { getCollection } from "astro:content";
+
+const { s, keywords = [] } = Astro.props;
+const crumbs = [
+  { name: "Home", path: "/" },
+  { name: "Photo editing", path: "/photo-editing/" },
+  { name: s.name, path: s.path },
+];
+const imgs = portfolio.filter((p) => s.genres.includes(p.genre)).slice(0, 6);
+const posts = (await getCollection("blog", (p) => p.data.category === "photo-editing"))
+  .filter((p) => keywords.length === 0 || keywords.some((k) => p.id.includes(k)))
+  .sort((a, b) => b.data.publishDate - a.data.publishDate)
+  .slice(0, 3);
+const jsonLd = [service({ name: s.name, path: s.path, description: s.description }), faqPage(s.faqs), breadcrumb(crumbs)];
+---
+<BaseLayout rawTitle={s.title} description={s.description} path={s.path} jsonLd={jsonLd} image="/og/og-photo-editing.jpg">
+  <PageHero eyebrow={s.eyebrow} title={s.h1} lede={s.lede} crumbs={crumbs}>
+    <div class="btn-row" style="margin-top:.75rem">
+      <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
+      <a class="btn btn--s" href={waLink(`Hi Harinda, I'd like to talk about ${s.name.toLowerCase()}.`)}>WhatsApp me</a>
+    </div>
+    <p class="small muted" style="margin-top:.5rem"><span class="stars" style="color:var(--accent)" aria-hidden="true">★★★★★</span> {site.fiverrStats.rating} from {site.fiverrStats.reviews}+ Fiverr reviews · from {site.perPhoto} a photo</p>
+  </PageHero>
+
+  <section class="sec sec--top0">
+    <div class="wrap">
+      <div class="grid g3" data-rise>
+        {imgs.map((img, i) => <Shot img={img} eager={i === 0} sizes="(min-width: 960px) 30vw, (min-width: 640px) 45vw, 90vw" />)}
+      </div>
+      <p style="margin-top:1.25rem"><a class="link" href="/work/">See the full portfolio</a></p>
+    </div>
+  </section>
+
+  <Bits kind="guarantees" />
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">What's included</span><h2 class="h2">Every order, every package.</h2></div>
+      <div class="grid g3" data-rise>
+        {s.included.map((f) => <article class="card"><h3>{f.h}</h3><p>{f.p}</p></article>)}
+      </div>
+      <div style="margin-top:2rem">
+        <p class="eyebrow" style="margin-bottom:.75rem">Styles I match</p>
+        <div class="chips">{s.styles.map((x) => <span class="pill">{x}</span>)}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt" id="pricing">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Pricing</span><h2 class="h2">{site.perPhoto} a photo. Unlimited revisions.</h2></div>
+      <Pricing />
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap grid g2" style="align-items:start">
+      <div>
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2" style="margin:.75rem 0 1.5rem">Four steps, no surprises.</h2>
+        <ol class="steps">
+          <li><div><b>Send a link</b><p>Google Drive, Dropbox or WeTransfer, plus your preset or reference edits.</p></div></li>
+          <li><div><b>Free sample, {site.freeSample.turnaround}</b><p>Three photos edited in your style.</p></div></li>
+          <li><div><b>Full set in 2–4 days</b><p>Edited by hand, delivered at full resolution.</p></div></li>
+          <li><div><b>Approve, then pay</b><p>Revise as often as you need first.</p></div></li>
+        </ol>
+        <p style="margin-top:1.25rem"><a class="link" href="/photo-editing/how-to-send-files/">How to send your files</a></p>
+      </div>
+      <div>
+        <span class="eyebrow">Questions</span>
+        <h2 class="h2" style="margin:.75rem 0 1.25rem">{s.name} FAQ</h2>
+        <Faq items={s.faqs} />
+      </div>
+    </div>
+  </section>
+
+  <Reviews />
+
+  {posts.length > 0 && (
+    <section class="sec">
+      <div class="wrap">
+        <div class="head"><span class="eyebrow">Guides</span><h2 class="h2">Related reading.</h2></div>
+        <div class="grid g3">
+          {posts.map((p) => <a class="post-card" href={`/blog/${p.id}/`}><h3>{p.data.title}</h3><p>{p.data.description}</p></a>)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <Cta />
+</BaseLayout>

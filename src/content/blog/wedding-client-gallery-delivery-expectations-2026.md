@@ -1,6 +1,7 @@
 ---
 title: "Wedding Client Gallery Delivery: What Couples Actually Expect in 2026"
 description: "Delivery expectations have shifted. Speed, mobile access, and easy sharing now matter as much as the photos themselves. What couples expect from a gallery in 2026."
+category: photo-editing
 publishDate: 2026-05-04
 ---
 

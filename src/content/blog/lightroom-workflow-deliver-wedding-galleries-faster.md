@@ -1,6 +1,7 @@
 ---
 title: "A Realistic Lightroom Workflow for Delivering Wedding Galleries Faster"
 description: "Most wedding photographers lose time to the same three steps. Here's a Lightroom workflow that shortens the gap between shoot day and delivery without cutting corners."
+category: photo-editing
 publishDate: 2026-04-04
 ---
 
