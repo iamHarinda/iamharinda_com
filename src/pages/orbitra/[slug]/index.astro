@@ -48,14 +48,7 @@ const jsonLd = [
           <p class="o-caption">by Orbitra</p>
           <p class="o-lead">{app.tagline}</p>
           <div class="o-apphero__row">
-            {
-              app.status === "live" ? (
-                <GooglePlayBadge href={app.playUrl} />
-              ) : (
-                <StatusPill status={app.status} />
-              )
-            }
-            {app.testingUrl && <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>Become a tester<Fragment set:html={NEW_TAB_HTML} /></a>}
+            {app.status !== "live" && <StatusPill status={app.status} />}
             <code class="o-muted">{app.package}</code>
             {!app.packageConfirmed && <Fragment set:html={todoHtml("confirm package name")} />}
           </div>
@@ -67,6 +60,19 @@ const jsonLd = [
                   {app.website.replace(/^https?:\/\//, "")}<Fragment set:html={NEW_TAB_HTML} />
                 </a>
               </p>
+            )
+          }
+          {
+            (app.status === "live" || app.testingUrl) && (
+              <div class="o-apphero__cta">
+                {app.status === "live" ? (
+                  <GooglePlayBadge href={app.playUrl} />
+                ) : (
+                  <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>
+                    Become a tester<Fragment set:html={NEW_TAB_HTML} />
+                  </a>
+                )}
+              </div>
             )
           }
         </div>
