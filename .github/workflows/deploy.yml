@@ -66,6 +66,8 @@ jobs:
           # site's files that no longer exist in the build (e.g. /images/sample-*.webp,
           # /images/world-map.svg, /fonts/) must be deleted once by hand in hPanel.
           dangerous-clean-slate: false
+          # Hostinger FTP is sometimes slow to answer; the 30s default times out.
+          timeout: 120000
           exclude: |
             **/.git*
             **/.git*/**
