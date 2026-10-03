@@ -253,7 +253,7 @@ mark.o-todo {
 .o-callout { background: var(--halo); color: var(--ink); border-radius: var(--radius-md); padding: var(--space-6); }
 .o-callout > * + * { margin-top: var(--space-3); }
 .o-callout .o-heading { font-size: 18px; }
-.o-callout a { color: var(--ink); text-decoration: underline; }
+.o-callout a:not(.o-btn) { color: var(--ink); text-decoration: underline; }
 
 /* ── legal layout ────────────────────────────────────────────────────────── */
 .o-legal { padding: var(--space-12) 0 var(--space-16); }
