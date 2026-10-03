@@ -10,6 +10,8 @@
     "summary": "Create your own topics, tick them on a calendar, and see how often each one happened this month, in 3 months, or this year. With a simple to-do list too.",
     "accent": "#FF6B4A",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.habittracker",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.habittracker",
+    "inviteUrl": "https://play.google.com/apps/internaltest/4700445669700790411",
     "website": null,
     "status": "testing",
     "lastUpdated": "2026-10-02",
@@ -225,8 +227,10 @@
     "summary": "The Android app of PeriodicElementTable.com — an interactive periodic table with 118 element pages, 44 chemistry calculators and 627 study guides.",
     "accent": "#1E3A8A",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.periodicelementtable",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.periodicelementtable",
+    "inviteUrl": "https://play.google.com/apps/internaltest/4700963232322026104",
     "website": "https://periodicelementtable.com",
-    "status": "coming-soon",
+    "status": "testing",
     "lastUpdated": "2026-10-02",
     "features": [
       {
@@ -423,8 +427,10 @@
     "summary": "The Android app of ToolsServer.com — hundreds of free calculators, converters, text and developer tools in one place. No account, no ads.",
     "accent": "#FF6B1A",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.toolsserver",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.toolsserver",
+    "inviteUrl": "https://play.google.com/apps/internaltest/4701628926569254550",
     "website": "https://toolsserver.com",
-    "status": "coming-soon",
+    "status": "testing",
     "lastUpdated": "2026-10-02",
     "features": [
       {
@@ -627,8 +633,9 @@
     "summary": "Remove the background from your product photos and size them for Amazon, Etsy, eBay, Shopify and Instagram. Free, and done on your phone.",
     "accent": "#1E4DFF",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.productwhite",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.productwhite",
     "website": null,
-    "status": "coming-soon",
+    "status": "testing",
     "lastUpdated": "2026-10-02",
     "features": [
       {
@@ -833,8 +840,9 @@
     "summary": "Track expenses, budgets, bills and net worth in any currency, and climb your Road to Billionaire milestone by milestone. Private, offline, no ads.",
     "accent": "#0F6E52",
     "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.budgettracker",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.budgettracker",
     "website": null,
-    "status": "coming-soon",
+    "status": "testing",
     "lastUpdated": "2026-10-02",
     "features": [
       {

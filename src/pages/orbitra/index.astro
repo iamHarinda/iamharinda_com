@@ -64,6 +64,9 @@ const jsonLd = [
               <p>{app.summary}</p>
               <StatusPill status={app.status} />
               <div class="o-card__links">
+                {app.testingUrl && (
+                  <a href={`${appPath(app.slug)}#test`} aria-label={`Become a ${app.name} tester`}>Become a tester</a>
+                )}
                 <a href={appPath(app.slug, "support")} aria-label={`${app.name} support`}>Support</a>
                 <a href={appPath(app.slug, "privacy-policy")} aria-label={`${app.name} privacy policy`}>Privacy</a>
                 <a href={appPath(app.slug, "delete-data")} aria-label={`Delete ${app.name} data`}>Delete data</a>
