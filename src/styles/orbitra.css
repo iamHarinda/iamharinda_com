@@ -254,6 +254,11 @@ mark.o-todo {
 .o-callout > * + * { margin-top: var(--space-3); }
 .o-callout .o-heading { font-size: 18px; }
 .o-callout a:not(.o-btn) { color: var(--ink); text-decoration: underline; }
+.o-test a:not(.o-btn) { color: var(--solar-text); font-weight: 600; text-decoration: none; }
+.o-test a:not(.o-btn):hover, .o-test a:not(.o-btn):focus-visible { text-decoration: underline; }
+.o-test ol { padding-left: 1.25em; }
+.o-test li + li { margin-top: var(--space-2); }
+.o-test .o-test__cta { margin-top: var(--space-6); margin-bottom: var(--space-6); }
 
 /* ── legal layout ────────────────────────────────────────────────────────── */
 .o-legal { padding: var(--space-12) 0 var(--space-16); }

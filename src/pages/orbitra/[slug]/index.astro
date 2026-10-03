@@ -55,7 +55,7 @@ const jsonLd = [
                 <StatusPill status={app.status} />
               )
             }
-            {app.testingUrl && <a class="o-btn o-btn--primary" href="#test">Become a tester</a>}
+            {app.testingUrl && <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>Become a tester<Fragment set:html={NEW_TAB_HTML} /></a>}
             <code class="o-muted">{app.package}</code>
             {!app.packageConfirmed && <Fragment set:html={todoHtml("confirm package name")} />}
           </div>
@@ -116,7 +116,7 @@ const jsonLd = [
     app.testingUrl && (
       <section class="o-section" id="test" aria-labelledby="test-title">
         <div class="o-wrap">
-          <div class="o-callout" style="max-width: var(--maxw-prose)">
+          <div class="o-callout o-test" style="max-width: var(--maxw-prose)">
             <h2 class="o-heading" id="test-title">Help us test {app.storeTitle ?? app.name}</h2>
             <p>The app is in testing on Google Play. Install it early and tell us what you think:</p>
             <ol>
@@ -139,7 +139,7 @@ const jsonLd = [
                 change or improve, please let us know.
               </li>
             </ol>
-            <p>
+            <p class="o-test__cta">
               <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>
                 Join the test<Fragment set:html={NEW_TAB_HTML} />
               </a>
