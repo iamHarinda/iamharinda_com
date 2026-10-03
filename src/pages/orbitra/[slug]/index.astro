@@ -55,6 +55,7 @@ const jsonLd = [
                 <StatusPill status={app.status} />
               )
             }
+            {app.testingUrl && <a class="o-btn o-btn--primary" href="#test">Become a tester</a>}
             <code class="o-muted">{app.package}</code>
             {!app.packageConfirmed && <Fragment set:html={todoHtml("confirm package name")} />}
           </div>
@@ -110,6 +111,45 @@ const jsonLd = [
       </div>
     </div>
   </section>
+
+  {
+    app.testingUrl && (
+      <section class="o-section" id="test" aria-labelledby="test-title">
+        <div class="o-wrap">
+          <div class="o-callout" style="max-width: var(--maxw-prose)">
+            <h2 class="o-heading" id="test-title">Help us test {app.storeTitle ?? app.name}</h2>
+            <p>The app is in testing on Google Play. Install it early and tell us what you think:</p>
+            <ol>
+              {
+                app.inviteUrl && (
+                  <li>
+                    Open the <a href={app.inviteUrl} {...EXTERNAL}>tester invitation link<Fragment set:html={NEW_TAB_HTML} /></a> and
+                    click <strong>Accept invitation</strong>.
+                  </li>
+                )
+              }
+              <li>
+                Open the <a href={app.testingUrl} {...EXTERNAL}>testing page<Fragment set:html={NEW_TAB_HTML} /></a> and
+                select <strong>Become a tester</strong>.
+              </li>
+              <li>Once you have joined, click <strong>Download it on Google Play</strong>.</li>
+              <li>Install the app from the Google Play Store.</li>
+              <li>
+                Open the app and use it for a while. If you find a bug, or have an idea for something to add,
+                change or improve, please let us know.
+              </li>
+            </ol>
+            <p>
+              <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>
+                Join the test<Fragment set:html={NEW_TAB_HTML} />
+              </a>
+            </p>
+            <p set:html={rich(`Send feedback to {email}. Thank you!`)} />
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   <section class="o-section" aria-labelledby="glance-title">
     <div class="o-wrap">
