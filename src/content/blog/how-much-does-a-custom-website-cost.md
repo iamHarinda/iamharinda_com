@@ -1,5 +1,6 @@
 ---
 title: "How Much Does a Custom Website Really Cost? A Small Business Guide"
+seoTitle: "How Much Does a Custom Website Cost in 2026?"
 description: "Quotes for a website can range from $200 to $30,000 for what sounds like the same thing. What actually drives that difference, explained plainly."
 category: web-development
 publishDate: 2026-05-19

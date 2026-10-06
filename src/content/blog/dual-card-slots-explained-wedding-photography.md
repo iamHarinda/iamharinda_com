@@ -1,5 +1,6 @@
 ---
 title: "Dual Card Slots Explained: Why Shooting to Two Cards at Once Matters"
+seoTitle: "Dual Card Slots Explained for Wedding Photographers"
 description: "Dual card slots are one of the most valuable, least talked about safety features in wedding photography. Here's what they actually do and why they matter."
 category: photo-editing
 publishDate: 2026-02-27

@@ -1,5 +1,6 @@
 ---
 title: "Website Scope 101: How to Explain What You Want to a Developer"
+seoTitle: "Website Scope 101: Explaining What You Want"
 description: "You don't need technical language to describe a website project well. A simple structure that gets you an accurate quote without any jargon."
 category: web-development
 publishDate: 2026-07-12

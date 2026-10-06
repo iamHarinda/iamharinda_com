@@ -1,60 +1,146 @@
 ---
+// /about/: the studio and how Harinda works. The home page tells his story and
+// CV, so this page covers the setup, principles and process instead (no
+// keyword overlap with "/" for his name).
+import "../styles/home.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import Bits from "../components/Bits.astro";
 import Cta from "../components/Cta.astro";
 import site, { waLink } from "../data/site.js";
+import profile from "../data/profile.js";
 import { breadcrumb } from "../lib/schema.js";
 
 const crumbs = [{ name: "Home", path: "/" }, { name: "About", path: "/about/" }];
+
 const setup = [
   ["Monitor", "Factory-calibrated ASUS ProArt, Calman Verified"],
   ["Software", "Adobe Lightroom Classic, Lightroom and Photoshop"],
-  ["Room", "Neutral grey, controlled light, so color is judged without a cast"],
+  ["Room", "Neutral gray walls and controlled light, so color is judged without a cast"],
   ["Delivery", "Google Drive, full-resolution files, no compression"],
   ["Connection", "Starlink, so large RAW uploads and downloads don't stall"],
 ];
+
+const principles = [
+  { n: "01", title: "The person you message edits your photos", text: "No team, no outsourcing chain. Every gallery is edited by me, start to finish." },
+  { n: "02", title: "By eye, not by AI", text: "AI tools apply a look. I notice that the dress is white, that skin has its own warmth, and that the light changed halfway through the ceremony." },
+  { n: "03", title: "Your style, not mine", text: "The free sample is how we agree on your look before anything is paid. Then every frame matches it." },
+  { n: "04", title: "Approve first, then pay", text: "On direct orders you see the finished gallery before you pay, with unlimited revisions." },
+];
+
+const steps = [
+  ["Send a link", "Google Drive, Dropbox or WeTransfer, plus your preset or three reference edits."],
+  ["Free sample", `Three photos edited in your style, ${site.freeSample.turnaround}.`],
+  ["Full gallery", "Every frame edited by hand and delivered in 2–4 days at full resolution."],
+  ["Approve, then pay", "Unlimited revisions. PayPal, Payoneer, Remitly, TapSend or bank transfer."],
+];
 ---
-<BaseLayout rawTitle="About Harinda Fernando — Photo Editor & Web Developer" description="Meet Harinda Fernando: a former photographer turned full-time Lightroom editor and web developer, working with photographers in the US, UK and Europe." path="/about/" jsonLd={[breadcrumb(crumbs)]}>
-  <PageHero eyebrow="About" title="Hi, I'm Harinda. I'm the person who edits your photos." crumbs={crumbs} />
+
+<BaseLayout
+  rawTitle="About Harinda: Editing Studio, Setup and How I Work"
+  description="How Harinda edits: a calibrated ASUS ProArt studio in Sri Lanka, Lightroom Classic and Photoshop, no AI looks, a free sample first, pay after approval."
+  path="/about/"
+  jsonLd={[breadcrumb(crumbs)]}
+>
+  <PageHero eyebrow="About" title="How I work, and where your photos get edited." lede={`I'm Harinda Fernando, a ${profile.education[0].award.split(" · ")[0]} graduate and full-time photo editor in ${profile.country}. This is the studio, the setup and the way every order runs.`} crumbs={crumbs}>
+    <div class="btn-row" style="margin-top:.75rem">
+      <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
+      <a class="btn btn--s" href="/#story">Read my story &amp; CV</a>
+    </div>
+  </PageHero>
+
   <section class="sec sec--top0">
-    <div class="wrap grid g2" style="align-items:start">
+    <div class="wrap grid g2" style="align-items:center">
       <figure class="ph ph--3x2" data-parallax>
         <img src={site.aboutImage.src} width={site.aboutImage.width} height={site.aboutImage.height} alt={site.aboutImage.alt} fetchpriority="high" decoding="async" />
       </figure>
       <div class="prose">
-        <p class="lede">I spent years behind the camera before moving to the other side of the workflow. Now I edit full time, from a small studio in Sri Lanka, for photographers in the US, UK, Canada, Europe and Australia.</p>
+        <p class="lede">I spent years behind the camera before moving to the other side of the workflow. Since {profile.freelancingSince} I've edited galleries for photographers in {site.fiverrStats.countries} countries.</p>
         <p>It isn't a studio floor or a queue of freelancers. The person you message is the person who edits your gallery, in Lightroom Classic and Photoshop, on a calibrated screen. I don't hand a gallery back until it looks like you edited it.</p>
-        <p>AI editing tools are fast, but they apply a look. They guess white balance, smooth skin into plastic and drift across a set so the hundredth photo doesn't match the first. A person notices that the dress is white, that the bride's skin has a particular warmth, and that the light changed when the sun went behind a cloud halfway through the ceremony.</p>
-        <div class="btn-row"><a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a><a class="btn btn--s" href={waLink("Hi Harinda, I read your About page.")} data-track="whatsapp">WhatsApp me</a></div>
       </div>
     </div>
   </section>
 
   <section class="sec sec--alt sec--tight"><div class="wrap"><Bits kind="stats" /></div></section>
 
+  <!-- Principles -->
   <section class="sec">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Principles</span>
+        <h2 class="h2">Four things that never change.</h2>
+      </div>
+      <div class="bento about-principles">
+        {
+          principles.map((p) => (
+            <article class="tile">
+              <div class="tile__body">
+                <span class="tile__n">{p.n}</span>
+                <h3>{p.title}</h3>
+                <p>{p.text}</p>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Setup as a spec sheet -->
+  <section class="sec sec--alt">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">The setup</span>
+        <h2 class="h2">Where your photos get edited.</h2>
+      </div>
+      <div class="skills">
+        {setup.map(([k, v]) => <div class="skills__row"><h3>{k}</h3><p style="color:var(--fg-2)">{v}</p></div>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="sec gl gl--light">
+    <div class="wrap">
+      <div class="head head--row">
+        <div>
+          <span class="eyebrow">How an order runs</span>
+          <h2 class="h2">From memory card to finished gallery.</h2>
+        </div>
+        <a class="link" href="/photo-editing/how-to-send-files/">How to send your files</a>
+      </div>
+      <ol class="about-steps">
+        {steps.map(([t, d], i) => <li><span class="mono">0{i + 1}</span><h3>{t}</h3><p>{d}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Practical details -->
+  <section class="sec sec--alt">
     <div class="wrap grid g2" style="align-items:start">
       <div>
-        <span class="eyebrow">The setup</span>
-        <h2 class="h2" style="margin:.75rem 0 1.25rem">Where your photos get edited</h2>
-        <div class="table-wrap"><table><tbody>{setup.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}</tbody></table></div>
-      </div>
-      <div>
         <span class="eyebrow">Working together</span>
-        <h2 class="h2" style="margin:.75rem 0 1.25rem">Practical details</h2>
+        <h2 class="h2" style="margin:.75rem 0 1.25rem">Practical details.</h2>
         <ul class="checks">
           <li>{site.location.note}</li>
           <li>I reply {site.replyTime}, usually much faster on WhatsApp.</li>
-          <li>Direct photo orders are paid after you approve the gallery.</li>
           <li>The Fiverr profile has {site.fiverrStats.reviews}+ reviews and {site.fiverrStats.ordersPlus}+ orders.</li>
-          <li>I also build websites and design polo and golf shirts, each with its own page and pricing.</li>
+          <li>I also build websites, make Android apps and design polo shirts. <a class="link" href="/#work">See everything I do</a></li>
         </ul>
-        <div class="chips" style="margin-top:1.5rem">
-          {site.otherServices.map((s) => <a class="pill" href={s.href} style="text-decoration:none">{s.label} →</a>)}
+      </div>
+      <div>
+        <span class="eyebrow">Reach me</span>
+        <div class="reach">
+          <a class="reach__item" href={waLink("Hi Harinda, I read your About page.")} data-track="whatsapp">
+            <small>Photo editing · WhatsApp</small><b>{site.contact.whatsappDisplay}</b>
+          </a>
+          <a class="reach__item" href={`mailto:${site.contact.email}`} data-track="email">
+            <small>Email</small><b style="font-size:1.05rem">{site.contact.email}</b>
+          </a>
         </div>
       </div>
     </div>
   </section>
+
   <Cta />
 </BaseLayout>

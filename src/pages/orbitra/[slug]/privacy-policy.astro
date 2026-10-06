@@ -43,7 +43,7 @@ const toc = [
     { label: "Privacy" },
   ]}
 >
-  <LegalDoc title="Privacy Policy" subtitle={`${app.name}, by Orbitra`} toc={toc}>
+  <LegalDoc title="Privacy Policy" subtitle={`${app.name}, by Orbitra`} toc={toc} updated={app.lastUpdated ?? undefined}>
     <section class="o-callout" aria-labelledby="short-version">
       <h2 id="short-version" class="o-heading">Short version</h2>
       <ul>{p.short.map((s) => <li set:html={r(s)} />)}</ul>

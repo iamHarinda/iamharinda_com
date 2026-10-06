@@ -1,5 +1,6 @@
 ---
 title: "Skin Retouching in Photoshop Without Losing Texture (A Wedding Photographer's Guide)"
+seoTitle: "Skin Retouching in Photoshop Without Losing Texture"
 description: "Over-smoothed skin is the fastest way to make a wedding photo look fake. Here's how to retouch in Photoshop while keeping real skin texture intact."
 category: photo-editing
 publishDate: 2026-04-07

@@ -1,5 +1,6 @@
 ---
 title: "A Realistic Camera Bag Checklist for a Full Wedding Day (Gear That Actually Gets Used)"
+seoTitle: "Wedding Day Camera Bag Checklist: Gear You'll Use"
 description: "Not everything in a camera bag actually earns its space on a wedding day. Here's a practical checklist based on what actually gets used, not what looks impressive."
 category: photo-editing
 publishDate: 2026-03-14

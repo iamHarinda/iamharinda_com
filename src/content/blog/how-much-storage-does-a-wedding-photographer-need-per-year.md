@@ -1,5 +1,6 @@
 ---
 title: "How Much Storage Does a Wedding Photographer Actually Need Per Year?"
+seoTitle: "How Much Storage Does a Wedding Photographer Need?"
 description: "Running out of storage mid-season is a preventable problem. Here's how to actually calculate what you'll need instead of guessing."
 category: photo-editing
 publishDate: 2026-02-24

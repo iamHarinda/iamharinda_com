@@ -35,7 +35,7 @@ const toc = [
     { label: "Delete data" },
   ]}
 >
-  <LegalDoc title="Delete your data" subtitle={`${app.name}, by Orbitra`} toc={toc}>
+  <LegalDoc title="Delete your data" subtitle={`${app.name}, by Orbitra`} toc={toc} updated={app.lastUpdated ?? undefined}>
     <section class="o-callout" aria-labelledby="short-version">
       <h2 id="short-version" class="o-heading">Short version</h2>
       <p set:html={r(d.short)} />

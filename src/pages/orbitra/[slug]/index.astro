@@ -1,10 +1,15 @@
 ---
-// One template for every app page: /orbitra/<slug>/
+// One landing page template for every app: /orbitra/<slug>/
+// Facts live in apps.json (store, legal, FAQ) and landing.js (features, colours).
+import "../../../styles/orbitra-landing.css";
 import OrbitraLayout from "../../../layouts/OrbitraLayout.astro";
 import Icon from "../../../components/orbitra/Icon.astro";
 import AppIcon from "../../../components/orbitra/AppIcon.astro";
 import StatusPill from "../../../components/orbitra/StatusPill.astro";
 import GooglePlayBadge from "../../../components/orbitra/GooglePlayBadge.astro";
+import Phone from "../../../components/orbitra/Phone.astro";
+import LandingVisual from "../../../components/orbitra/LandingVisual.astro";
+import landing from "../../../data/orbitra/landing.js";
 import { studio, apps, appPath, abs, rich, todoHtml, EXTERNAL, NEW_TAB_HTML } from "../../../lib/orbitra.js";
 
 export function getStaticPaths() {
@@ -12,176 +17,514 @@ export function getStaticPaths() {
 }
 
 const { app } = Astro.props;
+const lp = landing[app.slug];
+const t = lp.theme;
+const live = app.status === "live";
+const ctaHref = live ? app.playUrl : (app.inviteUrl ?? app.testingUrl);
+const ctaLabel = live ? "Get it on Google Play" : "Join the test on Google Play";
+const faq = lp.faq ?? app.faq;
+const others = apps.filter((a) => a.slug !== app.slug);
 
+// Brand colours become CSS variables; orbitra-landing.css does the rest.
+const vars = [
+  `--lp-accent:${t.accent}`,
+  `--lp-on-accent:${t.onAccent}`,
+  `--lp-accent2:${t.accent2}`,
+  `--lp-accent3:${t.accent3}`,
+  `--lp-deep:${t.deep}`,
+  `--lp-deep2:${t.deep2}`,
+  `--lp-tint-l:${t.tint}`,
+  `--lp-tint-d:${t.tintDark}`,
+  `--lp-text-l:${t.text}`,
+  `--lp-text-d:${t.textDark}`,
+  `--lp-font:"${t.font}"`,
+  `--lp-display:"${t.display}"`,
+  `--lp-hero-btn:${t.heroBtn ?? t.accent}`,
+  `--lp-hero-btn-ink:${t.heroBtnInk ?? t.onAccent}`,
+  `--lp-hero-accent:${t.heroAccent ?? t.accent}`,
+].join(";");
+
+const pageUrl = abs(appPath(app.slug));
+const studioId = `${abs(studio.basePath)}#organization`;
+const ogImage = `/orbitra/assets/apps/${app.slug}/og-1200x630.png`;
+
+// One @graph per page with stable @ids (SEO audit §7). No aggregateRating: we
+// have no ratings of our own to show.
 const jsonLd = [
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: app.name,
-    ...(app.storeTitle && { alternateName: app.storeTitle }),
-    identifier: app.package,
-    operatingSystem: "Android",
-    applicationCategory: app.category,
-    description: app.summary,
-    url: abs(appPath(app.slug)),
-    image: abs(`/orbitra/assets/apps/${app.slug}/icon.svg`),
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    publisher: { "@type": "Organization", name: "Orbitra", url: abs(studio.basePath) },
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": `${pageUrl}#app`,
+        name: app.name,
+        ...(app.storeTitle && { alternateName: app.storeTitle }),
+        identifier: app.package,
+        description: app.summary,
+        url: pageUrl,
+        operatingSystem: "Android",
+        applicationCategory: app.category,
+        inLanguage: "en-US",
+        isAccessibleForFree: true,
+        image: abs(`/orbitra/assets/apps/${app.slug}/icon.svg`),
+        screenshot: lp.gallery.map(([s]) => abs(`/orbitra/assets/apps/${app.slug}/ui/${s}.webp`)),
+        featureList: lp.sections.map((s) => s.title),
+        ...(live && { downloadUrl: app.playUrl, installUrl: app.playUrl }),
+        ...(app.website && { sameAs: [app.website] }),
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD", ...(live && { availability: "https://schema.org/InStock" }) },
+        author: { "@id": studioId },
+        publisher: { "@id": studioId },
+      },
+      {
+        "@type": "Organization",
+        "@id": studioId,
+        name: "Orbitra",
+        url: abs(studio.basePath),
+        logo: abs("/orbitra/assets/brand/orbitra-app-icon-512x512.png"),
+        sameAs: [studio.playDeveloperUrl],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Orbitra", item: abs(studio.basePath) },
+          { "@type": "ListItem", position: 2, name: app.name, item: pageUrl },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faq
+          .filter((f) => !f.a.includes("[[TODO"))
+          .map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: f.a.replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace("{email}", studio.contactEmail),
+            },
+          })),
+      },
+    ],
   },
 ];
 ---
 
 <OrbitraLayout
-  title={`${app.name}, by Orbitra`}
-  description={`${app.name} by Orbitra: ${app.summary}`}
+  title={lp.seo.title}
+  description={lp.seo.description}
+  ogImage={ogImage}
+  ogAlt={`${app.name}: ${app.tagline}`}
   app={app}
   active="apps"
-  crumbs={[{ label: "Orbitra", href: studio.basePath }, { label: app.name }]}
   jsonLd={jsonLd}
+  fonts={t.fonts}
+  themeColor={t.deep2}
+  landing
 >
-  <section class="o-apphero">
-    <div class="o-wrap">
-      <div class="o-apphero__card">
-        <AppIcon app={app} size={96} class="o-apphero__icon" />
-        <div class="o-apphero__meta">
-          <h1 class="o-title">{app.name}</h1>
-          <p class="o-caption">by Orbitra</p>
-          <p class="o-lead">{app.tagline}</p>
-          <div class="o-apphero__row">
-            {app.status !== "live" && <StatusPill status={app.status} />}
-            <code class="o-muted">{app.package}</code>
-            {!app.packageConfirmed && <Fragment set:html={todoHtml("confirm package name")} />}
+  <div class="lp" style={vars}>
+    <!-- ── hero ─────────────────────────────────────────────────────────── -->
+    <section class="lp-hero" aria-labelledby="lp-title">
+      <div class="lp-hero__bg" aria-hidden="true">
+        <span class="lp-orb lp-orb--1"></span>
+        <span class="lp-orb lp-orb--2"></span>
+        <span class="lp-orb lp-orb--3"></span>
+        <span class="lp-hero__grid"></span>
+      </div>
+      <div class="lp-container lp-hero__inner">
+        <div class="lp-hero__copy">
+          <div class="lp-hero__app lp-in" style="--d: 0">
+            <AppIcon app={app} size={56} class="lp-hero__icon" />
+            <div>
+              <p class="lp-hero__name">{app.name}</p>
+              <p class="lp-hero__by">by Orbitra · Android</p>
+            </div>
+            {!live && <StatusPill status={app.status} />}
           </div>
-          {app.storeTitle && <p class="o-caption">On Google Play as “{app.storeTitle}”</p>}
-          {
-            app.website && (
-              <p class="o-caption">
-                Also on the web: <a href={app.website} {...EXTERNAL}>
-                  {app.website.replace(/^https?:\/\//, "")}<Fragment set:html={NEW_TAB_HTML} />
+          <!-- The search phrase leads the H1, styled as a small eyebrow line. -->
+          <h1 class="lp-hero__title lp-in" id="lp-title" style="--d: 1">
+            <span class="lp-eyebrow lp-hero__kw">{lp.hero.eyebrow}</span>
+            <span class="lp-hero__headline">{lp.hero.title}</span>
+          </h1>
+          <p class="lp-hero__lead lp-in" style="--d: 3">{lp.hero.lead}</p>
+          <div class="lp-hero__cta lp-in" style="--d: 4">
+            {
+              live ? (
+                <GooglePlayBadge href={app.playUrl} width={200} />
+              ) : (
+                <a class="lp-btn lp-btn--primary" href={ctaHref} {...EXTERNAL}>
+                  <Icon name="download" size={20} />
+                  {ctaLabel}
+                  <Fragment set:html={NEW_TAB_HTML} />
                 </a>
-              </p>
-            )
-          }
+              )
+            }
+            <a class="lp-btn lp-btn--ghost" href="#features">
+              See every feature <Icon name="arrow" size={18} />
+            </a>
+          </div>
+          <ul class="lp-hero__trust lp-in" style="--d: 5">
+            <li><Icon name="tag" size={16} /> Free</li>
+            <li><Icon name="user" size={16} /> No account</li>
+            <li><Icon name="shield" size={16} /> No ads</li>
+          </ul>
+          {!app.packageConfirmed && <p class="lp-hero__todo" set:html={todoHtml("confirm package name")} />}
+        </div>
+
+        <div class="lp-hero__stage" data-tilt>
+          <Phone slug={app.slug} screen={lp.hero.side[0]} class="lp-hero__phone lp-hero__phone--l" eager />
+          <Phone slug={app.slug} screen={lp.hero.side[1]} class="lp-hero__phone lp-hero__phone--r" eager />
+          <Phone slug={app.slug} screen={lp.hero.screen} alt={lp.hero.alt} class="lp-hero__phone lp-hero__phone--main" eager />
           {
-            (app.status === "live" || app.testingUrl) && (
-              <div class="o-apphero__cta">
-                {app.status === "live" ? (
-                  <GooglePlayBadge href={app.playUrl} />
-                ) : (
-                  <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>
-                    Become a tester<Fragment set:html={NEW_TAB_HTML} />
-                  </a>
-                )}
-              </div>
-            )
+            lp.hero.chips.map((c, i) => (
+              <span class:list={["lp-chip", `lp-chip--${i + 1}`]} aria-hidden="true">
+                <Icon name={c.icon} size={18} /> {c.text}
+              </span>
+            ))
           }
         </div>
       </div>
-    </div>
-  </section>
+      {t.flame && (
+        <div class="lp-flame" aria-hidden="true">
+          {t.flame.map((c) => <span style={`background:${c}`} />)}
+        </div>
+      )}
+    </section>
 
-  <section class="o-section" aria-labelledby="features-title">
-    <div class="o-wrap">
-      <div class="o-section__head">
-        <h2 class="o-title" id="features-title">What it does</h2>
-        <p class="o-muted">{app.summary}</p>
-      </div>
-      <div class="o-grid o-grid--3">
+    <!-- ── numbers ──────────────────────────────────────────────────────── -->
+    <section class="lp-stats" aria-label={`${app.name} in numbers`}>
+      <div class="lp-container lp-stats__grid">
         {
-          app.features.map((f) => (
-            <div class="o-feature">
-              <Icon name={f.icon} size={28} />
-              <h3 class="o-heading">{f.title}</h3>
-              <p set:html={rich(f.text, app)} />
+          lp.stats.map((s, i) => (
+            <div class="lp-stat" data-reveal style={`--d: ${i}`}>
+              <p class="lp-stat__value" data-count={s.value}>{s.value}</p>
+              <p class="lp-stat__label">{s.label}</p>
             </div>
           ))
         }
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="o-section" aria-labelledby="shots-title">
-    <div class="o-wrap">
-      <div class="o-section__head">
-        <h2 class="o-title" id="shots-title">Screenshots</h2>
-        <p class="o-muted">{app.screenshotsNote}</p>
+    <div class="lp-marquee" aria-hidden="true">
+      <div class="lp-marquee__track">
+        {[...lp.marquee, ...lp.marquee].map((m) => <span>{m}</span>)}
       </div>
-      <div class="o-shots" tabindex="0" aria-label={`${app.name} screenshots`}>
+    </div>
+
+    <!-- ── features ─────────────────────────────────────────────────────── -->
+    <div id="features">
+      {
+        lp.sections.map((s, i) => (
+          <section
+            class:list={["lp-feature", { "lp-feature--flip": i % 2 === 1, "lp-feature--wide": s.wide, "lp-feature--tint": i % 2 === 0 }]}
+            aria-labelledby={`f-${i}`}
+          >
+            <div class="lp-container lp-feature__inner">
+              <div class="lp-feature__media" data-reveal>
+                <span class="lp-feature__glow" aria-hidden="true" />
+                {s.visual ? (
+                  <LandingVisual name={s.visual} slug={app.slug} />
+                ) : (
+                  <Phone slug={app.slug} screen={s.screen} alt={s.alt} landscape={s.wide} />
+                )}
+              </div>
+              <div class="lp-feature__copy">
+                <p class="lp-kicker" data-reveal>
+                  <span>{String(i + 1).padStart(2, "0")}</span> {s.kicker}
+                </p>
+                <h2 class="lp-h2" id={`f-${i}`} data-reveal>
+                  {s.title}
+                </h2>
+                <p class="lp-lead" data-reveal>
+                  {s.text}
+                </p>
+                {s.points && (
+                  <ul class="lp-points">
+                    {s.points.map((p, j) => (
+                      <li class="lp-point" data-reveal style={`--d: ${j}`}>
+                        <span class="lp-point__icon">
+                          <Icon name={p.icon} size={22} />
+                        </span>
+                        <div>
+                          <h3>{p.title}</h3>
+                          <p>{p.text}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {s.tags && (
+                  <ul class="lp-tags" data-reveal>
+                    {s.tags.map((tag) => (
+                      <li>{tag}</li>
+                    ))}
+                    <li class="lp-tags__more">and more</li>
+                  </ul>
+                )}
+                {s.presets && (
+                  <div class="lp-presets" data-reveal>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th scope="col">I sell on</th>
+                          <th scope="col">Size (px)</th>
+                          <th scope="col">Product fills</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {s.presets.map(([m, size, fill]) => (
+                          <tr>
+                            <th scope="row">{m}</th>
+                            <td>{size}</td>
+                            <td>{fill}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+                {s.note && (
+                  <p class="lp-note" data-reveal>
+                    {s.note}
+                  </p>
+                )}
+              </div>
+            </div>
+          </section>
+        ))
+      }
+    </div>
+
+    <!-- ── everything else ──────────────────────────────────────────────── -->
+    <section class="lp-section lp-more" aria-labelledby="more-title">
+      <div class="lp-container">
+        <div class="lp-head" data-reveal>
+          <p class="lp-eyebrow lp-eyebrow--text">And there’s more</p>
+          <h2 class="lp-h2" id="more-title">The little things that make a big difference</h2>
+        </div>
+        <ul class="lp-more__grid">
+          {
+            lp.more.map((m, i) => (
+              <li class="lp-tile" data-reveal style={`--d: ${i % 4}`}>
+                <span class="lp-tile__icon">
+                  <Icon name={m.icon} size={24} />
+                </span>
+                <h3>{m.title}</h3>
+                <p>{m.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── how it works ─────────────────────────────────────────────────── -->
+    <section class="lp-section lp-steps" aria-labelledby="steps-title">
+      <div class="lp-container">
+        <div class="lp-head lp-head--center" data-reveal>
+          <p class="lp-eyebrow">How it works</p>
+          <h2 class="lp-h2" id="steps-title">Three steps. That’s it.</h2>
+        </div>
+        <ol class="lp-steps__list">
+          {
+            lp.steps.map((s, i) => (
+              <li class="lp-step" data-reveal style={`--d: ${i}`}>
+                <span class="lp-step__n">{i + 1}</span>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── screenshots ──────────────────────────────────────────────────── -->
+    <section class="lp-section lp-gallery" aria-labelledby="shots-title">
+      <div class="lp-container">
+        <div class="lp-head lp-head--row" data-reveal>
+          <div>
+            <p class="lp-eyebrow lp-eyebrow--text">Take a look</p>
+            <h2 class="lp-h2" id="shots-title">Inside {app.name}</h2>
+            <p class="lp-muted">{app.screenshotsNote}</p>
+          </div>
+          <div class="lp-gallery__nav">
+            <button class="lp-roundbtn" type="button" data-gal="-1" aria-label="Previous screenshots">
+              <Icon name="arrow" size={20} />
+            </button>
+            <button class="lp-roundbtn" type="button" data-gal="1" aria-label="Next screenshots">
+              <Icon name="arrow" size={20} />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="lp-gallery__track" tabindex="0" aria-label={`${app.name} screenshots`} data-gal-track>
         {
-          app.screenshots.length > 0
-            ? app.screenshots.map((s) => (
-                <img src={s.src} alt={s.alt} width="200" loading="lazy" decoding="async" />
-              ))
-            : [1, 2, 3].map(() => <div class="o-shot-ph" aria-hidden="true">Screenshot coming soon</div>)
+          lp.gallery.map(([screen, label]) => (
+            <figure class="lp-gallery__item">
+              <Phone slug={app.slug} screen={screen} alt={`${app.name}: ${label}`} />
+              <figcaption>{label}</figcaption>
+            </figure>
+          ))
         }
       </div>
-    </div>
-  </section>
+    </section>
 
-  {
-    app.testingUrl && (
-      <section class="o-section" id="test" aria-labelledby="test-title">
-        <div class="o-wrap">
-          <div class="o-callout o-test" style="max-width: var(--maxw-prose)">
-            <h2 class="o-heading" id="test-title">Help us test {app.storeTitle ?? app.name}</h2>
-            <p>The app is in testing on Google Play. Install it early and tell us what you think:</p>
-            <ol>
-              {
-                app.inviteUrl && (
-                  <li>
-                    Open the <a href={app.inviteUrl} {...EXTERNAL}>tester invitation link<Fragment set:html={NEW_TAB_HTML} /></a> and
-                    click <strong>Accept invitation</strong>.
-                  </li>
-                )
-              }
-              <li>
+    <!-- ── privacy ──────────────────────────────────────────────────────── -->
+    <section class="lp-section lp-privacy" aria-labelledby="glance-title">
+      <div class="lp-container lp-privacy__inner" data-reveal>
+        <span class="lp-privacy__badge" aria-hidden="true"><Icon name="shield" size={40} /></span>
+        <div>
+          <p class="lp-eyebrow">Privacy at a glance</p>
+          <h2 class="lp-h2" id="glance-title">Your data stays yours</h2>
+          <ul class="lp-checks">
+            {app.glance.map((g) => <li set:html={rich(g, app)} />)}
+          </ul>
+          <p class="lp-privacy__links">
+            <a href={appPath(app.slug, "privacy-policy")}>Read the full privacy policy</a>
+            <a href={appPath(app.slug, "delete-data")}>Delete your data</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── testing ──────────────────────────────────────────────────────── -->
+    {
+      !live && app.testingUrl && (
+        <section class="lp-section lp-test" id="test" aria-labelledby="test-title">
+          <div class="lp-container lp-test__inner">
+            <div data-reveal>
+              <p class="lp-eyebrow lp-eyebrow--text">Early access</p>
+              <h2 class="lp-h2" id="test-title">Help us test {app.storeTitle ?? app.name}</h2>
+              <p class="lp-lead">
+                The app is in testing on Google Play. Install it early, use it for a while and tell us what you think.
+              </p>
+              <a class="lp-btn lp-btn--primary" href={ctaHref} {...EXTERNAL}>
+                Join the test<Fragment set:html={NEW_TAB_HTML} />
+              </a>
+              <p class="lp-muted lp-test__mail" set:html={rich(`Send feedback to {email}. Thank you!`)} />
+            </div>
+            <ol class="lp-test__steps">
+              {app.inviteUrl && (
+                <li data-reveal>
+                  Open the <a href={app.inviteUrl} {...EXTERNAL}>tester invitation link<Fragment set:html={NEW_TAB_HTML} /></a> and
+                  click <strong>Accept invitation</strong>.
+                </li>
+              )}
+              <li data-reveal>
                 Open the <a href={app.testingUrl} {...EXTERNAL}>testing page<Fragment set:html={NEW_TAB_HTML} /></a> and
                 select <strong>Become a tester</strong>.
               </li>
-              <li>Once you have joined, click <strong>Download it on Google Play</strong>.</li>
-              <li>Install the app from the Google Play Store.</li>
-              <li>
-                Open the app and use it for a while. If you find a bug, or have an idea for something to add,
-                change or improve, please let us know.
-              </li>
+              <li data-reveal>Once you have joined, click <strong>Download it on Google Play</strong>.</li>
+              <li data-reveal>Install the app from the Google Play Store.</li>
+              <li data-reveal>Use it for a while. Found a bug, or have an idea? Please let us know.</li>
             </ol>
-            <p class="o-test__cta">
-              <a class="o-btn o-btn--primary" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>
-                Join the test<Fragment set:html={NEW_TAB_HTML} />
+          </div>
+        </section>
+      )
+    }
+
+    <!-- ── FAQ ──────────────────────────────────────────────────────────── -->
+    <section class="lp-section lp-faq" aria-labelledby="faq-title">
+      <div class="lp-container lp-faq__inner">
+        <div class="lp-head" data-reveal>
+          <p class="lp-eyebrow lp-eyebrow--text">FAQ</p>
+          <h2 class="lp-h2" id="faq-title">Questions, answered</h2>
+          <p class="lp-muted">
+            More on the <a href={appPath(app.slug, "support")}>support page</a>.
+          </p>
+        </div>
+        <div class="lp-faq__list">
+          {
+            faq.map((f, i) => (
+              <details class="lp-faq__item" data-reveal name="lp-faq" open={i === 0}>
+                <summary>{f.q}</summary>
+                <p set:html={rich(f.a, app)} />
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- ── closing CTA ──────────────────────────────────────────────────── -->
+    <section class="lp-final" aria-labelledby="final-title">
+      <div class="lp-hero__bg" aria-hidden="true">
+        <span class="lp-orb lp-orb--1"></span>
+        <span class="lp-orb lp-orb--2"></span>
+      </div>
+      <div class="lp-container lp-final__inner" data-reveal>
+        <AppIcon app={app} size={104} class="lp-final__icon" />
+        <h2 class="lp-final__title" id="final-title">{lp.closing}</h2>
+        <p>{app.storeTitle ?? app.name} · Free on Android · by Orbitra</p>
+        {
+          live ? (
+            <GooglePlayBadge href={app.playUrl} width={220} />
+          ) : (
+            <a class="lp-btn lp-btn--primary lp-btn--lg" href={ctaHref} {...EXTERNAL}>
+              <Icon name="download" size={20} />
+              {ctaLabel}
+              <Fragment set:html={NEW_TAB_HTML} />
+            </a>
+          )
+        }
+        {
+          app.website && (
+            <p class="lp-final__web">
+              Also on the web:{" "}
+              <a href={app.website} {...EXTERNAL}>
+                {app.website.replace(/^https?:\/\//, "")}
+                <Fragment set:html={NEW_TAB_HTML} />
               </a>
             </p>
-            <p set:html={rich(`Send feedback to {email}. Thank you!`)} />
-          </div>
-        </div>
-      </section>
-    )
-  }
-
-  <section class="o-section" aria-labelledby="glance-title">
-    <div class="o-wrap">
-      <div class="o-callout" style="max-width: var(--maxw-prose)">
-        <h2 class="o-heading" id="glance-title">Privacy at a glance</h2>
-        <ul>
-          {app.glance.map((g) => <li set:html={rich(g, app)} />)}
-        </ul>
-        <p>
-          <a href={appPath(app.slug, "privacy-policy")}>Read the full privacy policy</a> ·
-          <a href={appPath(app.slug, "delete-data")}>Delete your data</a>
-        </p>
+          )
+        }
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="o-section" id="support" aria-labelledby="support-title">
-    <div class="o-wrap">
-      <h2 class="o-title" id="support-title">Help and legal</h2>
-      <p style="margin-top: var(--space-3)" set:html={rich(`Questions or a bug to report? Email {email}. We reply within 2–3 working days.`)} />
-      <ul class="o-linkrow">
-        <li><a href={appPath(app.slug, "support")}>Support &amp; FAQ</a></li>
-        <li><a href={appPath(app.slug, "privacy-policy")}>Privacy policy</a></li>
-        <li><a href={appPath(app.slug, "delete-data")}>Delete your data</a></li>
-        <li><a href={appPath(app.slug, "terms")}>Terms of use</a></li>
-      </ul>
+    <!-- ── help, legal and the other worlds ─────────────────────────────── -->
+    <section class="lp-section lp-help" id="support" aria-labelledby="support-title">
+      <div class="lp-container lp-help__inner">
+        <div>
+          <h2 class="lp-h3" id="support-title">Help and legal</h2>
+          <p class="lp-muted" set:html={rich(`Questions or a bug to report? Email {email}. We reply within 2–3 working days.`)} />
+          <ul class="lp-help__links">
+            <li><a href={appPath(app.slug, "support")}><Icon name="help" size={18} /> Support &amp; FAQ</a></li>
+            <li><a href={appPath(app.slug, "privacy-policy")}><Icon name="shield" size={18} /> Privacy policy</a></li>
+            <li><a href={appPath(app.slug, "delete-data")}><Icon name="trash" size={18} /> Delete your data</a></li>
+            <li><a href={appPath(app.slug, "terms")}><Icon name="file" size={18} /> Terms of use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="lp-h3">More from Orbitra</h2>
+          <ul class="lp-others">
+            {
+              others.map((o) => (
+                <li>
+                  <a href={appPath(o.slug)}>
+                    <AppIcon app={o} size={40} decorative />
+                    <span>
+                      <b>{o.name}</b>
+                      <small>{o.tagline}</small>
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- sticky install bar (phones) -->
+    <div class="lp-sticky" data-sticky aria-hidden="true">
+      <AppIcon app={app} size={40} decorative />
+      <span><b>{app.name}</b><small>Free · Android</small></span>
+      <a class="lp-btn lp-btn--primary lp-btn--sm" href={ctaHref} tabindex="-1" {...EXTERNAL}>
+        {live ? "Install" : "Join the test"}
+      </a>
     </div>
-  </section>
+  </div>
+
+  <script>
+    import "../../../scripts/orbitra-landing.js";
+  </script>
 </OrbitraLayout>

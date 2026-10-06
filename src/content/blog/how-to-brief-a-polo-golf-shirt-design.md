@@ -1,5 +1,6 @@
 ---
 title: "How to Brief a Polo or Golf Shirt Design Without Any Design Background"
+seoTitle: "How to Brief a Polo or Golf Shirt Design"
 description: "You don't need design vocabulary to describe what you want well. A simple structure that gets you an accurate first concept without the jargon."
 category: apparel-design
 publishDate: 2026-08-26

@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/PageHero.astro";
 import Bits from "../../components/Bits.astro";
+import WorldMap from "../../components/WorldMap.astro";
+import BeforeAfter from "../../components/BeforeAfter.astro";
 import Shot from "../../components/Shot.astro";
 import Pricing from "../../components/Pricing.astro";
 import Reviews from "../../components/Reviews.astro";
@@ -9,7 +11,7 @@ import Faq from "../../components/Faq.astro";
 import Cta from "../../components/Cta.astro";
 import site, { waLink } from "../../data/site.js";
 import { services } from "../../data/services.js";
-import { pick } from "../../data/portfolio.js";
+import { pick, cld } from "../../data/portfolio.js";
 import { service, faqPage, breadcrumb } from "../../lib/schema.js";
 
 const crumbs = [{ name: "Home", path: "/" }, { name: "Photo editing", path: "/photo-editing/" }];
@@ -18,6 +20,13 @@ const cards = [
   { s: services.portrait, img: pick("DSC01720")[0] },
   { s: services.product, img: pick("IMG_8713")[0] },
 ];
+// The client map, "How I edit", work rail and process used to live on the home
+// page; they belong to the photo-editing service, so they live here now.
+const fe = site.featuredEdit;
+const feWidths = [640, 960, 1280, 1600];
+const railImgs = pick("DSC_0943-Enhanced-NR", "DSC01720", "IMG_9342", "IMG_3960", "DSC_0960-Enhanced-NR", "IMG_8873", "DSC02117", "IMG_3993");
+const printImg = pick("DSC_0972-Enhanced-NR")[0];
+
 const jsonLd = [
   service({ name: "Photo editing for photographers", path: "/photo-editing/", description: site.description }),
   faqPage(site.faqs),
@@ -66,7 +75,97 @@ const jsonLd = [
     </div>
   </section>
 
-  <section class="sec sec--alt" id="pricing">
+  <!-- How I edit: real Lightroom settings from a real client photo -->
+  <section class="sec" id="how-i-edit">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">How I edit</span>
+        <h2 class="h2">Real settings from a real gallery.</h2>
+        <p class="lede">Lightroom Classic values from a real client gallery. Scroll and watch them land. Every frame gets the same care: exposure first, then tone, then color, then a final check on a calibrated screen.</p>
+      </div>
+      <div class="edit" data-edit>
+        {fe.before && fe.after ? (
+          <BeforeAfter before={fe.before} after={fe.after} alt={fe.alt} />
+        ) : (
+          <figure class="edit__photo edit__photo--tall" data-parallax>
+            <img src={`${fe.src}-1280.webp`} srcset={feWidths.map((w) => `${fe.src}-${w}.webp ${w}w`).join(", ")} sizes="(min-width: 861px) 45vw, 100vw" width={fe.w} height={fe.h} alt={fe.alt} loading="lazy" decoding="async" />
+          </figure>
+        )}
+        <div class="panel" aria-label="Lightroom Classic develop settings for this photo">
+          <div class="panel__top"><span>Develop · Basic</span><span data-pct>100%</span></div>
+          {fe.settings.map((s) => (
+            <div class="sl" data-sl data-v={s.value} data-min={s.min} data-max={s.max} data-dec={s.dec ?? 0}>
+              <span>{s.label}</span>
+              <div class="track"><i class="knob" style={`--k:${((s.value - s.min) / (s.max - s.min)) * 100}%`}></i></div>
+              <output>{(s.value > 0 ? "+" : s.value < 0 ? "−" : "") + Math.abs(s.value).toFixed(s.dec ?? 0)}</output>
+            </div>
+          ))}
+          <div class="panel__passes">{fe.passes.map((p) => <span class="pill">{p}</span>)}</div>
+          {fe.camera && <p class="panel__foot">{fe.camera}</p>}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--alt sec--tight">
+    <div class="wrap"><Bits kind="stats" /></div>
+  </section>
+
+  <WorldMap />
+
+  <!-- Work rail -->
+  <section class="sec" id="work">
+    <div class="wrap head head--row">
+      <div>
+        <span class="eyebrow">The work</span>
+        <h2 class="h2">Finished galleries, not filters.</h2>
+      </div>
+      <p class="muted" style="max-width:30em">Weddings and events, portraits, product and food, all edited by hand for clients in {site.fiverrStats.countries} countries. <a class="link" href="/work/">Full portfolio</a></p>
+    </div>
+    <div class="rail" data-rail>
+      <div class="rail__track">
+        {railImgs.map((img) => <div class="rail__item"><Shot img={img} sizes="(min-width: 900px) 30vw, 80vw" /></div>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Process with 3D print -->
+  <section class="sec sec--alt">
+    <div class="wrap grid g2" style="align-items:center">
+      <div class="stage">
+        <div class="print" data-print>
+          <div class="print__face">
+            <img src={cld(printImg, { w: 640, ar: "4:5" })} width="640" height="800" alt={printImg.alt} loading="lazy" decoding="async" />
+            <div class="print__cap"><span>Edited by Harinda</span><span>sRGB · Full res</span></div>
+          </div>
+          <div class="print__face print__back" aria-hidden="true">
+            <span class="eyebrow">Delivery note</span>
+            <h3>Gallery ready.</h3>
+            <dl>
+              <dt>Images</dt><dd>500 edited</dd>
+              <dt>Turnaround</dt><dd>4 days</dd>
+              <dt>Format</dt><dd>JPEG · sRGB · full res</dd>
+              <dt>Delivery</dt><dd>Google Drive link</dd>
+              <dt>Revisions</dt><dd>Unlimited</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">How it works</span>
+        <h2 class="h2" style="margin:.75rem 0 1.5rem">From memory card to finished gallery.</h2>
+        <ol class="steps">
+          <li><div><b>Send a link</b><p>Google Drive, Dropbox or WeTransfer, plus your preset or three reference edits.</p></div></li>
+          <li><div><b>Free sample, {site.freeSample.turnaround}</b><p>Three photos edited in your style, so we agree on the look before anything is paid.</p></div></li>
+          <li><div><b>Full gallery in 2–4 days</b><p>Every frame edited by hand and delivered at full resolution.</p></div></li>
+          <li><div><b>Approve, then pay</b><p>Unlimited revisions. Pay by PayPal, Payoneer, Remitly, TapSend or bank transfer.</p></div></li>
+        </ol>
+        <p style="margin-top:1.5rem"><a class="link" href="/photo-editing/how-to-send-files/">How to send your files</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="pricing">
     <div class="wrap">
       <div class="head"><span class="eyebrow">Pricing</span><h2 class="h2">{site.perPhoto} a photo. Unlimited revisions.</h2></div>
       <Pricing />

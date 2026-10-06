@@ -1,5 +1,6 @@
 ---
 title: "The Real Ongoing Costs of Owning a Website Nobody Mentions Upfront"
+seoTitle: "The Real Ongoing Costs of Owning a Website"
 description: "A website isn't a one-time purchase, even when it gets quoted that way. The full picture of what it actually costs to keep one running."
 category: web-development
 publishDate: 2026-07-06

@@ -1,5 +1,6 @@
 ---
 title: "Placement Matters: Why a Logo Stretched Onto a Polo Template Looks Wrong"
+seoTitle: "Logo Placement on Polo Shirts: Why Stretching Fails"
 description: "The fastest way to make a design look amateur on a polo shirt is placing it without accounting for the garment. What actually goes wrong, and why."
 category: apparel-design
 publishDate: 2026-08-20

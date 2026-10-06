@@ -1,5 +1,6 @@
 ---
 title: "Embroidery vs. Sublimation Print: Why the Method Changes the Design"
+seoTitle: "Embroidery vs. Sublimation: How the Design Changes"
 description: "The same logo can need two genuinely different design approaches depending on whether it's being embroidered or sublimation printed. Here's why."
 category: apparel-design
 publishDate: 2026-08-14

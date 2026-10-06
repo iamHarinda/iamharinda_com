@@ -1,5 +1,6 @@
 ---
 title: "What Happens If You Don't Like the Edited Photos You Get Back?"
+seoTitle: "Don't Like Your Edited Photos? What Happens Next"
 description: "It's the fear that stops a lot of photographers from ever trying outsourced editing. Here's what actually happens, and how a good service handles it."
 category: photo-editing
 publishDate: 2025-12-20

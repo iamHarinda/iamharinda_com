@@ -1,220 +1,429 @@
 ---
+// Home: who Harinda is. Facts come from src/data/profile.js (his LinkedIn).
+// Design rule: logos appear only in sets where every item has a real logo
+// (the hero strip, certifications, profiles). Timeline and CV rows use none.
+import "../styles/home.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Bits from "../components/Bits.astro";
-import Shot from "../components/Shot.astro";
-import Pricing from "../components/Pricing.astro";
 import Reviews from "../components/Reviews.astro";
 import WorldMap from "../components/WorldMap.astro";
-import Faq from "../components/Faq.astro";
 import FiverrLogo from "../components/FiverrLogo.astro";
-import BeforeAfter from "../components/BeforeAfter.astro";
 import Cta from "../components/Cta.astro";
-import site, { waLink } from "../data/site.js";
-import { portfolio, pick, cld, cldSrcset } from "../data/portfolio.js";
-import { service, faqPage } from "../lib/schema.js";
+import site from "../data/site.js";
+import profile from "../data/profile.js";
+import orbitraApps from "../data/orbitra/apps.json";
+import { profilePage } from "../lib/schema.js";
 import { getCollection } from "astro:content";
 
+const years = new Date().getFullYear() - profile.freelancingSince;
+const degree = profile.education[0];
+const degreeShort = degree.award.split(" · ")[0];
+const posts = (await getCollection("blog")).sort((a, b) => b.data.publishDate - a.data.publishDate).slice(0, 3);
 const fe = site.featuredEdit;
-const feWidths = [640, 960, 1280, 1600];
-const railImgs = pick("DSC_0943-Enhanced-NR", "DSC01720", "IMG_9342", "IMG_3960", "DSC_0960-Enhanced-NR", "IMG_8873", "DSC02117", "IMG_3993");
-const printImg = pick("DSC_0972-Enhanced-NR")[0];
-const faqs = site.faqs.slice(0, 5);
-const posts = (await getCollection("blog", (p) => p.data.category === "photo-editing"))
-  .sort((a, b) => b.data.publishDate - a.data.publishDate)
-  .slice(0, 3);
+const roles = ["edit photos", "build websites", "make Android apps", "run live streams", "design polo shirts"];
 
-const jsonLd = [
-  service({ name: "Photo editing for photographers", path: "/photo-editing/", description: site.description }),
-  faqPage(faqs),
+// Every organisation here has a real logo, so the strip is consistent.
+const orgs = [
+  { name: "Rajarata University", logo: "/images/logos/rajarata.webp" },
+  { name: "UCSC", logo: "/images/logos/ucsc.webp" },
+  { name: "Fiverr", logo: "/images/logos/fiverr.webp" },
+  { name: "Elegant Media", logo: "/images/logos/elegant-media.webp" },
+  { name: "Google", logo: "/images/logos/google.webp" },
+  { name: "KodeKloud", logo: "/images/logos/kodekloud.webp" },
 ];
+
+const kindLabel = { study: "Study", work: "Work", milestone: "Milestone" };
+const yearOf = (when) => (when.match(/\d{4}/) ?? [""])[0];
+
+const jsonLd = [profilePage({ path: "/", modified: "2026-10-06" })];
 ---
 
 <BaseLayout
-  rawTitle="Wedding & Portrait Photo Editing, Hand-Edited | Harinda"
-  description="Outsource your wedding and portrait editing to a human editor. Lightroom, no AI, from $0.20 a photo. 3 free sample edits, pay after you approve."
+  rawTitle="Harinda Fernando: Photo Editor, Web Developer & App Maker"
+  description="Harinda Fernando, B.ICT (Hons), is a photo editor, web developer and Android app maker from Sri Lanka, freelancing since 2019 for clients in 49 countries."
   path="/"
   jsonLd={jsonLd}
 >
-  <header class="hero hero--text">
-    <div class="hero__frame">
-      <div class="hero__copy">
-        <span class="eyebrow">Wedding &amp; portrait editing · No AI</span>
-        <h1 class="display" style="margin-top:.9rem">
-          <span class="ln"><span>Your style.</span></span>
-          <span class="ln"><span><em>Hand-edited.</em></span></span>
-          <span class="ln"><span>On deadline.</span></span>
-        </h1>
-        <p>I edit wedding, portrait and event galleries in Lightroom Classic, by eye, on a calibrated screen. Three free sample edits first. You pay after you approve.</p>
-        <div class="btn-row">
-          <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
-          <a class="btn btn--s btn--light" href="/work/">See the work</a>
+  <!-- ── Hero ───────────────────────────────────────────────────────────── -->
+  <header class="hero h-hero">
+    <div class="hero__frame h-hero__frame">
+      <span class="h-hero__grid" aria-hidden="true"></span>
+      <div class="h-hero__inner">
+        <div class="h-hero__copy">
+          <p class="h-status"><span class="h-status__dot"></span> Taking new galleries · {profile.hometown}, {profile.country}</p>
+          <h1 class="h-name">
+            <span class="ln"><span>Harinda</span></span>
+            <span class="ln"><span><em>Fernando.</em></span></span>
+          </h1>
+          <p class="h-roles">
+            I <span class="h-roles__word" data-roles={JSON.stringify(roles)}>{roles[0]}</span><span class="h-roles__caret" aria-hidden="true"></span>
+          </p>
+          <p class="h-lead">
+            {degreeShort} graduate. Editing photos for photographers in {site.fiverrStats.countries} countries since
+            {" "}{profile.freelancingSince}, with a background in WordPress and PHP development, and five Android apps under my
+            own studio, Orbitra.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--p" href="/free-sample/">{site.freeSample.cta}</a>
+            <a class="btn btn--s btn--light" href="#story">Read my story</a>
+          </div>
         </div>
-        <ul class="hero__facts">
-          <li>Lightroom Classic · Photoshop</li>
-          <li>Calibrated ASUS ProArt screen</li>
-          <li>From {site.perPhoto} a photo</li>
+
+        <figure class="h-portrait">
+          <img src={site.personImage} width="800" height="800" alt="Harinda Fernando" fetchpriority="high" decoding="async" />
+          <figcaption class="h-chip h-chip--a">
+            <FiverrLogo height={15} label="Fiverr" />
+            <span><b>{site.fiverrStats.reviews}+</b> reviews</span>
+          </figcaption>
+          <figcaption class="h-chip h-chip--b">
+            <span class="h-chip__k">Degree</span>
+            <span><b>{degreeShort}</b></span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <dl class="h-stats">
+        <div><dt>Years freelancing</dt><dd data-count={years}>{years}</dd></div>
+        <div><dt>Orders delivered</dt><dd data-count={site.fiverrStats.ordersPlus} data-suffix="+">{site.fiverrStats.ordersPlus}+</dd></div>
+        <div><dt>Client countries</dt><dd data-count={site.fiverrStats.countries}>{site.fiverrStats.countries}</dd></div>
+        <div><dt>Android apps</dt><dd data-count={orbitraApps.length}>{orbitraApps.length}</dd></div>
+      </dl>
+
+      <div class="h-orgs">
+        <span class="h-orgs__label">Studied at &amp; worked with</span>
+        <ul>
+          {orgs.map((o) => <li><img src={o.logo} width="28" height="28" alt="" decoding="async" /><span>{o.name}</span></li>)}
         </ul>
-        <p class="hero__rating"><FiverrLogo height={16} label="Fiverr" /> {site.fiverrStats.reviews}+ reviews · {site.fiverrStats.ordersPlus}+ orders</p>
       </div>
     </div>
   </header>
 
-  <Bits kind="guarantees" />
-
-  <!-- How I edit: real Lightroom settings from a real client photo -->
-  <section class="sec" id="how-i-edit">
+  <!-- ── What I do: bento ────────────────────────────────────────────────── -->
+  <section class="sec" id="work">
     <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">How I edit</span>
-        <h2 class="h2">Real settings from a real gallery.</h2>
-        <p class="lede">Lightroom Classic values from a real client gallery. Scroll and watch them land. Every frame gets the same care: exposure first, then tone, then color, then a final check on a calibrated screen.</p>
-      </div>
-      <div class="edit" data-edit>
-        {fe.before && fe.after ? (
-          <BeforeAfter before={fe.before} after={fe.after} alt={fe.alt} />
-        ) : (
-          <figure class="edit__photo edit__photo--tall" data-parallax>
-            <img src={`${fe.src}-1280.webp`} srcset={feWidths.map((w) => `${fe.src}-${w}.webp ${w}w`).join(", ")} sizes="(min-width: 861px) 45vw, 100vw" width={fe.w} height={fe.h} alt={fe.alt} loading="lazy" decoding="async" />
-          </figure>
-        )}
-        <div class="panel" aria-label="Lightroom Classic develop settings for this photo">
-          <div class="panel__top"><span>Develop · Basic</span><span data-pct>100%</span></div>
-          {fe.settings.map((s) => (
-            <div class="sl" data-sl data-v={s.value} data-min={s.min} data-max={s.max} data-dec={s.dec ?? 0}>
-              <span>{s.label}</span>
-              <div class="track"><i class="knob" style={`--k:${((s.value - s.min) / (s.max - s.min)) * 100}%`}></i></div>
-              <output>{(s.value > 0 ? "+" : s.value < 0 ? "−" : "") + Math.abs(s.value).toFixed(s.dec ?? 0)}</output>
-            </div>
-          ))}
-          <div class="panel__passes">{fe.passes.map((p) => <span class="pill">{p}</span>)}</div>
-          {fe.camera && <p class="panel__foot">{fe.camera}</p>}
+      <div class="head head--row">
+        <div>
+          <span class="eyebrow">What I do</span>
+          <h2 class="h2">Five crafts. One person behind every one.</h2>
         </div>
+        <p class="muted" style="max-width:26em">Photo editing is the main service. The rest grew out of the same habit: making things carefully, by hand.</p>
+      </div>
+
+      <div class="bento">
+        <!-- Photo editing -->
+        <a class="tile tile--photo" href="/photo-editing/" data-in>
+          <img class="tile__bg" src={`${fe.src}-1280.webp`} srcset={[640, 960, 1280].map((w) => `${fe.src}-${w}.webp ${w}w`).join(", ")} sizes="(min-width: 900px) 60vw, 100vw" width={fe.w} height={fe.h} alt="" loading="lazy" decoding="async" />
+          <div class="lr" aria-hidden="true">
+            <p class="lr__top"><span>Develop · Basic</span><span>LR Classic</span></p>
+            {fe.settings.slice(0, 5).map((s, i) => (
+              <div class="lr__row" style={`--k:${((s.value - s.min) / (s.max - s.min)) * 100}%;--i:${i}`}>
+                <span>{s.label}</span><i></i><output>{(s.value > 0 ? "+" : s.value < 0 ? "−" : "") + Math.abs(s.value).toFixed(s.dec ?? 0)}</output>
+              </div>
+            ))}
+          </div>
+          <div class="tile__body">
+            <span class="tile__n">01 · Main service</span>
+            <h3>Photo editing</h3>
+            <p>Wedding, portrait, event, product and food galleries, edited by hand in Lightroom and Photoshop. From {site.perPhoto} a photo.</p>
+            <span class="tile__go">See photo editing</span>
+          </div>
+        </a>
+
+        <!-- Apps -->
+        <a class="tile tile--apps gl" href="/orbitra/" data-in>
+          <div class="orbit" aria-hidden="true">
+            <svg class="orbit__mark" viewBox="0 0 64 64" width="44" height="44"><path d="M53.25 26.31 A22 22 0 1 1 37.69 10.75" fill="none" stroke="#FF5A1F" stroke-width="8" stroke-linecap="round" /><circle cx="47.56" cy="16.44" r="6" fill="#FF5A1F" /></svg>
+            <div class="orbit__ring">
+              {orbitraApps.map((a, i) => (
+                <img src={`/orbitra/assets/apps/${a.slug}/icon.svg`} width="40" height="40" alt="" loading="lazy" style={`--n:${i};--t:${orbitraApps.length}`} />
+              ))}
+            </div>
+          </div>
+          <div class="tile__body">
+            <span class="tile__n">02 · Orbitra</span>
+            <h3>Android apps</h3>
+            <p>Five small, private apps. Four on Google Play.</p>
+          </div>
+        </a>
+
+        <!-- Web development -->
+        <a class="tile tile--web" href="/web-development/" data-in>
+          <div class="code" aria-hidden="true">
+            <p class="code__bar"><i></i><i></i><i></i><span>site.config.js</span></p>
+            <pre><code><b class="k">export const</b> site = <b class="f">build</b>(&#123;
+  framework: <b class="s">"hand-coded"</b>,
+  pageBuilder: <b class="v">false</b>,
+  youOwnTheCode: <b class="v">true</b>,
+&#125;);<span class="code__cursor"></span></code></pre>
+          </div>
+          <div class="tile__body">
+            <span class="tile__n">03</span>
+            <h3>Web development</h3>
+            <p>Custom websites, with PHP, Laravel and WordPress experience behind them.</p>
+          </div>
+        </a>
+
+        <!-- Polo design -->
+        <a class="tile tile--polo" href="/fashion-designing/" data-in>
+          <svg class="polo" viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+              <pattern id="stripes" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+                <rect width="10" height="10" fill="#F7B08E" /><rect width="4" height="10" fill="#B5451B" />
+              </pattern>
+            </defs>
+            <path d="M42 14 L60 22 L78 14 L104 28 L96 50 L84 46 L84 106 L36 106 L36 46 L24 50 L16 28 Z" fill="url(#stripes)" stroke="#17171A" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M50 17 L60 34 L70 17" fill="#F6F5F2" stroke="#17171A" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M60 34 V52" stroke="#17171A" stroke-width="2.5" /><circle cx="60" cy="41" r="1.8" fill="#17171A" /><circle cx="60" cy="48" r="1.8" fill="#17171A" />
+          </svg>
+          <div class="tile__body">
+            <span class="tile__n">04</span>
+            <h3>Polo &amp; golf shirt design</h3>
+            <p>Print-ready patterns with front and back mockups.</p>
+          </div>
+        </a>
+
+        <!-- Live production -->
+        <div class="tile tile--live gl" data-in>
+          <div class="sw" aria-hidden="true">
+            <p class="sw__top"><span class="sw__air">On air</span><span class="mono">LIVE · 01:24:07</span></p>
+            <div class="sw__screens"><span class="sw__pgm">PGM</span><span class="sw__pvw">PVW</span></div>
+            <div class="sw__row">
+              {["CAM 1", "CAM 2", "CAM 3", "MEDIA"].map((c, i) => <span class:list={["sw__btn", { "is-pgm": i === 0, "is-pvw": i === 2 }]}>{c}</span>)}
+            </div>
+            <div class="sw__meters">{[0, 1, 2, 3, 4, 5].map((i) => <i style={`--i:${i}`}></i>)}</div>
+          </div>
+          <div class="tile__body">
+            <span class="tile__n">05</span>
+            <h3>Live streaming &amp; media</h3>
+            <p>Multi-camera live streams on Blackmagic switchers, vMix and OBS, with audio, video editing and social media.</p>
+          </div>
+        </div>
+
+        <!-- Free sample -->
+        <a class="tile tile--cta" href="/free-sample/" data-in>
+          <div class="tile__body">
+            <span class="tile__n">Try it first</span>
+            <h3>Send 3 photos. Get them back edited, free.</h3>
+            <p>No card, no obligation. Back {site.freeSample.turnaround}.</p>
+            <span class="tile__go">{site.freeSample.cta}</span>
+          </div>
+        </a>
       </div>
     </div>
-  </section>
-
-  <section class="sec sec--alt sec--tight">
-    <div class="wrap"><Bits kind="stats" /></div>
   </section>
 
   <WorldMap />
 
-  <!-- Work rail -->
-  <section class="sec" id="work">
-    <div class="wrap head head--row">
-      <div>
-        <span class="eyebrow">The work</span>
-        <h2 class="h2">Finished galleries, not filters.</h2>
+  <!-- ── Story: sticky year ─────────────────────────────────────────────── -->
+  <section class="sec sec--alt story gl gl--light" id="story">
+    <div class="wrap story__grid">
+      <div class="story__side">
+        <span class="eyebrow">My story</span>
+        <h2 class="h2">From a school desk in Sri Lanka to clients in {site.fiverrStats.countries} countries.</h2>
+        <p class="story__year" aria-hidden="true" data-year>{yearOf(profile.timeline[0].when)}</p>
+        <div class="story__bar" aria-hidden="true"><i data-bar></i></div>
+        <ul class="story__legend">
+          {Object.entries(kindLabel).map(([k, v]) => <li class={`k-${k}`}>{v}</li>)}
+        </ul>
       </div>
-      <p class="muted" style="max-width:30em">Weddings and events, portraits, product and food, all edited by hand for clients in {site.fiverrStats.countries} countries. <a class="link" href="/work/">Full portfolio</a></p>
-    </div>
-    <div class="rail" data-rail>
-      <div class="rail__track">
-        {railImgs.map((img) => <div class="rail__item"><Shot img={img} sizes="(min-width: 900px) 30vw, 80vw" /></div>)}
-      </div>
+      <ol class="story__list">
+        {
+          profile.timeline.map((t) => (
+            <li class={`story__item k-${t.kind}`} data-step data-y={yearOf(t.when)}>
+              <p class="story__meta"><span class="mono">{t.when}</span><span class="story__kind">{kindLabel[t.kind]}</span></p>
+              <h3>{t.href ? <a href={t.href}>{t.title}</a> : t.title}</h3>
+              <p>{t.text}</p>
+            </li>
+          ))
+        }
+      </ol>
     </div>
   </section>
 
-  <!-- Process with 3D print -->
-  <section class="sec sec--alt">
-    <div class="wrap grid g2" style="align-items:center">
-      <div class="stage">
-        <div class="print" data-print>
-          <div class="print__face">
-            <img src={cld(printImg, { w: 640, ar: "4:5" })} width="640" height="800" alt={printImg.alt} loading="lazy" decoding="async" />
-            <div class="print__cap"><span>Edited by Harinda</span><span>sRGB · Full res</span></div>
-          </div>
-          <div class="print__face print__back" aria-hidden="true">
-            <span class="eyebrow">Delivery note</span>
-            <h3>Gallery ready.</h3>
-            <dl>
-              <dt>Images</dt><dd>500 edited</dd>
-              <dt>Turnaround</dt><dd>4 days</dd>
-              <dt>Format</dt><dd>JPEG · sRGB · full res</dd>
-              <dt>Delivery</dt><dd>Google Drive link</dd>
-              <dt>Revisions</dt><dd>Unlimited</dd>
-            </dl>
-          </div>
+  <!-- ── CV: experience and education ───────────────────────────────────── -->
+  <section class="sec" id="cv">
+    <div class="wrap">
+      <div class="head head--row">
+        <div>
+          <span class="eyebrow">Experience &amp; education</span>
+          <h2 class="h2">The short CV.</h2>
+        </div>
+        <a class="link" href={profile.profiles[0].url} rel="me noopener" target="_blank">Full profile on LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+      <div class="cv">
+        <div class="cv__col">
+          <h3 class="cv__title">Experience</h3>
+          {
+            profile.experience.map((e) => (
+              <article class="cv__row">
+                <p class="cv__when mono">{e.start} – {e.end}{e.end === "Present" && <span class="cv__now">Now</span>}</p>
+                <div>
+                  <h4>{e.role}</h4>
+                  <p class="cv__org">{e.org} · {e.place}</p>
+                  <p>{e.text}</p>
+                  <p class="cv__tags">{e.skills.join(" · ")}</p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+        <div class="cv__col">
+          <h3 class="cv__title">Education</h3>
+          {
+            profile.education.map((e, i) => (
+              <article class="cv__row">
+                <p class="cv__when mono">{e.start}{e.end ? ` – ${e.end}` : " – present"}</p>
+                <div>
+                  <h4>{e.award}{i === 0 && <span class="cv__now cv__now--deg">Degree</span>}</h4>
+                  <p class="cv__org">{e.school}</p>
+                  {e.field && <p>{e.field}</p>}
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
-      <div>
-        <span class="eyebrow">How it works</span>
-        <h2 class="h2" style="margin:.75rem 0 1.5rem">From memory card to finished gallery.</h2>
-        <ol class="steps">
-          <li><div><b>Send a link</b><p>Google Drive, Dropbox or WeTransfer, plus your preset or three reference edits.</p></div></li>
-          <li><div><b>Free sample, {site.freeSample.turnaround}</b><p>Three photos edited in your style, so we agree on the look before anything is paid.</p></div></li>
-          <li><div><b>Full gallery in 2–4 days</b><p>Every frame edited by hand and delivered at full resolution.</p></div></li>
-          <li><div><b>Approve, then pay</b><p>Unlimited revisions. Pay by PayPal, Payoneer, Remitly, TapSend or bank transfer.</p></div></li>
-        </ol>
-        <p style="margin-top:1.5rem"><a class="link" href="/photo-editing/how-to-send-files/">How to send your files</a></p>
-      </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="sec" id="pricing">
+  <!-- ── Skills and certifications ──────────────────────────────────────── -->
+  <section class="sec sec--alt">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow">Pricing</span>
-        <h2 class="h2">{site.perPhoto} a photo, edited by hand.</h2>
-        <p class="lede">One price ladder for weddings, portraits, events and products. Direct orders are paid after you approve the gallery.</p>
+        <span class="eyebrow">Skills</span>
+        <h2 class="h2">What I work with.</h2>
       </div>
-      <Pricing />
-      <p style="margin-top:1rem"><a class="link" href="/pricing/">Compare ordering direct and on Fiverr</a></p>
+      <div class="skills">
+        {
+          profile.skills.map((g) => (
+            <div class="skills__row">
+              <h3>{g.group}</h3>
+              <ul>{g.items.map((s) => <li>{s}</li>)}</ul>
+            </div>
+          ))
+        }
+        <div class="skills__row">
+          <h3>Photography I edit</h3>
+          <ul>{profile.genres.map((s) => <li>{s}</li>)}</ul>
+        </div>
+      </div>
+
+      <h3 class="certs__title">Certifications</h3>
+      <ul class="certs">
+        {
+          profile.certifications.map((c) => (
+            <li>
+              <img src={c.logo} width="40" height="40" alt="" loading="lazy" />
+              <span><b>{c.name}</b><small>{c.issuer} · {c.issued}</small></span>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="small muted" style="margin-top:1rem">{profile.certificationsTotal} certifications in total on LinkedIn.</p>
     </div>
   </section>
 
   <Reviews />
 
-  <!-- About -->
+  <!-- ── Beyond work, contact, profiles ─────────────────────────────────── -->
   <section class="sec">
     <div class="wrap grid g2" style="align-items:center">
       <figure class="ph ph--3x2" data-parallax>
         <img src={site.aboutImage.src} width={site.aboutImage.width} height={site.aboutImage.height} alt={site.aboutImage.alt} loading="lazy" decoding="async" />
       </figure>
       <div>
-        <span class="eyebrow">Meet your editor</span>
-        <h2 class="h2" style="margin:.75rem 0 1rem">Hi, I'm Harinda. I edit every photo myself.</h2>
-        <p class="lede">A former photographer, now a full-time editor. No team, no AI looks: the person you message is the person who edits your gallery, on a factory-calibrated screen.</p>
-        <div class="chips" style="margin-top:1.25rem">
-          <span class="pill">ASUS ProArt · Calman Verified</span><span class="pill">Lightroom Classic</span><span class="pill">Photoshop</span><span class="pill">Replies {site.replyTime}</span>
+        <span class="eyebrow">Beyond the work</span>
+        <h2 class="h2" style="margin:.75rem 0 1rem">A bit more about me.</h2>
+        <ul class="checks">
+          {profile.also.map((a) => <li><strong>{a.title}.</strong> {a.text}</li>)}
+          <li><strong>Orbitra.</strong> My own app studio. <a class="link" href="/orbitra/">See the apps</a></li>
+        </ul>
+        <div class="reach">
+          <a class="reach__item" href={`https://wa.me/${site.contact.whatsapp}`} data-track="whatsapp">
+            <small>Photo editing · WhatsApp</small><b>{site.contact.whatsappDisplay}</b>
+          </a>
+          <a class="reach__item" href={`tel:${site.contact.phoneLk}`} data-track="phone">
+            <small>In Sri Lanka · personal</small><b>{site.contact.phoneLkDisplay}</b>
+          </a>
         </div>
-        <p style="margin-top:1.5rem"><a class="link" href="/about/">More about me</a></p>
+        <ul class="profiles">
+          {
+            profile.profiles.filter((p) => ["Fiverr", "LinkedIn"].includes(p.name)).map((p) => (
+              <li>
+                <a href={p.url} rel="me noopener" target="_blank" title={p.name}>
+                  <img src={p.logo} width="22" height="22" alt="" loading="lazy" />{p.name}<span class="sr-only"> (opens in a new tab)</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Also from Harinda -->
-  <section class="sec sec--top0">
-    <div class="wrap">
-      <span class="eyebrow">Also from Harinda</span>
-      <div class="grid g2" style="margin-top:1rem">
-        {site.otherServices.map((s) => (
-          <a class="card card--link" href={s.href}><h3>{s.label}</h3><p>{s.line}</p><span class="link" style="margin-top:auto">Learn more</span></a>
-        ))}
-      </div>
-    </div>
-  </section>
-
+  <!-- ── Blog ───────────────────────────────────────────────────────────── -->
   <section class="sec sec--alt">
-    <div class="wrap grid g2" style="align-items:start">
-      <div>
-        <span class="eyebrow">Questions</span>
-        <h2 class="h2" style="margin:.75rem 0 1.25rem">Before you send a gallery.</h2>
-        <Faq items={faqs} />
-      </div>
-      <div>
-        <span class="eyebrow">From the blog</span>
-        <h2 class="h2" style="margin:.75rem 0 1.25rem">Guides for wedding photographers.</h2>
-        <div class="grid">
-          {posts.map((p) => (
-            <a class="post-card" href={`/blog/${p.id}/`}><span class="mono">{p.data.publishDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span><h3>{p.data.title}</h3></a>
-          ))}
+    <div class="wrap">
+      <div class="head head--row">
+        <div>
+          <span class="eyebrow">From the blog</span>
+          <h2 class="h2">Guides I've written.</h2>
         </div>
-        <p style="margin-top:1.25rem"><a class="link" href="/blog/category/photo-editing/">All photo editing guides</a></p>
+        <a class="link" href="/blog/">All posts</a>
+      </div>
+      <div class="grid g3">
+        {
+          posts.map((p) => (
+            <a class="post-card" href={`/blog/${p.id}/`}>
+              <span class="mono">{p.data.publishDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
+              <h3>{p.data.title}</h3>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
 
   <Cta />
+
+  <script>
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Rotating role in the hero.
+    const word = document.querySelector<HTMLElement>("[data-roles]");
+    if (word && !reduce) {
+      const roles: string[] = JSON.parse(word.dataset.roles ?? "[]");
+      let i = 0;
+      setInterval(() => {
+        word.classList.add("is-out");
+        setTimeout(() => {
+          i = (i + 1) % roles.length;
+          word.textContent = roles[i];
+          word.classList.remove("is-out");
+        }, 380);
+      }, 2600);
+    }
+
+    // Bento tiles animate their insides once on screen.
+    const io = new IntersectionObserver(
+      (es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }),
+      { threshold: 0.3 },
+    );
+    document.querySelectorAll("[data-in]").forEach((el) => io.observe(el));
+
+    // Story: the big year follows the entry in the middle of the screen.
+    const yearEl = document.querySelector<HTMLElement>("[data-year]");
+    const bar = document.querySelector<HTMLElement>("[data-bar]");
+    const steps = [...document.querySelectorAll<HTMLElement>("[data-step]")];
+    const so = new IntersectionObserver(
+      (es) => es.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const el = e.target as HTMLElement;
+        steps.forEach((s) => s.classList.toggle("is-active", s === el));
+        if (yearEl && el.dataset.y) yearEl.textContent = el.dataset.y;
+        if (bar) bar.style.transform = `scaleY(${(steps.indexOf(el) + 1) / steps.length})`;
+      }),
+      { rootMargin: "-45% 0px -50% 0px" },
+    );
+    steps.forEach((s) => so.observe(s));
+  </script>
 </BaseLayout>

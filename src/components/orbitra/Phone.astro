@@ -1,0 +1,18 @@
+---
+// A CSS-drawn phone with an app screen inside. Screens are bare UI from
+// public/orbitra/assets/apps/<slug>/ui/ (see scripts/gen-orbitra-assets.mjs).
+const { slug, screen, alt = "", class: cls, eager = false, landscape = false } = Astro.props;
+const src = `/orbitra/assets/apps/${slug}/ui/${screen}.webp`;
+---
+
+<div class:list={["lp-phone", { "lp-phone--land": landscape }, cls]}>
+  <img
+    src={src}
+    alt={alt}
+    width={landscape ? 1280 : 720}
+    height={landscape ? 720 : 1280}
+    loading={eager ? "eager" : "lazy"}
+    fetchpriority={eager ? "high" : undefined}
+    decoding="async"
+  />
+</div>

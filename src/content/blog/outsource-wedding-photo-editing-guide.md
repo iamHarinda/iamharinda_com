@@ -1,5 +1,6 @@
 ---
 title: "How to Outsource Wedding Photo Editing Without Losing Your Style"
+seoTitle: "How to Outsource Wedding Photo Editing (Keep Your Style)"
 description: "A practical guide for photographers outsourcing wedding editing for the first time. How to brief an editor, protect your look, and dodge the common mistakes."
 category: photo-editing
 publishDate: 2026-05-07

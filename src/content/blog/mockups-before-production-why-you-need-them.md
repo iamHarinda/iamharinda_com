@@ -1,5 +1,6 @@
 ---
 title: "Mockups Before Production: Why You Should Never Send Flat Artwork Straight to a Printer"
+seoTitle: "Why You Need Mockups Before Shirt Production"
 description: "Approving flat artwork without a realistic mockup is one of the most common causes of an expensive production mistake. Why the mockup step actually matters."
 category: apparel-design
 publishDate: 2026-09-07

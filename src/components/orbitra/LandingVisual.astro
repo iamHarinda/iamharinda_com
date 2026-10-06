@@ -1,0 +1,142 @@
+---
+// Drawn mock-ups for features that have no screenshot yet. They show the idea,
+// in the app's own colours, and are hidden from screen readers (the text next
+// to them says the same thing).
+import Icon from "./Icon.astro";
+import Phone from "./Phone.astro";
+const { name, slug } = Astro.props;
+
+const week = ["M", "T", "W", "T", "F", "S", "S"];
+const road = [
+  ["$1B", "Billionaire summit", "summit"],
+  ["$1M", "Millionaire", ""],
+  ["$100K", "Six figures", ""],
+  ["$25K", "Strong footing", "next"],
+  ["$10K", "Five figures", "done"],
+  ["$1K", "Emergency starter", "done"],
+];
+---
+
+<div class:list={["lp-visual", `lp-visual--${name}`]} aria-hidden="true">
+  {
+    name === "streak" && (
+      <div class="lp-mock">
+        <div class="lp-mock__card lp-mock__card--hero">
+          <span class="lp-mock__flame"><Icon name="flame" size={30} /></span>
+          <div>
+            <p class="lp-mock__big" data-count="12">12</p>
+            <p class="lp-mock__muted">day streak · best 31</p>
+          </div>
+        </div>
+        <div class="lp-mock__card">
+          <p class="lp-mock__label">Gym · 3 times a week</p>
+          <div class="lp-mock__week">
+            {week.map((d, i) => (
+              <span class:list={["lp-mock__day", { "is-done": [0, 2, 4].includes(i), "is-skip": i === 5 }]}>
+                <b>{d}</b>
+              </span>
+            ))}
+          </div>
+          <p class="lp-mock__muted">Sat skipped · Travelling. Streak kept.</p>
+        </div>
+        <div class="lp-mock__row">
+          <div class="lp-mock__card lp-mock__card--sm">
+            <Icon name="timer" size={20} />
+            <p><b>20 min</b> Read</p>
+            <span class="lp-mock__bar"><i style="--w: 70%" /></span>
+          </div>
+          <div class="lp-mock__card lp-mock__card--sm">
+            <Icon name="trophy" size={20} />
+            <p><b>30 in a row</b> Badge</p>
+            <span class="lp-mock__bar"><i style="--w: 100%" /></span>
+          </div>
+        </div>
+      </div>
+    )
+  }
+  {
+    name === "todo" && (
+      <div class="lp-mock">
+        <div class="lp-mock__card">
+          <p class="lp-mock__label">Today</p>
+          {[
+            ["Send the invoice", "High", true],
+            ["Book a dentist", "Repeats yearly", false],
+            ["Groceries · 3 of 5", "Checklist", false],
+          ].map(([t, s, done]) => (
+            <div class:list={["lp-mock__task", { "is-done": done }]}>
+              <span class="lp-mock__tick">{done && <Icon name="check" size={18} />}</span>
+              <div>
+                <p>{t}</p>
+                <small>{s}</small>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="lp-mock__card lp-mock__focus">
+          <svg viewBox="0 0 120 120" class="lp-mock__ring">
+            <circle cx="60" cy="60" r="52" />
+            <circle cx="60" cy="60" r="52" class="lp-mock__ring-fill" pathLength="100" />
+          </svg>
+          <div>
+            <p class="lp-mock__big">18:42</p>
+            <p class="lp-mock__muted">Focus · Send the invoice</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+  {
+    name === "notify" && (
+      <div class="lp-mock lp-mock--notify">
+        {[
+          ["8:00 AM", "Gym today", "Planned for today. You’ve got this."],
+          ["8:00 PM", "Did you get to Gym?", "Tap Mark done if you went."],
+          ["9:30 AM", "Send the invoice", "To-do due now"],
+        ].map(([time, title, text], i) => (
+          <div class="lp-mock__note" style={`--i: ${i}`}>
+            <img src={`/orbitra/assets/apps/${slug}/icon.svg`} width="36" height="36" alt="" />
+            <div>
+              <p>
+                <b>{title}</b> <small>{time}</small>
+              </p>
+              <p class="lp-mock__muted">{text}</p>
+              <span class="lp-mock__action">Mark done</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    )
+  }
+  {
+    name === "beforeAfter" && (
+      <div class="lp-ba" data-ba>
+        <Phone slug={slug} screen="processing" class="lp-ba__img" />
+        <div class="lp-ba__after">
+          <Phone slug={slug} screen="export" class="lp-ba__img" />
+        </div>
+        <input class="lp-ba__range" type="range" min="0" max="100" value="50" aria-hidden="true" tabindex="-1" />
+        <span class="lp-ba__handle"><Icon name="columns" size={18} /></span>
+        <span class="lp-ba__tag lp-ba__tag--l">Before</span>
+        <span class="lp-ba__tag lp-ba__tag--r">After</span>
+      </div>
+    )
+  }
+  {
+    name === "road" && (
+      <div class="lp-road">
+        {road.map(([amt, label, state], i) => (
+          <div class:list={["lp-road__stop", state && `is-${state}`]} style={`--i: ${i}`}>
+            <span class="lp-road__dot">
+              {state === "done" ? <Icon name="check" size={16} /> : state === "summit" ? <Icon name="mountain" size={16} /> : null}
+            </span>
+            <div>
+              <b>{amt}</b>
+              <small>{label}</small>
+            </div>
+          </div>
+        ))}
+      </div>
+    )
+  }
+</div>

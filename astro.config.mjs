@@ -16,6 +16,16 @@ const postDates = Object.fromEntries(
     })
 );
 
+// Real last-change dates for core pages (Google ignores lastmod that changes on
+// every build). Update a page's date here when its content changes.
+const pageDates = {
+  "/": "2026-10-06",
+  "/about/": "2026-10-06",
+  "/photo-editing/": "2026-10-06",
+  "/contact/": "2026-10-06",
+};
+const ORBITRA_UPDATED = "2026-10-06";
+
 export default defineConfig({
   site: process.env.SITE_URL || "https://www.iamharinda.com",
   output: "static",
@@ -26,10 +36,14 @@ export default defineConfig({
       filter: (page) =>
         !page.includes("/404") &&
         !page.includes("/thanks/") &&
-        !(orbitraStudio.draft && page.includes("/orbitra/")),
+        !(orbitraStudio.draft && page.includes("/orbitra/")) &&
+        // Orbitra legal pages stay out while they carry TODO(owner) markers.
+        !(orbitraStudio.legalNoindex && /\/orbitra\/(?:[^/]+\/)?(?:privacy-policy|terms|delete-data)\/$/.test(page)),
       serialize(item) {
         const path = new URL(item.url).pathname;
+        const pageDate = pageDates[path] ?? (path.startsWith("/orbitra/") ? ORBITRA_UPDATED : null);
         if (postDates[path]) item.lastmod = postDates[path];
+        else if (pageDate) item.lastmod = pageDate;
         else delete item.lastmod;
         delete item.changefreq;
         delete item.priority;

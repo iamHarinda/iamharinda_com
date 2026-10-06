@@ -1,5 +1,6 @@
 ---
 title: "From Concept to Print-Ready: What a Polo Shirt Design Order Actually Looks Like"
+seoTitle: "Polo Shirt Design Process: From Concept to Print-Ready"
 description: "If you've never ordered custom apparel design before, here's exactly what the process looks like from first message to final files."
 category: apparel-design
 publishDate: 2026-09-10

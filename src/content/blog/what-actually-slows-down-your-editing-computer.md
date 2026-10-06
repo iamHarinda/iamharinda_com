@@ -1,5 +1,6 @@
 ---
 title: "What Actually Slows Down Your Editing Computer (And What Doesn't)"
+seoTitle: "What Actually Slows Down Your Photo Editing Computer"
 description: "A lot of assumed causes of a slow editing computer aren't actually the problem. Here's what genuinely causes lag, and what's just a common myth."
 category: web-development
 publishDate: 2026-03-02

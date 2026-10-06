@@ -1,5 +1,6 @@
 ---
 title: "Red Flags to Watch For When Hiring Someone to Build Your Website"
+seoTitle: "Red Flags When Hiring Someone to Build Your Website"
 description: "Most bad website experiences were avoidable in hindsight. What to watch for before you sign a contract or hand over a deposit."
 category: web-development
 publishDate: 2026-06-09

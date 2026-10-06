@@ -2,6 +2,8 @@
 const { eyebrow, title, lede, crumbs = [] } = Astro.props;
 ---
 <section class="phero">
+  <div class="phero__frame">
+  <span class="phero__grid" aria-hidden="true"></span>
   <div class="wrap">
     <div class="head">
       {crumbs.length > 0 && (
@@ -14,5 +16,6 @@ const { eyebrow, title, lede, crumbs = [] } = Astro.props;
       {lede && <p class="lede">{lede}</p>}
       <slot />
     </div>
+  </div>
   </div>
 </section>

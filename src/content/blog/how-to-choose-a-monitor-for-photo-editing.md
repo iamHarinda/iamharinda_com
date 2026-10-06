@@ -1,5 +1,6 @@
 ---
 title: "How to Choose a Monitor for Photo Editing (Without Overspending)"
+seoTitle: "How to Choose a Monitor for Photo Editing"
 description: "Monitor shopping for photo editing gets confusing fast. Here's what specs actually matter for wedding and portrait work, and which ones are marketing noise."
 category: photo-editing
 publishDate: 2026-02-03

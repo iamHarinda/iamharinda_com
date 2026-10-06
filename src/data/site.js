@@ -9,7 +9,7 @@ export const site = {
   legalName: "Harinda Fernando Photo Editing",
   handle: "iamharinda",
   personName: "Harinda Fernando",
-  personTitles: ["Photo editor", "Web developer", "Polo and golf shirt designer"],
+  personTitles: ["Photo editor", "Web developer", "Android app developer", "Polo and golf shirt designer"],
   domain: "www.iamharinda.com",
   // SITE_URL (GitHub variable) via Astro's `site`; falls back to the live domain.
   url: (import.meta.env?.SITE ?? "https://www.iamharinda.com").replace(/\/$/, ""),
@@ -78,6 +78,9 @@ export const site = {
     email: "hello@iamharinda.com",
     whatsapp: "447355229599",
     whatsappDisplay: "+44 7355 229599",
+    // Personal Sri Lankan number, for people in Sri Lanka (owner, 6 Oct 2026).
+    phoneLk: "+94765329064",
+    phoneLkDisplay: "+94 76 532 9064",
     fiverr: "https://www.fiverr.com/iamharinda", // confirm this is the live username
     services: [
       "Wedding photo editing",
@@ -106,6 +109,7 @@ export const site = {
         { label: "Photo editing", href: "/photo-editing/", line: "Wedding, portrait, product and food" },
         { label: "Web development", href: "/web-development/", line: "Hand-coded sites, fixed price" },
         { label: "Polo & golf shirt design", href: "/fashion-designing/", line: "Print-ready artwork and mockups" },
+        { label: "Android apps · Orbitra", href: "/orbitra/", line: "Five small, private apps on Google Play" },
       ],
     },
     { label: "Work", href: "/work/" },

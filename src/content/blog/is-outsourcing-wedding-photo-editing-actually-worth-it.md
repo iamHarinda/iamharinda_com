@@ -1,5 +1,6 @@
 ---
 title: "Is Outsourcing Wedding Photo Editing Actually Worth It? An Honest Breakdown"
+seoTitle: "Is Outsourcing Wedding Photo Editing Worth It?"
 description: "Photographers ask this constantly online. Here's an honest look at when outsourcing genuinely pays off, and when it doesn't."
 category: photo-editing
 publishDate: 2025-12-17

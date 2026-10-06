@@ -6,6 +6,29 @@
 > Classic and Photoshop on a factory-calibrated, Calman-verified ASUS ProArt
 > monitor. No AI looks, no batch presets.
 
+## About Harinda
+
+- Harinda Fernando (Harinda Vishwantha Fernando, @iamharinda), from
+  Kuliyapitiya, North Western Province, Sri Lanka.
+- Education: B.ICT (Hons), Bachelor of Information Technology, Rajarata
+  University of Sri Lanka (2018 – Apr 2023); bachelor's programme in
+  Information Technology at the University of Colombo School of Computing
+  (from Jul 2017); GCE A/L 2016 (technology stream), Central College
+  Kuliyapitiya; GCE O/L 2013, Saranath College Kuliyapitiya.
+- Experience: freelance photo editor on Fiverr (Nov 2019 – present);
+  WordPress developer, HELAMID LLC (Jun 2020 – Dec 2021, remote); trainee
+  software engineer (PHP), Elegant Media Sri Lanka (Sep 2022 – Apr 2023).
+- Also experienced in live production and media: multi-camera live streaming
+  on Blackmagic switchers, vMix and OBS, audio mixing, video editing and
+  social media management.
+- Certifications include Google Analytics for Beginners (Google, 2023) and
+  the Docker Training Course (KodeKloud, 2023).
+- Founder of Orbitra (Android apps) and of HaVilah FM, a Sinhala Christian
+  online radio station with its own app.
+- Profiles: https://www.linkedin.com/in/iamharinda ·
+  https://github.com/iamHarinda · https://www.behance.net/iamharinda
+- Not to be confused with Prof. Harinda Fernando of SLIIT, a different person.
+
 ## Key facts
 
 - Price: $0.20 a photo. 50 photos $10 (2 days), 100 photos $20 (2 days),
@@ -38,6 +61,29 @@
   hand-coded websites, no WordPress, fixed price from $750, client owns the code.
 - [Polo & golf shirt design](https://www.iamharinda.com/fashion-designing/):
   print-ready designs and mockups, $10 / $25 / $40 packages.
+
+## Apps by Orbitra
+
+Orbitra is Harinda Fernando's Android app studio: small, private apps and free
+web tools, all free on Google Play with no ads and no accounts.
+
+- [Orbitra](https://www.iamharinda.com/orbitra/): the studio and all apps.
+- [Periodic Element Table](https://www.iamharinda.com/orbitra/periodicelementtable/):
+  interactive periodic table, 118 element pages, 44 chemistry calculators and
+  627 study guides. The app of PeriodicElementTable.com. On Google Play.
+- [Budget Tracker](https://www.iamharinda.com/orbitra/budgettracker/):
+  budget and expense tracker with net worth in any currency and the Road to
+  Billionaire milestones. Offline, no bank login, every feature free. On Google Play.
+- [ToolsServer](https://www.iamharinda.com/orbitra/toolsserver/): 238 free
+  calculators, converters, text, developer and image tools. The app of
+  ToolsServer.com. On Google Play.
+- [Habit Tracker](https://www.iamharinda.com/orbitra/habittracker/): habit
+  tracker and day counter with streaks, stats, reminders, to-dos and a focus
+  timer. Private and offline. On Google Play.
+- [ProductWhite](https://www.iamharinda.com/orbitra/productwhite/): white
+  background product photos for Amazon, Etsy, eBay, Shopify and Instagram,
+  processed on the phone. In testing on Google Play.
+- Orbitra contact: orbitra.dev@gmail.com
 
 ## Contact
 

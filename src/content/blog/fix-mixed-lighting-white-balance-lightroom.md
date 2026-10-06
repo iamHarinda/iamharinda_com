@@ -1,5 +1,6 @@
 ---
 title: "How to Fix Mixed Lighting and White Balance Problems in Lightroom"
+seoTitle: "Fix Mixed Lighting and White Balance in Lightroom"
 description: "Mixed lighting, tungsten, daylight, and fluorescent all in one frame, is the hardest white balance problem in wedding photography. Here's how to actually fix it."
 category: photo-editing
 publishDate: 2026-04-01
