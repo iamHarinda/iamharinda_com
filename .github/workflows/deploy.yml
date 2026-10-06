@@ -56,7 +56,10 @@ jobs:
       # control connection mid-upload, and FTP-Deploy-Action could neither
       # resume nor recover. Each failed run also left Pure-FTPd temp files
       # (".in.<name>.") that block the next upload with "550 ... already exists".
-      # lftp retries and reconnects, and we clear those temp files first.
+      # lftp retries and reconnects, and we clear those temp files first
+      # (ftp:list-options -a, because Pure-FTPd hides dot-files from listings).
+      # --overwrite replaces files in place: without it lftp deletes the live
+      # file first, so a failed upload took the page down (403).
       # Server-only files (mail autoconfig etc.) are left in place: no --delete.
       # Hostinger's FTP certificate is issued to its own server name, not to
       # FTP_HOST, so only the host-name match is skipped; the connection is
@@ -75,6 +78,7 @@ jobs:
           set ftp:ssl-force true
           set ftp:ssl-protect-data true
           set ssl:check-hostname no
+          set ftp:list-options -a
           set net:timeout 30
           set net:max-retries 8
           set net:reconnect-interval-base 5
@@ -82,7 +86,7 @@ jobs:
           set cmd:fail-exit no
           glob -a rm -f .in.* */.in.* */*/.in.* */*/*/.in.* */*/*/*/.in.*
           set cmd:fail-exit yes
-          mirror --reverse --verbose=1 --parallel=4 --no-perms --exclude-glob .git* --exclude-glob .DS_Store ./dist/ ./
+          mirror --reverse --overwrite --verbose=1 --parallel=2 --no-perms --exclude-glob .git* --exclude-glob .DS_Store ./dist/ ./
           bye
           LFTP
           }
