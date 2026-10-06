@@ -1,5 +1,6 @@
 ---
 title: "Half-Drop, Brick, and Mirror Repeats: The Difference Explained Simply"
+seoTitle: "Half-Drop, Brick and Mirror Repeat Patterns Explained"
 description: "These are the standard ways a pattern tile can repeat, and each one gives a genuinely different look. What each one means, without the technical jargon."
 category: apparel-design
 publishDate: 2026-07-24

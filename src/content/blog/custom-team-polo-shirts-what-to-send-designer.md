@@ -1,5 +1,6 @@
 ---
 title: "Custom Team Polo Shirts: What to Send a Designer Before You Order"
+seoTitle: "Custom Team Polo Shirts: What to Send Your Designer"
 description: "The clearer your brief, the closer the first concept lands to what you actually want. Exactly what to have ready before ordering a team polo design."
 category: apparel-design
 publishDate: 2026-08-11

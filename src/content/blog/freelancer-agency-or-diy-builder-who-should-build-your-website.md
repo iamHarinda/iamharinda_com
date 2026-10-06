@@ -1,5 +1,6 @@
 ---
 title: "Freelancer, Agency, or DIY Builder: Who Should Actually Build Your Website?"
+seoTitle: "Freelancer, Agency or DIY: Who Should Build Your Site?"
 description: "Three genuinely different paths to a finished website, each with real tradeoffs. How to pick without any assumptions about what's supposedly 'best.'"
 category: web-development
 publishDate: 2026-06-12

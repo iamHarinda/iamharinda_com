@@ -1,5 +1,6 @@
 ---
 title: "SEO for Non-Techies: What It Actually Means to 'Rank on Google'"
+seoTitle: "SEO for Non-Technical Business Owners, Explained"
 description: "SEO gets treated like a mysterious skill only specialists understand. The core idea is actually simple. What it means, in plain language."
 category: web-development
 publishDate: 2026-06-30

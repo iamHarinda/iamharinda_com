@@ -1,5 +1,6 @@
 ---
 title: "The 3-2-1 Backup Rule: How Wedding Photographers Actually Protect Their Files"
+seoTitle: "The 3-2-1 Backup Rule for Wedding Photographers"
 description: "One hard drive isn't a backup plan. Here's the 3-2-1 rule wedding photographers actually rely on, explained without the technical jargon."
 category: photo-editing
 publishDate: 2026-02-06

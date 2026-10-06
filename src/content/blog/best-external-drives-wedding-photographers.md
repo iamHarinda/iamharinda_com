@@ -1,5 +1,6 @@
 ---
 title: "Best External Drives for Wedding Photographers Who Shoot Every Weekend"
+seoTitle: "Best External Drives for Wedding Photographers (2026)"
 description: "Choosing external storage for a busy wedding photography schedule comes down to a few real factors, not the longest spec sheet. Here's what actually matters."
 category: photo-editing
 publishDate: 2026-02-12

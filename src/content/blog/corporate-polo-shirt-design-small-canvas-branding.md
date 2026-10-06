@@ -1,5 +1,6 @@
 ---
 title: "Corporate Polo Shirt Design: Getting Your Brand Right on a Small Canvas"
+seoTitle: "Corporate Polo Shirt Design: Branding on a Small Canvas"
 description: "A polo shirt gives you far less space than most branded materials. How to make a small, fixed placement actually represent your brand well."
 category: apparel-design
 publishDate: 2026-08-23

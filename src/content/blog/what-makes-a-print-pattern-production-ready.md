@@ -1,5 +1,6 @@
 ---
 title: "What Makes a Print Pattern 'Production-Ready' (And Why Some Designs Get Rejected by Printers)"
+seoTitle: "What Makes a Print Pattern Production-Ready"
 description: "A pattern that looks perfect on screen can still get bounced back by a print shop or supplier. What production-ready actually requires."
 category: apparel-design
 publishDate: 2026-07-27

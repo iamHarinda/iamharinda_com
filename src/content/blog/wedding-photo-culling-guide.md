@@ -1,5 +1,6 @@
 ---
 title: "Wedding Photo Culling: How to Cut a 3,000-Photo Shoot Down Fast"
+seoTitle: "Wedding Photo Culling: Cut 3,000 Photos Down Fast"
 description: "Culling is where most editing time actually disappears. A practical system for cutting a large wedding shoot down to a final gallery without second-guessing every frame."
 category: photo-editing
 publishDate: 2026-04-19

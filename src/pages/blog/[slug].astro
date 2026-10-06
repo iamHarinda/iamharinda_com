@@ -31,7 +31,7 @@ const cut = (t) => {
 const titleTag = post.data.seoTitle ?? (post.data.title.length <= 58 ? post.data.title : cut(post.data.title));
 const jsonLd = [blogPosting(post, c.og), breadcrumb(crumbs)];
 ---
-<BaseLayout rawTitle={titleTag.length > 52 ? titleTag : `${titleTag} | Harinda`} description={post.data.description} path={path} ogType="article" jsonLd={jsonLd} image={c.og}>
+<BaseLayout rawTitle={titleTag.length + " | Harinda".length > 60 ? titleTag : `${titleTag} | Harinda`} description={post.data.description} path={path} ogType="article" jsonLd={jsonLd} image={c.og}>
   <article>
     <header class="phero">
       <div class="wrap narrow">

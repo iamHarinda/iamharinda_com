@@ -1,5 +1,6 @@
 ---
 title: "Vector vs. Raster: Why Print Pattern Designs Need to Be Vector Files"
+seoTitle: "Vector vs. Raster for Print Pattern Design"
 description: "This distinction gets mentioned constantly in apparel design without much explanation. Why it actually matters for anything going to print."
 category: apparel-design
 publishDate: 2026-08-02

@@ -1,5 +1,6 @@
 ---
 title: "Batch Editing in Lightroom Without Losing Consistency Across a Gallery"
+seoTitle: "Batch Editing in Lightroom Without Losing Consistency"
 description: "Syncing settings across hundreds of photos is fast, and it's also how galleries end up looking inconsistent. Here's how to batch edit without the usual mistakes."
 category: photo-editing
 publishDate: 2026-03-26

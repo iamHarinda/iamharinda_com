@@ -1,5 +1,6 @@
 ---
 title: "How Long Does It Actually Take to Build a Small Business Website?"
+seoTitle: "How Long Does It Take to Build a Business Website?"
 description: "Timelines quoted for a website range from a few days to several months. What genuinely determines how long yours will actually take."
 category: web-development
 publishDate: 2026-06-03

@@ -1,5 +1,6 @@
 ---
 title: "What to Prepare Before You Hire a Web Developer (So the Quote Isn't a Guess)"
+seoTitle: "What to Prepare Before Hiring a Web Developer"
 description: "The clearer your brief, the more accurate your quote and the faster your project moves. Exactly what to have ready before that first conversation."
 category: web-development
 publishDate: 2026-06-06

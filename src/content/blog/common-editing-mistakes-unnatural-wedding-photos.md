@@ -1,5 +1,6 @@
 ---
 title: "Common Editing Mistakes That Make Wedding Photos Look Unnatural"
+seoTitle: "Editing Mistakes That Make Wedding Photos Look Fake"
 description: "A handful of specific editing choices are behind most wedding photos that look 'off' without any obvious cause. Here's what to check for."
 category: photo-editing
 publishDate: 2026-04-28

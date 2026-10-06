@@ -1,5 +1,6 @@
 ---
 title: "Do You Actually Need a Website in 2026, or Is Social Media Enough?"
+seoTitle: "Do You Need a Website, or Is Social Media Enough?"
 description: "An Instagram page feels like enough until it isn't. A plain-language look at what a website does that social media just can't."
 category: web-development
 publishDate: 2026-05-16
