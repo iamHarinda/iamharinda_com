@@ -1,223 +1,5 @@
 [
   {
-    "slug": "habittracker",
-    "name": "Habit Tracker",
-    "storeTitle": "Habit Tracker & Day Counter",
-    "package": "com.orbitra.habittracker",
-    "packageConfirmed": true,
-    "category": "ProductivityApplication",
-    "tagline": "Log it. Count it. Remember it.",
-    "summary": "Create your own topics, tick them on a calendar, and see how often each one happened this month, in 3 months, or this year. With a simple to-do list too.",
-    "accent": "#FF6B4A",
-    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.habittracker",
-    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.habittracker",
-    "inviteUrl": "https://play.google.com/apps/internaltest/4700445669700790411",
-    "website": null,
-    "status": "testing",
-    "lastUpdated": "2026-10-02",
-    "features": [
-      {
-        "icon": "pen",
-        "title": "Your own topics",
-        "text": "Make a topic for anything — gym, office days, calls home. Pick a name, colour and icon."
-      },
-      {
-        "icon": "calendar",
-        "title": "Tap a day, add a topic",
-        "text": "Add one day or a whole date range in one go, like “Office, 1–3 Oct”."
-      },
-      {
-        "icon": "check",
-        "title": "Plan, then tick off",
-        "text": "Entries are planned or done. One tap switches between them."
-      },
-      {
-        "icon": "chart",
-        "title": "Counts that add up",
-        "text": "See totals for this month, the last 3 months, this year or a custom range."
-      },
-      {
-        "icon": "note",
-        "title": "A simple to-do list",
-        "text": "Tasks with an optional due date and a reminder. Kept apart from your habits, so they never count in Stats."
-      },
-      {
-        "icon": "bell",
-        "title": "Reminders",
-        "text": "A daily reminder to log, and on-time reminders for to-dos, with a Mark done button."
-      },
-      {
-        "icon": "history",
-        "title": "Topic history",
-        "text": "Open a topic to see every date it happened, newest first, with your notes."
-      },
-      {
-        "icon": "download",
-        "title": "Your data, your copy",
-        "text": "Export to CSV or JSON and import a backup whenever you like."
-      }
-    ],
-    "screenshots": [
-      {
-        "src": "/orbitra/assets/apps/habittracker/screen-1.webp",
-        "alt": "Habit Tracker calendar with ticked days"
-      },
-      {
-        "src": "/orbitra/assets/apps/habittracker/screen-2.webp",
-        "alt": "Adding a topic to a day in Habit Tracker"
-      },
-      {
-        "src": "/orbitra/assets/apps/habittracker/screen-3.webp",
-        "alt": "Habit Tracker stats with counts per period"
-      },
-      {
-        "src": "/orbitra/assets/apps/habittracker/screen-4.webp",
-        "alt": "A topic’s history in Habit Tracker"
-      }
-    ],
-    "screenshotsNote": "Design previews. Real screenshots will replace them after the closed test.",
-    "glance": [
-      "Your topics, entries, notes and to-dos stay **on your phone**. We never receive them.",
-      "No account. No ads. No advertising ID.",
-      "Anonymous usage stats and crash reports are sent **only if you agree**, and you can turn them off in Settings."
-    ],
-    "privacy": {
-      "short": [
-        "Your topics, entries, notes, to-dos and reminders are stored **only on your phone**. We never receive them.",
-        "There are **no ads**, **no account** and **no advertising ID**.",
-        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. You can turn this off anytime in **Settings → Privacy → Anonymous usage stats**.",
-        "We never sell your data."
-      ],
-      "collected": [
-        {
-          "type": "App interactions (e.g. “an entry was added”, “stats screen opened”) — never your topic names, notes or dates",
-          "why": "See which features are useful",
-          "where": "Google Analytics for Firebase",
-          "shared": "Google, as our service provider. Only with your consent."
-        },
-        {
-          "type": "Crash logs and diagnostics (device model, Android version, app version)",
-          "why": "Find and fix bugs",
-          "where": "Firebase Crashlytics",
-          "shared": "Google, as our service provider. Only with your consent."
-        },
-        {
-          "type": "App instance ID (a random ID Firebase creates for this install)",
-          "why": "Count unique installs without knowing who you are",
-          "where": "Google Analytics for Firebase",
-          "shared": "Google, as our service provider. Only with your consent."
-        }
-      ],
-      "notCollected": [
-        "Your topics, calendar entries, notes, to-dos and reminder times — they stay on your device.",
-        "Your name, email address or any account details — there is no account.",
-        "Your advertising ID, contacts, precise location, camera, microphone, photos or other apps."
-      ],
-      "permissions": [
-        {
-          "name": "Notifications",
-          "why": "Only if you turn on the daily reminder or a to-do reminder. Reminders are scheduled on your device; no data is sent to create them."
-        },
-        {
-          "name": "Alarms & reminders",
-          "why": "So to-do reminders arrive on time. Without it, reminders still come, possibly a few minutes late."
-        },
-        {
-          "name": "Run at startup",
-          "why": "To set your reminders again after the phone restarts."
-        },
-        {
-          "name": "Vibration",
-          "why": "A short tap of feedback when you tick something off."
-        },
-        {
-          "name": "Internet",
-          "why": "Only used to send anonymous stats and crash reports when you have agreed to it."
-        }
-      ],
-      "permissionsNote": "The app blocks location, contacts, microphone and advertising-ID permissions.",
-      "thirdParties": [
-        {
-          "name": "Google Analytics for Firebase",
-          "url": "https://firebase.google.com/support/privacy",
-          "use": "Anonymous usage statistics, with your consent."
-        },
-        {
-          "name": "Firebase Crashlytics",
-          "url": "https://firebase.google.com/support/privacy",
-          "use": "Crash reports, with your consent."
-        },
-        {
-          "name": "Google Play Services",
-          "url": "https://policies.google.com/privacy",
-          "use": "Installing and updating the app."
-        }
-      ],
-      "howWeUse": [
-        "To understand which features people use, so we know what to improve.",
-        "To find and fix crashes.",
-        "Legal basis in the EU/UK: your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time in Settings."
-      ],
-      "retention": [
-        "Data on your device stays until you delete it, clear the app’s storage or uninstall the app.",
-        "If Android backup is on for your phone, Android may include the app’s data in your own Google account backup so it can be restored on a new phone. Google manages that backup under your account; we cannot access it.",
-        "Analytics data is kept for **14 months**.",
-        "Crash reports are kept for up to **90 days**."
-      ],
-      "children": "{app} is meant for adults and is not directed at children under 13 (under 16 in the EU/UK). We do not knowingly collect their data."
-    },
-    "deletion": {
-      "short": "Your data lives on your phone. Deleting the app deletes it.",
-      "inApp": null,
-      "inAppNote": "To delete only part of your data: open **Topics → the topic → Delete topic** (removes its history too), tap an entry → **Delete entry**, or tap a to-do → **Delete task** (or use **Clear done** on the To do page).",
-      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy → Anonymous usage stats**. Reinstalling the app also resets the app instance ID.",
-      "deleted": [
-        "Everything you entered in the app: topics, entries, notes, to-dos, reminders and settings.",
-        "On request, analytics and crash data linked to your app instance ID, where technically possible."
-      ],
-      "kept": [
-        "Aggregated, anonymous statistics that cannot be linked back to you.",
-        "Analytics events already processed are removed when the retention period ends (14 months). Crash reports go after 90 days.",
-        "Any export files you saved yourself (CSV/JSON) — delete those from your phone or cloud storage.",
-        "Your phone’s Android backup, if it is on — remove it in **Android Settings → Google → Backup**.",
-        "Data Google keeps under its own policies, such as your Play Store install history."
-      ]
-    },
-    "faq": [
-      {
-        "q": "Is Habit Tracker free?",
-        "a": "Yes. There are no ads and no account."
-      },
-      {
-        "q": "How do I add a topic to several days at once?",
-        "a": "Tap a day, pick the topic, then switch to **Date range** and choose the last day. “Office, 1–3 Oct” makes three entries in one go."
-      },
-      {
-        "q": "What is the To do tab?",
-        "a": "A simple task list, separate from your habits. Give a task a due date and a reminder time if you like. To-dos never count in Stats."
-      },
-      {
-        "q": "How do I back up my data?",
-        "a": "Go to **Settings → Your data** and export a CSV (for spreadsheets) or a JSON backup. Keep the file somewhere safe, like your email or cloud drive."
-      },
-      {
-        "q": "Will I lose my data if I change phones?",
-        "a": "Export a JSON backup on the old phone and use **Settings → Your data → Import backup** on the new one. Importing merges with what is already there, so it is safe to run twice."
-      },
-      {
-        "q": "My reminders don’t show up, or come late.",
-        "a": "Check that notifications are allowed in **Android Settings → Apps → Habit Tracker → Notifications**. On Android 14 and newer, also allow **Alarms & reminders** for on-time to-do reminders, and make sure battery saver isn’t stopping the app."
-      },
-      {
-        "q": "How do I turn off anonymous stats?",
-        "a": "Go to **Settings → Privacy → Anonymous usage stats** and turn it off. Collection stops straight away."
-      }
-    ],
-    "termsNotes": [
-      "Everything you log stays on your device. You are responsible for keeping your own backups."
-    ]
-  },
-  {
     "slug": "periodicelementtable",
     "name": "Periodic Element Table",
     "package": "com.orbitra.periodicelementtable",
@@ -230,7 +12,7 @@
     "testingUrl": "https://play.google.com/apps/testing/com.orbitra.periodicelementtable",
     "inviteUrl": "https://play.google.com/apps/internaltest/4700963232322026104",
     "website": "https://periodicelementtable.com",
-    "status": "testing",
+    "status": "live",
     "lastUpdated": "2026-10-02",
     "features": [
       {
@@ -417,6 +199,221 @@
     ]
   },
   {
+    "slug": "budgettracker",
+    "name": "Budget Tracker",
+    "storeTitle": "Budget & Expense Tracker",
+    "package": "com.orbitra.budgettracker",
+    "packageConfirmed": true,
+    "category": "FinanceApplication",
+    "tagline": "Every dollar moves you up.",
+    "summary": "Track expenses, budgets, bills and net worth in any currency, and climb your Road to Billionaire milestone by milestone. Private, offline, no ads.",
+    "accent": "#0F6E52",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.budgettracker",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.budgettracker",
+    "website": null,
+    "status": "live",
+    "lastUpdated": "2026-10-06",
+    "features": [
+      {
+        "icon": "pen",
+        "title": "Log it in seconds",
+        "text": "Fast entry with a built-in calculator, categories, tags, notes and split transactions."
+      },
+      {
+        "icon": "gauge",
+        "title": "Budgets that keep you on track",
+        "text": "Monthly budgets per category or overall, with rollover and alerts at 80% and 100%."
+      },
+      {
+        "icon": "bell",
+        "title": "Never miss a bill",
+        "text": "Recurring transactions and bill reminders, posted for you or on your confirmation."
+      },
+      {
+        "icon": "repeat",
+        "title": "Any currency, one net worth",
+        "text": "Each account in its own currency, with daily exchange rates and one total in your base currency."
+      },
+      {
+        "icon": "chart",
+        "title": "Insights",
+        "text": "Spending by category, income vs expenses, cash flow, savings rate and period comparisons."
+      },
+      {
+        "icon": "lock",
+        "title": "Private by design",
+        "text": "No account, no bank login, no ads. App lock with fingerprint or PIN, and encrypted backups."
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-1.webp",
+        "alt": "Budget Tracker home dashboard"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-2.webp",
+        "alt": "The Road to Billionaire journey with milestones"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-3.webp",
+        "alt": "Monthly budgets"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-4.webp",
+        "alt": "Spending insights"
+      },
+      {
+        "src": "/orbitra/assets/apps/budgettracker/screen-5.webp",
+        "alt": "Accounts and net worth in several currencies"
+      }
+    ],
+    "screenshotsNote": "Screens from the app, shown with sample data.",
+    "glance": [
+      "Your money data stays **on your phone**. No account, no bank login.",
+      "No ads. Every feature is free, with no in-app purchases.",
+      "Anonymous usage stats and crash reports are sent **only if you agree**."
+    ],
+    "privacy": {
+      "short": [
+        "Your accounts, transactions, budgets, goals and notes are stored **only on your phone**. We never receive them.",
+        "There is **no account**, **no bank login** and **no ads**.",
+        "To show exchange rates, the app downloads daily rates. That request contains only currency codes, not your data.",
+        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. They never include amounts, payees, notes or account names.",
+        "We never sell your data."
+      ],
+      "collected": [
+        {
+          "type": "App interactions (e.g. “a budget was created”, “insights opened”) — never amounts, payees, notes or account names",
+          "why": "See which features are useful",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "Crash logs and diagnostics (device model, Android version, app version), with anything you typed removed",
+          "why": "Find and fix bugs",
+          "where": "Firebase Crashlytics",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "App instance ID (a random ID Firebase creates for this install)",
+          "why": "Count unique installs without knowing who you are",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "Exchange-rate requests (currency codes and your IP address)",
+          "why": "Download daily exchange rates",
+          "where": "Frankfurter API (European Central Bank rates)",
+          "shared": "The rates provider, to answer the request. No identifiers are sent."
+        }
+      ],
+      "notCollected": [
+        "Your accounts, balances, transactions, payees, budgets, goals and notes — they stay on your device.",
+        "Your name, email address or any account details — there is no account. An optional display name stays on your phone.",
+        "Bank logins or card numbers — there is no bank sync.",
+        "Your advertising ID, SMS, contacts, call log, location or files."
+      ],
+      "permissions": [
+        {
+          "name": "Internet",
+          "why": "For exchange rates, and anonymous stats if you agreed."
+        },
+        {
+          "name": "Notifications",
+          "why": "Asked only when you set a bill reminder or budget alert. Reminders are scheduled on your device."
+        },
+        {
+          "name": "Fingerprint / face unlock",
+          "why": "Only if you turn on app lock."
+        },
+        {
+          "name": "Run at startup",
+          "why": "To set your reminders again after the phone restarts."
+        }
+      ],
+      "permissionsNote": "The app never asks for SMS, contacts, location, camera or storage permissions. Receipts are added with Android’s photo picker or your camera app. [[TODO: confirm against the final AndroidManifest.xml before launch]]",
+      "thirdParties": [
+        {
+          "name": "Google Analytics for Firebase",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Anonymous usage statistics, with your consent."
+        },
+        {
+          "name": "Firebase Crashlytics",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Crash reports, with your consent."
+        },
+        {
+          "name": "Frankfurter",
+          "url": "https://frankfurter.dev/",
+          "use": "Daily European Central Bank exchange rates. No key, no personal data. [[TODO: confirm its terms before launch]]"
+        },
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        }
+      ],
+      "howWeUse": [
+        "Your money data is used only on your phone, to run the app for you.",
+        "To understand which features people use, so we know what to improve.",
+        "To find and fix crashes.",
+        "Legal basis in the EU/UK: providing the app you asked for (Art. 6(1)(b) GDPR) for data on your phone, and your consent (Art. 6(1)(a)) for analytics. You can withdraw consent at any time in Settings."
+      ],
+      "retention": [
+        "Data on your device stays until you use **Delete all data**, clear the app’s storage or uninstall the app.",
+        "Your money data is **not** included in Android’s automatic Google backup. Backups are only the files you create yourself, encrypted with AES-256.",
+        "Analytics data: [[TODO: confirm the GA4 data-retention setting]]",
+        "Crash reports are kept for up to **90 days**."
+      ],
+      "children": "{app} is meant for adults (18+). It is not directed at children and we do not knowingly collect their data.",
+      "extra": null
+    },
+    "deletion": {
+      "short": "Your data lives on your phone. Use Delete all data in Settings, or uninstall the app.",
+      "inApp": "In the app, open **Settings → Delete all data**. This wipes your accounts, transactions, budgets, goals and settings, and resets the analytics ID.",
+      "inAppNote": null,
+      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy & data**. Delete all data and reinstalling both reset the app instance ID.",
+      "deleted": [
+        "Everything you entered in the app: accounts, transactions, budgets, bills, goals, notes and settings.",
+        "Your app lock PIN and saved exchange rates.",
+        "On request, analytics and crash data linked to your app instance ID, where technically possible."
+      ],
+      "kept": [
+        "Backup and export files you saved yourself — delete those from your phone or cloud storage.",
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Data Google keeps under its own policies, such as your Play Store install history."
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is it free?",
+        "a": "Yes. Every feature is free. There are no ads, no paywall and no in-app purchases."
+      },
+      {
+        "q": "Do I need to connect my bank?",
+        "a": "No. There is no bank sync. Add transactions yourself, import a CSV, or set up recurring ones."
+      },
+      {
+        "q": "Does it handle more than one currency?",
+        "a": "Yes. Each account has its own currency. The app uses daily European Central Bank rates, and you can set your own rate or add a custom currency."
+      },
+      {
+        "q": "Is the Road to Billionaire financial advice?",
+        "a": "No. Milestones, the pace calculator and projections are illustrations to keep you motivated, not financial advice."
+      },
+      {
+        "q": "How do I back up my data?",
+        "a": "Create an encrypted backup file and save it where you like, such as Google Drive. You can also export to CSV."
+      }
+    ],
+    "termsNotes": [
+      "{app} records and analyses the money you enter. It does not move money, give loans, or offer banking or investment services.",
+      "Projections, the pace calculator and milestones are illustrations only, not financial advice.",
+      "Everything you log stays on your device. Keep your own backups, and remember your backup password — we cannot recover it."
+    ]
+  },
+  {
     "slug": "toolsserver",
     "name": "ToolsServer",
     "storeTitle": "ToolsServer: All-in-One Tools",
@@ -430,7 +427,7 @@
     "testingUrl": "https://play.google.com/apps/testing/com.orbitra.toolsserver",
     "inviteUrl": "https://play.google.com/apps/internaltest/4701628926569254550",
     "website": "https://toolsserver.com",
-    "status": "testing",
+    "status": "live",
     "lastUpdated": "2026-10-02",
     "features": [
       {
@@ -620,6 +617,224 @@
       "Tool results are provided as-is. Check important numbers before you rely on them.",
       "Finance and health calculators (such as loan or BMI) are calculations only, not financial or medical advice.",
       "Only use files you have the right to use."
+    ]
+  },
+  {
+    "slug": "habittracker",
+    "name": "Habit Tracker",
+    "storeTitle": "Habit Tracker & Day Counter",
+    "package": "com.orbitra.habittracker",
+    "packageConfirmed": true,
+    "category": "ProductivityApplication",
+    "tagline": "Log it. Count it. Remember it.",
+    "summary": "Create your own topics, tick them on a calendar, and see how often each one happened this month, in 3 months, or this year. With a simple to-do list too.",
+    "accent": "#FF6B4A",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.habittracker",
+    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.habittracker",
+    "inviteUrl": "https://play.google.com/apps/internaltest/4700445669700790411",
+    "website": null,
+    "status": "live",
+    "lastUpdated": "2026-10-02",
+    "features": [
+      {
+        "icon": "pen",
+        "title": "Your own topics",
+        "text": "Make a topic for anything — gym, office days, calls home. Pick a name, colour and icon."
+      },
+      {
+        "icon": "calendar",
+        "title": "Tap a day, add a topic",
+        "text": "Add one day or a whole date range in one go, like “Office, 1–3 Oct”."
+      },
+      {
+        "icon": "check",
+        "title": "Plan, then tick off",
+        "text": "Entries are planned or done. One tap switches between them."
+      },
+      {
+        "icon": "chart",
+        "title": "Counts that add up",
+        "text": "See totals for this month, the last 3 months, this year or a custom range."
+      },
+      {
+        "icon": "note",
+        "title": "A simple to-do list",
+        "text": "Tasks with an optional due date and a reminder. Kept apart from your habits, so they never count in Stats."
+      },
+      {
+        "icon": "bell",
+        "title": "Reminders",
+        "text": "A daily reminder to log, and on-time reminders for to-dos, with a Mark done button."
+      },
+      {
+        "icon": "history",
+        "title": "Topic history",
+        "text": "Open a topic to see every date it happened, newest first, with your notes."
+      },
+      {
+        "icon": "download",
+        "title": "Your data, your copy",
+        "text": "Export to CSV or JSON and import a backup whenever you like."
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-1.webp",
+        "alt": "Habit Tracker calendar with ticked days"
+      },
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-2.webp",
+        "alt": "Adding a topic to a day in Habit Tracker"
+      },
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-3.webp",
+        "alt": "Habit Tracker stats with counts per period"
+      },
+      {
+        "src": "/orbitra/assets/apps/habittracker/screen-4.webp",
+        "alt": "A topic’s history in Habit Tracker"
+      }
+    ],
+    "screenshotsNote": "Screens from the app’s design, shown with sample data.",
+    "glance": [
+      "Your topics, entries, notes and to-dos stay **on your phone**. We never receive them.",
+      "No account. No ads. No advertising ID.",
+      "Anonymous usage stats and crash reports are sent **only if you agree**, and you can turn them off in Settings."
+    ],
+    "privacy": {
+      "short": [
+        "Your topics, entries, notes, to-dos and reminders are stored **only on your phone**. We never receive them.",
+        "There are **no ads**, **no account** and **no advertising ID**.",
+        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. You can turn this off anytime in **Settings → Privacy → Anonymous usage stats**.",
+        "We never sell your data."
+      ],
+      "collected": [
+        {
+          "type": "App interactions (e.g. “an entry was added”, “stats screen opened”) — never your topic names, notes or dates",
+          "why": "See which features are useful",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "Crash logs and diagnostics (device model, Android version, app version)",
+          "why": "Find and fix bugs",
+          "where": "Firebase Crashlytics",
+          "shared": "Google, as our service provider. Only with your consent."
+        },
+        {
+          "type": "App instance ID (a random ID Firebase creates for this install)",
+          "why": "Count unique installs without knowing who you are",
+          "where": "Google Analytics for Firebase",
+          "shared": "Google, as our service provider. Only with your consent."
+        }
+      ],
+      "notCollected": [
+        "Your topics, calendar entries, notes, to-dos and reminder times — they stay on your device.",
+        "Your name, email address or any account details — there is no account.",
+        "Your advertising ID, contacts, precise location, camera, microphone, photos or other apps."
+      ],
+      "permissions": [
+        {
+          "name": "Notifications",
+          "why": "Only if you turn on the daily reminder or a to-do reminder. Reminders are scheduled on your device; no data is sent to create them."
+        },
+        {
+          "name": "Alarms & reminders",
+          "why": "So to-do reminders arrive on time. Without it, reminders still come, possibly a few minutes late."
+        },
+        {
+          "name": "Run at startup",
+          "why": "To set your reminders again after the phone restarts."
+        },
+        {
+          "name": "Vibration",
+          "why": "A short tap of feedback when you tick something off."
+        },
+        {
+          "name": "Internet",
+          "why": "Only used to send anonymous stats and crash reports when you have agreed to it."
+        }
+      ],
+      "permissionsNote": "The app blocks location, contacts, microphone and advertising-ID permissions.",
+      "thirdParties": [
+        {
+          "name": "Google Analytics for Firebase",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Anonymous usage statistics, with your consent."
+        },
+        {
+          "name": "Firebase Crashlytics",
+          "url": "https://firebase.google.com/support/privacy",
+          "use": "Crash reports, with your consent."
+        },
+        {
+          "name": "Google Play Services",
+          "url": "https://policies.google.com/privacy",
+          "use": "Installing and updating the app."
+        }
+      ],
+      "howWeUse": [
+        "To understand which features people use, so we know what to improve.",
+        "To find and fix crashes.",
+        "Legal basis in the EU/UK: your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time in Settings."
+      ],
+      "retention": [
+        "Data on your device stays until you delete it, clear the app’s storage or uninstall the app.",
+        "If Android backup is on for your phone, Android may include the app’s data in your own Google account backup so it can be restored on a new phone. Google manages that backup under your account; we cannot access it.",
+        "Analytics data is kept for **14 months**.",
+        "Crash reports are kept for up to **90 days**."
+      ],
+      "children": "{app} is meant for adults and is not directed at children under 13 (under 16 in the EU/UK). We do not knowingly collect their data."
+    },
+    "deletion": {
+      "short": "Your data lives on your phone. Deleting the app deletes it.",
+      "inApp": null,
+      "inAppNote": "To delete only part of your data: open **Topics → the topic → Delete topic** (removes its history too), tap an entry → **Delete entry**, or tap a to-do → **Delete task** (or use **Clear done** on the To do page).",
+      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy → Anonymous usage stats**. Reinstalling the app also resets the app instance ID.",
+      "deleted": [
+        "Everything you entered in the app: topics, entries, notes, to-dos, reminders and settings.",
+        "On request, analytics and crash data linked to your app instance ID, where technically possible."
+      ],
+      "kept": [
+        "Aggregated, anonymous statistics that cannot be linked back to you.",
+        "Analytics events already processed are removed when the retention period ends (14 months). Crash reports go after 90 days.",
+        "Any export files you saved yourself (CSV/JSON) — delete those from your phone or cloud storage.",
+        "Your phone’s Android backup, if it is on — remove it in **Android Settings → Google → Backup**.",
+        "Data Google keeps under its own policies, such as your Play Store install history."
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is Habit Tracker free?",
+        "a": "Yes. There are no ads and no account."
+      },
+      {
+        "q": "How do I add a topic to several days at once?",
+        "a": "Tap a day, pick the topic, then switch to **Date range** and choose the last day. “Office, 1–3 Oct” makes three entries in one go."
+      },
+      {
+        "q": "What is the To do tab?",
+        "a": "A simple task list, separate from your habits. Give a task a due date and a reminder time if you like. To-dos never count in Stats."
+      },
+      {
+        "q": "How do I back up my data?",
+        "a": "Go to **Settings → Your data** and export a CSV (for spreadsheets) or a JSON backup. Keep the file somewhere safe, like your email or cloud drive."
+      },
+      {
+        "q": "Will I lose my data if I change phones?",
+        "a": "Export a JSON backup on the old phone and use **Settings → Your data → Import backup** on the new one. Importing merges with what is already there, so it is safe to run twice."
+      },
+      {
+        "q": "My reminders don’t show up, or come late.",
+        "a": "Check that notifications are allowed in **Android Settings → Apps → Habit Tracker → Notifications**. On Android 14 and newer, also allow **Alarms & reminders** for on-time to-do reminders, and make sure battery saver isn’t stopping the app."
+      },
+      {
+        "q": "How do I turn off anonymous stats?",
+        "a": "Go to **Settings → Privacy → Anonymous usage stats** and turn it off. Collection stops straight away."
+      }
+    ],
+    "termsNotes": [
+      "Everything you log stays on your device. You are responsible for keeping your own backups."
     ]
   },
   {
@@ -827,242 +1042,6 @@
     "termsNotes": [
       "You keep all rights to your photos. Only edit photos you have the right to use.",
       "Premium Photo Edits is a separate service. Its own terms apply to any order you place there."
-    ]
-  },
-  {
-    "slug": "budgettracker",
-    "name": "Budget Tracker",
-    "storeTitle": "Budget & Expense Tracker",
-    "package": "com.orbitra.budgettracker",
-    "packageConfirmed": false,
-    "category": "FinanceApplication",
-    "tagline": "Every dollar moves you up.",
-    "summary": "Track expenses, budgets, bills and net worth in any currency, and climb your Road to Billionaire milestone by milestone. Private, offline, no ads.",
-    "accent": "#0F6E52",
-    "playUrl": "https://play.google.com/store/apps/details?id=com.orbitra.budgettracker",
-    "testingUrl": "https://play.google.com/apps/testing/com.orbitra.budgettracker",
-    "website": null,
-    "status": "testing",
-    "lastUpdated": "2026-10-02",
-    "features": [
-      {
-        "icon": "pen",
-        "title": "Log it in seconds",
-        "text": "Fast entry with a built-in calculator, categories, tags, notes and split transactions."
-      },
-      {
-        "icon": "gauge",
-        "title": "Budgets that keep you on track",
-        "text": "Monthly budgets per category or overall, with rollover and alerts at 80% and 100%."
-      },
-      {
-        "icon": "bell",
-        "title": "Never miss a bill",
-        "text": "Recurring transactions and bill reminders, posted for you or on your confirmation."
-      },
-      {
-        "icon": "repeat",
-        "title": "Any currency, one net worth",
-        "text": "Each account in its own currency, with daily exchange rates and one total in your base currency."
-      },
-      {
-        "icon": "chart",
-        "title": "Insights",
-        "text": "Spending by category, income vs expenses, cash flow, savings rate and period comparisons."
-      },
-      {
-        "icon": "lock",
-        "title": "Private by design",
-        "text": "No account, no bank login, no ads. App lock with fingerprint or PIN, and encrypted backups."
-      }
-    ],
-    "screenshots": [
-      {
-        "src": "/orbitra/assets/apps/budgettracker/screen-1.webp",
-        "alt": "Budget Tracker home dashboard"
-      },
-      {
-        "src": "/orbitra/assets/apps/budgettracker/screen-2.webp",
-        "alt": "The Road to Billionaire journey with milestones"
-      },
-      {
-        "src": "/orbitra/assets/apps/budgettracker/screen-3.webp",
-        "alt": "Monthly budgets"
-      },
-      {
-        "src": "/orbitra/assets/apps/budgettracker/screen-4.webp",
-        "alt": "Spending insights"
-      },
-      {
-        "src": "/orbitra/assets/apps/budgettracker/screen-5.webp",
-        "alt": "Accounts and net worth in several currencies"
-      }
-    ],
-    "screenshotsNote": "Design concepts. Real screenshots will replace them before launch.",
-    "glance": [
-      "Your money data stays **on your phone**. No account, no bank login.",
-      "No ads. The core app is free; **Orbitra Pro** adds more.",
-      "Anonymous usage stats and crash reports are sent **only if you agree**."
-    ],
-    "privacy": {
-      "short": [
-        "Your accounts, transactions, budgets, goals and notes are stored **only on your phone**. We never receive them.",
-        "There is **no account**, **no bank login** and **no ads**.",
-        "To show exchange rates, the app downloads daily rates. That request contains only currency codes, not your data.",
-        "If — and only if — you agree, the app sends **anonymous usage statistics** and **crash reports**. They never include amounts, payees, notes or account names.",
-        "Orbitra Pro purchases are handled by **Google Play**. We never see your payment details.",
-        "We never sell your data."
-      ],
-      "collected": [
-        {
-          "type": "App interactions (e.g. “a budget was created”, “insights opened”) — never amounts, payees, notes or account names",
-          "why": "See which features are useful",
-          "where": "Google Analytics for Firebase",
-          "shared": "Google, as our service provider. Only with your consent."
-        },
-        {
-          "type": "Crash logs and diagnostics (device model, Android version, app version), with anything you typed removed",
-          "why": "Find and fix bugs",
-          "where": "Firebase Crashlytics",
-          "shared": "Google, as our service provider. Only with your consent."
-        },
-        {
-          "type": "App instance ID (a random ID Firebase creates for this install)",
-          "why": "Count unique installs without knowing who you are",
-          "where": "Google Analytics for Firebase",
-          "shared": "Google, as our service provider. Only with your consent."
-        },
-        {
-          "type": "Exchange-rate requests (currency codes and your IP address)",
-          "why": "Download daily exchange rates",
-          "where": "Frankfurter API (European Central Bank rates)",
-          "shared": "The rates provider, to answer the request. No identifiers are sent."
-        },
-        {
-          "type": "Purchase status for Orbitra Pro",
-          "why": "Unlock Pro features you paid for",
-          "where": "Google Play Billing",
-          "shared": "Google, which handles the payment"
-        }
-      ],
-      "notCollected": [
-        "Your accounts, balances, transactions, payees, budgets, goals and notes — they stay on your device.",
-        "Your name, email address or any account details — there is no account. An optional display name stays on your phone.",
-        "Bank logins or card numbers — there is no bank sync.",
-        "Your advertising ID, SMS, contacts, call log, location or files."
-      ],
-      "permissions": [
-        {
-          "name": "Internet",
-          "why": "For exchange rates, Google Play purchases, and anonymous stats if you agreed."
-        },
-        {
-          "name": "Notifications",
-          "why": "Asked only when you set a bill reminder or budget alert. Reminders are scheduled on your device."
-        },
-        {
-          "name": "Fingerprint / face unlock",
-          "why": "Only if you turn on app lock."
-        },
-        {
-          "name": "Run at startup",
-          "why": "To set your reminders again after the phone restarts."
-        },
-        {
-          "name": "Google Play Billing",
-          "why": "To buy Orbitra Pro."
-        }
-      ],
-      "permissionsNote": "The app never asks for SMS, contacts, location, camera or storage permissions. Receipts are added with Android’s photo picker or your camera app. [[TODO: confirm against the final AndroidManifest.xml before launch]]",
-      "thirdParties": [
-        {
-          "name": "Google Analytics for Firebase",
-          "url": "https://firebase.google.com/support/privacy",
-          "use": "Anonymous usage statistics, with your consent."
-        },
-        {
-          "name": "Firebase Crashlytics",
-          "url": "https://firebase.google.com/support/privacy",
-          "use": "Crash reports, with your consent."
-        },
-        {
-          "name": "Frankfurter",
-          "url": "https://frankfurter.dev/",
-          "use": "Daily European Central Bank exchange rates. No key, no personal data. [[TODO: confirm its terms before launch]]"
-        },
-        {
-          "name": "Google Play Billing",
-          "url": "https://policies.google.com/privacy",
-          "use": "Orbitra Pro subscriptions and purchases."
-        },
-        {
-          "name": "Google Play Services",
-          "url": "https://policies.google.com/privacy",
-          "use": "Installing and updating the app."
-        }
-      ],
-      "howWeUse": [
-        "Your money data is used only on your phone, to run the app for you.",
-        "To understand which features people use, so we know what to improve.",
-        "To find and fix crashes.",
-        "Legal basis in the EU/UK: providing the app you asked for (Art. 6(1)(b) GDPR) for data on your phone, and your consent (Art. 6(1)(a)) for analytics. You can withdraw consent at any time in Settings."
-      ],
-      "retention": [
-        "Data on your device stays until you use **Delete all data**, clear the app’s storage or uninstall the app.",
-        "Your money data is **not** included in Android’s automatic Google backup. Backups are only the files you create yourself, encrypted with AES-256.",
-        "Analytics data: [[TODO: confirm the GA4 data-retention setting]]",
-        "Crash reports are kept for up to **90 days**."
-      ],
-      "children": "{app} is meant for adults (18+). It is not directed at children and we do not knowingly collect their data.",
-      "extra": null
-    },
-    "deletion": {
-      "short": "Your data lives on your phone. Use Delete all data in Settings, or uninstall the app.",
-      "inApp": "In the app, open **Settings → Delete all data**. This wipes your accounts, transactions, budgets, goals and settings, and resets the analytics ID.",
-      "inAppNote": "Deleting your data does **not** cancel an Orbitra Pro subscription. Cancel it in **Google Play → Payments & subscriptions → Subscriptions**. [[TODO: confirm the menu path once the app is built]]",
-      "analytics": "Analytics data is collected without your name or email, and only if you agreed to it. You can stop it at any time in **Settings → Privacy & data**. Delete all data and reinstalling both reset the app instance ID.",
-      "deleted": [
-        "Everything you entered in the app: accounts, transactions, budgets, bills, goals, notes and settings.",
-        "Your app lock PIN and saved exchange rates.",
-        "On request, analytics and crash data linked to your app instance ID, where technically possible."
-      ],
-      "kept": [
-        "Backup and export files you saved yourself — delete those from your phone or cloud storage.",
-        "Aggregated, anonymous statistics that cannot be linked back to you.",
-        "Your purchase history, kept by Google Play under its own policies."
-      ]
-    },
-    "faq": [
-      {
-        "q": "When will Budget Tracker be available?",
-        "a": "We are building it now. Follow our [Google Play developer page](https://play.google.com/store/apps/dev?id=7254338090363385545) for the launch."
-      },
-      {
-        "q": "Is it free?",
-        "a": "Yes. The core app is free and has no ads. **Orbitra Pro** adds unlimited accounts, budgets and goals, full insights history and more."
-      },
-      {
-        "q": "Do I need to connect my bank?",
-        "a": "No. There is no bank sync. Add transactions yourself, import a CSV, or set up recurring ones."
-      },
-      {
-        "q": "Does it handle more than one currency?",
-        "a": "Yes. Each account has its own currency. The app uses daily European Central Bank rates, and you can set your own rate or add a custom currency."
-      },
-      {
-        "q": "Is the Road to Billionaire financial advice?",
-        "a": "No. Milestones, the pace calculator and projections are illustrations to keep you motivated, not financial advice."
-      },
-      {
-        "q": "How do I back up my data?",
-        "a": "Create an encrypted backup file and save it where you like, such as Google Drive. You can also export to CSV."
-      }
-    ],
-    "termsNotes": [
-      "{app} records and analyses the money you enter. It does not move money, give loans, or offer banking or investment services.",
-      "Projections, the pace calculator and milestones are illustrations only, not financial advice.",
-      "Orbitra Pro is billed by Google Play and renews until you cancel it in Google Play. Google Play’s refund rules apply.",
-      "Everything you log stays on your device. Keep your own backups, and remember your backup password — we cannot recover it."
     ]
   }
 ]

@@ -7,9 +7,14 @@ export default {
   basePath: "/orbitra/",
 
   // While true, every /orbitra/ page is marked noindex and left out of the sitemap.
-  // Flip to false only after every TODO(owner) marker is resolved and the Play
-  // Console Data safety forms match the pages.
-  draft: true,
+  // Off since 2026-10-06: four apps are released, so the studio and app pages
+  // should be found in search.
+  draft: false,
+
+  // Privacy policies, terms and delete-data pages stay public (Play Console links
+  // to them) but noindex and out of the sitemap while they still carry
+  // TODO(owner) markers. Flip to false once every marker is resolved.
+  legalNoindex: true,
 
   // {{CONTACT_EMAIL}} — confirmed by the owner (2026-10-02).
   contactEmail: "orbitra.dev@gmail.com",

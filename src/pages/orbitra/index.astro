@@ -1,114 +1,281 @@
 ---
+// /orbitra/ — the studio home. Each app is shown as its own "world" in its own
+// brand colours (from landing.js), all circling the Orbitra mark.
+import "../../styles/orbitra-landing.css";
 import OrbitraLayout from "../../layouts/OrbitraLayout.astro";
 import Mark from "../../components/orbitra/Mark.astro";
 import Icon from "../../components/orbitra/Icon.astro";
 import AppIcon from "../../components/orbitra/AppIcon.astro";
 import StatusPill from "../../components/orbitra/StatusPill.astro";
 import GooglePlayBadge from "../../components/orbitra/GooglePlayBadge.astro";
-import { studio, apps, appPath, abs, rich, todoHtml } from "../../lib/orbitra.js";
+import Phone from "../../components/orbitra/Phone.astro";
+import landing from "../../data/orbitra/landing.js";
+import { studio, apps, appPath, abs, todoHtml, EXTERNAL, NEW_TAB_HTML } from "../../lib/orbitra.js";
 
-const values = [
-  { icon: "box", title: "Small and useful.", text: "Each app does one job well." },
-  { icon: "lock", title: "Your data, your device.", text: "We collect as little as we can." },
-  { icon: "tag", title: "Free to start.", text: "Most of our tools cost nothing." },
+// The studio's own colours, in the same variables the app pages use.
+const vars = [
+  "--lp-accent:#FF5A1F", "--lp-on-accent:#0F1222", "--lp-accent2:#1C9C8C", "--lp-accent3:#786EFF",
+  "--lp-deep:#1A1F38", "--lp-deep2:#0F1222", "--lp-tint-l:#FFF3EC", "--lp-tint-d:#161A2B",
+  "--lp-text-l:#B93A0B", "--lp-text-d:#FF8A5C", '--lp-font:"Inter"', '--lp-display:"Space Grotesk"',
+  "--lp-hero-btn:#FF5A1F", "--lp-hero-btn-ink:#0F1222", "--lp-hero-accent:#FF8A5C",
+].join(";");
+
+const appVars = (t) =>
+  [
+    `--lp-accent:${t.accent}`, `--lp-on-accent:${t.onAccent}`, `--lp-accent2:${t.accent2}`, `--lp-accent3:${t.accent3}`,
+    `--lp-deep:${t.deep}`, `--lp-deep2:${t.deep2}`, `--lp-display:"${t.display}"`,
+    `--lp-hero-btn:${t.heroBtn ?? t.accent}`, `--lp-hero-btn-ink:${t.heroBtnInk ?? t.onAccent}`,
+    `--lp-hero-accent:${t.heroAccent ?? t.accent}`,
+  ].join(";");
+
+// Every app's brand font, in one request.
+const fonts = [...new Set(apps.map((a) => landing[a.slug].theme.fonts))].join("&");
+
+// Orbits: ring, then where on it the app starts (degrees). Each ring turns at its
+// own speed; a negative animation delay puts the app at its starting angle.
+const RING_SECONDS = { 1: 38, 2: 56, 3: 80 };
+const orbitDelay = (o) => `${(-(o.angle / 360) * RING_SECONDS[o.ring]).toFixed(2)}s`;
+const orbits = [
+  { slug: "periodicelementtable", ring: 1, angle: 20 },
+  { slug: "budgettracker", ring: 2, angle: 130 },
+  { slug: "toolsserver", ring: 2, angle: 310 },
+  { slug: "habittracker", ring: 3, angle: 60 },
+  { slug: "productwhite", ring: 3, angle: 240 },
 ];
 
+const values = [
+  { icon: "box", title: "Small and useful", text: "Each app does one job well, and does it fast." },
+  { icon: "lock", title: "Your data, your device", text: "We collect as little as we can. Most of your data never leaves your phone." },
+  { icon: "tag", title: "Free to start", text: "No ads, no accounts and no paywalls in the way." },
+  { icon: "sparkles", title: "Made with care", text: "Light and dark themes and clear, simple screens in every app." },
+];
+
+const home = abs(studio.basePath);
 const jsonLd = [
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Orbitra",
-    slogan: studio.tagline,
-    url: abs(studio.basePath),
-    logo: abs("/orbitra/assets/brand/orbitra-app-icon-512x512.png"),
-    email: studio.contactEmail,
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${home}#organization`,
+        name: "Orbitra",
+        slogan: studio.tagline,
+        description: "Orbitra makes small, private Android apps and free web tools.",
+        url: home,
+        logo: abs("/orbitra/assets/brand/orbitra-app-icon-512x512.png"),
+        email: studio.contactEmail,
+        founder: { "@type": "Person", name: "Harinda Fernando", url: studio.personalSiteUrl },
+        sameAs: [studio.playDeveloperUrl],
+      },
+      {
+        "@type": "ItemList",
+        name: "Apps by Orbitra",
+        itemListElement: apps.map((a, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: abs(appPath(a.slug)),
+          name: a.name,
+        })),
+      },
+    ],
   },
 ];
 ---
 
 <OrbitraLayout
-  title="Orbitra — Apps and web tools"
-  description="Orbitra makes small, useful apps and web tools: Habit Tracker, Periodic Element Table, ToolsServer, ProductWhite and Budget Tracker."
+  title="Orbitra: Private Android Apps & Free Web Tools"
+  description="Orbitra makes small, private Android apps and free web tools: Periodic Element Table, Budget Tracker, ToolsServer, Habit Tracker and ProductWhite."
   jsonLd={jsonLd}
+  fonts={fonts}
+  themeColor="#0F1222"
+  active="apps"
+  landing
 >
-  <section class="o-hero">
-    <Mark size={360} color="#FF5A1F" class="o-hero__ring" />
-    <div class="o-wrap">
-      <div class="o-hero__inner">
-        <h1 class="o-display">Many worlds, one orbit.</h1>
-        <p>Orbitra makes small, useful apps and web tools. Each one is its own world.</p>
-        <a class="o-btn o-btn--primary" href="#apps">See our apps <Icon name="arrow" size={18} /></a>
+  <div class="lp lp-home" style={vars}>
+    <!-- ── hero: five worlds in one orbit ───────────────────────────────── -->
+    <section class="lp-hero" aria-labelledby="home-title">
+      <div class="lp-hero__bg" aria-hidden="true">
+        <span class="lp-orb lp-orb--1"></span>
+        <span class="lp-orb lp-orb--2"></span>
+        <span class="lp-orb lp-orb--3"></span>
+        <span class="lp-hero__grid"></span>
       </div>
-    </div>
-  </section>
+      <div class="lp-container lp-hero__inner">
+        <div class="lp-hero__copy">
+          <h1 class="lp-hero__title lp-in" id="home-title" style="--d: 0">
+            <span class="lp-eyebrow lp-hero__kw">Orbitra · Android apps &amp; web tools</span>
+            <span class="lp-hero__headline">Many worlds, one orbit.</span>
+          </h1>
+          <p class="lp-hero__lead lp-in" style="--d: 2">
+            Orbitra makes small, useful Android apps and web tools. Five apps, each its own world, each private by
+            design and free to start.
+          </p>
+          <div class="lp-hero__cta lp-in" style="--d: 3">
+            <a class="lp-btn lp-btn--primary" href="#apps">Explore the apps <Icon name="arrow" size={18} /></a>
+            <a class="lp-btn lp-btn--ghost" href={`${studio.basePath}developer/`}>Meet the developer</a>
+          </div>
+          <ul class="lp-hero__trust lp-in" style="--d: 4">
+            <li><Icon name="smartphone" size={16} /> Android</li>
+            <li><Icon name="shield" size={16} /> No ads</li>
+            <li><Icon name="user" size={16} /> No accounts</li>
+          </ul>
+        </div>
 
-  <section class="o-section" id="apps" aria-labelledby="apps-title">
-    <div class="o-wrap">
-      <div class="o-section__head">
-        <h2 class="o-title" id="apps-title">Our apps</h2>
-        <p class="o-muted">Every app keeps its own name. Each one is made by Orbitra.</p>
-      </div>
-      <div class="o-grid o-grid--2">
-        {
-          apps.map((app) => (
-            <article class="o-card">
-              <div class="o-card__top">
-                <AppIcon app={app} size={64} decorative />
-                <div>
-                  <h3 class="o-heading o-card__name">
-                    <a class="o-card__main" href={appPath(app.slug)}>{app.name}</a>
-                  </h3>
-                  <p class="o-caption">by Orbitra</p>
+        <div class="lp-orbit" aria-label="Our apps">
+          <span class="lp-orbit__core"><Mark size={96} color="#FF5A1F" /></span>
+          {[1, 2, 3].map((r) => <span class={`lp-orbit__ring lp-orbit__ring--${r}`} aria-hidden="true" />)}
+          {
+            orbits.map((o) => {
+              const app = apps.find((a) => a.slug === o.slug);
+              return (
+                <div class={`lp-orbit__track lp-orbit__track--${o.ring}`} style={`--delay: ${orbitDelay(o)}`}>
+                  <a class="lp-orbit__app" href={appPath(app.slug)} aria-label={app.name}>
+                    <AppIcon app={app} size={72} decorative />
+                    <span class="lp-orbit__label" aria-hidden="true">{app.name}</span>
+                  </a>
                 </div>
-              </div>
-              <p>{app.summary}</p>
-              <StatusPill status={app.status} />
-              <div class="o-card__links">
-                {app.testingUrl && (
-                  <a href={appPath(app.slug)} aria-label={`Become a ${app.name} tester`}>Become a tester</a>
-                )}
-                <a href={appPath(app.slug, "support")} aria-label={`${app.name} support`}>Support</a>
-                <a href={appPath(app.slug, "privacy-policy")} aria-label={`${app.name} privacy policy`}>Privacy</a>
-                <a href={appPath(app.slug, "delete-data")} aria-label={`Delete ${app.name} data`}>Delete data</a>
-                <a href={appPath(app.slug, "terms")} aria-label={`${app.name} terms of use`}>Terms</a>
-              </div>
-            </article>
-          ))
-        }
+              );
+            })
+          }
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="o-section" aria-labelledby="values-title">
-    <div class="o-wrap">
-      <div class="o-section__head">
-        <h2 class="o-title" id="values-title">What we care about</h2>
-      </div>
-      <div class="o-grid o-grid--3">
+    <!-- ── numbers ──────────────────────────────────────────────────────── -->
+    <section class="lp-stats" aria-label="Orbitra in numbers">
+      <div class="lp-container lp-stats__grid">
         {
-          values.map((v) => (
-            <div class="o-feature">
-              <Icon name={v.icon} size={28} />
-              <h3 class="o-heading">{v.title}</h3>
-              <p>{v.text}</p>
+          [
+            [apps.length, "apps, each its own world"],
+            [118, "elements in Periodic Element Table"],
+            [238, "free tools in ToolsServer"],
+            [0, "ads in any of our apps"],
+          ].map(([v, l], i) => (
+            <div class="lp-stat" data-reveal style={`--d: ${i}`}>
+              <p class="lp-stat__value" data-count={v}>{v}</p>
+              <p class="lp-stat__label">{l}</p>
             </div>
           ))
         }
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="o-section" id="contact" aria-labelledby="contact-title">
-    <div class="o-wrap o-contact">
-      <div>
-        <h2 class="o-title" id="contact-title">Contact</h2>
-        <p class="o-contact__mail" style="margin-top: var(--space-3)" set:html={rich("{email}")} />
-        <p class="o-muted" style="margin-top: var(--space-2)">We reply within 2–3 working days.</p>
+    <!-- ── the worlds ───────────────────────────────────────────────────── -->
+    <section class="lp-section lp-worlds" id="apps" aria-labelledby="apps-title">
+      <div class="lp-container">
+        <div class="lp-head lp-head--center" data-reveal>
+          <p class="lp-eyebrow">Our apps</p>
+          <h2 class="lp-h2" id="apps-title">Five worlds. Pick yours.</h2>
+          <p class="lp-lead">Every app keeps its own name and look. Each one is made by Orbitra.</p>
+        </div>
       </div>
-      <p>
-        <GooglePlayBadge href={studio.playDeveloperUrl} width={200} />
-        {!studio.playDeveloperUrlConfirmed && <Fragment set:html={` ${todoHtml("confirm developer page id")}`} />}
-      </p>
-    </div>
-  </section>
+
+      <div class="lp-worlds__list">
+        {
+          apps.map((app, i) => {
+            const lp = landing[app.slug];
+            const live = app.status === "live";
+            return (
+              <article class:list={["lp-world", { "lp-world--flip": i % 2 === 1 }]} style={appVars(lp.theme)} aria-labelledby={`w-${app.slug}`}>
+                <div class="lp-hero__bg" aria-hidden="true">
+                  <span class="lp-orb lp-orb--1" />
+                  <span class="lp-orb lp-orb--2" />
+                </div>
+                <div class="lp-world__inner">
+                  <div class="lp-world__copy" data-reveal>
+                    <div class="lp-hero__app">
+                      <AppIcon app={app} size={64} class="lp-hero__icon" decorative />
+                      <div>
+                        <h3 class="lp-hero__name" id={`w-${app.slug}`}>{app.name}</h3>
+                        <p class="lp-hero__by">{app.storeTitle ?? "by Orbitra"}</p>
+                      </div>
+                      <StatusPill status={app.status} />
+                    </div>
+                    <p class="lp-world__tagline">{app.tagline}</p>
+                    <p class="lp-world__summary">{app.summary}</p>
+                    <ul class="lp-world__features">
+                      {lp.sections.slice(0, 4).map((s) => (
+                        <li>
+                          <Icon name="check" size={18} /> {s.kicker}
+                        </li>
+                      ))}
+                    </ul>
+                    <div class="lp-hero__cta">
+                      <a class="lp-btn lp-btn--primary" href={appPath(app.slug)}>
+                        Explore {app.name} <Icon name="arrow" size={18} />
+                      </a>
+                      {live ? (
+                        <GooglePlayBadge href={app.playUrl} width={170} />
+                      ) : (
+                        app.testingUrl && (
+                          <a class="lp-btn lp-btn--ghost" href={app.inviteUrl ?? app.testingUrl} {...EXTERNAL}>
+                            Join the test<Fragment set:html={NEW_TAB_HTML} />
+                          </a>
+                        )
+                      )}
+                    </div>
+                    <p class="lp-world__links">
+                      <a href={appPath(app.slug, "support")}>Support</a>
+                      <a href={appPath(app.slug, "privacy-policy")}>Privacy</a>
+                      <a href={appPath(app.slug, "delete-data")}>Delete data</a>
+                      <a href={appPath(app.slug, "terms")}>Terms</a>
+                    </p>
+                  </div>
+                  <a class="lp-world__stage" href={appPath(app.slug)} tabindex="-1" aria-hidden="true" data-reveal>
+                    <Phone slug={app.slug} screen={lp.hero.side[0]} class="lp-world__phone lp-world__phone--back" />
+                    <Phone slug={app.slug} screen={lp.hero.screen} class="lp-world__phone" />
+                  </a>
+                </div>
+              </article>
+            );
+          })
+        }
+      </div>
+    </section>
+
+    <!-- ── values ───────────────────────────────────────────────────────── -->
+    <section class="lp-section lp-more" aria-labelledby="values-title">
+      <div class="lp-container">
+        <div class="lp-head" data-reveal>
+          <p class="lp-eyebrow">What we care about</p>
+          <h2 class="lp-h2" id="values-title">Small apps, made properly</h2>
+        </div>
+        <ul class="lp-more__grid">
+          {
+            values.map((v, i) => (
+              <li class="lp-tile" data-reveal style={`--d: ${i}`}>
+                <span class="lp-tile__icon"><Icon name={v.icon} size={24} /></span>
+                <h3>{v.title}</h3>
+                <p>{v.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── contact ──────────────────────────────────────────────────────── -->
+    <section class="lp-final" id="contact" aria-labelledby="contact-title">
+      <div class="lp-hero__bg" aria-hidden="true">
+        <span class="lp-orb lp-orb--1"></span>
+        <span class="lp-orb lp-orb--2"></span>
+      </div>
+      <div class="lp-container lp-final__inner" data-reveal>
+        <Mark size={88} color="#FF5A1F" class="lp-final__mark" />
+        <h2 class="lp-final__title" id="contact-title">Say hello.</h2>
+        <p>Questions, ideas or a bug to report? We reply within 2–3 working days.</p>
+        <a class="lp-btn lp-btn--primary lp-btn--lg" href={`mailto:${studio.contactEmail}`}>
+          <Icon name="mail" size={20} /> {studio.contactEmail}
+        </a>
+        <div class="lp-final__play">
+          <GooglePlayBadge href={studio.playDeveloperUrl} width={200} />
+          {!studio.playDeveloperUrlConfirmed && <Fragment set:html={` ${todoHtml("confirm developer page id")}`} />}
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    import "../../scripts/orbitra-landing.js";
+  </script>
 </OrbitraLayout>

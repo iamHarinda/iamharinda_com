@@ -4,6 +4,9 @@ import apps from "../data/orbitra/apps.json";
 
 export { studio, apps };
 
+/** Legal pages: privacy policies, terms and delete-data pages (studio-wide and per app). */
+export const LEGAL_PATH = /^\/orbitra\/(?:[^/]+\/)?(?:privacy-policy|terms|delete-data)\/$/;
+
 export const getApp = (slug) => apps.find((a) => a.slug === slug);
 
 /** Absolute canonical URL for a path under the site. */
