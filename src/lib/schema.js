@@ -4,6 +4,7 @@
 // markup is not eligible for rich results.
 
 import site, { abs } from "../data/site.js";
+import profile from "../data/profile.js";
 
 const ID = {
   site: abs("/#website"),
@@ -16,16 +17,52 @@ export function website() {
 }
 
 export function person() {
+  const school = (e, type) => ({ "@type": type, name: e.school, ...(e.url && { url: e.url }) });
   return {
     "@type": "Person",
     "@id": ID.person,
     name: site.personName,
+    alternateName: [profile.fullName, site.handle],
     jobTitle: site.personTitles,
-    url: abs("/about/"),
+    description: `${profile.name} is a photo editor, web developer and Android app maker from ${profile.hometown}, ${profile.country}, with a B.ICT (Hons) from Rajarata University of Sri Lanka.`,
+    url: abs("/"),
     image: abs(site.personImage),
-    sameAs: [site.contact.fiverr],
-    knowsAbout: ["Wedding photo editing", "Adobe Lightroom Classic", "Adobe Photoshop", "Color correction", "Portrait retouching", "Product photo editing", "Web development"],
+    homeLocation: { "@type": "Place", name: `${profile.hometown}, ${profile.region}, ${profile.country}` },
+    telephone: site.contact.phoneLk,
+    alumniOf: [
+      school(profile.education[0], "CollegeOrUniversity"),
+      school(profile.education[1], "CollegeOrUniversity"),
+      school(profile.education[2], "HighSchool"),
+      school(profile.education[3], "HighSchool"),
+    ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        name: "Bachelor of Information Technology (B.ICT Hons)",
+        credentialCategory: "degree",
+        recognizedBy: { "@type": "CollegeOrUniversity", name: profile.education[0].school },
+      },
+      ...profile.certifications
+        .filter((c) => c.issuer !== "LinkedIn Skill Assessment")
+        .map((c) => ({ "@type": "EducationalOccupationalCredential", name: c.name, credentialCategory: "certificate", recognizedBy: { "@type": "Organization", name: c.issuer } })),
+    ],
+    knowsAbout: ["Wedding photo editing", "Adobe Lightroom Classic", "Adobe Photoshop", "Color correction", "Portrait retouching", "Product photo editing", "Web development", "WordPress", "PHP", "Laravel", "Android app development", "Live streaming", "Video editing", "vMix", "OBS Studio", "Social media management"],
+    sameAs: [...profile.profiles.map((p) => p.url), abs("/orbitra/")],
     worksFor: { "@id": ID.biz },
+  };
+}
+
+/** The home page is Harinda's profile page (Google: ProfilePage structured data). */
+export function profilePage({ path = "/", modified } = {}) {
+  return {
+    "@type": "ProfilePage",
+    "@id": abs(path) + "#profile",
+    url: abs(path),
+    name: `${site.personName}: photo editor, web developer and app maker`,
+    inLanguage: "en-US",
+    isPartOf: { "@id": ID.site },
+    mainEntity: { "@id": ID.person },
+    ...(modified && { dateModified: modified }),
   };
 }
 

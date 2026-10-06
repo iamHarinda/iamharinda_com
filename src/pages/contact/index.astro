@@ -37,7 +37,8 @@ const crumbs = [{ name: "Home", path: "/" }, { name: "Contact", path: "/contact/
         </form>
       </div>
       <aside class="stack">
-        <div class="card"><h2 style="font:600 1.05rem/1.3 var(--f-body)">WhatsApp</h2><p><a class="link" href={waLink("Hi Harinda, I found your site and I'd like to talk about a project.")} data-track="whatsapp">{site.contact.whatsappDisplay}</a></p><p>The fastest way to reach me.</p></div>
+        <div class="card"><h2 style="font:600 1.05rem/1.3 var(--f-body)">WhatsApp</h2><p><a class="link" href={waLink("Hi Harinda, I found your site and I'd like to talk about a project.")} data-track="whatsapp">{site.contact.whatsappDisplay}</a></p><p>For photo editing orders. The fastest way to reach me.</p></div>
+        <div class="card"><h2 style="font:600 1.05rem/1.3 var(--f-body)">Phone in Sri Lanka</h2><p><a class="link" href={`tel:${site.contact.phoneLk}`} data-track="phone">{site.contact.phoneLkDisplay}</a></p><p>My personal number, for people in Sri Lanka.</p></div>
         <div class="card"><h2 style="font:600 1.05rem/1.3 var(--f-body)">Email</h2><p><a class="link" href={`mailto:${site.contact.email}`} data-track="email">{site.contact.email}</a></p></div>
         <div class="card"><h2 style="font:600 1.05rem/1.3 var(--f-body)"><FiverrLogo height={20} label="Fiverr" /></h2><p><a class="link" href={site.contact.fiverr} target="_blank" rel="noopener" data-track="fiverr">fiverr.com/{site.handle}</a></p><p>Order with Fiverr buyer protection.</p></div>
         <div class="card card--soft"><p>{site.location.note}</p></div>

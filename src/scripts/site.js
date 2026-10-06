@@ -86,6 +86,7 @@ document.addEventListener("click", (e) => {
   if (h.includes("wa.me/")) gtag("event", "whatsapp_click", { page_path });
   else if (h.includes("fiverr.com")) gtag("event", "fiverr_click", { page_path });
   else if (h.startsWith("mailto:")) gtag("event", "email_click", { page_path });
+  else if (h.startsWith("tel:")) gtag("event", "phone_click", { page_path });
   else if (a.pathname === "/free-sample/") gtag("event", "sample_cta_click", { page_path });
 });
 document.querySelectorAll("form[data-lead]").forEach((f) =>

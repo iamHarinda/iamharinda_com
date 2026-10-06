@@ -72,10 +72,15 @@ const payText = ["Remitly", "TapSend", "Bank transfer"];
       <div>
         <p class="foot__title">Get in touch</p>
         <ul class="foot__contact">
-          <li><a href={wa} data-track="whatsapp"><BrandIcon name="whatsapp" size={16} />{site.contact.whatsappDisplay}</a></li>
+          <li><a href={wa} data-track="whatsapp"><BrandIcon name="whatsapp" size={16} /><span>{site.contact.whatsappDisplay}<small class="foot__note">Photo editing · WhatsApp</small></span></a></li>
           <li>
             <a href={`mailto:${site.contact.email}`} data-track="email">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>{site.contact.email}
+            </a>
+          </li>
+          <li>
+            <a href={`tel:${site.contact.phoneLk}`} data-track="phone">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>{site.contact.phoneLkDisplay}<small class="foot__note">Sri Lanka · personal</small></span>
             </a>
           </li>
           <li><a href={site.contact.fiverr} rel="me noopener" target="_blank" data-track="fiverr"><FiverrLogo height={13} /><span>profile</span></a></li>
@@ -100,7 +105,17 @@ const payText = ["Remitly", "TapSend", "Bank transfer"];
 
     <div class="foot__legal">
       <span>© {year} {site.personName}, trading as {site.legalName}. {site.location.note}</span>
-      <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a>{!orbitra.draft && <> · <a href="/orbitra/">Apps by Orbitra</a></>}</span>
+      <span>
+        <a href="/privacy/">Privacy</a><span class="foot__sep" aria-hidden="true">·</span><a href="/terms/">Terms</a><span class="foot__sep" aria-hidden="true">·</span>
+        <!-- A quiet pointer to the app studio: same muted colour as the legal links. -->
+        <a class="foot__orbitra" href={orbitra.basePath} title="Apps and web tools by Orbitra">
+          <svg viewBox="0 0 64 64" width="13" height="13" aria-hidden="true">
+            <path d="M53.25 26.31 A22 22 0 1 1 37.69 10.75" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+            <circle cx="47.56" cy="16.44" r="6" fill="currentColor" />
+          </svg>
+          Orbitra
+        </a>
+      </span>
     </div>
   </div>
 </footer>
