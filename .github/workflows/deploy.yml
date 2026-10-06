@@ -52,26 +52,37 @@ jobs:
           key: indexnow-state-${{ github.run_id }}
           restore-keys: indexnow-state-
 
+      # lftp instead of FTP-Deploy-Action (Oct 2026): Hostinger's FTP drops the
+      # control connection mid-upload, and FTP-Deploy-Action could neither
+      # resume nor recover. Each failed run also left Pure-FTPd temp files
+      # (".in.<name>.") that block the next upload with "550 ... already exists".
+      # lftp retries and reconnects, and we clear those temp files first.
+      # Server-only files (mail autoconfig etc.) are left in place: no --delete.
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
       - name: Deploy dist/ to Hostinger public_html
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./dist/
-          server-dir: ./
-          # Leaves server-only files (mail autoconfig etc.) in place. The old
-          # site's files that no longer exist in the build (e.g. /images/sample-*.webp,
-          # /images/world-map.svg, /fonts/) must be deleted once by hand in hPanel.
-          dangerous-clean-slate: false
-          # Hostinger FTP is sometimes slow to answer; the 30s default times out.
-          timeout: 120000
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/.DS_Store
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          deploy() {
+            lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_HOST" <<'LFTP'
+          set ftp:ssl-force true
+          set ftp:ssl-protect-data true
+          set net:timeout 30
+          set net:max-retries 8
+          set net:reconnect-interval-base 5
+          set net:reconnect-interval-max 30
+          set cmd:fail-exit no
+          glob -a rm -f .in.* */.in.* */*/.in.* */*/*/.in.* */*/*/*/.in.*
+          set cmd:fail-exit yes
+          mirror --reverse --verbose=1 --parallel=4 --no-perms --exclude-glob .git* --exclude-glob .DS_Store ./dist/ ./
+          bye
+          LFTP
+          }
+          deploy || { echo "::warning::First upload attempt failed, retrying in 20s"; sleep 20; deploy; }
 
       # After the upload, so the key file is live when IndexNow checks it.
       # A failed ping never fails the deploy; unsent URLs go out next time.
