@@ -58,6 +58,9 @@ jobs:
       # (".in.<name>.") that block the next upload with "550 ... already exists".
       # lftp retries and reconnects, and we clear those temp files first.
       # Server-only files (mail autoconfig etc.) are left in place: no --delete.
+      # Hostinger's FTP certificate is issued to its own server name, not to
+      # FTP_HOST, so only the host-name match is skipped; the connection is
+      # still TLS-encrypted and the certificate chain is still verified.
       - name: Install lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
@@ -71,6 +74,7 @@ jobs:
             lftp -u "$FTP_USERNAME","$FTP_PASSWORD" "ftp://$FTP_HOST" <<'LFTP'
           set ftp:ssl-force true
           set ftp:ssl-protect-data true
+          set ssl:check-hostname no
           set net:timeout 30
           set net:max-retries 8
           set net:reconnect-interval-base 5
